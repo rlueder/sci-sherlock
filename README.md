@@ -88,3 +88,8 @@ reference games and the open-source tool choice.
 Art → PNGs → `art/art.json` → `resources.ts` → SCI resources. Placement and walk polygons
 belong in `rooms/102.room.yaml`; dialogue, clue flags and reveal choreography belong in
 `rooms/102.yarn`. Compiled archives and screenshots stay under ignored `out/`.
+
+## License
+
+MIT, for now: see [LICENSE](LICENSE). It covers the code, the art and the writing here.
+sci-ts has its own license. Where each asset comes from is in `art/credits.csv`.

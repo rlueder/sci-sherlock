@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "description": "Sherlock Holmes in The Stopped Clocks: an adventure game teaser running on sci-ts",
+  "license": "MIT",
   "scripts": {
     "build": "sci-ts build",
     "dev": "sci-ts build && vite",
