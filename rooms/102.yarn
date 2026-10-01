@@ -1,5 +1,9 @@
 title: room.enter
 ---
+<<if not $hasLens>>
+<<get lens>>
+<<set $hasLens to true>>
+<<endif>>
 <<if $examinedFilings>>
 <<cel filings 1>>
 <<else>>
@@ -73,8 +77,9 @@ A tall-case clock of polished walnut. Fresh scratches mark the boards beneath it
 title: clock.do
 ---
 <<if $openedClock>>
-The stair waits. The rest of the case lies beyond this workshop preview.
-<<elseif $examinedClocks and $examinedFilings>>
+<<walk hero 262 166>>
+<<room 103>>
+<<elseif $deduced>>
 <<walk hero 239 168>>
 <<face hero right>>
 Hero: The clocks did not stop together. Someone arranged them so.
@@ -84,7 +89,8 @@ Hero: And this case is far too light for its size.
 <<wait 0.8>>
 A stair behind the clock. The air from below is cold.
 Hero: Come, Watson. Our clockmaker has left us a way in.
-The Stopped Clocks - to be continued.
+<<elseif $examinedClocks and $examinedFilings>>
+Hero: Not yet. Watson, a moment. Let me put this in order aloud.
 <<else>>
 Hero: Before moving anything, I should examine the wall clocks and the filings on the floor.
 <<endif>>
@@ -118,4 +124,28 @@ A dismantled movement, a scribbled order and tools laid down in haste.
 title: ledger.look
 ---
 The last entry is unfinished. A deposit received for an unusual alteration to a clock case.
+===
+
+title: watson.look
+---
+Watson, keeping well clear of the evidence.
+===
+
+title: watson.talk
+---
+-> What do you make of it? <<if not $examinedClocks or not $examinedFilings>>
+    Watson: A locked room and a missing man. I make nothing of it yet. You?
+    Hero: Nothing, until I have looked properly.
+-> The clocks were stopped by hand. <<if $examinedClocks>>
+    Hero: Every hand was turned to the same minute and held there. Look at the scratches.
+    Watson: But why would a man stop his own clocks?
+-> The filings lead to the case clock. <<if $examinedFilings>>
+    Hero: Brass, freshly cut, from the bench to that tall-case clock. Something was fitted there, and recently.
+    Watson: A repair, perhaps?
+    Hero: In the middle of the night, with the door bolted? No.
+-> The case clock is a door. <<if $examinedClocks and $examinedFilings and not $deduced>>
+    Hero: The clocks were stopped to mark the minute he went, and the filings show us where.
+    Hero: That case is a door, Watson.
+    Watson: Then Thorne didn't vanish at all. He walked through it.
+    <<set $deduced to true>>
 ===

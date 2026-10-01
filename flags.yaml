@@ -3,3 +3,13 @@
 openedClock: 0
 examinedClocks: 1
 examinedFilings: 2
+hasLens: 3
+metToby: 4
+askedMaster: 5
+askedDoor: 6
+askedClocks: 7
+askedLantern: 8
+tookCase: 9
+sawStreet: 10
+deduced: 11
+reachedStair: 12

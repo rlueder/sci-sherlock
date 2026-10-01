@@ -1,0 +1,144 @@
+title: room.enter
+---
+<<if $hasLens>>
+<<hide mantelLens>>
+<<endif>>
+<<if not $metToby>>
+<<hide mrsHudson>>
+<<hide toby>>
+The fire is lit. Fog presses at the windows of 221B.
+Watson: Nothing in the papers tonight, Holmes. London has gone quiet.
+Hero: London is never quiet, Watson. It is only waiting.
+<<show mrsHudson>>
+<<walk mrsHudson 250 166>>
+Mrs Hudson: A young man to see you, Mr Holmes. He's in a dreadful state.
+<<show toby>>
+<<walk toby 268 170>>
+<<walk mrsHudson 298 160>>
+<<hide mrsHudson>>
+Toby: Mr Holmes? My name is Toby Vance. It's my master, sir. He's gone.
+<<set $metToby to true>>
+<<else>>
+<<hide mrsHudson>>
+<<if $tookCase>>
+<<hide toby>>
+<<endif>>
+<<endif>>
+===
+
+title: room.look
+---
+The sitting room at 221B. Books, papers and chemicals, in an order only Holmes understands.
+===
+
+title: toby.talk
+---
+-> Your master?
+    Toby: Mr Elias Thorne, sir. Clockmaker, of Clerkenwell. I've been his apprentice three years.
+    Toby: He was at his bench when I left last night. This morning the shop was shut up, and he was gone.
+    <<set $askedMaster to true>>
+-> The door was locked?
+    Toby: Bolted, sir, from the inside. I had to fetch the constable to break it in.
+    Hero: And the window?
+    Toby: Latched. Nobody could have got out that way.
+    <<set $askedDoor to true>>
+-> The clocks?
+    Toby: That's what frightened me, sir. Every clock in the shop had stopped.
+    Toby: All at the same minute. Seventeen past three.
+    <<set $askedClocks to true>>
+-> The lantern?
+    Toby: Still burning on the bench when we broke in. He never leaves it lit.
+    <<set $askedLantern to true>>
+-> We shall go at once. <<if $askedMaster and $askedDoor and $askedClocks and $askedLantern and not $tookCase>>
+    Hero: Watson, your hat. Mr Vance, we shall go at once.
+    Toby: Thank you, sir. I'll run ahead and open the shop.
+    <<walk toby 298 164>>
+    <<hide toby>>
+    <<set $tookCase to true>>
+===
+
+title: toby.look
+---
+A thin young man in a work coat two sizes too large, turning his cap round and round.
+===
+
+title: watson.look
+---
+Watson, in his armchair, with yesterday's Standard.
+===
+
+title: watson.talk
+---
+<<if $tookCase>>
+Watson: I have my revolver, Holmes, if it comes to that.
+<<else>>
+Watson: The boy is frightened half out of his wits. Hear him out, Holmes.
+<<endif>>
+===
+
+title: mantelLens.look
+---
+Holmes's lens, on the mantel where he left it.
+===
+
+title: mantelLens.do
+---
+<<hide mantelLens>>
+<<get lens>>
+<<set $hasLens to true>>
+Hero: Where I go, it goes.
+===
+
+title: correspondence.look
+---
+Unanswered letters, pinned to the mantel with a jack-knife.
+===
+
+title: correspondence.do
+---
+Hero: They have waited a month. They can wait another night.
+===
+
+title: violin.look
+---
+Holmes's violin, laid across a chair. It has seen him through worse evenings.
+===
+
+title: bench.look
+---
+A rack of test tubes on the chemistry bench, and a stain Mrs Hudson has given up on.
+===
+
+title: slipper.look
+---
+The Persian slipper, where Holmes keeps his tobacco.
+===
+
+title: fire.look
+---
+A good fire. The only warm thing in London tonight.
+===
+
+title: window.look
+---
+Fog, thick as wool. The lamps across the street are smudges of yellow.
+===
+
+title: door.look
+---
+The door to the landing, and the seventeen steps down to the street.
+===
+
+title: door.do
+---
+<<if $tookCase and $hasLens>>
+<<walk hero 290 162>>
+Watson: A cab, Holmes?
+Hero: A cab, Watson. Clerkenwell.
+<<room 101>>
+<<elseif $tookCase>>
+Hero: My lens, Watson. I shall want it tonight.
+<<else>>
+Hero: We have a visitor. It would be rude to leave before he has told us why he came.
+<<endif>>
+===

@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../node_modules/sci-ts/packages/content/room.schema.json
+# The hidden stair: one screen and the last lines. Laid out for the stand-in picture.
+room: 103
+picture: 103
+hero:
+  at: [170, 160]
+walkable: [[100, 150], [240, 150], [240, 190], [100, 190]]
+features:
+  light: { rect: [140, 120, 200, 140], sightAngle: 360 }
+props:
+  watson: { view: 201, at: [130, 164], sightAngle: 360 }
+characters:
+  watson: { name: Watson }

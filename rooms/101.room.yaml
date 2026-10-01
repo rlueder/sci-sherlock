@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../node_modules/sci-ts/packages/content/room.schema.json
+# Baker Street. Laid out for the stand-in picture (the houses down to y 118): the floor,
+# hotspots and positions move to the real art when picture 101 arrives.
+room: 101
+picture: 101
+hero:
+  at: [40, 168]
+  enterTo: [110, 170]
+walkable: [[10, 150], [310, 150], [310, 193], [10, 193]]
+features:
+  door221: { rect: [20, 60, 60, 150], sightAngle: 360 }
+  lamp: { rect: [140, 30, 156, 118], sightAngle: 360 }
+  cab: { rect: [200, 80, 300, 150], sightAngle: 360 }
+props:
+  watson: { view: 201, at: [80, 172], sightAngle: 360 }
+characters:
+  watson: { name: Watson }

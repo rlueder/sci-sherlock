@@ -1,12 +1,20 @@
 import { fileURLToPath } from "node:url";
 import { buildArt } from "sci-ts/art";
 import { ResourceType, writeView, type Cel, type ResourceData } from "sci-ts/kit";
+import { placeholders } from "./placeholders.ts";
 
-/** The game's art enters through the existing resource hook, alongside future sounds. */
+/**
+ * The game's art enters through the existing resource hook, alongside future sounds. Until
+ * a room, a person or the lens has been drawn, a stand-in takes its place (placeholders.ts).
+ */
 export default (): ResourceData[] => {
   const art = buildArt(fileURLToPath(new URL("./art/art.json", import.meta.url))).resources;
-  const has = (n: number) => art.some((r) => r.type === ResourceType.View && r.number === n);
-  return [...art, ...(has(250) ? [] : [{ type: ResourceType.View, number: 250, data: placeholderLens() }])];
+  const have = (type: ResourceType, n: number) => art.some((r) => r.type === type && r.number === n);
+  return [
+    ...art,
+    ...placeholders(have),
+    ...(have(ResourceType.View, 250) ? [] : [{ type: ResourceType.View, number: 250, data: placeholderLens() }]),
+  ];
 };
 
 /**
