@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [],
+  "views": [
+    {
+      "number": 221,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/clock-00.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-01.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-02.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-03.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-04.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-05.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-06.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-07.png",
+              "anchor": [
+                60,
+                150
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

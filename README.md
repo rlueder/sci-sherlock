@@ -61,6 +61,8 @@ portraits, other rooms, or save/load interface is included yet. Art proportions 
 clock's opening motion remain a first illustrated pass for review. Holmes is about 60,
 with grey temples, deerstalker and pipe. The revised art uses one shared 64-colour palette.
 Open `/art/production/workshop-r3/` on the dev server for the reference-derived motion study.
+The newer [clock perspective study](art/studies/clock-perspective-r4/README.md) is at
+`/art/studies/clock-perspective-r4/`, with a construction overlay and editable Blender source.
 The existing room logic still needs placement and hotspot tuning to the new composition.
 
 ## Validate and review

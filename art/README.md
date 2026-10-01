@@ -1,6 +1,11 @@
 # The Stopped Clocks: art sources
 
 For learning and contributing, start with the [art learning guide](../docs/art-learning-guide.md).
+
+**Latest construction study:** [clock perspective](studies/clock-perspective-r4/README.md).
+Open `/art/studies/clock-perspective-r4/` on the dev server for the rigid hinge turn
+and construction overlay. Blender and Pixelorama sources are included; side drawing
+and approval remain pending.
 Keep the editable guides, source files, comparisons and lessons with each delivery;
 the [study template](../docs/templates/art-study.md) describes the expected documentation.
 

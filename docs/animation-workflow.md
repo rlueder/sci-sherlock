@@ -113,5 +113,8 @@ together. The game build consumes only checked PNGs; Krita and Blender are autho
 tools, not runtime dependencies. Keep the existing shared 64-colour palette and binary
 alpha. Verify the untouched approved areas and closed reference before reviewing motion.
 
-This document records the researched workflow and diagnosed defects. The r3 animations
-have not been replaced by a new drawn cycle or Blender blockout yet.
+The [clock perspective study](../art/studies/clock-perspective-r4/README.md) now
+demonstrates the Blender construction: packed editable scene, eight rigid hinge poses,
+an indexed-pixel export, Pixelorama master and interactive construction overlay. It is
+a separate study; final side drawing, visual approval and integration remain pending.
+The Holmes walk still needs the drawn pose workflow above.

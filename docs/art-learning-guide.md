@@ -17,7 +17,8 @@ for construction details, and the [asset specification](visual-spec.md) for reso
 | Pixelorama export | Version 1.2.3 has been checked against native PNG exports | [R3 native export results](../art/production/workshop-r3/native-export-check.json) |
 | Walking and clock motion | R3 is a diagnostic study; its gait and clock perspective need replacement | [Motion review and next method](animation-workflow.md) |
 | Krita perspective/pose guides | Selected workflow; project guide documents have not been produced yet | Exercises below and official tool manuals |
-| fSpy/Blender scene and hinge | Selected workflow; a fitted camera and clock blockout have not been delivered yet | [Construction plan](animation-workflow.md#clock-construct-the-turn-in-space) |
+| Blender scene and hinge | Local camera, rigid volumes, eight poses and pixel export delivered; side drawing and approval pending | [Reproducible clock study](../art/studies/clock-perspective-r4/README.md) |
+| fSpy camera matching | Optional; no whole-room camera solve delivered | [Construction plan](animation-workflow.md#clock-construct-the-turn-in-space) |
 
 The running game currently uses a separate, older art set. The R3 review is not a
 claim that its artwork has been integrated into the room's walking and interaction logic.
@@ -38,9 +39,9 @@ as open source. Use the official [Krita](https://krita.org/en/download/),
 [Blender](https://www.blender.org/download/) distributions. The researched feature and
 license sources are collected in [the tool decision](animation-workflow.md#open-source-tools).
 
-Pin **Pixelorama 1.2.3** for the existing native export mapping. For the other tools,
-record the actual application and add-on versions when producing a study; their
-project-specific version combinations have not been verified here yet. Check fSpy
+Pin **Pixelorama 1.2.3** for the existing native export mapping. The clock construction
+uses **Blender 4.5.14 LTS** and saves its reproduction commands with the study. For
+other tools, record actual application and add-on versions when producing a study. Check fSpy
 importer compatibility with the Blender version used before relying on the handoff.
 
 Reading the PNGs and running the game do not require the drawing applications.
