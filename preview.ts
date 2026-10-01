@@ -2,10 +2,9 @@ import assert from "node:assert/strict";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { EventType, ResourceManager, ResourceType, Vm, allKernels, graphics, input, writeResourceArchive, type Frame, type Value } from "../../packages/sci/src/index.ts";
-import { stringHelpers } from "../../packages/sci/src/vm/kernels/arrays.ts";
-import { buildGame } from "../../tools/game/build.ts";
-import { framePng } from "../../tools/png.ts";
+import { EventType, ResourceManager, ResourceType, Vm, allKernels, graphics, input, stringHelpers, writeResourceArchive, type Frame, type Value } from "sci-ts";
+import { buildGame } from "sci-ts/build";
+import { framePng } from "sci-ts/png";
 
 /** A real input-driven playthrough of the workshop; optionally saves review frames. */
 export async function playWorkshop(capture?: (name: string, frame: Frame) => void) {

@@ -3,8 +3,8 @@ import assert from "node:assert/strict";
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { join } from "node:path";
-import { decodePng, rgbaPng } from "../../../../../tools/png.ts";
-import { buildArt } from "../../../../../tools/art/build.ts";
+import { decodePng, rgbaPng } from "sci-ts/png";
+import { buildArt } from "sci-ts/art";
 
 const dir = fileURLToPath(new URL(".", import.meta.url));
 const out = join(dir, "converted"); mkdirSync(out, { recursive: true });

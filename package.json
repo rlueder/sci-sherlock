@@ -1,0 +1,31 @@
+{
+  "name": "sci-sherlock",
+  "private": true,
+  "type": "module",
+  "description": "Sherlock Holmes in The Stopped Clocks: an adventure game teaser running on sci-ts",
+  "scripts": {
+    "build": "sci-ts build",
+    "dev": "sci-ts build && vite",
+    "play": "sci-ts play",
+    "edit": "sci-ts edit",
+    "site": "sci-ts site",
+    "art": "sci-ts art",
+    "preview": "tsx preview.ts",
+    "export-art": "tsx export-art.ts",
+    "typecheck": "tsc",
+    "test": "vitest run",
+    "check": "pnpm typecheck && pnpm art check art/art.json && pnpm test"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "sci-ts": "link:../sci-ts",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1",
+    "vitest": "^5.0.2"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=22"
+  }
+}

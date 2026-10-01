@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Stopped Clocks — Sherlock Holmes</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main>
+      <header><p class="eyebrow">A Sherlock Holmes investigation · workshop preview</p><h1>The Stopped Clocks</h1><p>Every clock has stopped. Something in this room has not been left to chance.</p></header>
+      <canvas id="screen" width="320" height="200" tabindex="0" aria-label="Clockmaker’s workshop. Select an action below, then click the scene."></canvas>
+      <nav aria-label="Actions">
+        <button data-verb="3" aria-pressed="true">Walk <kbd>1</kbd></button>
+        <button data-verb="1" aria-pressed="false">Look <kbd>2</kbd></button>
+        <button data-verb="4" aria-pressed="false">Use <kbd>3</kbd></button>
+        <button id="restart">Restart</button>
+      </nav>
+      <p id="status" role="status">Opening the workshop…</p>
+      <pre id="error" hidden></pre>
+      <footer><span>Click to act or advance dialogue. Right-click cycles actions.</span><details><summary>Need a lead?</summary><p>Look at the wall clocks and the brass filings on the floor beside the grandfather clock. Then use the grandfather clock.</p></details><p>Original 320 × 200 art · First playable style proof · No audio yet</p></footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

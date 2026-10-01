@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../packages/content/room.schema.json
+# yaml-language-server: $schema=../node_modules/sci-ts/packages/content/room.schema.json
 # Native room coordinates. Background and foreground are both 320x200.
 room: 102
 picture: 102

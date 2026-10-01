@@ -1,7 +1,7 @@
 # The Stopped Clocks: art sources
 
 This folder contains the workshop's original style-proof art: a 32-colour palette,
-36 PNG exports and five native Pixelorama 1.2.3 masters. Run `pnpm sherlock` from the
+36 PNG exports and five native Pixelorama 1.2.3 masters. Run `pnpm dev` from the
 repository root to play it; see [controls and commands](../README.md).
 
 Production limits: **320×200 room layers, at most 64 opaque colours shared across all
@@ -11,12 +11,12 @@ the cap part of the validator and game build. Generated studies remain outside t
 production contract until adapted to real pixels and the shared palette.
 
 ```sh
-pnpm art check games/sherlock/art/art.json
-pnpm art build games/sherlock/art/art.json
+pnpm art check art/art.json
+pnpm art build art/art.json
 ```
 
 Import `out/art/sherlock/palette.gpl` into Pixelorama. Edit the masters under `source/`,
-then run `pnpm sherlock:export` with `PIXELORAMA_BIN` pointing to Pixelorama 1.2.3.
+then run `pnpm export-art` with `PIXELORAMA_BIN` pointing to Pixelorama 1.2.3.
 Use `--check` to verify that masters and committed PNGs match without changing them.
 The native export check has passed for all 36 images on macOS.
 
@@ -28,6 +28,6 @@ The Lost Files of Sherlock Holmes and Return of the Phantom: naturalistic perspe
 proportions and material shading. The current cartoon-like composition is a technical
 prototype, not the approved visual target. See the updated direction below.
 
-- [Art direction, shot briefs, IDs and production gates](../../../docs/sherlock-teaser.md)
-- [Export contract and commands](../../../docs/art-workflow.md)
-- [Reference games and open-source tool research](../../../docs/art-research.md)
+- [Art direction, shot briefs, IDs and production gates](../docs/teaser.md)
+- [Export contract and commands](../docs/art-workflow.md)
+- [Reference games and open-source tool research](../docs/art-research.md)

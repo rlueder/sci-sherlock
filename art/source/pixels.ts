@@ -1,5 +1,5 @@
-import { rgbaPng, type Rgba } from "../../../../tools/png.ts";
-import { pixelFont } from "../../../../tools/game/font.ts";
+import { rgbaPng, type Rgba } from "sci-ts/png";
+import { pixelFont } from "sci-ts/kit";
 
 /** Small integer-pixel drawing vocabulary for the first art proof. No hidden paint state. */
 export class Pixels {

@@ -1,20 +1,42 @@
-# The Stopped Clocks
+# sci-sherlock: The Stopped Clocks
 
-An original Sherlock Holmes workshop scene built with sci-ts. This is the first playable
-art proof for the [four-room teaser](../../docs/sherlock-teaser.md), not the complete story.
-It uses only this repository's original assets and class library; no Sierra game is needed.
+An original Sherlock Holmes workshop scene running on [sci-ts](https://github.com/rlueder/sci-ts),
+an SCI2 adventure game engine in TypeScript. This is the first playable art proof for the
+[four-room teaser](docs/teaser.md), not the complete story. Everything here is original:
+the art, the scripts and the rooms; the engine, its class library and the tools come from
+sci-ts.
+
+## Setup
+
+sci-ts is a dependency, linked from a checkout next to this one:
+
+```sh
+git clone https://github.com/rlueder/sci-ts ../sci-ts   # once
+(cd ../sci-ts && pnpm install)
+pnpm install
+```
+
+The game imports the engine and tools through the package (`sci-ts`, `sci-ts/kit`,
+`sci-ts/build`, `sci-ts/art`, `sci-ts/png`, `sci-ts/viewer`, `sci-ts/vite`), and the
+`sci-ts` command builds, serves and checks it.
 
 ## Play
 
-From the sci-ts repository root, after `pnpm install`:
-
 ```sh
-pnpm sherlock
+pnpm dev        # this repository's workshop page: http://127.0.0.1:5173/
+pnpm play       # the same game in sci-ts's player
+pnpm edit       # sci-ts's live editor for its rooms
 ```
 
-Open <http://127.0.0.1:5175/sherlock.html>. The command builds the game and starts a local
-server. Stop it with Ctrl-C. Set `PORT=5176` to use another port. Re-run the command after
-editing art or room files, then reload the browser. Viewer code uses Vite hot reload.
+`pnpm dev` builds the game into out/game and serves index.html with Vite (`--port` to
+choose another port). Re-run it after changing art or rooms, then reload the browser.
+
+## Docs
+
+- [The teaser plan](docs/teaser.md): story, rooms, art direction, production gates
+- [Visual elements](docs/visual-spec.md): every image the teaser needs, and its contract
+- [Art workflow](docs/art-workflow.md): exports, the palette, the manifest
+- [Art research](docs/art-research.md): references and tool decisions
 
 - **Walk / 1:** click the floor to move Holmes.
 - **Look / 2:** inspect an object. Click the scene to advance dialogue.
@@ -33,8 +55,8 @@ clock's opening motion remain a style proof for review.
 ## Validate and review
 
 ```sh
-pnpm art check games/sherlock/art/art.json
-pnpm sherlock:check
+pnpm art check art/art.json
+pnpm preview
 pnpm check
 ```
 
@@ -50,17 +72,17 @@ Open the `.pxo` masters in `art/source/` using **Pixelorama 1.2.3**. The five ma
 art; it writes draft outputs separately so it cannot replace an artist's edited masters.
 
 ```sh
-pnpm art build games/sherlock/art/art.json  # also writes an importable palette.gpl
+pnpm art build art/art.json  # also writes an importable palette.gpl
 # Set PIXELORAMA_BIN to your installed executable, or put pixelorama on PATH.
-pnpm sherlock:export --check               # compare masters with committed exports
-pnpm sherlock:export                       # export, validate, then update PNGs
-pnpm sherlock:check
+pnpm export-art --check               # compare masters with committed exports
+pnpm export-art                       # export, validate, then update PNGs
+pnpm preview
 ```
 
 The native export check was run successfully with Pixelorama 1.2.3 on macOS: all 36 images
 matched pixel for pixel. Native editor installation is optional for playing and CI.
-See [the workflow](../../docs/art-workflow.md) for palette/alpha rules, source ownership,
-frame mapping and export settings; see [the research](../../docs/art-research.md) for
+See [the workflow](docs/art-workflow.md) for palette/alpha rules, source ownership,
+frame mapping and export settings; see [the research](docs/art-research.md) for
 reference games and the open-source tool choice.
 
 Art → PNGs → `art/art.json` → `resources.ts` → SCI resources. Placement and walk polygons

@@ -22,8 +22,8 @@ image is `workshop-source.png`; `convert.ts` performs deterministic reduction, f
 mapping and restoration of the room outside the edit area. No new palette was generated.
 
 ```sh
-node --import tsx games/sherlock/art/studies/workshop-v5/convert.ts
-pnpm art check games/sherlock/art/studies/workshop-v5/converted/art.json
+pnpm tsx art/studies/workshop-v5/convert.ts
+pnpm art check art/studies/workshop-v5/converted/art.json
 ```
 
 This remains a flattened visual candidate, awaiting feedback, rather than layered

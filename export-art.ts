@@ -4,14 +4,14 @@ import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { buildArt } from "../../tools/art/build.ts";
-import { decodePng } from "../../tools/png.ts";
+import { buildArt } from "sci-ts/art";
+import { decodePng } from "sci-ts/png";
 
 // Pixelorama 1.2.3's CLI keeps the project basename even when --output names a file.
 // Stage each project separately, map its native names explicitly, then validate everything.
 const art = fileURLToPath(new URL("./art/", import.meta.url));
 const check = process.argv.includes("--check");
-if (process.argv.slice(2).some((arg) => arg !== "--check")) throw new Error("usage: pnpm sherlock:export [--check]");
+if (process.argv.slice(2).some((arg) => arg !== "--check")) throw new Error("usage: pnpm export-art [--check]");
 const bin = process.env.PIXELORAMA_BIN ?? "pixelorama";
 const pad = (n: number, length: number) => String(n).padStart(length, "0");
 const sequence = (name: string, count: number) => Array.from({ length: count }, (_, i) => [`${name}_${pad(i + 1, 4)}.png`, `${name}-${pad(i, 2)}.png`] as const);
@@ -40,7 +40,7 @@ try {
   const built = buildArt(join(stage, "art.json"));
   const files = projects.flatMap((p) => p.files.map(([, name]) => name));
   for (const name of files) {
-    if (check) assert.deepEqual(decodePng(readFileSync(join(stage, "export", name))), decodePng(readFileSync(join(art, "export", name))), `${name}: master and committed PNG differ; run pnpm sherlock:export`);
+    if (check) assert.deepEqual(decodePng(readFileSync(join(stage, "export", name))), decodePng(readFileSync(join(art, "export", name))), `${name}: master and committed PNG differ; run pnpm export-art`);
   }
   // No committed file is touched until every project exported and the complete set passed validation.
   if (!check) for (const name of files) copyFileSync(join(stage, "export", name), join(art, "export", name));

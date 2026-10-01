@@ -18,8 +18,8 @@ and native image as inputs. [Exact prompt](prompt.txt). The raw result is
 existing palette, so the rest of the generated image cannot alter the approved scene.
 
 ```sh
-node --import tsx games/sherlock/art/studies/workshop-v6/convert.ts
-pnpm art check games/sherlock/art/studies/workshop-v6/converted/art.json
+pnpm tsx art/studies/workshop-v6/convert.ts
+pnpm art check art/studies/workshop-v6/converted/art.json
 ```
 
 This remains a flattened study, not an animated replacement for the playable prototype.

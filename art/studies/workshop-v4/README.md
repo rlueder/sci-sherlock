@@ -12,8 +12,8 @@ display preview with vertical pixel-aspect correction; it contains no additional
 Reproduce from the repository root:
 
 ```sh
-node --import tsx games/sherlock/art/studies/workshop-v4/convert.ts
-pnpm art check games/sherlock/art/studies/workshop-v4/converted/art.json
+pnpm tsx art/studies/workshop-v4/convert.ts
+pnpm art check art/studies/workshop-v4/converted/art.json
 ```
 
 The deterministic TypeScript converter uses nearest-neighbour reduction, weighted median
