@@ -5,6 +5,17 @@ expects. The art direction (style, palette, references, room briefs) is in
 [teaser.md](teaser.md); this is the list of deliverables and the contract each one has to
 meet. The export rules for every PNG are in [art-workflow.md](art-workflow.md).
 
+**Visual lock, 1 October 2026:** the user selected the exact
+[workshop v6 composition](../art/approved/workshop-v6/README.md). Its character scale,
+background elements, proportions and pixel treatment take precedence over conflicting
+size guidance below. The r2 adaptation is rejected visually despite passing technical
+checks. Extract and animate the approved artwork; reconstruct only occluded regions.
+
+The user's later perspective review also authorizes localized geometry corrections
+to the foreground desk and the clock's opening. Preserve v6 as the style/scale reference
+and use [perspective construction guides](animation-workflow.md) to make those corrections
+in a new version; do not reinterpret the whole room.
+
 **Who does what.** The art director makes every image and registers it in `art/art.json`.
 Engine integration is done separately (in the rooms' YAML and Yarn, and in sci-ts where
 the engine needs to grow): where actors can walk, what blocks them, foreground depths,
@@ -83,10 +94,12 @@ straight path from the door to the cab.
 
 ### Picture 102: Thorne's workshop (delivered as a style proof)
 
-Delivered and working in the engine: background and one foreground (the bench, at 181),
-lantern (view 220, 4 cels), the tall-case clock's door (view 221, 8 cels: shut to open),
-the 3:17 inspection close-up (view 240, currently numbered 224; renumbered when revised).
-To be revised to the approved style (gate 2 in the teaser plan), keeping these elements:
+The [first illustrated revision](../art/production/workshop-r2/README.md) delivers the
+background and near-table foreground (provisional depth 181), revised Holmes, lantern
+(220, 4 cels), tall-case door (221, 8 cels), filings (227), scratches (228), and the 3:17
+close-up (240, temporarily also registered as 224 for existing room compatibility).
+Native exports and the existing headless playthrough pass; the new composition still
+needs engine-side floor, hotspot, depth and scaling integration plus visual sign-off.
 
 | Element | How | Notes |
 |---|---|---|
@@ -122,12 +135,18 @@ anchor, between the feet.
 
 | View | Who | Loops | Notes |
 |---|---|---|---|
-| 200 | Holmes (delivered, to revise) | 4: standing + 6 walking each | Deerstalker and pipe. 48–64 px tall at the front of a room |
+| 200 | Holmes (first illustrated revision delivered) | 4: standing + 6 walking each | Age 58–62; grey temples and nape; deerstalker and pipe. 48–64 px tall at the front of a room |
 | 201 | Watson | 4: standing + 4–6 walking each | Broader, warmer waistcoat; at least east/west walking, the rest may start as standing cels |
 | 202 | Mrs Hudson | 4: standing + 4–6 walking each (east/west first) | Walks in through the door of 221B |
 | 203 | Toby Vance | 4: standing + 4–6 walking each (east/west first) | Hunched, oversized work coat |
 | 204 | Holmes, gestures | loop 0: reaching to open the clock (4–6 cels); loop 1: kneeling with the lens (2–4 cels) | Same anchor and scale as view 200, so the engine can swap views without a jump |
 | 205 | Watson, seated | see 221B | |
+
+The r2 60-pixel figure and 14-colour reduction were rejected. Match Holmes's actual
+scale and rendering in the locked v6 composition; the older 48–64 px guidance above
+must be reconciled on the engine side instead of shrinking the figure. The age request
+(58–62) remains, confined to face and hair. Do not reinterpret the approved room or
+apply further global colour/detail reduction.
 
 ## Portraits
 
@@ -150,7 +169,7 @@ facing right or forward.
 
 | View | What | Notes |
 |---|---|---|
-| 240 | The 3:17 dial (delivered as 224) | About 120×112, shown centred over the workshop; it must make the deliberate stopping readable |
+| 240 | The 3:17 dial (224 compatibility alias pending engine migration) | 120×112, shown centred over the workshop; it must make the deliberate stopping readable |
 | 241 | The filings under the lens, optional | If the lens moment needs its own image |
 
 Close-ups are anchored `[0, 0]`; the engine places and dims around them.

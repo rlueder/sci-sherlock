@@ -1,0 +1,7 @@
+asset,creator,source,license,tool,notes
+holmes,sci-sherlock contributors,../../approved/workshop-v6/workshop-320x200.png;../../source/reference-r3.ts,MIT,TypeScript;Pixelorama 1.2.3,Exact reference-pixel cutout; six-cel side-on articulation; mirrored west
+clock,sci-sherlock contributors,../../approved/workshop-v6/workshop-320x200.png;../../source/reference-r3.ts,MIT,TypeScript;Pixelorama 1.2.3,Original case pixels; eight hinge cels
+lantern,sci-sherlock contributors,../../approved/workshop-v6/workshop-320x200.png;../../source/reference-r3.ts,MIT,TypeScript;Pixelorama 1.2.3,Original lantern pixels with four flame states
+foreground,sci-sherlock contributors,../../approved/workshop-v6/workshop-320x200.png;../../source/reference-r3.ts,MIT,TypeScript;Pixelorama 1.2.3,Original foreground table pixels
+hidden-surfaces,sci-sherlock contributors with OpenAI ImageGen,hidden-surfaces-source.png;hidden-surfaces-prompt.txt,MIT,OpenAI ImageGen;TypeScript,Proprietary generation used only behind extraction masks; visible reference pixels unchanged
+palette,sci-sherlock contributors,../../approved/workshop-v6/palette.json,MIT,TypeScript,Unchanged approved shared 64-colour palette

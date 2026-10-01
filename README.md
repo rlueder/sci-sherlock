@@ -6,6 +6,11 @@ an SCI2 adventure game engine in TypeScript. This is the first playable art proo
 the art, the scripts and the rooms; the engine, its class library and the tools come from
 sci-ts.
 
+This is also a **learning project**. It preserves editable sources, experiments and
+review findings so others can understand and reproduce the art-to-engine workflow.
+Start with the [art learning guide](docs/art-learning-guide.md), including perspective,
+walking, hinged props, export checks and lessons from unsuccessful passes.
+
 ## Setup
 
 sci-ts comes from npm, where it is published as `sci2-ts`. This repository installs it under
@@ -34,6 +39,8 @@ choose another port). Re-run it after changing art or rooms, then reload the bro
 
 ## Docs
 
+- [Art learning guide](docs/art-learning-guide.md): tool setup, exercises and expected results
+- [Animation and perspective workflow](docs/animation-workflow.md): drawing poses and constructing space
 - [The teaser plan](docs/teaser.md): story, rooms, art direction, production gates
 - [Visual elements](docs/visual-spec.md): every image the teaser needs, and its contract
 - [Art workflow](docs/art-workflow.md): exports, the palette, the manifest
@@ -53,7 +60,7 @@ Delivered: original 320×200 workshop, foreground occlusion, four-direction Holm
 portraits, other rooms, or save/load interface is included yet. Art proportions and the
 clock's opening motion remain a first illustrated pass for review. Holmes is about 60,
 with grey temples, deerstalker and pipe. The revised art uses one shared 64-colour palette.
-Open `/art/production/workshop-r2/` on the dev server for the art and animation review.
+Open `/art/production/workshop-r3/` on the dev server for the reference-derived motion study.
 The existing room logic still needs placement and hotspot tuning to the new composition.
 
 ## Validate and review

@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sherlock — the approved artwork in motion</title>
+<style>
+:root{color-scheme:dark;background:#171c1a;color:#e7d8bd;font:15px/1.5 system-ui,sans-serif}body{max-width:1100px;margin:24px auto;padding:0 20px}h1{font:30px Georgia,serif;margin:0}p{color:#bfbba9}button,select{font:inherit;padding:6px 12px;background:#303d36;color:inherit;border:1px solid #807969;border-radius:4px}.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0}.compare{display:grid;grid-template-columns:2fr 1fr;gap:24px}img,canvas{image-rendering:pixelated}canvas{width:100%;aspect-ratio:4/3;display:block}canvas.native{width:320px;aspect-ratio:8/5}.reference{width:100%;aspect-ratio:4/3}.solo{height:232px;width:120px;object-fit:contain;background:#303d36}.label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#b4a17e;margin:10px 0}.assets{width:100%;max-width:960px}a{color:#e4bc7e}output{color:#bfbba9}.gray{filter:grayscale(1)}@media(max-width:700px){.compare{grid-template-columns:1fr}.reference{max-width:320px}}
+</style>
+<h1>The approved artwork, in motion</h1>
+<p>Holmes, the clock, lantern and table are cut from v6. His scale and pixel shading are preserved.</p>
+<div class="controls"><button id="motion">Stand</button><label>Direction <select id="direction"><option value="east">East</option><option value="west">West</option></select></label><button id="clock">Open clock</button><label><input id="native" type="checkbox"> Native grid</label><label><input id="gray" type="checkbox"> Greyscale</label><label>Cel <input id="cel" type="range" min="0" max="6" value="1"></label><output id="frame">1 / 6</output></div>
+<div class="compare"><section><div class="label">Live layers · standing + six walking cels</div><canvas id="stage" width="320" height="200" aria-label="Approved workshop with animated Holmes"></canvas><p id="status">Loading original-pixel assets…</p></section><aside><div class="label">Approved v6 · unchanged</div><img class="reference" src="../../approved/workshop-v6/workshop-320x200.png" alt="Original approved workshop reference"><div class="label">Same walking cycle, isolated</div><img class="solo" src="review/holmes-walk.gif" alt="Animated Holmes extracted from the reference"></aside></div>
+<div class="label">Extracted assets · original colours and proportions</div><img class="assets" src="review/assets.png" alt="Original Holmes, tall-case clock, lantern and foreground table extracted as separate assets">
+<p>First east/west motion pass: the original torso stays intact while the legs articulate. North/south views and the local age edit remain to be drawn. This is an art review, separate from room integration.</p>
+<p><a href="review/walking-room.gif">Walking room GIF</a> · <a href="review/holmes-contact.png">All cels</a> · <a href="README.md">Source and validation notes</a></p>
+<script type="module">
+const el=id=>document.getElementById(id),canvas=el('stage'),ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=false;
+const load=async name=>{const img=new Image();img.src='export/'+name+'.png';await img.decode();return img;};
+const pad=n=>String(n).padStart(2,'0');
+const [base,front,holmes,clock,lantern]=await Promise.all([load('workshop'),load('workshop-front'),Promise.all(Array.from({length:7},(_,i)=>load('holmes-east-'+pad(i)))),Promise.all(Array.from({length:8},(_,i)=>load('clock-'+pad(i)))),Promise.all(Array.from({length:4},(_,i)=>load('lantern-'+pad(i))))]);
+let walking=true,frame=1,door=0,opening=false,flame=0;
+function draw(){ctx.clearRect(0,0,320,200);ctx.drawImage(base,0,0);ctx.drawImage(lantern[flame],203,80);ctx.drawImage(clock[door],238,14);if(el('direction').value==='west'){ctx.save();ctx.translate(288,0);ctx.scale(-1,1);ctx.drawImage(holmes[frame],108,52);ctx.restore();}else ctx.drawImage(holmes[frame],108,52);ctx.drawImage(front,0,0);el('cel').value=frame;el('frame').value=frame?`${frame} / 6`:'Standing';}
+el('motion').onclick=()=>{walking=!walking;frame=walking?1:0;el('motion').textContent=walking?'Stand':'Walk';draw();};
+el('direction').onchange=draw;el('clock').onclick=()=>{door=0;opening=true;draw();};
+el('native').onchange=()=>canvas.classList.toggle('native',el('native').checked);el('gray').onchange=()=>canvas.classList.toggle('gray',el('gray').checked);
+el('cel').oninput=()=>{walking=false;frame=Number(el('cel').value);el('motion').textContent='Walk';draw();};
+setInterval(()=>{if(walking)frame=frame%6+1;flame=(flame+1)%4;if(opening){door=Math.min(7,door+1);if(door===7)opening=false;}draw();},160);
+el('status').textContent='Standing reconstruction: 0 pixels changed from v6. One shared 64-colour palette.';draw();
+</script></html>

@@ -26,50 +26,50 @@
             {
               "png": "export/holmes-east-00.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-east-01.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-east-02.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-east-03.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-east-04.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-east-05.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-east-06.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             }
           ]
@@ -83,50 +83,50 @@
             {
               "png": "export/holmes-south-00.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-south-01.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-south-02.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-south-03.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-south-04.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-south-05.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-south-06.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             }
           ]
@@ -136,50 +136,50 @@
             {
               "png": "export/holmes-north-00.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-north-01.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-north-02.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-north-03.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-north-04.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-north-05.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             },
             {
               "png": "export/holmes-north-06.png",
               "anchor": [
-                14,
-                55
+                16,
+                62
               ]
             }
           ]
@@ -282,6 +282,61 @@
               "anchor": [
                 22,
                 131
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 227,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/filings-00.png",
+              "anchor": [
+                16,
+                15
+              ]
+            },
+            {
+              "png": "export/filings-01.png",
+              "anchor": [
+                16,
+                15
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 228,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/scratches.png",
+              "anchor": [
+                8,
+                11
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 240,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/dial-inspection.png",
+              "anchor": [
+                0,
+                0
               ]
             }
           ]

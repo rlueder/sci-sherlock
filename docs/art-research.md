@@ -5,6 +5,14 @@ Research date: 1 October 2026. This is a focused production shortlist for
 Tool claims below come from developers or official documentation. The proposed visual
 lessons are art direction judgments; they do not imply access to a studio's production files.
 
+## Animation and perspective follow-up
+
+The current recommendation is Krita for pose planning and perspective assistants,
+Pixelorama for final native-pixel drawing/export, and optional fSpy → Blender for camera
+matching and dimensional clock guides. The [animation workflow](animation-workflow.md)
+records official sources, the diagnosed cutout/clock defects and the authorized local
+desk correction. This supersedes treating the r3 motion study as finished animation.
+
 ## Current character refinement
 
 The user liked version 4 after its actual 320×200/64-colour conversion, then changed the

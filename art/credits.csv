@@ -1,7 +1,9 @@
 asset,creator,source,license,tool_version,notes
-workshop,sci-ts contributors,source/workshop.ts;source/workshop.pxo,MIT,Pixelorama 1.2.3,Original deterministic pixel composition; two full-canvas layers; style proof
-holmes,sci-ts contributors,source/workshop.ts;source/holmes.pxo,MIT,Pixelorama 1.2.3,Original character; east south north tags; west mirrored by SCI
-lantern,sci-ts contributors,source/workshop.ts;source/lantern.pxo,MIT,Pixelorama 1.2.3,Original four-frame flame
-clock,sci-ts contributors,source/workshop.ts;source/clock.pxo,MIT,Pixelorama 1.2.3,Original eight-frame opening; motion awaiting art review
-dial-inspection,sci-ts contributors,source/workshop.ts;source/dial-inspection.pxo,MIT,Pixelorama 1.2.3,Original 3:17 inspection using the repository pixel font
-palette,sci-ts contributors,palette.json,MIT,TypeScript,Original 32-colour style-proof palette
+workshop,sci-sherlock contributors with OpenAI ImageGen,production/workshop-r2/background-source.png;production/workshop-r2/props-source.png;source/production-r2.ts;source/workshop.pxo,MIT,OpenAI ImageGen;Pixelorama 1.2.3,AI-assisted original scenery converted to 320x200; two full-canvas layers; native 3:17 clock hands
+holmes,sci-sherlock contributors with OpenAI ImageGen,production/workshop-r2/holmes-aged-sheet-source.png;source/production-r2.ts;source/holmes.pxo,MIT,OpenAI ImageGen;Pixelorama 1.2.3,Age 58-62; grey temples; deerstalker and pipe; 21 cels; west mirrored
+lantern,sci-sherlock contributors with OpenAI ImageGen,production/workshop-r2/props-source.png;source/production-r2.ts;source/lantern.pxo,MIT,OpenAI ImageGen;Pixelorama 1.2.3,AI-assisted housing; four native-pixel flame cels; fixed registration
+clock,sci-sherlock contributors with OpenAI ImageGen,production/workshop-r2/props-source.png;source/production-r2.ts;source/clock.pxo,MIT,OpenAI ImageGen;Pixelorama 1.2.3,Eight cels around a fixed right hinge; simplified planar opening for review
+filings,sci-sherlock contributors,source/production-r2.ts;source/filings.pxo,MIT,TypeScript;Pixelorama 1.2.3,Native-pixel patch and revealed trail; view 227
+scratches,sci-sherlock contributors,source/production-r2.ts;source/scratches.pxo,MIT,TypeScript;Pixelorama 1.2.3,Native-pixel marks beside clock base; view 228
+dial-inspection,sci-sherlock contributors,source/production-r2.ts;source/dial-inspection.pxo,MIT,TypeScript;Pixelorama 1.2.3,Native 3:17 inspection using repository pixel font; view 240 with temporary 224 alias
+palette,sci-sherlock contributors,studies/workshop-v6/converted/palette.json;palette.json;palette.gpl,MIT,TypeScript,Shared 64-colour palette from the previously reviewed study

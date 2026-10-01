@@ -1,8 +1,16 @@
 # Graphics workflow for standalone SCI games
 
+New to the pipeline? Start with the [art learning guide](art-learning-guide.md) for
+tool roles, worked exercises, expected results and the distinction between studies and
+integrated assets. Record new experiments with the [study template](templates/art-study.md).
+
 Use layered pixel art masters, ordinary PNG exports and a small JSON resource manifest.
 Room placement and logic stay in YAML; dialogue and scene actions stay in Yarn. The
 [research and tool decision](art-research.md) selects Pixelorama as the default editor.
+
+For walking and the clock reveal, follow the [animation workflow](animation-workflow.md):
+draw the character poses with onion-skin review, and use a dimensional guide for the
+hinged clock. The r3 cutout swing and column-compression turn are diagnostic drafts.
 
 ## What works now
 
@@ -13,9 +21,14 @@ pnpm art build art/art.json
 
 `check` reads every listed image, validates it and compiles the resources in memory.
 `build` writes an **art-only** archive and an importable `palette.gpl` to `out/art/sherlock/`.
-Sherlock currently delivers 36 PNGs: workshop layers, three Holmes directions (west is
-mirrored), lantern, moving clock and a dial inspection. Five native Pixelorama masters
-are committed alongside them. These are original style-proof assets, not final art.
+Sherlock delivers 39 unique PNGs: workshop layers, three Holmes directions (west is
+mirrored), lantern, moving clock, filings, scratches and dial inspection. Seven native
+Pixelorama masters are present. The manifest lists 40 images because 224 temporarily
+aliases inspection view 240. See the [revision delivery](../art/production/workshop-r2/README.md).
+
+That main art set is the visually rejected r2 pass. Its technical validation is still
+useful, but does not imply approval. The separate [R3 study](../art/production/workshop-r3/README.md)
+uses the actual v6 artwork and a different manifest; its motion also needs revision.
 
 Run `pnpm dev` and open <http://127.0.0.1:5173/> for the playable workshop.
 Run `pnpm preview` for a complete headless clue/reveal playthrough and review frames
@@ -45,7 +58,7 @@ Current layout:
 sci-sherlock/
   art/
     art.json                 resource IDs, PNG paths, priorities, loops and anchors
-    palette.json             exact RGB values (32-colour style-proof palette)
+    palette.json             exact RGB values (shared 64-colour palette)
     source/workshop.pxo      layered editable master
     source/holmes.pxo        animation master, fixed canvas and frame tags
     export/workshop.png      opaque room base
@@ -70,8 +83,8 @@ Git LFS as a separate repository decision. No LFS/server dependency is needed to
 Sherlock uses exactly **320×200** room layers and a **shared palette capped at 64 opaque
 colours** (`maxColours: 64` in `art/art.json`). The cap includes black/white, excludes the
 transparent index, and applies to the complete declared palette, including unused entries.
-The current 32-colour palette remains valid. Preserve its olive/walnut/burgundy/cool-blue/
-amber direction while adding only deliberate intermediate shades. Per-room adaptive
+The current 64-colour palette preserves the reviewed olive/walnut/burgundy/cool-blue/
+amber direction and is shared across the complete delivery. Per-room adaptive
 palettes and frame-by-frame quantization are outside this workflow.
 
 Review at native scale and 4:3 nearest-neighbour enlargement. Draw details at source
@@ -183,8 +196,8 @@ signing off a walk or mouth cycle.
 
 ## Native master export
 
-The five masters were loaded and exported with **Pixelorama 1.2.3** on macOS. Every
-exported RGBA pixel matched the initial committed PNGs. The native editor and its
+The seven masters were loaded and exported with **Pixelorama 1.2.3** on macOS. Every
+exported RGBA pixel matched the committed PNGs. The native editor and its
 [CLI](https://pixelorama.org/user_manual/cli/) are open source; the game and CI do not
 require an installation. Set `PIXELORAMA_BIN` to your executable, or put `pixelorama` on PATH.
 For a macOS installation, the executable is normally inside
@@ -221,5 +234,12 @@ the `.pxo` files. Use the draft generator only for deliberate composition experi
 
 The native `--check` command detects stale exports, but is not required on CI. Automatic
 art reload, contact sheets with anchor overlays and broader editor-version support remain
-future work. Rebuild and reload the preview after editing. Clue readability still requires
+future work. The revision's art review page includes animation, greyscale and native-size
+controls at `/art/production/workshop-r2/`. Rebuild and reload after editing. Clue readability requires
 visual review in native pixels and the aspect-corrected player.
+
+The revision's optional drafting step used proprietary OpenAI ImageGen; the ongoing
+editing, conversion and export workflow is open source. Saved source PNGs and prompts
+allow review without regenerating images. `art/source/production-r2.ts` reconstructs
+the rejected delivery under ignored `out/art/production-r2/`; publication is disabled.
+The exact [v6 composition](../art/approved/workshop-v6/README.md) is now the visual lock.

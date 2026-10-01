@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sherlock — workshop art review</title>
+<style>
+  :root { color-scheme: dark; font: 16px/1.5 system-ui,sans-serif; background:#171c1a; color:#e5d5bc }
+  body { max-width:1000px; margin:32px auto; padding:0 20px }
+  h1 { font-family:Georgia,serif; font-weight:normal; margin-bottom:4px }
+  p { color:#bdbaa9 } button,select { font:inherit; padding:6px 12px; background:#303b35; color:inherit; border:1px solid #7d7964; border-radius:4px }
+  .controls { display:flex; flex-wrap:wrap; gap:14px; align-items:center; margin:18px 0 }
+  img { image-rendering:pixelated; object-fit:fill }
+  #room { display:block; width:min(100%,960px); aspect-ratio:4/3 }
+  #room.native { width:320px; aspect-ratio:8/5 }
+  .gray img { filter:grayscale(1) }
+  .samples { display:flex; flex-wrap:wrap; gap:32px; align-items:start; background:#303d36; padding:24px }
+  #actor { width:160px; height:384px } #clock { width:190px; height:396px }
+  #dial { width:240px; height:269px } a { color:#ebc791 }
+</style>
+<h1>The Stopped Clocks</h1>
+<p>Locked v6 reference · 320×200 · shared 64 colours. The r2 adaptation is rejected.</p>
+<div class="controls">
+  <label>Scene <select id="scene"><option value="reference" selected>Approved v6 — locked reference</option><option value="closed">Rejected r2 — closed</option><option value="open">Rejected r2 — open</option><option value="occlusion">Rejected r2 — foreground</option></select></label>
+  <label><input id="native" type="checkbox"> Native 320×200</label>
+  <label><input id="gray" type="checkbox"> Greyscale</label>
+</div>
+<img id="room" src="../../approved/workshop-v6/workshop-320x200.png" alt="Approved v6 composition: Holmes in Thorne's workshop">
+<p>Preserve this exact composition, character scale, background elements and pixel treatment. The experimental sprites below are retained for comparison and are not approved art.</p>
+<div class="controls">
+  <label>Holmes <select id="direction"><option>east</option><option>west</option><option>south</option><option>north</option></select></label>
+  <button id="motion" type="button">Walk</button>
+  <label>Cel <input id="frame" type="range" min="0" max="6" value="0" aria-label="Holmes cel"></label>
+  <output id="frameLabel">0 · standing</output>
+  <button id="door" type="button">Open clock</button>
+</div>
+<div class="samples">
+  <img id="actor" src="../../export/holmes-east-00.png" alt="Holmes sprite">
+  <img id="clock" src="../../export/clock-00.png" alt="Tall-case clock opening animation">
+  <img id="dial" src="../../export/dial-inspection.png" alt="The stopped dial at 3:17 and fresh scratch">
+</div>
+<p><a href="../../../">Play the workshop</a> · <a href="README.md">Delivery notes</a> · Cel 0 stands; cels 1–6 walk. Pixel enlargement preserves hard edges.</p>
+<script>
+const el = id => document.getElementById(id);
+const pad = n => String(n).padStart(2,'0');
+let walking=false, frame=0, clockFrame=0, opening=false;
+function showActor(){ const direction=el('direction').value; el('actor').src=`../../export/holmes-${direction==='west'?'east':direction}-${pad(frame)}.png`; el('actor').style.transform=direction==='west'?'scaleX(-1)':''; el('frame').value=frame; el('frameLabel').textContent=`${frame} · ${frame?'walking':'standing'}`; }
+el('scene').onchange=()=>{el('room').src=el('scene').value==='reference'?'../../approved/workshop-v6/workshop-320x200.png':`workshop-${el('scene').value}-native.png`;};
+el('native').onchange=()=>el('room').classList.toggle('native',el('native').checked);
+el('gray').onchange=()=>document.body.classList.toggle('gray',el('gray').checked);
+el('direction').onchange=showActor;
+el('motion').onclick=()=>{walking=!walking;el('motion').textContent=walking?'Stand':'Walk';frame=walking?1:0;showActor();};
+el('frame').oninput=()=>{walking=false;el('motion').textContent='Walk';frame=Number(el('frame').value);showActor();};
+el('door').onclick=()=>{clockFrame=0;opening=true;el('clock').src='../../export/clock-00.png';};
+setInterval(()=>{if(walking){frame=frame%6+1;showActor();}if(opening){clockFrame=Math.min(7,clockFrame+1);el('clock').src=`../../export/clock-${pad(clockFrame)}.png`;if(clockFrame===7)opening=false;}},160);
+</script>
+</html>

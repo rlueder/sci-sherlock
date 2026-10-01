@@ -8,7 +8,7 @@ import { resolve, join } from "node:path";
 import { Pixels } from "./pixels.ts";
 import { pixeloramaProject } from "./pixelorama-project.ts";
 
-const palette = JSON.parse(readFileSync(new URL("../palette.json", import.meta.url), "utf8")) as string[];
+const palette = JSON.parse(readFileSync(new URL("./workshop-legacy-palette.json", import.meta.url), "utf8")) as string[];
 const out = resolve("out/art/sherlock-draft");
 mkdirSync(out, { recursive: true });
 const save = (name: string, p: Pixels) => writeFileSync(join(out, `${name}.png`), p.png(palette));

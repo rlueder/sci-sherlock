@@ -20,6 +20,8 @@ const projects: { name: string; split?: boolean; files: readonly (readonly [stri
   { name: "holmes", files: ["east", "south", "north"].flatMap((direction, row) => Array.from({ length: 7 }, (_, i) => [`holmes_${pad(row * 7 + i + 1, 4)}.png`, `holmes-${direction}-${pad(i, 2)}.png`] as const)) },
   { name: "lantern", files: sequence("lantern", 4) },
   { name: "clock", files: sequence("clock", 8) },
+  { name: "filings", files: sequence("filings", 2) },
+  { name: "scratches", files: [["scratches.png", "scratches.png"]] },
   { name: "dial-inspection", files: [["dial-inspection.png", "dial-inspection.png"]] },
 ];
 const stage = mkdtempSync(join(tmpdir(), "sherlock-art-"));

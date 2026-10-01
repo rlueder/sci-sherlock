@@ -1,0 +1,27 @@
+{
+  "approved": "art/approved/workshop-v6/workshop-320x200.png",
+  "standingCompositionChangedPixels": 0,
+  "backgroundChangesOutsideMasks": 0,
+  "reconstructedPixels": 11196,
+  "paletteEntries": 64,
+  "holmesCanvas": [
+    72,
+    116
+  ],
+  "holmesAnchor": [
+    36,
+    113
+  ],
+  "holmesReferencePosition": [
+    144,
+    165
+  ],
+  "directions": [
+    "east",
+    "west mirrored"
+  ],
+  "animation": "six-frame original-pixel cutout rig; one-pixel body rise",
+  "ageAdjustment": "pending local face/hair pass",
+  "listedImages": 21,
+  "resources": 5
+}
