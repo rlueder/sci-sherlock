@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sherlock — clock reveal finish</title>
+<style>
+:root{color-scheme:dark;background:#171c1a;color:#e7d8bd;font:15px/1.5 system-ui,sans-serif}body{max-width:1100px;margin:24px auto;padding:0 20px}h1{font:30px Georgia,serif;margin:0}p{color:#c0bcab}button,input{font:inherit}button{padding:6px 12px;background:#303d36;color:inherit;border:1px solid #807969;border-radius:4px}.controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:18px 0}.pair{display:grid;grid-template-columns:2fr 1fr;gap:20px}canvas,img{image-rendering:pixelated;max-width:100%}canvas{width:100%;aspect-ratio:4/3}.reference{width:100%;aspect-ratio:4/3}.label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#b4a17e;margin:10px 0}a{color:#e4bc7e}canvas.native{width:320px;aspect-ratio:8/5}output{min-width:130px}@media(max-width:700px){.pair{grid-template-columns:1fr}}
+</style>
+<h1>The concealed stair — cabinet finish</h1>
+<p>The established fixed-hinge geometry now carries native walnut panels, rails and reverse joinery. The reveal uses the corrected workshop and fixed Holmes master; all four dials are set to 3:17.</p>
+<div class="controls"><button id="play">Pause</button><label>Pose <input id="pose" type="range" min="0" max="7" value="0"></label><output id="status">Loading…</output><label><input id="guide" type="checkbox"> Construction</label><label><input id="native" type="checkbox"> Native grid</label></div>
+<div class="pair"><section><div class="label">Clock reveal · eight cels</div><canvas id="stage" width="320" height="200" aria-label="Workshop clock opening in perspective"></canvas></section><aside><div class="label">Previous exposed-surface study</div><img class="reference" src="../clock-perspective-r4/review/open.png" alt="Previous rough exposed cabinet surfaces"><p>Local handset corrections only; the closed case retains its original silhouette. One shared 64-colour palette.</p><p>Gold: turning front and fixed hinge.<br>Blue: cabinet side volumes.<br>Dashed: candidate eye level.</p></aside></div>
+<p>The room preview preserves the corrected cabinet and master v2 character. This remains an art review; the contact gesture and mechanism travel need choreography before the production handoff.</p>
+<div class="label">Native cels · displayed with SCI pixel aspect</div><img src="review/contact.png" alt="Eight clock opening poses from front to side and back">
+<p><a href="README.md">Reproduce this study</a> · <a href="../clock-perspective-r4/clock-guide.blend">Blender source</a> · <a href="clock.pxo">Pixelorama master</a> · <a href="review/clock-turn.gif">Animation GIF</a> · <a href="../holmes-r11/">Investigation gestures</a></p>
+<script type="module">
+const el=id=>document.getElementById(id),canvas=el('stage'),ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=false;
+const load=async n=>{const img=new Image();img.src=`export/room-${String(n).padStart(2,'0')}.png`;await img.decode();return img;};
+try{
+const [frames,projection]=await Promise.all([Promise.all(Array.from({length:8},(_,i)=>load(i))),fetch('projection.json').then(r=>r.json())]);
+let playing=true,index=0,tick=0;const timeline=[0,0,0,1,2,3,4,5,6,7,7,7,7,7,7,6,5,4,3,2,1,0];
+function draw(){ctx.drawImage(frames[index],0,0);el('pose').value=index;el('status').value=`Cel ${index+1}/8 · ${projection.poses[index].angle}°`;
+ if(el('guide').checked){ctx.save();ctx.lineWidth=.4;ctx.strokeStyle='#eebc69';ctx.setLineDash([2,2]);ctx.beginPath();ctx.moveTo(0,72);ctx.lineTo(320,72);ctx.moveTo(292,14);ctx.lineTo(292,150);ctx.stroke();ctx.setLineDash([]);
+  for(const face of projection.poses[index].faces){ctx.strokeStyle=face.kind==='front'?'#eebc69':'#7acfcd';ctx.beginPath();face.vertices.forEach((v,i)=>i?ctx.lineTo(v[0],v[1]):ctx.moveTo(v[0],v[1]));ctx.closePath();ctx.stroke();}ctx.restore();}}
+el('play').onclick=()=>{playing=!playing;el('play').textContent=playing?'Pause':'Play';};
+el('pose').oninput=()=>{playing=false;el('play').textContent='Play';index=Number(el('pose').value);tick=timeline.indexOf(index);draw();};
+el('guide').onchange=draw;el('native').onchange=()=>canvas.classList.toggle('native',el('native').checked);
+setInterval(()=>{if(playing){tick=(tick+1)%timeline.length;index=timeline[tick];draw();}},160);draw();
+}catch(error){el('status').textContent='Could not load the study.';console.error(error);}
+</script></html>

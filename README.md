@@ -3,7 +3,8 @@
 An original Sherlock Holmes adventure built with [sci-ts](https://github.com/rlueder/sci-ts),
 an SCI2 engine in TypeScript. Explore a clockmaker’s workshop, follow a trail of brass
 filings, and investigate a clock stopped at **3:17**. This repository contains the
-first playable scene of a planned [four-room teaser](docs/teaser.md).
+playable [four-room teaser](docs/teaser.md), from 221B to the hidden stair.
+The additional rooms and cast currently use stand-in art awaiting the finished assets.
 
 [![The clockmaker’s workshop: Holmes beside a workbench, a rainy London window, and the grandfather clock](art/studies/workshop-r9/review/room.png)](art/studies/workshop-r9/README.md)
 
@@ -36,9 +37,9 @@ restart it after changing game art or rooms, then reload the browser.
 | Use / **3** | Interact; right-click also cycles verbs, including Talk |
 | Restart | Reset the scene and its clue flags |
 
-To complete the scene, inspect the wall clocks and the brass filings beside the
-grandfather clock, then use the clock. Holmes’s lens is supplied in this prototype;
-acquiring it at 221B belongs to the full route. Watson remains offscreen.
+Begin at 221B, hear Toby’s story, and take the lens from the mantel. Continue through
+Baker Street to the workshop, inspect the clocks and filings, and discuss the deductions
+with Watson to reveal the route to the hidden stair.
 
 `pnpm play` opens the engine’s player; `pnpm edit` opens its live room editor.
 
@@ -76,6 +77,13 @@ The smoke animates on its own layer; the character and waistcoat chain remain fi
 [Editable master and smoke timeline](art/reference/holmes-master-v2/README.md).
 
 </details>
+
+### Investigation actions
+
+[Reach and kneel review](art/studies/holmes-r11/README.md) adds whole-body keys, joint
+overlays and native Pixelorama sources for the two required investigation gestures.
+Preview at /art/studies/holmes-r11/. These remain art studies; see the
+[delivery queue](docs/art-delivery-status.md) for what is ready and what remains.
 
 ## Interactive props and clues
 
@@ -123,12 +131,13 @@ and [rebuild the study](art/studies/workshop-r9/README.md).
 <details>
 <summary><strong>Clock turn: eight poses from a fixed hinge</strong></summary>
 
-![Eight grandfather-clock poses from closed to open in the Blender perspective study](art/studies/clock-perspective-r4/review/contact.png)
+![Eight grandfather-clock poses from closed to open in the Blender perspective study](art/studies/clock-r12/review/contact.png)
 
 The clock study uses a Blender camera and rigid cabinet volumes to establish depth,
 then exports to native pixels. It replaces the earlier flat-image squeeze experiment.
-The side surfaces remain construction studies, with visual approval and integration
-pending. [Editable Blender source and workflow](art/studies/clock-perspective-r4/README.md).
+The [latest finish](art/studies/clock-r12/README.md) adds native walnut side/back
+panels, joinery, a dark descending threshold and 3:17 handsets. Visual review and
+integration remain pending. [Editable Blender source](art/studies/clock-perspective-r4/README.md).
 
 </details>
 

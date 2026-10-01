@@ -1,0 +1,2 @@
+asset,creator,source,license,tool_version,notes
+clock-r12,sci-sherlock contributors,../clock-perspective-r4/projection.json;textures.ts;clock.pxo,MIT,Blender 4.5.14;Pixelorama 1.2.3;TypeScript,Native surface and handset cleanup over existing AI-assisted r3/v6 artwork; study only

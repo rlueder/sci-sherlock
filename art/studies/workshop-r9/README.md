@@ -66,7 +66,7 @@ existing shared 64-colour palette and binary transparency.
 
 - `animation.json`: drawer geometry, timing, route points, anchors, palette and
   story caveat. The preview uses these data for mouse routes and lamp timing.
-- `art.json`: isolated review resources 260 rain, 261 lamp, 262 pendulum 263 mouse-right, 264 sky, 265 mouse-away-right, 266 mouse-left and 267 mouse-away-left.
+- `art.json`: isolated review resources 270 rain, 271 lamp, 272 pendulum, 273 mouse-right, 274 sky, 275 mouse-away-right, 276 mouse-left and 277 mouse-away-left. These supersede the old 260–267 study IDs, which conflicted with the interface range; PNGs and runtime resources are unchanged.
   These IDs are study-local proposals, not silent production reservations. The room
   has a separate mouse-occlusion layer, proposed priority 150; engine sorting needs
   explicit review when integrating a mouse actor.

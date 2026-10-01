@@ -1,0 +1,2 @@
+asset,creator,source,license,tool_version,notes
+holmes-investigation,sci-sherlock contributors with OpenAI ImageGen,generated/kneel.png;generated/reach.png;convert.ts;build.ts;source/kneel.pxo;source/reach.pxo,MIT,OpenAI ImageGen;Pixelorama 1.2.3;TypeScript,Whole-body pose drawings registered to master v2 with named head variants; view 204 review

@@ -23,6 +23,9 @@ hotspots, approach points, scaling, dialogue and menu layout, cursors, the inven
 choreography. The art doesn't need to encode any of that; it does need to make it
 possible, which is what the notes on each item are for.
 
+The current delivery queue and review/handoff distinctions are tracked in
+[Art delivery status](art-delivery-status.md).
+
 ## Numbers
 
 | Range | Resource | Use |
@@ -35,6 +38,7 @@ possible, which is what the notes on each item are for.
 | 240–249 | view | close-ups (inspection views) |
 | 250–259 | view | inventory items |
 | 260–269 | view | cursors and interface pieces |
+| 270–279 | view | additional workshop atmosphere |
 | 1–2 | font | dialogue, titles |
 
 Pictures and views are separate number spaces. 990–999 belong to sci-ts's library (its
@@ -188,6 +192,13 @@ contact, a cap lift without torso thinning and a downward glance at the watch.
 The puff is user-approved. Review the remaining idles
 before resuming walking, as requested; runtime integration remains separate.
 
+The [r11 investigation study](../art/studies/holmes-r11/README.md) adds four keys each
+for reaching to the clock and kneeling with the lens (view 204). Full-body drawings,
+major-joint overlays, native sources and timed review previews are included; visual
+review and case-travel choreography remain pending. The [r12 clock finish](../art/studies/clock-r12/README.md)
+adds native side/back joinery, a descending threshold and explicit 3:17 handset angles
+to the fixed-hinge construction. These are review sources, not production approval.
+
 ## Additional workshop atmosphere review
 
 The subsequent user request adds a perspective repair to the **cabinet under the
@@ -198,7 +209,8 @@ clipped to the true glass panes at 16 native pixels/second; a 64-second sky-colo
 cycle moves through overcast and clear conditions. The mouse has direction-specific
 cels, three furniture-occluded routes and a route/mask inspection control.
 The foreground desk remains unchanged from r5. The requested pendulum motion is
-switchable in the review; resolve its active story state against the original
+switchable in the review. Its isolated manifest now uses views 270–277, leaving
+260–269 free for interface assets. Resolve its active story state against the original
 stopped-clock clue before runtime integration. Clock hands remain fixed.
 
 ## Portraits

@@ -1,0 +1,181 @@
+{
+  "status": "clock surface and reveal polish for review; not integrated",
+  "blender": "4.5.14 LTS",
+  "closedReconstructionDifferencePixels": 0,
+  "rawGuideClosedDifferencePixels": 3,
+  "cameraFitMaxErrorPixels": 0.00001049041748046875,
+  "hingeMaxDrift": 0,
+  "canvas": [
+    88,
+    168
+  ],
+  "origin": [
+    232,
+    0
+  ],
+  "anchor": [
+    60,
+    150
+  ],
+  "actorPosition": [
+    292,
+    150
+  ],
+  "angles": [
+    0,
+    10,
+    22,
+    36,
+    50,
+    64,
+    76,
+    84
+  ],
+  "bounds": [
+    {
+      "angle": 0,
+      "box": [
+        247,
+        15,
+        296,
+        148
+      ]
+    },
+    {
+      "angle": 10,
+      "box": [
+        250,
+        15,
+        296,
+        149
+      ]
+    },
+    {
+      "angle": 22,
+      "box": [
+        254,
+        14,
+        295,
+        151
+      ]
+    },
+    {
+      "angle": 36,
+      "box": [
+        259,
+        14,
+        294,
+        153
+      ]
+    },
+    {
+      "angle": 50,
+      "box": [
+        266,
+        13,
+        293,
+        154
+      ]
+    },
+    {
+      "angle": 64,
+      "box": [
+        275,
+        15,
+        292,
+        155
+      ]
+    },
+    {
+      "angle": 76,
+      "box": [
+        282,
+        13,
+        295,
+        155
+      ]
+    },
+    {
+      "angle": 84,
+      "box": [
+        282,
+        14,
+        303,
+        157
+      ]
+    }
+  ],
+  "paletteEntries": 64,
+  "sideSurfaces": "Fixed native walnut plates, recessed panels, rails and reverse joinery",
+  "dialChecks": [
+    {
+      "name": "Left wall clock",
+      "center": [
+        123,
+        45
+      ],
+      "hour": 3,
+      "minute": 17,
+      "minuteTip": [
+        131,
+        46
+      ],
+      "hourTip": [
+        128,
+        46
+      ]
+    },
+    {
+      "name": "Upper wall clock",
+      "center": [
+        168,
+        31
+      ],
+      "hour": 3,
+      "minute": 17,
+      "minuteTip": [
+        174,
+        32
+      ],
+      "hourTip": [
+        171,
+        31
+      ]
+    },
+    {
+      "name": "Round wall clock",
+      "center": [
+        219,
+        39
+      ],
+      "hour": 3,
+      "minute": 17,
+      "minuteTip": [
+        228,
+        41
+      ],
+      "hourTip": [
+        225,
+        40
+      ]
+    },
+    {
+      "name": "Tall-case clock",
+      "center": [
+        36,
+        35
+      ],
+      "hour": 3,
+      "minute": 17,
+      "minuteTip": [
+        44,
+        36
+      ],
+      "hourTip": [
+        41,
+        36
+      ]
+    }
+  ],
+  "base": "r9 corrected cabinet plus master v2; local 3:17 handset corrections"
+}

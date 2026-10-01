@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [],
+  "views": [
+    {
+      "number": 204,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/reach-0.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/reach-1.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/reach-2.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/reach-3.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/kneel-0.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/kneel-1.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/kneel-2.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/kneel-3.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

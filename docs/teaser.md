@@ -114,8 +114,8 @@ service is a build dependency.
   globally; do not generate a separate adaptive palette for each room or animation cel.
 - **Author on the actual pixel grid.** Rooms and their foreground layers are exactly
   320×200; preview at native size and nearest-neighbour 4:3 enlargement (e.g. 960×720).
-  No high-resolution detail masquerading as pixels. Start Holmes at roughly 48–64 pixels
-  tall, checking the latest natural body proportions; express faces, hands and cloth with economical clusters.
+  No high-resolution detail masquerading as pixels. Keep Holmes at the approved roughly 106-pixel
+  standing height on a 72×120 canvas, anchor [36,113]; express faces, hands and cloth with economical clusters.
   No smoothing, partial alpha, automatic dithering, photographic grain or painted bloom.
   Local hand-placed dithering is allowed where it helps model a material. Generated
   high-resolution studies are composition references and do not satisfy these constraints.
@@ -128,9 +128,9 @@ service is a build dependency.
   and pale apron; Toby's hunched shoulders and oversized work coat communicate distress.
   Build original faces and clothes from the story's period, without actor likenesses.
 - Fixed cameras. Keep walking largely across shallow floor bands to reduce scaling shimmer.
-  A 48–56-pixel-tall Holmes at full scale is the starting test, not a dimension to lock
-  before a room is composed. Reassess the current sprite size against the new reference
-  proportions; leave space above figures for the room’s architecture.
+  Use the locked workshop character scale and natural proportions; the earlier
+  48–64-pixel starting estimates are superseded. Leave space above figures for the
+  room’s architecture and reconcile walkable placement without shrinking Holmes.
 - Distinguish interactive objects by shape, placement and value as well as colour.
   Clue information must survive a grayscale review. A one-pixel sparkle is decoration,
   never the only way to find something important.
@@ -167,7 +167,7 @@ These are initial production caps, to revise after the first in-engine test:
 | **200** | Holmes | Four directional loops, each with standing cel 0 plus 6 walking cels; west may mirror east after costume/light review. Add a separate short reach/open gesture only for the reveal. |
 | **201** | Watson in rooms | Seated idle for 221B; standing and short side-on travel coverage for the street/workshop. Other directions can start with standing cels; stage routes to fit delivered coverage. |
 | **202–203** | Mrs Hudson, Toby | Standing silhouettes and 4–6-cel arrival walk coverage on a rehearsed path. Limit idle movement to an occasional gesture. |
-| **210–212** | Watson, Mrs Hudson, Toby portraits | Proposed 64×64 canvases: one bust, 3 mouth cels including closed, 3 eye cels including open, all registered at `[0,0]`. Test against the current dialogue layout before painting details. No Holmes portrait required for this teaser. |
+| **210–212** | Watson, Mrs Hudson, Toby portraits | Shared 56×64 canvases (aligned with the visual spec): one bust, 3 mouth cels including closed, 3 eye cels including open, all registered at `[0,0]`. Test against the current dialogue layout before painting details. No Holmes portrait required for this teaser. |
 | **220** | Lantern | 4 cels; keep the metal housing fixed, alter flame/light clusters. |
 | **221** | Tall-case door | 6–8 cels, consistent hinge and ground contact; final frame holds open. Separate from the background. |
 | **222** | Fire | 4 cels localized to the hearth. |
