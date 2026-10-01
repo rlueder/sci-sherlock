@@ -1,6 +1,7 @@
 import { fileURLToPath } from "node:url";
 import { buildArt } from "sci-ts/art";
 import { ResourceType, writeView, type Cel, type ResourceData } from "sci-ts/kit";
+import { music } from "./music.ts";
 import { placeholders } from "./placeholders.ts";
 
 /**
@@ -12,6 +13,7 @@ export default (): ResourceData[] => {
   const have = (type: ResourceType, n: number) => art.some((r) => r.type === type && r.number === n);
   return [
     ...art,
+    ...music(),
     ...placeholders(have),
     ...(have(ResourceType.View, 250) ? [] : [{ type: ResourceType.View, number: 250, data: placeholderLens() }]),
   ];

@@ -3,6 +3,7 @@
 # hotspots and positions move to the real art when picture 101 arrives.
 room: 101
 picture: 101
+music: 120
 hero:
   at: [40, 168]
   enterTo: [110, 170]

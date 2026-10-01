@@ -3,6 +3,7 @@
 # floor, hotspots and positions move to the real art when picture 100 arrives.
 room: 100
 picture: 100
+music: 120
 hero:
   at: [230, 172]
 walkable: [[10, 150], [310, 150], [310, 193], [10, 193]]

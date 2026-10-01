@@ -2,6 +2,7 @@
 # Native room coordinates. Background and foreground are both 320x200.
 room: 102
 picture: 102
+music: 121
 hero:
   at: [147, 171]
 walkable: [[20, 177], [102, 147], [234, 147], [298, 161], [300, 192], [117, 194], [111, 180], [35, 187]]

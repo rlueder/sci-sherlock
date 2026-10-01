@@ -14,7 +14,8 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   const game = await buildGame(fileURLToPath(new URL(".", import.meta.url)));
   assert(game.resources.some((r) => r.type === ResourceType.Pic && r.number === 102), "workshop picture must be in the game");
   const archive = writeResourceArchive(game.resources);
-  const files: Record<string, Uint8Array> = { "RESOURCE.MAP": archive.map, "RESOURCE.000": archive.volume };
+  // Sound effects (sounds/*.wav) are in RESOURCE.SFX, among the build's other files.
+  const files: Record<string, Uint8Array> = { "RESOURCE.MAP": archive.map, "RESOURCE.000": archive.volume, ...game.files };
   const rm = await ResourceManager.open({ read: async (p) => files[p], readRange: async (p, o, n) => files[p]!.slice(o, o + n), list: async () => Object.keys(files) });
   await rm.preload();
   const vm = new Vm(rm); vm.registerKernels(allKernels);
@@ -60,7 +61,7 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
       else frames(1);
       if (!line() && prop(global("user"), "canInput") && !prop(global("curRoom"), "script")) return said;
     }
-    throw new Error("scene did not return control to the player");
+    throw new Error(`scene did not return control to the player (room ${global("curRoomNum")}, effect ${prop(global("sfx"), "number")} ${prop(global("sfx"), "handle") ? "playing" : "stopped"})`);
   };
   const choose = (text: string) => {
     const item = menu().find((m) => m.text === text);

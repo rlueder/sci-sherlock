@@ -9,6 +9,7 @@ title: room.enter
 The fire is lit. Fog presses at the windows of 221B.
 Watson: Nothing in the papers tonight, Holmes. London has gone quiet.
 Hero: London is never quiet, Watson. It is only waiting.
+<<sound 132>>
 <<show mrsHudson>>
 <<walk mrsHudson 250 166>>
 Mrs Hudson: A young man to see you, Mr Holmes. He's in a dreadful state.

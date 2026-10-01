@@ -1,8 +1,14 @@
 title: room.enter
 ---
+<<music stop>>
 <<if not $reachedStair>>
 The stair turns once and ends at a door, with a thin line of light beneath it.
 Watson: Holmes. Listen.
+<<sound 133 wait>>
+<<wait 0.6>>
+<<sound 133 wait>>
+<<wait 0.6>>
+<<sound 133 wait>>
 Somewhere below, a single clock is ticking.
 Hero: Then someone down there is still keeping time.
 Sherlock Holmes in The Stopped Clocks. To be continued.

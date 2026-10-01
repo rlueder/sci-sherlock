@@ -84,6 +84,7 @@ title: clock.do
 <<face hero right>>
 Hero: The clocks did not stop together. Someone arranged them so.
 Hero: And this case is far too light for its size.
+<<sound 130>>
 <<animate clock once>>
 <<set $openedClock to true>>
 <<wait 0.8>>
