@@ -12,8 +12,8 @@ importers:
         specifier: ^26.6.3
         version: 26.6.3
       sci-ts:
-        specifier: npm:sci2-ts@^0.6.0
-        version: sci2-ts@0.6.0(@types/node@26.6.3)(esbuild@0.28.2)
+        specifier: npm:sci2-ts@^0.6.1
+        version: sci2-ts@0.6.1(@types/node@26.6.3)(esbuild@0.28.2)
       tsx:
         specifier: ^4.23.15
         version: 4.23.15
@@ -645,8 +645,8 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
-  sci2-ts@0.6.0:
-    resolution: {integrity: sha512-uhZfSq2e62qcR49l877Emhqr18qXXZ7/JjAuWYRIzirzAKIPVq3onYC6Hblu4GqPV4RQyYVnpfsHH1zCAuEloQ==}
+  sci2-ts@0.6.1:
+    resolution: {integrity: sha512-YOxHNUfJ199NSbVgMNqyTp99IZ1JdB0+Jpca9Lzr1JpenmTZJSTXMUYLbckQzHldIROK2pRQ3LI7Lzoohe+eOA==}
     engines: {node: '>=22.18'}
     hasBin: true
 
@@ -1258,7 +1258,7 @@ snapshots:
       '@rolldown/binding-win32-arm64-msvc': 1.2.12
       '@rolldown/binding-win32-x64-msvc': 1.2.12
 
-  sci2-ts@0.6.0(@types/node@26.6.3)(esbuild@0.28.2):
+  sci2-ts@0.6.1(@types/node@26.6.3)(esbuild@0.28.2):
     dependencies:
       '@codemirror/commands': 6.11.1
       '@codemirror/lang-yaml': 6.1.3
