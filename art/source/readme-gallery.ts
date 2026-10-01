@@ -1,0 +1,25 @@
+/** Documentation contact sheets: existing native cels only, no new artwork. */
+import {mkdirSync,readFileSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import {join} from 'node:path';
+import {Pixels} from './pixels.ts';
+import {loadIndexed,enlarged} from './study-tools.ts';
+const root=fileURLToPath(new URL('../../',import.meta.url)),out=join(root,'docs/images');
+mkdirSync(out,{recursive:true});
+const palette=JSON.parse(readFileSync(join(root,'art/reference/holmes-master-v2/palette.json'),'utf8')) as string[];
+const read=(path:string)=>loadIndexed(join(root,path),palette);
+const poses=new Pixels(288,136,18);
+const poseFiles=['art/reference/holmes-master-v2/master.png',...['thinking','cap','watch'].map(name=>'art/studies/holmes-r10/source/'+name+'-key-3.png')];
+poseFiles.forEach((file,i)=>poses.paste(read(file),i*72,0));
+['NEUTRAL','THINKING','CAP','WATCH'].forEach((label,i)=>poses.text(label,i*72+8,125,62));
+enlarged(join(out,'holmes-poses.png'),poses,palette,3);
+const props=new Pixels(300,166,18);
+props.paste(read('art/studies/workshop-r9/export/pendulum-00.png'),5,5);
+props.text('CLOCK',14,151,62);
+const r5='art/studies/workshop-r5/export/';
+props.paste(read('art/studies/workshop-r9/export/lamp-00.png'),86,8);props.text('LAMP',78,38,62);
+props.paste(read(r5+'lens-icon.png'),89,53);props.text('LENS',78,78,62);
+props.paste(read(r5+'filings-01.png'),78,94);props.text('FILINGS',73,127,62);
+props.paste(read(r5+'dial-inspection.png'),164,22);props.text('DIAL / CLUE',164,151,62);
+enlarged(join(out,'interactive-props.png'),props,palette,3);
+console.log('README galleries written to docs/images (nearest sampling, 1:1.2 pixel aspect).');

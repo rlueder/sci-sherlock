@@ -1,128 +1,186 @@
 # sci-sherlock: The Stopped Clocks
 
-An original Sherlock Holmes workshop scene running on [sci-ts](https://github.com/rlueder/sci-ts),
-an SCI2 adventure game engine in TypeScript. This is the first playable art proof for the
-[four-room teaser](docs/teaser.md), not the complete story. Everything here is original:
-the art, the scripts and the rooms; the engine, its class library and the tools come from
-sci-ts.
+An original Sherlock Holmes adventure built with [sci-ts](https://github.com/rlueder/sci-ts),
+an SCI2 engine in TypeScript. Explore a clockmaker’s workshop, follow a trail of brass
+filings, and investigate a clock stopped at **3:17**. This repository contains the
+first playable scene of a planned [four-room teaser](docs/teaser.md).
 
-This is also a **learning project**. It preserves editable sources, experiments and
-review findings so others can understand and reproduce the art-to-engine workflow.
-Start with the [art learning guide](docs/art-learning-guide.md), including perspective,
-walking, hinged props, export checks and lessons from unsuccessful passes.
+[![The clockmaker’s workshop: Holmes beside a workbench, a rainy London window, and the grandfather clock](art/studies/workshop-r9/review/room.png)](art/studies/workshop-r9/README.md)
 
-## Setup
+**Current art study:** the workshop above uses the latest room and character artwork.
+The playable prototype still uses an earlier asset pass; the newer studies have their
+own previews and await game integration. **320×200 native pixels · 64 shared colours ·
+4:3 display · editable Pixelorama and Blender sources.**
 
-sci-ts comes from npm, where it is published as `sci2-ts`. This repository installs it under
-its old name (`"sci-ts": "npm:sci2-ts@^0.2.1"` in package.json), so imports read `sci-ts/…`.
-Node 22.18 or later.
+This is a **learning project**: the source drawings, generation prompts, construction
+guides, rejected experiments and export checks are kept beside the results. Start with
+the [art learning guide](docs/art-learning-guide.md) to reproduce the workflow.
+
+## Play locally
+
+Requires **Node 22.18+** and **pnpm**.
 
 ```sh
 pnpm install
+pnpm dev       # http://127.0.0.1:5173/ — use the port printed by Vite
 ```
 
-The game imports the engine and tools through the package (`sci-ts`, `sci-ts/kit`,
-`sci-ts/build`, `sci-ts/art`, `sci-ts/png`, `sci-ts/viewer`, `sci-ts/vite`), and the
-`sci-ts` command builds, serves and checks it. To work against a local checkout of sci-ts
-instead, `pnpm link ../sci-ts/out/package` after `pnpm package` there.
+The engine comes from npm as `sci2-ts`, aliased to `sci-ts` in this project. Imports
+and commands use `sci-ts`. `pnpm dev` builds `out/game` and serves the workshop page;
+restart it after changing game art or rooms, then reload the browser.
 
-## Play
+| Control | Action |
+|---|---|
+| Walk / **1** | Click the floor to move Holmes |
+| Look / **2** | Inspect objects; click the scene to advance dialogue |
+| Use / **3** | Interact; right-click also cycles verbs, including Talk |
+| Restart | Reset the scene and its clue flags |
 
-```sh
-pnpm dev        # this repository's workshop page: http://127.0.0.1:5173/
-pnpm play       # the same game in sci-ts's player
-pnpm edit       # sci-ts's live editor for its rooms
-```
+To complete the scene, inspect the wall clocks and the brass filings beside the
+grandfather clock, then use the clock. Holmes’s lens is supplied in this prototype;
+acquiring it at 221B belongs to the full route. Watson remains offscreen.
 
-`pnpm dev` builds the game into out/game and serves index.html with Vite (`--port` to
-choose another port). Re-run it after changing art or rooms, then reload the browser.
+`pnpm play` opens the engine’s player; `pnpm edit` opens its live room editor.
 
-## Docs
+## Holmes: one model, several gestures
 
-- [Art learning guide](docs/art-learning-guide.md): tool setup, exercises and expected results
-- [Animation and perspective workflow](docs/animation-workflow.md): drawing poses and constructing space
-- [The teaser plan](docs/teaser.md): story, rooms, art direction, production gates
-- [Visual elements](docs/visual-spec.md): every image the teaser needs, and its contract
-- [Art workflow](docs/art-workflow.md): exports, the palette, the manifest
-- [Art research](docs/art-research.md): references and tool decisions
+![Holmes in neutral, thinking, cap-adjustment and pocket-watch poses, all at the same scale](docs/images/holmes-poses.png)
 
-- **Walk / 1:** click the floor to move Holmes.
-- **Look / 2:** inspect an object. Click the scene to advance dialogue.
-- **Use / 3:** interact. Right-click also cycles the engine's verbs, including Talk.
-- **Restart:** start the scene again with its clue flags cleared.
+The current master keeps Holmes around sixty, with natural proportions, a deerstalker,
+black clay pipe, long overcoat and a permanent waistcoat watch chain. The latest idle
+study adds chin contact, a small cap lift and a downward glance at the watch. Unchanged
+parts reuse the master’s pixels instead of being generated again for every frame.
 
-To complete the scene, look at the wall clocks and the brass filings on the floor beside
-the grandfather clock, then use the grandfather clock. The preview supplies Holmes's lens;
-acquiring it in 221B belongs to the planned full route. Watson remains offscreen.
+[Character master and editable layers](art/reference/holmes-master-v2/README.md) ·
+[Idle animation sources and review](art/studies/holmes-r10/README.md) ·
+[1895 costume and pipe brief](docs/holmes-costume.md)
 
-Delivered: original 320×200 workshop, foreground occlusion, four-direction Holmes walking
-(west mirrored), animated lantern, 3:17 inspection and clock opening. No audio, cast
-portraits, other rooms, or save/load interface is included yet. Art proportions and the
-clock's opening motion remain a first illustrated pass for review. Holmes is about 60,
-with grey temples, deerstalker and pipe. The revised art uses one shared 64-colour palette.
-Open `/art/production/workshop-r3/` on the dev server for the reference-derived motion study.
-The newer [clock perspective study](art/studies/clock-perspective-r4/README.md) is at
-`/art/studies/clock-perspective-r4/`, with a construction overlay and editable Blender source.
-The [r5 workshop review](art/studies/workshop-r5/README.md) adds desk corrections and
-interactive clues. Its character animation was rejected for anatomy. The latest
-[anatomy-guided animations](art/studies/holmes-r7/README.md) are at
-`/art/studies/holmes-r7/`, with four idle actions, a walk study and joint overlays.
-They use the approved r6 poses and [1895 costume brief](docs/holmes-costume.md).
-The current [fixed character master](art/reference/holmes-master-v2/README.md) at
-`/art/reference/holmes-master-v2/` addresses identity drift with exact linked cels,
-material references and a brighter pipe puff. Consistent walk redraws remain pending.
-The [r10 idle review](art/studies/holmes-r10/README.md) at `/art/studies/holmes-r10/`
-adds thinking, cap adjustment and pocket-watch retrieval against that fixed model.
-Walking is deferred until the idle review is complete.
-The existing room logic still needs placement and hotspot tuning to the new composition.
+**Review status:** the pipe puff is approved; the other idle gestures remain under
+review. Walking is deferred until those gestures are settled. On the local server,
+open `/art/studies/holmes-r10/` to play, pause, step frames and overlay joint guides.
 
-The [r9 room atmosphere review](art/studies/workshop-r9/README.md) at
-`/art/studies/workshop-r9/` adds corrected window-cabinet drawers, rain, lamp flicker,
-pendulum motion, a slow sky-colour cycle and directional mouse routes. These remain separate art-review assets.
+## Interactive props and clues
 
-## Validate and review
+![Separate grandfather clock, lamp, magnifying lens, brass filings and 3:17 dial inspection artwork](docs/images/interactive-props.png)
+
+Room props are separate assets: the lamp’s light can flicker without moving its
+housing, the pendulum can move inside a fixed case, and the lens, filings and dial
+inspection support the investigation. The gallery combines the current r9 clock/lamp
+with the r5 clue assets; it shows the art sources, not a screenshot of their runtime integration.
+
+[Room layers, motion and sources](art/studies/workshop-r9/README.md) ·
+[Interactive clue study](art/studies/workshop-r5/README.md) ·
+[Asset specifications](docs/visual-spec.md)
+
+## A workshop with quiet motion
+
+![Four mouse cels in each of four directions: right, left, away-right and away-left](art/studies/workshop-r9/review/mouse.png)
+
+Rain stays within the window glass, the blue sky palette cycles through changing
+weather, and a mouse occasionally crosses between pieces of furniture. Its direction
+and occlusion are reviewed against the actual floor path. The grandfather-clock
+pendulum is a switchable art study; its use in gameplay still needs to respect the
+story’s stopped-clock clue.
+
+[Watch the enlarged clock-to-bench mouse route](art/studies/workshop-r9/review/clock-route-closeup.gif) ·
+[Weather cycle preview](art/studies/workshop-r9/review/weather-cycle.gif)
+
+Open `/art/studies/workshop-r9/` on the local server to toggle effects, choose mouse
+routes, scrub their motion and inspect the furniture masks.
+
+## Learn from the construction
+
+![Window cabinet drawers before correction on the left and after a common perspective-plane correction on the right](art/studies/workshop-r9/review/cabinet-comparison.png)
+
+**Cabinet perspective, before → after.** The drawer rows share a vanishing point;
+the original wood texture is reprojected onto that plane. The correction is isolated
+in an editable layer. [See the construction drawing](art/studies/workshop-r9/cabinet-perspective.svg)
+and [rebuild the study](art/studies/workshop-r9/README.md).
+
+<details>
+<summary><strong>Clock turn: eight poses from a fixed hinge</strong></summary>
+
+![Eight grandfather-clock poses from closed to open in the Blender perspective study](art/studies/clock-perspective-r4/review/contact.png)
+
+The clock study uses a Blender camera and rigid cabinet volumes to establish depth,
+then exports to native pixels. It replaces the earlier flat-image squeeze experiment.
+The side surfaces remain construction studies, with visual approval and integration
+pending. [Editable Blender source and workflow](art/studies/clock-perspective-r4/README.md).
+
+</details>
+
+<details>
+<summary><strong>Character palette and material ramps</strong></summary>
+
+![Shared pixel-art colour ramps for wool, waistcoat, tweed, skin, grey hair, linen, pipe, watch metal and smoke](art/reference/holmes-master-v1/review/material-ramps.png)
+
+Pinned colours help keep the character consistent across redraws. These material
+references remain in the v1 pack; v2 adds the permanent watch chain.
+[Reference workflow and drift diagnostics](art/reference/holmes-master-v1/README.md).
+
+</details>
+
+Pixelorama handles native cels and layered timelines; Blender provides perspective
+and motion guides. The project’s TypeScript tools reproduce conversion and export
+checks. Optional OpenAI ImageGen drafting is proprietary; saved inputs let subsequent
+editing, conversion and verification run with open-source tools without that service.
+
+## Explore the project
+
+| Start here | What you’ll find |
+|---|---|
+| [Art learning guide](docs/art-learning-guide.md) | Tool setup, exercises and lessons from unsuccessful passes |
+| [Animation and perspective workflow](docs/animation-workflow.md) | Coherent poses, joint guides, hinges and room construction |
+| [Teaser plan](docs/teaser.md) | Story, four-room scope and production gates |
+| [Visual specification](docs/visual-spec.md) | Asset sizes, anchors, states and handoff requirements |
+| [Art workflow](docs/art-workflow.md) | Palette, transparency, manifests and native export |
+| [Art research](docs/art-research.md) | Reference games and tool decisions |
+| [Art archive](art/README.md) | Earlier revisions, decisions and editable sources |
+
+The [v6 composition](art/approved/workshop-v6/README.md) remains the approved style
+and scale target. Earlier deliveries are retained for learning, including the rejected
+r2 adaptation still used by the playable prototype. Technical validation does not
+constitute art approval. Other rooms, cast portraits, audio and a save/load interface
+are still pending.
+
+## Edit and validate
+
+Open the `.pxo` masters beside each study in **Pixelorama 1.2.3**. Each study README
+identifies its source files, build commands and native-export checks. The current
+runtime asset set has seven masters and 39 unique PNGs under `art/source/`; newer
+studies have separate manifests and must be integrated deliberately.
 
 ```sh
 pnpm art check art/art.json
-pnpm preview
-pnpm check
+pnpm art build art/art.json          # also writes an importable palette.gpl
+pnpm export-art --check              # requires Pixelorama; compare native exports
+pnpm export-art                     # export and update runtime PNGs
+pnpm preview                        # headless playthrough and screenshots
+pnpm check                          # types, art validation and tests
 ```
 
-The headless playthrough uses actual mouse input. It checks walking, lantern frames,
-zero/one/two clue gating, inspection visibility, reveal completion, returned control,
-revisit persistence and missing kernels. It saves workshop, foreground, dial and reveal
-screenshots in `out/art/sherlock-preview/`. This same scenario runs in the test suite.
+Set `PIXELORAMA_BIN` to the editor executable, or put `pixelorama` on PATH. Native
+editor installation is optional for playing and CI. Preserve manual edits before
+running a study builder: builders regenerate their editable projects.
 
-## Edit the art
+The headless playthrough checks walking, lamp animation, clue gating, dial inspection,
+clock reveal, returned control, revisit persistence and missing kernels. It saves
+screenshots under ignored `out/art/sherlock-preview/`.
 
-The [exact v6 composition](art/approved/workshop-v6/README.md) is the approved visual
-target. The r2 adaptation currently in the playable prototype is rejected visually;
-its technical checks are not art approval. The art review page defaults to the locked
-reference. Preserve its scale, room elements and pixel treatment during extraction.
+**Asset path:** editable art → PNGs → `art/art.json` → `resources.ts` → SCI resources.
+Placement and walk polygons live in `rooms/102.room.yaml`; dialogue, clue flags and
+reveal choreography live in `rooms/102.yarn`.
 
-Open the `.pxo` masters in `art/source/` using **Pixelorama 1.2.3**. The seven masters and
-39 unique PNGs are in the repository. Saved sources, prompts, conversion commands and
-engine handoff notes are in [the revision delivery](art/production/workshop-r2/README.md).
+The README galleries are lightweight exports of existing cels, with nearest sampling
+and the correct display pixel aspect. Rebuild them with
+`pnpm exec tsx art/source/readme-gallery.ts`; [image provenance](docs/images/README.md)
+records the inputs. Compiled archives and temporary screenshots stay in ignored `out/`.
 
-```sh
-pnpm art build art/art.json  # also writes an importable palette.gpl
-# Set PIXELORAMA_BIN to your installed executable, or put pixelorama on PATH.
-pnpm export-art --check               # compare masters with committed exports
-pnpm export-art                       # export, validate, then update PNGs
-pnpm preview
-```
-
-The native export check was run successfully with Pixelorama 1.2.3 on macOS: all 39 unique images
-matched pixel for pixel. Native editor installation is optional for playing and CI.
-See [the workflow](docs/art-workflow.md) for palette/alpha rules, source ownership,
-frame mapping and export settings; see [the research](docs/art-research.md) for
-reference games and the open-source tool choice.
-
-Art → PNGs → `art/art.json` → `resources.ts` → SCI resources. Placement and walk polygons
-belong in `rooms/102.room.yaml`; dialogue, clue flags and reveal choreography belong in
-`rooms/102.yarn`. Compiled archives and screenshots stay under ignored `out/`.
+To develop against a local engine checkout, run `pnpm package` there and then
+`pnpm link ../sci-ts/out/package` here.
 
 ## License
 
-MIT, for now: see [LICENSE](LICENSE). It covers the code, the art and the writing here.
-sci-ts has its own license. Where each asset comes from is in `art/credits.csv`.
+[MIT](LICENSE) covers this project’s code, art and writing. sci-ts has its own license.
+[Asset credits](art/credits.csv) and each study’s saved sources document provenance;
+no reference-game artwork is included.
