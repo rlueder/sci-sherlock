@@ -51,7 +51,8 @@ export async function playWorkshop(capture?: (name: string, frame: Frame) => voi
   vm.start(vm.exportAddress(0, 0), "play"); frames(10);
   assert.equal(global("curRoomNum"), 102);
   assert(latest!.pixels.some((p) => p !== 0), "scene is not black");
-  assert(!obj("dial"), "inspection overlay must start hidden");
+  assert(!obj("scratches"), "the scratch marks start hidden");
+  assert.equal(prop(obj("filings"), "cel"), 0);
   shot("workshop");
   const lamps = new Set<number>();
   for (let i = 0; i < 45; i++) { frames(1); lamps.add(prop(obj("lantern"), "cel")); }
@@ -68,27 +69,45 @@ export async function playWorkshop(capture?: (name: string, frame: Frame) => voi
   finish();
   assert.equal(prop(obj("clock"), "cel"), 0);
 
+  // The wall clocks: a close-up of a dial over the dimmed room, then what Holmes makes of it.
   verb(1); click(219, 46);
-  assert.match(line(), /seventeen minutes past three/);
-  assert(obj("dial"));
+  assert.equal(vm.object(global("dialog")).name, "CloseUp");
   shot("dial");
+  click(319, 0);
+  frames(2);
+  assert.match(line(), /seventeen minutes past three/);
   const clockLines = finish();
   assert(clockLines.some((s) => /stopped by hand/.test(s)));
-  assert(!obj("dial"));
   verb(4); click(270, 120);
   assert.match(line(), /Before moving anything/, "one clue must not unlock the reveal"); finish();
-  verb(1); click(225, 151);
-  assert.match(line(), /raises his lens/); finish();
+  // The filings: too fine to read by eye; Holmes takes out his lens (I, the inventory).
+  verb(1); click(225, 150);
+  assert.match(line(), /too fine/); finish();
+  inp.push({ type: EventType.KeyDown, message: 105, modifiers: 0 }); frames(2);
+  assert.equal(global("dialog"), global("inventory"));
+  const [icon] = [...g.items].filter((it) => prop(it, "view") === 250);
+  assert(icon, "the lens is in the inventory");
+  shot("inventory");
+  click(prop(icon, "x") + 8, prop(icon, "y") + 8);
+  assert.equal(prop(global("user"), "verb"), 5);
+  click(225, 150);
+  assert.match(line(), /raises his lens/);
+  const filingLines = finish();
+  assert(filingLines.some((s) => /trail from the bench/.test(s)));
+  assert.equal(prop(obj("filings"), "cel"), 1);
+  assert(obj("scratches"), "the lens shows the scratch marks");
+  shot("trail");
   verb(4); click(270, 120);
   const revealLines = finish();
   assert(revealLines.some((s) => /to be continued/.test(s)), revealLines.join("\n"));
   assert.equal(prop(obj("clock"), "cel"), 7);
   assert.equal(prop(global("user"), "canInput"), 1);
   shot("reveal");
-  // Re-entering the room must retain the open case, without the inspection overlay.
+  // Re-entering the room keeps the open case and the trail.
   vm.invoke(global("game"), vm.selector("newRoom"), [102]); frames(10);
   assert.equal(prop(obj("clock"), "cel"), 7);
-  assert(!obj("dial"));
+  assert.equal(prop(obj("filings"), "cel"), 1);
+  assert(obj("scratches"));
   assert.equal(vm.missingKernels.size, 0);
   return { frames: g.frames, resources: game.resources.length };
 }
