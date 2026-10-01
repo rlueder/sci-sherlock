@@ -1,7 +1,5 @@
 name: CI
 
-# sci-sherlock depends on sci-ts through link:../sci-ts, so CI checks out both side by
-# side. sci-ts is private: SCI_TS_DEPLOY_KEY is a read-only deploy key on it.
 on:
   push:
     branches: [main]
@@ -12,30 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          path: sci-sherlock
-      - uses: actions/checkout@v4
-        with:
-          repository: rlueder/sci-ts
-          ref: main
-          path: sci-ts
-          ssh-key: ${{ secrets.SCI_TS_DEPLOY_KEY }}
       - uses: pnpm/action-setup@v4
-        with:
-          package_json_file: sci-sherlock/package.json
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: pnpm
-          cache-dependency-path: |
-            sci-ts/pnpm-lock.yaml
-            sci-sherlock/pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
-        working-directory: sci-ts
-      - run: pnpm install --frozen-lockfile
-        working-directory: sci-sherlock
       # Typecheck, the art check and the tests (the workshop played start to finish).
       - run: pnpm check
-        working-directory: sci-sherlock
       - run: pnpm build
-        working-directory: sci-sherlock

@@ -8,17 +8,18 @@ sci-ts.
 
 ## Setup
 
-sci-ts is a dependency, linked from a checkout next to this one:
+sci-ts comes from npm, where it is published as `sci2-ts`. This repository installs it under
+its old name (`"sci-ts": "npm:sci2-ts@^0.2.1"` in package.json), so imports read `sci-ts/…`.
+Node 22.18 or later.
 
 ```sh
-git clone https://github.com/rlueder/sci-ts ../sci-ts   # once
-(cd ../sci-ts && pnpm install)
 pnpm install
 ```
 
 The game imports the engine and tools through the package (`sci-ts`, `sci-ts/kit`,
 `sci-ts/build`, `sci-ts/art`, `sci-ts/png`, `sci-ts/viewer`, `sci-ts/vite`), and the
-`sci-ts` command builds, serves and checks it.
+`sci-ts` command builds, serves and checks it. To work against a local checkout of sci-ts
+instead, `pnpm link ../sci-ts/out/package` after `pnpm package` there.
 
 ## Play
 
@@ -50,7 +51,10 @@ acquiring it in 221B belongs to the planned full route. Watson remains offscreen
 Delivered: original 320×200 workshop, foreground occlusion, four-direction Holmes walking
 (west mirrored), animated lantern, 3:17 inspection and clock opening. No audio, cast
 portraits, other rooms, or save/load interface is included yet. Art proportions and the
-clock's opening motion remain a style proof for review.
+clock's opening motion remain a first illustrated pass for review. Holmes is about 60,
+with grey temples, deerstalker and pipe. The revised art uses one shared 64-colour palette.
+Open `/art/production/workshop-r2/` on the dev server for the art and animation review.
+The existing room logic still needs placement and hotspot tuning to the new composition.
 
 ## Validate and review
 
@@ -67,9 +71,14 @@ screenshots in `out/art/sherlock-preview/`. This same scenario runs in the test 
 
 ## Edit the art
 
-Open the `.pxo` masters in `art/source/` using **Pixelorama 1.2.3**. The five masters and
-36 reviewed PNGs are committed. `art/source/workshop.ts` generated the initial original
-art; it writes draft outputs separately so it cannot replace an artist's edited masters.
+The [exact v6 composition](art/approved/workshop-v6/README.md) is the approved visual
+target. The r2 adaptation currently in the playable prototype is rejected visually;
+its technical checks are not art approval. The art review page defaults to the locked
+reference. Preserve its scale, room elements and pixel treatment during extraction.
+
+Open the `.pxo` masters in `art/source/` using **Pixelorama 1.2.3**. The seven masters and
+39 unique PNGs are in the repository. Saved sources, prompts, conversion commands and
+engine handoff notes are in [the revision delivery](art/production/workshop-r2/README.md).
 
 ```sh
 pnpm art build art/art.json  # also writes an importable palette.gpl
@@ -79,7 +88,7 @@ pnpm export-art                       # export, validate, then update PNGs
 pnpm preview
 ```
 
-The native export check was run successfully with Pixelorama 1.2.3 on macOS: all 36 images
+The native export check was run successfully with Pixelorama 1.2.3 on macOS: all 39 unique images
 matched pixel for pixel. Native editor installation is optional for playing and CI.
 See [the workflow](docs/art-workflow.md) for palette/alpha rules, source ownership,
 frame mapping and export settings; see [the research](docs/art-research.md) for
