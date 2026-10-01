@@ -18,3 +18,16 @@ pnpm exec tsx art/source/readme-gallery.ts
 The main README also embeds existing room, mouse, cabinet, clock-turn and palette
 review images directly from their study folders. Those folders retain the editable
 sources and historical review status. No runtime assets are changed by this script.
+
+## Animated previews
+
+`pnpm exec tsx art/source/readme-gallery.ts --gifs` also uses FFmpeg to compress the
+existing study GIFs. `gif-palette.png` supplies the exact project palette; no new
+colours, dithering, scaling or motion are introduced. Every decoded RGB frame is
+compared with the source. FFmpeg is optional for rebuilding the static galleries.
+
+| GIF | Original study |
+|---|---|
+| `holmes-idles.gif` | `art/studies/holmes-r10/review/idles.gif` |
+| `pipe-puff.gif` | `art/reference/holmes-master-v2/review/puff.gif` |
+| `workshop-ambience.gif` | `art/studies/workshop-r9/review/ambience.gif` |

@@ -59,6 +59,24 @@ parts reuse the master’s pixels instead of being generated again for every fra
 review. Walking is deferred until those gestures are settled. On the local server,
 open `/art/studies/holmes-r10/` to play, pause, step frames and overlay joint guides.
 
+### Idle animations
+
+![Holmes thinking, adjusting his cap and checking his pocket watch in synchronized preview loops](docs/images/holmes-idles.gif)
+
+**Thinking · cap adjustment · pocket watch.** These loops use the current fixed
+character master and return to the neutral pose. The frame-by-frame review remains
+available at `/art/studies/holmes-r10/` on the local server.
+
+<details>
+<summary><strong>Approved pipe puff</strong></summary>
+
+![Holmes puffing his pipe, with smoke visible above the fixed character sprite](docs/images/pipe-puff.gif)
+
+The smoke animates on its own layer; the character and waistcoat chain remain fixed.
+[Editable master and smoke timeline](art/reference/holmes-master-v2/README.md).
+
+</details>
+
 ## Interactive props and clues
 
 ![Separate grandfather clock, lamp, magnifying lens, brass filings and 3:17 dial inspection artwork](docs/images/interactive-props.png)
@@ -73,6 +91,11 @@ with the r5 clue assets; it shows the art sources, not a screenshot of their run
 [Asset specifications](docs/visual-spec.md)
 
 ## A workshop with quiet motion
+
+![Animated workshop study with rain outside the window, flickering lamplight and a swinging clock pendulum](docs/images/workshop-ambience.gif)
+
+**Room ambience loop:** rain, lamplight and pendulum movement. The interactive review
+also includes the slower weather-color cycle and occasional mouse visits.
 
 ![Four mouse cels in each of four directions: right, left, away-right and away-left](art/studies/workshop-r9/review/mouse.png)
 
@@ -174,7 +197,9 @@ reveal choreography live in `rooms/102.yarn`.
 The README galleries are lightweight exports of existing cels, with nearest sampling
 and the correct display pixel aspect. Rebuild them with
 `pnpm exec tsx art/source/readme-gallery.ts`; [image provenance](docs/images/README.md)
-records the inputs. Compiled archives and temporary screenshots stay in ignored `out/`.
+records the inputs. Add `--gifs` to rebuild the compact animated previews with
+FFmpeg; the script verifies decoded frames against the original study GIFs.
+Compiled archives and temporary screenshots stay in ignored `out/`.
 
 To develop against a local engine checkout, run `pnpm package` there and then
 `pnpm link ../sci-ts/out/package` here.

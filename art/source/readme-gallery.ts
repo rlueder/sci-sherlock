@@ -1,5 +1,5 @@
 /** Documentation contact sheets: existing native cels only, no new artwork. */
-import {mkdirSync,readFileSync} from 'node:fs';
+import {mkdirSync,readFileSync,writeFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
 import {Pixels} from './pixels.ts';
@@ -23,3 +23,19 @@ props.paste(read(r5+'filings-01.png'),78,94);props.text('FILINGS',73,127,62);
 props.paste(read(r5+'dial-inspection.png'),164,22);props.text('DIAL / CLUE',164,151,62);
 enlarged(join(out,'interactive-props.png'),props,palette,3);
 console.log('README galleries written to docs/images (nearest sampling, 1:1.2 pixel aspect).');
+
+// Optional lossless GIF packaging for GitHub: retain frames, timing and palette
+// colours while compressing the intentionally simple study GIF encoder's output.
+if(process.argv.includes('--gifs')){
+ const {spawnSync}=await import('node:child_process');
+ const gifPalette=new Pixels(16,16);gifPalette.data.forEach((_,i)=>gifPalette.data[i]=i%palette.length);writeFileSync(join(out,'gif-palette.png'),gifPalette.png(palette));
+ const clips=[['art/studies/holmes-r10/review/idles.gif','holmes-idles.gif'],['art/reference/holmes-master-v2/review/puff.gif','pipe-puff.gif'],['art/studies/workshop-r9/review/ambience.gif','workshop-ambience.gif']];
+ for(const [source,name]of clips){
+  const result=spawnSync('ffmpeg',['-hide_banner','-loglevel','error','-y','-ignore_loop','1','-i',join(root,source!),'-i',join(out,'gif-palette.png'),'-filter_complex','[0:v][1:v]paletteuse=dither=none','-loop','0',join(out,name!)],{encoding:'utf8'});
+  if(result.error)throw result.error;if(result.status!==0)throw new Error(result.stderr);
+  // Compare decoded RGB frames, not GIF bytes/palette index ordering.
+  const hashes=(file:string)=>{const r=spawnSync('ffmpeg',['-hide_banner','-loglevel','error','-ignore_loop','1','-i',file,'-pix_fmt','rgb24','-f','framemd5','-'],{encoding:'utf8'});if(r.status!==0)throw new Error(r.stderr);return r.stdout.split('\n').filter(l=>l&&!l.startsWith('#')).map(l=>l.split(',').at(-1)!.trim()).join('\n');};
+  if(hashes(join(root,source!))!==hashes(join(out,name!)))throw new Error('GIF frame mismatch: '+name);
+  console.log(name+': decoded frames match the original study exactly.');
+ }
+}
