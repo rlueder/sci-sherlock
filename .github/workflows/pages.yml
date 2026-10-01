@@ -1,0 +1,52 @@
+name: Pages
+
+# The teaser as a website: its README and docs as pages, and the game in sci-ts's player,
+# published to GitHub Pages (rlueder.github.io/sci-sherlock) on every push to main.
+#
+# Music needs a SoundFont. GeneralUser GS (free to use in software, by S. Christian Collins)
+# is 32 MB, so it's fetched here, pinned to one commit, instead of living in the repository.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+env:
+  SOUNDFONT: https://raw.githubusercontent.com/mrbumpy409/GeneralUser-GS/97049183643d5fc5a9322a69c5b09efb667c6c3a/GeneralUser-GS.sf2
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: SoundFont
+        run: |
+          mkdir -p assets/soundfonts
+          curl --fail --location --silent --show-error -o assets/soundfonts/GeneralUser-GS.sf2 "$SOUNDFONT"
+      - run: pnpm site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out/site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
