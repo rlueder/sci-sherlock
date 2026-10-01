@@ -21,7 +21,7 @@ title: cab.do
 <<walk hero 205 168>>
 Hero: Clerkenwell, cabby, and quickly.
 Watson: There's a sovereign in it if you can find the way in this.
-<<wait 1>>
+<<sound 131 wait>>
 <<room 102>>
 ===
 
