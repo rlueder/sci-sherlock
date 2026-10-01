@@ -9,15 +9,17 @@ obstacles:
   - [[116, 128], [222, 121], [222, 147], [116, 151]]
 features:
   clocks: { rect: [118, 29, 239, 84], sightAngle: 360 }
-  filings: { rect: [192, 141, 251, 159], sightAngle: 360 }
   window: { rect: [18, 30, 88, 122], sightAngle: 360 }
   bench: { rect: [115, 111, 221, 138], sightAngle: 360 }
   ledger: { rect: [35, 166, 85, 180], sightAngle: 360 }
 props:
   lantern: { view: 220, at: [190, 111], cycle: forward, sightAngle: 360 }
   clock: { view: 221, at: [267, 157], sightAngle: 360 }
-  dial: { view: 224, at: [100, 24] }
+  # On the floor: drawn under anyone walking over them.
+  filings: { view: 227, at: [225, 154], sightAngle: 360 }
+  scratches: { view: 228, at: [242, 162], sightAngle: 360 }
 properties:
   lantern: { cycleSpeed: 10, fixPriority: 1, priority: 140 }
   clock: { cycleSpeed: 8, fixPriority: 1, priority: 151 }
-  dial: { fixPriority: 1, priority: 250 }
+  filings: { fixPriority: 1, priority: 0 }
+  scratches: { fixPriority: 1, priority: 0 }

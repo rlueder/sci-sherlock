@@ -1,6 +1,10 @@
 title: room.enter
 ---
-<<hide dial>>
+<<if $examinedFilings>>
+<<cel filings 1>>
+<<else>>
+<<hide scratches>>
+<<endif>>
 <<if $openedClock>>
 <<cel clock 7>>
 <<endif>>
@@ -13,10 +17,9 @@ Thorne's workshop. A lantern burns, but not a single clock ticks.
 
 title: clocks.look
 ---
-<<show dial>>
+<<closeup 240>>
 Every dial reads seventeen minutes past three.
 Hero: A fresh scratch beneath the minute hand. These clocks were stopped by hand.
-<<hide dial>>
 <<set $examinedClocks to true>>
 ===
 
@@ -27,14 +30,35 @@ Hero: Let us preserve the evidence as we found it.
 
 title: filings.look
 ---
-Holmes raises his lens. Among the sawdust, brass filings catch the lantern light.
-Hero: A trail from the bench to the tall-case clock. Something was recently fitted there.
-<<set $examinedFilings to true>>
+<<if $examinedFilings>>
+A trail of brass filings, from the bench to the tall-case clock.
+<<else>>
+Something glints in the sawdust, too fine to make out from here.
+<<endif>>
 ===
 
 title: filings.do
 ---
 Hero: Best not disturb them. My lens will tell us more.
+===
+
+title: filings.lens
+---
+Holmes raises his lens. Among the sawdust, brass filings catch the lantern light.
+<<cel filings 1>>
+<<show scratches>>
+Hero: A trail from the bench to the tall-case clock. Something was recently fitted there.
+<<set $examinedFilings to true>>
+===
+
+title: scratches.look
+---
+Fresh scratches in the boards, where the case clock has been moved and moved back.
+===
+
+title: clocks.lens
+---
+Hero: The lens confirms it: each hand was turned and held.
 ===
 
 title: clock.look
