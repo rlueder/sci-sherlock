@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "palette": "palette.json",
+  "maxColours": 64,
+  "pictures": [
+    {
+      "number": 102,
+      "layers": [
+        {
+          "png": "workshop-320x200.png",
+          "priority": -1000
+        }
+      ]
+    }
+  ],
+  "views": []
+}

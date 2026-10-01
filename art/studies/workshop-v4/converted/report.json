@@ -1,0 +1,22 @@
+{
+  "source": "../workshop.png",
+  "sourceSize": [
+    1448,
+    1086
+  ],
+  "nativeSize": [
+    320,
+    200
+  ],
+  "displaySize": [
+    960,
+    720
+  ],
+  "paletteEntries": 64,
+  "usedColours": 64,
+  "dithering": false,
+  "sampling": "nearest neighbour, then weighted RGB median-cut palette mapping",
+  "displaySampling": "nearest neighbour; vertical 6:5 pixel-aspect correction",
+  "importerValidated": true,
+  "status": "Flattened conversion study; Holmes and props are not separate layers"
+}

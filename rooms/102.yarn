@@ -1,0 +1,97 @@
+title: room.enter
+---
+<<hide dial>>
+<<if $openedClock>>
+<<cel clock 7>>
+<<endif>>
+===
+
+title: room.look
+---
+Thorne's workshop. A lantern burns, but not a single clock ticks.
+===
+
+title: clocks.look
+---
+<<show dial>>
+Every dial reads seventeen minutes past three.
+Hero: A fresh scratch beneath the minute hand. These clocks were stopped by hand.
+<<hide dial>>
+<<set $examinedClocks to true>>
+===
+
+title: clocks.do
+---
+Hero: Let us preserve the evidence as we found it.
+===
+
+title: filings.look
+---
+Holmes raises his lens. Among the sawdust, brass filings catch the lantern light.
+Hero: A trail from the bench to the tall-case clock. Something was recently fitted there.
+<<set $examinedFilings to true>>
+===
+
+title: filings.do
+---
+Hero: Best not disturb them. My lens will tell us more.
+===
+
+title: clock.look
+---
+<<if $openedClock>>
+Behind the case, a narrow stair descends into darkness.
+<<else>>
+A tall-case clock of polished walnut. Fresh scratches mark the boards beneath it.
+<<endif>>
+===
+
+title: clock.do
+---
+<<if $openedClock>>
+The stair waits. The rest of the case lies beyond this workshop preview.
+<<elseif $examinedClocks and $examinedFilings>>
+<<walk hero 239 168>>
+<<face hero right>>
+Hero: The clocks did not stop together. Someone arranged them so.
+Hero: And this case is far too light for its size.
+<<animate clock once>>
+<<set $openedClock to true>>
+<<wait 0.8>>
+A stair behind the clock. The air from below is cold.
+Hero: Come, Watson. Our clockmaker has left us a way in.
+The Stopped Clocks - to be continued.
+<<else>>
+Hero: Before moving anything, I should examine the wall clocks and the filings on the floor.
+<<endif>>
+===
+
+title: lantern.look
+---
+The lantern is still warm. Thorne cannot have been gone long.
+===
+
+title: lantern.do
+---
+Hero: Leave it burning. We shall need the light.
+===
+
+title: window.look
+---
+The sash is latched. Beyond the glass, the Clerkenwell roofs dissolve into fog.
+===
+
+title: window.do
+---
+Hero: Secure from within. No one left by this window.
+===
+
+title: bench.look
+---
+A dismantled movement, a scribbled order and tools laid down in haste.
+===
+
+title: ledger.look
+---
+The last entry is unfinished. A deposit received for an unusual alteration to a clock case.
+===

@@ -1,0 +1,308 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [
+    {
+      "number": 102,
+      "layers": [
+        {
+          "png": "export/workshop.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/workshop-front.png",
+          "priority": 181
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "number": 200,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/holmes-east-00.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-east-01.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-east-02.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-east-03.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-east-04.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-east-05.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-east-06.png",
+              "anchor": [
+                14,
+                55
+              ]
+            }
+          ]
+        },
+        {
+          "link": 0,
+          "mirror": true
+        },
+        {
+          "cels": [
+            {
+              "png": "export/holmes-south-00.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-south-01.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-south-02.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-south-03.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-south-04.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-south-05.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-south-06.png",
+              "anchor": [
+                14,
+                55
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/holmes-north-00.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-north-01.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-north-02.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-north-03.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-north-04.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-north-05.png",
+              "anchor": [
+                14,
+                55
+              ]
+            },
+            {
+              "png": "export/holmes-north-06.png",
+              "anchor": [
+                14,
+                55
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 220,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/lantern-00.png",
+              "anchor": [
+                9,
+                29
+              ]
+            },
+            {
+              "png": "export/lantern-01.png",
+              "anchor": [
+                9,
+                29
+              ]
+            },
+            {
+              "png": "export/lantern-02.png",
+              "anchor": [
+                9,
+                29
+              ]
+            },
+            {
+              "png": "export/lantern-03.png",
+              "anchor": [
+                9,
+                29
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 221,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/clock-00.png",
+              "anchor": [
+                22,
+                131
+              ]
+            },
+            {
+              "png": "export/clock-01.png",
+              "anchor": [
+                22,
+                131
+              ]
+            },
+            {
+              "png": "export/clock-02.png",
+              "anchor": [
+                22,
+                131
+              ]
+            },
+            {
+              "png": "export/clock-03.png",
+              "anchor": [
+                22,
+                131
+              ]
+            },
+            {
+              "png": "export/clock-04.png",
+              "anchor": [
+                22,
+                131
+              ]
+            },
+            {
+              "png": "export/clock-05.png",
+              "anchor": [
+                22,
+                131
+              ]
+            },
+            {
+              "png": "export/clock-06.png",
+              "anchor": [
+                22,
+                131
+              ]
+            },
+            {
+              "png": "export/clock-07.png",
+              "anchor": [
+                22,
+                131
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 224,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/dial-inspection.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

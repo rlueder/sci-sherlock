@@ -1,0 +1,7 @@
+asset,creator,source,license,tool_version,notes
+workshop,sci-ts contributors,source/workshop.ts;source/workshop.pxo,MIT,Pixelorama 1.2.3,Original deterministic pixel composition; two full-canvas layers; style proof
+holmes,sci-ts contributors,source/workshop.ts;source/holmes.pxo,MIT,Pixelorama 1.2.3,Original character; east south north tags; west mirrored by SCI
+lantern,sci-ts contributors,source/workshop.ts;source/lantern.pxo,MIT,Pixelorama 1.2.3,Original four-frame flame
+clock,sci-ts contributors,source/workshop.ts;source/clock.pxo,MIT,Pixelorama 1.2.3,Original eight-frame opening; motion awaiting art review
+dial-inspection,sci-ts contributors,source/workshop.ts;source/dial-inspection.pxo,MIT,Pixelorama 1.2.3,Original 3:17 inspection using the repository pixel font
+palette,sci-ts contributors,palette.json,MIT,TypeScript,Original 32-colour style-proof palette
