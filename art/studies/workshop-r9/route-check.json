@@ -1,0 +1,92 @@
+[
+  {
+    "route": 0,
+    "progress": 0,
+    "visiblePixels": 0
+  },
+  {
+    "route": 0,
+    "progress": 0.2,
+    "visiblePixels": 24
+  },
+  {
+    "route": 0,
+    "progress": 0.4,
+    "visiblePixels": 26
+  },
+  {
+    "route": 0,
+    "progress": 0.6,
+    "visiblePixels": 38
+  },
+  {
+    "route": 0,
+    "progress": 0.8,
+    "visiblePixels": 17
+  },
+  {
+    "route": 0,
+    "progress": 1,
+    "visiblePixels": 0
+  },
+  {
+    "route": 1,
+    "progress": 0,
+    "visiblePixels": 0
+  },
+  {
+    "route": 1,
+    "progress": 0.2,
+    "visiblePixels": 2
+  },
+  {
+    "route": 1,
+    "progress": 0.4,
+    "visiblePixels": 39
+  },
+  {
+    "route": 1,
+    "progress": 0.6,
+    "visiblePixels": 20
+  },
+  {
+    "route": 1,
+    "progress": 0.8,
+    "visiblePixels": 9
+  },
+  {
+    "route": 1,
+    "progress": 1,
+    "visiblePixels": 0
+  },
+  {
+    "route": 2,
+    "progress": 0,
+    "visiblePixels": 0
+  },
+  {
+    "route": 2,
+    "progress": 0.2,
+    "visiblePixels": 0
+  },
+  {
+    "route": 2,
+    "progress": 0.4,
+    "visiblePixels": 24
+  },
+  {
+    "route": 2,
+    "progress": 0.6,
+    "visiblePixels": 24
+  },
+  {
+    "route": 2,
+    "progress": 0.8,
+    "visiblePixels": 0
+  },
+  {
+    "route": 2,
+    "progress": 1,
+    "visiblePixels": 0
+  }
+]

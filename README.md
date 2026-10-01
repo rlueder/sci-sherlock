@@ -68,10 +68,17 @@ interactive clues. Its character animation was rejected for anatomy. The latest
 [anatomy-guided animations](art/studies/holmes-r7/README.md) are at
 `/art/studies/holmes-r7/`, with four idle actions, a walk study and joint overlays.
 They use the approved r6 poses and [1895 costume brief](docs/holmes-costume.md).
-The current [fixed character master](art/reference/holmes-master-v1/README.md) at
-`/art/reference/holmes-master-v1/` addresses identity drift with exact linked cels,
+The current [fixed character master](art/reference/holmes-master-v2/README.md) at
+`/art/reference/holmes-master-v2/` addresses identity drift with exact linked cels,
 material references and a brighter pipe puff. Consistent walk redraws remain pending.
+The [r10 idle review](art/studies/holmes-r10/README.md) at `/art/studies/holmes-r10/`
+adds thinking, cap adjustment and pocket-watch retrieval against that fixed model.
+Walking is deferred until the idle review is complete.
 The existing room logic still needs placement and hotspot tuning to the new composition.
+
+The [r9 room atmosphere review](art/studies/workshop-r9/README.md) at
+`/art/studies/workshop-r9/` adds corrected window-cabinet drawers, rain, lamp flicker,
+pendulum motion, a slow sky-colour cycle and directional mouse routes. These remain separate art-review assets.
 
 ## Validate and review
 

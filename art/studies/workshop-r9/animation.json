@@ -1,0 +1,322 @@
+{
+  "nativeRoom": [
+    320,
+    200
+  ],
+  "pixelAspect": 1.2,
+  "paletteColours": 64,
+  "cabinet": {
+    "vanishingPoint": [
+      300,
+      72
+    ],
+    "quad": [
+      [
+        42,
+        126
+      ],
+      [
+        80,
+        118.04651162790697
+      ],
+      [
+        80,
+        145.33333333333331
+      ],
+      [
+        42,
+        158
+      ]
+    ],
+    "changedPixels": 878,
+    "scope": "Drawer bank only, beneath window",
+    "projection": "Artist-chosen local plane; not a calibrated whole-room camera"
+  },
+  "rain": {
+    "frames": 48,
+    "fps": 8,
+    "pixelsPerSecond": 16,
+    "glassMaskOnly": true
+  },
+  "sky": {
+    "frames": 16,
+    "fps": 0.25,
+    "cycleSeconds": 64,
+    "scope": "Exterior blue palette within glass mask"
+  },
+  "lamp": {
+    "frames": 4,
+    "fps": 8,
+    "fixedHousing": true,
+    "sequence": [
+      0,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0,
+      3
+    ]
+  },
+  "pendulum": {
+    "frames": 24,
+    "fps": 12,
+    "pivot": [
+      35,
+      57
+    ],
+    "amplitudeRadians": 0.065,
+    "faceUnchanged": true,
+    "storyConflict": "Original story has stopped clocks. Requested ambient swing is preview-only until story integration is resolved."
+  },
+  "mouse": {
+    "frames": 4,
+    "fps": 16,
+    "canvas": [
+      20,
+      10
+    ],
+    "anchor": [
+      10,
+      8
+    ],
+    "routes": [
+      {
+        "name": "Cabinet to workbench",
+        "points": [
+          [
+            70,
+            146
+          ],
+          [
+            87,
+            153
+          ],
+          [
+            99,
+            152
+          ],
+          [
+            107,
+            138
+          ]
+        ],
+        "directions": [
+          "right",
+          "right",
+          "away-right"
+        ],
+        "seconds": 1.8
+      },
+      {
+        "name": "Clock to bench",
+        "points": [
+          [
+            260,
+            149
+          ],
+          [
+            244,
+            149
+          ],
+          [
+            230,
+            149
+          ],
+          [
+            217,
+            138
+          ]
+        ],
+        "directions": [
+          "left",
+          "left",
+          "away-left"
+        ],
+        "seconds": 1.9
+      },
+      {
+        "name": "Under the workbench",
+        "points": [
+          [
+            100,
+            137
+          ],
+          [
+            130,
+            145
+          ],
+          [
+            182,
+            145
+          ],
+          [
+            224,
+            137
+          ]
+        ],
+        "directions": [
+          "right",
+          "right",
+          "right"
+        ],
+        "seconds": 2.3
+      }
+    ],
+    "cooldownSeconds": [
+      18,
+      35
+    ]
+  },
+  "sets": [
+    {
+      "name": "rain",
+      "files": [
+        "rain-00.png",
+        "rain-01.png",
+        "rain-02.png",
+        "rain-03.png",
+        "rain-04.png",
+        "rain-05.png",
+        "rain-06.png",
+        "rain-07.png",
+        "rain-08.png",
+        "rain-09.png",
+        "rain-10.png",
+        "rain-11.png",
+        "rain-12.png",
+        "rain-13.png",
+        "rain-14.png",
+        "rain-15.png",
+        "rain-16.png",
+        "rain-17.png",
+        "rain-18.png",
+        "rain-19.png",
+        "rain-20.png",
+        "rain-21.png",
+        "rain-22.png",
+        "rain-23.png",
+        "rain-24.png",
+        "rain-25.png",
+        "rain-26.png",
+        "rain-27.png",
+        "rain-28.png",
+        "rain-29.png",
+        "rain-30.png",
+        "rain-31.png",
+        "rain-32.png",
+        "rain-33.png",
+        "rain-34.png",
+        "rain-35.png",
+        "rain-36.png",
+        "rain-37.png",
+        "rain-38.png",
+        "rain-39.png",
+        "rain-40.png",
+        "rain-41.png",
+        "rain-42.png",
+        "rain-43.png",
+        "rain-44.png",
+        "rain-45.png",
+        "rain-46.png",
+        "rain-47.png"
+      ]
+    },
+    {
+      "name": "lamp",
+      "files": [
+        "lamp-00.png",
+        "lamp-01.png",
+        "lamp-02.png",
+        "lamp-03.png"
+      ]
+    },
+    {
+      "name": "pendulum",
+      "files": [
+        "pendulum-00.png",
+        "pendulum-01.png",
+        "pendulum-02.png",
+        "pendulum-03.png",
+        "pendulum-04.png",
+        "pendulum-05.png",
+        "pendulum-06.png",
+        "pendulum-07.png",
+        "pendulum-08.png",
+        "pendulum-09.png",
+        "pendulum-10.png",
+        "pendulum-11.png",
+        "pendulum-12.png",
+        "pendulum-13.png",
+        "pendulum-14.png",
+        "pendulum-15.png",
+        "pendulum-16.png",
+        "pendulum-17.png",
+        "pendulum-18.png",
+        "pendulum-19.png",
+        "pendulum-20.png",
+        "pendulum-21.png",
+        "pendulum-22.png",
+        "pendulum-23.png"
+      ]
+    },
+    {
+      "name": "mouse",
+      "files": [
+        "mouse-00.png",
+        "mouse-01.png",
+        "mouse-02.png",
+        "mouse-03.png"
+      ]
+    },
+    {
+      "name": "sky",
+      "files": [
+        "sky-00.png",
+        "sky-01.png",
+        "sky-02.png",
+        "sky-03.png",
+        "sky-04.png",
+        "sky-05.png",
+        "sky-06.png",
+        "sky-07.png",
+        "sky-08.png",
+        "sky-09.png",
+        "sky-10.png",
+        "sky-11.png",
+        "sky-12.png",
+        "sky-13.png",
+        "sky-14.png",
+        "sky-15.png"
+      ]
+    },
+    {
+      "name": "mouse-away",
+      "files": [
+        "mouse-away-00.png",
+        "mouse-away-01.png",
+        "mouse-away-02.png",
+        "mouse-away-03.png"
+      ]
+    },
+    {
+      "name": "mouse-left",
+      "files": [
+        "mouse-left-00.png",
+        "mouse-left-01.png",
+        "mouse-left-02.png",
+        "mouse-left-03.png"
+      ]
+    },
+    {
+      "name": "mouse-away-left",
+      "files": [
+        "mouse-away-left-00.png",
+        "mouse-away-left-01.png",
+        "mouse-away-left-02.png",
+        "mouse-away-left-03.png"
+      ]
+    }
+  ]
+}

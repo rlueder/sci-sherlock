@@ -2,9 +2,20 @@
 
 For learning and contributing, start with the [art learning guide](../docs/art-learning-guide.md).
 
-**Current character reference:** [fixed Holmes master](reference/holmes-master-v1/README.md).
-Open `/art/reference/holmes-master-v1/` for the stronger in-room pipe puff, exact
-linked character cels, material ramps and pose-drift comparisons. This replaces
+**Latest room review:** [r9 — cabinet and atmosphere](studies/workshop-r9/README.md).
+Open `/art/studies/workshop-r9/` for corrected window-cabinet drawers, masked rain,
+lamp flicker, a switchable pendulum and three occasional mouse routes. It includes
+the current Holmes idles and editable perspective guides.
+
+**Latest idle review:** [r10 — fixed-model gestures](studies/holmes-r10/README.md).
+Open `/art/studies/holmes-r10/` for thinking, cap adjustment and pocket-watch retrieval,
+plus the approved puff. Unchanged character regions use exact linked cels; walking
+is deferred until the idle review is complete.
+
+**Current character reference:** [fixed Holmes master](reference/holmes-master-v2/README.md).
+Open `/art/reference/holmes-master-v2/` for the stronger in-room pipe puff, exact
+linked character cels and permanent waistcoat chain. V1 retains the material ramps
+and pose-drift comparisons. This replaces
 independent generated frames as the production method. The walk redraw is pending.
 
 **Earlier character review:** [r7 — anatomy-guided motion](studies/holmes-r7/README.md).

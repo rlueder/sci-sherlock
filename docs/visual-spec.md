@@ -171,7 +171,7 @@ Keep the deerstalker as the requested signature; use a black clay pipe for the
 workshop, period wool tailoring, high-waisted trousers and a waistcoat pocket-watch
 chain. Apply these consistently to all full-figure redraws and animation frames.
 
-**Identity consistency:** the [fixed character master](../art/reference/holmes-master-v1/README.md)
+**Identity consistency:** the [fixed character master](../art/reference/holmes-master-v2/README.md)
 pins the approved r6 neutral sprite and its exact colours. The r7 walk is too narrow
 in its first half, and separate generated poses vary in head shape and colour placement.
 Use the pinned master, named head-angle variants and material ramps for whole-pose
@@ -179,6 +179,27 @@ redraws. Exact linked cels preserve genuinely unchanged content; they do not jus
 grafting limbs onto an incompatible torso. The stronger layered pipe puff is the first
 proof: 26 timeline frames with zero changed opaque character pixels. Walk and gesture
 cleanup remain pending. Smoke must remain legible against the actual workshop background.
+
+The [r10 idle revision](../art/studies/holmes-r10/README.md) now supplies thinking, cap
+adjustment and watch retrieval for review, returning to the exact neutral sprite.
+Unchanged regions are locked and linked in Pixelorama; the affected chest and arm
+are coherent pose redraws. Master v2 includes the watch chain in neutral and puff assets. R10 adds actual chin
+contact, a cap lift without torso thinning and a downward glance at the watch.
+The puff is user-approved. Review the remaining idles
+before resuming walking, as requested; runtime integration remains separate.
+
+## Additional workshop atmosphere review
+
+The subsequent user request adds a perspective repair to the **cabinet under the
+window**, light exterior weather, lamp flicker, an occasional mouse from several
+starting points, and swinging grandfather-clock pendulum motion. The [r9 study](../art/studies/workshop-r9/README.md)
+delivers separate layers and editable sources for those additions. Its rain is
+clipped to the true glass panes at 16 native pixels/second; a 64-second sky-colour
+cycle moves through overcast and clear conditions. The mouse has direction-specific
+cels, three furniture-occluded routes and a route/mask inspection control.
+The foreground desk remains unchanged from r5. The requested pendulum motion is
+switchable in the review; resolve its active story state against the original
+stopped-clock clue before runtime integration. Clock hands remain fixed.
 
 ## Portraits
 

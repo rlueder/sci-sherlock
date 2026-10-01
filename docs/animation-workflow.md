@@ -1,6 +1,13 @@
 # Animation workflow: preserve v6, redraw the motion
 
-**Current character workflow:** use the [fixed Holmes master](../art/reference/holmes-master-v1/README.md).
+**Current idle review:** [r10](../art/studies/holmes-r10/README.md) implements thinking,
+cap adjustment and pocket-watch retrieval against the fixed model. Complete pose
+drawings supply the active arm, while named chin-contact, cap-lift and downward-head
+variants address the reviewed gestures. A shared torso plate preserves body width.
+Master v2 adds the permanent watch chain, including in the approved puff.
+User priority: settle these idle gestures first, walking last.
+
+**Current character workflow:** use the [fixed Holmes master](../art/reference/holmes-master-v2/README.md).
 The later r7 review found head, colour and body-width drift between independently
 generated poses. Pin the approved r6 neutral model; reuse exact linked cels for
 unchanged content and draw coherent pose variations with the master beside them.

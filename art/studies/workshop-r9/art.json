@@ -1,0 +1,854 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [
+    {
+      "number": 102,
+      "layers": [
+        {
+          "png": "export/workshop.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/mouse-occlusion.png",
+          "priority": 150
+        },
+        {
+          "png": "export/workshop-front.png",
+          "priority": 181
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "number": 260,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/rain-00.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-01.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-02.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-03.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-04.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-05.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-06.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-07.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-08.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-09.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-10.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-11.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-12.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-13.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-14.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-15.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-16.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-17.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-18.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-19.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-20.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-21.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-22.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-23.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-24.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-25.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-26.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-27.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-28.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-29.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-30.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-31.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-32.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-33.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-34.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-35.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-36.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-37.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-38.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-39.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-40.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-41.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-42.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-43.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-44.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-45.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-46.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/rain-47.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 261,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/lamp-00.png",
+              "anchor": [
+                10,
+                25
+              ]
+            },
+            {
+              "png": "export/lamp-01.png",
+              "anchor": [
+                10,
+                25
+              ]
+            },
+            {
+              "png": "export/lamp-02.png",
+              "anchor": [
+                10,
+                25
+              ]
+            },
+            {
+              "png": "export/lamp-03.png",
+              "anchor": [
+                10,
+                25
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 262,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/pendulum-00.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-01.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-02.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-03.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-04.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-05.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-06.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-07.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-08.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-09.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-10.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-11.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-12.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-13.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-14.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-15.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-16.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-17.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-18.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-19.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-20.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-21.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-22.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "export/pendulum-23.png",
+              "anchor": [
+                30,
+                136
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 263,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/mouse-00.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-01.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-02.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-03.png",
+              "anchor": [
+                10,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 264,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/sky-00.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-01.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-02.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-03.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-04.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-05.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-06.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-07.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-08.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-09.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-10.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-11.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-12.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-13.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-14.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/sky-15.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 265,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/mouse-away-00.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-away-01.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-away-02.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-away-03.png",
+              "anchor": [
+                10,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 266,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/mouse-left-00.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-left-01.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-left-02.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-left-03.png",
+              "anchor": [
+                10,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 267,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/mouse-away-left-00.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-away-left-01.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-away-left-02.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-away-left-03.png",
+              "anchor": [
+                10,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

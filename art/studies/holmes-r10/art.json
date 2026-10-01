@@ -1,0 +1,750 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [],
+  "views": [
+    {
+      "number": 206,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-21.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-22.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-23.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-24.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "../../reference/holmes-master-v2/export/puff-25.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/thinking-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-21.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-22.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-23.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-24.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/thinking-25.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/cap-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/cap-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/watch-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-21.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-22.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-23.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-24.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-25.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-26.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-27.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-28.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watch-29.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

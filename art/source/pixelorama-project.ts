@@ -38,6 +38,7 @@ export function pixeloramaProject(palette: string[], layers: string[], frames: P
   layers?: { locked?: boolean; visible?: boolean; linkAll?: boolean }[];
   currentLayer?: number;
   userData?: string;
+  fps?: number;
 } = {}) {
   const first = frames[0]![0]!;
   if (frames.some((f) => f.length !== layers.length || f.some((p) => p.width !== first.width || p.height !== first.height))) {
@@ -55,7 +56,7 @@ export function pixeloramaProject(palette: string[], layers: string[], frames: P
       ...(options.layers?.[i]?.linkAll ? { link_sets: [{ cels: frames.map((_, n) => n), hue: 0.5 }] } : {}),
     })),
     frames: frames.map((f) => ({ cels: f.map(() => ({ opacity: 1, z_index: 0 })), duration: 1 })),
-    tags: tags.map((t) => ({ ...t, color: "d6a875" })), fps: 8,
+    tags: tags.map((t) => ({ ...t, color: "d6a875" })), fps: options.fps ?? 8,
     current_frame: 0, current_layer: options.currentLayer ?? 0, license: "MIT", author_display_name: "sci-ts contributors",
     user_data: options.userData ?? "The Stopped Clocks - original art proof. Export at 1x with the project palette.",
   };

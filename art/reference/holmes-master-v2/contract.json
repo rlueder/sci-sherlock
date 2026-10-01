@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "status": "User-requested permanent waistcoat watch chain; all other reference pixels retained",
+  "source": "art/reference/holmes-master-v1/master.png",
+  "canvas": [
+    72,
+    120
+  ],
+  "anchor": [
+    36,
+    113
+  ],
+  "nativeHeight": 106,
+  "pixelAspect": 1.2,
+  "masterFileSha256": "5a753ffdfd37dd9534ff27a05fb23e5a179248945c5ce1f2488ebcd6b7720c60",
+  "paletteFileSha256": "482476221a219c0889b79fcc6b77ce81b3e3ecec66a02068ff790d4f613f48d6",
+  "headRect": [
+    24,
+    7,
+    24,
+    22
+  ],
+  "materialRamps": {
+    "navyWool": [
+      1,
+      2,
+      4,
+      7,
+      10,
+      12,
+      17
+    ],
+    "oxbloodWaistcoat": [
+      3,
+      6,
+      11,
+      13,
+      20
+    ],
+    "brownTweed": [
+      5,
+      9,
+      21,
+      29,
+      32,
+      39,
+      44
+    ],
+    "skin": [
+      16,
+      41,
+      45,
+      48,
+      50,
+      51,
+      52,
+      55,
+      61,
+      62
+    ],
+    "greyHair": [
+      7,
+      24,
+      40,
+      53
+    ],
+    "whiteLinen": [
+      53,
+      58,
+      60,
+      62,
+      63
+    ],
+    "blackPipeAndBoots": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      8
+    ],
+    "watchMetal": [
+      39,
+      48,
+      55,
+      61
+    ],
+    "smoke": [
+      53,
+      60,
+      62
+    ]
+  },
+  "rules": [
+    "Master pixels and palette are fixed; new approved identities require a versioned master",
+    "Reuse exact unchanged cels; only changed content belongs in separate cels",
+    "A changed head angle requires an explicit named head variant, not silent regeneration",
+    "Pose whole-body anatomy first, then draw costume volumes against this reference",
+    "No new colours from generation or automatic per-frame quantization",
+    "Width diagnostics are pose-dependent review aids, not automatic anatomy approval"
+  ],
+  "changedPixels": 9
+}

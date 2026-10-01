@@ -1,0 +1,21 @@
+/** User-requested permanent watch chain; preserve the approved model otherwise. */
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import {join} from 'node:path';
+import {Pixels} from '../../source/pixels.ts';
+import {loadIndexed,clone,enlarged,indexedGif} from '../../source/study-tools.ts';
+import {pixeloramaProject} from '../../source/pixelorama-project.ts';
+const here=fileURLToPath(new URL('.',import.meta.url)),v1=join(here,'../holmes-master-v1');
+for(const d of ['source','export','review'])mkdirSync(join(here,d),{recursive:true});
+const palette=JSON.parse(readFileSync(join(here,'palette.json'),'utf8')) as string[],old=loadIndexed(join(v1,'master.png'),palette),master=clone(old),chain=new Pixels(72,120);
+for(const [x,y,c]of [[38,47,55],[38,48,48],[38,49,48],[39,50,55],[40,51,55],[41,51,48],[42,50,48],[42,49,55],[42,48,48]]){assert.ok(old.data[y!*72+x!]!>=0);chain.dot(x!,y!,c!);}master.paste(chain,0,0);
+writeFileSync(join(here,'master.png'),master.png(palette));writeFileSync(join(here,'source/chain.png'),chain.png(palette));enlarged(join(here,'review/master.png'),master,palette,5);
+const contract={...JSON.parse(readFileSync(join(v1,'contract.json'),'utf8')),version:2,source:'art/reference/holmes-master-v1/master.png',status:'User-requested permanent waistcoat watch chain; all other reference pixels retained',masterFileSha256:createHash('sha256').update(master.png(palette)).digest('hex'),changedPixels:Array.from(master.data).filter((c,i)=>c!==old.data[i]).length};writeFileSync(join(here,'contract.json'),JSON.stringify(contract,null,2)+'\n');
+writeFileSync(join(here,'source/master.pxo'),pixeloramaProject(palette,['Original approved model — locked','Permanent watch chain'],[[old,chain]],[],{layers:[{locked:true},{}],currentLayer:1}));
+const frames=Array.from({length:26},(_,i)=>{const p=loadIndexed(join(v1,'export/puff-'+String(i).padStart(2,'0')+'.png'),palette);p.paste(chain,0,0);master.data.forEach((c,n)=>{if(c>=0)assert.equal(p.data[n],c);});writeFileSync(join(here,'export/puff-'+String(i).padStart(2,'0')+'.png'),p.png(palette));return p;});
+const effects=frames.map(p=>{const q=new Pixels(72,120);p.data.forEach((c,i)=>{if(master.data[i]!<0)q.data[i]=c;});return q;});
+writeFileSync(join(here,'source/fixed-puff.pxo'),pixeloramaProject(palette,['Fixed linked character with chain','Approved smoke'],effects.map(e=>[master,e]),[{name:'puff',from:1,to:26}],{layers:[{locked:true,linkAll:true},{}],currentLayer:1}));
+indexedGif(join(here,'review/puff.gif'),frames.map(p=>{const q=new Pixels(72,120,18);q.paste(p,0,0);return q;}),palette,4,13);
+console.log({version:2,permanentChainPixels:contract.changedPixels,puffBodyUnchanged:true});
