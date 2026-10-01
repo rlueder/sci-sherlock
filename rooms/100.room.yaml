@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../node_modules/sci-ts/packages/content/room.schema.json
+# 221B, the sitting room. Laid out for the stand-in picture (the wall down to y 120): the
+# floor, hotspots and positions move to the real art when picture 100 arrives.
+room: 100
+picture: 100
+hero:
+  at: [230, 172]
+walkable: [[10, 150], [310, 150], [310, 193], [10, 193]]
+features:
+  fire: { rect: [130, 82, 190, 120], sightAngle: 360 }
+  correspondence: { rect: [130, 60, 165, 74], sightAngle: 360 }
+  violin: { rect: [20, 70, 50, 110], sightAngle: 360 }
+  bench: { rect: [230, 78, 274, 120], sightAngle: 360 }
+  slipper: { rect: [194, 106, 208, 120], sightAngle: 360 }
+  window: { rect: [60, 20, 110, 90], sightAngle: 360 }
+  door: { rect: [280, 40, 316, 150], sightAngle: 360 }
+props:
+  mantelLens: { view: 223, at: [176, 76], sightAngle: 360 }
+  watson: { view: 205, at: [70, 172], sightAngle: 360 }
+  mrsHudson: { view: 202, at: [296, 162], moves: true, sightAngle: 360 }
+  toby: { view: 203, at: [298, 164], moves: true, sightAngle: 360 }
+characters:
+  watson: { name: Watson }
+  mrsHudson: { name: Mrs Hudson }
+  toby: { name: Toby }

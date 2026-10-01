@@ -18,6 +18,9 @@ props:
   # On the floor: drawn under anyone walking over them.
   filings: { view: 227, at: [225, 154], sightAngle: 360 }
   scratches: { view: 228, at: [242, 162], sightAngle: 360 }
+  watson: { view: 201, at: [280, 186], sightAngle: 360 }
+characters:
+  watson: { name: Watson }
 properties:
   lantern: { cycleSpeed: 10, fixPriority: 1, priority: 140 }
   clock: { cycleSpeed: 8, fixPriority: 1, priority: 151 }

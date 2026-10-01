@@ -1,0 +1,51 @@
+title: room.enter
+---
+<<if not $sawStreet>>
+Fog swallows the street. A hansom waits at the kerb, its lamps two blurs of light.
+<<set $sawStreet to true>>
+<<endif>>
+===
+
+title: room.look
+---
+Baker Street at night, or as much of it as the fog allows.
+===
+
+title: cab.look
+---
+A hansom, the horse steaming in the cold.
+===
+
+title: cab.do
+---
+<<walk hero 205 168>>
+Hero: Clerkenwell, cabby, and quickly.
+Watson: There's a sovereign in it if you can find the way in this.
+<<wait 1>>
+<<room 102>>
+===
+
+title: lamp.look
+---
+The gas lamp makes a small room of light in the fog.
+===
+
+title: door221.look
+---
+The door of 221B. Mrs Hudson's lamp still burns in the hall.
+===
+
+title: door221.do
+---
+Hero: No time for that now. Thorne has been gone a night already.
+===
+
+title: watson.look
+---
+Watson, collar up against the fog.
+===
+
+title: watson.talk
+---
+Watson: Clerkenwell at this hour. The cabby will want double.
+===

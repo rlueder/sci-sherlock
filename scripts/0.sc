@@ -1,4 +1,4 @@
-;;; Workshop art proof: the first playable slice of The Stopped Clocks.
+;;; The Stopped Clocks: Holmes, his voice, and the first room, 221B.
 (script 0)
 (include "system.sh")
 (public sherlock 0)
@@ -9,14 +9,10 @@
     (= ego holmes)
     (= heroTalker holmesVoice)
     (narrator y: 154 width: 294)
-    (inventory add: lens)
-    (self newRoom: 102)))
+    (self newRoom: 100)))
 
 (instance sherlock of Sherlock)
 (instance holmes of Ego
   (properties view 200 xStep 2 yStep 1 moveSpeed 2 cycleSpeed 8))
-;; Holmes's lens: view 250 (loop 0 the icon, loop 1 the cursor).
-(instance lens of InvItem
-  (properties view 250 verb 10 description "Holmes's lens, never far from his hand."))
 (instance holmesVoice of Talker
   (properties name "Holmes" y 154 width 294))
