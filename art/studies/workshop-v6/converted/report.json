@@ -1,0 +1,24 @@
+{
+  "nativeSize": [
+    320,
+    200
+  ],
+  "displaySize": [
+    960,
+    720
+  ],
+  "paletteEntries": 64,
+  "usedColours": 64,
+  "paletteUnchanged": true,
+  "accessoryEditRegion": [
+    135,
+    59,
+    158,
+    77
+  ],
+  "changedPixels": 221,
+  "unchangedPixelsOutsideRegion": true,
+  "dithering": false,
+  "sampling": "nearest neighbour, fixed v4 palette",
+  "importerValidated": true
+}
