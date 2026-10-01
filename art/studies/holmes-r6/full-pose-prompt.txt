@@ -1,0 +1,14 @@
+Use case: identity-preserve, complete full-figure redraw.
+Create a production key-pose sheet for the Sherlock Holmes character in the attached approved pixel-art references. Image 1 is the character identity/costume reference; image 2 establishes the game's pixel treatment and proportions.
+
+CRITICAL: redraw the ENTIRE character for each pose as one anatomically coherent figure. Do NOT attach new limbs onto a frozen torso. Redraw the shoulder girdle, upper arm, elbow, forearm, wrist and hand, rotate the torso and head appropriately, and redraw the coat sleeve and torso folds together. Exactly two arms, no detached limbs, no extra elbows. Natural adult proportions.
+
+Four complete full-body key poses in a clean 2 by 2 grid, equal cells, equal figure height, ample transparent padding; no labels, no borders, no background, no shadows, no props other than his pipe and watch. Reading order:
+1. Neutral resting Holmes, turned three-quarter toward the viewer while facing screen-right, one hand near his lapel and the other relaxed behind his back.
+2. Thinking: he raises one hand gently beneath his CHIN, fingers under the jaw, elbow naturally below and in front of the shoulder. A subtle whole-torso weight shift and coherent sleeve folds. Do not cover his cheek or nose.
+3. Adjusting the front brim of his deerstalker: elbow lifts naturally from its real shoulder socket, shoulder rises slightly, fingers lightly pinch the brim, wrist and forearm aligned; show the whole body reacting, not a stick arm pasted over the face.
+4. Checking a small brass pocket watch held at lower-chest height: head inclined down toward it, elbow comfortably bent close to his side, the watch hand relaxed, thin watch chain attached to his burgundy waistcoat.
+
+All four show the SAME Holmes: late 50s to early 60s with modest grey at the temples, lean angular face, brown deerstalker, small brown pipe, dark navy charcoal knee-length OVERCOAT, burgundy waistcoat, white collar, dark trousers and polished black boots. The overcoat reaches his knees and has weight, lapels and believable sleeves. Preserve the reference's elegant adult proportions and narrow head; not a caricature, not a young man. Maintain the same three-quarter view and overhead room-view angle on the whole figure, including shoes. No pure-profile legs under a three-quarter torso.
+
+Style: authentic low-resolution early-1990s point-and-click adventure pixel art, approximately a 105-pixel-tall character at native scale, enlarged as crisp chunky pixels. Restrained 12–18 character colours compatible with the reference: dark blue/charcoal cloth, muted burgundy, warm ochre skin, dull brown hat. Broad deliberate pixel clusters, no gradients, no painterly realism, no antialiased vector strokes, no outlines added around everything, no high-resolution micro-detail. This is a whole-pose anatomy pass to be reduced and palette-mapped for the game before animation. Transparent background.

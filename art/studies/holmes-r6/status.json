@@ -1,0 +1,13 @@
+{
+  "status": "Full-figure costume key poses under review; animation incomplete",
+  "supersedes": "r5 character method rejected for grafted-limb anatomy",
+  "source": "period-pose-source.png",
+  "brief": "../../../docs/holmes-costume.md",
+  "checks": "4 PNGs, 64 palette entries, manifest validated",
+  "pending": [
+    "whole-figure walk phase continuity",
+    "full-figure idle transitions",
+    "visual approval",
+    "engine integration"
+  ]
+}

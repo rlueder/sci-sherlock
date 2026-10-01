@@ -1,0 +1,13 @@
+Use case: identity-preserve complete-figure pixel-art animation.
+Reference image 1 is the corrected full-body Holmes model sheet. Make SIX COMPLETE full-figure frames of ONLY his CAP-ADJUSTMENT gesture, in a roomy 3 columns by 2 rows grid. Use its bottom-left cap pose and top-left resting pose as endpoints. Exact same lean older Holmes, brown deerstalker, pipe, burgundy waistcoat, navy knee-length overcoat, three-quarter screen-right orientation with torso toward the viewer, planted feet and natural adult anatomy. Every frame re-renders the WHOLE figure coherently: shoulder raises and rotates with the real arm, sleeve bunches at the elbow, lapel and upper torso respond. Never paste a limb onto a frozen torso.
+
+Reading-order frames:
+1 Rest: one hand near lapel, other rests behind his back.
+2 The lapel hand begins to rise toward his hat; elbow naturally lifts, head inclines a little.
+3 Fingers arrive at front hat brim; wrist relaxed and elbow comfortably bent.
+4 Small deliberate pinch adjusting the brim; tiny coordinated shoulder/head movement.
+5 Hand withdraws and lowers halfway toward his lapel; shoulder relaxes.
+6 Return to the same rest as frame 1.
+Only two arms, one continuous shoulder-elbow-wrist-hand chain on each side. Keep the other arm relaxed behind him. Feet planted with same perspective and weight. No change in height, face, coat length or camera between frames.
+
+Game-ready classic 1990s adventure pixel-art look, 106-pixel-tall character at native scale, visibly coarse restrained pixel clusters and 12–18 character colours matching the reference. No smoothing, no photographic detail, no fine microtexture. Fully transparent background, no labels, no borders, no floor, no shadows. Each cell must have generous clear padding so arms, hat, pipe and feet do not touch adjacent cells. All six entire figures the same size and baseline within their row.

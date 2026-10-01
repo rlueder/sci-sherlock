@@ -1,0 +1,28 @@
+{
+  "source": "art/production/workshop-r3/export/workshop.png",
+  "fillSource": "art/production/workshop-r3/hidden-surfaces-source.png",
+  "coordinates": [
+    [
+      152,
+      70
+    ],
+    [
+      154,
+      72
+    ],
+    [
+      155,
+      72
+    ],
+    [
+      155,
+      73
+    ],
+    [
+      156,
+      73
+    ]
+  ],
+  "changedBackgroundPixels": 5,
+  "characterChanged": false
+}

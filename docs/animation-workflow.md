@@ -1,5 +1,13 @@
 # Animation workflow: preserve v6, redraw the motion
 
+**Current character workflow:** use the [fixed Holmes master](../art/reference/holmes-master-v1/README.md).
+The later r7 review found head, colour and body-width drift between independently
+generated poses. Pin the approved r6 neutral model; reuse exact linked cels for
+unchanged content and draw coherent pose variations with the master beside them.
+The new layered puff preserves every character pixel and makes the smoke brighter
+against the room. Walking and gesture identity cleanup remain pending. Earlier
+generation methods below are recorded experiments, not the current production rule.
+
 For setup, vocabulary, exercises and reproducible examples, start with the
 [art learning guide](art-learning-guide.md). This page records the specific methods
 and review decisions for the workshop.
@@ -72,7 +80,9 @@ transfer of weight, foot roll and coordinated clothing movement. Do not keep tun
 the same fragment rotations as the final animation method.
 
 1. Keep v6 beside the animation as the model sheet: same character height, head/body
-   proportions, costume, palette, hat and pipe. Preserve the exact standing cel.
+   proportions, palette and signature. Follow the [costume brief](holmes-costume.md).
+   Redraw the whole standing figure coherently when needed; do not freeze the old
+   torso and graft limbs onto it.
 2. Rough the two contact poses, then down, passing and up poses for each half of the
    stride. Start with an eight-pose working study; this is a planning choice, not a
    silent change to the engine's existing six-cel convention.
@@ -117,4 +127,15 @@ The [clock perspective study](../art/studies/clock-perspective-r4/README.md) now
 demonstrates the Blender construction: packed editable scene, eight rigid hinge poses,
 an indexed-pixel export, Pixelorama master and interactive construction overlay. It is
 a separate study; final side drawing, visual approval and integration remain pending.
-The Holmes walk still needs the drawn pose workflow above.
+The [r5 workshop study](../art/studies/workshop-r5/README.md) retains a rejected
+character experiment. Even with a projected leg guide, attaching limbs to an old
+torso produced bad anatomy. The [r6 replacement](../art/studies/holmes-r6/README.md)
+starts with complete re-rendered figures. Review whole-pose anatomy and costume,
+then draw transitions; numerical guide accuracy cannot substitute for that review.
+
+The r6 costume poses were subsequently approved. The [r7 motion study](../art/studies/holmes-r7/README.md)
+maps major joints on those figures before rendering complete animation frames. It
+includes editable 2D skeleton/volume guides, four idle loops, a six-cel walk study,
+per-frame joint annotations and native Pixelorama export verification. The walk's
+foot contact and the watch's pocket transitions remain production work; do not treat
+file validation as motion approval.

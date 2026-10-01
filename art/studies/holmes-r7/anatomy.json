@@ -1,0 +1,947 @@
+{
+  "status": "Artist-estimated projected drawing guides; hidden shoulders, hips and knees are inferred, not measured 3D joints",
+  "canvas": [
+    72,
+    120
+  ],
+  "anchor": [
+    36,
+    113
+  ],
+  "bones": [
+    [
+      "head",
+      "neck"
+    ],
+    [
+      "neck",
+      "pelvis"
+    ],
+    [
+      "nearShoulder",
+      "farShoulder"
+    ],
+    [
+      "nearShoulder",
+      "nearElbow"
+    ],
+    [
+      "nearElbow",
+      "nearWrist"
+    ],
+    [
+      "farShoulder",
+      "farElbow"
+    ],
+    [
+      "farElbow",
+      "farWrist"
+    ],
+    [
+      "nearHip",
+      "farHip"
+    ],
+    [
+      "nearHip",
+      "nearKnee"
+    ],
+    [
+      "nearKnee",
+      "nearAnkle"
+    ],
+    [
+      "nearAnkle",
+      "nearToe"
+    ],
+    [
+      "farHip",
+      "farKnee"
+    ],
+    [
+      "farKnee",
+      "farAnkle"
+    ],
+    [
+      "farAnkle",
+      "farToe"
+    ]
+  ],
+  "approvedPoses": {
+    "neutral": {
+      "head": [
+        36,
+        20
+      ],
+      "neck": [
+        34,
+        27
+      ],
+      "pelvis": [
+        34,
+        61
+      ],
+      "nearShoulder": [
+        28,
+        31
+      ],
+      "farShoulder": [
+        40,
+        31
+      ],
+      "nearElbow": [
+        19,
+        43
+      ],
+      "nearWrist": [
+        25,
+        51
+      ],
+      "farElbow": [
+        47,
+        42
+      ],
+      "farWrist": [
+        42,
+        39
+      ],
+      "nearHip": [
+        30,
+        62
+      ],
+      "farHip": [
+        39,
+        61
+      ],
+      "nearKnee": [
+        29,
+        85
+      ],
+      "farKnee": [
+        39,
+        84
+      ],
+      "nearAnkle": [
+        29,
+        108
+      ],
+      "farAnkle": [
+        42,
+        105
+      ],
+      "nearToe": [
+        33,
+        112
+      ],
+      "farToe": [
+        49,
+        107
+      ]
+    },
+    "thinking": {
+      "head": [
+        36,
+        20
+      ],
+      "neck": [
+        34,
+        27
+      ],
+      "pelvis": [
+        34,
+        61
+      ],
+      "nearShoulder": [
+        28,
+        31
+      ],
+      "farShoulder": [
+        40,
+        31
+      ],
+      "nearElbow": [
+        24,
+        45
+      ],
+      "nearWrist": [
+        39,
+        44
+      ],
+      "farElbow": [
+        45,
+        42
+      ],
+      "farWrist": [
+        42,
+        28
+      ],
+      "nearHip": [
+        30,
+        62
+      ],
+      "farHip": [
+        39,
+        61
+      ],
+      "nearKnee": [
+        29,
+        85
+      ],
+      "farKnee": [
+        39,
+        84
+      ],
+      "nearAnkle": [
+        29,
+        108
+      ],
+      "farAnkle": [
+        42,
+        105
+      ],
+      "nearToe": [
+        33,
+        112
+      ],
+      "farToe": [
+        49,
+        107
+      ]
+    },
+    "cap": {
+      "head": [
+        36,
+        20
+      ],
+      "neck": [
+        34,
+        27
+      ],
+      "pelvis": [
+        34,
+        61
+      ],
+      "nearShoulder": [
+        28,
+        31
+      ],
+      "farShoulder": [
+        40,
+        31
+      ],
+      "nearElbow": [
+        19,
+        43
+      ],
+      "nearWrist": [
+        25,
+        51
+      ],
+      "farElbow": [
+        50,
+        34
+      ],
+      "farWrist": [
+        47,
+        20
+      ],
+      "nearHip": [
+        30,
+        62
+      ],
+      "farHip": [
+        39,
+        61
+      ],
+      "nearKnee": [
+        29,
+        85
+      ],
+      "farKnee": [
+        39,
+        84
+      ],
+      "nearAnkle": [
+        29,
+        108
+      ],
+      "farAnkle": [
+        42,
+        105
+      ],
+      "nearToe": [
+        33,
+        112
+      ],
+      "farToe": [
+        49,
+        107
+      ]
+    },
+    "watch": {
+      "head": [
+        37,
+        22
+      ],
+      "neck": [
+        34,
+        27
+      ],
+      "pelvis": [
+        34,
+        61
+      ],
+      "nearShoulder": [
+        28,
+        31
+      ],
+      "farShoulder": [
+        40,
+        31
+      ],
+      "nearElbow": [
+        19,
+        43
+      ],
+      "nearWrist": [
+        25,
+        51
+      ],
+      "farElbow": [
+        45,
+        45
+      ],
+      "farWrist": [
+        52,
+        39
+      ],
+      "nearHip": [
+        30,
+        62
+      ],
+      "farHip": [
+        39,
+        61
+      ],
+      "nearKnee": [
+        29,
+        85
+      ],
+      "farKnee": [
+        39,
+        84
+      ],
+      "nearAnkle": [
+        29,
+        108
+      ],
+      "farAnkle": [
+        42,
+        105
+      ],
+      "nearToe": [
+        33,
+        112
+      ],
+      "farToe": [
+        49,
+        107
+      ]
+    }
+  },
+  "walk": [
+    {
+      "phase": "contact A",
+      "joints": {
+        "head": [
+          36,
+          20
+        ],
+        "neck": [
+          34,
+          27
+        ],
+        "pelvis": [
+          34,
+          61
+        ],
+        "nearShoulder": [
+          28,
+          31
+        ],
+        "farShoulder": [
+          40,
+          31
+        ],
+        "nearElbow": [
+          19,
+          43
+        ],
+        "nearWrist": [
+          25,
+          51
+        ],
+        "farElbow": [
+          47,
+          42
+        ],
+        "farWrist": [
+          42,
+          39
+        ],
+        "nearHip": [
+          30,
+          62
+        ],
+        "farHip": [
+          39,
+          61
+        ],
+        "nearKnee": [
+          39.48542689832621,
+          84.04601271333458
+        ],
+        "farKnee": [
+          38.245602560061286,
+          83.48734943257239
+        ],
+        "nearAnkle": [
+          38,
+          108
+        ],
+        "farAnkle": [
+          29,
+          104
+        ],
+        "nearToe": [
+          44,
+          110
+        ],
+        "farToe": [
+          35,
+          106
+        ]
+      }
+    },
+    {
+      "phase": "down A",
+      "joints": {
+        "head": [
+          36,
+          21
+        ],
+        "neck": [
+          34,
+          28
+        ],
+        "pelvis": [
+          34,
+          62
+        ],
+        "nearShoulder": [
+          28,
+          32
+        ],
+        "farShoulder": [
+          40,
+          32
+        ],
+        "nearElbow": [
+          19,
+          44
+        ],
+        "nearWrist": [
+          25,
+          52
+        ],
+        "farElbow": [
+          47,
+          43
+        ],
+        "farWrist": [
+          42,
+          40
+        ],
+        "nearHip": [
+          30,
+          63
+        ],
+        "farHip": [
+          39,
+          62
+        ],
+        "nearKnee": [
+          40.07679183766829,
+          84.78206294776282
+        ],
+        "farKnee": [
+          46.690874505290076,
+          83.14474992389079
+        ],
+        "nearAnkle": [
+          34,
+          108
+        ],
+        "farAnkle": [
+          33,
+          101
+        ],
+        "nearToe": [
+          40,
+          110
+        ],
+        "farToe": [
+          39,
+          103
+        ]
+      }
+    },
+    {
+      "phase": "passing A",
+      "joints": {
+        "head": [
+          36,
+          20
+        ],
+        "neck": [
+          34,
+          27
+        ],
+        "pelvis": [
+          34,
+          61
+        ],
+        "nearShoulder": [
+          28,
+          31
+        ],
+        "farShoulder": [
+          40,
+          31
+        ],
+        "nearElbow": [
+          19,
+          43
+        ],
+        "nearWrist": [
+          25,
+          51
+        ],
+        "farElbow": [
+          47,
+          42
+        ],
+        "farWrist": [
+          42,
+          39
+        ],
+        "nearHip": [
+          30,
+          62
+        ],
+        "farHip": [
+          39,
+          61
+        ],
+        "nearKnee": [
+          36.855654600401046,
+          85
+        ],
+        "farKnee": [
+          49.99381171008686,
+          80.63125324789931
+        ],
+        "nearAnkle": [
+          30,
+          108
+        ],
+        "farAnkle": [
+          37,
+          99
+        ],
+        "nearToe": [
+          36,
+          110
+        ],
+        "farToe": [
+          43,
+          101
+        ]
+      }
+    },
+    {
+      "phase": "up A",
+      "joints": {
+        "head": [
+          36,
+          19
+        ],
+        "neck": [
+          34,
+          26
+        ],
+        "pelvis": [
+          34,
+          60
+        ],
+        "nearShoulder": [
+          28,
+          30
+        ],
+        "farShoulder": [
+          40,
+          30
+        ],
+        "nearElbow": [
+          19,
+          42
+        ],
+        "nearWrist": [
+          25,
+          50
+        ],
+        "farElbow": [
+          47,
+          41
+        ],
+        "farWrist": [
+          42,
+          38
+        ],
+        "nearHip": [
+          30,
+          61
+        ],
+        "farHip": [
+          39,
+          60
+        ],
+        "nearKnee": [
+          32.428089602536275,
+          84.87685868957756
+        ],
+        "farKnee": [
+          50.012595128415185,
+          79.62072242649607
+        ],
+        "nearAnkle": [
+          26,
+          108
+        ],
+        "farAnkle": [
+          43,
+          101
+        ],
+        "nearToe": [
+          32,
+          110
+        ],
+        "farToe": [
+          49,
+          103
+        ]
+      }
+    },
+    {
+      "phase": "contact B",
+      "joints": {
+        "head": [
+          36,
+          20
+        ],
+        "neck": [
+          34,
+          27
+        ],
+        "pelvis": [
+          34,
+          61
+        ],
+        "nearShoulder": [
+          28,
+          31
+        ],
+        "farShoulder": [
+          40,
+          31
+        ],
+        "nearElbow": [
+          19,
+          43
+        ],
+        "nearWrist": [
+          25,
+          51
+        ],
+        "farElbow": [
+          47,
+          42
+        ],
+        "farWrist": [
+          42,
+          39
+        ],
+        "nearHip": [
+          30,
+          62
+        ],
+        "farHip": [
+          39,
+          61
+        ],
+        "nearKnee": [
+          31.48542689832621,
+          85.95398728666542
+        ],
+        "farKnee": [
+          47.85931437855466,
+          81.682421249504
+        ],
+        "nearAnkle": [
+          22,
+          108
+        ],
+        "farAnkle": [
+          45,
+          104
+        ],
+        "nearToe": [
+          28,
+          110
+        ],
+        "farToe": [
+          51,
+          106
+        ]
+      }
+    },
+    {
+      "phase": "down B",
+      "joints": {
+        "head": [
+          36,
+          21
+        ],
+        "neck": [
+          34,
+          28
+        ],
+        "pelvis": [
+          34,
+          62
+        ],
+        "nearShoulder": [
+          28,
+          32
+        ],
+        "farShoulder": [
+          40,
+          32
+        ],
+        "nearElbow": [
+          19,
+          44
+        ],
+        "nearWrist": [
+          25,
+          52
+        ],
+        "farElbow": [
+          47,
+          43
+        ],
+        "farWrist": [
+          42,
+          40
+        ],
+        "nearHip": [
+          30,
+          63
+        ],
+        "farHip": [
+          39,
+          62
+        ],
+        "nearKnee": [
+          39.39396646958874,
+          85.08513966377036
+        ],
+        "farKnee": [
+          48.006537204625346,
+          82.61873632358927
+        ],
+        "nearAnkle": [
+          26,
+          105
+        ],
+        "farAnkle": [
+          41,
+          104
+        ],
+        "nearToe": [
+          32,
+          107
+        ],
+        "farToe": [
+          47,
+          106
+        ]
+      }
+    },
+    {
+      "phase": "passing B",
+      "joints": {
+        "head": [
+          36,
+          20
+        ],
+        "neck": [
+          34,
+          27
+        ],
+        "pelvis": [
+          34,
+          61
+        ],
+        "nearShoulder": [
+          28,
+          31
+        ],
+        "farShoulder": [
+          40,
+          31
+        ],
+        "nearElbow": [
+          19,
+          43
+        ],
+        "nearWrist": [
+          25,
+          51
+        ],
+        "farElbow": [
+          47,
+          42
+        ],
+        "farWrist": [
+          42,
+          39
+        ],
+        "nearHip": [
+          30,
+          62
+        ],
+        "farHip": [
+          39,
+          61
+        ],
+        "nearKnee": [
+          42.479983974348684,
+          82.5
+        ],
+        "farKnee": [
+          44.550357055147366,
+          82.80466777000686
+        ],
+        "nearAnkle": [
+          30,
+          103
+        ],
+        "farAnkle": [
+          37,
+          104
+        ],
+        "nearToe": [
+          36,
+          105
+        ],
+        "farToe": [
+          43,
+          106
+        ]
+      }
+    },
+    {
+      "phase": "up B",
+      "joints": {
+        "head": [
+          36,
+          19
+        ],
+        "neck": [
+          34,
+          26
+        ],
+        "pelvis": [
+          34,
+          60
+        ],
+        "nearShoulder": [
+          28,
+          30
+        ],
+        "farShoulder": [
+          40,
+          30
+        ],
+        "nearElbow": [
+          19,
+          42
+        ],
+        "nearWrist": [
+          25,
+          50
+        ],
+        "farElbow": [
+          47,
+          41
+        ],
+        "farWrist": [
+          42,
+          38
+        ],
+        "nearHip": [
+          30,
+          61
+        ],
+        "farHip": [
+          39,
+          60
+        ],
+        "nearKnee": [
+          42.02689243417997,
+          81.76906012261182
+        ],
+        "farKnee": [
+          39.606676252488384,
+          82.4918194889757
+        ],
+        "nearAnkle": [
+          36,
+          105
+        ],
+        "farAnkle": [
+          33,
+          104
+        ],
+        "nearToe": [
+          42,
+          107
+        ],
+        "farToe": [
+          39,
+          106
+        ]
+      }
+    }
+  ],
+  "guideColours": {
+    "near": "#58d9e6",
+    "far": "#ffb45e",
+    "joints": "#e9eed8"
+  },
+  "notes": [
+    "Guide does not deform the sprite",
+    "Guide-only thigh/shin lengths: near 24px, far 22.5px in projected canvas space",
+    "Near/far offset represents camera depth; perspective is not a profile leg swap"
+  ]
+}

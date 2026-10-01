@@ -1,0 +1,9 @@
+asset,creator,source,license,tools,notes
+desk,sci-sherlock contributors,../../approved/workshop-v6/workshop-320x200.png;build-desk.py;export-study.ts,MIT,Blender 4.5.14 LTS;TypeScript;Pixelorama 1.2.3,Local geometric correction using original textures
+holmes-walk,sci-sherlock contributors,../../production/workshop-r3/export/holmes-east-00.png;build-motion.py;export-study.ts,MIT,Blender 4.5.14 LTS;TypeScript;Pixelorama 1.2.3,Three-quarter leg construction and native trouser drawing; articulated overcoat; original upper-body pixels
+holmes-idles,sci-sherlock contributors,../../production/workshop-r3/export/holmes-east-00.png;build-idles.ts,MIT,TypeScript;Pixelorama 1.2.3,Native-pixel pipe puff and gesture studies; no new AI generation
+clock,sci-sherlock contributors,../clock-perspective-r4/README.md,MIT,Blender 4.5.14 LTS;TypeScript;Pixelorama 1.2.3,Reused rigid hinge study
+lantern,sci-sherlock contributors,../../production/workshop-r3/README.md,MIT,TypeScript;Pixelorama 1.2.3,Reused original-pixel lantern states
+filings-scratches-lens,sci-sherlock contributors,export-study.ts,MIT,TypeScript;Pixelorama 1.2.3,Separate indexed clue states and lens icon/cursor
+dial,sci-sherlock contributors,../../source/production-r2.ts;../../export/dial-inspection.png,MIT,TypeScript;Pixelorama 1.2.3,Reused 3:17 inspection illustration
+reference-and-hidden-surfaces,sci-sherlock contributors with OpenAI ImageGen,../../approved/workshop-v6/README.md;../../production/workshop-r3/README.md,MIT,Earlier OpenAI ImageGen sources;TypeScript,Earlier generated source provenance retained; no model call needed to reproduce this pass

@@ -1,0 +1,64 @@
+{
+  "status": "Four whole-figure key poses, not animation loops",
+  "source": [
+    1024,
+    1536
+  ],
+  "names": [
+    "neutral",
+    "thinking",
+    "cap",
+    "watch"
+  ],
+  "boxes": [
+    {
+      "name": "neutral",
+      "ox": 0,
+      "oy": 0,
+      "left": 177,
+      "right": 415,
+      "top": 27,
+      "bottom": 741,
+      "anchorX": 312.5
+    },
+    {
+      "name": "thinking",
+      "ox": 512,
+      "oy": 0,
+      "left": 111,
+      "right": 327,
+      "top": 27,
+      "bottom": 741,
+      "anchorX": 227
+    },
+    {
+      "name": "cap",
+      "ox": 0,
+      "oy": 768,
+      "left": 174,
+      "right": 467,
+      "top": 6,
+      "bottom": 725,
+      "anchorX": 314
+    },
+    {
+      "name": "watch",
+      "ox": 512,
+      "oy": 768,
+      "left": 82,
+      "right": 367,
+      "top": 17,
+      "bottom": 725,
+      "anchorX": 233
+    }
+  ],
+  "uniformScale": 0.14825174825174825,
+  "neutralTargetHeight": 106,
+  "canvas": [
+    72,
+    120
+  ],
+  "binaryAlphaThreshold": 200,
+  "paletteEntries": 64,
+  "method": "Nearest sampling and palette mapping of each complete figure. No limb grafting, torso reuse or pose interpolation."
+}

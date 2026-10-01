@@ -1,0 +1,725 @@
+{
+  "masterFileSha256": "b8e7aa36ccd3daf6f8378fcb2d79b79071dcc609ce4b3b4d19bb5d6c25156913",
+  "masterPaletteIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15,
+    16,
+    17,
+    20,
+    21,
+    22,
+    23,
+    24,
+    29,
+    30,
+    32,
+    34,
+    39,
+    40,
+    41,
+    44,
+    45,
+    47,
+    48,
+    50,
+    51,
+    52,
+    53,
+    55,
+    58,
+    60,
+    61,
+    62,
+    63
+  ],
+  "masterWidths": {
+    "shoulders": 26,
+    "chest": 33.5,
+    "waist": 25.3,
+    "hips": 25.8
+  },
+  "note": "Whole-silhouette band widths include sleeves and are pose-dependent. Head differences use best integer translation only; intentional tilts/occlusion must be reviewed as variants. Diagnostics do not certify anatomy.",
+  "candidates": [
+    {
+      "name": "puff key 0",
+      "widths": {
+        "shoulders": 26.2,
+        "chest": 34.6,
+        "waist": 26.4,
+        "hips": 27
+      },
+      "headDifference": {
+        "changed": 204,
+        "dx": 0,
+        "dy": 1
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 31,
+          "colour": "#844225"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        },
+        {
+          "index": 43,
+          "colour": "#51629a"
+        },
+        {
+          "index": 18,
+          "colour": "#303d36"
+        }
+      ]
+    },
+    {
+      "name": "puff key 1",
+      "widths": {
+        "shoulders": 26.2,
+        "chest": 34.7,
+        "waist": 26.3,
+        "hips": 27
+      },
+      "headDifference": {
+        "changed": 196,
+        "dx": 0,
+        "dy": 1
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 31,
+          "colour": "#844225"
+        },
+        {
+          "index": 18,
+          "colour": "#303d36"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        }
+      ]
+    },
+    {
+      "name": "puff key 2",
+      "widths": {
+        "shoulders": 26.5,
+        "chest": 34.8,
+        "waist": 26,
+        "hips": 27.2
+      },
+      "headDifference": {
+        "changed": 208,
+        "dx": 0,
+        "dy": 1
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 18,
+          "colour": "#303d36"
+        },
+        {
+          "index": 35,
+          "colour": "#924423"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        }
+      ]
+    },
+    {
+      "name": "puff key 3",
+      "widths": {
+        "shoulders": 26.6,
+        "chest": 34.8,
+        "waist": 26,
+        "hips": 27.2
+      },
+      "headDifference": {
+        "changed": 217,
+        "dx": 0,
+        "dy": 1
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 18,
+          "colour": "#303d36"
+        }
+      ]
+    },
+    {
+      "name": "thinking key 0",
+      "widths": {
+        "shoulders": 26.5,
+        "chest": 34.2,
+        "waist": 25.3,
+        "hips": 26.8
+      },
+      "headDifference": {
+        "changed": 218,
+        "dx": 1,
+        "dy": 0
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 18,
+          "colour": "#303d36"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        },
+        {
+          "index": 36,
+          "colour": "#5b5b43"
+        }
+      ]
+    },
+    {
+      "name": "thinking key 1",
+      "widths": {
+        "shoulders": 27.2,
+        "chest": 27.1,
+        "waist": 21.7,
+        "hips": 26.1
+      },
+      "headDifference": {
+        "changed": 225,
+        "dx": 0,
+        "dy": 0
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 18,
+          "colour": "#303d36"
+        },
+        {
+          "index": 31,
+          "colour": "#844225"
+        },
+        {
+          "index": 35,
+          "colour": "#924423"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        },
+        {
+          "index": 33,
+          "colour": "#4e5a47"
+        }
+      ]
+    },
+    {
+      "name": "thinking key 2",
+      "widths": {
+        "shoulders": 27.7,
+        "chest": 25.1,
+        "waist": 22.2,
+        "hips": 26.6
+      },
+      "headDifference": {
+        "changed": 257,
+        "dx": 1,
+        "dy": 1
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 18,
+          "colour": "#303d36"
+        },
+        {
+          "index": 36,
+          "colour": "#5b5b43"
+        },
+        {
+          "index": 31,
+          "colour": "#844225"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        },
+        {
+          "index": 35,
+          "colour": "#924423"
+        }
+      ]
+    },
+    {
+      "name": "thinking key 3",
+      "widths": {
+        "shoulders": 28,
+        "chest": 25.9,
+        "waist": 21.7,
+        "hips": 26.2
+      },
+      "headDifference": {
+        "changed": 253,
+        "dx": 1,
+        "dy": 0
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 35,
+          "colour": "#924423"
+        },
+        {
+          "index": 31,
+          "colour": "#844225"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        },
+        {
+          "index": 18,
+          "colour": "#303d36"
+        }
+      ]
+    },
+    {
+      "name": "cap key 0",
+      "widths": {
+        "shoulders": 26.4,
+        "chest": 33.8,
+        "waist": 25.3,
+        "hips": 25.9
+      },
+      "headDifference": {
+        "changed": 211,
+        "dx": 1,
+        "dy": 0
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 28,
+          "colour": "#753a20"
+        },
+        {
+          "index": 18,
+          "colour": "#303d36"
+        }
+      ]
+    },
+    {
+      "name": "cap key 1",
+      "widths": {
+        "shoulders": 29,
+        "chest": 32.5,
+        "waist": 25.3,
+        "hips": 26
+      },
+      "headDifference": {
+        "changed": 228,
+        "dx": 0,
+        "dy": 0
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 35,
+          "colour": "#924423"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        },
+        {
+          "index": 37,
+          "colour": "#9d4523"
+        },
+        {
+          "index": 18,
+          "colour": "#303d36"
+        }
+      ]
+    },
+    {
+      "name": "cap key 2",
+      "widths": {
+        "shoulders": 35.7,
+        "chest": 30.8,
+        "waist": 27.2,
+        "hips": 28.1
+      },
+      "headDifference": {
+        "changed": 234,
+        "dx": 1,
+        "dy": 0
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 31,
+          "colour": "#844225"
+        },
+        {
+          "index": 35,
+          "colour": "#924423"
+        },
+        {
+          "index": 37,
+          "colour": "#9d4523"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        }
+      ]
+    },
+    {
+      "name": "cap key 3",
+      "widths": {
+        "shoulders": 36.5,
+        "chest": 30.7,
+        "waist": 26.9,
+        "hips": 27.6
+      },
+      "headDifference": {
+        "changed": 247,
+        "dx": 1,
+        "dy": 0
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 31,
+          "colour": "#844225"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        }
+      ]
+    },
+    {
+      "name": "watch key 0",
+      "widths": {
+        "shoulders": 25.9,
+        "chest": 33.9,
+        "waist": 26.9,
+        "hips": 26.3
+      },
+      "headDifference": {
+        "changed": 213,
+        "dx": 0,
+        "dy": 0
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 18,
+          "colour": "#303d36"
+        },
+        {
+          "index": 35,
+          "colour": "#924423"
+        },
+        {
+          "index": 31,
+          "colour": "#844225"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        }
+      ]
+    },
+    {
+      "name": "watch key 1",
+      "widths": {
+        "shoulders": 29.7,
+        "chest": 36,
+        "waist": 25.8,
+        "hips": 27.4
+      },
+      "headDifference": {
+        "changed": 244,
+        "dx": 1,
+        "dy": 0
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 37,
+          "colour": "#9d4523"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        },
+        {
+          "index": 35,
+          "colour": "#924423"
+        },
+        {
+          "index": 31,
+          "colour": "#844225"
+        }
+      ]
+    },
+    {
+      "name": "watch key 2",
+      "widths": {
+        "shoulders": 35.7,
+        "chest": 35.8,
+        "waist": 26.6,
+        "hips": 28
+      },
+      "headDifference": {
+        "changed": 259,
+        "dx": 1,
+        "dy": 0
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 36,
+          "colour": "#5b5b43"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        },
+        {
+          "index": 18,
+          "colour": "#303d36"
+        },
+        {
+          "index": 33,
+          "colour": "#4e5a47"
+        }
+      ]
+    },
+    {
+      "name": "watch key 3",
+      "widths": {
+        "shoulders": 35.8,
+        "chest": 35.6,
+        "waist": 26.8,
+        "hips": 28.1
+      },
+      "headDifference": {
+        "changed": 273,
+        "dx": 1,
+        "dy": 0
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 37,
+          "colour": "#9d4523"
+        },
+        {
+          "index": 31,
+          "colour": "#844225"
+        },
+        {
+          "index": 18,
+          "colour": "#303d36"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        }
+      ]
+    },
+    {
+      "name": "walk cel 0",
+      "widths": {
+        "shoulders": 25.3,
+        "chest": 27.8,
+        "waist": 20.3,
+        "hips": 23
+      },
+      "headDifference": {
+        "changed": 215,
+        "dx": 1,
+        "dy": 0
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 18,
+          "colour": "#303d36"
+        },
+        {
+          "index": 35,
+          "colour": "#924423"
+        },
+        {
+          "index": 31,
+          "colour": "#844225"
+        }
+      ]
+    },
+    {
+      "name": "walk cel 1",
+      "widths": {
+        "shoulders": 24.5,
+        "chest": 28.5,
+        "waist": 20.2,
+        "hips": 22.3
+      },
+      "headDifference": {
+        "changed": 210,
+        "dx": 1,
+        "dy": 0
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 35,
+          "colour": "#924423"
+        },
+        {
+          "index": 18,
+          "colour": "#303d36"
+        },
+        {
+          "index": 31,
+          "colour": "#844225"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        }
+      ]
+    },
+    {
+      "name": "walk cel 2",
+      "widths": {
+        "shoulders": 25.3,
+        "chest": 29.5,
+        "waist": 21.9,
+        "hips": 26.8
+      },
+      "headDifference": {
+        "changed": 189,
+        "dx": 1,
+        "dy": 0
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 18,
+          "colour": "#303d36"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        },
+        {
+          "index": 31,
+          "colour": "#844225"
+        }
+      ]
+    },
+    {
+      "name": "walk cel 3",
+      "widths": {
+        "shoulders": 25.1,
+        "chest": 33.1,
+        "waist": 24.2,
+        "hips": 26.3
+      },
+      "headDifference": {
+        "changed": 231,
+        "dx": 2,
+        "dy": 1
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 18,
+          "colour": "#303d36"
+        },
+        {
+          "index": 35,
+          "colour": "#924423"
+        },
+        {
+          "index": 31,
+          "colour": "#844225"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        }
+      ]
+    },
+    {
+      "name": "walk cel 4",
+      "widths": {
+        "shoulders": 24.1,
+        "chest": 32.7,
+        "waist": 24.8,
+        "hips": 25.5
+      },
+      "headDifference": {
+        "changed": 237,
+        "dx": 2,
+        "dy": 1
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 18,
+          "colour": "#303d36"
+        },
+        {
+          "index": 31,
+          "colour": "#844225"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        },
+        {
+          "index": 33,
+          "colour": "#4e5a47"
+        },
+        {
+          "index": 37,
+          "colour": "#9d4523"
+        }
+      ]
+    },
+    {
+      "name": "walk cel 5",
+      "widths": {
+        "shoulders": 26.8,
+        "chest": 35.6,
+        "waist": 26,
+        "hips": 27.2
+      },
+      "headDifference": {
+        "changed": 234,
+        "dx": 2,
+        "dy": 1
+      },
+      "outsideMasterPalette": [
+        {
+          "index": 31,
+          "colour": "#844225"
+        },
+        {
+          "index": 28,
+          "colour": "#753a20"
+        },
+        {
+          "index": 35,
+          "colour": "#924423"
+        },
+        {
+          "index": 18,
+          "colour": "#303d36"
+        }
+      ]
+    }
+  ]
+}

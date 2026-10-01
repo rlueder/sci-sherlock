@@ -34,18 +34,30 @@ function zip(files: [string, Uint8Array][]) {
 }
 
 /** Pixelorama 1.2.3's data.json + raw RGBA cel format; verified with its desktop exporter. */
-export function pixeloramaProject(palette: string[], layers: string[], frames: Pixels[][], tags: { name: string; from: number; to: number }[] = []) {
+export function pixeloramaProject(palette: string[], layers: string[], frames: Pixels[][], tags: { name: string; from: number; to: number }[] = [], options: {
+  layers?: { locked?: boolean; visible?: boolean; linkAll?: boolean }[];
+  currentLayer?: number;
+  userData?: string;
+} = {}) {
   const first = frames[0]![0]!;
   if (frames.some((f) => f.length !== layers.length || f.some((p) => p.width !== first.width || p.height !== first.height))) {
     throw new Error("Every Pixelorama frame must have a full-size cel for each layer");
   }
+  options.layers?.forEach((layer, index) => {
+    if (layer.linkAll && frames.some((frame) => frame[index]!.data.some((c, pixel) => c !== frames[0]![index]!.data[pixel]))) {
+      throw new Error(`Linked layer ${index} must contain identical pixels in every frame`);
+    }
+  });
   const metadata = {
     pixelorama_version: "v1.2.3", pxo_version: 5, size_x: first.width, size_y: first.height, color_mode: 5,
-    layers: layers.map((name) => ({ name, type: 0, visible: true, locked: false, opacity: 1, blend_mode: 0, parent: -1 })),
+    layers: layers.map((name, i) => ({ name, type: 0, visible: options.layers?.[i]?.visible ?? true, locked: options.layers?.[i]?.locked ?? false, opacity: 1, blend_mode: 0, parent: -1,
+      new_cels_linked: options.layers?.[i]?.linkAll ?? false,
+      ...(options.layers?.[i]?.linkAll ? { link_sets: [{ cels: frames.map((_, n) => n), hue: 0.5 }] } : {}),
+    })),
     frames: frames.map((f) => ({ cels: f.map(() => ({ opacity: 1, z_index: 0 })), duration: 1 })),
     tags: tags.map((t) => ({ ...t, color: "d6a875" })), fps: 8,
-    current_frame: 0, current_layer: 0, license: "MIT", author_display_name: "sci-ts contributors",
-    user_data: "The Stopped Clocks - original art proof. Export at 1x with the project palette.",
+    current_frame: 0, current_layer: options.currentLayer ?? 0, license: "MIT", author_display_name: "sci-ts contributors",
+    user_data: options.userData ?? "The Stopped Clocks - original art proof. Export at 1x with the project palette.",
   };
   const files: [string, Uint8Array][] = [
     ["mimetype", Buffer.from("application/x-pixelorama")],

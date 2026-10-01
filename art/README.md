@@ -2,6 +2,18 @@
 
 For learning and contributing, start with the [art learning guide](../docs/art-learning-guide.md).
 
+**Current character reference:** [fixed Holmes master](reference/holmes-master-v1/README.md).
+Open `/art/reference/holmes-master-v1/` for the stronger in-room pipe puff, exact
+linked character cels, material ramps and pose-drift comparisons. This replaces
+independent generated frames as the production method. The walk redraw is pending.
+
+**Earlier character review:** [r7 — anatomy-guided motion](studies/holmes-r7/README.md).
+Open `/art/studies/holmes-r7/` for four idle loops, a walk study, frame stepping and
+joint overlays. The [r6 costume poses](studies/holmes-r6/README.md) were approved as
+the character model; motion and runtime integration remain under review.
+The [r5 workshop study](studies/workshop-r5/README.md) retains desk corrections and
+interactive clues, but its character animation was rejected for anatomy.
+
 **Latest construction study:** [clock perspective](studies/clock-perspective-r4/README.md).
 Open `/art/studies/clock-perspective-r4/` on the dev server for the rigid hinge turn
 and construction overlay. Blender and Pixelorama sources are included; side drawing

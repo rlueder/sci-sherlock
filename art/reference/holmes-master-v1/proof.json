@@ -1,0 +1,86 @@
+{
+  "sourceMaster": "b8e7aa36ccd3daf6f8378fcb2d79b79071dcc609ce4b3b4d19bb5d6c25156913",
+  "frames": 26,
+  "changedCharacterPixels": 0,
+  "method": "One exact full-body cel reused; separately generated smoke layer varies. No generated body frames.",
+  "smoke": {
+    "source": "generated/smoke-source.png",
+    "scale": 0.03861788617886179,
+    "boxes": [
+      {
+        "ox": 0,
+        "oy": 0,
+        "left": 201,
+        "right": 489,
+        "top": 329,
+        "bottom": 570,
+        "originX": 220.36
+      },
+      {
+        "ox": 619,
+        "oy": 0,
+        "left": 121,
+        "right": 450,
+        "top": 133,
+        "bottom": 570,
+        "originX": 142.0392156862745
+      },
+      {
+        "ox": 0,
+        "oy": 635,
+        "left": 172,
+        "right": 571,
+        "top": 40,
+        "bottom": 531,
+        "originX": 221.41007194244605
+      },
+      {
+        "ox": 619,
+        "oy": 635,
+        "left": 159,
+        "right": 504,
+        "top": 47,
+        "bottom": 331,
+        "originX": 272.3211009174312
+      }
+    ],
+    "palette": [
+      53,
+      60,
+      62
+    ],
+    "maxHeight": 19,
+    "emission": [
+      47,
+      22
+    ]
+  },
+  "files": [
+    "puff-00.png",
+    "puff-01.png",
+    "puff-02.png",
+    "puff-03.png",
+    "puff-04.png",
+    "puff-05.png",
+    "puff-06.png",
+    "puff-07.png",
+    "puff-08.png",
+    "puff-09.png",
+    "puff-10.png",
+    "puff-11.png",
+    "puff-12.png",
+    "puff-13.png",
+    "puff-14.png",
+    "puff-15.png",
+    "puff-16.png",
+    "puff-17.png",
+    "puff-18.png",
+    "puff-19.png",
+    "puff-20.png",
+    "puff-21.png",
+    "puff-22.png",
+    "puff-23.png",
+    "puff-24.png",
+    "puff-25.png"
+  ]
+}

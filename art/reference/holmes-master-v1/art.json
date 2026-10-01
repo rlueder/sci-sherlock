@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [],
+  "views": [
+    {
+      "number": 206,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/puff-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-21.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-22.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-23.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-24.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/puff-25.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

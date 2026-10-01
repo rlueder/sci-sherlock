@@ -135,18 +135,50 @@ anchor, between the feet.
 
 | View | Who | Loops | Notes |
 |---|---|---|---|
-| 200 | Holmes (first illustrated revision delivered) | 4: standing + 6 walking each | Age 58–62; grey temples and nape; deerstalker and pipe. 48–64 px tall at the front of a room |
+| 200 | Holmes (character redraw under review) | 4: standing + 6 walking each | Age 58–62; grey temples and nape; deerstalker and black clay pipe. Approximately 106 px tall in the approved workshop composition |
 | 201 | Watson | 4: standing + 4–6 walking each | Broader, warmer waistcoat; at least east/west walking, the rest may start as standing cels |
 | 202 | Mrs Hudson | 4: standing + 4–6 walking each (east/west first) | Walks in through the door of 221B |
 | 203 | Toby Vance | 4: standing + 4–6 walking each (east/west first) | Hunched, oversized work coat |
 | 204 | Holmes, gestures | loop 0: reaching to open the clock (4–6 cels); loop 1: kneeling with the lens (2–4 cels) | Same anchor and scale as view 200, so the engine can swap views without a jump |
 | 205 | Watson, seated | see 221B | |
+| 206 | Holmes, idles | loop 0: pipe puff; 1: hand to chin; 2: cap adjustment; 3: pocket watch | Play sparingly while standing, once, then return to view 200; interrupt for movement |
 
 The r2 60-pixel figure and 14-colour reduction were rejected. Match Holmes's actual
-scale and rendering in the locked v6 composition; the older 48–64 px guidance above
-must be reconciled on the engine side instead of shrinking the figure. The age request
+scale and rendering in the locked v6 composition; reconcile placement on the engine
+side instead of shrinking the figure. The age request
 (58–62) remains, confined to face and hair. Do not reinterpret the approved room or
 apply further global colour/detail reduction.
+
+**Subsequent walk review:** the approved torso is three-quarter toward the player,
+so the legs and shoes must use that same orientation, with separate near/far depth.
+Holmes wears a long overcoat: its skirts overlap the thighs and respond to the stride.
+Do not put full-profile legs under the three-quarter torso or hold the coat as a short
+rigid jacket. The r5 character animation was rejected for anatomy: attaching new
+limbs to the original torso is not an acceptable production method. Re-render the
+entire figure in each coherent pose, then animate. The [r6 study](../art/studies/holmes-r6/README.md)
+contains replacement key poses, not completed loops. Its 72×120 transparent canvas
+preserves the intended figure height and anchor. Eight-cel walking cadence and view
+206 remain proposed integration changes, not silent runtime edits.
+
+The r6 costume poses are now user-approved. The subsequent [r7 animation study](../art/studies/holmes-r7/README.md)
+maps major joints first, then uses complete-figure frames for the requested idles and
+a six-cel east walk. Its eight-pose construction guide is separate from the final
+six selected cels. The walk's contact/stride and watch retrieval transition still
+require work before runtime integration.
+
+**Costume:** follow the [1895 clothing and canonical pipe brief](holmes-costume.md).
+Keep the deerstalker as the requested signature; use a black clay pipe for the
+workshop, period wool tailoring, high-waisted trousers and a waistcoat pocket-watch
+chain. Apply these consistently to all full-figure redraws and animation frames.
+
+**Identity consistency:** the [fixed character master](../art/reference/holmes-master-v1/README.md)
+pins the approved r6 neutral sprite and its exact colours. The r7 walk is too narrow
+in its first half, and separate generated poses vary in head shape and colour placement.
+Use the pinned master, named head-angle variants and material ramps for whole-pose
+redraws. Exact linked cels preserve genuinely unchanged content; they do not justify
+grafting limbs onto an incompatible torso. The stronger layered pipe puff is the first
+proof: 26 timeline frames with zero changed opaque character pixels. Walk and gesture
+cleanup remain pending. Smoke must remain legible against the actual workshop background.
 
 ## Portraits
 

@@ -1,0 +1,730 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [
+    {
+      "number": 102,
+      "layers": [
+        {
+          "png": "export/workshop.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/workshop-front.png",
+          "priority": 181
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "number": 200,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/holmes-east-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/holmes-east-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/holmes-east-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/holmes-east-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/holmes-east-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/holmes-east-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/holmes-east-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/holmes-east-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/holmes-east-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "link": 0,
+          "mirror": true
+        }
+      ]
+    },
+    {
+      "number": 220,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/lantern-00.png",
+              "anchor": [
+                10,
+                25
+              ]
+            },
+            {
+              "png": "export/lantern-01.png",
+              "anchor": [
+                10,
+                25
+              ]
+            },
+            {
+              "png": "export/lantern-02.png",
+              "anchor": [
+                10,
+                25
+              ]
+            },
+            {
+              "png": "export/lantern-03.png",
+              "anchor": [
+                10,
+                25
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 221,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/clock-00.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-01.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-02.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-03.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-04.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-05.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-06.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-07.png",
+              "anchor": [
+                60,
+                150
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 227,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/filings-00.png",
+              "anchor": [
+                36,
+                18
+              ]
+            },
+            {
+              "png": "export/filings-01.png",
+              "anchor": [
+                36,
+                18
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 228,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/scratches.png",
+              "anchor": [
+                8,
+                11
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 240,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/dial-inspection.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 250,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/lens-icon.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/lens-cursor.png",
+              "anchor": [
+                6,
+                6
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 206,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/idle-puff-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-puff-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-puff-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-puff-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-puff-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-puff-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-puff-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-puff-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-puff-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-puff-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-puff-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-puff-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/idle-think-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-think-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/idle-cap-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-cap-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-cap-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-cap-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-cap-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-cap-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-cap-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-cap-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-cap-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-cap-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-cap-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/idle-watch-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/idle-watch-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

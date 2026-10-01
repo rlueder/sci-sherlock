@@ -1,0 +1,47 @@
+GIMP Palette
+Name: Holmes master v1 exact colours
+Columns: 8
+# Exact master colours; see contract for material ramps
+0 0 0 index-0
+7 5 13 index-1
+17 12 20 index-2
+30 13 18 index-3
+24 21 31 index-4
+39 22 24 index-5
+51 20 24 index-6
+35 33 39 index-7
+57 27 25 index-8
+58 34 30 index-9
+36 39 59 index-10
+74 30 27 index-11
+51 41 53 index-12
+95 28 34 index-13
+79 41 29 index-15
+94 44 28 index-16
+48 55 76 index-17
+114 38 37 index-20
+79 54 48 index-21
+54 66 59 index-22
+100 55 36 index-23
+68 69 65 index-24
+101 69 58 index-29
+71 83 66 index-30
+117 72 51 index-32
+76 90 85 index-34
+119 87 61 index-39
+100 91 86 index-40
+136 83 51 index-41
+138 97 68 index-44
+154 94 54 index-45
+176 99 46 index-47
+159 120 76 index-48
+192 125 53 index-50
+182 141 98 index-51
+222 143 59 index-52
+166 156 167 index-53
+218 164 98 index-55
+202 176 143 index-58
+211 184 149 index-60
+229 188 106 index-61
+245 216 177 index-62
+255 255 255 index-63

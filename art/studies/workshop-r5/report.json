@@ -1,0 +1,42 @@
+{
+  "status": "workshop perspective, interactive assets and eight-pose walk review; not integrated",
+  "deskChangedPixels": 2671,
+  "deskVanishingPoints": [
+    [
+      -2386.911364995902,
+      72
+    ],
+    [
+      218.92000665161123,
+      72
+    ]
+  ],
+  "deskPlanesPerpendicular": true,
+  "walkFrames": 8,
+  "standingChangedPixels": 0,
+  "legLengthWorldUnits": 0.675,
+  "flatContactWorldDriftPixels": [
+    4.76837158203125e-7,
+    2.842170943040401e-14
+  ],
+  "walkFps": 8,
+  "travelPixelsPerFrame": [
+    4,
+    0.6582180609106558
+  ],
+  "holmesCanvas": [
+    72,
+    120
+  ],
+  "holmesAnchor": [
+    36,
+    113
+  ],
+  "paletteEntries": 64,
+  "missing": [
+    "north/south walk",
+    "local age adjustment",
+    "Watson",
+    "engine placement and choreography"
+  ]
+}

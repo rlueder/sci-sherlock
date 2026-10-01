@@ -1,0 +1,6 @@
+{
+  "blender": "4.5.14 LTS",
+  "reopenedScene": "walk-construction.blend",
+  "poses": 8,
+  "maxJointErrorNativePixels": 1.2684630434023347e-05
+}

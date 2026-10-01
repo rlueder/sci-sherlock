@@ -1,0 +1,19 @@
+Use case: identity-preserve full-figure animation drawing.
+Create EIGHT complete full-body frames of one coherent walking cycle for the Sherlock Holmes in reference image 1. The other reference shows his approved workshop and establishes the game's pixel-art style. Use the NEUTRAL top-left figure of reference 1 as the character model. Preserve his identity, anatomy, natural adult proportions, long navy overcoat, burgundy waistcoat, brown deerstalker, small pipe, black shoes, and three-quarter view toward the player while facing screen-right. He is late 50s/early 60s with subtle grey temples.
+
+CRITICAL METHOD: Every frame is a complete re-rendered, anatomically coherent whole figure. Re-draw head-to-feet, shoulder rotation, pelvis, knees, ankles, coat folds and silhouette together. Do not graft profile legs onto a fixed three-quarter torso. No paper-doll cutout rotations. No extra limbs. His feet and legs must have the SAME three-quarter perspective as the torso: separate near/far depth, foreshortened shoes, visible fronts and outer sides. Long knee-length OVERCOAT: its two skirts hang with gravity, overlap and obscure upper legs, open slightly with the stride, lag gently, never behave like a short jacket or expose the whole thigh.
+
+Layout: exactly four columns and two rows, 8 equal cells, reading left-to-right then next row. All full figures fit, same camera and same character scale in every cell. Reserve ample padding around all figures. All planted feet touch the same ground level within each row, apart from the consistent small near/far perspective offset. Fully transparent background with no ground shadow. No text, no labels, no lines or guides, no floor.
+
+A quiet measured walking cycle, NOT running, marching, crouching, hopping, or exaggerated cartoon walking. Eight phases:
+1. Contact A: near foot reaches forward heel-first, far foot trails on its toe, almost straight support leg, modest stride.
+2. Down A: weight settles over near foot flat on ground; trailing heel lifts; slight body drop.
+3. Passing A: near leg supports the body almost straight, far foot passes close to the ground beneath the coat.
+4. Up A: near heel starts lifting, far foot swings gently forward, slight body rise.
+5. Contact B: far foot now forward heel-first; near foot behind on its toe. Opposite of phase 1.
+6. Down B: weight settles over far foot.
+7. Passing B: near foot passes the planted far leg with low clearance.
+8. Up B: near foot swings forward ready to return to phase 1.
+Near/far layer order stays correct. The torso has a small natural weight shift and shoulder counter-rotation. One hand may remain lightly at the lapel, the other rests near his back; do not give him a big arm swing. Keep the pipe at his mouth.
+
+Style: native early-1990s point-and-click pixel art, approximately 106 pixels tall at game scale. Crisp visibly chunky pixel clusters, low detail, restrained palette matching reference. Dark navy/charcoal coat and trousers, burgundy, ochre skin, brown hat. No smooth gradients, no high-resolution fabric texture, no photographic rendering. Generate all eight entire poses, not a model diagram.

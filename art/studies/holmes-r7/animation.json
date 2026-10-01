@@ -1,0 +1,614 @@
+{
+  "status": "Motion study for review, not integrated runtime assets",
+  "canvas": [
+    72,
+    120
+  ],
+  "anchor": [
+    36,
+    113
+  ],
+  "loops": [
+    {
+      "name": "puff",
+      "files": [
+        "puff-00.png",
+        "puff-01.png",
+        "puff-02.png",
+        "puff-03.png",
+        "puff-04.png",
+        "puff-05.png",
+        "puff-06.png",
+        "puff-07.png",
+        "puff-08.png",
+        "puff-09.png",
+        "puff-10.png",
+        "puff-11.png",
+        "puff-12.png",
+        "puff-13.png",
+        "puff-14.png",
+        "puff-15.png",
+        "puff-16.png",
+        "puff-17.png",
+        "puff-18.png",
+        "puff-19.png"
+      ],
+      "sequence": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fps": 8,
+      "notes": "Complete figure key poses with held cels and reverse return; no synthetic limb interpolation."
+    },
+    {
+      "name": "thinking",
+      "files": [
+        "thinking-00.png",
+        "thinking-01.png",
+        "thinking-02.png",
+        "thinking-03.png",
+        "thinking-04.png",
+        "thinking-05.png",
+        "thinking-06.png",
+        "thinking-07.png",
+        "thinking-08.png",
+        "thinking-09.png",
+        "thinking-10.png",
+        "thinking-11.png",
+        "thinking-12.png",
+        "thinking-13.png",
+        "thinking-14.png",
+        "thinking-15.png",
+        "thinking-16.png",
+        "thinking-17.png",
+        "thinking-18.png",
+        "thinking-19.png",
+        "thinking-20.png",
+        "thinking-21.png",
+        "thinking-22.png",
+        "thinking-23.png",
+        "thinking-24.png",
+        "thinking-25.png"
+      ],
+      "sequence": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fps": 8,
+      "notes": "Complete figure key poses with held cels and reverse return; no synthetic limb interpolation."
+    },
+    {
+      "name": "cap",
+      "files": [
+        "cap-00.png",
+        "cap-01.png",
+        "cap-02.png",
+        "cap-03.png",
+        "cap-04.png",
+        "cap-05.png",
+        "cap-06.png",
+        "cap-07.png",
+        "cap-08.png",
+        "cap-09.png",
+        "cap-10.png",
+        "cap-11.png",
+        "cap-12.png",
+        "cap-13.png",
+        "cap-14.png",
+        "cap-15.png",
+        "cap-16.png",
+        "cap-17.png",
+        "cap-18.png",
+        "cap-19.png",
+        "cap-20.png"
+      ],
+      "sequence": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fps": 8,
+      "notes": "Complete figure key poses with held cels and reverse return; no synthetic limb interpolation."
+    },
+    {
+      "name": "watch",
+      "files": [
+        "watch-00.png",
+        "watch-01.png",
+        "watch-02.png",
+        "watch-03.png",
+        "watch-04.png",
+        "watch-05.png",
+        "watch-06.png",
+        "watch-07.png",
+        "watch-08.png",
+        "watch-09.png",
+        "watch-10.png",
+        "watch-11.png",
+        "watch-12.png",
+        "watch-13.png",
+        "watch-14.png",
+        "watch-15.png",
+        "watch-16.png",
+        "watch-17.png",
+        "watch-18.png",
+        "watch-19.png",
+        "watch-20.png",
+        "watch-21.png",
+        "watch-22.png",
+        "watch-23.png"
+      ],
+      "sequence": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fps": 8,
+      "notes": "Inspection loop starts with watch already held low; pocket retrieval remains a separate transition."
+    },
+    {
+      "name": "walk",
+      "files": [
+        "walk-00.png",
+        "walk-01.png",
+        "walk-02.png",
+        "walk-03.png",
+        "walk-04.png",
+        "walk-05.png"
+      ],
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fps": 8,
+      "notes": "Six-cel study: near contact/support, far swing, far contact/support, near swing. Whole-figure drawings from two guided sheets; travel calibration remains review work."
+    }
+  ],
+  "registration": {
+    "puff": {
+      "source": [
+        1024,
+        1536
+      ],
+      "scale": 0.14540466392318244,
+      "boxes": [
+        {
+          "ox": 0,
+          "oy": 0,
+          "w": 512,
+          "h": 768,
+          "left": 164,
+          "right": 415,
+          "top": 24,
+          "bottom": 752,
+          "footX": 256
+        },
+        {
+          "ox": 512,
+          "oy": 0,
+          "w": 512,
+          "h": 768,
+          "left": 68,
+          "right": 319,
+          "top": 24,
+          "bottom": 752,
+          "footX": 160
+        },
+        {
+          "ox": 0,
+          "oy": 768,
+          "w": 512,
+          "h": 768,
+          "left": 164,
+          "right": 415,
+          "top": 24,
+          "bottom": 753,
+          "footX": 256
+        },
+        {
+          "ox": 512,
+          "oy": 768,
+          "w": 512,
+          "h": 768,
+          "left": 68,
+          "right": 319,
+          "top": 24,
+          "bottom": 753,
+          "footX": 160
+        }
+      ],
+      "centres": [
+        287.8189655172414,
+        191.86206896551724,
+        287.79661016949154,
+        191.92372881355934
+      ],
+      "method": "Uniform whole-figure scale for sheet. Whole-frame translation aligns near sole centre to x=29 and baseline to y=113. No body part replacement."
+    },
+    "thinking": {
+      "source": [
+        1024,
+        1536
+      ],
+      "scale": 0.14804469273743018,
+      "boxes": [
+        {
+          "ox": 0,
+          "oy": 0,
+          "w": 512,
+          "h": 768,
+          "left": 179,
+          "right": 421,
+          "top": 28,
+          "bottom": 743,
+          "footX": 267
+        },
+        {
+          "ox": 512,
+          "oy": 0,
+          "w": 512,
+          "h": 768,
+          "left": 113,
+          "right": 336,
+          "top": 29,
+          "bottom": 743,
+          "footX": 181
+        },
+        {
+          "ox": 0,
+          "oy": 768,
+          "w": 512,
+          "h": 768,
+          "left": 204,
+          "right": 428,
+          "top": 23,
+          "bottom": 736,
+          "footX": 270.5
+        },
+        {
+          "ox": 512,
+          "oy": 768,
+          "w": 512,
+          "h": 768,
+          "left": 115,
+          "right": 336,
+          "top": 22,
+          "bottom": 736,
+          "footX": 181
+        }
+      ],
+      "centres": [
+        297.9396551724138,
+        229.7280701754386,
+        318.1896551724138,
+        229.52631578947367
+      ],
+      "method": "Uniform whole-figure scale for sheet. Whole-frame translation aligns near sole centre to x=29 and baseline to y=113. No body part replacement."
+    },
+    "cap": {
+      "source": [
+        1024,
+        1536
+      ],
+      "scale": 0.14722222222222223,
+      "boxes": [
+        {
+          "ox": 0,
+          "oy": 0,
+          "w": 512,
+          "h": 768,
+          "left": 175,
+          "right": 416,
+          "top": 24,
+          "bottom": 743,
+          "footX": 261
+        },
+        {
+          "ox": 512,
+          "oy": 0,
+          "w": 512,
+          "h": 768,
+          "left": 88,
+          "right": 334,
+          "top": 24,
+          "bottom": 743,
+          "footX": 174
+        },
+        {
+          "ox": 0,
+          "oy": 768,
+          "w": 512,
+          "h": 768,
+          "left": 172,
+          "right": 470,
+          "top": 7,
+          "bottom": 726,
+          "footX": 261
+        },
+        {
+          "ox": 512,
+          "oy": 768,
+          "w": 512,
+          "h": 768,
+          "left": 80,
+          "right": 381,
+          "top": 7,
+          "bottom": 726,
+          "footX": 176
+        }
+      ],
+      "centres": [
+        293.25,
+        195.68103448275863,
+        284.01724137931035,
+        192.2155172413793
+      ],
+      "method": "Uniform whole-figure scale for sheet. Whole-frame translation aligns near sole centre to x=29 and baseline to y=113. No body part replacement."
+    },
+    "watch": {
+      "source": [
+        1024,
+        1536
+      ],
+      "scale": 0.1474269819193324,
+      "boxes": [
+        {
+          "ox": 0,
+          "oy": 0,
+          "w": 512,
+          "h": 768,
+          "left": 175,
+          "right": 429,
+          "top": 25,
+          "bottom": 743,
+          "footX": 262.5
+        },
+        {
+          "ox": 512,
+          "oy": 0,
+          "w": 512,
+          "h": 768,
+          "left": 93,
+          "right": 366,
+          "top": 25,
+          "bottom": 743,
+          "footX": 180.5
+        },
+        {
+          "ox": 0,
+          "oy": 768,
+          "w": 512,
+          "h": 768,
+          "left": 175,
+          "right": 455,
+          "top": 15,
+          "bottom": 729,
+          "footX": 265
+        },
+        {
+          "ox": 512,
+          "oy": 768,
+          "w": 512,
+          "h": 768,
+          "left": 93,
+          "right": 371,
+          "top": 20,
+          "bottom": 729,
+          "footX": 183
+        }
+      ],
+      "centres": [
+        301.5948275862069,
+        214.48275862068965,
+        294.859649122807,
+        211.71929824561403
+      ],
+      "method": "Uniform whole-figure scale for sheet. Whole-frame translation aligns near sole centre to x=29 and baseline to y=113. No body part replacement."
+    },
+    "walk-a": {
+      "source": [
+        887,
+        1774
+      ],
+      "scale": 0.13910761154855644,
+      "boxes": [
+        {
+          "ox": 0,
+          "oy": 0,
+          "w": 443,
+          "h": 887,
+          "left": 100,
+          "right": 349,
+          "top": 51,
+          "bottom": 812,
+          "footX": 323
+        },
+        {
+          "ox": 443,
+          "oy": 0,
+          "w": 444,
+          "h": 887,
+          "left": 101,
+          "right": 326,
+          "top": 52,
+          "bottom": 793,
+          "footX": 262
+        },
+        {
+          "ox": 0,
+          "oy": 887,
+          "w": 443,
+          "h": 887,
+          "left": 100,
+          "right": 354,
+          "top": 50,
+          "bottom": 799,
+          "footX": 233
+        },
+        {
+          "ox": 443,
+          "oy": 887,
+          "w": 444,
+          "h": 887,
+          "left": 95,
+          "right": 406,
+          "top": 51,
+          "bottom": 800,
+          "footX": 162.5
+        }
+      ],
+      "centres": [
+        207.5655737704918,
+        206.94166666666666,
+        211.6,
+        205.975
+      ],
+      "method": "Uniform scale per sheet. Whole-frame torso registration; no foot locking, limb deformation or per-frame stretch."
+    },
+    "walk-b": {
+      "source": [
+        1024,
+        1536
+      ],
+      "scale": 0.15915915915915915,
+      "boxes": [
+        {
+          "ox": 0,
+          "oy": 0,
+          "w": 512,
+          "h": 768,
+          "left": 111,
+          "right": 460,
+          "top": 41,
+          "bottom": 706,
+          "footX": 267
+        },
+        {
+          "ox": 512,
+          "oy": 0,
+          "w": 512,
+          "h": 768,
+          "left": 113,
+          "right": 350,
+          "top": 41,
+          "bottom": 706,
+          "footX": 297
+        },
+        {
+          "ox": 0,
+          "oy": 768,
+          "w": 512,
+          "h": 768,
+          "left": 131,
+          "right": 421,
+          "top": 37,
+          "bottom": 702,
+          "footX": 295
+        },
+        {
+          "ox": 512,
+          "oy": 768,
+          "w": 512,
+          "h": 768,
+          "left": 99,
+          "right": 451,
+          "top": 40,
+          "bottom": 706,
+          "footX": 257
+        }
+      ],
+      "centres": [
+        239,
+        220.46296296296296,
+        243.1851851851852,
+        223.14814814814815
+      ],
+      "method": "Uniform scale per sheet. Whole-frame torso registration; no foot locking, limb deformation or per-frame stretch."
+    }
+  }
+}

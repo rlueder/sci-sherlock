@@ -1,0 +1,33 @@
+{
+  "status": "Artist-estimated 2D annotations on the converted frames; hidden joints are inferred. These do not deform the sprites or certify anatomical accuracy.",
+  "base": "anatomy.json#approvedPoses.neutral",
+  "keys": {
+    "puff": [{}, {}, {}, {}],
+    "thinking": [
+      {},
+      {"nearElbow":[25,45],"nearWrist":[40,44],"farElbow":[45,44],"farWrist":[43,30]},
+      {"nearElbow":[25,45],"nearWrist":[40,43],"farElbow":[44,43],"farWrist":[41,29]},
+      {"nearElbow":[24,45],"nearWrist":[39,44],"farElbow":[45,42],"farWrist":[42,28]}
+    ],
+    "cap": [
+      {},
+      {"farElbow":[47,41],"farWrist":[44,28]},
+      {"farElbow":[49,34],"farWrist":[47,20]},
+      {"head":[37,21],"farElbow":[51,34],"farWrist":[49,20]}
+    ],
+    "watch": [
+      {"farElbow":[44,45],"farWrist":[47,47]},
+      {"head":[37,21],"farElbow":[45,43],"farWrist":[50,38]},
+      {"head":[37,22],"farElbow":[44,48],"farWrist":[51,36]},
+      {"head":[37,22],"farElbow":[45,48],"farWrist":[52,35]}
+    ],
+    "walk": [
+      {"nearHip":[31,62],"nearKnee":[36,86],"nearAnkle":[42,108],"nearToe":[46,112],"farHip":[39,61],"farKnee":[31,83],"farAnkle":[28,99],"farToe":[33,103]},
+      {"nearHip":[31,62],"nearKnee":[35,86],"nearAnkle":[37,108],"nearToe":[42,111],"farHip":[39,61],"farKnee":[37,81],"farAnkle":[30,97],"farToe":[33,101]},
+      {"nearHip":[30,62],"nearKnee":[29,86],"nearAnkle":[29,107],"nearToe":[35,111],"farHip":[39,61],"farKnee":[47,82],"farAnkle":[38,95],"farToe":[44,100]},
+      {"nearHip":[30,62],"nearKnee":[23,86],"nearAnkle":[16,108],"nearToe":[22,112],"farHip":[39,61],"farKnee":[48,85],"farAnkle":[56,108],"farToe":[65,111]},
+      {"nearHip":[30,62],"nearKnee":[26,86],"nearAnkle":[24,101],"nearToe":[30,106],"farHip":[39,61],"farKnee":[42,85],"farAnkle":[45,109],"farToe":[53,113]},
+      {"nearHip":[30,61],"nearKnee":[40,87],"nearAnkle":[53,108],"nearToe":[59,111],"farHip":[39,60],"farKnee":[35,87],"farAnkle":[30,107],"farToe":[36,111]}
+    ]
+  }
+}

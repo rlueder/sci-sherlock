@@ -1,0 +1,13 @@
+Create a classic 1990s point-and-click adventure pixel-art animation sheet of the APPROVED Holmes in image 1. Re-render each WHOLE FIGURE with coherent anatomy, no grafting new limbs onto a frozen torso. Retain age 58–62, grey temples, angular clean-shaven face, brown deerstalker, small BLACK CLAY pipe with slender stem, long navy knee-length wool OVERCOAT, oxblood waistcoat, white high collar, small dark tie, fuller straight charcoal trousers, black ankle boots. London 1895. Retain the model's height and natural adult proportions. Three-quarter screen-right view, body slightly toward the player, legs/feet share this camera.
+Use chunky pixel clusters equivalent to a 106-pixel-high character. Same scale, same palette, same costume volume across frames. Transparent background, NO glow, shadow, ground, labels, numbers, lines, text or skeleton in final image. Entire figures must fit their cells with at least 20 pixels padding; no overlaps or cropped boots. A skeleton reference is a planning aid, not artwork to reproduce. Exactly two arms, consistent shoulder/elbow/wrist and hip/knee/ankle chains. Coat hangs from shoulders, sleeves bend around joints, skirts cover thighs, swing with legs, and preserve volume. No floppy rubber anatomy or photorealistic detail.
+Input 2 is the approved pose's annotated joint structure. Input 3 gives the EXACT order of eight leg phases; cyan is nearer leg, gold is farther leg. Use it to understand near/far foot placement and alternating supports, but draw complete clothed characters. Exactly 4 columns × 2 rows, eight equal cells, all heads close to same level within their row with only tiny walk bob.
+Draw one measured eastward walking cycle, gentle moderate stride:
+1 contact A: NEAR leg forward heel touching, FAR leg behind toe touching.
+2 down A: weight settles on near foot, far heel lifted behind.
+3 passing A: near foot supports, far foot passes under body with low clearance.
+4 up A: near foot trails, far foot swings forward.
+5 contact B: FAR leg forward heel touching, NEAR leg behind toe touching. This is distinctly the OPPOSITE leg to frame1.
+6 down B: weight settles on far foot, near heel lifted behind.
+7 passing B: far foot supports, near foot passes under body.
+8 up B: far foot trails, near foot swings forward toward frame1.
+In contact frames both knees are nearly extended, never crouching. Keep restrained shoulder counterrotation, pipe still, lapel hand resting, other arm relaxed. Do not keep same leading foot in both contact poses. No running/marching. DO NOT exaggerate knee lift. Long coat changes folds and opening coherently with each stride. Exact same camera and body size in all eight cells.

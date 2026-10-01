@@ -15,7 +15,10 @@ for construction details, and the [asset specification](visual-spec.md) for reso
 | Approved style and scale | V6 is the reference; local perspective corrections are requested | [Reference and review decisions](../art/approved/workshop-v6/README.md) |
 | Extracted artwork | R3 separates the original figure and props; the standing reconstruction matches the reference | [R3 sources and report](../art/production/workshop-r3/README.md) |
 | Pixelorama export | Version 1.2.3 has been checked against native PNG exports | [R3 native export results](../art/production/workshop-r3/native-export-check.json) |
-| Walking and clock motion | R3 is a diagnostic study; its gait and clock perspective need replacement | [Motion review and next method](animation-workflow.md) |
+| Fixed character identity | One exact r6 master, material ramps, native linked cels and a stronger smoke-only animation; 36 native exports checked, including the background pipe-remnant repair | [Fixed master, drawing template and drift diagnostics](../art/reference/holmes-master-v1/README.md) |
+| Walking and idle motion | R6 poses established the model. R7 maps joints and renders complete figures, but head/colour/width drift requires redraws against the fixed master | [Earlier anatomy-guided animation and saved prompts](../art/studies/holmes-r7/README.md) |
+| Historical costume | 1895 clothing brief separates Doyle's pipe descriptions, museum evidence and visual interpretation | [Costume and pipe sources](holmes-costume.md) |
+| Desk perspective | Same local perspective camera as the clock; corrected tabletop/apron planes and before/after preview | [Desk construction and textures](../art/studies/workshop-r5/README.md#how-the-perspective-correction-works) |
 | Krita perspective/pose guides | Selected workflow; project guide documents have not been produced yet | Exercises below and official tool manuals |
 | Blender scene and hinge | Local camera, rigid volumes, eight poses and pixel export delivered; side drawing and approval pending | [Reproducible clock study](../art/studies/clock-perspective-r4/README.md) |
 | fSpy camera matching | Optional; no whole-room camera solve delivered | [Construction plan](animation-workflow.md#clock-construct-the-turn-in-space) |

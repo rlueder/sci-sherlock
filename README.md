@@ -63,6 +63,14 @@ with grey temples, deerstalker and pipe. The revised art uses one shared 64-colo
 Open `/art/production/workshop-r3/` on the dev server for the reference-derived motion study.
 The newer [clock perspective study](art/studies/clock-perspective-r4/README.md) is at
 `/art/studies/clock-perspective-r4/`, with a construction overlay and editable Blender source.
+The [r5 workshop review](art/studies/workshop-r5/README.md) adds desk corrections and
+interactive clues. Its character animation was rejected for anatomy. The latest
+[anatomy-guided animations](art/studies/holmes-r7/README.md) are at
+`/art/studies/holmes-r7/`, with four idle actions, a walk study and joint overlays.
+They use the approved r6 poses and [1895 costume brief](docs/holmes-costume.md).
+The current [fixed character master](art/reference/holmes-master-v1/README.md) at
+`/art/reference/holmes-master-v1/` addresses identity drift with exact linked cels,
+material references and a brighter pipe puff. Consistent walk redraws remain pending.
 The existing room logic still needs placement and hotspot tuning to the new composition.
 
 ## Validate and review

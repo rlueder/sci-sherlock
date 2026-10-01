@@ -1,0 +1,121 @@
+{
+  "status": "native-pixel gesture studies for visual review",
+  "view": 206,
+  "anchor": [
+    36,
+    113
+  ],
+  "fps": 8,
+  "loops": [
+    {
+      "name": "puff",
+      "index": 0,
+      "cels": 12
+    },
+    {
+      "name": "think",
+      "index": 1,
+      "cels": 17
+    },
+    {
+      "name": "cap",
+      "index": 2,
+      "cels": 11
+    },
+    {
+      "name": "watch",
+      "index": 3,
+      "cels": 21
+    }
+  ],
+  "nativeProjects": [
+    {
+      "name": "idle-puff",
+      "files": [
+        "idle-puff-00.png",
+        "idle-puff-01.png",
+        "idle-puff-02.png",
+        "idle-puff-03.png",
+        "idle-puff-04.png",
+        "idle-puff-05.png",
+        "idle-puff-06.png",
+        "idle-puff-07.png",
+        "idle-puff-08.png",
+        "idle-puff-09.png",
+        "idle-puff-10.png",
+        "idle-puff-11.png"
+      ]
+    },
+    {
+      "name": "idle-think",
+      "files": [
+        "idle-think-00.png",
+        "idle-think-01.png",
+        "idle-think-02.png",
+        "idle-think-03.png",
+        "idle-think-04.png",
+        "idle-think-05.png",
+        "idle-think-06.png",
+        "idle-think-07.png",
+        "idle-think-08.png",
+        "idle-think-09.png",
+        "idle-think-10.png",
+        "idle-think-11.png",
+        "idle-think-12.png",
+        "idle-think-13.png",
+        "idle-think-14.png",
+        "idle-think-15.png",
+        "idle-think-16.png"
+      ]
+    },
+    {
+      "name": "idle-cap",
+      "files": [
+        "idle-cap-00.png",
+        "idle-cap-01.png",
+        "idle-cap-02.png",
+        "idle-cap-03.png",
+        "idle-cap-04.png",
+        "idle-cap-05.png",
+        "idle-cap-06.png",
+        "idle-cap-07.png",
+        "idle-cap-08.png",
+        "idle-cap-09.png",
+        "idle-cap-10.png"
+      ]
+    },
+    {
+      "name": "idle-watch",
+      "files": [
+        "idle-watch-00.png",
+        "idle-watch-01.png",
+        "idle-watch-02.png",
+        "idle-watch-03.png",
+        "idle-watch-04.png",
+        "idle-watch-05.png",
+        "idle-watch-06.png",
+        "idle-watch-07.png",
+        "idle-watch-08.png",
+        "idle-watch-09.png",
+        "idle-watch-10.png",
+        "idle-watch-11.png",
+        "idle-watch-12.png",
+        "idle-watch-13.png",
+        "idle-watch-14.png",
+        "idle-watch-15.png",
+        "idle-watch-16.png",
+        "idle-watch-17.png",
+        "idle-watch-18.png",
+        "idle-watch-19.png",
+        "idle-watch-20.png"
+      ]
+    }
+  ],
+  "scheduling": "Choose infrequently while standing; play once; restore standing. Interrupt promptly when movement starts.",
+  "suggestions": [
+    "Brief glance toward a sound",
+    "Brush dust from a coat sleeve",
+    "A small satisfied nod after a deduction"
+  ],
+  "note": "Watch chain is visible while the watch is out. No permanent chain is baked into the approved standing reference."
+}
