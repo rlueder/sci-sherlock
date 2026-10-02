@@ -1398,13 +1398,13 @@
       "id": "105-001",
       "room": 105,
       "speaker": "Narrator",
-      "text": "The Stopped Clocks will continue.",
+      "text": "The Case of the Clerkenwell Clocks will continue.",
       "node": "room.look",
       "where": "rooms/105.yarn:9",
       "recording": "recorded",
       "recorded": {
-        "text": "6556de63eff1",
-        "wav": "4d0222dea418"
+        "text": "49c93edfea0f",
+        "wav": "382d8f23dea6"
       }
     }
   ]
