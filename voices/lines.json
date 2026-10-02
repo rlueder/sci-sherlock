@@ -1269,13 +1269,13 @@
       "id": "103-001",
       "room": 103,
       "speaker": "Narrator",
-      "text": "The stair turns once and ends at a door, with a thin line of light beneath it.",
+      "text": "The stair drops away below us, past the reach of the lantern.",
       "node": "room.enter",
       "where": "rooms/103.yarn:5",
       "recording": "recorded",
       "recorded": {
-        "text": "28d5e4060612",
-        "wav": "6132b171896d"
+        "text": "ff7f21e99de1",
+        "wav": "84c9cda9dee2"
       }
     },
     {
@@ -1286,7 +1286,7 @@
       "node": "room.enter",
       "before": {
         "speaker": "Narrator",
-        "text": "The stair turns once and ends at a door, with a thin line of light beneath it."
+        "text": "The stair drops away below us, past the reach of the lantern."
       },
       "where": "rooms/103.yarn:6",
       "recording": "recorded",
@@ -1333,39 +1333,52 @@
       "id": "103-005",
       "room": 103,
       "speaker": "Narrator",
-      "text": "Stone steps, worn hollow in the middle. Older than the shop above them.",
+      "text": "Bare boards, then steps going down into the dark. Older than the shop around them.",
       "node": "room.look",
       "where": "rooms/103.yarn:22",
       "recording": "recorded",
       "recorded": {
-        "text": "8ea41572f301",
-        "wav": "604ea8801dfa"
+        "text": "fe64668d67c2",
+        "wav": "45ac94d3bc79"
       }
     },
     {
       "id": "103-006",
       "room": 103,
       "speaker": "Narrator",
-      "text": "Lamplight, under a door. Someone is awake down there.",
-      "node": "light.look",
+      "text": "I cannot see the bottom. Only the ticking comes up out of the dark.",
+      "node": "stairs.look",
       "where": "rooms/103.yarn:27",
       "recording": "recorded",
       "recorded": {
-        "text": "05808566d109",
-        "wav": "d366ca69855c"
+        "text": "f03ba47ec35c",
+        "wav": "838b18caaea3"
       }
     },
     {
       "id": "103-007",
       "room": 103,
       "speaker": "Hero",
-      "text": "Not yet, Watson. Let us hear what they say before they hear us.",
-      "node": "light.do",
+      "text": "Not yet, Watson. Let us learn who is down there before they learn we are here.",
+      "node": "stairs.do",
       "where": "rooms/103.yarn:32",
       "recording": "recorded",
       "recorded": {
-        "text": "32d072add590",
-        "wav": "4dff4efe061d"
+        "text": "7b7bfdb58ec6",
+        "wav": "7552387d31de"
+      }
+    },
+    {
+      "id": "103-009",
+      "room": 103,
+      "speaker": "Narrator",
+      "text": "The case clock, swung aside from the wall. Its pendulum has not missed a beat.",
+      "node": "caseClock.look",
+      "where": "rooms/103.yarn:37",
+      "recording": "recorded",
+      "recorded": {
+        "text": "6d09a4ae8f8a",
+        "wav": "8eceec36cff0"
       }
     },
     {
@@ -1374,7 +1387,7 @@
       "speaker": "Watson",
       "text": "I'll be right behind you.",
       "node": "watson.talk",
-      "where": "rooms/103.yarn:37",
+      "where": "rooms/103.yarn:42",
       "recording": "recorded",
       "recorded": {
         "text": "752bfa3efdeb",
