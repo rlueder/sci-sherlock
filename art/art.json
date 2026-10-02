@@ -1948,10 +1948,21 @@
         {
           "cels": [
             {
-              "png": "studies/interface-r20/export/lens-1-0.png",
+              "png": "lens/cursor.png",
               "anchor": [
-                6,
-                5
+                9,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "lens/glass.png",
+              "anchor": [
+                9,
+                10
               ]
             }
           ]
