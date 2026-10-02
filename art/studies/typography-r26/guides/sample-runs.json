@@ -1,0 +1,42 @@
+{
+  "status": "proposed handoff; not runtime syntax",
+  "lineId": "100-020",
+  "runs": [
+    {
+      "style": "bold",
+      "text": "Watson: "
+    },
+    {
+      "style": "regular",
+      "text": "The boy is "
+    },
+    {
+      "style": "italic",
+      "text": "frightened"
+    },
+    {
+      "style": "regular",
+      "text": " half out of his wits. "
+    },
+    {
+      "style": "bold-italic",
+      "text": "Hear him out"
+    },
+    {
+      "style": "regular",
+      "text": ", Holmes."
+    }
+  ],
+  "fonts": {
+    "regular": 1,
+    "bold": 2,
+    "italic": 3,
+    "bold-italic": 4
+  },
+  "requirements": [
+    "Measure, wrap and draw the same run stream.",
+    "Preserve style across wrapped lines; restore regular after each span.",
+    "Keep speaker names bold and print titles italic without emitting markup as text.",
+    "Map typographic punctuation before the ASCII bitmap boundary."
+  ]
+}

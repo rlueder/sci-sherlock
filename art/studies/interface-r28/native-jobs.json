@@ -1,0 +1,92 @@
+[
+  {
+    "name": "case-empty",
+    "expected": [
+      "export/case-empty.png"
+    ]
+  },
+  {
+    "name": "objects-32",
+    "expected": [
+      "export/object-walk-32.png",
+      "export/object-look-32.png",
+      "export/object-use-32.png",
+      "export/object-talk-32.png",
+      "export/object-inventory-32.png",
+      "export/object-menu-32.png"
+    ]
+  },
+  {
+    "name": "icons-32-0",
+    "expected": [
+      "export/icons-32-0-0.png",
+      "export/icons-32-0-1.png",
+      "export/icons-32-0-2.png",
+      "export/icons-32-0-3.png",
+      "export/icons-32-0-4.png",
+      "export/icons-32-0-5.png"
+    ]
+  },
+  {
+    "name": "icons-32-1",
+    "expected": [
+      "export/icons-32-1-0.png",
+      "export/icons-32-1-1.png",
+      "export/icons-32-1-2.png",
+      "export/icons-32-1-3.png",
+      "export/icons-32-1-4.png",
+      "export/icons-32-1-5.png"
+    ]
+  },
+  {
+    "name": "objects-24",
+    "expected": [
+      "export/object-walk-24.png",
+      "export/object-look-24.png",
+      "export/object-use-24.png",
+      "export/object-talk-24.png",
+      "export/object-inventory-24.png",
+      "export/object-menu-24.png"
+    ]
+  },
+  {
+    "name": "icons-24-0",
+    "expected": [
+      "export/icons-24-0-0.png",
+      "export/icons-24-0-1.png",
+      "export/icons-24-0-2.png",
+      "export/icons-24-0-3.png",
+      "export/icons-24-0-4.png",
+      "export/icons-24-0-5.png"
+    ]
+  },
+  {
+    "name": "icons-24-1",
+    "expected": [
+      "export/icons-24-1-0.png",
+      "export/icons-24-1-1.png",
+      "export/icons-24-1-2.png",
+      "export/icons-24-1-3.png",
+      "export/icons-24-1-4.png",
+      "export/icons-24-1-5.png"
+    ]
+  },
+  {
+    "name": "toolbar-empty",
+    "expected": [
+      "export/toolbar-empty.png"
+    ]
+  },
+  {
+    "name": "toolbar-composite",
+    "expected": [
+      "export/toolbar-composite.png"
+    ]
+  },
+  {
+    "name": "case-composite",
+    "expected": [
+      "export/case-composite.png"
+    ]
+  }
+]

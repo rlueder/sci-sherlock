@@ -1,0 +1,94 @@
+{
+  "status": "review study; not registered",
+  "supersedes": "r25 UI, not the approved portrait frame",
+  "palette": {
+    "originalColoursPreserved": 64,
+    "whiteIndexMovedFrom": 63,
+    "whiteIndexMovedTo": 67,
+    "additionalColours": [
+      "#261d32",
+      "#40304e",
+      "#604769",
+      "#88688c"
+    ],
+    "proposedBudget": 68,
+    "reason": "Purple velvet has a separate four-colour ramp; no room colours replaced."
+  },
+  "toolbar": {
+    "canvas": [
+      320,
+      36
+    ],
+    "icons": [
+      24,
+      24
+    ],
+    "y": 6,
+    "x": [
+      7,
+      35,
+      63,
+      91,
+      147,
+      175
+    ],
+    "activeItem": [
+      119,
+      6
+    ],
+    "skin": "export/toolbar-empty.png"
+  },
+  "inventory": {
+    "canvas": [
+      220,
+      120
+    ],
+    "origin": [
+      50,
+      45
+    ],
+    "columns": 5,
+    "rows": 2,
+    "slotSize": [
+      38,
+      32
+    ],
+    "firstSlot": [
+      9,
+      24
+    ],
+    "step": [
+      41,
+      35
+    ],
+    "objectInset": [
+      7,
+      4
+    ],
+    "onlyCurrentItem": "lens",
+    "skin": "export/inventory-empty.png"
+  },
+  "frame": {
+    "view": 260,
+    "cell": [
+      8,
+      8
+    ],
+    "order": [
+      "TL",
+      "TR",
+      "BL",
+      "BR",
+      "top",
+      "bottom",
+      "left",
+      "right"
+    ]
+  },
+  "engineWork": [
+    "Register the four additional purple palette entries with budget change, preserving existing colours.",
+    "Separate inventory and toolbar skins from paper dialogue styling.",
+    "Draw native transparent item objects over empty compartments; do not bake objects into skin.",
+    "Preserve existing input behaviour; the study preview is not the engine."
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "status": "review study, not registered",
+  "iconOrder": [
+    "walk",
+    "look",
+    "do",
+    "talk",
+    "inventory",
+    "menu"
+  ],
+  "icons": {
+    "view": 266,
+    "size": [
+      24,
+      24
+    ],
+    "loops": {
+      "normal": 0,
+      "picked": 1
+    }
+  },
+  "frame": {
+    "view": 260,
+    "cornerSize": [
+      14,
+      14
+    ],
+    "horizontalEdge": [
+      14,
+      14
+    ],
+    "verticalEdge": [
+      14,
+      14
+    ],
+    "order": [
+      "top-left",
+      "top-right",
+      "bottom-left",
+      "bottom-right",
+      "top",
+      "bottom",
+      "left",
+      "right"
+    ]
+  },
+  "colours": {
+    "paper": 62,
+    "ink": 2,
+    "border": 48,
+    "toolbarInterior": 4
+  },
+  "proposedToolbar": {
+    "size": [
+      320,
+      40
+    ],
+    "iconOrigin": [
+      10,
+      8
+    ],
+    "iconStep": 28,
+    "activeItemSlot": [
+      122,
+      8,
+      24,
+      24
+    ],
+    "inventoryX": 150,
+    "menuX": 178,
+    "skin": "export/toolbar-skin.png",
+    "requires": "Engine layout change; skin is an unregistered optional compositing reference."
+  },
+  "cursors": [
+    {
+      "name": "walk",
+      "view": 261,
+      "anchor": [
+        9,
+        14
+      ]
+    },
+    {
+      "name": "look",
+      "view": 262,
+      "anchor": [
+        5,
+        5
+      ]
+    },
+    {
+      "name": "use",
+      "view": 263,
+      "anchor": [
+        12,
+        2
+      ]
+    },
+    {
+      "name": "talk",
+      "view": 264,
+      "anchor": [
+        8,
+        8
+      ]
+    },
+    {
+      "name": "wait",
+      "view": 265,
+      "anchor": [
+        8,
+        8
+      ]
+    }
+  ],
+  "cropRectangles": [
+    [
+      21,
+      25,
+      475,
+      464
+    ],
+    [
+      530,
+      25,
+      478,
+      464
+    ],
+    [
+      1039,
+      25,
+      478,
+      464
+    ],
+    [
+      21,
+      531,
+      475,
+      460
+    ],
+    [
+      530,
+      531,
+      478,
+      460
+    ],
+    [
+      1039,
+      531,
+      478,
+      460
+    ]
+  ]
+}

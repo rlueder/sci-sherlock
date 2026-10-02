@@ -1,0 +1,26 @@
+[
+  {
+    "name": "regular",
+    "expected": [
+      "export/regular.png"
+    ]
+  },
+  {
+    "name": "bold",
+    "expected": [
+      "export/bold.png"
+    ]
+  },
+  {
+    "name": "italic",
+    "expected": [
+      "export/italic.png"
+    ]
+  },
+  {
+    "name": "bold-italic",
+    "expected": [
+      "export/bold-italic.png"
+    ]
+  }
+]

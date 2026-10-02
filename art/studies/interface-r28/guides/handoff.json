@@ -1,0 +1,131 @@
+{
+  "status": "review; 32px needs engine contract change",
+  "icons": {
+    "preferred": 32,
+    "compatibility": 24,
+    "order": [
+      "walk",
+      "look",
+      "use",
+      "talk",
+      "inventory",
+      "menu"
+    ],
+    "x": [
+      16,
+      58,
+      100,
+      142,
+      226,
+      268
+    ],
+    "y": 8,
+    "activeItem": [
+      184,
+      8
+    ]
+  },
+  "case": {
+    "size": [
+      256,
+      144
+    ],
+    "origin": [
+      32,
+      30
+    ],
+    "grid": [
+      4,
+      2
+    ],
+    "slotOrigins": [
+      [
+        13,
+        28
+      ],
+      [
+        73,
+        28
+      ],
+      [
+        133,
+        28
+      ],
+      [
+        193,
+        28
+      ],
+      [
+        13,
+        75
+      ],
+      [
+        73,
+        75
+      ],
+      [
+        133,
+        75
+      ],
+      [
+        193,
+        75
+      ]
+    ],
+    "itemInset": [
+      7,
+      7
+    ]
+  },
+  "palette": "r27 additive 68-colour proposal, original colours preserved",
+  "sourceCrops": [
+    [
+      128,
+      93,
+      251,
+      321
+    ],
+    [
+      562,
+      91,
+      399,
+      347
+    ],
+    [
+      1086,
+      96,
+      367,
+      336
+    ],
+    [
+      76,
+      573,
+      378,
+      321
+    ],
+    [
+      578,
+      565,
+      375,
+      323
+    ],
+    [
+      1086,
+      525,
+      364,
+      407
+    ]
+  ],
+  "sourceCaseBounds": [
+    42,
+    60,
+    1588,
+    807
+  ],
+  "notes": [
+    "Engine ICON_SIZE is 24. Preferred 32px icons require coordinated hitbox, gap, item icon and toolbar layout changes.",
+    "24px manifest is provided for size comparison, not a full production replacement.",
+    "Item cursor not redesigned; retain the separately reviewed 16px cursor loop when integrating view 250.",
+    "Empty case and toolbar skins are separate from objects; approved portrait and font assets remain unchanged."
+  ]
+}

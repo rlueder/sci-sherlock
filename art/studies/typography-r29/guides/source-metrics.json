@@ -1,0 +1,146 @@
+[
+  {
+    "name": "ncenR10",
+    "sha256": "b2c07aba662c595919070c278533ebe9f9cdf4c5ac2c51073e319fd6e9c57f6c",
+    "ascent": 10,
+    "descent": 2,
+    "minBearing": -1,
+    "maxWidth": 11,
+    "maxAdvance": 12
+  },
+  {
+    "name": "ncenB10",
+    "sha256": "02e37d50310444367df244db948de4e3886155f335f1ef2e34fd3933471ba0b9",
+    "ascent": 10,
+    "descent": 2,
+    "minBearing": -1,
+    "maxWidth": 11,
+    "maxAdvance": 12
+  },
+  {
+    "name": "ncenI10",
+    "sha256": "a81011c982753afc77af2e453e6f46816f80e63c414d46315b74bde13023eb56",
+    "ascent": 10,
+    "descent": 2,
+    "minBearing": -2,
+    "maxWidth": 11,
+    "maxAdvance": 12
+  },
+  {
+    "name": "ncenBI10",
+    "sha256": "2c56ed108b080dc65b1c55497ac570d11adfae3e78456dd3678cf80d01c4d9b7",
+    "ascent": 10,
+    "descent": 2,
+    "minBearing": -2,
+    "maxWidth": 12,
+    "maxAdvance": 11
+  },
+  {
+    "name": "ncenR12",
+    "sha256": "9be167a5544e69070e8e7185a34c89bef9854aad2711ef769f72bb91b614b08e",
+    "ascent": 11,
+    "descent": 3,
+    "minBearing": -1,
+    "maxWidth": 11,
+    "maxAdvance": 12
+  },
+  {
+    "name": "ncenB12",
+    "sha256": "e093899459c7ec91854f0474c1d6734fe48b1f292abf0ca52501af718be9156f",
+    "ascent": 11,
+    "descent": 3,
+    "minBearing": -2,
+    "maxWidth": 13,
+    "maxAdvance": 14
+  },
+  {
+    "name": "ncenI12",
+    "sha256": "c8f10d57040d49dfdaebde47dfc48e716a4a6c0abc13289e161428d87c565d53",
+    "ascent": 11,
+    "descent": 3,
+    "minBearing": -2,
+    "maxWidth": 13,
+    "maxAdvance": 13
+  },
+  {
+    "name": "ncenBI12",
+    "sha256": "5cbd39ead0c4cfc4b2fcacbd6ba27aaa92feb99ab311487d469b14b983da7531",
+    "ascent": 11,
+    "descent": 3,
+    "minBearing": -3,
+    "maxWidth": 13,
+    "maxAdvance": 14
+  },
+  {
+    "name": "timR10",
+    "sha256": "97a813a2317142846f8b0cb0036204093c3dadb63a7383053cb860e56a96e80a",
+    "ascent": 9,
+    "descent": 3,
+    "minBearing": -1,
+    "maxWidth": 10,
+    "maxAdvance": 10
+  },
+  {
+    "name": "timB10",
+    "sha256": "1cd559e9761219346fd7a218218f61d86fee8043d4517a702229cf292c8fc0d8",
+    "ascent": 9,
+    "descent": 3,
+    "minBearing": -1,
+    "maxWidth": 11,
+    "maxAdvance": 11
+  },
+  {
+    "name": "timI10",
+    "sha256": "69739ec86a996b75aa669c543e6387d59ab2bde669cc056bbbe4be1464fcc296",
+    "ascent": 9,
+    "descent": 3,
+    "minBearing": -2,
+    "maxWidth": 11,
+    "maxAdvance": 10
+  },
+  {
+    "name": "timBI10",
+    "sha256": "5b425e9e47ee53729f3f40d41a7096f2778b6148e541481288d2bb55c76ad438",
+    "ascent": 9,
+    "descent": 3,
+    "minBearing": -2,
+    "maxWidth": 11,
+    "maxAdvance": 11
+  },
+  {
+    "name": "timR12",
+    "sha256": "602c6b50255eddafdb5aad591257d267727bcd842099ded75584062d49ea640d",
+    "ascent": 11,
+    "descent": 3,
+    "minBearing": 0,
+    "maxWidth": 12,
+    "maxAdvance": 12
+  },
+  {
+    "name": "timB12",
+    "sha256": "e3760a63d34f54dcaaa4e6293ae6c0b5203fb1fef6845534b4f4763198545fb5",
+    "ascent": 11,
+    "descent": 3,
+    "minBearing": -1,
+    "maxWidth": 11,
+    "maxAdvance": 12
+  },
+  {
+    "name": "timI12",
+    "sha256": "2c5cd409bca69e2093f5c14f4840d99ec3da2ba7dca3eedfd8407931184d4c5c",
+    "ascent": 11,
+    "descent": 3,
+    "minBearing": -2,
+    "maxWidth": 12,
+    "maxAdvance": 12
+  },
+  {
+    "name": "timBI12",
+    "sha256": "3b39b97bebdd9c1deb032508f7872b5624e7487ded302c18cd383dde4c12ddc0",
+    "ascent": 11,
+    "descent": 3,
+    "minBearing": -2,
+    "maxWidth": 12,
+    "maxAdvance": 12
+  }
+]

@@ -1,0 +1,11 @@
+Use case: stylized-concept. Original pixel-art UI asset sheet for a Victorian Sherlock Holmes adventure set in 1895. Reference image is OUR APPROVED PORTRAIT FRAME: match its warm antique gilt, leafy carved relief, bead course, dark brown recesses and pale gold highlights. Do not reproduce its oval silhouette; make six SQUARE ornamented icon buttons.
+Output image exactly 1536x1024. Strict layout: 3 columns by 2 rows of equally sized 512x512 cells, each button centered in its cell, occupying exactly 448x448 with 32px plain margin. Solid flat dark charcoal background #18151f across sheet. NO labels, letters, text, logos, shadows outside buttons.
+Six buttons in reading order:
+1 walking: pair of Victorian leather ankle boots in a short walking stride, obvious legs/boots, side-three-quarter view.
+2 look: elegant brass magnifying glass with blue-grey glass, diagonal ebony handle.
+3 use: anatomically convincing ivory leather glove reaching with separated thumb, fingers gently curling, cuff at lower left. A hand, no arrow or abstract glyph.
+4 talk: ivory cameo of human lips in three-quarter view, gently open, a small area of cheek and chin, no whole head, no speech balloon.
+5 inventory: rich oxblood Victorian leather Gladstone doctor's bag, brass clasp, loop handle, highlights on leather.
+6 menu: small closed oxblood leather notebook with gold corners and a cream bookmark, diagonal brass fountain pen beside it.
+Each icon fills center generously and is readable at 24x24 native pixels. All six identical square frame design: narrow 2-3 logical-pixel thick ornate gilt border with acanthus leaves concentrated in corners, inset bead edge, near-black warm velvet interior. Outer corners ornamental but silhouette square. Inner object distinct from surrounding gilding.
+Style: authentic 1990s VGA adventure inventory art, approximately 24x24 logical pixels per button enlarged 16x, broad deliberately placed clusters, rich but restrained shading with about 12-16 colours per icon. Highly crafted, no smooth digital illustration, no photoreal rendering, no generic web icons. Light from upper left. Frames should harmonize with reference and feel tactile like little Victorian keepsakes. No extra icons.

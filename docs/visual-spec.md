@@ -39,7 +39,7 @@ The current delivery queue and review/handoff distinctions are tracked in
 | 250–259 | view | inventory items |
 | 260–269 | view | cursors and interface pieces |
 | 270–279 | view | additional workshop atmosphere |
-| 1–2 | font | dialogue, titles |
+| 1–5 | font | 1 regular dialogue; 2 reserved for titles; 3 bold; 4 italic; 5 bold italic (proposed registration) |
 
 Pictures and views are separate number spaces. 990–999 belong to sci-ts's library (its
 default cursors) and stay free. Register a number only when its PNGs exist.
@@ -281,11 +281,30 @@ than to the engine:
 
 | Element | How | Notes |
 |---|---|---|
-| Dialogue font | font 1: a PNG sheet of characters 32–126 | One row of glyphs per line of the sheet, a fixed grid cell (e.g. 8×12), each glyph's width marked by its rightmost ink. Period serif or a clear small font; must read at native size |
+| Dialogue font | Approved: New Century Schoolbook 12px, r29; ASCII 32–126, four styles | Original BDF pixels, BBX bearings and DWIDTH advances; ascent 11, descent 3, line height 14. PNG atlases plus JSON metrics. The old 8×12/rightmost-ink contract is superseded; engine support is required before registration |
 | Title font | font 2, optional | Same format, larger, for the title and the end card |
 | Box colours | three palette colours: paper, ink, border | Chosen from the shared palette; named in a note to the engine side |
 | Box frame | view 260, optional: 8 cels (4 corners, 4 edges) | Corners and edges of a frame for text boxes and the topic menu, tiled by the engine |
 | Cursors | views 261–264: walk, look, use, talk; 265: wait | 16×16 or smaller, one cel each; mark the hotspot as the anchor. Without these, the library's default cursors are used |
+
+### Approved typography — 2 October 2026
+
+The [implementation handoff](art-interface-implementation.md) defines the data and
+engine changes needed to deliver this selection without altering its pixels.
+
+Use [r29's selected family](../art/studies/typography-r29/README.md#approved-delivery)
+for new dialogue and interface work. Regular is body text, bold is the speaker or
+short heading, italic is a publication title or emphasis, and bold italic is available
+when both apply. These are four original bitmap faces, not synthetic transformations.
+Preserve the font's pixels and spacing; do not compress glyphs into an eight-pixel cell.
+The 12px design needs a 14px line box to accommodate its ascent and descent.
+
+The authoritative masters are the unmodified upstream BDF files, with their retained
+Adobe/DEC licence; the PNGs are reproducible exports, not hand-painted replacements.
+This font delivery uses BDF masters instead of Pixelorama. Export JSON is an art handoff
+format, not an already-supported engine manifest. See r29's handoff for bearing-aware
+drawing, width measurement and inline style requirements. Reserve font 2 for the
+existing title role; r26's proposed numbering is retired.
 
 ## What to hand over, and how it's checked
 

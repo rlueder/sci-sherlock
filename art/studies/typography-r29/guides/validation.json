@@ -1,0 +1,17 @@
+{
+  "sourcePackage": "font-adobe-75dpi-1.0.4",
+  "families": 2,
+  "sizes": [
+    10,
+    12
+  ],
+  "facesPerSize": 4,
+  "glyphs": 1520,
+  "pixelResampling": false,
+  "preserved": [
+    "BBX offsets",
+    "DWIDTH advances",
+    "baseline"
+  ],
+  "status": "comparison only; no runtime conversion"
+}
