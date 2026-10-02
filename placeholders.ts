@@ -61,7 +61,7 @@ const ROOMS: Record<number, RoomStandIn> = {
   100: { name: "221B BAKER STREET: THE SITTING ROOM", wall: "#4f3630", floor: "#753a20", horizon: 120 },
   101: { name: "BAKER STREET", wall: "#30374c", floor: "#404b3f", horizon: 118 },
   103: { name: "THE HIDDEN STAIR", wall: "#18151f", floor: "#271618", horizon: 110 },
-  104: { name: "TITLE", wall: "#18151f", floor: "#18151f", horizon: 200, lines: ["SHERLOCK HOLMES", "", "THE STOPPED CLOCKS"] },
+  104: { name: "TITLE", wall: "#18151f", floor: "#18151f", horizon: 200, lines: ["SHERLOCK HOLMES", "", "THE CLERKENWELL CLOCKS"] },
   105: { name: "END CARD", wall: "#18151f", floor: "#18151f", horizon: 200, lines: ["TO BE CONTINUED"] },
 };
 

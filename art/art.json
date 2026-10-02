@@ -67,7 +67,7 @@
           "priority": -1000
         },
         {
-          "png": "studies/remaining-art-r19/export/title-lettering.png",
+          "png": "titles/title-lettering.png",
           "priority": 0
         }
       ]
@@ -80,7 +80,7 @@
           "priority": -1000
         },
         {
-          "png": "studies/remaining-art-r19/export/end-lettering.png",
+          "png": "titles/end-lettering.png",
           "priority": 0
         }
       ]

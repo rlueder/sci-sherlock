@@ -1,4 +1,4 @@
-# Sherlock Holmes in *The Stopped Clocks* (a teaser)
+# Sherlock Holmes in *The Case of the Clerkenwell Clocks* (a teaser)
 
 A short, original adventure, about fifteen minutes long, built to test everything sci-ts can
 do: talking portraits, topic menus, story flags, cutscenes, music and sound. Holmes and

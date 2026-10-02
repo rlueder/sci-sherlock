@@ -1,4 +1,4 @@
-;;; The Stopped Clocks: Holmes, his voice, the interface, and the title screen before 221B.
+;;; The Case of the Clerkenwell Clocks: Holmes, his voice, the interface, and the title screen before 221B.
 (script 0)
 (include "system.sh")
 (public sherlock 0)
