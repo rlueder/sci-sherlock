@@ -1,4 +1,4 @@
-# sci-sherlock: The Stopped Clocks
+# sci-sherlock: The Case of the Clerkenwell Clocks
 
 An original Sherlock Holmes adventure built with [sci-ts](https://github.com/rlueder/sci-ts),
 an SCI2 engine in TypeScript. Explore a clockmaker’s workshop, follow a trail of brass
