@@ -11,8 +11,9 @@ Watson: Holmes. Listen.
 <<sound 133 wait>>
 Somewhere below, a single clock is ticking.
 Hero: Then someone down there is still keeping time.
-Sherlock Holmes in The Stopped Clocks. To be continued.
 <<set $reachedStair to true>>
+<<wait 1.5>>
+<<room 105>>
 <<endif>>
 ===
 

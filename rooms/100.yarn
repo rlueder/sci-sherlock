@@ -10,13 +10,15 @@ The fire is lit. Fog presses at the windows of 221B.
 Watson: Nothing in the papers tonight, Holmes. London has gone quiet.
 Hero: London is never quiet, Watson. It is only waiting.
 <<sound 132>>
+<<animate door once>>
 <<show mrsHudson>>
-<<walk mrsHudson 250 166>>
+<<walk mrsHudson 276 172>>
 Mrs Hudson: A young man to see you, Mr Holmes. He's in a dreadful state.
 <<show toby>>
-<<walk toby 268 170>>
-<<walk mrsHudson 298 160>>
+<<walk toby 241 180>>
+<<walk mrsHudson 292 152>>
 <<hide mrsHudson>>
+<<cel door 0>>
 Toby: Mr Holmes? My name is Toby Vance. It's my master, sir. He's gone.
 <<set $metToby to true>>
 <<else>>
@@ -53,7 +55,7 @@ title: toby.talk
 -> We shall go at once. <<if $askedMaster and $askedDoor and $askedClocks and $askedLantern and not $tookCase>>
     Hero: Watson, your hat. Mr Vance, we shall go at once.
     Toby: Thank you, sir. I'll run ahead and open the shop.
-    <<walk toby 298 164>>
+    <<walk toby 292 152>>
     <<hide toby>>
     <<set $tookCase to true>>
 ===
@@ -133,7 +135,8 @@ The door to the landing, and the seventeen steps down to the street.
 title: door.do
 ---
 <<if $tookCase and $hasLens>>
-<<walk hero 290 162>>
+<<walk hero 280 158>>
+<<animate door once>>
 Watson: A cab, Holmes?
 Hero: A cab, Watson. Clerkenwell.
 <<room 101>>

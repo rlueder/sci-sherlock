@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../node_modules/sci2-ts/packages/content/room.schema.json
+# The title screen (picture 104): it plays for a moment, then the story starts in 221B.
+room: 104
+picture: 104
+music: 120
+hero:
+  at: [160, 250]

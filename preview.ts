@@ -61,7 +61,8 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
       else frames(1);
       if (!line() && prop(global("user"), "canInput") && !prop(global("curRoom"), "script")) return said;
     }
-    throw new Error(`scene did not return control to the player (room ${global("curRoomNum")}, effect ${prop(global("sfx"), "number")} ${prop(global("sfx"), "handle") ? "playing" : "stopped"})`);
+    const who = ["mrsHudson", "toby", "door"].map((n) => { const o = obj(n); return o ? `${n} at ${prop(o, "x")},${prop(o, "y")} cel ${prop(o, "cel")}${prop(o, "mover") ? " moving" : ""}${prop(o, "cycler") ? " cycling" : ""}` : `${n} hidden`; }).join("; ");
+    throw new Error(`scene did not return control to the player (room ${global("curRoomNum")}, effect ${prop(global("sfx"), "number")} ${prop(global("sfx"), "handle") ? "playing" : "stopped"}; ${who}; line ${JSON.stringify(line())})`);
   };
   const choose = (text: string) => {
     const item = menu().find((m) => m.text === text);
@@ -69,21 +70,23 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
     click(item.x + 4, item.y + 4);
     return finish();
   };
-  const talkTo = (name: string) => { verb(2); click(prop(obj(name), "x"), prop(obj(name), "y") - 20); };
+  const talkTo = (name: string) => { verb(2); click(prop(obj(name), "x"), prop(obj(name), "y") - 60); }; // the chest: people are hit only where drawn
   const enter = (room: number) => {
     for (let i = 0; i < 1200 && global("curRoomNum") !== room; i++) frames(1);
     assert.equal(global("curRoomNum"), room);
   };
   const shot = (name: string) => { [inp.x, inp.y] = [319, 199]; frames(1); capture?.(name, latest!); };
 
-  // 221B: Watson by the fire, then Mrs Hudson shows Toby in.
+  // The title screen, then 221B: Watson by the fire, then Mrs Hudson shows Toby in.
   vm.start(vm.exportAddress(0, 0), "play"); frames(10);
-  assert.equal(global("curRoomNum"), 100);
+  assert.equal(global("curRoomNum"), 104);
+  shot("title");
+  enter(100); frames(5);
   const arrival = finish();
   assert(arrival.some((s) => /My name is Toby Vance/.test(s)), arrival.join("\n"));
   assert(!obj("mrsHudson"), "Mrs Hudson has gone back down");
   shot("221b");
-  verb(4); click(298, 100);
+  verb(4); click(303, 80);
   assert.match(line(), /visitor/, "the door waits for the client"); finish();
   // Toby's story: four topics, then the one that takes the case.
   talkTo("toby");
@@ -92,13 +95,13 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   const going = choose("We shall go at once.");
   assert(going.some((s) => /go at once/.test(s)));
   choose("Goodbye.");
-  verb(4); click(298, 100);
+  verb(4); click(303, 80);
   assert.match(line(), /My lens/, "the lens first"); finish();
-  click(176, 74);
+  click(170, 68);
   assert.match(line(), /Where I go/); finish();
   assert(!obj("mantelLens"));
   assert.equal(vm.getProp(global("inventory"), "size"), 1);
-  verb(4); click(298, 100); finish();
+  verb(4); click(303, 80); finish();
 
   // Baker Street, and the cab.
   enter(101); finish();
@@ -184,8 +187,10 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   verb(4); click(270, 120);
   enter(103);
   const ending = finish();
-  assert(ending.some((s) => /To be continued/.test(s)), ending.join("\n"));
+  assert(ending.some((s) => /still keeping time/.test(s)), ending.join("\n"));
   shot("stair");
+  enter(105); frames(5);
+  shot("end");
 
   // Back in the workshop (as a saved game would be), it keeps the open case and the trail.
   vm.invoke(global("game"), vm.selector("newRoom"), [102]); frames(10);
