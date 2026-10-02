@@ -1,0 +1,50 @@
+[
+  {
+    "name": "foreground-desk",
+    "expected": [
+      "export/foreground-desk.png"
+    ]
+  },
+  {
+    "name": "door",
+    "expected": [
+      "export/door-0.png",
+      "export/door-1.png",
+      "export/door-2.png",
+      "export/door-3.png",
+      "export/door-4.png",
+      "export/door-5.png"
+    ]
+  },
+  {
+    "name": "room",
+    "expected": [
+      "export/room-closed.png"
+    ]
+  },
+  {
+    "name": "fire",
+    "expected": [
+      "export/fire-0.png",
+      "export/fire-1.png",
+      "export/fire-2.png",
+      "export/fire-3.png"
+    ]
+  },
+  {
+    "name": "lens",
+    "expected": [
+      "export/mantel-lens.png"
+    ]
+  },
+  {
+    "name": "watson-seated",
+    "expected": [
+      "export/watson-page-0.png",
+      "export/watson-page-1.png",
+      "export/watson-page-2.png",
+      "export/watson-page-3.png",
+      "export/watson-page-4.png"
+    ]
+  }
+]

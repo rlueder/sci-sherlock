@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [
+    {
+      "number": 100,
+      "layers": [
+        {
+          "png": "export/background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/foreground-desk.png",
+          "priority": 199
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "number": 205,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/watson-seated.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/watson-page-0.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-page-1.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-page-2.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-page-3.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-page-4.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 222,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/fire-0.png",
+              "anchor": [
+                20,
+                32
+              ]
+            },
+            {
+              "png": "export/fire-1.png",
+              "anchor": [
+                20,
+                32
+              ]
+            },
+            {
+              "png": "export/fire-2.png",
+              "anchor": [
+                20,
+                32
+              ]
+            },
+            {
+              "png": "export/fire-3.png",
+              "anchor": [
+                20,
+                32
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 223,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/mantel-lens.png",
+              "anchor": [
+                4,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 225,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/door-0.png",
+              "anchor": [
+                57,
+                113
+              ]
+            },
+            {
+              "png": "export/door-1.png",
+              "anchor": [
+                57,
+                113
+              ]
+            },
+            {
+              "png": "export/door-2.png",
+              "anchor": [
+                57,
+                113
+              ]
+            },
+            {
+              "png": "export/door-3.png",
+              "anchor": [
+                57,
+                113
+              ]
+            },
+            {
+              "png": "export/door-4.png",
+              "anchor": [
+                57,
+                113
+              ]
+            },
+            {
+              "png": "export/door-5.png",
+              "anchor": [
+                57,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

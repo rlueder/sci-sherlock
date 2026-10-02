@@ -1,0 +1,174 @@
+{
+  "view": 205,
+  "loop": 1,
+  "canvas": [
+    72,
+    120
+  ],
+  "anchor": [
+    36,
+    113
+  ],
+  "at": [
+    94,
+    146
+  ],
+  "registration": [
+    {
+      "key": 1,
+      "cell": [
+        0,
+        0,
+        543,
+        744
+      ],
+      "crown": 41,
+      "sole": 732,
+      "headCentre": 301.5,
+      "nativeHeight": 64
+    },
+    {
+      "key": 2,
+      "cell": [
+        543,
+        0,
+        543,
+        744
+      ],
+      "crown": 40,
+      "sole": 732,
+      "headCentre": 241.5,
+      "nativeHeight": 64
+    },
+    {
+      "key": 3,
+      "cell": [
+        0,
+        744,
+        543,
+        704
+      ],
+      "crown": 12,
+      "sole": 691,
+      "headCentre": 301.5,
+      "nativeHeight": 64
+    },
+    {
+      "key": 4,
+      "cell": [
+        543,
+        744,
+        543,
+        704
+      ],
+      "crown": 12,
+      "sole": 691,
+      "headCentre": 241.5,
+      "nativeHeight": 64
+    }
+  ],
+  "maskPolygon": [
+    [
+      20,
+      73
+    ],
+    [
+      24,
+      73
+    ],
+    [
+      24,
+      71
+    ],
+    [
+      48,
+      71
+    ],
+    [
+      48,
+      68
+    ],
+    [
+      54,
+      71
+    ],
+    [
+      58,
+      77
+    ],
+    [
+      57,
+      85
+    ],
+    [
+      50,
+      87
+    ],
+    [
+      23,
+      87
+    ],
+    [
+      17,
+      84
+    ],
+    [
+      17,
+      77
+    ]
+  ],
+  "keyDurationsMs": [
+    2800,
+    200,
+    200,
+    200,
+    200,
+    400
+  ],
+  "timeline": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    4,
+    4,
+    0,
+    0,
+    0,
+    0
+  ],
+  "stepMs": 100,
+  "totalMs": 4000,
+  "bodyOutsideMaskIdentical": true,
+  "playback": "Loop 0 is neutral. Trigger loop 1 occasionally; play cels 1–4 at 200ms each, then return to loop 0. Review repeats after a reading hold; production may wait 6–10 seconds."
+}
