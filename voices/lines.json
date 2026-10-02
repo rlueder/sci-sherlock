@@ -1,0 +1,1398 @@
+{
+  "lines": [
+    {
+      "id": "100-001",
+      "room": 100,
+      "speaker": "Narrator",
+      "text": "The fire is lit. Fog presses at the windows of 221B.",
+      "node": "room.enter",
+      "where": "rooms/100.yarn:9",
+      "recording": "recorded",
+      "recorded": {
+        "text": "d184e7fdd0cf",
+        "wav": "3824922b32e8"
+      }
+    },
+    {
+      "id": "100-002",
+      "room": 100,
+      "speaker": "Watson",
+      "text": "Nothing in the papers tonight, Holmes. London has gone quiet.",
+      "node": "room.enter",
+      "before": {
+        "speaker": "Narrator",
+        "text": "The fire is lit. Fog presses at the windows of 221B."
+      },
+      "where": "rooms/100.yarn:10",
+      "recording": "recorded",
+      "recorded": {
+        "text": "745bd3ec8c45",
+        "wav": "400c611e01a3"
+      }
+    },
+    {
+      "id": "100-003",
+      "room": 100,
+      "speaker": "Hero",
+      "text": "London is never quiet, Watson. It is only waiting.",
+      "node": "room.enter",
+      "before": {
+        "speaker": "Watson",
+        "text": "Nothing in the papers tonight, Holmes. London has gone quiet."
+      },
+      "where": "rooms/100.yarn:11",
+      "recording": "recorded",
+      "recorded": {
+        "text": "c5085271e9a4",
+        "wav": "4df18dd1c926"
+      }
+    },
+    {
+      "id": "100-004",
+      "room": 100,
+      "speaker": "Mrs Hudson",
+      "text": "A young man to see you, Mr Holmes. He's in a dreadful state.",
+      "node": "room.enter",
+      "before": {
+        "speaker": "Hero",
+        "text": "London is never quiet, Watson. It is only waiting."
+      },
+      "where": "rooms/100.yarn:16",
+      "recording": "recorded",
+      "recorded": {
+        "text": "0cb9e255f800",
+        "wav": "35d579091520"
+      }
+    },
+    {
+      "id": "100-005",
+      "room": 100,
+      "speaker": "Toby",
+      "text": "Mr Holmes? My name is Toby Vance. It's my master, sir. He's gone.",
+      "node": "room.enter",
+      "before": {
+        "speaker": "Mrs Hudson",
+        "text": "A young man to see you, Mr Holmes. He's in a dreadful state."
+      },
+      "where": "rooms/100.yarn:22",
+      "recording": "recorded",
+      "recorded": {
+        "text": "f87c3922ec7b",
+        "wav": "2819f2fd8907"
+      }
+    },
+    {
+      "id": "100-006",
+      "room": 100,
+      "speaker": "Narrator",
+      "text": "The sitting room at 221B. Books, papers and chemicals, in an order only Holmes understands.",
+      "node": "room.look",
+      "where": "rooms/100.yarn:34",
+      "recording": "recorded",
+      "recorded": {
+        "text": "4c5a636808a1",
+        "wav": "eb8cf8a8a260"
+      }
+    },
+    {
+      "id": "100-007",
+      "room": 100,
+      "speaker": "Toby",
+      "text": "Mr Elias Thorne, sir. Clockmaker, of Clerkenwell. I've been his apprentice three years.",
+      "node": "toby.talk: Your master?",
+      "before": {
+        "speaker": "Hero",
+        "text": "Your master?"
+      },
+      "where": "rooms/100.yarn:40",
+      "recording": "recorded",
+      "recorded": {
+        "text": "794a4a0d89b6",
+        "wav": "3fdf39b731a9"
+      }
+    },
+    {
+      "id": "100-008",
+      "room": 100,
+      "speaker": "Toby",
+      "text": "He was at his bench when I left last night. This morning the shop was shut up, and he was gone.",
+      "node": "toby.talk: Your master?",
+      "before": {
+        "speaker": "Toby",
+        "text": "Mr Elias Thorne, sir. Clockmaker, of Clerkenwell. I've been his apprentice three years."
+      },
+      "where": "rooms/100.yarn:41",
+      "recording": "recorded",
+      "recorded": {
+        "text": "32470ec0e65d",
+        "wav": "49c19422748f"
+      }
+    },
+    {
+      "id": "100-009",
+      "room": 100,
+      "speaker": "Toby",
+      "text": "Bolted, sir, from the inside. I had to fetch the constable to break it in.",
+      "node": "toby.talk: The door was locked?",
+      "before": {
+        "speaker": "Hero",
+        "text": "The door was locked?"
+      },
+      "where": "rooms/100.yarn:44",
+      "recording": "recorded",
+      "recorded": {
+        "text": "08eea847607a",
+        "wav": "ac01496c4b3e"
+      }
+    },
+    {
+      "id": "100-010",
+      "room": 100,
+      "speaker": "Hero",
+      "text": "And the window?",
+      "node": "toby.talk: The door was locked?",
+      "before": {
+        "speaker": "Toby",
+        "text": "Bolted, sir, from the inside. I had to fetch the constable to break it in."
+      },
+      "where": "rooms/100.yarn:45",
+      "recording": "recorded",
+      "recorded": {
+        "text": "20fc81e42717",
+        "wav": "f2f33bf14215"
+      }
+    },
+    {
+      "id": "100-011",
+      "room": 100,
+      "speaker": "Toby",
+      "text": "Latched. Nobody could have got out that way.",
+      "node": "toby.talk: The door was locked?",
+      "before": {
+        "speaker": "Hero",
+        "text": "And the window?"
+      },
+      "where": "rooms/100.yarn:46",
+      "recording": "recorded",
+      "recorded": {
+        "text": "0d40bd561106",
+        "wav": "15fc9f299be3"
+      }
+    },
+    {
+      "id": "100-012",
+      "room": 100,
+      "speaker": "Toby",
+      "text": "That's what frightened me, sir. Every clock on the walls had stopped, all at the same minute. Seventeen past three.",
+      "node": "toby.talk: The clocks?",
+      "before": {
+        "speaker": "Hero",
+        "text": "The clocks?"
+      },
+      "where": "rooms/100.yarn:49",
+      "recording": "recorded",
+      "recorded": {
+        "text": "28ce0f779a6e",
+        "wav": "20ee6e5f2414"
+      }
+    },
+    {
+      "id": "100-013",
+      "room": 100,
+      "speaker": "Toby",
+      "text": "All but the big case clock in the corner. That one was still going.",
+      "node": "toby.talk: The clocks?",
+      "before": {
+        "speaker": "Toby",
+        "text": "That's what frightened me, sir. Every clock on the walls had stopped, all at the same minute. Seventeen past three."
+      },
+      "where": "rooms/100.yarn:50",
+      "recording": "recorded",
+      "recorded": {
+        "text": "4cf58b1ad351",
+        "wav": "03075d877996"
+      }
+    },
+    {
+      "id": "100-014",
+      "room": 100,
+      "speaker": "Toby",
+      "text": "Still burning on the bench when we broke in. He never leaves it lit.",
+      "node": "toby.talk: The lantern?",
+      "before": {
+        "speaker": "Hero",
+        "text": "The lantern?"
+      },
+      "where": "rooms/100.yarn:53",
+      "recording": "recorded",
+      "recorded": {
+        "text": "25d75ba83fa1",
+        "wav": "faf08790ffca"
+      }
+    },
+    {
+      "id": "100-015",
+      "room": 100,
+      "speaker": "Hero",
+      "text": "Watson, your hat. Mr Vance, we shall go at once.",
+      "node": "toby.talk: We shall go at once.",
+      "before": {
+        "speaker": "Hero",
+        "text": "We shall go at once."
+      },
+      "where": "rooms/100.yarn:56",
+      "recording": "recorded",
+      "recorded": {
+        "text": "676d29cd9837",
+        "wav": "fd621151cc24"
+      }
+    },
+    {
+      "id": "100-016",
+      "room": 100,
+      "speaker": "Toby",
+      "text": "Thank you, sir. I'll run ahead and open the shop.",
+      "node": "toby.talk: We shall go at once.",
+      "before": {
+        "speaker": "Hero",
+        "text": "Watson, your hat. Mr Vance, we shall go at once."
+      },
+      "where": "rooms/100.yarn:57",
+      "recording": "recorded",
+      "recorded": {
+        "text": "3135a07020be",
+        "wav": "599721d71f53"
+      }
+    },
+    {
+      "id": "100-017",
+      "room": 100,
+      "speaker": "Narrator",
+      "text": "A thin young man in a work coat two sizes too large, turning his cap round and round.",
+      "node": "toby.look",
+      "where": "rooms/100.yarn:65",
+      "recording": "recorded",
+      "recorded": {
+        "text": "df3e04942b97",
+        "wav": "a6f0efb77f52"
+      }
+    },
+    {
+      "id": "100-018",
+      "room": 100,
+      "speaker": "Narrator",
+      "text": "I am in my armchair, with yesterday's Standard, read twice over.",
+      "node": "watson.look",
+      "where": "rooms/100.yarn:70",
+      "recording": "recorded",
+      "recorded": {
+        "text": "d22d27158b77",
+        "wav": "e629ca31f3e8"
+      }
+    },
+    {
+      "id": "100-019",
+      "room": 100,
+      "speaker": "Watson",
+      "text": "I have my revolver, Holmes, if it comes to that.",
+      "node": "watson.talk",
+      "where": "rooms/100.yarn:76",
+      "recording": "recorded",
+      "recorded": {
+        "text": "f804ea7db69d",
+        "wav": "b6ba727935c6"
+      }
+    },
+    {
+      "id": "100-020",
+      "room": 100,
+      "speaker": "Watson",
+      "text": "The boy is frightened half out of his wits. Hear him out, Holmes.",
+      "node": "watson.talk",
+      "before": {
+        "speaker": "Watson",
+        "text": "I have my revolver, Holmes, if it comes to that."
+      },
+      "where": "rooms/100.yarn:78",
+      "recording": "recorded",
+      "recorded": {
+        "text": "4169bb34e7e2",
+        "wav": "aea954c51f46"
+      }
+    },
+    {
+      "id": "100-021",
+      "room": 100,
+      "speaker": "Narrator",
+      "text": "Holmes's lens, on the mantel where he left it.",
+      "node": "mantelLens.look",
+      "where": "rooms/100.yarn:84",
+      "recording": "recorded",
+      "recorded": {
+        "text": "43c1093f67ac",
+        "wav": "c255de2877d3"
+      }
+    },
+    {
+      "id": "100-022",
+      "room": 100,
+      "speaker": "Hero",
+      "text": "Where I go, it goes.",
+      "node": "mantelLens.do",
+      "where": "rooms/100.yarn:92",
+      "recording": "recorded",
+      "recorded": {
+        "text": "624d034ff509",
+        "wav": "beef806e8a74"
+      }
+    },
+    {
+      "id": "100-023",
+      "room": 100,
+      "speaker": "Narrator",
+      "text": "Unanswered letters, pinned to the mantel with a jack-knife.",
+      "node": "correspondence.look",
+      "where": "rooms/100.yarn:97",
+      "recording": "recorded",
+      "recorded": {
+        "text": "f65760c5cbf0",
+        "wav": "d86180be1ed4"
+      }
+    },
+    {
+      "id": "100-024",
+      "room": 100,
+      "speaker": "Hero",
+      "text": "They have waited a month. They can wait another night.",
+      "node": "correspondence.do",
+      "where": "rooms/100.yarn:102",
+      "recording": "recorded",
+      "recorded": {
+        "text": "333a2e2e1c3e",
+        "wav": "277ce208f802"
+      }
+    },
+    {
+      "id": "100-025",
+      "room": 100,
+      "speaker": "Narrator",
+      "text": "Holmes's violin, laid across a chair. It has seen him through worse evenings.",
+      "node": "violin.look",
+      "where": "rooms/100.yarn:107",
+      "recording": "recorded",
+      "recorded": {
+        "text": "e2c2d28f1b1c",
+        "wav": "abd75e322e0f"
+      }
+    },
+    {
+      "id": "100-026",
+      "room": 100,
+      "speaker": "Narrator",
+      "text": "A rack of test tubes on the chemistry bench, and a stain Mrs Hudson has given up on.",
+      "node": "bench.look",
+      "where": "rooms/100.yarn:112",
+      "recording": "recorded",
+      "recorded": {
+        "text": "d078da142ecd",
+        "wav": "03750a2d645c"
+      }
+    },
+    {
+      "id": "100-027",
+      "room": 100,
+      "speaker": "Narrator",
+      "text": "The Persian slipper, where Holmes keeps his tobacco.",
+      "node": "slipper.look",
+      "where": "rooms/100.yarn:117",
+      "recording": "recorded",
+      "recorded": {
+        "text": "ceea82cee28f",
+        "wav": "d82ab8944bc9"
+      }
+    },
+    {
+      "id": "100-028",
+      "room": 100,
+      "speaker": "Narrator",
+      "text": "A good fire. The only warm thing in London tonight.",
+      "node": "fire.look",
+      "where": "rooms/100.yarn:122",
+      "recording": "recorded",
+      "recorded": {
+        "text": "95691e2eb47c",
+        "wav": "3d2ab07240b3"
+      }
+    },
+    {
+      "id": "100-029",
+      "room": 100,
+      "speaker": "Narrator",
+      "text": "Fog, thick as wool. The lamps across the street are smudges of yellow.",
+      "node": "window.look",
+      "where": "rooms/100.yarn:127",
+      "recording": "recorded",
+      "recorded": {
+        "text": "92b8fe5d06c5",
+        "wav": "a536c010fa48"
+      }
+    },
+    {
+      "id": "100-030",
+      "room": 100,
+      "speaker": "Narrator",
+      "text": "The door to the landing, and the seventeen steps down to the street.",
+      "node": "door.look",
+      "where": "rooms/100.yarn:132",
+      "recording": "recorded",
+      "recorded": {
+        "text": "19477aff0440",
+        "wav": "95d761ab622a"
+      }
+    },
+    {
+      "id": "100-031",
+      "room": 100,
+      "speaker": "Watson",
+      "text": "A cab, Holmes?",
+      "node": "door.do",
+      "where": "rooms/100.yarn:140",
+      "recording": "recorded",
+      "recorded": {
+        "text": "40106fddd4c3",
+        "wav": "e436f6461f07"
+      }
+    },
+    {
+      "id": "100-032",
+      "room": 100,
+      "speaker": "Hero",
+      "text": "A cab, Watson. Clerkenwell.",
+      "node": "door.do",
+      "before": {
+        "speaker": "Watson",
+        "text": "A cab, Holmes?"
+      },
+      "where": "rooms/100.yarn:141",
+      "recording": "recorded",
+      "recorded": {
+        "text": "3e60bf330baa",
+        "wav": "dc0f366fe2ae"
+      }
+    },
+    {
+      "id": "100-033",
+      "room": 100,
+      "speaker": "Hero",
+      "text": "My lens, Watson. I shall want it tonight.",
+      "node": "door.do",
+      "before": {
+        "speaker": "Hero",
+        "text": "A cab, Watson. Clerkenwell."
+      },
+      "where": "rooms/100.yarn:144",
+      "recording": "recorded",
+      "recorded": {
+        "text": "981bcdff0b9c",
+        "wav": "91d4c8b05293"
+      }
+    },
+    {
+      "id": "100-034",
+      "room": 100,
+      "speaker": "Hero",
+      "text": "We have a visitor. It would be rude to leave before he has told us why he came.",
+      "node": "door.do",
+      "before": {
+        "speaker": "Hero",
+        "text": "My lens, Watson. I shall want it tonight."
+      },
+      "where": "rooms/100.yarn:146",
+      "recording": "recorded",
+      "recorded": {
+        "text": "4f5bbfa002e0",
+        "wav": "c9813fddb51b"
+      }
+    },
+    {
+      "id": "101-001",
+      "room": 101,
+      "speaker": "Narrator",
+      "text": "Fog swallows the street. A hansom waits at the kerb, its lamps two blurs of light.",
+      "node": "room.enter",
+      "where": "rooms/101.yarn:4",
+      "recording": "recorded",
+      "recorded": {
+        "text": "040d2ea22fd1",
+        "wav": "dec45aa2a6f6"
+      }
+    },
+    {
+      "id": "101-002",
+      "room": 101,
+      "speaker": "Narrator",
+      "text": "Baker Street at night, or as much of it as the fog allows.",
+      "node": "room.look",
+      "where": "rooms/101.yarn:11",
+      "recording": "recorded",
+      "recorded": {
+        "text": "312e072b953c",
+        "wav": "1d120cfc713f"
+      }
+    },
+    {
+      "id": "101-003",
+      "room": 101,
+      "speaker": "Narrator",
+      "text": "A hansom, the horse steaming in the cold.",
+      "node": "cab.look",
+      "where": "rooms/101.yarn:16",
+      "recording": "recorded",
+      "recorded": {
+        "text": "511688889169",
+        "wav": "d53c4e672931"
+      }
+    },
+    {
+      "id": "101-004",
+      "room": 101,
+      "speaker": "Hero",
+      "text": "Clerkenwell, cabby, and quickly.",
+      "node": "cab.do",
+      "where": "rooms/101.yarn:22",
+      "recording": "recorded",
+      "recorded": {
+        "text": "33c9b18dcb96",
+        "wav": "118f625b55c2"
+      }
+    },
+    {
+      "id": "101-005",
+      "room": 101,
+      "speaker": "Watson",
+      "text": "There's a sovereign in it if you can find the way in this.",
+      "node": "cab.do",
+      "before": {
+        "speaker": "Hero",
+        "text": "Clerkenwell, cabby, and quickly."
+      },
+      "where": "rooms/101.yarn:23",
+      "recording": "recorded",
+      "recorded": {
+        "text": "c238401513ae",
+        "wav": "297b6a98110a"
+      }
+    },
+    {
+      "id": "101-006",
+      "room": 101,
+      "speaker": "Narrator",
+      "text": "The gas lamp makes a small room of light in the fog.",
+      "node": "lamp.look",
+      "where": "rooms/101.yarn:30",
+      "recording": "recorded",
+      "recorded": {
+        "text": "b662789fb4b3",
+        "wav": "12c2408c950e"
+      }
+    },
+    {
+      "id": "101-007",
+      "room": 101,
+      "speaker": "Narrator",
+      "text": "The door of 221B. Mrs Hudson's lamp still burns in the hall.",
+      "node": "door221.look",
+      "where": "rooms/101.yarn:35",
+      "recording": "recorded",
+      "recorded": {
+        "text": "da9da121e8e8",
+        "wav": "4ad31fa61674"
+      }
+    },
+    {
+      "id": "101-008",
+      "room": 101,
+      "speaker": "Hero",
+      "text": "No time for that now. Thorne has been gone a night already.",
+      "node": "door221.do",
+      "where": "rooms/101.yarn:40",
+      "recording": "recorded",
+      "recorded": {
+        "text": "9931a4bba3c1",
+        "wav": "aa6939283733"
+      }
+    },
+    {
+      "id": "101-009",
+      "room": 101,
+      "speaker": "Narrator",
+      "text": "My collar is up against the fog, for all the good it does.",
+      "node": "watson.look",
+      "where": "rooms/101.yarn:45",
+      "recording": "recorded",
+      "recorded": {
+        "text": "3962041b7ab5",
+        "wav": "8ee142dba434"
+      }
+    },
+    {
+      "id": "101-010",
+      "room": 101,
+      "speaker": "Watson",
+      "text": "Clerkenwell at this hour. The cabby will want double.",
+      "node": "watson.talk",
+      "where": "rooms/101.yarn:50",
+      "recording": "recorded",
+      "recorded": {
+        "text": "8fb2cafe4677",
+        "wav": "079d48c7fd8f"
+      }
+    },
+    {
+      "id": "102-001",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "Thorne's workshop. A lantern burns, and of all the clocks here only the tall one in the corner is going.",
+      "node": "room.look",
+      "where": "rooms/102.yarn:22",
+      "recording": "recorded",
+      "recorded": {
+        "text": "3d92f973db53",
+        "wav": "60f7f8f3a6c5"
+      }
+    },
+    {
+      "id": "102-002",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "Every dial reads seventeen minutes past three.",
+      "node": "clocks.look",
+      "where": "rooms/102.yarn:28",
+      "recording": "recorded",
+      "recorded": {
+        "text": "35fdb1ff6885",
+        "wav": "bb455b0bd776"
+      }
+    },
+    {
+      "id": "102-003",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "A fresh scratch beneath the minute hand. These clocks were stopped by hand.",
+      "node": "clocks.look",
+      "before": {
+        "speaker": "Narrator",
+        "text": "Every dial reads seventeen minutes past three."
+      },
+      "where": "rooms/102.yarn:29",
+      "recording": "recorded",
+      "recorded": {
+        "text": "66728870246e",
+        "wav": "8765011345e3"
+      }
+    },
+    {
+      "id": "102-004",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "Let us preserve the evidence as we found it.",
+      "node": "clocks.do",
+      "where": "rooms/102.yarn:35",
+      "recording": "recorded",
+      "recorded": {
+        "text": "7500368f7f43",
+        "wav": "2f0ea948498d"
+      }
+    },
+    {
+      "id": "102-005",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "A trail of brass filings, from the bench to the tall-case clock.",
+      "node": "filings.look",
+      "where": "rooms/102.yarn:41",
+      "recording": "recorded",
+      "recorded": {
+        "text": "508dde527bac",
+        "wav": "242ab4b4c8f2"
+      }
+    },
+    {
+      "id": "102-006",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "Something glints in the sawdust, too fine to make out from here.",
+      "node": "filings.look",
+      "before": {
+        "speaker": "Narrator",
+        "text": "A trail of brass filings, from the bench to the tall-case clock."
+      },
+      "where": "rooms/102.yarn:43",
+      "recording": "recorded",
+      "recorded": {
+        "text": "ea8ed129bea9",
+        "wav": "9a0ea694a93e"
+      }
+    },
+    {
+      "id": "102-007",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "Best not disturb them. My lens will tell us more.",
+      "node": "filings.do",
+      "where": "rooms/102.yarn:49",
+      "recording": "recorded",
+      "recorded": {
+        "text": "479b417378c0",
+        "wav": "8f7aa3815d57"
+      }
+    },
+    {
+      "id": "102-008",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "Holmes kneels with his lens. Among the sawdust, brass filings catch the lantern light.",
+      "node": "filings.lens",
+      "where": "rooms/102.yarn:59",
+      "recording": "recorded",
+      "recorded": {
+        "text": "db4e046baf89",
+        "wav": "b1b0aeb4b214"
+      }
+    },
+    {
+      "id": "102-009",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "A trail from the bench to the tall-case clock. Something was recently fitted there.",
+      "node": "filings.lens",
+      "before": {
+        "speaker": "Narrator",
+        "text": "Holmes kneels with his lens. Among the sawdust, brass filings catch the lantern light."
+      },
+      "where": "rooms/102.yarn:62",
+      "recording": "recorded",
+      "recorded": {
+        "text": "d9044eb912a1",
+        "wav": "facca1aadee4"
+      }
+    },
+    {
+      "id": "102-010",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "Fresh scratches in the boards, where the case clock has been moved and moved back.",
+      "node": "scratches.look",
+      "where": "rooms/102.yarn:69",
+      "recording": "recorded",
+      "recorded": {
+        "text": "9e48c9671d6f",
+        "wav": "eac3ff22456b"
+      }
+    },
+    {
+      "id": "102-011",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "The lens confirms it: each hand was turned and held.",
+      "node": "clocks.lens",
+      "where": "rooms/102.yarn:74",
+      "recording": "recorded",
+      "recorded": {
+        "text": "37ffbc318896",
+        "wav": "31451b86e743"
+      }
+    },
+    {
+      "id": "102-012",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "A tall-case clock of polished walnut, its pendulum swinging. The only clock in the shop still going.",
+      "node": "clock.look",
+      "where": "rooms/102.yarn:79",
+      "recording": "recorded",
+      "recorded": {
+        "text": "266849da6999",
+        "wav": "78d1a6d5d6b5"
+      }
+    },
+    {
+      "id": "102-013",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "Fresh scratches mark the boards beneath it.",
+      "node": "clock.look",
+      "before": {
+        "speaker": "Narrator",
+        "text": "A tall-case clock of polished walnut, its pendulum swinging. The only clock in the shop still going."
+      },
+      "where": "rooms/102.yarn:80",
+      "recording": "recorded",
+      "recorded": {
+        "text": "cc0449e4c758",
+        "wav": "87404e6daa76"
+      }
+    },
+    {
+      "id": "102-014",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "The clocks did not stop together. Someone arranged them so.",
+      "node": "clock.do",
+      "where": "rooms/102.yarn:88",
+      "recording": "recorded",
+      "recorded": {
+        "text": "3f9fee05dd3f",
+        "wav": "a858625d3b90"
+      }
+    },
+    {
+      "id": "102-015",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "And this case is far too light for its size.",
+      "node": "clock.do",
+      "before": {
+        "speaker": "Hero",
+        "text": "The clocks did not stop together. Someone arranged them so."
+      },
+      "where": "rooms/102.yarn:89",
+      "recording": "recorded",
+      "recorded": {
+        "text": "d3be99c1df2d",
+        "wav": "984bfccac49e"
+      }
+    },
+    {
+      "id": "102-016",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "A stair behind the clock. The air from below is cold.",
+      "node": "clock.do",
+      "before": {
+        "speaker": "Hero",
+        "text": "And this case is far too light for its size."
+      },
+      "where": "rooms/102.yarn:102",
+      "recording": "recorded",
+      "recorded": {
+        "text": "43ef9b9db03c",
+        "wav": "96f9225b00bb"
+      }
+    },
+    {
+      "id": "102-017",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "Come, Watson. Our clockmaker has left us a way in.",
+      "node": "clock.do",
+      "before": {
+        "speaker": "Narrator",
+        "text": "A stair behind the clock. The air from below is cold."
+      },
+      "where": "rooms/102.yarn:103",
+      "recording": "recorded",
+      "recorded": {
+        "text": "9896d02573ff",
+        "wav": "8f3c679b8035"
+      }
+    },
+    {
+      "id": "102-018",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "Not yet. Watson, a moment. Let me put this in order aloud.",
+      "node": "clock.do",
+      "before": {
+        "speaker": "Hero",
+        "text": "Come, Watson. Our clockmaker has left us a way in."
+      },
+      "where": "rooms/102.yarn:105",
+      "recording": "recorded",
+      "recorded": {
+        "text": "47e94ba9ccc2",
+        "wav": "b4e15d617c95"
+      }
+    },
+    {
+      "id": "102-019",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "Before moving anything, I should examine the wall clocks and the filings on the floor.",
+      "node": "clock.do",
+      "before": {
+        "speaker": "Hero",
+        "text": "Not yet. Watson, a moment. Let me put this in order aloud."
+      },
+      "where": "rooms/102.yarn:107",
+      "recording": "recorded",
+      "recorded": {
+        "text": "7ba4eec9e005",
+        "wav": "1d0002d4c15f"
+      }
+    },
+    {
+      "id": "102-020",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "Behind the case, a narrow stair descends into darkness.",
+      "node": "caseDoor.look",
+      "where": "rooms/102.yarn:113",
+      "recording": "recorded",
+      "recorded": {
+        "text": "33c80d6c4af9",
+        "wav": "f94164839ba5"
+      }
+    },
+    {
+      "id": "102-021",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "Behind the case, a narrow stair descends into darkness.",
+      "node": "stair.look",
+      "where": "rooms/102.yarn:125",
+      "recording": "recorded",
+      "recorded": {
+        "text": "33c80d6c4af9",
+        "wav": "f94164839ba5"
+      }
+    },
+    {
+      "id": "102-022",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "The tall-case clock stands close against the wall.",
+      "node": "stair.look",
+      "before": {
+        "speaker": "Narrator",
+        "text": "Behind the case, a narrow stair descends into darkness."
+      },
+      "where": "rooms/102.yarn:127",
+      "recording": "recorded",
+      "recorded": {
+        "text": "4d2827286242",
+        "wav": "834254e21ef6"
+      }
+    },
+    {
+      "id": "102-023",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "Before moving anything, I should examine the wall clocks and the filings on the floor.",
+      "node": "stair.do",
+      "where": "rooms/102.yarn:137",
+      "recording": "recorded",
+      "recorded": {
+        "text": "7ba4eec9e005",
+        "wav": "1d0002d4c15f"
+      }
+    },
+    {
+      "id": "102-024",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "The lantern is still warm. Thorne cannot have been gone long.",
+      "node": "lantern.look",
+      "where": "rooms/102.yarn:143",
+      "recording": "recorded",
+      "recorded": {
+        "text": "09e9ef922d35",
+        "wav": "63c6336c8658"
+      }
+    },
+    {
+      "id": "102-025",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "Leave it burning. We shall need the light.",
+      "node": "lantern.do",
+      "where": "rooms/102.yarn:148",
+      "recording": "recorded",
+      "recorded": {
+        "text": "99066d4f6bf2",
+        "wav": "f3956c04d9bc"
+      }
+    },
+    {
+      "id": "102-026",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "The sash is latched. Rain runs down the glass, and the Clerkenwell roofs dissolve into the dark.",
+      "node": "window.look",
+      "where": "rooms/102.yarn:153",
+      "recording": "recorded",
+      "recorded": {
+        "text": "16f39e3f699b",
+        "wav": "acb9a361cf39"
+      }
+    },
+    {
+      "id": "102-027",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "Secure from within. No one left by this window.",
+      "node": "window.do",
+      "where": "rooms/102.yarn:158",
+      "recording": "recorded",
+      "recorded": {
+        "text": "f96d1ef95244",
+        "wav": "5538fa0f7029"
+      }
+    },
+    {
+      "id": "102-028",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "A dismantled movement, a scribbled order and tools laid down in haste.",
+      "node": "bench.look",
+      "where": "rooms/102.yarn:163",
+      "recording": "recorded",
+      "recorded": {
+        "text": "fbc8ce754c69",
+        "wav": "43d0a0fde038"
+      }
+    },
+    {
+      "id": "102-029",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "The last entry is unfinished. A deposit received for an unusual alteration to a clock case.",
+      "node": "ledger.look",
+      "where": "rooms/102.yarn:168",
+      "recording": "recorded",
+      "recorded": {
+        "text": "6ac01c563ddb",
+        "wav": "9cd8fa4e9660"
+      }
+    },
+    {
+      "id": "102-030",
+      "room": 102,
+      "speaker": "Narrator",
+      "text": "I keep well clear of the evidence. Holmes has views on that.",
+      "node": "watson.look",
+      "where": "rooms/102.yarn:173",
+      "recording": "recorded",
+      "recorded": {
+        "text": "5fdc50c2b3a9",
+        "wav": "302ab3735bf2"
+      }
+    },
+    {
+      "id": "102-031",
+      "room": 102,
+      "speaker": "Watson",
+      "text": "A locked room and a missing man. I make nothing of it yet. You?",
+      "node": "watson.talk: What do you make of it?",
+      "before": {
+        "speaker": "Hero",
+        "text": "What do you make of it?"
+      },
+      "where": "rooms/102.yarn:179",
+      "recording": "recorded",
+      "recorded": {
+        "text": "0d4c51b433fd",
+        "wav": "4bf1cb6910e8"
+      }
+    },
+    {
+      "id": "102-032",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "Nothing, until I have looked properly.",
+      "node": "watson.talk: What do you make of it?",
+      "before": {
+        "speaker": "Watson",
+        "text": "A locked room and a missing man. I make nothing of it yet. You?"
+      },
+      "where": "rooms/102.yarn:180",
+      "recording": "recorded",
+      "recorded": {
+        "text": "ba5078923146",
+        "wav": "27f123e9e94d"
+      }
+    },
+    {
+      "id": "102-033",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "Every hand was turned to the same minute and held there. Look at the scratches.",
+      "node": "watson.talk: The clocks were stopped by hand.",
+      "before": {
+        "speaker": "Hero",
+        "text": "The clocks were stopped by hand."
+      },
+      "where": "rooms/102.yarn:182",
+      "recording": "recorded",
+      "recorded": {
+        "text": "b77db2375b12",
+        "wav": "759e7966b85f"
+      }
+    },
+    {
+      "id": "102-034",
+      "room": 102,
+      "speaker": "Watson",
+      "text": "But why would a man stop his own clocks?",
+      "node": "watson.talk: The clocks were stopped by hand.",
+      "before": {
+        "speaker": "Hero",
+        "text": "Every hand was turned to the same minute and held there. Look at the scratches."
+      },
+      "where": "rooms/102.yarn:183",
+      "recording": "recorded",
+      "recorded": {
+        "text": "5e9154007a8e",
+        "wav": "74e5812614ef"
+      }
+    },
+    {
+      "id": "102-035",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "Brass, freshly cut, from the bench to that tall-case clock. Something was fitted there, and recently.",
+      "node": "watson.talk: The filings lead to the case clock.",
+      "before": {
+        "speaker": "Hero",
+        "text": "The filings lead to the case clock."
+      },
+      "where": "rooms/102.yarn:185",
+      "recording": "recorded",
+      "recorded": {
+        "text": "d1d020649b38",
+        "wav": "1859d99efb25"
+      }
+    },
+    {
+      "id": "102-036",
+      "room": 102,
+      "speaker": "Watson",
+      "text": "A repair, perhaps?",
+      "node": "watson.talk: The filings lead to the case clock.",
+      "before": {
+        "speaker": "Hero",
+        "text": "Brass, freshly cut, from the bench to that tall-case clock. Something was fitted there, and recently."
+      },
+      "where": "rooms/102.yarn:186",
+      "recording": "recorded",
+      "recorded": {
+        "text": "0bfd1c8886b1",
+        "wav": "abacfa4c3e81"
+      }
+    },
+    {
+      "id": "102-037",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "In the middle of the night, with the door bolted? No.",
+      "node": "watson.talk: The filings lead to the case clock.",
+      "before": {
+        "speaker": "Watson",
+        "text": "A repair, perhaps?"
+      },
+      "where": "rooms/102.yarn:187",
+      "recording": "recorded",
+      "recorded": {
+        "text": "704d221b01dd",
+        "wav": "44e397915b70"
+      }
+    },
+    {
+      "id": "102-038",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "Every clock here was stopped at the minute he went. All but that one.",
+      "node": "watson.talk: The case clock is a door.",
+      "before": {
+        "speaker": "Hero",
+        "text": "The case clock is a door."
+      },
+      "where": "rooms/102.yarn:189",
+      "recording": "recorded",
+      "recorded": {
+        "text": "e56ffe5d74ff",
+        "wav": "c634df799721"
+      }
+    },
+    {
+      "id": "102-039",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "Its pendulum swings, yet its hands stand at seventeen past three, as still as the rest.",
+      "node": "watson.talk: The case clock is a door.",
+      "before": {
+        "speaker": "Hero",
+        "text": "Every clock here was stopped at the minute he went. All but that one."
+      },
+      "where": "rooms/102.yarn:190",
+      "recording": "recorded",
+      "recorded": {
+        "text": "c31863a1650c",
+        "wav": "bbd044b3a986"
+      }
+    },
+    {
+      "id": "102-040",
+      "room": 102,
+      "speaker": "Hero",
+      "text": "It isn't keeping time, Watson. The filings lead to it. That case is a door.",
+      "node": "watson.talk: The case clock is a door.",
+      "before": {
+        "speaker": "Hero",
+        "text": "Its pendulum swings, yet its hands stand at seventeen past three, as still as the rest."
+      },
+      "where": "rooms/102.yarn:191",
+      "recording": "recorded",
+      "recorded": {
+        "text": "256c4511118d",
+        "wav": "b8445960e1be"
+      }
+    },
+    {
+      "id": "102-041",
+      "room": 102,
+      "speaker": "Watson",
+      "text": "Then Thorne didn't vanish at all. He walked through it.",
+      "node": "watson.talk: The case clock is a door.",
+      "before": {
+        "speaker": "Hero",
+        "text": "It isn't keeping time, Watson. The filings lead to it. That case is a door."
+      },
+      "where": "rooms/102.yarn:192",
+      "recording": "recorded",
+      "recorded": {
+        "text": "5a504183c93a",
+        "wav": "f187eae4bb8b"
+      }
+    },
+    {
+      "id": "103-001",
+      "room": 103,
+      "speaker": "Narrator",
+      "text": "The stair turns once and ends at a door, with a thin line of light beneath it.",
+      "node": "room.enter",
+      "where": "rooms/103.yarn:5",
+      "recording": "recorded",
+      "recorded": {
+        "text": "28d5e4060612",
+        "wav": "6132b171896d"
+      }
+    },
+    {
+      "id": "103-002",
+      "room": 103,
+      "speaker": "Watson",
+      "text": "Holmes. Listen.",
+      "node": "room.enter",
+      "before": {
+        "speaker": "Narrator",
+        "text": "The stair turns once and ends at a door, with a thin line of light beneath it."
+      },
+      "where": "rooms/103.yarn:6",
+      "recording": "recorded",
+      "recorded": {
+        "text": "25fab50bae4e",
+        "wav": "95711d32c089"
+      }
+    },
+    {
+      "id": "103-003",
+      "room": 103,
+      "speaker": "Narrator",
+      "text": "Somewhere below, a single clock is ticking.",
+      "node": "room.enter",
+      "before": {
+        "speaker": "Watson",
+        "text": "Holmes. Listen."
+      },
+      "where": "rooms/103.yarn:12",
+      "recording": "recorded",
+      "recorded": {
+        "text": "6957a70ab5bc",
+        "wav": "a53278aaf48a"
+      }
+    },
+    {
+      "id": "103-004",
+      "room": 103,
+      "speaker": "Hero",
+      "text": "Then someone down there is still keeping time.",
+      "node": "room.enter",
+      "before": {
+        "speaker": "Narrator",
+        "text": "Somewhere below, a single clock is ticking."
+      },
+      "where": "rooms/103.yarn:13",
+      "recording": "recorded",
+      "recorded": {
+        "text": "a23834c43c97",
+        "wav": "2d59090fce10"
+      }
+    },
+    {
+      "id": "103-005",
+      "room": 103,
+      "speaker": "Narrator",
+      "text": "Stone steps, worn hollow in the middle. Older than the shop above them.",
+      "node": "room.look",
+      "where": "rooms/103.yarn:22",
+      "recording": "recorded",
+      "recorded": {
+        "text": "8ea41572f301",
+        "wav": "604ea8801dfa"
+      }
+    },
+    {
+      "id": "103-006",
+      "room": 103,
+      "speaker": "Narrator",
+      "text": "Lamplight, under a door. Someone is awake down there.",
+      "node": "light.look",
+      "where": "rooms/103.yarn:27",
+      "recording": "recorded",
+      "recorded": {
+        "text": "05808566d109",
+        "wav": "d366ca69855c"
+      }
+    },
+    {
+      "id": "103-007",
+      "room": 103,
+      "speaker": "Hero",
+      "text": "Not yet, Watson. Let us hear what they say before they hear us.",
+      "node": "light.do",
+      "where": "rooms/103.yarn:32",
+      "recording": "recorded",
+      "recorded": {
+        "text": "32d072add590",
+        "wav": "4dff4efe061d"
+      }
+    },
+    {
+      "id": "103-008",
+      "room": 103,
+      "speaker": "Watson",
+      "text": "I'll be right behind you.",
+      "node": "watson.talk",
+      "where": "rooms/103.yarn:37",
+      "recording": "recorded",
+      "recorded": {
+        "text": "752bfa3efdeb",
+        "wav": "1ca3d673a1c2"
+      }
+    },
+    {
+      "id": "105-001",
+      "room": 105,
+      "speaker": "Narrator",
+      "text": "The Stopped Clocks will continue.",
+      "node": "room.look",
+      "where": "rooms/105.yarn:9",
+      "recording": "recorded",
+      "recorded": {
+        "text": "6556de63eff1",
+        "wav": "4d0222dea418"
+      }
+    }
+  ]
+}
