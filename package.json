@@ -5,6 +5,7 @@
   "description": "Sherlock Holmes in The Stopped Clocks: an adventure game teaser running on sci-ts",
   "license": "MIT",
   "scripts": {
+    "prepare": "simple-git-hooks",
     "build": "sci-ts build",
     "dev": "sci-ts build && vite",
     "play": "sci-ts play",
@@ -18,12 +19,18 @@
     "check": "pnpm typecheck && pnpm art check art/art.json && pnpm test"
   },
   "devDependencies": {
+    "@commitlint/cli": "^21.2.3",
+    "@commitlint/config-conventional": "^21.2.3",
     "@types/node": "^26.6.3",
     "sci-ts": "npm:sci2-ts@^0.8.0",
+    "simple-git-hooks": "^2.14.0",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.1",
     "vitest": "^5.0.2"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "pnpm exec commitlint --edit \"$1\""
   },
   "packageManager": "pnpm@10.33.0",
   "engines": {
