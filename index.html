@@ -4,21 +4,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Stopped Clocks — Sherlock Holmes</title>
+    <meta name="description" content="A short Sherlock Holmes point-and-click mystery in the style of the early-1990s adventure games. Every clock in a Clerkenwell workshop has stopped at seventeen minutes past three." />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <main>
-      <header><p class="eyebrow">A Sherlock Holmes investigation · workshop preview</p><h1>The Stopped Clocks</h1><p>Every clock has stopped. Something in this room has not been left to chance.</p></header>
-      <canvas id="screen" width="320" height="200" tabindex="0" aria-label="Clockmaker’s workshop. Select an action below, then click the scene."></canvas>
+      <header><p class="eyebrow">A Sherlock Holmes investigation · teaser</p><h1>The Stopped Clocks</h1><p>A clockmaker has vanished from a room bolted on the inside. Every clock he left has stopped at seventeen minutes past three.</p></header>
+      <canvas id="screen" width="320" height="200" tabindex="0" aria-label="The game. Choose an action below, then click or tap the scene."></canvas>
       <nav aria-label="Actions">
         <button data-verb="3" aria-pressed="true">Walk <kbd>1</kbd></button>
         <button data-verb="1" aria-pressed="false">Look <kbd>2</kbd></button>
-        <button data-verb="4" aria-pressed="false">Use <kbd>3</kbd></button>
-        <button id="restart">Restart</button>
+        <button data-verb="2" aria-pressed="false">Talk <kbd>3</kbd></button>
+        <button data-verb="4" aria-pressed="false">Use <kbd>4</kbd></button>
+        <button id="inventory">Items <kbd>I</kbd></button>
+        <span class="spacer"></span>
+        <button id="sound" aria-pressed="true">Sound</button>
+        <button id="menu">Menu <kbd>Esc</kbd></button>
       </nav>
-      <p id="status" role="status">Opening the workshop…</p>
+      <p id="status" role="status">Loading…</p>
       <pre id="error" hidden></pre>
-      <footer><span>Click to act or advance dialogue. Right-click cycles actions.</span><details><summary>Need a lead?</summary><p>Look at the wall clocks and the brass filings on the floor beside the grandfather clock. Then use the grandfather clock.</p></details><p>Original 320 × 200 art · First playable style proof · No audio yet</p></footer>
+      <footer>
+        <p>Choose an action, then click or tap the scene; a click or tap also moves the conversation on. With a mouse, right-click goes to the next action. The menu saves and restores your game and sets how long lines stay up.</p>
+        <details><summary>Stuck?</summary>
+          <ul>
+            <li>At 221B, hear Toby out on every topic, and take your lens from the mantel before you leave.</li>
+            <li>In the workshop, look closely at the wall clocks, and use the lens on the brass filings by the tall-case clock.</li>
+            <li>Then talk it through with Watson before you touch the case clock.</li>
+          </ul>
+        </details>
+        <p>About fifteen minutes. Original 320 × 200 pixel art and music, running on <a href="https://github.com/rlueder/sci-ts">sci-ts</a>, an engine for Sierra's SCI adventure games written in TypeScript. Some rooms and people are still stand-ins while their art is drawn. <a href="https://github.com/rlueder/sci-sherlock">How it's made</a>.</p>
+      </footer>
     </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
