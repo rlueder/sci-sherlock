@@ -1,0 +1,133 @@
+{
+  "status": "First room/cast reference study; not a production manifest or runtime integration",
+  "canvas": [
+    320,
+    200
+  ],
+  "pixelAspect": 1.2,
+  "placements": {
+    "holmes": [
+      186,
+      176
+    ],
+    "watson": [
+      95,
+      137
+    ],
+    "hudson": [
+      276,
+      172
+    ],
+    "toby": [
+      241,
+      180
+    ],
+    "fire": [
+      138,
+      86
+    ],
+    "lens": [
+      165,
+      65
+    ],
+    "door": [
+      220,
+      0
+    ]
+  },
+  "doorAngles": [
+    0,
+    -5,
+    -15,
+    -30,
+    -50,
+    -70
+  ],
+  "targets": {
+    "window": [
+      8,
+      17,
+      63,
+      77
+    ],
+    "fire": [
+      138,
+      86,
+      40,
+      42
+    ],
+    "lens": [
+      165,
+      65,
+      12,
+      8
+    ],
+    "door": [
+      287,
+      17,
+      33,
+      137
+    ],
+    "bench": [
+      208,
+      54,
+      62,
+      77
+    ],
+    "violin": [
+      8,
+      102,
+      42,
+      34
+    ],
+    "slipper": [
+      184,
+      78,
+      14,
+      26
+    ],
+    "correspondence": [
+      117,
+      46,
+      17,
+      20
+    ]
+  },
+  "seated": {
+    "sourceBox": [
+      105,
+      113,
+      895,
+      1512
+    ],
+    "scale": [
+      0.040285714285714286,
+      0.03357142857142857
+    ],
+    "height": 47,
+    "chairGuide": "guides/chair-fit.json",
+    "sha256": "9b2015a9b9ee2bb1176cdb8590c8bd2a9ca1eb8d6157d6658e731272346cb541"
+  },
+  "checks": {
+    "closedDoorReconstructsRoom": true,
+    "doorHingeDrift": 0
+  },
+  "pending": [
+    "Cast visual review",
+    "Seated fit and joint trace review",
+    "Page-turn keys",
+    "Cast turnarounds and arrival walks",
+    "Talking portraits",
+    "Final hotspot, floor and depth integration"
+  ],
+  "guides": {
+    "camera": "guides/perspective.json",
+    "note": "Intended 26-degree blockout; painting is an interpretation, not a calibrated projection. Overlay exposes deviations for cleanup.",
+    "mirroredPreviewCast": [
+      "hudson",
+      "toby"
+    ],
+    "joints": "guides/joints.json",
+    "seatedTrace": "guides/seated-joints.json"
+  }
+}

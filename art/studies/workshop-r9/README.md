@@ -113,3 +113,13 @@ are horizontal, and the rear-quarter stretch is 45.4° after applying the 1:1.2
 display pixel aspect. The direction change is beside the bench leg. Cabinet and
 under-workbench paths are unchanged. `review/clock-route-closeup.gif` makes this
 small movement easier to judge; no sprite scaling or rotation is used in playback.
+
+## Production dial correction
+
+The clean export/workshop.png now includes r12's three wall-clock handsets at
+3:17. All 24 pendulum cels and source/pendulum.pxo use the same corrected tall-case
+dial. Rebuilding this study retains those corrections through the shared
+art/source/clock-dials.ts helper. Case geometry, anchors and bob motion are unchanged.
+
+For the character-free background with the descending threshold, use r12's
+[clean-room handoff](../clock-r12/README.md#clean-room-handoff-correction).

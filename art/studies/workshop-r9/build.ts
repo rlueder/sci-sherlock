@@ -7,6 +7,7 @@ import {decodePng} from 'sci-ts/png';
 import {Pixels} from '../../source/pixels.ts';
 import {loadIndexed,clone,enlarged,indexedGif,homography,type Point} from '../../source/study-tools.ts';
 import {pixeloramaProject} from '../../source/pixelorama-project.ts';
+import {setDial} from '../../source/clock-dials.ts';
 const here=fileURLToPath(new URL('.',import.meta.url)),ref=join(here,'../../reference/holmes-master-v1'),r3=join(here,'../../production/workshop-r3/export');
 const palette=JSON.parse(readFileSync(join(ref,'palette.json'),'utf8')) as string[],rgb=palette.map(h=>[1,3,5].map(n=>parseInt(h.slice(n,n+2),16)));
 const read=(p:string)=>loadIndexed(p,palette),base=read(join(ref,'review/workshop-clean.png')),before=clone(base),front=read(join(here,'../workshop-r5/export/workshop-front.png')),holmes=read(join(here,'../../reference/holmes-master-v2/master.png'));
@@ -33,9 +34,17 @@ for(let y=116;y<159;y++)for(let x=42;x<=80;x++){if(cabinetMask.data[y*320+x]!==0
 for(let row=0;row<3;row++)for(let col=0;col<2;col++){const [x,y]=project((col+.5)/2,(row+.5)/3);cabinetPatch.rect(x-1,y,3,2,5);cabinetPatch.dot(x,y-1,61);cabinetPatch.dot(x,y,48);cabinetPatch.dot(x,y+1,9);}
 // The chair arm sits in front of the drawer bank; retain those original pixels.
 const chair=new Pixels(320,200);chair.poly([[42,139],[47,140],[48,147],[44,150],[42,149]],0);chair.data.forEach((c,i)=>{if(c===0&&cabinetMask.data[i]===0)cabinetPatch.data[i]=before.data[i]!;});
-base.paste(cabinetPatch,0,0);save('workshop',base);save('workshop-front',front);save('cabinet-patch',cabinetPatch);save('cabinet-mask',cabinetMask);
+base.paste(cabinetPatch,0,0);save('workshop-front',front);save('cabinet-patch',cabinetPatch);save('cabinet-mask',cabinetMask);
 let cabinetChanged=0;base.data.forEach((c,i)=>{if(c!==before.data[i]){cabinetChanged++;assert.equal(cabinetMask.data[i],0);}});
-writeFileSync(join(here,'source/cabinet.pxo'),pixeloramaProject(palette,['Original room — locked','Corrected drawer plane'],[[before,cabinetPatch]],[],{layers:[{locked:true},{}],currentLayer:1}));
+// Correct only the three wall handsets. Keep a separate native repair layer.
+const beforeHands=clone(base),dialChecks=[
+ {name:'Left wall clock',...setDial(base,123,45,8)},
+ {name:'Upper wall clock',...setDial(base,168,31,6)},
+ {name:'Round wall clock',...setDial(base,219,39,9)}
+],dialPatch=new Pixels(320,200);
+base.data.forEach((c,i)=>{if(c!==beforeHands.data[i])dialPatch.data[i]=c;});
+save('workshop',base);save('wall-clock-hands',dialPatch);
+writeFileSync(join(here,'source/cabinet.pxo'),pixeloramaProject(palette,['Original room — locked','Corrected drawer plane','Wall-clock hands — 3:17'],[[before,cabinetPatch,dialPatch]],[],{layers:[{locked:true},{locked:true},{}],currentLayer:2}));
 const guides=new Pixels(320,200);for(const v of [0,1/3,2/3,1]){const a=project(0,v),b=project(1,v);guides.line(...a,...vp,54);guides.line(...a,...b,61);}for(const u of [0,.5,1])guides.line(...project(u,0),...project(u,1),61);save('cabinet-guides',guides);
 writeFileSync(join(here,'cabinet-perspective.svg'),`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200"><image href="review/room.png" width="320" height="200"/><path d="M0 72H320" stroke="#76a6f5" stroke-width=".4" stroke-dasharray="2 2"/>${[0,1/3,2/3,1].map(v=>{const a=project(0,v);return`<path d="M${a}L${vp}" fill="none" stroke="#e5bc6a" stroke-width=".4"/>`;}).join('')}<circle cx="300" cy="72" r="2" fill="#e5bc6a"/></svg>`);
 
@@ -61,7 +70,9 @@ lampKeys.forEach(p=>p.data.forEach((c,i)=>{if(lampMask.data[i]!==0)assert.equal(
 
 // Extract the original pendulum pixels and move them on a rigid arc. The face,
 // weights/case and surrounding furniture never move. Pixel aspect enters rotation.
-const originalClock=read(join(r3,'clock-00.png')),clockFixed=clone(originalClock),bob=new Pixels(64,140),pivot:Point=[35,57];
+const originalClock=read(join(r3,'clock-00.png'));
+dialChecks.push({name:'Tall-case clock',...setDial(originalClock,36,35,8)});
+const clockFixed=clone(originalClock),bob=new Pixels(64,140),pivot:Point=[35,57];
 const pendulumMask=new Pixels(64,140);pendulumMask.rect(33,57,4,28,0);pendulumMask.rect(28,84,14,17,0);
 for(let y=57;y<=100;y++)for(let x=28;x<=41;x++){const i=y*64+x;if(pendulumMask.data[i]!==0)continue;bob.data[i]=originalClock.data[i]!;clockFixed.data[i]=originalClock.data[y*64+27]!;}
 const clockFrames:Pixels[]=[],clockLayers:Pixels[][]=[];
@@ -87,7 +98,7 @@ for(const [n,route]of routes.entries()){const frames=Array.from({length:48},(_,f
 enlarged(join(here,'review/room.png'),compose(0),palette,3);enlarged(join(here,'review/before.png'),compose(0,true),palette,3);
 indexedGif(join(here,'review/ambience.gif'),Array.from({length:48},(_,i)=>compose(i)),palette,2,8);
 const cabinetCompare=new Pixels(92,58);for(const [n,p]of [before,base].entries())for(let y=0;y<58;y++)for(let x=0;x<46;x++)cabinetCompare.dot(n*46+x,y,p.data[(y+108)*320+x+38]!);enlarged(join(here,'review/cabinet-comparison.png'),cabinetCompare,palette,5);
-const report={nativeRoom:[320,200],pixelAspect:1.2,paletteColours:64,cabinet:{vanishingPoint:vp,quad,changedPixels:cabinetChanged,scope:'Drawer bank only, beneath window',projection:'Artist-chosen local plane; not a calibrated whole-room camera'},rain:{frames:48,fps:8,pixelsPerSecond:16,glassMaskOnly:true},sky:{frames:16,fps:.25,cycleSeconds:64,scope:"Exterior blue palette within glass mask"},lamp:{frames:4,fps:8,fixedHousing:true,sequence:[0,0,1,0,2,0,0,3]},pendulum:{frames:24,fps:12,pivot,amplitudeRadians:.065,faceUnchanged:true,storyConflict:'Original story has stopped clocks. Requested ambient swing is preview-only until story integration is resolved.'},mouse:{frames:4,fps:16,canvas:[20,10],anchor:[10,8],routes,cooldownSeconds:[18,35]},sets};
+const report={dialChecks,nativeRoom:[320,200],pixelAspect:1.2,paletteColours:64,cabinet:{vanishingPoint:vp,quad,changedPixels:cabinetChanged,scope:'Drawer bank only, beneath window',projection:'Artist-chosen local plane; not a calibrated whole-room camera'},rain:{frames:48,fps:8,pixelsPerSecond:16,glassMaskOnly:true},sky:{frames:16,fps:.25,cycleSeconds:64,scope:"Exterior blue palette within glass mask"},lamp:{frames:4,fps:8,fixedHousing:true,sequence:[0,0,1,0,2,0,0,3]},pendulum:{frames:24,fps:12,pivot,amplitudeRadians:.065,faceUnchanged:true,handset:'3:17; same shared correction as r12',storyConflict:'Original story has stopped clocks. Requested ambient swing is preview-only until story integration is resolved.'},mouse:{frames:4,fps:16,canvas:[20,10],anchor:[10,8],routes,cooldownSeconds:[18,35]},sets};
 writeFileSync(join(here,'animation.json'),JSON.stringify(report,null,2)+'\n');writeFileSync(join(here,'palette.json'),JSON.stringify(palette,null,2)+'\n');
 // Study-only resource IDs; existing production manifests are not changed.
 writeFileSync(join(here,'art.json'),JSON.stringify({version:1,maxColours:64,palette:'palette.json',pictures:[{number:102,layers:[{png:'export/workshop.png',priority:-1000},{png:'export/mouse-occlusion.png',priority:150},{png:'export/workshop-front.png',priority:181}]}],views:sets.map((s,i)=>({number:270+i,loops:[{cels:s.files.map(f=>({png:'export/'+f,anchor:[[0,0],[10,25],[30,136],[10,8],[0,0],[10,8],[10,8],[10,8]][i]}))}]}))},null,2)+'\n');

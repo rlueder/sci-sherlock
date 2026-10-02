@@ -1,0 +1,8 @@
+{
+  "changedRoomPixels": 81,
+  "changedTallCasePixels": 24,
+  "roomChangesLimitedToThreeHandsets": true,
+  "cleanBackgroundMatchesR9OutsideCase": true,
+  "pendulumCelsMatchingR12Dial": 24,
+  "closedCleanReconstructionExact": true
+}

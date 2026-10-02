@@ -1,0 +1,113 @@
+{
+  "canvas": [
+    320,
+    200
+  ],
+  "pixelAspect": 1.2,
+  "room": 100,
+  "proposedFloor": [
+    [
+      79,
+      151
+    ],
+    [
+      267,
+      148
+    ],
+    [
+      311,
+      150
+    ],
+    [
+      311,
+      193
+    ],
+    [
+      79,
+      193
+    ]
+  ],
+  "placements": {
+    "holmes": [
+      202,
+      173
+    ],
+    "watsonSeated": [
+      96,
+      165
+    ],
+    "mrsHudson": [
+      270,
+      173
+    ],
+    "toby": [
+      247,
+      176
+    ]
+  },
+  "targets": {
+    "window": [
+      14,
+      20,
+      80,
+      91
+    ],
+    "fire": [
+      144,
+      99,
+      39,
+      35
+    ],
+    "lens": [
+      179,
+      74,
+      10,
+      7
+    ],
+    "door": [
+      273,
+      45,
+      38,
+      100
+    ],
+    "bench": [
+      211,
+      94,
+      49,
+      53
+    ],
+    "violin": [
+      34,
+      117,
+      17,
+      35
+    ],
+    "slipper": [
+      197,
+      86,
+      10,
+      14
+    ],
+    "correspondence": [
+      133,
+      65,
+      18,
+      13
+    ]
+  },
+  "characterCanvas": [
+    72,
+    120
+  ],
+  "characterAnchor": [
+    36,
+    113
+  ],
+  "heights": {
+    "holmes": 106,
+    "watson": 104,
+    "hudson": 99,
+    "toby": 99
+  },
+  "status": "Proposed composition; trace final painted extents separately; no runtime changes"
+}

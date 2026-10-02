@@ -199,6 +199,21 @@ review and case-travel choreography remain pending. The [r12 clock finish](../ar
 adds native side/back joinery, a descending threshold and explicit 3:17 handset angles
 to the fixed-hinge construction. These are review sources, not production approval.
 
+## Room camera and cast continuity
+
+The [221B r13 study](../art/studies/baker-street-r13/README.md) begins room 100 and the
+Watson, Hudson and Toby references. Cameras may vary by room: 221B uses an oblique
+entrance composition while the workshop keeps its frontal view. Preserve palette,
+native resolution, pixel aspect and character proportions across those changes.
+Keep a separate camera/vanishing-point guide for each room and fit animated rigid
+props to the final painting. The r13 blockout is intended geometry, not a solved
+projection of every generated edge; departures remain visible for review.
+
+R13 includes room layers, fire/lens/door states, three neutral cast models and seated
+Watson, with model hashes, head crops and joint overlays. Required page-turn,
+portrait and directional animation contracts remain outstanding. No production
+manifest or room YAML is replaced by this study.
+
 ## Additional workshop atmosphere review
 
 The subsequent user request adds a perspective repair to the **cabinet under the

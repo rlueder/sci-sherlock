@@ -1,0 +1,171 @@
+{
+  "palette": "../../reference/holmes-master-v2/palette.json",
+  "pixelAspect": 1.2,
+  "models": [
+    {
+      "name": "watson",
+      "view": 201,
+      "canvas": [
+        72,
+        120
+      ],
+      "anchor": [
+        36,
+        113
+      ],
+      "height": 104,
+      "sha256": "c5461245079f13350df3f99fc6e73a22120c1c94676a1c7fd3b537fc77e32d1f",
+      "sourceBox": [
+        196,
+        133,
+        694,
+        1672
+      ],
+      "sourceScale": [
+        0.08103896103896104,
+        0.06753246753246753
+      ],
+      "status": "Initial fixed model for visual review; no walking/turnaround inferred",
+      "rules": [
+        "Use this neutral as the identity and palette reference for every future pose.",
+        "Draw complete coherent poses before animation.",
+        "Name explicit head variants; do not silently regenerate identity.",
+        "Keep native body/head size stable; do not per-frame fit figures."
+      ],
+      "head": {
+        "crop": [
+          24,
+          8,
+          30,
+          27
+        ],
+        "png": "source/watson-head.png",
+        "variant": "neutral-three-quarter-right"
+      },
+      "dominantPaletteIndices": [
+        21,
+        15,
+        3,
+        9,
+        23,
+        5,
+        2,
+        55,
+        1,
+        20,
+        8,
+        61
+      ]
+    },
+    {
+      "name": "hudson",
+      "view": 202,
+      "canvas": [
+        72,
+        120
+      ],
+      "anchor": [
+        36,
+        113
+      ],
+      "height": 99,
+      "sha256": "e61b26ecfb29baaed61e82523b4a28c5faa864d53c7e454866e6f53439b8fdb4",
+      "sourceBox": [
+        167,
+        196,
+        703,
+        1662
+      ],
+      "sourceScale": [
+        0.08098159509202453,
+        0.06748466257668712
+      ],
+      "status": "Initial fixed model for visual review; no walking/turnaround inferred",
+      "rules": [
+        "Use this neutral as the identity and palette reference for every future pose.",
+        "Draw complete coherent poses before animation.",
+        "Name explicit head variants; do not silently regenerate identity.",
+        "Keep native body/head size stable; do not per-frame fit figures."
+      ],
+      "head": {
+        "crop": [
+          24,
+          13,
+          30,
+          28
+        ],
+        "png": "source/hudson-head.png",
+        "variant": "neutral-three-quarter-right"
+      },
+      "dominantPaletteIndices": [
+        62,
+        60,
+        12,
+        17,
+        1,
+        10,
+        2,
+        4,
+        7,
+        58,
+        51,
+        53
+      ]
+    },
+    {
+      "name": "toby",
+      "view": 203,
+      "canvas": [
+        72,
+        120
+      ],
+      "anchor": [
+        36,
+        113
+      ],
+      "height": 99,
+      "sha256": "2a8b3c11ccf828d897985539964c116f002eed402e67d79a784bcf3f80262351",
+      "sourceBox": [
+        226,
+        180,
+        627,
+        1658
+      ],
+      "sourceScale": [
+        0.08032454361054767,
+        0.06693711967545639
+      ],
+      "status": "Initial fixed model for visual review; no walking/turnaround inferred",
+      "rules": [
+        "Use this neutral as the identity and palette reference for every future pose.",
+        "Draw complete coherent poses before animation.",
+        "Name explicit head variants; do not silently regenerate identity.",
+        "Keep native body/head size stable; do not per-frame fit figures."
+      ],
+      "head": {
+        "crop": [
+          24,
+          13,
+          30,
+          29
+        ],
+        "png": "source/toby-head.png",
+        "variant": "neutral-three-quarter-right"
+      },
+      "dominantPaletteIndices": [
+        21,
+        2,
+        29,
+        12,
+        39,
+        7,
+        9,
+        5,
+        4,
+        22,
+        61,
+        15
+      ]
+    }
+  ]
+}

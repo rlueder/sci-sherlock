@@ -247,3 +247,15 @@ Use separate statuses for technical validation, visual review and game integrati
 When a tool or format changes, update the instructions alongside the affected asset.
 A reader should be able to follow the files and reproduce the evidence without having
 access to the original chat.
+
+## Carry the workflow into another room
+
+The [221B example](../art/studies/baker-street-r13/README.md) applies the same palette,
+native sizing, model references and export checks to a different camera. It retains
+the intended Blender blockout alongside the painted interpretation so mismatched
+edges can be seen rather than hidden. Its door is fitted locally to the painting.
+
+For new cast members, establish a neutral silhouette and head crop before deriving
+poses. Preserve the planning skeleton and trace the completed drawing separately;
+a drawing that moved away from its plan is not automatically rigged. Read the study
+for the complete conversion/build order and native source verification.

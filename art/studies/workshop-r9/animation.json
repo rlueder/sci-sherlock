@@ -1,4 +1,74 @@
 {
+  "dialChecks": [
+    {
+      "name": "Left wall clock",
+      "center": [
+        123,
+        45
+      ],
+      "hour": 3,
+      "minute": 17,
+      "minuteTip": [
+        131,
+        46
+      ],
+      "hourTip": [
+        128,
+        46
+      ]
+    },
+    {
+      "name": "Upper wall clock",
+      "center": [
+        168,
+        31
+      ],
+      "hour": 3,
+      "minute": 17,
+      "minuteTip": [
+        174,
+        32
+      ],
+      "hourTip": [
+        171,
+        31
+      ]
+    },
+    {
+      "name": "Round wall clock",
+      "center": [
+        219,
+        39
+      ],
+      "hour": 3,
+      "minute": 17,
+      "minuteTip": [
+        228,
+        41
+      ],
+      "hourTip": [
+        225,
+        40
+      ]
+    },
+    {
+      "name": "Tall-case clock",
+      "center": [
+        36,
+        35
+      ],
+      "hour": 3,
+      "minute": 17,
+      "minuteTip": [
+        44,
+        36
+      ],
+      "hourTip": [
+        41,
+        36
+      ]
+    }
+  ],
   "nativeRoom": [
     320,
     200
@@ -68,6 +138,7 @@
     ],
     "amplitudeRadians": 0.065,
     "faceUnchanged": true,
+    "handset": "3:17; same shared correction as r12",
     "storyConflict": "Original story has stopped clocks. Requested ambient swing is preview-only until story integration is resolved."
   },
   "mouse": {

@@ -43,6 +43,18 @@ with Watson to reveal the route to the hidden stair.
 
 `pnpm play` opens the engine’s player; `pnpm edit` opens its live room editor.
 
+## 221B: a different camera, the same visual language
+
+[![221B with seated Watson, Holmes, Mrs Hudson and Toby](art/studies/baker-street-r13/review/room-cast.png)](art/studies/baker-street-r13/README.md)
+
+The first 221B study uses an oblique entrance view and the workshop's shared palette
+and character scale. It includes fixed cast references, head and joint guides,
+Blender camera construction, a hinged door, fire keys and a removable mantel lens.
+Open /art/studies/baker-street-r13/ on the local server for the interactive review.
+These are new art studies; the playable game still uses its existing stand-ins.
+
+[Sources and reproducible workflow](art/studies/baker-street-r13/README.md)
+
 ## Holmes: one model, several gestures
 
 ![Holmes in neutral, thinking, cap-adjustment and pocket-watch poses, all at the same scale](docs/images/holmes-poses.png)

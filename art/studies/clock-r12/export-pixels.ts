@@ -32,10 +32,6 @@ const dialChecks=[
  {name:'Round wall clock',...setDial(reference,219,39,9)},
  {name:'Tall-case clock',...setDial(texture,36,35,8)}
 ];
-reference.paste(load('art/production/workshop-r3/export/lantern-00.png'),203,80);
-reference.paste(texture,238,14);
-reference.paste(load('art/reference/holmes-master-v2/master.png'),108,52);
-reference.paste(load('art/studies/workshop-r9/export/workshop-front.png'),0,0);
 const back=reverseFront(texture);
 const surfaces=new Map<string,Pixels>();
 for(const [name,w,h]of [['Upper case volume',24,29],['Long case volume',24,75],['Plinth volume',24,12]] as [string,number,number][]){
@@ -47,11 +43,22 @@ for(const [name,w,h]of [['Upper case volume',24,29],['Long case volume',24,75],[
 writeFileSync(join(here,'source/reverse-front.png'),back.png(palette));
 writeFileSync(join(here,'source/front-317.png'),texture.png(palette));
 writeFileSync(join(here,'source/surface-plates.pxo'),pixeloramaProject(palette,['Reverse front joinery'],[[back]]));
-const background=copy(reference),opening=passage();
+const cleanBackground=copy(reference),opening=passage();
 
 for(let y=0;y<140;y++)for(let x=0;x<64;x++)if(texture.data[y*64+x]!>=0){
- const at=(y+14)*320+x+238;background.data[at]=opening.data[at]!>=0?opening.data[at]!:clean.data[at]!;
+ const at=(y+14)*320+x+238;cleanBackground.data[at]=opening.data[at]!>=0?opening.data[at]!:clean.data[at]!;
 }
+// Production handoff stays free of Holmes, lamp and foreground overlays.
+writeFileSync(join(here,'export/background-clean.png'),cleanBackground.png(palette));
+writeFileSync(join(here,'source/background-clean.pxo'),pixeloramaProject(palette,['Clean room with corrected wall hands and reveal'],[[cleanBackground]]));
+const background=copy(cleanBackground);
+reference.paste(load('art/production/workshop-r3/export/lantern-00.png'),203,80);
+reference.paste(texture,238,14);
+reference.paste(load('art/reference/holmes-master-v2/master.png'),108,52);
+reference.paste(load('art/studies/workshop-r9/export/workshop-front.png'),0,0);
+background.paste(load('art/production/workshop-r3/export/lantern-00.png'),203,80);
+background.paste(load('art/reference/holmes-master-v2/master.png'),108,52);
+background.paste(load('art/studies/workshop-r9/export/workshop-front.png'),0,0);
 const origin:UV=[232,0],size:UV=[88,168],anchor:UV=[60,150];
 const cels:Pixels[]=[],rooms:Pixels[]=[];
 const bounds:{angle:number;box:number[]}[]=[];
@@ -115,7 +122,7 @@ rooms.forEach((p,i)=>save('room-'+String(i).padStart(2,'0'),p));
 function preview(name:string,p:Pixels,scale=3){const source=p.rgba(palette),width=p.width*scale,height=Math.round(p.height*scale*1.2),data=new Uint8Array(width*height*4);
  for(let y=0;y<height;y++)for(let x=0;x<width;x++){const i=(Math.floor(y*p.height/height)*p.width+Math.floor(x/scale))*4;data.set(source.data.subarray(i,i+4),(y*width+x)*4);}
  writeFileSync(join(here,'review',name+'.png'),rgbaPng({width,height,data}));}
-preview('closed',rooms[0]!);preview('half-open',rooms[4]!);preview('open',rooms[7]!);
+preview('background-clean',cleanBackground);preview('closed',rooms[0]!);preview('half-open',rooms[4]!);preview('open',rooms[7]!);
 const contact=new Pixels(size[0]*4,size[1]*2,18);cels.forEach((p,i)=>contact.paste(p,(i%4)*size[0],Math.floor(i/4)*size[1]));preview('contact',contact,2);
 // Indexed GIF: original palette only, literal LZW with short dictionary runs.
 const width=640,height=480,bytes:number[]=[];const word=(n:number)=>[n&255,n>>8];

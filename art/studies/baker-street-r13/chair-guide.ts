@@ -1,0 +1,10 @@
+import {readFileSync,writeFileSync}from'node:fs';import{join}from'node:path';import{fileURLToPath}from'node:url';import{Pixels}from'../../source/pixels.ts';import{loadIndexed,clone,enlarged}from'../../source/study-tools.ts';
+const here=fileURLToPath(new URL('.',import.meta.url)),pal=JSON.parse(readFileSync(join(here,'palette.json'),'utf8')),fit=JSON.parse(readFileSync(join(here,'guides/chair-fit.json'),'utf8'));
+const room=loadIndexed(join(here,'source/room-native.png'),pal),overlay=new Pixels(320,200);
+for(const[a,b]of fit.edges)overlay.line(...fit.joints[a] as[number,number],...fit.joints[b] as[number,number],54);
+for(const [x,y]of Object.values(fit.joints)as[number,number][])overlay.oval(x,y,1,1,61);
+overlay.line(75,72,122,72,49);overlay.line(74,133,122,133,49);
+const p=clone(room);p.paste(overlay,0,0);enlarged(join(here,'guides/chair-fit.png'),p,pal,3);
+writeFileSync(join(here,'guides/chair-fit-overlay.png'),overlay.png(pal));
+const plan=new Pixels(72,120,18);plan.paste(overlay,36-fit.footPosition[0],113-fit.footPosition[1]);enlarged(join(here,'guides/seated-camera-plan.png'),plan,pal,6);
+console.log({height:fit.exportHeight,foot:fit.footPosition,joints:fit.joints});

@@ -49,5 +49,46 @@ The opening is a separate background surface covered by the closed clock.
 
 The [r11 contact gesture](../holmes-r11/README.md) still needs choreography
 against the case travel. The r9 moving pendulum uses its own full-case images;
-it must adopt this dial correction when the production asset set is consolidated.
+it now uses this same dial correction in all 24 cels and its linked native housing.
 The standalone stair room and threshold transition are later deliverables.
+
+## Clean-room handoff correction
+
+The earlier background-study.png is a review composite containing Holmes and the
+lamp. **Do not use it as the runtime background.**
+
+Use these native exports:
+
+| Purpose | File | Placement |
+|---|---|---|
+| Corrected r9 base, original passage | [workshop.png](../workshop-r9/export/workshop.png) | 320×200, [0,0] |
+| Corrected base with r12 descending threshold | [background-clean.png](export/background-clean.png) | 320×200, [0,0] |
+| Corrected pendulum case | [pendulum-00.png](../workshop-r9/export/pendulum-00.png) through pendulum-23.png | 64×140, anchor [30,136], world [268,150] |
+| Opening case | clock-00.png through clock-07.png in export/ | 88×168, anchor [60,150], world [292,150] |
+
+The clean backgrounds contain no Holmes, lamp actor, or grandfather-clock actor.
+Keep the existing foreground, lamp and Holmes as separate layers/actors. With the
+r12 reveal background, show either the r9 closed pendulum case or the r12 opening
+case; do not draw both. Their different anchors place the same closed artwork at
+world top-left [238,14]. Clock activation remains controlled by the story.
+
+The three wall-clock corrections now live in r9's clean base and in a separate
+wall-clock-hands.png repair layer. Its cabinet.pxo includes the repair as a third
+layer. Pendulum.pxo keeps the corrected housing linked while the bob animates.
+Both builders use art/source/clock-dials.ts, so regenerating them retains 3:17.
+
+background-clean.pxo is an editable clean reveal master. Run check-handoff.ts
+after the r9/r12 builds to verify no changes outside the handsets/case, all 24
+pendulum dials matching r12, and an exact closed reconstruction. The native export
+verifiers cover the updated room, pendulum and clean reveal masters.
+
+![Character-free assembled room for checking](review/handoff-clean-room.png)
+![All four corrected dial crops](review/handoff-dials.png)
+
+Rebuild r9 first, then r12; run:
+
+~~~sh
+pnpm exec tsx art/studies/clock-r12/check-handoff.ts
+pnpm art check art/studies/workshop-r9/art.json
+pnpm art check art/studies/clock-r12/art.json
+~~~
