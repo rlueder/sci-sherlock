@@ -1,0 +1,6 @@
+title: room.enter
+---
+<<hide hero>>
+<<wait 4>>
+<<room 100>>
+===

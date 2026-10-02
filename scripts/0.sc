@@ -1,4 +1,4 @@
-;;; The Stopped Clocks: Holmes, his voice, and the first room, 221B.
+;;; The Stopped Clocks: Holmes, his voice, and the title screen before 221B.
 (script 0)
 (include "system.sh")
 (public sherlock 0)
@@ -9,7 +9,7 @@
     (= ego holmes)
     (= heroTalker holmesVoice)
     (narrator y: 154 width: 294)
-    (self newRoom: 100)))
+    (self newRoom: 104)))
 
 (instance sherlock of Sherlock)
 ;; Standing still, he idles now and then (view 206: the pipe, thinking, his cap, his watch).

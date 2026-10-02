@@ -32,20 +32,20 @@ function gamePalette() {
   return { palette, nearest };
 }
 
-/** Writes text into pixels with sci-ts's pixel font, its top-left corner at (x, y). */
-function text(pixels: Uint8Array, width: number, s: string, x: number, y: number, colour: number) {
+/** Writes text into pixels with sci-ts's pixel font, `scale` times its size, top-left at (x, y). */
+function text(pixels: Uint8Array, width: number, s: string, x: number, y: number, colour: number, scale = 1) {
   const font = pixelFont();
   for (const ch of s) {
     const glyph = font.glyphs[ch.charCodeAt(0)];
     if (!glyph) continue;
-    for (let gy = 0; gy < glyph.height; gy++) for (let gx = 0; gx < glyph.width; gx++) {
-      if (glyph.pixels[gy * glyph.width + gx]) pixels[(y + gy) * width + x + gx] = colour;
+    for (let gy = 0; gy < glyph.height * scale; gy++) for (let gx = 0; gx < glyph.width * scale; gx++) {
+      if (glyph.pixels[Math.floor(gy / scale) * glyph.width + Math.floor(gx / scale)]) pixels[(y + gy) * width + x + gx] = colour;
     }
-    x += glyph.width;
+    x += glyph.width * scale;
   }
 }
 
-const textWidth = (s: string) => [...s].reduce((w, ch) => w + (pixelFont().glyphs[ch.charCodeAt(0)]?.width ?? 0), 0);
+const textWidth = (s: string, scale = 1) => scale * [...s].reduce((w, ch) => w + (pixelFont().glyphs[ch.charCodeAt(0)]?.width ?? 0), 0);
 
 interface RoomStandIn {
   name: string;
@@ -53,12 +53,16 @@ interface RoomStandIn {
   floor: string;
   /** Where the floor starts (the wall above). */
   horizon: number;
+  /** A screen rather than a room: these lines, large, in the middle (title, end card). */
+  lines?: string[];
 }
 
 const ROOMS: Record<number, RoomStandIn> = {
   100: { name: "221B BAKER STREET: THE SITTING ROOM", wall: "#4f3630", floor: "#753a20", horizon: 120 },
   101: { name: "BAKER STREET", wall: "#30374c", floor: "#404b3f", horizon: 118 },
   103: { name: "THE HIDDEN STAIR", wall: "#18151f", floor: "#271618", horizon: 110 },
+  104: { name: "TITLE", wall: "#18151f", floor: "#18151f", horizon: 200, lines: ["SHERLOCK HOLMES", "", "THE STOPPED CLOCKS"] },
+  105: { name: "END CARD", wall: "#18151f", floor: "#18151f", horizon: 200, lines: ["TO BE CONTINUED"] },
 };
 
 interface FigureStandIn {
@@ -90,9 +94,11 @@ export function placeholders(have: (type: ResourceType, n: number) => boolean): 
     const pixels = new Uint8Array(w * h);
     const wall = nearest(room.wall), floor = nearest(room.floor), line = nearest("#000000"), label = nearest("#ffffff");
     for (let y = 0; y < h; y++) pixels.fill(y < room.horizon ? wall : floor, y * w, (y + 1) * w);
-    pixels.fill(line, room.horizon * w, (room.horizon + 1) * w);
+    if (room.horizon < h) pixels.fill(line, room.horizon * w, (room.horizon + 1) * w);
     const title = `${room.name} (STAND-IN)`;
     text(pixels, w, title, (w - textWidth(title)) >> 1, 8, label);
+    const lines = room.lines ?? [];
+    lines.forEach((l, i) => text(pixels, w, l, (w - textWidth(l, 2)) >> 1, 100 - lines.length * 10 + i * 20, label, 2));
     const cel = { width: w, height: h, displaceX: 0, displaceY: 0, skipColor: 254, pixels, priority: -1000, x: 0, y: 0, unknown16: 0 };
     out.push({ type: ResourceType.Pic, number: Number(n), data: writePic({ resolution: [w, h], cels: [cel], palette }) });
   }

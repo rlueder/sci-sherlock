@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=../node_modules/sci2-ts/packages/content/room.schema.json
+# The end card (picture 105), after the stair.
+room: 105
+picture: 105
+hero:
+  at: [160, 250]

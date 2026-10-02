@@ -1,26 +1,32 @@
 # yaml-language-server: $schema=../node_modules/sci2-ts/packages/content/room.schema.json
-# 221B, the sitting room. Laid out for the stand-in picture (the wall down to y 120): the
-# floor, hotspots and positions move to the real art when picture 100 arrives.
+# 221B, the sitting room, on the r13 art (art/studies/baker-street-r13): the floor, hotspots
+# and positions follow its scene and layout guides. The foreground layer (192) is the near
+# furniture.
 room: 100
 picture: 100
 music: 120
 hero:
-  at: [230, 172]
-walkable: [[10, 150], [310, 150], [310, 193], [10, 193]]
+  at: [186, 176]
+walkable: [[79, 151], [267, 148], [311, 150], [311, 193], [79, 193]]
 features:
-  fire: { rect: [130, 82, 190, 120], sightAngle: 360 }
-  correspondence: { rect: [130, 60, 165, 74], sightAngle: 360 }
-  violin: { rect: [20, 70, 50, 110], sightAngle: 360 }
-  bench: { rect: [230, 78, 274, 120], sightAngle: 360 }
-  slipper: { rect: [194, 106, 208, 120], sightAngle: 360 }
-  window: { rect: [60, 20, 110, 90], sightAngle: 360 }
-  door: { rect: [280, 40, 316, 150], sightAngle: 360 }
+  correspondence: { rect: [117, 46, 134, 66], sightAngle: 360 }
+  violin: { rect: [8, 102, 50, 136], sightAngle: 360 }
+  bench: { rect: [208, 54, 270, 131], sightAngle: 360 }
+  slipper: { rect: [184, 78, 198, 104], sightAngle: 360 }
+  window: { rect: [8, 17, 71, 94], sightAngle: 360 }
 props:
-  mantelLens: { view: 223, at: [176, 76], sightAngle: 360 }
-  watson: { view: 205, at: [70, 172], sightAngle: 360 }
-  mrsHudson: { view: 202, at: [296, 162], moves: true, sightAngle: 360 }
-  toby: { view: 203, at: [298, 164], moves: true, sightAngle: 360 }
+  fire: { view: 222, at: [158, 126], cycle: forward, sightAngle: 360 }
+  mantelLens: { view: 223, at: [169, 68], sightAngle: 360 }
+  # Shut at cel 0; opens over its six cels.
+  door: { view: 225, at: [290, 145], sightAngle: 360 }
+  watson: { view: 205, at: [95, 137], sightAngle: 360 }
+  mrsHudson: { view: 202, at: [292, 152], moves: true, sightAngle: 360 }
+  toby: { view: 203, at: [294, 154], moves: true, sightAngle: 360 }
 characters:
   watson: { name: Watson }
   mrsHudson: { name: Mrs Hudson }
   toby: { name: Toby }
+properties:
+  fire: { cycleSpeed: 8 }
+  # Drawn on a canvas wide enough for its swing: hit only where it's drawn.
+  door: { cycleSpeed: 6, checkPixels: 1 }
