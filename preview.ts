@@ -106,6 +106,9 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   // Baker Street, and the cab.
   enter(101); finish();
   shot("baker-street");
+  const flames = new Set<number>();
+  for (let i = 0; i < 60; i++) { frames(1); flames.add(prop(obj("lamp"), "cel")); }
+  assert.equal(flames.size, 4, "the gas lamp flickers");
   verb(4); click(250, 115); finish();
 
   // The workshop.

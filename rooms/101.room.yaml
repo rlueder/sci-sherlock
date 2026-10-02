@@ -1,21 +1,28 @@
 # yaml-language-server: $schema=../node_modules/sci2-ts/packages/content/room.schema.json
-# Baker Street. Laid out for the stand-in picture (the houses down to y 118): the floor,
-# hotspots and positions move to the real art when picture 101 arrives.
+# Baker Street, on the r19 painting: 221's door and steps at the left, the gas lamp on the
+# pavement, the hansom waiting in the road.
 room: 101
 picture: 101
 music: 120
 hero:
-  at: [40, 168]
-  enterTo: [110, 170]
-# The house camera (art/studies/baker-street-r13/guides/perspective.json): the horizon at
-# y 72, figures drawn full size with their feet at y 176.
-perspective: { horizon: 72, fullSize: 176 }
-walkable: [[10, 150], [310, 150], [310, 193], [10, 193]]
+  at: [55, 153]
+  enterTo: [96, 162]
+# Fitted to the painting: the railing tops and the kerb meet at y 123, and the gas lamp
+# (about 3.3 m, its foot at y 158) puts a figure at full size with its feet at y 170.
+# The camera is low and close, so the floor is a narrow band: lower down he'd fill the screen.
+perspective: { horizon: 123, fullSize: 170 }
+walkable: [[12, 151], [310, 150], [310, 172], [12, 172]]
+obstacles:
+  - [[100, 155], [113, 155], [113, 161], [100, 161]]
 features:
-  door221: { rect: [20, 60, 60, 150], sightAngle: 360 }
-  lamp: { rect: [140, 30, 156, 118], sightAngle: 360 }
-  cab: { rect: [200, 80, 300, 150], sightAngle: 360 }
+  door221: { rect: [24, 30, 52, 134], sightAngle: 360 }
+  cab: { rect: [160, 82, 310, 146], sightAngle: 360 }
 props:
-  watson: { view: 201, at: [80, 172], sightAngle: 360, scale: true }
+  # The lamp's flicker (view 226) over the painted lamp; its post is in the picture's foreground.
+  lamp: { view: 226, at: [106, 158], cycle: forward, sightAngle: 360 }
+  watson: { view: 201, at: [140, 164], sightAngle: 360, scale: true }
 characters:
   watson: { name: Watson }
+properties:
+  # Above the foreground lamp post it overlays; hit only where it's drawn.
+  lamp: { priority: 159, fixPriority: 1, checkPixels: 1, cycleSpeed: 10 }

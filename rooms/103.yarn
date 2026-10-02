@@ -2,7 +2,7 @@ title: room.enter
 ---
 <<music stop>>
 <<if not $reachedStair>>
-The stair turns once and ends at a door, with a thin line of light beneath it. #line:103-001
+The stair drops away below us, past the reach of the lantern. #line:103-001
 Watson: Holmes. Listen. #line:103-002
 <<sound 133 wait>>
 <<wait 0.6>>
@@ -19,17 +19,22 @@ Hero: Then someone down there is still keeping time. #line:103-004
 
 title: room.look
 ---
-Stone steps, worn hollow in the middle. Older than the shop above them. #line:103-005
+Bare boards, then steps going down into the dark. Older than the shop around them. #line:103-005
 ===
 
-title: light.look
+title: stairs.look
 ---
-Lamplight, under a door. Someone is awake down there. #line:103-006
+I cannot see the bottom. Only the ticking comes up out of the dark. #line:103-006
 ===
 
-title: light.do
+title: stairs.do
 ---
-Hero: Not yet, Watson. Let us hear what they say before they hear us. #line:103-007
+Hero: Not yet, Watson. Let us learn who is down there before they learn we are here. #line:103-007
+===
+
+title: caseClock.look
+---
+The case clock, swung aside from the wall. Its pendulum has not missed a beat. #line:103-009
 ===
 
 title: watson.talk
