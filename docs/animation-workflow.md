@@ -11,6 +11,16 @@ sequence. Its timing suggestion is withdrawn; do not integrate its view 200.
 construction and checked world-space contacts. Generated raster attempts still fail
 leg alternation/anatomy review. Walking remains unfinished; there is no new runtime handoff.
 
+**Layered experiment, 2 October:** [r17](../art/studies/holmes-r17/README.md) follows
+the requested change of approach: split the approved sprite into a connected torso,
+two legs and coat hem, test one leg, then combine them. This explicitly replaces
+the whole-pose-generation requirement for this experiment. Fixed-length leg joints
+follow the construction while the torso remains one unchanged source layer. The
+east-facing comparison is ready for review; the four-direction walk is still open.
+The gait correction uses a longer stride, straighter support leg and toe-pivot shoe
+roll. The ankle follows the shoe before the knee is solved. A dark coat lining
+closes the previously reported gap without widening the outer coat panels.
+
 **Current idle review:** [r10](../art/studies/holmes-r10/README.md) implements thinking,
 cap adjustment and pocket-watch retrieval against the fixed model. Complete pose
 drawings supply the active arm, while named chin-contact, cap-lift and downward-head

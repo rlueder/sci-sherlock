@@ -1,0 +1,37 @@
+{
+  "splitReconstructsMasterExactly": true,
+  "torsoPixelsUnchanged": true,
+  "boneLengthsPreserved": true,
+  "coatInteriorOpaque": true,
+  "contacts": [
+    {
+      "side": "near",
+      "cels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "worldToeDriftBeforePixelRounding": 0
+    },
+    {
+      "side": "far",
+      "cels": [
+        1
+      ],
+      "worldToeDriftBeforePixelRounding": 0
+    },
+    {
+      "side": "far",
+      "cels": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "worldToeDriftBeforePixelRounding": 0
+    }
+  ],
+  "scope": "Geometry and native pixel invariants. Artistic approval remains separate."
+}
