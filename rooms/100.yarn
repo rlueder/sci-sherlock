@@ -44,8 +44,8 @@ title: toby.talk
     Toby: Latched. Nobody could have got out that way.
     <<set $askedDoor to true>>
 -> The clocks?
-    Toby: That's what frightened me, sir. Every clock in the shop had stopped.
-    Toby: All at the same minute. Seventeen past three.
+    Toby: That's what frightened me, sir. Every clock on the walls had stopped, all at the same minute. Seventeen past three.
+    Toby: All but the big case clock in the corner. That one was still going.
     <<set $askedClocks to true>>
 -> The lantern?
     Toby: Still burning on the bench when we broke in. He never leaves it lit.

@@ -72,10 +72,11 @@ interface FigureStandIn {
 }
 
 const FIGURES: Record<number, FigureStandIn> = {
-  201: { coat: "#4f291d", band: "#a41f28", height: 52, width: 18 }, // Watson, standing
-  202: { coat: "#24273b", band: "#e8dcc0", height: 48, width: 16 }, // Mrs Hudson
-  203: { coat: "#444541", band: "#753a20", height: 46, width: 18 }, // Toby
-  205: { coat: "#4f291d", band: "#a41f28", height: 38, width: 20, seated: true }, // Watson, seated
+  // Heights to the scale of Holmes (view 200, about 106 pixels standing).
+  201: { coat: "#4f291d", band: "#a41f28", height: 102, width: 34 }, // Watson, standing
+  202: { coat: "#24273b", band: "#e8dcc0", height: 94, width: 30 }, // Mrs Hudson
+  203: { coat: "#444541", band: "#753a20", height: 96, width: 32 }, // Toby
+  205: { coat: "#4f291d", band: "#a41f28", height: 76, width: 38, seated: true }, // Watson, seated
 };
 
 export function placeholders(have: (type: ResourceType, n: number) => boolean): ResourceData[] {
