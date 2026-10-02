@@ -19,34 +19,34 @@ title: room.enter
 
 title: room.look
 ---
-Thorne's workshop. A lantern burns, and of all the clocks here only the tall one in the corner is going.
+Thorne's workshop. A lantern burns, and of all the clocks here only the tall one in the corner is going. #line:102-001
 ===
 
 title: clocks.look
 ---
 <<closeup 240>>
-Every dial reads seventeen minutes past three.
-Hero: A fresh scratch beneath the minute hand. These clocks were stopped by hand.
+Every dial reads seventeen minutes past three. #line:102-002
+Hero: A fresh scratch beneath the minute hand. These clocks were stopped by hand. #line:102-003
 <<set $examinedClocks to true>>
 ===
 
 title: clocks.do
 ---
-Hero: Let us preserve the evidence as we found it.
+Hero: Let us preserve the evidence as we found it. #line:102-004
 ===
 
 title: filings.look
 ---
 <<if $examinedFilings>>
-A trail of brass filings, from the bench to the tall-case clock.
+A trail of brass filings, from the bench to the tall-case clock. #line:102-005
 <<else>>
-Something glints in the sawdust, too fine to make out from here.
+Something glints in the sawdust, too fine to make out from here. #line:102-006
 <<endif>>
 ===
 
 title: filings.do
 ---
-Hero: Best not disturb them. My lens will tell us more.
+Hero: Best not disturb them. My lens will tell us more. #line:102-007
 ===
 
 title: filings.lens
@@ -56,28 +56,28 @@ title: filings.lens
 <<view hero 204>>
 <<loop hero 1>>
 <<animate hero once>>
-Holmes kneels with his lens. Among the sawdust, brass filings catch the lantern light.
+Holmes kneels with his lens. Among the sawdust, brass filings catch the lantern light. #line:102-008
 <<cel filings 1>>
 <<show scratches>>
-Hero: A trail from the bench to the tall-case clock. Something was recently fitted there.
+Hero: A trail from the bench to the tall-case clock. Something was recently fitted there. #line:102-009
 <<normal hero>>
 <<set $examinedFilings to true>>
 ===
 
 title: scratches.look
 ---
-Fresh scratches in the boards, where the case clock has been moved and moved back.
+Fresh scratches in the boards, where the case clock has been moved and moved back. #line:102-010
 ===
 
 title: clocks.lens
 ---
-Hero: The lens confirms it: each hand was turned and held.
+Hero: The lens confirms it: each hand was turned and held. #line:102-011
 ===
 
 title: clock.look
 ---
-A tall-case clock of polished walnut, its pendulum swinging. The only clock in the shop still going.
-Fresh scratches mark the boards beneath it.
+A tall-case clock of polished walnut, its pendulum swinging. The only clock in the shop still going. #line:102-012
+Fresh scratches mark the boards beneath it. #line:102-013
 ===
 
 title: clock.do
@@ -85,8 +85,8 @@ title: clock.do
 <<if $deduced>>
 <<walk hero 214 160>>
 <<face hero right>>
-Hero: The clocks did not stop together. Someone arranged them so.
-Hero: And this case is far too light for its size.
+Hero: The clocks did not stop together. Someone arranged them so. #line:102-014
+Hero: And this case is far too light for its size. #line:102-015
 <<view hero 204>>
 <<loop hero 0>>
 <<animate hero once>>
@@ -99,18 +99,18 @@ Hero: And this case is far too light for its size.
 <<normal hero>>
 <<set $openedClock to true>>
 <<wait 0.8>>
-A stair behind the clock. The air from below is cold.
-Hero: Come, Watson. Our clockmaker has left us a way in.
+A stair behind the clock. The air from below is cold. #line:102-016
+Hero: Come, Watson. Our clockmaker has left us a way in. #line:102-017
 <<elseif $examinedClocks and $examinedFilings>>
-Hero: Not yet. Watson, a moment. Let me put this in order aloud.
+Hero: Not yet. Watson, a moment. Let me put this in order aloud. #line:102-018
 <<else>>
-Hero: Before moving anything, I should examine the wall clocks and the filings on the floor.
+Hero: Before moving anything, I should examine the wall clocks and the filings on the floor. #line:102-019
 <<endif>>
 ===
 
 title: caseDoor.look
 ---
-Behind the case, a narrow stair descends into darkness.
+Behind the case, a narrow stair descends into darkness. #line:102-020
 ===
 
 title: caseDoor.do
@@ -122,9 +122,9 @@ title: caseDoor.do
 title: stair.look
 ---
 <<if $openedClock>>
-Behind the case, a narrow stair descends into darkness.
+Behind the case, a narrow stair descends into darkness. #line:102-021
 <<else>>
-The tall-case clock stands close against the wall.
+The tall-case clock stands close against the wall. #line:102-022
 <<endif>>
 ===
 
@@ -134,62 +134,62 @@ title: stair.do
 <<walk hero 262 166>>
 <<room 103>>
 <<else>>
-Hero: Before moving anything, I should examine the wall clocks and the filings on the floor.
+Hero: Before moving anything, I should examine the wall clocks and the filings on the floor. #line:102-023
 <<endif>>
 ===
 
 title: lantern.look
 ---
-The lantern is still warm. Thorne cannot have been gone long.
+The lantern is still warm. Thorne cannot have been gone long. #line:102-024
 ===
 
 title: lantern.do
 ---
-Hero: Leave it burning. We shall need the light.
+Hero: Leave it burning. We shall need the light. #line:102-025
 ===
 
 title: window.look
 ---
-The sash is latched. Rain runs down the glass, and the Clerkenwell roofs dissolve into the dark.
+The sash is latched. Rain runs down the glass, and the Clerkenwell roofs dissolve into the dark. #line:102-026
 ===
 
 title: window.do
 ---
-Hero: Secure from within. No one left by this window.
+Hero: Secure from within. No one left by this window. #line:102-027
 ===
 
 title: bench.look
 ---
-A dismantled movement, a scribbled order and tools laid down in haste.
+A dismantled movement, a scribbled order and tools laid down in haste. #line:102-028
 ===
 
 title: ledger.look
 ---
-The last entry is unfinished. A deposit received for an unusual alteration to a clock case.
+The last entry is unfinished. A deposit received for an unusual alteration to a clock case. #line:102-029
 ===
 
 title: watson.look
 ---
-Watson, keeping well clear of the evidence.
+I keep well clear of the evidence. Holmes has views on that. #line:102-030
 ===
 
 title: watson.talk
 ---
 -> What do you make of it? <<if not $examinedClocks or not $examinedFilings>>
-    Watson: A locked room and a missing man. I make nothing of it yet. You?
-    Hero: Nothing, until I have looked properly.
+    Watson: A locked room and a missing man. I make nothing of it yet. You? #line:102-031
+    Hero: Nothing, until I have looked properly. #line:102-032
 -> The clocks were stopped by hand. <<if $examinedClocks>>
-    Hero: Every hand was turned to the same minute and held there. Look at the scratches.
-    Watson: But why would a man stop his own clocks?
+    Hero: Every hand was turned to the same minute and held there. Look at the scratches. #line:102-033
+    Watson: But why would a man stop his own clocks? #line:102-034
 -> The filings lead to the case clock. <<if $examinedFilings>>
-    Hero: Brass, freshly cut, from the bench to that tall-case clock. Something was fitted there, and recently.
-    Watson: A repair, perhaps?
-    Hero: In the middle of the night, with the door bolted? No.
+    Hero: Brass, freshly cut, from the bench to that tall-case clock. Something was fitted there, and recently. #line:102-035
+    Watson: A repair, perhaps? #line:102-036
+    Hero: In the middle of the night, with the door bolted? No. #line:102-037
 -> The case clock is a door. <<if $examinedClocks and $examinedFilings and not $deduced>>
-    Hero: Every clock here was stopped at the minute he went. All but that one.
-    Hero: Its pendulum swings, yet its hands stand at seventeen past three, as still as the rest.
-    Hero: It isn't keeping time, Watson. The filings lead to it. That case is a door.
-    Watson: Then Thorne didn't vanish at all. He walked through it.
+    Hero: Every clock here was stopped at the minute he went. All but that one. #line:102-038
+    Hero: Its pendulum swings, yet its hands stand at seventeen past three, as still as the rest. #line:102-039
+    Hero: It isn't keeping time, Watson. The filings lead to it. That case is a door. #line:102-040
+    Watson: Then Thorne didn't vanish at all. He walked through it. #line:102-041
     <<set $deduced to true>>
 ===
 
