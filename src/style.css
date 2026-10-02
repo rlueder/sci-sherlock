@@ -12,6 +12,14 @@ nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .spacer { flex: 1; }
 button { border: 1px solid #64503a; background: #232a35; color: #edd2a1; padding: 10px 16px; font: 15px Georgia, serif; cursor: pointer; touch-action: manipulation; }
 button[aria-pressed="true"] { background: #edd2a1; color: #241c24; }
+/* Buttons with the game's icons: the velvet tile at exactly twice its size (no uneven pixels),
+   the label under it; the chosen one shows its picked tile and a lit border, not a fill. */
+button:has(.face) { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px 8px 5px; background: #1b1820; }
+button:has(.face)[aria-pressed="true"] { background: #1b1820; color: #edd2a1; border-color: #edd2a1; }
+.face { display: block; width: 64px; height: 64px; image-rendering: pixelated; }
+.face.picked, button[aria-pressed="true"] .face:not(.picked) { display: none; }
+button[aria-pressed="true"] .face.picked { display: block; }
+#sound { align-self: center; }
 /* A switch, not an action: it doesn't light up like the chosen one. */
 #sound[aria-pressed] { background: #232a35; color: #edd2a1; }
 #sound[aria-pressed="false"] { opacity: .75; }
@@ -33,5 +41,7 @@ ul { margin: 6px 0; padding-left: 20px; }
   nav { display: grid; grid-template-columns: repeat(4, 1fr); padding: 0 12px; }
   .spacer { display: none; }
   button { padding: 12px 6px; font-size: 15px; }
+  button:has(.face) { padding: 6px 2px 5px; }
+  #sound { align-self: stretch; }
   kbd { display: none; }
 }
