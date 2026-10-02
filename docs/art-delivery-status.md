@@ -27,7 +27,7 @@ This order supersedes the earlier instruction to leave walking until last.
 | Order | Deliverable | Available | Next work |
 |---|---|---|---|
 | 1 | Status and setup | Workshop registration recorded here; AGENTS.md read; dependencies installed in the isolated art worktree | Keep this document current and use Conventional Commits |
-| 2 | Holmes walk, 200 | Fixed master v2; game loops repeat the side standing cel; [r14 rejected](../art/studies/holmes-r14/README.md) for dancing motion and disconnected shoulders/torso | Rebuild one rough east cycle with connected body volumes and measured ground contacts before rendering other directions; retain 72×120 and [36,113] |
+| 2 | Holmes walk, 200 | Fixed master v2; game loops repeat the side standing cel; [r14 rejected](../art/studies/holmes-r14/README.md) for dancing motion and disconnected shoulders/torso | [r16 construction](../art/studies/holmes-r16/README.md) verifies connected guides and ground contacts, but raster trials still fail; finish consistent east drawings before other directions; retain 72×120 and [36,113] |
 | 3 | Reach/case timing | r11 has four reach cels; r12 has eight opening cels; game currently plays these sequentially | Review contact in the combined room and deliver concrete frame timing or extra contact cels |
 | 4 | 221B, 100 | r13 room/foreground, fire 222, lens 223, door 225 with shut cel 0, camera-fitted seated Watson 205 | Review layer/prop placement, finish Watson page-turn loop; engine moves floor and hotspots to fit |
 | 5 | Cast 201–203 | r13 fixed neutral models and guides | Watson standing/walking for rooms 101–103; Hudson and Toby west arrival walk first, then remaining directions; Holmes's scale |

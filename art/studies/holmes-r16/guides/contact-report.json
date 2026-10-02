@@ -1,0 +1,69 @@
+{
+  "scope": "Construction only, not validation of rendered sprites",
+  "boneLengthMetres": 0.425,
+  "results": [
+    {
+      "direction": "east",
+      "foot": "left",
+      "stance": 0,
+      "samples": 5,
+      "worldSlideMetres": 0
+    },
+    {
+      "direction": "east",
+      "foot": "right",
+      "stance": 0,
+      "samples": 1,
+      "worldSlideMetres": 0
+    },
+    {
+      "direction": "east",
+      "foot": "right",
+      "stance": 1,
+      "samples": 4,
+      "worldSlideMetres": 1.1443916996305594e-16
+    },
+    {
+      "direction": "toward",
+      "foot": "left",
+      "stance": 0,
+      "samples": 5,
+      "worldSlideMetres": 0
+    },
+    {
+      "direction": "toward",
+      "foot": "right",
+      "stance": 0,
+      "samples": 1,
+      "worldSlideMetres": 0
+    },
+    {
+      "direction": "toward",
+      "foot": "right",
+      "stance": 1,
+      "samples": 4,
+      "worldSlideMetres": 1.1102230246251565e-16
+    },
+    {
+      "direction": "away",
+      "foot": "left",
+      "stance": 0,
+      "samples": 5,
+      "worldSlideMetres": 0
+    },
+    {
+      "direction": "away",
+      "foot": "right",
+      "stance": 0,
+      "samples": 1,
+      "worldSlideMetres": 0
+    },
+    {
+      "direction": "away",
+      "foot": "right",
+      "stance": 1,
+      "samples": 4,
+      "worldSlideMetres": 1.1102230246251565e-16
+    }
+  ]
+}

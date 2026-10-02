@@ -1,0 +1,2 @@
+import{readFileSync}from'node:fs';import{Pixels}from'../../source/pixels.ts';import{loadIndexed,enlarged}from'../../source/study-tools.ts';
+const h='art/studies/holmes-r16/',pal=JSON.parse(readFileSync(h+'palette.json','utf8'));for(const dir of ['east','toward','away']){const p=new Pixels(144,240,18);[1,3,5,7].forEach((n,i)=>p.paste(loadIndexed(h+`guides/${dir}-${n}.png`,pal),i%2*72,Math.floor(i/2)*120));enlarged(h+`guides/${dir}-keys.png`,p,pal,6);}

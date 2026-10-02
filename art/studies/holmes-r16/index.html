@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Holmes — walk construction r16</title>
+<style>:root{color-scheme:dark;background:#171e1a;color:#eadfc5;font-family:system-ui}body{max-width:1000px;margin:30px auto;padding:0 20px}h1{font:32px Georgia}p{line-height:1.6;max-width:850px}a{color:#e2b66b}canvas,img{image-rendering:pixelated;max-width:100%}canvas{width:960px;aspect-ratio:4/3}.controls{display:flex;gap:15px;flex-wrap:wrap;margin:18px 0}button,select{padding:8px;background:#35483b;color:#eadfc5;border:1px solid #73846f}summary{cursor:pointer;margin:20px 0}strong{color:#f3bb75}</style>
+<h1>Holmes: walk construction</h1><p><strong>Unfinished — construction only.</strong> The connected body guide has fixed limb lengths and measured ground contacts. The generated drawings failed review and are not a view-200 delivery.</p>
+<div class="controls"><label>Direction <select id="direction"><option value="east">East</option><option value="toward">Toward</option><option value="away">Away</option></select></label><button id="play">Pause</button><button id="step">Step</button><label><input id="travel" type="checkbox" checked>Travel</label><label><input id="joints" type="checkbox" checked>Joints and contacts</label></div>
+<canvas id="room" width="320" height="200" aria-label="Connected walk construction in workshop"></canvas><p id="status" role="status">Loading…</p>
+<p>Orange and blue identify the same two legs throughout. Crosses mark ground contacts. Movement is stepped with the pose here so the construction's planted foot can be inspected frame by frame. Final sprites still need their own contact measurements.</p>
+<details><summary>Pose guides</summary><img id="plan" src="guides/east-plan.png" alt="Eight connected body construction poses"></details>
+<details><summary>Rejected raster trial</summary><p>This trial repeats leg arrangements and has an excessive stride. It is preserved as a failed experiment, not the next approved animation.</p><img src="review/east-contact.png" alt="Rejected raster walk keys"></details>
+<p><a href="README.md">Review and reproducible steps</a> · <a href="source/walk-construction.blend">Blender source</a> · <a href="guides/contact-report.json">Construction checks</a></p>
+<script type="module">
+const $=n=>document.getElementById(n),ctx=$('room').getContext('2d');ctx.imageSmoothingEnabled=false;
+function image(src){return new Promise((resolve,reject)=>{const p=new Image;p.onload=()=>resolve(p);p.onerror=reject;p.src=src})}
+try{const [data,bg,clock,fore]=await Promise.all([fetch('guides/poses.json').then(r=>r.json()),image('../clock-r12/export/background-clean.png'),image('../clock-r12/export/clock-00.png'),image('../workshop-r9/export/workshop-front.png')]);
+let playing=true,n=0,last=0,elapsed=0;const period=160;
+function line(a,b,c,w=1){ctx.strokeStyle=c;ctx.lineWidth=w;ctx.beginPath();ctx.moveTo(...a);ctx.lineTo(...b);ctx.stroke()}
+function hull(p){const q=p.slice().sort((a,b)=>a[0]-b[0]||a[1]-b[1]),cross=(a,b,c)=>(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);let a=[],b=[];for(const v of q){while(a.length>1&&cross(a.at(-2),a.at(-1),v)<=0)a.pop();a.push(v)}for(const v of q.reverse()){while(b.length>1&&cross(b.at(-2),b.at(-1),v)<=0)b.pop();b.push(v)}return a.slice(0,-1).concat(b.slice(0,-1))}
+function polygon(p,fill){ctx.beginPath();p.forEach((v,i)=>i?ctx.lineTo(...v):ctx.moveTo(...v));ctx.closePath();ctx.fillStyle=fill;ctx.fill()}
+$('play').onclick=()=>{playing=!playing;$('play').textContent=playing?'Pause':'Play'};$('step').onclick=()=>{playing=false;$('play').textContent='Play';n=(n+1)%24};$('direction').onchange=()=>{n=0;$('plan').src='guides/'+$('direction').value+'-plan.png'};
+function draw(t){if(!last)last=t;if(playing){elapsed+=Math.min(t-last,100);if(elapsed>=period){n=(n+1)%24;elapsed-=period}}last=t;
+const d=$('direction').value,g=data.poses[d][n%8],r=data.rootDisplacementPerCycle[d],root=$('travel').checked?n/8:0,x=(d==='east'?112:166)+root*r[0],y=(d==='toward'?150:d==='away'?190:173)+root*r[1],point=v=>[x-36+v[0],y-113+v[1]],j=Object.fromEntries(Object.entries(g.joints).map(([k,v])=>[k,point(v)]));
+ctx.drawImage(bg,0,0);ctx.drawImage(clock,232,0);polygon(hull(g.chest.map(point)),'#635f55');
+for(const side of ['right','left']){const col=side==='left'?'#c59669':'#6989ac';for(const[a,b]of [[side+'Hip',side+'Knee'],[side+'Knee',side+'Ankle'],[side+'Shoulder',side+'Elbow'],[side+'Elbow',side+'Wrist']])line(j[a],j[b],col,3);line(j[side+'Heel'],j[side+'Toe'],col,2)}
+line(j.chest,j.neck,'#c59669',4);line(j.neck,j.head,'#c59669',4);ctx.fillStyle='#b49268';ctx.beginPath();ctx.ellipse(...j.head,4.5,7,0,0,Math.PI*2);ctx.fill();
+const coat=hull(g.coat.map(point));for(let i=0;i<coat.length;i++)line(coat[i],coat[(i+1)%coat.length],'#b79b6a',.7);
+if($('joints').checked){for(const[a,b]of data.edges)line(j[a],j[b],'#efe2b8',.65);for(const side of ['left','right'])if(g.contacts[side].stance){const p=j[side+'Heel'];line([p[0]-3,p[1]],[p[0]+3,p[1]],'#f4ce83');line([p[0],p[1]-3],[p[0],p[1]+3],'#f4ce83')}}
+ctx.drawImage(fore,0,0);$('status').textContent=d+' · construction pose '+(n%8+1)+' / 8 · not finished character artwork';requestAnimationFrame(draw)}requestAnimationFrame(draw);
+}catch(e){$('status').textContent='Preview failed: '+e.message}
+</script></html>

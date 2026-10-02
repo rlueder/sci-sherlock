@@ -7,6 +7,10 @@ before rendering the coat or additional directions. The linked review records th
 tutorials read, the failure in the head/collar replacement method, and the revised
 sequence. Its timing suggestion is withdrawn; do not integrate its view 200.
 
+**2 October follow-up:** [r16](../art/studies/holmes-r16/README.md) has a connected
+construction and checked world-space contacts. Generated raster attempts still fail
+leg alternation/anatomy review. Walking remains unfinished; there is no new runtime handoff.
+
 **Current idle review:** [r10](../art/studies/holmes-r10/README.md) implements thinking,
 cap adjustment and pocket-watch retrieval against the fixed model. Complete pose
 drawings supply the active arm, while named chin-contact, cap-lift and downward-head
