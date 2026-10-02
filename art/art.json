@@ -17,6 +17,19 @@
       ]
     },
     {
+      "number": 101,
+      "layers": [
+        {
+          "png": "studies/remaining-art-r19/export/street-background.png",
+          "priority": -1000
+        },
+        {
+          "png": "studies/remaining-art-r19/export/street-lamp-foreground.png",
+          "priority": 158
+        }
+      ]
+    },
+    {
       "number": 102,
       "layers": [
         {
@@ -30,6 +43,45 @@
         {
           "png": "studies/workshop-r9/export/workshop-front.png",
           "priority": 181
+        }
+      ]
+    },
+    {
+      "number": 103,
+      "layers": [
+        {
+          "png": "studies/remaining-art-r19/export/stair-background.png",
+          "priority": -1000
+        },
+        {
+          "png": "studies/remaining-art-r19/export/stair-newel-foreground.png",
+          "priority": 181
+        }
+      ]
+    },
+    {
+      "number": 104,
+      "layers": [
+        {
+          "png": "studies/remaining-art-r19/export/title-background.png",
+          "priority": -1000
+        },
+        {
+          "png": "studies/remaining-art-r19/export/title-lettering.png",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "number": 105,
+      "layers": [
+        {
+          "png": "studies/remaining-art-r19/export/end-background.png",
+          "priority": -1000
+        },
+        {
+          "png": "studies/remaining-art-r19/export/end-lettering.png",
+          "priority": 0
         }
       ]
     }
@@ -1246,6 +1298,43 @@
               "anchor": [
                 70,
                 145
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 226,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/remaining-art-r19/export/gas-lamp-0.png",
+              "anchor": [
+                18,
+                138
+              ]
+            },
+            {
+              "png": "studies/remaining-art-r19/export/gas-lamp-1.png",
+              "anchor": [
+                18,
+                138
+              ]
+            },
+            {
+              "png": "studies/remaining-art-r19/export/gas-lamp-2.png",
+              "anchor": [
+                18,
+                138
+              ]
+            },
+            {
+              "png": "studies/remaining-art-r19/export/gas-lamp-3.png",
+              "anchor": [
+                18,
+                138
               ]
             }
           ]
