@@ -1,51 +1,51 @@
 title: room.enter
 ---
 <<if not $sawStreet>>
-Fog swallows the street. A hansom waits at the kerb, its lamps two blurs of light.
+Fog swallows the street. A hansom waits at the kerb, its lamps two blurs of light. #line:101-001
 <<set $sawStreet to true>>
 <<endif>>
 ===
 
 title: room.look
 ---
-Baker Street at night, or as much of it as the fog allows.
+Baker Street at night, or as much of it as the fog allows. #line:101-002
 ===
 
 title: cab.look
 ---
-A hansom, the horse steaming in the cold.
+A hansom, the horse steaming in the cold. #line:101-003
 ===
 
 title: cab.do
 ---
 <<walk hero 205 168>>
-Hero: Clerkenwell, cabby, and quickly.
-Watson: There's a sovereign in it if you can find the way in this.
+Hero: Clerkenwell, cabby, and quickly. #line:101-004
+Watson: There's a sovereign in it if you can find the way in this. #line:101-005
 <<sound 131 wait>>
 <<room 102>>
 ===
 
 title: lamp.look
 ---
-The gas lamp makes a small room of light in the fog.
+The gas lamp makes a small room of light in the fog. #line:101-006
 ===
 
 title: door221.look
 ---
-The door of 221B. Mrs Hudson's lamp still burns in the hall.
+The door of 221B. Mrs Hudson's lamp still burns in the hall. #line:101-007
 ===
 
 title: door221.do
 ---
-Hero: No time for that now. Thorne has been gone a night already.
+Hero: No time for that now. Thorne has been gone a night already. #line:101-008
 ===
 
 title: watson.look
 ---
-Watson, collar up against the fog.
+My collar is up against the fog, for all the good it does. #line:101-009
 ===
 
 title: watson.talk
 ---
-Watson: Clerkenwell at this hour. The cabby will want double.
+Watson: Clerkenwell at this hour. The cabby will want double. #line:101-010
 ===

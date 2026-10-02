@@ -2,15 +2,15 @@ title: room.enter
 ---
 <<music stop>>
 <<if not $reachedStair>>
-The stair turns once and ends at a door, with a thin line of light beneath it.
-Watson: Holmes. Listen.
+The stair turns once and ends at a door, with a thin line of light beneath it. #line:103-001
+Watson: Holmes. Listen. #line:103-002
 <<sound 133 wait>>
 <<wait 0.6>>
 <<sound 133 wait>>
 <<wait 0.6>>
 <<sound 133 wait>>
-Somewhere below, a single clock is ticking.
-Hero: Then someone down there is still keeping time.
+Somewhere below, a single clock is ticking. #line:103-003
+Hero: Then someone down there is still keeping time. #line:103-004
 <<set $reachedStair to true>>
 <<wait 1.5>>
 <<room 105>>
@@ -19,20 +19,20 @@ Hero: Then someone down there is still keeping time.
 
 title: room.look
 ---
-Stone steps, worn hollow in the middle. Older than the shop above them.
+Stone steps, worn hollow in the middle. Older than the shop above them. #line:103-005
 ===
 
 title: light.look
 ---
-Lamplight, under a door. Someone is awake down there.
+Lamplight, under a door. Someone is awake down there. #line:103-006
 ===
 
 title: light.do
 ---
-Hero: Not yet, Watson. Let us hear what they say before they hear us.
+Hero: Not yet, Watson. Let us hear what they say before they hear us. #line:103-007
 ===
 
 title: watson.talk
 ---
-Watson: I'll be right behind you.
+Watson: I'll be right behind you. #line:103-008
 ===

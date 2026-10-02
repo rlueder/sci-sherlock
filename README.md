@@ -225,8 +225,27 @@ Compiled archives and temporary screenshots stay in ignored `out/`.
 To develop against a local engine checkout, run `pnpm package` there and then
 `pnpm link ../sci-ts/out/package` here.
 
+### Voices
+
+Every line is spoken. Watson narrates, as he does in the stories; Holmes, Toby and
+Mrs Hudson speak their own lines. Each line in the rooms' Yarn has a `#line:` id, and its
+recording is `voices/<id>.wav`. `voices/lines.json` is the script: who says each line,
+the line before it, and whether it's recorded.
+
+For now the recordings are stand-ins made with [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M)
+(`tts/cast.json` says which voice reads whom). `voices/stand-ins.json` lists them; a real
+recording saved over one takes its place and is never overwritten.
+
+```sh
+pnpm --dir tts install    # once: Kokoro and its runtime (about 430 MB, not part of the game)
+pnpm voices               # stand-ins for new or changed lines (fetches the model, 92 MB, once)
+```
+
+The game menu (Escape) sets speech to voice and text, voice only, or text only.
+
 ## License
 
 [MIT](LICENSE) covers this project’s code, art and writing. sci-ts has its own license.
+The stand-in voices are made with Kokoro-82M (Apache 2.0).
 [Asset credits](art/credits.csv) and each study’s saved sources document provenance;
 no reference-game artwork is included.

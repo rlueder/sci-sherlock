@@ -6,20 +6,20 @@ title: room.enter
 <<if not $metToby>>
 <<hide mrsHudson>>
 <<hide toby>>
-The fire is lit. Fog presses at the windows of 221B.
-Watson: Nothing in the papers tonight, Holmes. London has gone quiet.
-Hero: London is never quiet, Watson. It is only waiting.
+The fire is lit. Fog presses at the windows of 221B. #line:100-001
+Watson: Nothing in the papers tonight, Holmes. London has gone quiet. #line:100-002
+Hero: London is never quiet, Watson. It is only waiting. #line:100-003
 <<sound 132>>
 <<animate door once>>
 <<show mrsHudson>>
 <<walk mrsHudson 276 172>>
-Mrs Hudson: A young man to see you, Mr Holmes. He's in a dreadful state.
+Mrs Hudson: A young man to see you, Mr Holmes. He's in a dreadful state. #line:100-004
 <<show toby>>
 <<walk toby 241 180>>
 <<walk mrsHudson 292 152>>
 <<hide mrsHudson>>
 <<cel door 0>>
-Toby: Mr Holmes? My name is Toby Vance. It's my master, sir. He's gone.
+Toby: Mr Holmes? My name is Toby Vance. It's my master, sir. He's gone. #line:100-005
 <<set $metToby to true>>
 <<else>>
 <<hide mrsHudson>>
@@ -31,30 +31,30 @@ Toby: Mr Holmes? My name is Toby Vance. It's my master, sir. He's gone.
 
 title: room.look
 ---
-The sitting room at 221B. Books, papers and chemicals, in an order only Holmes understands.
+The sitting room at 221B. Books, papers and chemicals, in an order only Holmes understands. #line:100-006
 ===
 
 title: toby.talk
 ---
 -> Your master?
-    Toby: Mr Elias Thorne, sir. Clockmaker, of Clerkenwell. I've been his apprentice three years.
-    Toby: He was at his bench when I left last night. This morning the shop was shut up, and he was gone.
+    Toby: Mr Elias Thorne, sir. Clockmaker, of Clerkenwell. I've been his apprentice three years. #line:100-007
+    Toby: He was at his bench when I left last night. This morning the shop was shut up, and he was gone. #line:100-008
     <<set $askedMaster to true>>
 -> The door was locked?
-    Toby: Bolted, sir, from the inside. I had to fetch the constable to break it in.
-    Hero: And the window?
-    Toby: Latched. Nobody could have got out that way.
+    Toby: Bolted, sir, from the inside. I had to fetch the constable to break it in. #line:100-009
+    Hero: And the window? #line:100-010
+    Toby: Latched. Nobody could have got out that way. #line:100-011
     <<set $askedDoor to true>>
 -> The clocks?
-    Toby: That's what frightened me, sir. Every clock on the walls had stopped, all at the same minute. Seventeen past three.
-    Toby: All but the big case clock in the corner. That one was still going.
+    Toby: That's what frightened me, sir. Every clock on the walls had stopped, all at the same minute. Seventeen past three. #line:100-012
+    Toby: All but the big case clock in the corner. That one was still going. #line:100-013
     <<set $askedClocks to true>>
 -> The lantern?
-    Toby: Still burning on the bench when we broke in. He never leaves it lit.
+    Toby: Still burning on the bench when we broke in. He never leaves it lit. #line:100-014
     <<set $askedLantern to true>>
 -> We shall go at once. <<if $askedMaster and $askedDoor and $askedClocks and $askedLantern and not $tookCase>>
-    Hero: Watson, your hat. Mr Vance, we shall go at once.
-    Toby: Thank you, sir. I'll run ahead and open the shop.
+    Hero: Watson, your hat. Mr Vance, we shall go at once. #line:100-015
+    Toby: Thank you, sir. I'll run ahead and open the shop. #line:100-016
     <<walk toby 292 152>>
     <<hide toby>>
     <<set $tookCase to true>>
@@ -62,26 +62,26 @@ title: toby.talk
 
 title: toby.look
 ---
-A thin young man in a work coat two sizes too large, turning his cap round and round.
+A thin young man in a work coat two sizes too large, turning his cap round and round. #line:100-017
 ===
 
 title: watson.look
 ---
-Watson, in his armchair, with yesterday's Standard.
+I am in my armchair, with yesterday's Standard, read twice over. #line:100-018
 ===
 
 title: watson.talk
 ---
 <<if $tookCase>>
-Watson: I have my revolver, Holmes, if it comes to that.
+Watson: I have my revolver, Holmes, if it comes to that. #line:100-019
 <<else>>
-Watson: The boy is frightened half out of his wits. Hear him out, Holmes.
+Watson: The boy is frightened half out of his wits. Hear him out, Holmes. #line:100-020
 <<endif>>
 ===
 
 title: mantelLens.look
 ---
-Holmes's lens, on the mantel where he left it.
+Holmes's lens, on the mantel where he left it. #line:100-021
 ===
 
 title: mantelLens.do
@@ -89,47 +89,47 @@ title: mantelLens.do
 <<hide mantelLens>>
 <<get lens>>
 <<set $hasLens to true>>
-Hero: Where I go, it goes.
+Hero: Where I go, it goes. #line:100-022
 ===
 
 title: correspondence.look
 ---
-Unanswered letters, pinned to the mantel with a jack-knife.
+Unanswered letters, pinned to the mantel with a jack-knife. #line:100-023
 ===
 
 title: correspondence.do
 ---
-Hero: They have waited a month. They can wait another night.
+Hero: They have waited a month. They can wait another night. #line:100-024
 ===
 
 title: violin.look
 ---
-Holmes's violin, laid across a chair. It has seen him through worse evenings.
+Holmes's violin, laid across a chair. It has seen him through worse evenings. #line:100-025
 ===
 
 title: bench.look
 ---
-A rack of test tubes on the chemistry bench, and a stain Mrs Hudson has given up on.
+A rack of test tubes on the chemistry bench, and a stain Mrs Hudson has given up on. #line:100-026
 ===
 
 title: slipper.look
 ---
-The Persian slipper, where Holmes keeps his tobacco.
+The Persian slipper, where Holmes keeps his tobacco. #line:100-027
 ===
 
 title: fire.look
 ---
-A good fire. The only warm thing in London tonight.
+A good fire. The only warm thing in London tonight. #line:100-028
 ===
 
 title: window.look
 ---
-Fog, thick as wool. The lamps across the street are smudges of yellow.
+Fog, thick as wool. The lamps across the street are smudges of yellow. #line:100-029
 ===
 
 title: door.look
 ---
-The door to the landing, and the seventeen steps down to the street.
+The door to the landing, and the seventeen steps down to the street. #line:100-030
 ===
 
 title: door.do
@@ -137,12 +137,12 @@ title: door.do
 <<if $tookCase and $hasLens>>
 <<walk hero 280 158>>
 <<animate door once>>
-Watson: A cab, Holmes?
-Hero: A cab, Watson. Clerkenwell.
+Watson: A cab, Holmes? #line:100-031
+Hero: A cab, Watson. Clerkenwell. #line:100-032
 <<room 101>>
 <<elseif $tookCase>>
-Hero: My lens, Watson. I shall want it tonight.
+Hero: My lens, Watson. I shall want it tonight. #line:100-033
 <<else>>
-Hero: We have a visitor. It would be rude to leave before he has told us why he came.
+Hero: We have a visitor. It would be rude to leave before he has told us why he came. #line:100-034
 <<endif>>
 ===

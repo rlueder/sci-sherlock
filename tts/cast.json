@@ -1,0 +1,15 @@
+{
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "voices": {
+    "Narrator": { "voice": "bm_fable", "speed": 0.95 },
+    "Watson": { "voice": "bm_fable", "speed": 0.95 },
+    "Hero": { "voice": "bm_george", "speed": 0.95 },
+    "Toby": { "voice": "bm_lewis", "speed": 1.05 },
+    "Mrs Hudson": { "voice": "bf_emma", "speed": 1 }
+  },
+  "say": {
+    "221B": "two twenty-one B",
+    "Mrs ": "Missus ",
+    "Mr ": "Mister "
+  }
+}

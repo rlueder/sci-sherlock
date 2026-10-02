@@ -16,7 +16,8 @@
     "export-art": "tsx export-art.ts",
     "typecheck": "tsc",
     "test": "vitest run",
-    "check": "pnpm typecheck && pnpm art check art/art.json && pnpm test"
+    "check": "pnpm typecheck && pnpm art check art/art.json && pnpm test",
+    "voices": "tsx tts/standins.ts"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.3",

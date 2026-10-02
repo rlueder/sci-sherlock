@@ -1,0 +1,9 @@
+{
+  "name": "sherlock-tts",
+  "private": true,
+  "type": "module",
+  "description": "Stand-in voices for the teaser's lines, made with Kokoro. Kept apart from the game's dependencies: only needed to make the stand-ins.",
+  "dependencies": {
+    "kokoro-js": "1.2.1"
+  }
+}
