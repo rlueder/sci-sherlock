@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rejected study — Holmes walk r14</title>
+<style>:root{color-scheme:dark;background:#171e1a;color:#eadfc5;font-family:system-ui}body{max-width:1080px;margin:36px auto;padding:0 20px}h1{font:32px Georgia}p{line-height:1.6;color:#c1c8b9}a{color:#e2b66b}canvas,img{image-rendering:pixelated;max-width:100%}#room{width:960px;aspect-ratio:4/3;background:#111}#sprite{width:360px;aspect-ratio:1/2;background:#2e3c33}.controls{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:18px 0}button,select{background:#38463c;color:#f4e3bf;border:1px solid #758773;border-radius:4px;padding:9px}label{display:flex;gap:6px;align-items:center}summary{font-size:19px;cursor:pointer;margin:24px 0 12px}.stage{display:flex;gap:20px;flex-wrap:wrap}figcaption,small{color:#b5beae}figure{margin:16px 0}footer{border-top:1px solid #43513f;padding-top:22px;margin-top:28px}</style>
+<div>THE STOPPED CLOCKS · WALK STUDY 14</div><h1>Rejected walk study</h1><p><strong>Not for integration.</strong> Dancing motion and disconnected shoulders/torso failed review. <a href="README.md">Failure analysis and revised workflow</a>. These assets remain here for comparison.</p><p>Complete body-and-coat pose drawings, fixed directional heads, and the exact east standing master. Cel 0 stands; cels 1–8 form the walk.</p>
+<div class="controls"><label>Direction <select id="direction"><option value="east">East</option><option value="west">West — mirrored</option><option value="toward">Toward camera</option><option value="away">Away from camera</option></select></label><button id="play">Play</button><button id="step">Step</button><button id="stand">Standing</button><label>Cel <input id="cel" type="range" min="0" max="8" value="1"></label></div>
+<canvas id="room" width="320" height="200" aria-label="Holmes walking through the workshop"></canvas>
+<div class="controls"><label><input id="travel" type="checkbox" checked>Travel across room</label><label><input id="wire" type="checkbox">Construction joints</label><label><input id="ground" type="checkbox">Ground guides</label><label>Rate <input id="fps" type="range" min="4" max="12" step=".5" value="7.5"><span id="rate">7.5 fps</span></label></div>
+<p id="status" role="status">Loading…</p>
+<small>Historical preview: 40px/s horizontal and 20px/s vertical. This timing suggestion is withdrawn; speed was not derived from foot contact.</small>
+<details open><summary>All four loops together</summary><img src="review/four-directions.gif" alt="Four directional walk loops at native pixel scale"><p>West mirrors east about the fixed anchor. Toward/away have their own standing and walking drawings. The long coat moves with the legs.</p></details>
+<details><summary>Standing references and pose sheets</summary><img src="review/standing.png" alt="East, west, toward and away standing poses"><img id="contact" src="review/east-contact.png" alt="Eight walking cels for selected direction"><p>The source sheets are registered with one scale each. The fixed head/collar patch meets separately drawn bodies at an inconsistent structural seam. It failed the shoulder/torso continuity review.</p></details>
+<details><summary>Construction and sources</summary><img id="plan" src="guides/east-plan.png" alt="Blender whole-body joint and coat guides"><p>These are pre-drawing guides. They are deliberately shown separately from the final artwork: they are not a recovered skeleton or an automatic anatomy check.</p><p><a href="source/walk-construction.blend">Blender construction</a> · <a href="source/east.pxo">East Pixelorama</a> · <a href="source/west.pxo">West</a> · <a href="source/toward.pxo">Toward</a> · <a href="source/away.pxo">Away</a></p></details>
+<footer><a href="README.md">Workflow and limitations</a> · <a href="timing.json">Withdrawn timing</a> · <a href="art.json">Rejected study manifest</a> · <a href="../reach-r15/">Reach and case review</a></footer>
+<script type="module">
+const $=n=>document.getElementById(n),ctx=$('room').getContext('2d');ctx.imageSmoothingEnabled=false;
+function image(src){return new Promise((resolve,reject)=>{const p=new Image();p.onload=()=>resolve(p);p.onerror=()=>reject(Error(src));p.src=src})}
+try{
+ const dirs=['east','west','toward','away'],art={},guides={};
+ await Promise.all(dirs.flatMap(d=>Array.from({length:9},(_,i)=>Promise.all([image('export/'+d+'-'+i+'.png').then(p=>art[d+i]=p),image('guides/'+d+'-'+i+'.png').then(p=>guides[d+i]=p)]))));
+ const [bg,front,clock,lamp]=await Promise.all(['../clock-r12/export/background-clean.png','../workshop-r9/export/workshop-front.png','../clock-r12/export/clock-00.png','../workshop-r9/export/lamp-00.png'].map(image));
+ let playing=false,cel=1,last=0,time=0,dir='east';
+ const fps=()=>Number($('fps').value);
+ function update(){$('cel').value=cel;$('play').textContent=playing?'Pause':'Play';$('rate').textContent=fps()+' fps';$('status').textContent=dir+' · cel '+cel+(cel===0?' standing':' / 8 walk')+' · 72×120 · anchor [36,113]';}
+ $('play').onclick=()=>{playing=!playing;if(playing&&cel===0)cel=1;update()};
+ $('step').onclick=()=>{playing=false;cel=cel>=8?1:cel+1;update()};
+ $('stand').onclick=()=>{playing=false;cel=0;update()};
+ $('cel').oninput=()=>{playing=false;cel=Number($('cel').value);update()};
+ $('fps').oninput=update;$('direction').onchange=()=>{dir=$('direction').value;time=0;$('contact').src='review/'+(dir==='west'?'east':dir)+'-contact.png';$('plan').src='guides/'+(dir==='west'?'east':dir)+'-plan.png';update()};
+ function draw(t){if(!last)last=t;const dt=Math.min(100,t-last);last=t;if(playing){time+=dt;cel=1+Math.floor(time*fps()/1000)%8;update()}
+ let x=160,y=177;if($('travel').checked&&cel){const seconds=time/1000;if(dir==='east')x=106+(seconds*40)%126;if(dir==='west')x=232-(seconds*40)%126;if(dir==='toward')y=149+(seconds*20)%41;if(dir==='away')y=190-(seconds*20)%41}
+ ctx.drawImage(bg,0,0);ctx.drawImage(lamp,203,80);ctx.drawImage(clock,232,0);
+ if($('ground').checked){ctx.strokeStyle='#69877d';ctx.lineWidth=.5;for(let yy=148;yy<200;yy+=8){ctx.beginPath();ctx.moveTo(100,yy);ctx.lineTo(235,yy);ctx.stroke()}for(let xx=100;xx<236;xx+=8){ctx.beginPath();ctx.moveTo(xx,148);ctx.lineTo(xx,199);ctx.stroke()}}
+ ctx.drawImage(art[dir+cel],Math.round(x)-36,Math.round(y)-113);if($('wire').checked)ctx.drawImage(guides[dir+cel],Math.round(x)-36,Math.round(y)-113);ctx.drawImage(front,0,0);requestAnimationFrame(draw)
+ }update();requestAnimationFrame(draw)
+}catch(e){$('status').textContent='Preview failed: '+e.message;console.error(e)}
+</script></html>

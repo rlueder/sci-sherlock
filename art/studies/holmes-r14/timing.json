@@ -1,0 +1,32 @@
+{
+  "standingCel": 0,
+  "walkCels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "excludeStandingDuringWalk": true,
+  "loopOrder": [
+    "east",
+    "west",
+    "toward",
+    "away"
+  ],
+  "previewFps": 7.5,
+  "nominalPixelsPerSecond": {
+    "horizontal": 40,
+    "vertical": 20
+  },
+  "status": "REJECTED: dancing motion and disconnected shoulders/torso. Historical preview timing only; engine proposal withdrawn. Do not integrate.",
+  "withdrawnEngineProposal": {
+    "cycleSpeedTicks": 8,
+    "moveSpeedTicks": 3,
+    "xStep": 2,
+    "yStep": 1
+  }
+}

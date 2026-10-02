@@ -1,11 +1,18 @@
 # Animation workflow: preserve v6, redraw the motion
 
+**Walk review, 1 October:** [r14 is rejected](../art/studies/holmes-r14/README.md):
+Holmes dances in place and the shoulders appear to separate from the torso.
+The next pass must establish one connected rough body and measured foot contacts
+before rendering the coat or additional directions. The linked review records the
+tutorials read, the failure in the head/collar replacement method, and the revised
+sequence. Its timing suggestion is withdrawn; do not integrate its view 200.
+
 **Current idle review:** [r10](../art/studies/holmes-r10/README.md) implements thinking,
 cap adjustment and pocket-watch retrieval against the fixed model. Complete pose
 drawings supply the active arm, while named chin-contact, cap-lift and downward-head
 variants address the reviewed gestures. A shared torso plate preserves body width.
 Master v2 adds the permanent watch chain, including in the approved puff.
-User priority: settle these idle gestures first, walking last.
+Current priority: Holmes walking is next, ahead of further cast and room art. The ordered queue in docs/art-delivery-status.md supersedes the earlier walking-last instruction.
 
 **Current character workflow:** use the [fixed Holmes master](../art/reference/holmes-master-v2/README.md).
 The later r7 review found head, colour and body-width drift between independently
@@ -81,7 +88,7 @@ remain separate responsibilities.
 
 ## Holmes: replace the cutout leg swing with drawn poses
 
-The current implementation rotates leg fragments, keeps most of the torso frozen,
+The historical r3 implementation rotates leg fragments, keeps most of the torso frozen,
 and adds a one-pixel rise. It preserves the reference appearance but lacks a convincing
 transfer of weight, foot roll and coordinated clothing movement. Do not keep tuning
 the same fragment rotations as the final animation method.
@@ -92,7 +99,7 @@ the same fragment rotations as the final animation method.
    torso and graft limbs onto it.
 2. Rough the two contact poses, then down, passing and up poses for each half of the
    stride. Start with an eight-pose working study; this is a planning choice, not a
-   silent change to the engine's existing six-cel convention.
+   fixed engine requirement; the current contract is standing cel 0 followed by walking cels.
 3. Establish the feet and pelvis first. Show heel contact, the planted support foot,
    toe-off and swing-foot clearance. Match horizontal travel to stride length and timing.
 4. Draw the torso's restrained weight shift, shoulder response and coat hem movement.
@@ -101,7 +108,7 @@ the same fragment rotations as the final animation method.
    transition. Draw clean pixel clusters on the final palette; do not smooth the result.
 6. Review both in place and translating across a ground guide. A planted foot should
    stay fixed in world space during contact; an in-place loop alone cannot establish that.
-7. Resolve final six/eight-cel timing with engine integration, then export matching
+7. Resolve final cel count and measured travel timing with engine integration, then export matching
    full-canvas cels and anchors. Finish one direction before propagating it to the others.
 
 ## Clock: construct the turn in space

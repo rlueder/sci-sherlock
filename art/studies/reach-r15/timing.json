@@ -1,0 +1,227 @@
+{
+  "status": "Art timing proposal for engineer review, not runtime integration",
+  "ticksPerSecond": 60,
+  "heroAnchor": [
+    36,
+    113
+  ],
+  "currentHeroPosition": [
+    214,
+    160
+  ],
+  "proposedHeroPosition": [
+    223,
+    165
+  ],
+  "clockPosition": [
+    292,
+    150
+  ],
+  "clockAnchor": [
+    60,
+    150
+  ],
+  "contact": {
+    "heroCel": 2,
+    "handInCel": [
+      67,
+      29
+    ],
+    "currentWorld": [
+      245,
+      76
+    ],
+    "proposedWorld": [
+      254,
+      81
+    ],
+    "closedCaseUV": [
+      16,
+      67
+    ],
+    "projectedCasePoints": [
+      [
+        253.99999618530273,
+        81.00000507065228
+      ],
+      [
+        256.2307726599608,
+        81.15096611680171
+      ],
+      [
+        260.4853936969695,
+        81.33211593311603
+      ],
+      [
+        267.4825076608034,
+        81.53228276684769
+      ],
+      [
+        276.3310721557879,
+        81.7063798046819
+      ],
+      [
+        286.4832702813657,
+        81.84021263796724
+      ],
+      [
+        295.6826492574695,
+        81.91384365910318
+      ],
+      [
+        301.80336949787693,
+        81.93903908136662
+      ]
+    ],
+    "firstMovementDistance": 2.2358750924080564,
+    "note": "Joint annotation approximates hand center. At the first 10° pose the surface moves about 2.2 native pixels; release after this, rather than holding the old hand pose throughout the swing."
+  },
+  "current": [
+    {
+      "tick": 0,
+      "heroCel": 0,
+      "caseCel": 0
+    },
+    {
+      "tick": 8,
+      "heroCel": 1,
+      "caseCel": 0
+    },
+    {
+      "tick": 16,
+      "heroCel": 2,
+      "caseCel": 0
+    },
+    {
+      "tick": 24,
+      "heroCel": 3,
+      "caseCel": 0
+    },
+    {
+      "tick": 32,
+      "heroCel": 3,
+      "caseCel": 0
+    },
+    {
+      "tick": 40,
+      "heroCel": 3,
+      "caseCel": 1
+    },
+    {
+      "tick": 48,
+      "heroCel": 3,
+      "caseCel": 2
+    },
+    {
+      "tick": 56,
+      "heroCel": 3,
+      "caseCel": 3
+    },
+    {
+      "tick": 64,
+      "heroCel": 3,
+      "caseCel": 4
+    },
+    {
+      "tick": 72,
+      "heroCel": 3,
+      "caseCel": 5
+    },
+    {
+      "tick": 80,
+      "heroCel": 3,
+      "caseCel": 6
+    },
+    {
+      "tick": 88,
+      "heroCel": 3,
+      "caseCel": 7
+    },
+    {
+      "tick": 96,
+      "heroCel": 0,
+      "caseCel": 7
+    },
+    {
+      "tick": 104,
+      "heroCel": 0,
+      "caseCel": 7
+    }
+  ],
+  "proposed": [
+    {
+      "tick": 0,
+      "heroCel": 0,
+      "caseCel": 0,
+      "note": "Set hero position and face east"
+    },
+    {
+      "tick": 8,
+      "heroCel": 1,
+      "caseCel": 0,
+      "note": "Raise hand"
+    },
+    {
+      "tick": 16,
+      "heroCel": 2,
+      "caseCel": 0,
+      "note": "Make contact"
+    },
+    {
+      "tick": 24,
+      "heroCel": 2,
+      "caseCel": 0,
+      "note": "Brief contact hold; stop pendulum and swap to case cel 0"
+    },
+    {
+      "tick": 32,
+      "heroCel": 2,
+      "caseCel": 1,
+      "note": "Begin case movement; hand remains at contact for the first 10 degrees"
+    },
+    {
+      "tick": 40,
+      "heroCel": 3,
+      "caseCel": 2,
+      "note": "Release; hand withdraws as case reaches 22 degrees"
+    },
+    {
+      "tick": 48,
+      "heroCel": 1,
+      "caseCel": 3,
+      "note": "Return arm"
+    },
+    {
+      "tick": 56,
+      "heroCel": 0,
+      "caseCel": 4,
+      "note": "Return to standing"
+    },
+    {
+      "tick": 64,
+      "heroCel": 0,
+      "caseCel": 5,
+      "note": "Case continues"
+    },
+    {
+      "tick": 72,
+      "heroCel": 0,
+      "caseCel": 6,
+      "note": "Case continues"
+    },
+    {
+      "tick": 80,
+      "heroCel": 0,
+      "caseCel": 7,
+      "note": "Case reaches final angle"
+    },
+    {
+      "tick": 104,
+      "heroCel": 0,
+      "caseCel": 7,
+      "note": "End settle hold"
+    }
+  ],
+  "additionalCelsRequired": false,
+  "choreography": "Touch/trigger, initial push, then release and let the case swing. Continuous hand tracking through all 84 degrees would require new full-body poses; this proposal does not claim that."
+}

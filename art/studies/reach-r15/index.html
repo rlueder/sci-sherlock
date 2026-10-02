@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Holmes — reach and clock timing</title><style>:root{color-scheme:dark;background:#171e1a;color:#eadfc5;font-family:system-ui}body{max-width:1100px;margin:36px auto;padding:0 22px}h1{font:32px Georgia}p{line-height:1.6}a{color:#e6bd78}img,canvas{max-width:100%;image-rendering:pixelated}canvas{width:960px;aspect-ratio:4/3}.controls{display:flex;gap:18px;flex-wrap:wrap;margin:20px 0}button,select{padding:9px;background:#39453b;color:#f6e3bf;border:1px solid #748773}table{border-collapse:collapse}td,th{padding:7px 14px;border-bottom:1px solid #43503f}</style>
+<h1>Reach, touch, release</h1><p>The current game position puts the annotated hand at [245,76]; the closed-case contact is [254,81]. The proposed actor position is [223,165].</p>
+<div class="controls"><label>Sequence <select id="mode"><option value="proposed">Proposed contact/release</option><option value="current">Current placement/sequential opening</option></select></label><button id="play">Pause</button><label>Step <input id="step" type="range" min="0" max="11" value="0"></label><label><input id="marks" type="checkbox" checked>Contact markers</label></div>
+<canvas id="room" width="320" height="200" aria-label="Reach and case opening timing review"></canvas><p id="status" role="status">Loading…</p>
+<p>Cyan: annotated hand. Gold: the same point on the moving case. Hold reach cel 2 through the first 10° case pose, then withdraw the hand. The proposal uses existing cels; it does not depict Holmes gripping the case throughout its travel.</p>
+<table><thead><tr><th>Tick</th><th>Hero cel</th><th>Case cel</th><th>Action</th></tr></thead><tbody id="timing"></tbody></table>
+<p><a href="timing.json">Engineer timing data</a> · <a href="README.md">Review and handoff notes</a> · <a href="../holmes-r14/">Directional walk</a></p>
+<script type="module">
+const $=n=>document.getElementById(n),ctx=$('room').getContext('2d');ctx.imageSmoothingEnabled=false;
+const load=src=>new Promise((resolve,reject)=>{const p=new Image();p.onload=()=>resolve(p);p.onerror=()=>reject(Error(src));p.src=src});
+try{
+const data=await fetch('timing.json').then(r=>r.json()),[bg,front,lamp]=await Promise.all(['../clock-r12/export/background-clean.png','../workshop-r9/export/workshop-front.png','../workshop-r9/export/lamp-00.png'].map(load)),hero=await Promise.all(Array.from({length:4},(_,i)=>load('../holmes-r11/export/reach-'+i+'.png'))),clock=await Promise.all(Array.from({length:8},(_,i)=>load('../clock-r12/export/clock-'+String(i).padStart(2,'0')+'.png')));
+for(const s of data.proposed){const tr=document.createElement('tr');for(const v of [s.tick,s.heroCel,s.caseCel,s.note]){const td=document.createElement('td');td.textContent=v;tr.append(td)}$('timing').append(tr)}
+let playing=true,step=0,time=0,last=0;
+$('play').onclick=()=>{playing=!playing;$('play').textContent=playing?'Pause':'Play'};$('step').oninput=()=>{playing=false;step=Number($('step').value);$('play').textContent='Play'};
+$('mode').onchange=()=>{time=0;step=0;$('step').max=data[$('mode').value].length-1};
+function draw(t){if(!last)last=t;const dt=Math.min(100,t-last);last=t;const mode=$('mode').value,seq=data[mode],pos=mode==='current'?data.currentHeroPosition:data.proposedHeroPosition;if(playing){time+=dt;const tick=time*.06%(seq.at(-1).tick+32);step=0;for(let i=0;i<seq.length;i++)if(tick>=seq[i].tick)step=i;$('step').value=step}const s=seq[step];ctx.drawImage(bg,0,0);ctx.drawImage(lamp,203,80);ctx.drawImage(hero[s.heroCel],pos[0]-36,pos[1]-113);ctx.drawImage(clock[s.caseCel],232,0);ctx.drawImage(front,0,0);
+if($('marks').checked){const hand=[[43,41],[59,32],[67,29],[62,29]][s.heroCel],x=pos[0]-36+hand[0],y=pos[1]-113+hand[1],q=data.contact.projectedCasePoints[s.caseCel];ctx.fillStyle='#82e1e1';ctx.fillRect(x-2,y,5,1);ctx.fillRect(x,y-2,1,5);ctx.fillStyle='#ffda8a';ctx.fillRect(Math.round(q[0]),Math.round(q[1]),2,2)}
+$('status').textContent='Tick '+s.tick+' · hero '+s.heroCel+' · case '+s.caseCel+(s.note?' · '+s.note:'');requestAnimationFrame(draw)}requestAnimationFrame(draw)
+}catch(e){$('status').textContent='Preview failed: '+e.message;console.error(e)}
+</script></html>
