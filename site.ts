@@ -5,6 +5,7 @@
  *
  *   pnpm site
  */
+import { createHash } from "node:crypto";
 import { cpSync, existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -24,7 +25,11 @@ const files: Record<string, Uint8Array> = { "RESOURCE.MAP": map, "RESOURCE.000":
 mkdirSync(join(out, "game"), { recursive: true });
 for (const [name, data] of Object.entries(files)) writeFileSync(join(out, "game", name), data);
 // The player lists the game's files from this, in place of the dev server's listings.
-writeFileSync(join(out, "game/files.json"), JSON.stringify({ "": Object.keys(files) }));
+// With the build's version: the player fetches every game file with it, so a new deploy is
+// never mixed with files a browser cached from the last one.
+const version = createHash("sha256");
+for (const name of Object.keys(files).sort()) version.update(name).update(files[name]!);
+writeFileSync(join(out, "game/files.json"), JSON.stringify({ "": Object.keys(files), version: version.digest("hex").slice(0, 12) }));
 
 // The dialogue font's licence goes with it: its notices belong with any copy.
 mkdirSync(join(out, "licences"), { recursive: true });
