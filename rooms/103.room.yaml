@@ -1,16 +1,19 @@
 # yaml-language-server: $schema=../node_modules/sci2-ts/packages/content/room.schema.json
-# The hidden stair: one screen and the last lines. Laid out for the stand-in picture.
+# The top of the hidden stair (r19): the case clock swung aside on the left, the steps going
+# down into the dark, the newel post in the foreground on the right.
 room: 103
 picture: 103
 hero:
-  at: [170, 160]
-# The house camera (art/studies/baker-street-r13/guides/perspective.json): the horizon at
-# y 72, figures drawn full size with their feet at y 176.
-perspective: { horizon: 72, fullSize: 176 }
-walkable: [[100, 150], [240, 150], [240, 190], [100, 190]]
+  at: [100, 150]
+# A high camera looking down. Fitted by eye: the floorboards and treads put the horizon near
+# the top of the screen, and the newel post (about 1.1 m) sets the size by the stairwell.
+perspective: { horizon: 10, fullSize: 128 }
+# The landing, short of the stairwell's edge.
+walkable: [[53, 154], [103, 132], [239, 169], [286, 192], [70, 195]]
 features:
-  light: { rect: [140, 120, 200, 140], sightAngle: 360 }
+  stairs: { rect: [120, 78, 243, 161], sightAngle: 360 }
+  caseClock: { rect: [0, 0, 52, 172], sightAngle: 360 }
 props:
-  watson: { view: 201, at: [130, 164], sightAngle: 360, scale: true }
+  watson: { view: 201, at: [70, 160], sightAngle: 360, scale: true }
 characters:
   watson: { name: Watson }

@@ -18,7 +18,7 @@ A hansom, the horse steaming in the cold. #line:101-003
 
 title: cab.do
 ---
-<<walk hero 205 168>>
+<<walk hero 190 156>>
 Hero: Clerkenwell, cabby, and quickly. #line:101-004
 Watson: There's a sovereign in it if you can find the way in this. #line:101-005
 <<sound 131 wait>>
