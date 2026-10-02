@@ -1,0 +1,281 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [],
+  "views": [
+    {
+      "number": 200,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/east-0.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/east-1.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/east-2.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/east-3.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/east-4.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/east-5.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/east-6.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/east-7.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/east-8.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/west-0.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/west-1.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/west-2.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/west-3.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/west-4.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/west-5.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/west-6.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/west-7.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/west-8.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/toward-0.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toward-1.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toward-2.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toward-3.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toward-4.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toward-5.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toward-6.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toward-7.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toward-8.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/away-0.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/away-1.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/away-2.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/away-3.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/away-4.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/away-5.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/away-6.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/away-7.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/away-8.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

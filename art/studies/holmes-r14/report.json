@@ -1,0 +1,416 @@
+{
+  "canvas": [
+    72,
+    120
+  ],
+  "anchor": [
+    36,
+    113
+  ],
+  "palette": 64,
+  "standingEastExact": true,
+  "loops": [
+    {
+      "number": 0,
+      "name": "east",
+      "cels": 9,
+      "standingSha256": "5a753ffdfd37dd9534ff27a05fb23e5a179248945c5ce1f2488ebcd6b7720c60",
+      "metrics": [
+        {
+          "cel": 0,
+          "bounds": [
+            16,
+            8,
+            50,
+            113
+          ],
+          "opaque": 2286
+        },
+        {
+          "cel": 1,
+          "bounds": [
+            2,
+            8,
+            64,
+            112
+          ],
+          "opaque": 2796
+        },
+        {
+          "cel": 2,
+          "bounds": [
+            6,
+            9,
+            57,
+            112
+          ],
+          "opaque": 2740
+        },
+        {
+          "cel": 3,
+          "bounds": [
+            8,
+            8,
+            51,
+            112
+          ],
+          "opaque": 2701
+        },
+        {
+          "cel": 4,
+          "bounds": [
+            6,
+            7,
+            69,
+            112
+          ],
+          "opaque": 2772
+        },
+        {
+          "cel": 5,
+          "bounds": [
+            3,
+            8,
+            69,
+            112
+          ],
+          "opaque": 2728
+        },
+        {
+          "cel": 6,
+          "bounds": [
+            9,
+            9,
+            55,
+            112
+          ],
+          "opaque": 2734
+        },
+        {
+          "cel": 7,
+          "bounds": [
+            10,
+            8,
+            50,
+            112
+          ],
+          "opaque": 2634
+        },
+        {
+          "cel": 8,
+          "bounds": [
+            4,
+            7,
+            68,
+            112
+          ],
+          "opaque": 2776
+        }
+      ]
+    },
+    {
+      "number": 1,
+      "name": "west",
+      "cels": 9,
+      "standingSha256": "d543d8f155c6d930bfc833efee697ff71c8aa87fa667114abab124059d48dfa1",
+      "metrics": [
+        {
+          "cel": 0,
+          "bounds": [
+            22,
+            8,
+            56,
+            113
+          ],
+          "opaque": 2286
+        },
+        {
+          "cel": 1,
+          "bounds": [
+            8,
+            8,
+            70,
+            112
+          ],
+          "opaque": 2796
+        },
+        {
+          "cel": 2,
+          "bounds": [
+            15,
+            9,
+            66,
+            112
+          ],
+          "opaque": 2740
+        },
+        {
+          "cel": 3,
+          "bounds": [
+            21,
+            8,
+            64,
+            112
+          ],
+          "opaque": 2701
+        },
+        {
+          "cel": 4,
+          "bounds": [
+            3,
+            7,
+            66,
+            112
+          ],
+          "opaque": 2772
+        },
+        {
+          "cel": 5,
+          "bounds": [
+            3,
+            8,
+            69,
+            112
+          ],
+          "opaque": 2728
+        },
+        {
+          "cel": 6,
+          "bounds": [
+            17,
+            9,
+            63,
+            112
+          ],
+          "opaque": 2734
+        },
+        {
+          "cel": 7,
+          "bounds": [
+            22,
+            8,
+            62,
+            112
+          ],
+          "opaque": 2634
+        },
+        {
+          "cel": 8,
+          "bounds": [
+            4,
+            7,
+            68,
+            112
+          ],
+          "opaque": 2776
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "name": "toward",
+      "cels": 9,
+      "standingSha256": "02b96ace7ea181e9a868f3a0712b56a83a86f588d9e7fe9056299370737dcda0",
+      "metrics": [
+        {
+          "cel": 0,
+          "bounds": [
+            16,
+            7,
+            53,
+            112
+          ],
+          "opaque": 2597
+        },
+        {
+          "cel": 1,
+          "bounds": [
+            12,
+            7,
+            55,
+            112
+          ],
+          "opaque": 2717
+        },
+        {
+          "cel": 2,
+          "bounds": [
+            14,
+            8,
+            54,
+            112
+          ],
+          "opaque": 2702
+        },
+        {
+          "cel": 3,
+          "bounds": [
+            13,
+            7,
+            55,
+            112
+          ],
+          "opaque": 2703
+        },
+        {
+          "cel": 4,
+          "bounds": [
+            12,
+            6,
+            55,
+            112
+          ],
+          "opaque": 2765
+        },
+        {
+          "cel": 5,
+          "bounds": [
+            12,
+            7,
+            56,
+            112
+          ],
+          "opaque": 2739
+        },
+        {
+          "cel": 6,
+          "bounds": [
+            12,
+            8,
+            55,
+            112
+          ],
+          "opaque": 2711
+        },
+        {
+          "cel": 7,
+          "bounds": [
+            12,
+            7,
+            56,
+            112
+          ],
+          "opaque": 2698
+        },
+        {
+          "cel": 8,
+          "bounds": [
+            11,
+            6,
+            55,
+            112
+          ],
+          "opaque": 2768
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "name": "away",
+      "cels": 9,
+      "standingSha256": "0022aeb7826b9e0bb3a7d3e7ab01133ead24eb50fec3185967e814a7021ba843",
+      "metrics": [
+        {
+          "cel": 0,
+          "bounds": [
+            17,
+            7,
+            55,
+            112
+          ],
+          "opaque": 2675
+        },
+        {
+          "cel": 1,
+          "bounds": [
+            15,
+            7,
+            57,
+            112
+          ],
+          "opaque": 2826
+        },
+        {
+          "cel": 2,
+          "bounds": [
+            15,
+            8,
+            55,
+            112
+          ],
+          "opaque": 2838
+        },
+        {
+          "cel": 3,
+          "bounds": [
+            14,
+            7,
+            58,
+            112
+          ],
+          "opaque": 2840
+        },
+        {
+          "cel": 4,
+          "bounds": [
+            14,
+            6,
+            58,
+            112
+          ],
+          "opaque": 2964
+        },
+        {
+          "cel": 5,
+          "bounds": [
+            14,
+            7,
+            57,
+            112
+          ],
+          "opaque": 2831
+        },
+        {
+          "cel": 6,
+          "bounds": [
+            16,
+            8,
+            55,
+            112
+          ],
+          "opaque": 2713
+        },
+        {
+          "cel": 7,
+          "bounds": [
+            14,
+            7,
+            58,
+            112
+          ],
+          "opaque": 2883
+        },
+        {
+          "cel": 8,
+          "bounds": [
+            14,
+            6,
+            60,
+            112
+          ],
+          "opaque": 2876
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Generated body keys need visual approval; palette and head equality do not prove anatomy.",
+    "Support-foot markers and translation speed need in-game review.",
+    "Joint overlays are pre-drawing Blender guides, not a recovered rig of the final drawing."
+  ],
+  "reviewStatus": "rejected",
+  "reviewReasons": [
+    "Dancing in place; unconvincing support and weight transfer.",
+    "Shoulders and torso appear disconnected."
+  ]
+}
