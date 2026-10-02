@@ -4,10 +4,23 @@
   "palette": "palette.json",
   "pictures": [
     {
+      "number": 100,
+      "layers": [
+        {
+          "png": "studies/baker-street-r13/export/background.png",
+          "priority": -1000
+        },
+        {
+          "png": "studies/baker-street-r13/export/foreground.png",
+          "priority": 192
+        }
+      ]
+    },
+    {
       "number": 102,
       "layers": [
         {
-          "png": "studies/workshop-r9/export/workshop.png",
+          "png": "studies/clock-r12/export/background-clean.png",
           "priority": -1000
         },
         {
@@ -55,6 +68,132 @@
           "cels": [
             {
               "png": "reference/holmes-master-v2/master.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 201,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r13/export/watson-standing.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "link": 0,
+          "mirror": true
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r13/export/watson-standing.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r13/export/watson-standing.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 202,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r13/export/hudson-standing.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "link": 0,
+          "mirror": true
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r13/export/hudson-standing.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r13/export/hudson-standing.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 203,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r13/export/toby-standing.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "link": 0,
+          "mirror": true
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r13/export/toby-standing.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r13/export/toby-standing.png",
               "anchor": [
                 36,
                 113
@@ -124,6 +263,22 @@
             },
             {
               "png": "studies/holmes-r11/export/kneel-3.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 205,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r13/export/watson-seated.png",
               "anchor": [
                 36,
                 113
@@ -978,6 +1133,59 @@
       ]
     },
     {
+      "number": 222,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r13/export/fire-0.png",
+              "anchor": [
+                20,
+                40
+              ]
+            },
+            {
+              "png": "studies/baker-street-r13/export/fire-1.png",
+              "anchor": [
+                20,
+                40
+              ]
+            },
+            {
+              "png": "studies/baker-street-r13/export/fire-2.png",
+              "anchor": [
+                20,
+                40
+              ]
+            },
+            {
+              "png": "studies/baker-street-r13/export/fire-3.png",
+              "anchor": [
+                20,
+                40
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 223,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r13/export/mantel-lens.png",
+              "anchor": [
+                4,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "number": 224,
       "loops": [
         {
@@ -987,6 +1195,57 @@
               "anchor": [
                 0,
                 0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 225,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r13/export/door-0.png",
+              "anchor": [
+                70,
+                145
+              ]
+            },
+            {
+              "png": "studies/baker-street-r13/export/door-1.png",
+              "anchor": [
+                70,
+                145
+              ]
+            },
+            {
+              "png": "studies/baker-street-r13/export/door-2.png",
+              "anchor": [
+                70,
+                145
+              ]
+            },
+            {
+              "png": "studies/baker-street-r13/export/door-3.png",
+              "anchor": [
+                70,
+                145
+              ]
+            },
+            {
+              "png": "studies/baker-street-r13/export/door-4.png",
+              "anchor": [
+                70,
+                145
+              ]
+            },
+            {
+              "png": "studies/baker-street-r13/export/door-5.png",
+              "anchor": [
+                70,
+                145
               ]
             }
           ]
