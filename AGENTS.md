@@ -16,7 +16,8 @@ the game is; this says how work here is done.
 
 Several sessions often work here at once. Work in a git worktree, start branches from
 `origin/main` (not a local `main` that may hold someone else's unpushed commits), and don't
-touch files someone else has uncommitted changes in.
+touch files someone else has uncommitted changes in. A new worktree needs `pnpm install` before
+its first commit: the commit-msg hook runs commitlint from `node_modules`.
 
 The engine (the interpreter, the class library, the room compiler, the tools) is
 [sci-ts](https://github.com/rlueder/sci-ts), on npm as `sci2-ts`. Engine changes go there,
