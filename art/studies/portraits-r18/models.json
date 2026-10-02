@@ -1,0 +1,65 @@
+{
+  "pixelAspect": 1.2,
+  "models": [
+    {
+      "name": "watson",
+      "view": 210,
+      "canvas": [
+        56,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        37,
+        161,
+        1144,
+        1340
+      ],
+      "sha256": "2766df878211334e2bf051c858dc8c530ef055304afb904d56c16e2a8ff55dd1",
+      "sourceIdentity": "../baker-street-r13/models.json"
+    },
+    {
+      "name": "hudson",
+      "view": 211,
+      "canvas": [
+        56,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        69,
+        84,
+        1097,
+        1304
+      ],
+      "sha256": "1c9c51260c0dcd35f263559f01b897f8cda78b0996b8a053ac080251a6f9f6ab",
+      "sourceIdentity": "../baker-street-r13/models.json"
+    },
+    {
+      "name": "toby",
+      "view": 212,
+      "canvas": [
+        56,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        8,
+        74,
+        1167,
+        1331
+      ],
+      "sha256": "e13154e136676fe2a1e4507d63bd8e632fe78e8eb9dd3957dd23a133f0e61fb5",
+      "sourceIdentity": "../baker-street-r13/models.json"
+    }
+  ]
+}

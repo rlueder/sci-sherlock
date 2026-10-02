@@ -1,0 +1,74 @@
+[
+  {
+    "name": "watson-right",
+    "expected": [
+      "review/watson-right-native-1.png",
+      "review/watson-right-native-2.png",
+      "review/watson-right-native-3.png",
+      "review/watson-right-native-4.png",
+      "review/watson-right-native-5.png",
+      "review/watson-right-native-6.png",
+      "review/watson-right-native-7.png"
+    ]
+  },
+  {
+    "name": "watson-left",
+    "expected": [
+      "review/watson-left-native-1.png",
+      "review/watson-left-native-2.png",
+      "review/watson-left-native-3.png",
+      "review/watson-left-native-4.png",
+      "review/watson-left-native-5.png",
+      "review/watson-left-native-6.png",
+      "review/watson-left-native-7.png"
+    ]
+  },
+  {
+    "name": "hudson-right",
+    "expected": [
+      "review/hudson-right-native-1.png",
+      "review/hudson-right-native-2.png",
+      "review/hudson-right-native-3.png",
+      "review/hudson-right-native-4.png",
+      "review/hudson-right-native-5.png",
+      "review/hudson-right-native-6.png",
+      "review/hudson-right-native-7.png"
+    ]
+  },
+  {
+    "name": "hudson-left",
+    "expected": [
+      "review/hudson-left-native-1.png",
+      "review/hudson-left-native-2.png",
+      "review/hudson-left-native-3.png",
+      "review/hudson-left-native-4.png",
+      "review/hudson-left-native-5.png",
+      "review/hudson-left-native-6.png",
+      "review/hudson-left-native-7.png"
+    ]
+  },
+  {
+    "name": "toby-right",
+    "expected": [
+      "review/toby-right-native-1.png",
+      "review/toby-right-native-2.png",
+      "review/toby-right-native-3.png",
+      "review/toby-right-native-4.png",
+      "review/toby-right-native-5.png",
+      "review/toby-right-native-6.png",
+      "review/toby-right-native-7.png"
+    ]
+  },
+  {
+    "name": "toby-left",
+    "expected": [
+      "review/toby-left-native-1.png",
+      "review/toby-left-native-2.png",
+      "review/toby-left-native-3.png",
+      "review/toby-left-native-4.png",
+      "review/toby-left-native-5.png",
+      "review/toby-left-native-6.png",
+      "review/toby-left-native-7.png"
+    ]
+  }
+]

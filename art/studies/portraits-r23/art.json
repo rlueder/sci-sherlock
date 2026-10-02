@@ -1,0 +1,516 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [],
+  "views": [
+    {
+      "number": 213,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/holmes-0-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/holmes-1-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/holmes-1-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/holmes-1-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/holmes-2-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/holmes-2-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/holmes-2-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/holmes-3-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/holmes-4-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/holmes-4-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/holmes-4-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/holmes-5-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/holmes-5-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/holmes-5-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 210,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/watson-0-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/watson-1-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/watson-1-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/watson-1-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/watson-2-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/watson-2-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/watson-2-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/watson-3-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/watson-4-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/watson-4-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/watson-4-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/watson-5-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/watson-5-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/watson-5-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 211,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/hudson-0-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/hudson-1-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/hudson-1-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/hudson-1-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/hudson-2-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/hudson-2-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/hudson-2-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/hudson-3-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/hudson-4-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/hudson-4-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/hudson-4-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/hudson-5-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/hudson-5-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/hudson-5-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 212,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/toby-0-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/toby-1-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/toby-1-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/toby-1-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/toby-2-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/toby-2-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/toby-2-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/toby-3-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/toby-4-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/toby-4-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/toby-4-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/toby-5-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/toby-5-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/toby-5-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

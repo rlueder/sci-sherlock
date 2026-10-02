@@ -1,0 +1,159 @@
+{
+  "masterHashesVerified": true,
+  "neutralReconstructsMaster": true,
+  "mouths": [
+    {
+      "name": "holmes-right",
+      "cel": 1,
+      "changedPixels": 8,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "holmes-right",
+      "cel": 2,
+      "changedPixels": 11,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "holmes-left",
+      "cel": 1,
+      "changedPixels": 8,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "holmes-left",
+      "cel": 2,
+      "changedPixels": 11,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "watson-right",
+      "cel": 1,
+      "changedPixels": 11,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "watson-right",
+      "cel": 2,
+      "changedPixels": 13,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "watson-left",
+      "cel": 1,
+      "changedPixels": 11,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "watson-left",
+      "cel": 2,
+      "changedPixels": 13,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "hudson-right",
+      "cel": 1,
+      "changedPixels": 8,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "hudson-right",
+      "cel": 2,
+      "changedPixels": 10,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "hudson-left",
+      "cel": 1,
+      "changedPixels": 8,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "hudson-left",
+      "cel": 2,
+      "changedPixels": 10,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "toby-right",
+      "cel": 1,
+      "changedPixels": 6,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "toby-right",
+      "cel": 2,
+      "changedPixels": 10,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "toby-left",
+      "cel": 1,
+      "changedPixels": 6,
+      "onlyOwnMouthRegionChanges": true
+    },
+    {
+      "name": "toby-left",
+      "cel": 2,
+      "changedPixels": 10,
+      "onlyOwnMouthRegionChanges": true
+    }
+  ],
+  "eyes": [
+    {
+      "name": "holmes",
+      "regions": [
+        [
+          31,
+          28,
+          7,
+          2
+        ],
+        [
+          42,
+          28,
+          4,
+          2
+        ]
+      ],
+      "onlyActualEyeRegionsChange": true
+    },
+    {
+      "name": "watson",
+      "regions": [
+        [
+          28,
+          28,
+          7,
+          2
+        ],
+        [
+          39,
+          28,
+          5,
+          2
+        ]
+      ],
+      "onlyActualEyeRegionsChange": true
+    },
+    {
+      "name": "hudson",
+      "regions": [
+        [
+          31,
+          28,
+          6,
+          3
+        ],
+        [
+          40,
+          28,
+          5,
+          2
+        ]
+      ],
+      "onlyActualEyeRegionsChange": true
+    }
+  ],
+  "tobyEyesPreserved": true
+}

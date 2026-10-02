@@ -1,0 +1,70 @@
+{
+  "status": "Fixed neutral references; visual review pending",
+  "models": [
+    {
+      "name": "holmes",
+      "master": "source/masters/holmes-right.png",
+      "revision": 1,
+      "sha256": "c01fb8b65408f0c132676258ea2b7f88099f675615a125e720886d48ba74ab49",
+      "canvas": [
+        56,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "origin": "generated/holmes.png",
+      "rule": "All cels copy this master. Character-specific landmark masks only. No whole-face regeneration, rescaling or shifting."
+    },
+    {
+      "name": "watson",
+      "master": "source/masters/watson-right.png",
+      "revision": 1,
+      "sha256": "9b81acd2b4060ff5c9b64b1b534b0c238c10c7a57b1b35c283036e12d5efa74d",
+      "canvas": [
+        56,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "origin": "../portraits-r22/export/watson-0-0.png",
+      "rule": "All cels copy this master. Character-specific landmark masks only. No whole-face regeneration, rescaling or shifting."
+    },
+    {
+      "name": "hudson",
+      "master": "source/masters/hudson-right-v2.png",
+      "revision": 2,
+      "correction": "master-corrections.json",
+      "sha256": "4c5ab881b99c9920f3f276a34ea1f945065b3ba78d2f4dd9d0f76a0f68372383",
+      "canvas": [
+        56,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "origin": "../portraits-r22/export/hudson-0-0.png",
+      "rule": "All cels copy this master. Character-specific landmark masks only. No whole-face regeneration, rescaling or shifting."
+    },
+    {
+      "name": "toby",
+      "master": "source/masters/toby-right.png",
+      "revision": 1,
+      "sha256": "80a8845cdd2ed9c143d937d7cf00b7b19dba0f0679d693428a0b6dbfc98828d3",
+      "canvas": [
+        56,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "origin": "../portraits-r22/export/toby-0-0.png",
+      "rule": "All cels copy this master. Character-specific landmark masks only. No whole-face regeneration, rescaling or shifting."
+    }
+  ]
+}

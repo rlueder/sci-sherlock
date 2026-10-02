@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [
+    {
+      "number": 101,
+      "layers": [
+        {
+          "png": "export/street-background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/street-lamp-foreground.png",
+          "priority": 158
+        }
+      ]
+    },
+    {
+      "number": 103,
+      "layers": [
+        {
+          "png": "export/stair-background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/stair-newel-foreground.png",
+          "priority": 181
+        }
+      ]
+    },
+    {
+      "number": 104,
+      "layers": [
+        {
+          "png": "export/title-background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/title-lettering.png",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "number": 105,
+      "layers": [
+        {
+          "png": "export/end-background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/end-lettering.png",
+          "priority": 0
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "number": 226,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/gas-lamp-0.png",
+              "anchor": [
+                18,
+                138
+              ]
+            },
+            {
+              "png": "export/gas-lamp-1.png",
+              "anchor": [
+                18,
+                138
+              ]
+            },
+            {
+              "png": "export/gas-lamp-2.png",
+              "anchor": [
+                18,
+                138
+              ]
+            },
+            {
+              "png": "export/gas-lamp-3.png",
+              "anchor": [
+                18,
+                138
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

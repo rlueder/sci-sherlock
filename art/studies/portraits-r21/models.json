@@ -1,0 +1,68 @@
+{
+  "pixelAspect": 1.2,
+  "models": [
+    {
+      "name": "watson",
+      "view": 210,
+      "canvas": [
+        56,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "source": "art/studies/portraits-r18/generated/watson.png",
+      "sourceSha256": "a0befa2a32fee82fba31cc06f84bbef9dca932ac71178a84e09a523fdbabc6c2",
+      "unframedSha256": "6093c80a22338600c222f27a3a3e372b24056ab9f2bb256848849b3acceffa17",
+      "crop": {
+        "scaleComparedToR18": 1.12,
+        "top": 9,
+        "sourceCenterX": 620.5
+      },
+      "leftFacing": "Exact horizontal reflection of the fixed face and its overlays; frame lighting is not reflected"
+    },
+    {
+      "name": "hudson",
+      "view": 211,
+      "canvas": [
+        56,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "source": "art/studies/portraits-r18/generated/hudson.png",
+      "sourceSha256": "e01a4f42c631228719658906a0117d0e94451cb1136ed99fee6402fded167a5e",
+      "unframedSha256": "b50657afd4ac9dffb4200a1c5a333e0bb0081bb8fe525c76a4c396b52e66c3a7",
+      "crop": {
+        "scaleComparedToR18": 1.12,
+        "top": 9,
+        "sourceCenterX": 613
+      },
+      "leftFacing": "Exact horizontal reflection of the fixed face and its overlays; frame lighting is not reflected"
+    },
+    {
+      "name": "toby",
+      "view": 212,
+      "canvas": [
+        56,
+        64
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "source": "art/studies/portraits-r18/generated/toby.png",
+      "sourceSha256": "ba5f5dc32163a4d2fd1c8552bfcc8d95bb54be7cf0af52497b0526f21d08e3f4",
+      "unframedSha256": "cb18c88169440807799e04a187034aa134752b49f374dc90294e86a17811c69c",
+      "crop": {
+        "scaleComparedToR18": 1.12,
+        "top": 9,
+        "sourceCenterX": 617.5
+      },
+      "leftFacing": "Exact horizontal reflection of the fixed face and its overlays; frame lighting is not reflected"
+    }
+  ]
+}

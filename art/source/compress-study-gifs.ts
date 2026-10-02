@@ -1,0 +1,5 @@
+/** ffmpeg compresses GIF storage only; decoded pixels must remain identical. */
+import assert from'node:assert/strict';import{spawnSync}from'node:child_process';import{readdirSync,renameSync,rmSync}from'node:fs';import{join,resolve}from'node:path';
+function run(args:string[]){const r=spawnSync('ffmpeg',['-hide_banner','-loglevel','error',...args],{encoding:'utf8'});if(r.error)throw r.error;assert.equal(r.status,0,r.stderr);return r.stdout}
+function hashes(f:string){return run(['-ignore_loop','1','-i',f,'-pix_fmt','rgb24','-f','framemd5','-']).split('\n').filter(s=>s&&!s.startsWith('#')).map(s=>s.split(',').at(-1)!.trim()).join('\n')}
+for(const dir of process.argv.slice(2))for(const n of readdirSync(dir).filter(n=>n.endsWith('.gif'))){const source=join(dir,n),temp=source+'.tmp.gif';try{run(['-y','-ignore_loop','1','-i',source,'-i',resolve('docs/images/gif-palette.png'),'-filter_complex','[0:v][1:v]paletteuse=dither=none','-loop','0',temp]);assert.equal(hashes(source),hashes(temp));renameSync(temp,source);console.log(source+': identical decoded frames')}finally{rmSync(temp,{force:true})}}

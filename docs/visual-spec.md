@@ -231,8 +231,10 @@ stopped-clock clue before runtime integration. Clock hands remain fixed.
 ## Portraits
 
 Characters who speak get a portrait beside their lines: Watson (view 210), Mrs Hudson
-(211) and Toby (212). Holmes needs none. Each portrait view has three loops, all cels the
-same canvas size (about 56×64; one size for all three portraits), registered at `[0, 0]`
+(211), Toby (212), and Holmes (213, added by the user on 2 October). The r23 study saves
+a neutral master for each character before building its individual mouth cels. Each
+portrait view has six loops: right-facing parts in 0–2 and their left-facing counterparts
+in 3–5. All facial cels use the same 56×64 canvas, registered at `[0, 0]`
 (the top-left corner):
 
 | Loop | Content | Cels |
@@ -240,10 +242,18 @@ same canvas size (about 56×64; one size for all three portraits), registered at
 | 0 | the bust, framed if the frame is part of the design | 1 |
 | 1 | the mouth only (everything else transparent) | cel 0 closed, then 2 open shapes |
 | 2 | the eyes only | cel 0 open, then 1–2 blink cels |
+| 3–5 | left-facing counterparts of loops 0–2 | matching cel counts |
 
 While a line is up, the engine cycles the mouth and blinks the eyes over the bust; when it
-ends, the mouth closes. The dialogue box goes to the portrait's right, so keep the subject
-facing right or forward.
+ends, the mouth closes. The approved ornate r22 surround is a separate 72×88 image
+drawn at [-8,-18] from the facial origin. Select the inward-facing portrait and dialogue
+side from the speaker’s screen position at line start, then hold it for that line. This
+placement and surround policy still need engine integration.
+
+The r23 masters are stored in `art/studies/portraits-r23/source/masters/`, with source
+hashes in `models.json` and individual lip/chin coordinates in `landmarks.json`. Mouth
+cels must derive from these masters and change only the named character’s mouth
+region. Never reuse one character’s mouth stamp on another face.
 
 ## Close-ups
 

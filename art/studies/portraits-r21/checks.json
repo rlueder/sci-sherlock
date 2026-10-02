@@ -1,0 +1,38 @@
+[
+  {
+    "name": "watson-right",
+    "neutralReconstructsBust": true,
+    "frameNeverChanges": true,
+    "bustSha256": "9c275ff6d324f19f4a801ce47e9b053b0e4212a55095a2710a86c25b5fb2cfa4"
+  },
+  {
+    "name": "watson-left",
+    "neutralReconstructsBust": true,
+    "frameNeverChanges": true,
+    "bustSha256": "672975fdec62fc2f4586fdcda8c74563eb390f8fcf40de9f88f8a708a84bb6b7"
+  },
+  {
+    "name": "hudson-right",
+    "neutralReconstructsBust": true,
+    "frameNeverChanges": true,
+    "bustSha256": "d5efbc4dc1190471af91964acca284471cd7ea8b270ef8c1b9169b179ffee2c7"
+  },
+  {
+    "name": "hudson-left",
+    "neutralReconstructsBust": true,
+    "frameNeverChanges": true,
+    "bustSha256": "2a23d7f27fce3f0d83711fe4eaa58b7ecd9dba832653ad25c1753720723febe8"
+  },
+  {
+    "name": "toby-right",
+    "neutralReconstructsBust": true,
+    "frameNeverChanges": true,
+    "bustSha256": "a129d5bb1c873ad3aaf82425e245b426ff054d04ec3d7099ece678ce7687358b"
+  },
+  {
+    "name": "toby-left",
+    "neutralReconstructsBust": true,
+    "frameNeverChanges": true,
+    "bustSha256": "c01872626179543db68da6c78ae968a8cbb2bbdaa201c491cef1df1c4caa11e8"
+  }
+]

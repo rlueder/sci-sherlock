@@ -1,0 +1,9 @@
+{
+  "hudson": {
+    "revision": 2,
+    "previousMaster": "source/masters/hudson-right.png",
+    "master": "source/masters/hudson-right-v2.png",
+    "reason": "Remove detached bright pixels and dark speck below the near eye; keep the sclera inside the y29 eye aperture.",
+    "edits": [[32,30,55],[33,30,50],[34,30,50]]
+  }
+}
