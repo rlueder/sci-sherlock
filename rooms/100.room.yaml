@@ -7,6 +7,9 @@ picture: 100
 music: 120
 hero:
   at: [186, 176]
+# The house camera (art/studies/baker-street-r13/guides/perspective.json): the horizon at
+# y 72, figures drawn full size with their feet at y 176.
+perspective: { horizon: 72, fullSize: 176 }
 walkable: [[79, 151], [267, 148], [311, 150], [311, 193], [79, 193]]
 features:
   correspondence: { rect: [117, 46, 134, 66], sightAngle: 360 }

@@ -7,6 +7,9 @@ picture: 102
 music: 121
 hero:
   at: [147, 171]
+# The house camera (art/studies/baker-street-r13/guides/perspective.json): the horizon at
+# y 72, figures drawn full size with their feet at y 176.
+perspective: { horizon: 72, fullSize: 176 }
 walkable: [[20, 177], [102, 147], [234, 147], [298, 161], [300, 192], [117, 194], [111, 180], [35, 187]]
 obstacles:
   - [[116, 128], [222, 121], [222, 147], [116, 151]]
@@ -29,8 +32,8 @@ props:
   # On the floor: drawn under anyone walking over them.
   filings: { view: 227, at: [225, 154], sightAngle: 360 }
   scratches: { view: 228, at: [242, 162], sightAngle: 360 }
-  watson: { view: 201, at: [115, 196], sightAngle: 360 }
-  mouse: { view: 273, at: [70, 146], moves: true, script: Scurry }
+  watson: { view: 201, at: [115, 196], sightAngle: 360, scale: true }
+  mouse: { view: 273, at: [70, 146], moves: true, script: Scurry, scale: false }
 characters:
   watson: { name: Watson }
 properties:

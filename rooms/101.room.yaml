@@ -7,12 +7,15 @@ music: 120
 hero:
   at: [40, 168]
   enterTo: [110, 170]
+# The house camera (art/studies/baker-street-r13/guides/perspective.json): the horizon at
+# y 72, figures drawn full size with their feet at y 176.
+perspective: { horizon: 72, fullSize: 176 }
 walkable: [[10, 150], [310, 150], [310, 193], [10, 193]]
 features:
   door221: { rect: [20, 60, 60, 150], sightAngle: 360 }
   lamp: { rect: [140, 30, 156, 118], sightAngle: 360 }
   cab: { rect: [200, 80, 300, 150], sightAngle: 360 }
 props:
-  watson: { view: 201, at: [80, 172], sightAngle: 360 }
+  watson: { view: 201, at: [80, 172], sightAngle: 360, scale: true }
 characters:
   watson: { name: Watson }
