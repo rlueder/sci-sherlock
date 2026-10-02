@@ -7,11 +7,15 @@
       "number": 102,
       "layers": [
         {
-          "png": "export/workshop.png",
+          "png": "studies/workshop-r9/export/workshop.png",
           "priority": -1000
         },
         {
-          "png": "export/workshop-front.png",
+          "png": "studies/workshop-r9/export/mouse-occlusion.png",
+          "priority": 150
+        },
+        {
+          "png": "studies/workshop-r9/export/workshop-front.png",
           "priority": 181
         }
       ]
@@ -24,52 +28,10 @@
         {
           "cels": [
             {
-              "png": "export/holmes-east-00.png",
+              "png": "reference/holmes-master-v2/master.png",
               "anchor": [
-                16,
-                62
-              ]
-            },
-            {
-              "png": "export/holmes-east-01.png",
-              "anchor": [
-                16,
-                62
-              ]
-            },
-            {
-              "png": "export/holmes-east-02.png",
-              "anchor": [
-                16,
-                62
-              ]
-            },
-            {
-              "png": "export/holmes-east-03.png",
-              "anchor": [
-                16,
-                62
-              ]
-            },
-            {
-              "png": "export/holmes-east-04.png",
-              "anchor": [
-                16,
-                62
-              ]
-            },
-            {
-              "png": "export/holmes-east-05.png",
-              "anchor": [
-                16,
-                62
-              ]
-            },
-            {
-              "png": "export/holmes-east-06.png",
-              "anchor": [
-                16,
-                62
+                36,
+                113
               ]
             }
           ]
@@ -81,52 +43,10 @@
         {
           "cels": [
             {
-              "png": "export/holmes-south-00.png",
+              "png": "reference/holmes-master-v2/master.png",
               "anchor": [
-                16,
-                62
-              ]
-            },
-            {
-              "png": "export/holmes-south-01.png",
-              "anchor": [
-                16,
-                62
-              ]
-            },
-            {
-              "png": "export/holmes-south-02.png",
-              "anchor": [
-                16,
-                62
-              ]
-            },
-            {
-              "png": "export/holmes-south-03.png",
-              "anchor": [
-                16,
-                62
-              ]
-            },
-            {
-              "png": "export/holmes-south-04.png",
-              "anchor": [
-                16,
-                62
-              ]
-            },
-            {
-              "png": "export/holmes-south-05.png",
-              "anchor": [
-                16,
-                62
-              ]
-            },
-            {
-              "png": "export/holmes-south-06.png",
-              "anchor": [
-                16,
-                62
+                36,
+                113
               ]
             }
           ]
@@ -134,52 +54,821 @@
         {
           "cels": [
             {
-              "png": "export/holmes-north-00.png",
+              "png": "reference/holmes-master-v2/master.png",
               "anchor": [
-                16,
-                62
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 204,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/holmes-r11/export/reach-0.png",
+              "anchor": [
+                36,
+                113
               ]
             },
             {
-              "png": "export/holmes-north-01.png",
+              "png": "studies/holmes-r11/export/reach-1.png",
               "anchor": [
-                16,
-                62
+                36,
+                113
               ]
             },
             {
-              "png": "export/holmes-north-02.png",
+              "png": "studies/holmes-r11/export/reach-2.png",
               "anchor": [
-                16,
-                62
+                36,
+                113
               ]
             },
             {
-              "png": "export/holmes-north-03.png",
+              "png": "studies/holmes-r11/export/reach-3.png",
               "anchor": [
-                16,
-                62
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/holmes-r11/export/kneel-0.png",
+              "anchor": [
+                36,
+                113
               ]
             },
             {
-              "png": "export/holmes-north-04.png",
+              "png": "studies/holmes-r11/export/kneel-1.png",
               "anchor": [
-                16,
-                62
+                36,
+                113
               ]
             },
             {
-              "png": "export/holmes-north-05.png",
+              "png": "studies/holmes-r11/export/kneel-2.png",
               "anchor": [
-                16,
-                62
+                36,
+                113
               ]
             },
             {
-              "png": "export/holmes-north-06.png",
+              "png": "studies/holmes-r11/export/kneel-3.png",
               "anchor": [
-                16,
-                62
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 206,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "reference/holmes-master-v2/export/puff-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-21.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-22.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-23.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-24.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "reference/holmes-master-v2/export/puff-25.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/holmes-r10/export/thinking-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-21.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-22.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-23.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-24.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/thinking-25.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/holmes-r10/export/cap-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/cap-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/holmes-r10/export/watch-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-21.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-22.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-23.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-24.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-25.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-26.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-27.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-28.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "studies/holmes-r10/export/watch-29.png",
+              "anchor": [
+                36,
+                113
               ]
             }
           ]
@@ -229,59 +918,75 @@
         {
           "cels": [
             {
-              "png": "export/clock-00.png",
+              "png": "studies/clock-r12/export/clock-00.png",
               "anchor": [
-                22,
-                131
+                60,
+                150
               ]
             },
             {
-              "png": "export/clock-01.png",
+              "png": "studies/clock-r12/export/clock-01.png",
               "anchor": [
-                22,
-                131
+                60,
+                150
               ]
             },
             {
-              "png": "export/clock-02.png",
+              "png": "studies/clock-r12/export/clock-02.png",
               "anchor": [
-                22,
-                131
+                60,
+                150
               ]
             },
             {
-              "png": "export/clock-03.png",
+              "png": "studies/clock-r12/export/clock-03.png",
               "anchor": [
-                22,
-                131
+                60,
+                150
               ]
             },
             {
-              "png": "export/clock-04.png",
+              "png": "studies/clock-r12/export/clock-04.png",
               "anchor": [
-                22,
-                131
+                60,
+                150
               ]
             },
             {
-              "png": "export/clock-05.png",
+              "png": "studies/clock-r12/export/clock-05.png",
               "anchor": [
-                22,
-                131
+                60,
+                150
               ]
             },
             {
-              "png": "export/clock-06.png",
+              "png": "studies/clock-r12/export/clock-06.png",
               "anchor": [
-                22,
-                131
+                60,
+                150
               ]
             },
             {
-              "png": "export/clock-07.png",
+              "png": "studies/clock-r12/export/clock-07.png",
               "anchor": [
-                22,
-                131
+                60,
+                150
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 224,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/dial-inspection.png",
+              "anchor": [
+                0,
+                0
               ]
             }
           ]
@@ -344,15 +1049,855 @@
       ]
     },
     {
-      "number": 224,
+      "number": 270,
       "loops": [
         {
           "cels": [
             {
-              "png": "export/dial-inspection.png",
+              "png": "studies/workshop-r9/export/rain-00.png",
               "anchor": [
                 0,
                 0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-01.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-02.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-03.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-04.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-05.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-06.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-07.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-08.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-09.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-10.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-11.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-12.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-13.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-14.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-15.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-16.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-17.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-18.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-19.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-20.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-21.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-22.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-23.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-24.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-25.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-26.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-27.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-28.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-29.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-30.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-31.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-32.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-33.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-34.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-35.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-36.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-37.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-38.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-39.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-40.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-41.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-42.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-43.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-44.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-45.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-46.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/rain-47.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 271,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/workshop-r9/export/lamp-00.png",
+              "anchor": [
+                10,
+                25
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/lamp-00.png",
+              "anchor": [
+                10,
+                25
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/lamp-01.png",
+              "anchor": [
+                10,
+                25
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/lamp-00.png",
+              "anchor": [
+                10,
+                25
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/lamp-02.png",
+              "anchor": [
+                10,
+                25
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/lamp-00.png",
+              "anchor": [
+                10,
+                25
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/lamp-00.png",
+              "anchor": [
+                10,
+                25
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/lamp-03.png",
+              "anchor": [
+                10,
+                25
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 272,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/workshop-r9/export/pendulum-00.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-01.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-02.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-03.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-04.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-05.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-06.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-07.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-08.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-09.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-10.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-11.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-12.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-13.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-14.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-15.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-16.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-17.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-18.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-19.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-20.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-21.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-22.png",
+              "anchor": [
+                30,
+                136
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/pendulum-23.png",
+              "anchor": [
+                30,
+                136
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 273,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/workshop-r9/export/mouse-00.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/mouse-01.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/mouse-02.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/mouse-03.png",
+              "anchor": [
+                10,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 274,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/workshop-r9/export/sky-00.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-01.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-02.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-03.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-04.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-05.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-06.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-07.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-08.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-09.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-10.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-11.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-12.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-13.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-14.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/sky-15.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 275,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/workshop-r9/export/mouse-away-00.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/mouse-away-01.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/mouse-away-02.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/mouse-away-03.png",
+              "anchor": [
+                10,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 276,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/workshop-r9/export/mouse-left-00.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/mouse-left-01.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/mouse-left-02.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/mouse-left-03.png",
+              "anchor": [
+                10,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 277,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/workshop-r9/export/mouse-away-left-00.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/mouse-away-left-01.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/mouse-away-left-02.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "studies/workshop-r9/export/mouse-away-left-03.png",
+              "anchor": [
+                10,
+                8
               ]
             }
           ]

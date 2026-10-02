@@ -112,9 +112,17 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   assert.equal(prop(obj("filings"), "cel"), 0);
   shot("workshop");
   const lamps = new Set<number>();
-  for (let i = 0; i < 45; i++) { frames(1); lamps.add(prop(obj("lantern"), "cel")); }
-  assert.equal(lamps.size, 4);
-  assert.equal(prop(obj("clock"), "cel"), 0, "the clocks stay still");
+  const swings = new Set<number>();
+  for (let i = 0; i < 125; i++) { frames(1); lamps.add(prop(obj("lantern"), "cel")); swings.add(prop(obj("clock"), "cel")); }
+  assert.equal(lamps.size, 8, "the lantern flickers");
+  assert(swings.size > 12, "the case clock's pendulum swings: the one clock still going");
+  assert(!obj("caseDoor"), "the opening case is hidden until the reveal");
+  // Now and then a mouse runs between the furniture (scripts/10.sc).
+  let waited = 0;
+  while (!obj("mouse") && waited < 900) (frames(1), waited++);
+  assert(obj("mouse"), "the mouse comes out within a few seconds of entering");
+  frames(48); // out from under the clock, on the open floor
+  shot("mouse");
 
   verb(3); click(74, 175); frames(360);
   assert.equal(prop(global("ego"), "cel"), 0);
@@ -124,7 +132,7 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   verb(4); click(270, 120);
   assert.match(line(), /Before moving anything/);
   finish();
-  assert.equal(prop(obj("clock"), "cel"), 0);
+  assert(obj("clock"), "the clock is still shut");
 
   // The wall clocks: a close-up of a dial over the dimmed room, then what Holmes makes of it.
   verb(1); click(219, 46);
@@ -148,8 +156,9 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   click(prop(icon, "x") + 8, prop(icon, "y") + 8);
   assert.equal(prop(global("user"), "verb"), 5);
   click(225, 150);
-  assert.match(line(), /raises his lens/);
   const filingLines = finish();
+  assert(filingLines.some((s) => /kneels with his lens/.test(s)), filingLines.join("\n"));
+  assert.equal(prop(global("ego"), "view"), 200, "Holmes stands again after kneeling");
   assert(filingLines.some((s) => /trail from the bench/.test(s)));
   assert.equal(prop(obj("filings"), "cel"), 1);
   assert(obj("scratches"), "the lens shows the scratch marks");
@@ -165,7 +174,9 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   verb(4); click(270, 120);
   const revealLines = finish();
   assert(revealLines.some((s) => /left us a way in/.test(s)), revealLines.join("\n"));
-  assert.equal(prop(obj("clock"), "cel"), 7);
+  assert(!obj("clock"), "the swinging clock gives way to the opening one");
+  assert.equal(prop(obj("caseDoor"), "cel"), 7);
+  assert.equal(prop(global("ego"), "view"), 200, "Holmes is himself again after the reach");
   assert.equal(prop(global("user"), "canInput"), 1);
   shot("reveal");
 
@@ -178,7 +189,8 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
 
   // Back in the workshop (as a saved game would be), it keeps the open case and the trail.
   vm.invoke(global("game"), vm.selector("newRoom"), [102]); frames(10);
-  assert.equal(prop(obj("clock"), "cel"), 7);
+  assert(!obj("clock"));
+  assert.equal(prop(obj("caseDoor"), "cel"), 7);
   assert.equal(prop(obj("filings"), "cel"), 1);
   assert(obj("scratches"));
   assert.equal(vm.missingKernels.size, 0);

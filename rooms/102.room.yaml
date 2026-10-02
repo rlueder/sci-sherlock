@@ -1,5 +1,7 @@
 # yaml-language-server: $schema=../node_modules/sci-ts/packages/content/room.schema.json
-# Native room coordinates. Background and foreground are both 320x200.
+# Thorne's workshop, on the r9 room art (art/studies/workshop-r9) with r12's opening case
+# clock. Native room coordinates; the picture is 320x200 with a foreground layer for the
+# desk (181) and an occlusion layer that hides the mouse behind furniture (150).
 room: 102
 picture: 102
 music: 121
@@ -13,17 +15,31 @@ features:
   window: { rect: [18, 30, 88, 122], sightAngle: 360 }
   bench: { rect: [115, 111, 221, 138], sightAngle: 360 }
   ledger: { rect: [35, 166, 85, 180], sightAngle: 360 }
+  # The way down, once the case is open (the closed clock covers it).
+  stair: { rect: [246, 20, 290, 150], sightAngle: 360 }
 props:
-  lantern: { view: 220, at: [190, 111], cycle: forward, sightAngle: 360 }
-  clock: { view: 221, at: [267, 157], sightAngle: 360 }
+  # The window: a sky that slowly clouds over and clears, and rain on the glass.
+  sky: { view: 274, at: [0, 0], cycle: forward }
+  rain: { view: 270, at: [0, 0], cycle: forward }
+  lantern: { view: 271, at: [213, 105], cycle: forward, sightAngle: 360 }
+  # The tall-case clock, closed, its pendulum swinging: the one clock still going.
+  clock: { view: 272, at: [268, 150], cycle: forward, sightAngle: 360 }
+  # The same clock as it swings open (shown from the reveal on).
+  caseDoor: { view: 221, at: [292, 150], sightAngle: 360 }
   # On the floor: drawn under anyone walking over them.
   filings: { view: 227, at: [225, 154], sightAngle: 360 }
   scratches: { view: 228, at: [242, 162], sightAngle: 360 }
-  watson: { view: 201, at: [280, 186], sightAngle: 360 }
+  watson: { view: 201, at: [305, 194], sightAngle: 360 }
+  mouse: { view: 273, at: [70, 146], moves: true, script: Scurry }
 characters:
   watson: { name: Watson }
 properties:
-  lantern: { cycleSpeed: 10, fixPriority: 1, priority: 140 }
-  clock: { cycleSpeed: 8, fixPriority: 1, priority: 151 }
+  # Only there to look at: clicks go to the window behind them.
+  sky: { cycleSpeed: 240, fixPriority: 1, priority: 0, clickable: 0 }
+  rain: { cycleSpeed: 8, fixPriority: 1, priority: 1, clickable: 0 }
+  lantern: { cycleSpeed: 8, fixPriority: 1, priority: 140 }
+  clock: { cycleSpeed: 5, fixPriority: 1, priority: 151 }
+  caseDoor: { cycleSpeed: 8, fixPriority: 1, priority: 151 }
   filings: { fixPriority: 1, priority: 0 }
   scratches: { fixPriority: 1, priority: 0 }
+  mouse: { cycleSpeed: 4 }

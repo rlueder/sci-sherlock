@@ -10,13 +10,16 @@ title: room.enter
 <<hide scratches>>
 <<endif>>
 <<if $openedClock>>
-<<cel clock 7>>
+<<hide clock>>
+<<cel caseDoor 7>>
+<<else>>
+<<hide caseDoor>>
 <<endif>>
 ===
 
 title: room.look
 ---
-Thorne's workshop. A lantern burns, but not a single clock ticks.
+Thorne's workshop. A lantern burns, and of all the clocks here only the tall one in the corner is going.
 ===
 
 title: clocks.look
@@ -48,10 +51,16 @@ Hero: Best not disturb them. My lens will tell us more.
 
 title: filings.lens
 ---
-Holmes raises his lens. Among the sawdust, brass filings catch the lantern light.
+<<walk hero 196 158>>
+<<face hero right>>
+<<view hero 204>>
+<<loop hero 1>>
+<<animate hero once>>
+Holmes kneels with his lens. Among the sawdust, brass filings catch the lantern light.
 <<cel filings 1>>
 <<show scratches>>
 Hero: A trail from the bench to the tall-case clock. Something was recently fitted there.
+<<normal hero>>
 <<set $examinedFilings to true>>
 ===
 
@@ -67,31 +76,63 @@ Hero: The lens confirms it: each hand was turned and held.
 
 title: clock.look
 ---
-<<if $openedClock>>
-Behind the case, a narrow stair descends into darkness.
-<<else>>
-A tall-case clock of polished walnut. Fresh scratches mark the boards beneath it.
-<<endif>>
+A tall-case clock of polished walnut, its pendulum swinging. The only clock in the shop still going.
+Fresh scratches mark the boards beneath it.
 ===
 
 title: clock.do
 ---
-<<if $openedClock>>
-<<walk hero 262 166>>
-<<room 103>>
-<<elseif $deduced>>
-<<walk hero 239 168>>
+<<if $deduced>>
+<<walk hero 214 160>>
 <<face hero right>>
 Hero: The clocks did not stop together. Someone arranged them so.
 Hero: And this case is far too light for its size.
+<<view hero 204>>
+<<loop hero 0>>
+<<animate hero once>>
+<<stop clock>>
+<<cel clock 0>>
+<<hide clock>>
+<<show caseDoor>>
 <<sound 130>>
-<<animate clock once>>
+<<animate caseDoor once>>
+<<normal hero>>
 <<set $openedClock to true>>
 <<wait 0.8>>
 A stair behind the clock. The air from below is cold.
 Hero: Come, Watson. Our clockmaker has left us a way in.
 <<elseif $examinedClocks and $examinedFilings>>
 Hero: Not yet. Watson, a moment. Let me put this in order aloud.
+<<else>>
+Hero: Before moving anything, I should examine the wall clocks and the filings on the floor.
+<<endif>>
+===
+
+title: caseDoor.look
+---
+Behind the case, a narrow stair descends into darkness.
+===
+
+title: caseDoor.do
+---
+<<walk hero 262 166>>
+<<room 103>>
+===
+
+title: stair.look
+---
+<<if $openedClock>>
+Behind the case, a narrow stair descends into darkness.
+<<else>>
+The tall-case clock stands close against the wall.
+<<endif>>
+===
+
+title: stair.do
+---
+<<if $openedClock>>
+<<walk hero 262 166>>
+<<room 103>>
 <<else>>
 Hero: Before moving anything, I should examine the wall clocks and the filings on the floor.
 <<endif>>
@@ -109,7 +150,7 @@ Hero: Leave it burning. We shall need the light.
 
 title: window.look
 ---
-The sash is latched. Beyond the glass, the Clerkenwell roofs dissolve into fog.
+The sash is latched. Rain runs down the glass, and the Clerkenwell roofs dissolve into the dark.
 ===
 
 title: window.do
@@ -145,8 +186,10 @@ title: watson.talk
     Watson: A repair, perhaps?
     Hero: In the middle of the night, with the door bolted? No.
 -> The case clock is a door. <<if $examinedClocks and $examinedFilings and not $deduced>>
-    Hero: The clocks were stopped to mark the minute he went, and the filings show us where.
-    Hero: That case is a door, Watson.
+    Hero: Every clock here was stopped at the minute he went. All but that one.
+    Hero: Its pendulum swings, yet its hands stand at seventeen past three, as still as the rest.
+    Hero: It isn't keeping time, Watson. The filings lead to it. That case is a door.
     Watson: Then Thorne didn't vanish at all. He walked through it.
     <<set $deduced to true>>
 ===
+
