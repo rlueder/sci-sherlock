@@ -68,7 +68,7 @@
       "id": "100-005",
       "room": 100,
       "speaker": "Toby",
-      "text": "Mr Holmes? My name is Toby Vance. It's my master, sir. He's gone.",
+      "text": "Mr Holmes? Toby Vance, sir. It's the guv'nor. He's gone.",
       "node": "room.enter",
       "before": {
         "speaker": "Mrs Hudson",
@@ -77,8 +77,8 @@
       "where": "rooms/100.yarn:22",
       "recording": "recorded",
       "recorded": {
-        "text": "f87c3922ec7b",
-        "wav": "2819f2fd8907"
+        "text": "1c6e8542ad34",
+        "wav": "83ccf18c4f80"
       }
     },
     {
@@ -98,7 +98,7 @@
       "id": "100-007",
       "room": 100,
       "speaker": "Toby",
-      "text": "Mr Elias Thorne, sir. Clockmaker, of Clerkenwell. I've been his apprentice three years.",
+      "text": "Mr Elias Thorne, sir. Clockmaker, Clerkenwell. Three years I've been his apprentice.",
       "node": "toby.talk: Your master?",
       "before": {
         "speaker": "Hero",
@@ -107,32 +107,32 @@
       "where": "rooms/100.yarn:40",
       "recording": "recorded",
       "recorded": {
-        "text": "794a4a0d89b6",
-        "wav": "3fdf39b731a9"
+        "text": "2c217668de64",
+        "wav": "9a43aa0964b4"
       }
     },
     {
       "id": "100-008",
       "room": 100,
       "speaker": "Toby",
-      "text": "He was at his bench when I left last night. This morning the shop was shut up, and he was gone.",
+      "text": "He was at his bench when I went home last night. This morning the shop's shut up tight, and him gone.",
       "node": "toby.talk: Your master?",
       "before": {
         "speaker": "Toby",
-        "text": "Mr Elias Thorne, sir. Clockmaker, of Clerkenwell. I've been his apprentice three years."
+        "text": "Mr Elias Thorne, sir. Clockmaker, Clerkenwell. Three years I've been his apprentice."
       },
       "where": "rooms/100.yarn:41",
       "recording": "recorded",
       "recorded": {
-        "text": "32470ec0e65d",
-        "wav": "49c19422748f"
+        "text": "d42ef1e3ca8f",
+        "wav": "d629a39d8749"
       }
     },
     {
       "id": "100-009",
       "room": 100,
       "speaker": "Toby",
-      "text": "Bolted, sir, from the inside. I had to fetch the constable to break it in.",
+      "text": "Bolted, sir. From the inside. Had to fetch a constable to break it in.",
       "node": "toby.talk: The door was locked?",
       "before": {
         "speaker": "Hero",
@@ -141,8 +141,8 @@
       "where": "rooms/100.yarn:44",
       "recording": "recorded",
       "recorded": {
-        "text": "08eea847607a",
-        "wav": "ac01496c4b3e"
+        "text": "f6cdc2e53c40",
+        "wav": "1805db89e554"
       }
     },
     {
@@ -153,7 +153,7 @@
       "node": "toby.talk: The door was locked?",
       "before": {
         "speaker": "Toby",
-        "text": "Bolted, sir, from the inside. I had to fetch the constable to break it in."
+        "text": "Bolted, sir. From the inside. Had to fetch a constable to break it in."
       },
       "where": "rooms/100.yarn:45",
       "recording": "recorded",
@@ -166,7 +166,7 @@
       "id": "100-011",
       "room": 100,
       "speaker": "Toby",
-      "text": "Latched. Nobody could have got out that way.",
+      "text": "Latched. Nobody got out that way, sir. Couldn't have.",
       "node": "toby.talk: The door was locked?",
       "before": {
         "speaker": "Hero",
@@ -175,15 +175,15 @@
       "where": "rooms/100.yarn:46",
       "recording": "recorded",
       "recorded": {
-        "text": "0d40bd561106",
-        "wav": "15fc9f299be3"
+        "text": "7277268539fe",
+        "wav": "e63d0ac66406"
       }
     },
     {
       "id": "100-012",
       "room": 100,
       "speaker": "Toby",
-      "text": "That's what frightened me, sir. Every clock on the walls had stopped, all at the same minute. Seventeen past three.",
+      "text": "That's what turned me cold, sir. Every clock on them walls, stopped. All at the same minute. Seventeen past three.",
       "node": "toby.talk: The clocks?",
       "before": {
         "speaker": "Hero",
@@ -192,32 +192,32 @@
       "where": "rooms/100.yarn:49",
       "recording": "recorded",
       "recorded": {
-        "text": "28ce0f779a6e",
-        "wav": "20ee6e5f2414"
+        "text": "dddfcb68bf50",
+        "wav": "71269ff76ed5"
       }
     },
     {
       "id": "100-013",
       "room": 100,
       "speaker": "Toby",
-      "text": "All but the big case clock in the corner. That one was still going.",
+      "text": "All bar the big case clock in the corner. That one was still going.",
       "node": "toby.talk: The clocks?",
       "before": {
         "speaker": "Toby",
-        "text": "That's what frightened me, sir. Every clock on the walls had stopped, all at the same minute. Seventeen past three."
+        "text": "That's what turned me cold, sir. Every clock on them walls, stopped. All at the same minute. Seventeen past three."
       },
       "where": "rooms/100.yarn:50",
       "recording": "recorded",
       "recorded": {
-        "text": "4cf58b1ad351",
-        "wav": "03075d877996"
+        "text": "72b93b1c1a21",
+        "wav": "17d42f14f2ad"
       }
     },
     {
       "id": "100-014",
       "room": 100,
       "speaker": "Toby",
-      "text": "Still burning on the bench when we broke in. He never leaves it lit.",
+      "text": "Still burning when we broke in. He never leaves it lit, sir. Never.",
       "node": "toby.talk: The lantern?",
       "before": {
         "speaker": "Hero",
@@ -226,8 +226,8 @@
       "where": "rooms/100.yarn:53",
       "recording": "recorded",
       "recorded": {
-        "text": "25d75ba83fa1",
-        "wav": "faf08790ffca"
+        "text": "d6aabdf89f17",
+        "wav": "ec421b0b5f69"
       }
     },
     {
@@ -251,7 +251,7 @@
       "id": "100-016",
       "room": 100,
       "speaker": "Toby",
-      "text": "Thank you, sir. I'll run ahead and open the shop.",
+      "text": "Thank you, sir. I'll run on ahead and open up the shop.",
       "node": "toby.talk: We shall go at once.",
       "before": {
         "speaker": "Hero",
@@ -260,8 +260,8 @@
       "where": "rooms/100.yarn:57",
       "recording": "recorded",
       "recorded": {
-        "text": "3135a07020be",
-        "wav": "599721d71f53"
+        "text": "c013af86c973",
+        "wav": "1f7c7855f44c"
       }
     },
     {
