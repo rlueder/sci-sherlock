@@ -7,11 +7,16 @@ picture: 100
 music: 120
 hero:
   at: [186, 176]
-# Fitted to the painting rather than the r13 guide's camera (horizon y 72), which the painting
-# doesn't follow: at that horizon Holmes by the door was half its height. The mantelpiece
-# (about 1.3 m, its hearth at y 124), the door (its foot at y 152) and the figures at the
-# front (full size at y 176) agree on a horizon above the screen, at about y -45.
-perspective: { horizon: -45, fullSize: 176 }
+# The painting is seen at an angle, and the same height on the screen isn't the same depth
+# across the room: the left (the window wall and Watson's chair) is farther away than the
+# right (the door). So sizes are measured, Holmes stood at the back and front of the floor
+# at the left, middle and right and sized to what's painted around him: Watson in his chair,
+# the desk, the mantelpiece, the door.
+perspective:
+  columns:              # x, then [y, percent] at the back and front of the floor
+    - { x: 110, back: [153, 70], front: [190, 92] }
+    - { x: 190, back: [149, 88], front: [190, 108] }
+    - { x: 285, back: [151, 95], front: [190, 112] }
 # The floor stops short of the desk in the foreground, so feet never land on its top.
 walkable: [[79, 151], [267, 148], [311, 150], [311, 193], [118, 193], [118, 164], [100, 154]]
 features:
