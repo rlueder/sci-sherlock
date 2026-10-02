@@ -18,8 +18,8 @@ importers:
         specifier: ^26.6.3
         version: 26.6.3
       sci2-ts:
-        specifier: ^0.14.0
-        version: 0.14.0(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.6.1)
+        specifier: ^0.15.0
+        version: 0.15.0(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.6.1)
       simple-git-hooks:
         specifier: ^2.14.0
         version: 2.14.0
@@ -901,8 +901,8 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
-  sci2-ts@0.14.0:
-    resolution: {integrity: sha512-C77L3sgpcqZHH4NR/4HzHSMrsXKPiXKMyC6c6pn6iOqGiQA5LTyQz5/g6LAszB25Yu7QCsJLdVTPlS544ZOemA==}
+  sci2-ts@0.15.0:
+    resolution: {integrity: sha512-X7Jy1SmoMRQsFTwA0iRAUrPH9XWirC/mWcyVUCvBs4+1UwPsyyfbpbhE0eRMlBdyvg2mf+dGq6zfA3bFS4EP5w==}
     engines: {node: '>=22.18'}
     hasBin: true
 
@@ -1802,7 +1802,7 @@ snapshots:
       '@rolldown/binding-win32-arm64-msvc': 1.2.12
       '@rolldown/binding-win32-x64-msvc': 1.2.12
 
-  sci2-ts@0.14.0(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.6.1):
+  sci2-ts@0.15.0(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.6.1):
     dependencies:
       '@codemirror/commands': 6.11.1
       '@codemirror/lang-yaml': 6.1.3
