@@ -10,7 +10,7 @@
     "dev": "sci-ts build && vite",
     "play": "sci-ts play",
     "edit": "sci-ts edit",
-    "site": "sci-ts site",
+    "site": "tsx site.ts",
     "art": "sci-ts art",
     "preview": "tsx preview.ts",
     "export-art": "tsx export-art.ts",

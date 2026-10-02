@@ -1,7 +1,7 @@
 name: Pages
 
-# The teaser as a website: its README and docs as pages, and the game in sci-ts's player,
-# published to GitHub Pages (rlueder.github.io/sci-sherlock) on every push to main.
+# The teaser as a website: the game on its own page (site.ts), published to GitHub Pages
+# (rlueder.github.io/sci-sherlock) on every push to main. The docs stay in the repository.
 #
 # Music needs a SoundFont. GeneralUser GS (free to use in software, by S. Christian Collins)
 # is 32 MB, so it's fetched here, pinned to one commit, instead of living in the repository.
