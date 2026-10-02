@@ -7,9 +7,11 @@ picture: 100
 music: 120
 hero:
   at: [186, 176]
-# The house camera (art/studies/baker-street-r13/guides/perspective.json): the horizon at
-# y 72, figures drawn full size with their feet at y 176.
-perspective: { horizon: 72, fullSize: 176 }
+# Fitted to the painting rather than the r13 guide's camera (horizon y 72), which the painting
+# doesn't follow: at that horizon Holmes by the door was half its height. The mantelpiece
+# (about 1.3 m, its hearth at y 124), the door (its foot at y 152) and the figures at the
+# front (full size at y 176) agree on a horizon above the screen, at about y -45.
+perspective: { horizon: -45, fullSize: 176 }
 # The floor stops short of the desk in the foreground, so feet never land on its top.
 walkable: [[79, 151], [267, 148], [311, 150], [311, 193], [118, 193], [118, 164], [100, 154]]
 features:
