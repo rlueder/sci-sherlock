@@ -1,3 +1,3 @@
 # What Holmes can carry: each item's verb (for the rooms' Yarn: filings.lens), and the item
 # itself, which the build makes and rooms give with <<get lens>>.
-lens: { verb: 10, view: 250, description: "Holmes's lens, never far from his hand." }
+lens: { verb: 10, view: 250, magnify: 2, description: "Holmes's lens, never far from his hand." }

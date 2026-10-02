@@ -750,14 +750,14 @@
     {
       "id": "102-008",
       "room": 102,
-      "speaker": "Narrator",
-      "text": "Holmes kneels with his lens. Among the sawdust, brass filings catch the lantern light.",
+      "speaker": "Hero",
+      "text": "Brass filings, in the sawdust. Fresh ones: they still catch the light.",
       "node": "filings.lens",
       "where": "rooms/102.yarn:59",
       "recording": "recorded",
       "recorded": {
-        "text": "db4e046baf89",
-        "wav": "b1b0aeb4b214"
+        "text": "ed552b2fec47",
+        "wav": "e176188f53fe"
       }
     },
     {
@@ -767,8 +767,8 @@
       "text": "A trail from the bench to the tall-case clock. Something was recently fitted there.",
       "node": "filings.lens",
       "before": {
-        "speaker": "Narrator",
-        "text": "Holmes kneels with his lens. Among the sawdust, brass filings catch the lantern light."
+        "speaker": "Hero",
+        "text": "Brass filings, in the sawdust. Fresh ones: they still catch the light."
       },
       "where": "rooms/102.yarn:62",
       "recording": "recorded",
