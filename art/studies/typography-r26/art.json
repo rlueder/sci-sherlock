@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [],
+  "views": [],
+  "fonts": [
+    {
+      "number": 1,
+      "png": "export/regular.png",
+      "cell": [
+        8,
+        12
+      ],
+      "first": 32,
+      "spacing": 1,
+      "space": 3,
+      "lineHeight": 12
+    },
+    {
+      "number": 2,
+      "png": "export/bold.png",
+      "cell": [
+        8,
+        12
+      ],
+      "first": 32,
+      "spacing": 1,
+      "space": 3,
+      "lineHeight": 12
+    },
+    {
+      "number": 3,
+      "png": "export/italic.png",
+      "cell": [
+        8,
+        12
+      ],
+      "first": 32,
+      "spacing": 1,
+      "space": 3,
+      "lineHeight": 12
+    },
+    {
+      "number": 4,
+      "png": "export/bold-italic.png",
+      "cell": [
+        8,
+        12
+      ],
+      "first": 32,
+      "spacing": 1,
+      "space": 3,
+      "lineHeight": 12
+    }
+  ]
+}

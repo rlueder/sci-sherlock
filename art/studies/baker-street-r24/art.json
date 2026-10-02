@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [
+    {
+      "number": 101,
+      "layers": [
+        {
+          "png": "export/background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/lamp-foreground.png",
+          "priority": 135
+        },
+        {
+          "png": "export/rail-foreground.png",
+          "priority": 146
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "number": 226,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/gas-lamp-0.png",
+              "anchor": [
+                15,
+                127
+              ]
+            },
+            {
+              "png": "export/gas-lamp-1.png",
+              "anchor": [
+                15,
+                127
+              ]
+            },
+            {
+              "png": "export/gas-lamp-2.png",
+              "anchor": [
+                15,
+                127
+              ]
+            },
+            {
+              "png": "export/gas-lamp-3.png",
+              "anchor": [
+                15,
+                127
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

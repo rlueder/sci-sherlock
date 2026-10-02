@@ -1,0 +1,77 @@
+{
+  "picture": 101,
+  "script": "rooms/101.yarn",
+  "scriptSha256": "b6c9ce01007ef86dfcdf97b4c1908e175dc993542e49af284b3a2ee67df6b9ea",
+  "canvas": [
+    320,
+    200
+  ],
+  "pixelAspect": 1.2,
+  "proposedPerspective": {
+    "horizon": 80,
+    "fullSize": 176
+  },
+  "route": [
+    [
+      48,
+      139
+    ],
+    [
+      71,
+      150
+    ],
+    [
+      121,
+      153
+    ],
+    [
+      191,
+      151
+    ]
+  ],
+  "features": {
+    "door221": [
+      20,
+      43,
+      58,
+      131
+    ],
+    "cab": [
+      146,
+      51,
+      310,
+      141
+    ]
+  },
+  "foreground": {
+    "lamp": 135,
+    "rail": 146
+  },
+  "gasLamp": {
+    "view": 226,
+    "world": [
+      101,
+      135
+    ],
+    "anchor": [
+      15,
+      127
+    ],
+    "canvas": [
+      32,
+      128
+    ],
+    "drawOrigin": [
+      86,
+      8
+    ]
+  },
+  "constraints": [
+    "Cab wheels and horse hooves in road beside kerb",
+    "Door has warm hall lamp visible",
+    "Two cab lamps and driver at rear",
+    "Horse breath visible",
+    "Current Watson room sprite needs raised-collar costume variant to match line101-009"
+  ],
+  "status": "Review study only. Measured painting landmarks differ from Blender blockout. Engineer must refit floor, hotspots, lamp anchor and cab.do approach; do not carry over r19 coordinates."
+}

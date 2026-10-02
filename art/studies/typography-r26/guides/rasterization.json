@@ -1,0 +1,140 @@
+{
+  "family": "Libertinus Serif",
+  "version": "7.051",
+  "license": "OFL-1.1",
+  "renderer": "Pillow 12.3.0",
+  "freetype": "2.14.3",
+  "faces": {
+    "regular": {
+      "source": "LibertinusSerif-Regular.ttf",
+      "sha256": "fd58bcc87cf6782b445723f49c298eec083efb87334af3bbb5bd970fc744f51b",
+      "pixelSize": 11,
+      "baseline": 9,
+      "horizontalFits": [
+        {
+          "char": "M",
+          "from": 9,
+          "to": 8
+        },
+        {
+          "char": "W",
+          "from": 10,
+          "to": 8
+        },
+        {
+          "char": "m",
+          "from": 9,
+          "to": 8
+        }
+      ],
+      "verticalFits": []
+    },
+    "bold": {
+      "source": "LibertinusSerif-Bold.ttf",
+      "sha256": "03d3a3f7417405cc6a5ffc6729580da48251026bd55b6084530c986b589344d3",
+      "pixelSize": 11,
+      "baseline": 9,
+      "horizontalFits": [
+        {
+          "char": "@",
+          "from": 9,
+          "to": 8
+        },
+        {
+          "char": "H",
+          "from": 9,
+          "to": 8
+        },
+        {
+          "char": "M",
+          "from": 10,
+          "to": 8
+        },
+        {
+          "char": "W",
+          "from": 11,
+          "to": 8
+        },
+        {
+          "char": "m",
+          "from": 10,
+          "to": 8
+        }
+      ],
+      "verticalFits": []
+    },
+    "italic": {
+      "source": "LibertinusSerif-Italic.ttf",
+      "sha256": "ce19c44f7d111c3d028c61a4adab9654075b2243edd654c5343eb880963a1027",
+      "pixelSize": 11,
+      "baseline": 9,
+      "horizontalFits": [
+        {
+          "char": "H",
+          "from": 9,
+          "to": 8
+        },
+        {
+          "char": "M",
+          "from": 10,
+          "to": 8
+        },
+        {
+          "char": "N",
+          "from": 9,
+          "to": 8
+        },
+        {
+          "char": "W",
+          "from": 10,
+          "to": 8
+        }
+      ],
+      "verticalFits": []
+    },
+    "bold-italic": {
+      "source": "LibertinusSerif-BoldItalic.ttf",
+      "sha256": "7dda1251164e1a6a8f1232c1ba2665ab3a5486e13ac83d3fdc815321583083b2",
+      "pixelSize": 11,
+      "baseline": 9,
+      "horizontalFits": [
+        {
+          "char": "H",
+          "from": 9,
+          "to": 8
+        },
+        {
+          "char": "K",
+          "from": 9,
+          "to": 8
+        },
+        {
+          "char": "M",
+          "from": 10,
+          "to": 8
+        },
+        {
+          "char": "N",
+          "from": 9,
+          "to": 8
+        },
+        {
+          "char": "W",
+          "from": 11,
+          "to": 8
+        },
+        {
+          "char": "X",
+          "from": 9,
+          "to": 8
+        },
+        {
+          "char": "m",
+          "from": 9,
+          "to": 8
+        }
+      ],
+      "verticalFits": []
+    }
+  }
+}

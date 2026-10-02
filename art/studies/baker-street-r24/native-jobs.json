@@ -1,0 +1,17 @@
+[
+  {
+    "name": "street",
+    "expected": [
+      "export/composite.png"
+    ]
+  },
+  {
+    "name": "gas-lamp",
+    "expected": [
+      "export/gas-lamp-0.png",
+      "export/gas-lamp-1.png",
+      "export/gas-lamp-2.png",
+      "export/gas-lamp-3.png"
+    ]
+  }
+]
