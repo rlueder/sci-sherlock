@@ -5,7 +5,7 @@ import {mkdtempSync,readFileSync,readdirSync,rmSync,writeFileSync} from 'node:fs
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {decodePng} from 'sci-ts/png';
+import {decodePng} from 'sci2-ts/png';
 const here=fileURLToPath(new URL('.',import.meta.url));
 const stage=mkdtempSync(join(tmpdir(),'sherlock-clock-native-'));
 try {

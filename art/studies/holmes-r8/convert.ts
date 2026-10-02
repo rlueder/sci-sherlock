@@ -2,7 +2,7 @@
 import {readFileSync,writeFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
-import {decodePng} from 'sci-ts/png';
+import {decodePng} from 'sci2-ts/png';
 import {Pixels} from '../../source/pixels.ts';
 import {loadIndexed,enlarged} from '../../source/study-tools.ts';
 const here=fileURLToPath(new URL('.',import.meta.url)),ref=join(here,'../../reference/holmes-master-v1');

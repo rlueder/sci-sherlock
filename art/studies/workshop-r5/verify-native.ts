@@ -5,7 +5,7 @@ import {mkdtempSync,mkdirSync,readFileSync,readdirSync,rmSync,writeFileSync} fro
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {decodePng} from 'sci-ts/png';
+import {decodePng} from 'sci2-ts/png';
 const here=fileURLToPath(new URL('.',import.meta.url)),stage=mkdtempSync(join(tmpdir(),'sherlock-r5-native-'));
 const seq=(name:string,count:number,prefix=name)=>({name,files:Array.from({length:count},(_,i)=>[`${name}_${String(i+1).padStart(4,'0')}.png`,`${prefix}-${String(i).padStart(2,'0')}.png`] as [string,string])});
 const single=(name:string)=>({name,files:[[name+'.png',name+'.png']] as [string,string][]});

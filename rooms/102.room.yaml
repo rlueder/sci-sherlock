@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../node_modules/sci-ts/packages/content/room.schema.json
+# yaml-language-server: $schema=../node_modules/sci2-ts/packages/content/room.schema.json
 # Thorne's workshop, on the r9 room art (art/studies/workshop-r9) with r12's opening case
 # clock. Native room coordinates; the picture is 320x200 with a foreground layer for the
 # desk (181) and an occlusion layer that hides the mouse behind furniture (150).

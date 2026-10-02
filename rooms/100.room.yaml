@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../node_modules/sci-ts/packages/content/room.schema.json
+# yaml-language-server: $schema=../node_modules/sci2-ts/packages/content/room.schema.json
 # 221B, the sitting room. Laid out for the stand-in picture (the wall down to y 120): the
 # floor, hotspots and positions move to the real art when picture 100 arrives.
 room: 100

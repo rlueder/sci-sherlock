@@ -7,7 +7,7 @@ import {join} from 'node:path';
 import {Pixels} from '../../source/pixels.ts';
 import {loadIndexed,enlarged,indexedGif,clone} from '../../source/study-tools.ts';
 import {pixeloramaProject} from '../../source/pixelorama-project.ts';
-import {decodePng} from 'sci-ts/png';
+import {decodePng} from 'sci2-ts/png';
 const here=fileURLToPath(new URL('.',import.meta.url)),r7=join(here,'../../studies/holmes-r7');
 const contract=JSON.parse(readFileSync(join(here,'contract.json'),'utf8')) as {masterFileSha256:string;paletteFileSha256:string;headRect:number[];materialRamps:Record<string,number[]>};
 const sha=(b:Uint8Array)=>createHash('sha256').update(b).digest('hex');

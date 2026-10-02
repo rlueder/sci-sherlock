@@ -17,9 +17,9 @@ importers:
       '@types/node':
         specifier: ^26.6.3
         version: 26.6.3
-      sci-ts:
-        specifier: npm:sci2-ts@^0.8.0
-        version: sci2-ts@0.8.0(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.6.1)
+      sci2-ts:
+        specifier: ^0.8.0
+        version: 0.8.0(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.6.1)
       simple-git-hooks:
         specifier: ^2.14.0
         version: 2.14.0

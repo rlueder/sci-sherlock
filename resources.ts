@@ -1,6 +1,6 @@
 import { fileURLToPath } from "node:url";
-import { buildArt } from "sci-ts/art";
-import { ResourceType, writeView, type Cel, type ResourceData } from "sci-ts/kit";
+import { buildArt } from "sci2-ts/art";
+import { ResourceType, writeView, type Cel, type ResourceData } from "sci2-ts/kit";
 import { music } from "./music.ts";
 import { placeholders } from "./placeholders.ts";
 

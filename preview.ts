@@ -2,9 +2,9 @@ import assert from "node:assert/strict";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { EventType, ResourceManager, ResourceType, Vm, allKernels, graphics, input, stringHelpers, writeResourceArchive, type Frame, type Value } from "sci-ts";
-import { buildGame } from "sci-ts/build";
-import { framePng } from "sci-ts/png";
+import { EventType, ResourceManager, ResourceType, Vm, allKernels, graphics, input, stringHelpers, writeResourceArchive, type Frame, type Value } from "sci2-ts";
+import { buildGame } from "sci2-ts/build";
+import { framePng } from "sci2-ts/png";
 
 /**
  * A real input-driven playthrough of the whole teaser, 221B to the hidden stair; optionally

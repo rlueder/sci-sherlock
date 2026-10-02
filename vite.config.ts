@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import { sciGame } from "sci-ts/vite";
+import { sciGame } from "sci2-ts/vite";
 
 /**
  * The workshop page (index.html), playing the game `pnpm build` writes to out/game. Music

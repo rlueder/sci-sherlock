@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../node_modules/sci-ts/packages/content/room.schema.json
+# yaml-language-server: $schema=../node_modules/sci2-ts/packages/content/room.schema.json
 # Baker Street. Laid out for the stand-in picture (the houses down to y 118): the floor,
 # hotspots and positions move to the real art when picture 101 arrives.
 room: 101

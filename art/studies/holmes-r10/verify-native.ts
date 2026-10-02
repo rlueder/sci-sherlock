@@ -5,7 +5,7 @@ import {mkdtempSync,mkdirSync,readFileSync,readdirSync,rmSync,writeFileSync} fro
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {decodePng} from 'sci-ts/png';
+import {decodePng} from 'sci2-ts/png';
 const here=fileURLToPath(new URL('.',import.meta.url)),stage=mkdtempSync(join(tmpdir(),'sherlock-r10-native-'));
 const {loops}=JSON.parse(readFileSync(join(here,'animation.json'),'utf8')) as {loops:{name:string;files:string[]}[]};
 try{let count=0;for(const loop of loops){const folder=join(stage,loop.name);mkdirSync(folder);

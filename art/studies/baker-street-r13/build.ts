@@ -1,5 +1,5 @@
 /** 221B reference package: native room layers, cast, and separate prop states. */
-import assert from 'node:assert/strict';import {readFileSync,writeFileSync} from 'node:fs';import {fileURLToPath} from 'node:url';import {join} from 'node:path';import {decodePng} from 'sci-ts/png';import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';import {readFileSync,writeFileSync} from 'node:fs';import {fileURLToPath} from 'node:url';import {join} from 'node:path';import {decodePng} from 'sci2-ts/png';import {createHash} from 'node:crypto';
 import {Pixels} from '../../source/pixels.ts';import {loadIndexed,clone,enlarged,indexedGif} from '../../source/study-tools.ts';import {pixeloramaProject} from '../../source/pixelorama-project.ts';
 const here=fileURLToPath(new URL('.',import.meta.url)),palette=JSON.parse(readFileSync(join(here,'palette.json'),'utf8')) as string[];
 const room=loadIndexed(join(here,'source/room-native.png'),palette),base=clone(room),front=new Pixels(320,200),foreMask=new Pixels(320,200);

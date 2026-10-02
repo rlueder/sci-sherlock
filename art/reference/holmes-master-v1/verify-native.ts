@@ -5,7 +5,7 @@ import {mkdtempSync,mkdirSync,readFileSync,rmSync,writeFileSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {decodePng} from 'sci-ts/png';
+import {decodePng} from 'sci2-ts/png';
 const here=fileURLToPath(new URL('.',import.meta.url)),stage=mkdtempSync(join(tmpdir(),'sherlock-fixed-master-'));
 function metadata(name:string){const zip=readFileSync(join(here,'source',name+'.pxo'));let off=0;while(zip.readUInt32LE(off)===0x04034b50){const size=zip.readUInt32LE(off+18),n=zip.readUInt16LE(off+26),extra=zip.readUInt16LE(off+28),file=zip.subarray(off+30,off+30+n).toString(),start=off+30+n+extra;if(file==='data.json')return JSON.parse(inflateRawSync(zip.subarray(start,start+size)).toString());off=start+size;}throw new Error('Missing metadata');}
 const proof=JSON.parse(readFileSync(join(here,'proof.json'),'utf8')) as {frames:number};

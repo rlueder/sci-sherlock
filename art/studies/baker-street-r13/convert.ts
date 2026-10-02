@@ -1,5 +1,5 @@
 /** Convert complete room/model drawings to the existing shared palette. */
-import assert from 'node:assert/strict';import {readFileSync,writeFileSync} from 'node:fs';import {fileURLToPath} from 'node:url';import {join} from 'node:path';import {createHash} from 'node:crypto';import {decodePng} from 'sci-ts/png';
+import assert from 'node:assert/strict';import {readFileSync,writeFileSync} from 'node:fs';import {fileURLToPath} from 'node:url';import {join} from 'node:path';import {createHash} from 'node:crypto';import {decodePng} from 'sci2-ts/png';
 import {Pixels} from '../../source/pixels.ts';import {loadIndexed,enlarged} from '../../source/study-tools.ts';import {pixeloramaProject} from '../../source/pixelorama-project.ts';
 const here=fileURLToPath(new URL('.',import.meta.url)),palette=JSON.parse(readFileSync(join(here,'../../reference/holmes-master-v2/palette.json'),'utf8')) as string[];
 const rgb=palette.map(h=>[1,3,5].map(n=>parseInt(h.slice(n,n+2),16))),cache=new Map<number,number>();

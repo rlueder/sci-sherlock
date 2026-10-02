@@ -1,5 +1,5 @@
 import { readFileSync } from "node:fs";
-import { ResourceType, basePalette, pixelFont, writePic, writeView, type Cel, type ResourceData } from "sci-ts/kit";
+import { ResourceType, basePalette, pixelFont, writePic, writeView, type Cel, type ResourceData } from "sci2-ts/kit";
 
 /**
  * Stand-ins for art that hasn't been delivered yet, so the whole teaser plays from the first

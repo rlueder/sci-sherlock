@@ -26,8 +26,8 @@ pnpm install
 pnpm dev       # http://127.0.0.1:5173/ — use the port printed by Vite
 ```
 
-The engine comes from npm as `sci2-ts`, aliased to `sci-ts` in this project. Imports
-and commands use `sci-ts`. `pnpm dev` builds `out/game` and serves the workshop page;
+The engine comes from npm as `sci2-ts`: code imports `sci2-ts/...`, and its command is
+`sci-ts`. `pnpm dev` builds `out/game` and serves the workshop page;
 restart it after changing game art or rooms, then reload the browser.
 
 | Control | Action |
