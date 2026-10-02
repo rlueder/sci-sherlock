@@ -83,7 +83,7 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   shot("title");
   enter(100); frames(5);
   const arrival = finish();
-  assert(arrival.some((s) => /My name is Toby Vance/.test(s)), arrival.join("\n"));
+  assert(arrival.some((s) => /Toby Vance, sir/.test(s)), arrival.join("\n"));
   assert(!obj("mrsHudson"), "Mrs Hudson has gone back down");
   shot("221b");
   verb(4); click(303, 80);
