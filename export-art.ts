@@ -4,8 +4,8 @@ import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { buildArt } from "sci-ts/art";
-import { decodePng } from "sci-ts/png";
+import { buildArt } from "sci2-ts/art";
+import { decodePng } from "sci2-ts/png";
 
 // Pixelorama 1.2.3's CLI keeps the project basename even when --output names a file.
 // Stage each project separately, map its native names explicitly, then validate everything.

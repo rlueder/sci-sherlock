@@ -21,7 +21,7 @@ its first commit: the commit-msg hook runs commitlint from `node_modules`.
 
 The engine (the interpreter, the class library, the room compiler, the tools) is
 [sci-ts](https://github.com/rlueder/sci-ts), on npm as `sci2-ts`. Engine changes go there,
-not here; this game imports it as `sci-ts/...`.
+not here; this game imports it as `sci2-ts/...`.
 
 ## Commits
 

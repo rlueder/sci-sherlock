@@ -5,8 +5,8 @@ import assert from "node:assert/strict";
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { join } from "node:path";
-import { decodePng, rgbaPng, type Rgba } from "sci-ts/png";
-import { buildArt, type ArtManifest } from "sci-ts/art";
+import { decodePng, rgbaPng, type Rgba } from "sci2-ts/png";
+import { buildArt, type ArtManifest } from "sci2-ts/art";
 import { Pixels } from "./pixels.ts";
 import { pixeloramaProject } from "./pixelorama-project.ts";
 

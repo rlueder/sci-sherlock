@@ -1,4 +1,4 @@
-import { ResourceType, SoundDevice, writeSound, type MidiEvent, type ResourceData, type SoundSpec } from "sci-ts/kit";
+import { ResourceType, SoundDevice, writeSound, type MidiEvent, type ResourceData, type SoundSpec } from "sci2-ts/kit";
 
 /**
  * The teaser's music, composed here as notes (General MIDI, played through the player's

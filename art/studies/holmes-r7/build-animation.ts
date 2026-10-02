@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
-import {decodePng} from 'sci-ts/png';
+import {decodePng} from 'sci2-ts/png';
 import {Pixels} from '../../source/pixels.ts';
 import {pixeloramaProject} from '../../source/pixelorama-project.ts';
 import {loadIndexed,enlarged,indexedGif} from '../../source/study-tools.ts';

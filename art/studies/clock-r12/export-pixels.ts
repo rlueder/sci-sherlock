@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import {readFileSync, writeFileSync, mkdirSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
-import {decodePng, rgbaPng} from 'sci-ts/png';
+import {decodePng, rgbaPng} from 'sci2-ts/png';
 import {Pixels} from '../../source/pixels.ts';
 import {pixeloramaProject} from '../../source/pixelorama-project.ts';
 import {cabinetSurface,reverseFront,setDial,passage} from './textures.ts';

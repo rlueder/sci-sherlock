@@ -1,7 +1,7 @@
 /** Reproducible native-pixel helpers shared by art studies, never runtime code. */
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
-import {decodePng,rgbaPng} from 'sci-ts/png';
+import {decodePng,rgbaPng} from 'sci2-ts/png';
 import {Pixels} from './pixels.ts';
 export type Point=[number,number];
 export const clone=(p:Pixels)=>{const q=new Pixels(p.width,p.height);q.data.set(p.data);return q;};

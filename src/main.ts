@@ -1,5 +1,5 @@
-import { gameGlobal, GLOBAL_NAMES_VOCAB, ResourceType, parseSelectorNames } from "sci-ts";
-import { GameSession } from "sci-ts/viewer";
+import { gameGlobal, GLOBAL_NAMES_VOCAB, ResourceType, parseSelectorNames } from "sci2-ts";
+import { GameSession } from "sci2-ts/viewer";
 
 const canvas = document.querySelector<HTMLCanvasElement>("#screen")!;
 const status = document.querySelector<HTMLElement>("#status")!;

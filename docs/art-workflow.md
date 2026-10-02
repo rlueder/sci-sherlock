@@ -38,7 +38,7 @@ Each game explicitly imports its art through the existing `resources.ts` hook:
 
 ```ts
 import { fileURLToPath } from "node:url";
-import { buildArt } from "sci-ts/art";
+import { buildArt } from "sci2-ts/art";
 export default () => buildArt(fileURLToPath(new URL("./art/art.json", import.meta.url))).resources;
 ```
 

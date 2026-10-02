@@ -3,8 +3,8 @@ import assert from "node:assert/strict";
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { join } from "node:path";
-import { decodePng, rgbaPng } from "sci-ts/png";
-import { buildArt } from "sci-ts/art";
+import { decodePng, rgbaPng } from "sci2-ts/png";
+import { buildArt } from "sci2-ts/art";
 
 const dir = fileURLToPath(new URL(".", import.meta.url)), out = join(dir, "converted");
 const previous = join(dir, "../workshop-v4/converted");

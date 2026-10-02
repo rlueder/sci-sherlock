@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../node_modules/sci-ts/packages/content/room.schema.json
+# yaml-language-server: $schema=../node_modules/sci2-ts/packages/content/room.schema.json
 # The hidden stair: one screen and the last lines. Laid out for the stand-in picture.
 room: 103
 picture: 103
