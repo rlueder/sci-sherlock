@@ -1,0 +1,40 @@
+{
+  "canvas": [
+    56,
+    64
+  ],
+  "anchor": [
+    0,
+    0
+  ],
+  "right": {
+    "bust": 0,
+    "mouth": 1,
+    "eyes": 2
+  },
+  "left": {
+    "bust": 3,
+    "mouth": 4,
+    "eyes": 5
+  },
+  "suggestedPlacement": {
+    "actorLeftHalf": {
+      "facing": "right",
+      "portrait": [
+        8,
+        8
+      ],
+      "textSide": "right"
+    },
+    "actorRightHalf": {
+      "facing": "left",
+      "portrait": [
+        256,
+        8
+      ],
+      "textSide": "left"
+    }
+  },
+  "switchRule": "Choose on dialogue start from speaker screen x, not world x. Switch all three loops together and reset mouth/eyes to cel0. Retain that facing for the line.",
+  "engineStatus": "SCI supports six loops; current room compiler creates portrait parts with loops0/1/2 at a fixed location. Automatic facing/placement needs engine integration."
+}

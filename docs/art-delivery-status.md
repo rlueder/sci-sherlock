@@ -1,4 +1,4 @@
-# Art delivery status — 1 October 2026
+# Art delivery status — 2 October 2026
 
 The workshop is in the game as of `975b29c`. The approved workshop v6 remains the
 style and scale reference. Technical validation, visual approval and integration
@@ -6,35 +6,41 @@ are separate statuses.
 
 ## In the game
 
-`art/art.json` registers r9's room 102 and foreground layers, master v2 Holmes
-(200), r11 investigation gestures (204), r10/master v2 idles (206), r12 opening
-clock (221), and r9 atmosphere (270–277). The teaser already implements the four
-rooms, dialogue, cast interactions, music and sound. Rooms 100, 101 and 103 and
-cast views 201–203/205 still use stand-ins.
+The workshop uses r12's actor-free corrected background, r9 foreground/atmosphere,
+master v2 Holmes, investigation gestures, idles and the opening clock. 221B's r13
+room layers, fire, mantel lens, door and seated Watson are now registered, along
+with the neutral Watson, Hudson and Toby sprites. Holmes and the cast still need
+finished directional walks. The game's title/end screens are implemented; finished
+art for those screens is now available for review in r19.
 
-The engineer will switch the room base to r12's
-[background-clean.png](../art/studies/clock-r12/export/background-clean.png) and
-pick up the corrected pendulum hands next. Both clean backgrounds and all 24
-corrected pendulum cels are delivered in `0d5284a`; see the
-[handoff notes](../art/studies/clock-r12/README.md#clean-room-handoff-correction).
-The registered r9 pendulum paths already refer to those corrected source files.
-Do not use r12's background-study.png: that review composite includes Holmes.
+## Current priority — user change, 2 October
+
+1. **Portraits:** r23 supersedes r22 with fixed neutral masters and individual mouth anatomy, both facings and separate mouth/blink overlays for
+   Holmes (new 213), Watson, Hudson and Toby, retaining r22’s ornate surround, plus editable sources and an animated review. Automatic facing and dialogue-side placement need engine support.
+2. **Remaining art:** r19 supplies Baker Street, hidden stair, title/end artwork,
+   foreground layers and gas-lamp flicker. R20 supplies the font, box frame, cursors,
+   action icons and inventory lens. These are review studies, not runtime registration.
+3. **Return to Holmes's walk:** finish mirrored west and front/back references and
+   cycles from r17's layered approach after the portrait/remaining-art review.
+
+[Open the combined r18–r20 review](../art/studies/portraits-r18/index.html).
+Reach/case timing, Watson's page turn and cast walks remain queued afterward.
 
 ## Ordered art queue
 
-This order supersedes the earlier instruction to leave walking until last.
+The original numbered queue is retained below for resource coverage; the current priority above supersedes its order.
 
 | Order | Deliverable | Available | Next work |
 |---|---|---|---|
 | 1 | Status and setup | Workshop registration recorded here; AGENTS.md read; dependencies installed in the isolated art worktree | Keep this document current and use Conventional Commits |
 | 2 | Holmes walk, 200 | Fixed master v2; game loops repeat the side standing cel; [r14 rejected](../art/studies/holmes-r14/README.md) for dancing motion and disconnected shoulders/torso | [r17 layered east test](../art/studies/holmes-r17/README.md): one leg, both legs, dressed figure; coat gap closed and gait revised with longer stride, straighter support and toe-off; review before remaining directions; retains 72×120 and [36,113] |
 | 3 | Reach/case timing | r11 has four reach cels; r12 has eight opening cels; game currently plays these sequentially | Review contact in the combined room and deliver concrete frame timing or extra contact cels |
-| 4 | 221B, 100 | r13 room/foreground, fire 222, lens 223, door 225 with shut cel 0, camera-fitted seated Watson 205 | Review layer/prop placement, finish Watson page-turn loop; engine moves floor and hotspots to fit |
-| 5 | Cast 201–203 | r13 fixed neutral models and guides | Watson standing/walking for rooms 101–103; Hudson and Toby west arrival walk first, then remaining directions; Holmes's scale |
-| 6 | Portraits 210–212 | Contracts agreed | Watson, Hudson, Toby; 56×64, anchor [0,0]; bust loop 0, mouth loop 1 (closed cel 0), eyes loop 2 (open cel 0) |
-| 7 | Street 101 and stair 103 | Existing room briefs and playable stand-ins | Layered pictures; near railing/lamp-post foreground on street, gas lamp 226, hansom in picture |
-| 8 | Title 104 and end card 105 | Required screens identified | Original finished artwork |
-| 9 | Interface | Engine supports every listed format | Font, frame/colours, cursors, icon bar and inventory lens; contracts below |
+| 4 | 221B, 100 | r13 room/foreground, fire 222, lens 223, door 225 and seated Watson 205 are integrated | Finish Watson page-turn loop and review scene animation |
+| 5 | Cast 201–203 | r13 fixed neutral models are registered; guides delivered | Watson walking for rooms 101–103; Hudson and Toby west arrival walk first, then remaining directions; Holmes's scale |
+| 6 | Portraits 210–213 | r23 static masters, character-specific mouth keys, Holmes portrait and right/left facial loops; approved r22 surround retained | Review r23 mouths and Holmes; engineer must register the surround and wire facing/placement |
+| 7 | Street 101 and stair 103 | r19 paintings, foregrounds, lamp 226 and Blender construction sources | Review camera, cast scale and masks; engineer fits floor and hotspots |
+| 8 | Title 104 and end card 105 | r19 paintings and separate lettering; screens already exist in the game | Review and integrate without duplicate engine-drawn lettering |
+| 9 | Interface | r20 font sheet, frame/colours, five cursors, icon bar and lens | Review legibility and register approved resources separately |
 | 10 | Optional mouse contrast | r9 directional sprites/routes are in play | Lift selected highlights against the dark floor while retaining small scale |
 
 ## Contracts for delivery
@@ -52,7 +58,7 @@ This order supersedes the earlier instruction to leave walking until last.
 | Cursors 261–265 | Walk, look, use, talk, wait; at most 16×16; anchor is hotspot |
 | Icon bar 266 | Six 24×24 cels: walk, look, do, talk, inventory, menu; loop 0 normal, loop 1 picked |
 | Lens 250 | Loop 0: 24×24 inventory icon; loop 1: cursor |
-| Portraits 210–212 | 56×64, [0,0]; bust/mouth/eyes loops 0/1/2 |
+| Portraits 210–213 | 56×64, [0,0]; right bust/mouth/eyes loops 0/1/2, left 3/4/5; separate 72×88 surround offset [-8,-18] |
 
 ## Work and review rules
 
@@ -68,3 +74,11 @@ and review timelines may repeat keys without adding unique cels.
 
 Pin model identities and colour ramps, draw coherent whole-body poses, and review
 the animation in place and moving through the actual room before calling it ready.
+
+Portrait frame correction: [r22 review](../art/studies/portraits-r22/index.html) follows the user’s ornate gilt-frame reference. Facial cels stay 56×64; the shared 72×88 surround is separate, offset [-8,-18] from the face. Both facings and all mouth/blink cels are included. See the study README for the draw order and integration contract.
+
+[Portrait anatomy correction r23](../art/studies/portraits-r23/index.html): saved neutral masters are hash-checked before animation; unique lip-line masks replace the old generic mouth overlays. Holmes is proposed as view 213. Mouth keys and anatomical guides are exposed in the review.
+
+Latest r23 review correction: Watson’s mouth seam moved up two native pixels to the moustache edge. Holmes, Watson and Hudson have individually fitted near/far eyelids; Toby’s blink stays unchanged. Eye landmarks, frozen-cel preview controls and blink comparison sheets are included.
+
+Hudson's open-eye cleanup is recorded as r23 master revision 2: three stray pixels below the near eye are corrected in the saved neutral reference and regenerated in both bust/open-eye facings. Prior reference retained; half/closed cels and all other characters are unchanged.

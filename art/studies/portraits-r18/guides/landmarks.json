@@ -1,0 +1,89 @@
+[
+  {
+    "name": "watson",
+    "closedMatchesMaster": true,
+    "overlaysStayWithinBust": true,
+    "canvas": [
+      56,
+      64
+    ],
+    "mouthRect": [
+      37,
+      31,
+      8,
+      4
+    ],
+    "eyeRects": [
+      [
+        31,
+        18,
+        8,
+        4
+      ],
+      [
+        40,
+        18,
+        5,
+        4
+      ]
+    ]
+  },
+  {
+    "name": "hudson",
+    "closedMatchesMaster": true,
+    "overlaysStayWithinBust": true,
+    "canvas": [
+      56,
+      64
+    ],
+    "mouthRect": [
+      34,
+      29,
+      10,
+      5
+    ],
+    "eyeRects": [
+      [
+        31,
+        19,
+        7,
+        5
+      ],
+      [
+        40,
+        19,
+        5,
+        4
+      ]
+    ]
+  },
+  {
+    "name": "toby",
+    "closedMatchesMaster": true,
+    "overlaysStayWithinBust": true,
+    "canvas": [
+      56,
+      64
+    ],
+    "mouthRect": [
+      33,
+      30,
+      9,
+      5
+    ],
+    "eyeRects": [
+      [
+        30,
+        21,
+        7,
+        4
+      ],
+      [
+        39,
+        20,
+        5,
+        4
+      ]
+    ]
+  }
+]

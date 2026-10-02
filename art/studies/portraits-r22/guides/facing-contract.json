@@ -1,0 +1,61 @@
+{
+  "portraitCanvas": [
+    56,
+    64
+  ],
+  "anchor": [
+    0,
+    0
+  ],
+  "surroundCanvas": [
+    72,
+    88
+  ],
+  "surroundOffset": [
+    -8,
+    -18
+  ],
+  "surroundPng": "export/surround.png",
+  "framePng": "export/frame.png",
+  "right": {
+    "bust": 0,
+    "mouth": 1,
+    "eyes": 2
+  },
+  "left": {
+    "bust": 3,
+    "mouth": 4,
+    "eyes": 5
+  },
+  "drawOrder": [
+    "surround",
+    "bust",
+    "mouth",
+    "eyes",
+    "frame (optional protection)"
+  ],
+  "placement": {
+    "left": {
+      "surround": [
+        4,
+        4
+      ],
+      "portrait": [
+        12,
+        22
+      ],
+      "facing": "right"
+    },
+    "right": {
+      "surround": [
+        244,
+        4
+      ],
+      "portrait": [
+        252,
+        22
+      ],
+      "facing": "left"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "paper": {
+    "index": 62,
+    "hex": "#f5d8b1"
+  },
+  "ink": {
+    "index": 2,
+    "hex": "#110c14"
+  },
+  "border": {
+    "index": 48,
+    "hex": "#9f784c"
+  },
+  "frameOrder": [
+    "top-left",
+    "top-right",
+    "bottom-right",
+    "bottom-left",
+    "top",
+    "right",
+    "bottom",
+    "left"
+  ],
+  "iconOrder": [
+    "walk",
+    "look",
+    "do",
+    "talk",
+    "inventory",
+    "menu"
+  ]
+}

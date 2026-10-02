@@ -1,0 +1,38 @@
+[
+  {
+    "name": "watson",
+    "expected": [
+      "review/watson-native-1.png",
+      "review/watson-native-2.png",
+      "review/watson-native-3.png",
+      "review/watson-native-4.png",
+      "review/watson-native-5.png",
+      "review/watson-native-6.png",
+      "review/watson-native-7.png"
+    ]
+  },
+  {
+    "name": "hudson",
+    "expected": [
+      "review/hudson-native-1.png",
+      "review/hudson-native-2.png",
+      "review/hudson-native-3.png",
+      "review/hudson-native-4.png",
+      "review/hudson-native-5.png",
+      "review/hudson-native-6.png",
+      "review/hudson-native-7.png"
+    ]
+  },
+  {
+    "name": "toby",
+    "expected": [
+      "review/toby-native-1.png",
+      "review/toby-native-2.png",
+      "review/toby-native-3.png",
+      "review/toby-native-4.png",
+      "review/toby-native-5.png",
+      "review/toby-native-6.png",
+      "review/toby-native-7.png"
+    ]
+  }
+]
