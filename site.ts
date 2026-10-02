@@ -26,6 +26,10 @@ for (const [name, data] of Object.entries(files)) writeFileSync(join(out, "game"
 // The player lists the game's files from this, in place of the dev server's listings.
 writeFileSync(join(out, "game/files.json"), JSON.stringify({ "": Object.keys(files) }));
 
+// The dialogue font's licence goes with it: its notices belong with any copy.
+mkdirSync(join(out, "licences"), { recursive: true });
+cpSync(join(root, "art/studies/typography-r29/source/upstream/COPYING"), join(out, "licences/new-century-schoolbook.txt"));
+
 const soundFont = join(root, "assets/soundfonts/GeneralUser-GS.sf2");
 if (existsSync(soundFont)) cpSync(soundFont, join(out, "soundfonts/GeneralUser-GS.sf2"));
 console.log(`out/site: the page, the game (${game.resources.length} resources)${existsSync(soundFont) ? " and the SoundFont" : "; no SoundFont, so music is silent"}`);

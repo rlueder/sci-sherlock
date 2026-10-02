@@ -246,6 +246,9 @@ The game menu (Escape) sets speech to voice and text, voice only, or text only.
 ## License
 
 [MIT](LICENSE) covers this project’s code, art and writing. sci-ts has its own license.
-The stand-in voices are made with Kokoro-82M (Apache 2.0).
+The stand-in voices are made with Kokoro-82M (Apache 2.0). The text is set in New Century
+Schoolbook 12 (Adobe Systems and Digital Equipment Corporation's bitmap fonts), under the
+licence in [its source folder](art/studies/typography-r29/source/upstream/COPYING), which the
+published site carries too.
 [Asset credits](art/credits.csv) and each study’s saved sources document provenance;
 no reference-game artwork is included.
