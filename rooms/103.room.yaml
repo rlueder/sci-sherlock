@@ -16,4 +16,4 @@ features:
 props:
   watson: { view: 201, at: [70, 160], sightAngle: 360, scale: true }
 characters:
-  watson: { name: Watson }
+  watson: { name: Watson, portrait: 210 }

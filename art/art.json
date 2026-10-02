@@ -1083,6 +1083,541 @@
       ]
     },
     {
+      "number": 210,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/watson-0-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/watson-1-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/watson-1-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/watson-1-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/watson-2-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/watson-2-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/watson-2-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/watson-3-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/watson-4-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/watson-4-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/watson-4-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/watson-5-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/watson-5-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/watson-5-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 211,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/hudson-0-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/hudson-1-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/hudson-1-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/hudson-1-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/hudson-2-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/hudson-2-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/hudson-2-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/hudson-3-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/hudson-4-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/hudson-4-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/hudson-4-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/hudson-5-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/hudson-5-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/hudson-5-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 212,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/toby-0-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/toby-1-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/toby-1-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/toby-1-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/toby-2-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/toby-2-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/toby-2-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/toby-3-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/toby-4-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/toby-4-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/toby-4-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/toby-5-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/toby-5-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/toby-5-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 213,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/holmes-0-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/holmes-1-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/holmes-1-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/holmes-1-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/holmes-2-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/holmes-2-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/holmes-2-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/holmes-3-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/holmes-4-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/holmes-4-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/holmes-4-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/holmes-5-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/holmes-5-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/portraits-r23/export/holmes-5-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 214,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/surround.png",
+              "anchor": [
+                8,
+                18
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/portraits-r23/export/frame.png",
+              "anchor": [
+                8,
+                18
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "number": 220,
       "loops": [
         {

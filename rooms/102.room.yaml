@@ -35,7 +35,7 @@ props:
   watson: { view: 201, at: [115, 196], sightAngle: 360, scale: true }
   mouse: { view: 273, at: [70, 146], moves: true, script: Scurry, scale: false }
 characters:
-  watson: { name: Watson }
+  watson: { name: Watson, portrait: 210 }
 properties:
   # Only there to look at: clicks go to the window behind them.
   sky: { cycleSpeed: 240, fixPriority: 1, priority: 0, clickable: 0 }
