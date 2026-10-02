@@ -161,9 +161,13 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   shot("inventory");
   click(prop(icon, "x") + 8, prop(icon, "y") + 8);
   assert.equal(prop(global("user"), "verb"), 5);
+  // Held over the filings, the lens shows them twice as large through its glass.
+  [inp.x, inp.y] = [225, 152]; frames(2);
+  assert(g.magnify, "the lens magnifies");
+  capture?.("lens", latest!);
   click(225, 150);
   const filingLines = finish();
-  assert(filingLines.some((s) => /kneels with his lens/.test(s)), filingLines.join("\n"));
+  assert(filingLines.some((s) => /Brass filings, in the sawdust/.test(s)), filingLines.join("\n"));
   assert.equal(prop(global("ego"), "view"), 200, "Holmes stands again after kneeling");
   assert(filingLines.some((s) => /trail from the bench/.test(s)));
   assert.equal(prop(obj("filings"), "cel"), 1);

@@ -10,8 +10,9 @@
     ;; ink on paper inside the r20 box frame, r20's cursors, and r28's painted toolbar and
     ;; case (views 267 and 268) with its 32-pixel icons.
     (textStyle font: 1 nameFont: 3 fore: 2 back: 62 frame: 260)
-    ;; Portraits (r23) in their gilt frame (view 214), at the top on either side.
-    (textStyle portraitFrame: 214 portraitX: 12 portraitY: 22)
+    ;; Portraits (r23) in their gilt frame (view 214), at the bottom on either side: at the
+    ;; top they'd cover people's faces, which are near the top of the screen here.
+    (textStyle portraitFrame: 214 portraitX: 12 portraitY: -10)
     (user walkCursor: 261 lookCursor: 262 doCursor: 263 talkCursor: 264 waitCursor: 265)
     (iconBar view: 266 skin: 267 size: 32 left: 16 spacing: 42 top: 8)
     (inventory skin: 268 x: 32 y: 30 cols: 4 slotLeft: 13 slotTop: 28 slotWidth: 60 slotHeight: 47 inset: 7 iconSize: 32)

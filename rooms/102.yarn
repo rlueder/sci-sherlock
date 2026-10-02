@@ -56,7 +56,7 @@ title: filings.lens
 <<view hero 204>>
 <<loop hero 1>>
 <<animate hero once>>
-Holmes kneels with his lens. Among the sawdust, brass filings catch the lantern light. #line:102-008
+Hero: Brass filings, in the sawdust. Fresh ones: they still catch the light. #line:102-008
 <<cel filings 1>>
 <<show scratches>>
 Hero: A trail from the bench to the tall-case clock. Something was recently fitted there. #line:102-009
