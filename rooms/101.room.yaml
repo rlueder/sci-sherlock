@@ -22,7 +22,7 @@ props:
   lamp: { view: 226, at: [106, 158], cycle: forward, sightAngle: 360 }
   watson: { view: 201, at: [140, 164], sightAngle: 360, scale: true }
 characters:
-  watson: { name: Watson }
+  watson: { name: Watson, portrait: 210 }
 properties:
   # Above the foreground lamp post it overlays; hit only where it's drawn.
   lamp: { priority: 159, fixPriority: 1, checkPixels: 1, cycleSpeed: 10 }

@@ -27,9 +27,9 @@ props:
   mrsHudson: { view: 202, at: [292, 152], moves: true, sightAngle: 360 }
   toby: { view: 203, at: [294, 154], moves: true, sightAngle: 360 }
 characters:
-  watson: { name: Watson }
-  mrsHudson: { name: Mrs Hudson }
-  toby: { name: Toby }
+  watson: { name: Watson, portrait: 210 }
+  mrsHudson: { name: Mrs Hudson, portrait: 211 }
+  toby: { name: Toby, portrait: 212 }
 properties:
   fire: { cycleSpeed: 8 }
   # Drawn on a canvas wide enough for its swing: hit only where it's drawn.
