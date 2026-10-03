@@ -17,6 +17,11 @@ This is a **learning project**: the source drawings, generation prompts, constru
 guides, rejected experiments and export checks are kept beside the results. Start with
 the [art learning guide](docs/art-learning-guide.md) to reproduce the workflow.
 
+[Play the game](https://rlueder.github.io/sci-sherlock/) in the browser. The notes, briefs
+and art studies are also published as a site you can browse and search:
+[How it's made](https://rlueder.github.io/sci-sherlock/docs/), built from these files by
+`pnpm docs` (`docs-site.ts`).
+
 ## Play locally
 
 Requires **Node 22.18+** and **pnpm**.

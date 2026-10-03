@@ -7,7 +7,9 @@ header { text-align: center; }
 h1 { margin: 8px 0; font-size: clamp(28px, 5vw, 42px); font-weight: 400; }
 /* The title in the game's own type (art/titles), at a whole multiple of its pixels. */
 .heading { display: block; margin: 0 auto; width: 480px; height: 96px; image-rendering: pixelated; }
-header > p:last-child { font-size: 15px; line-height: 1.5; margin: 10px auto 22px; max-width: 36em; }
+header > p:not(.eyebrow) { font-size: 15px; line-height: 1.5; margin: 10px auto 0; max-width: 36em; }
+header > p.notes { margin: 6px auto 22px; font: 13px/1.5 system-ui, sans-serif; }
+header a { color: #d6a875; }
 /* 320x200 shown at 4:3, as on the original monitors; taps aren't zooms. */
 canvas { display: block; width: 100%; aspect-ratio: 4 / 3; image-rendering: pixelated; background: #000; cursor: none; border: 1px solid #64503a; touch-action: manipulation; }
 nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }

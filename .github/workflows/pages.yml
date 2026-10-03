@@ -37,6 +37,10 @@ jobs:
         run: |
           mkdir -p assets/soundfonts
           curl --fail --location --silent --show-error -o assets/soundfonts/GeneralUser-GS.sf2 "$SOUNDFONT"
+      # The docs re-encode the art studies' GIFs, which come out of the art tools far larger
+      # than they need to be.
+      - name: ffmpeg
+        run: command -v ffmpeg || (sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg)
       - run: pnpm site
       - uses: actions/upload-pages-artifact@v3
         with:

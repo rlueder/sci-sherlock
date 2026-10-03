@@ -1,7 +1,8 @@
 /**
  * The published site, in out/site: this game's page (index.html, built by Vite) with the
  * game beside it in game/, and the SoundFont in soundfonts/ if it's in assets/soundfonts
- * (the Pages workflow fetches it). Relative paths throughout, so it works from any folder.
+ * (the Pages workflow fetches it), and the notes on how it's made in docs/ (docs-site.ts).
+ * Relative paths throughout, so it works from any folder.
  *
  *   pnpm site
  */
@@ -12,6 +13,7 @@ import { fileURLToPath } from "node:url";
 import { build } from "vite";
 import { writeResourceArchive } from "sci2-ts";
 import { buildGame } from "sci2-ts/build";
+import { buildDocs } from "./docs-site.ts";
 
 const root = fileURLToPath(new URL(".", import.meta.url));
 const out = resolve(root, "out/site");
@@ -35,6 +37,8 @@ writeFileSync(join(out, "game/files.json"), JSON.stringify({ "": Object.keys(fil
 mkdirSync(join(out, "licences"), { recursive: true });
 cpSync(join(root, "art/studies/typography-r29/source/upstream/COPYING"), join(out, "licences/new-century-schoolbook.txt"));
 
+const docs = buildDocs(join(out, "docs"));
+
 const soundFont = join(root, "assets/soundfonts/GeneralUser-GS.sf2");
 if (existsSync(soundFont)) cpSync(soundFont, join(out, "soundfonts/GeneralUser-GS.sf2"));
-console.log(`out/site: the page, the game (${game.resources.length} resources)${existsSync(soundFont) ? " and the SoundFont" : "; no SoundFont, so music is silent"}`);
+console.log(`out/site: the page, the game (${game.resources.length} resources), ${docs.pages} pages of notes${existsSync(soundFont) ? " and the SoundFont" : "; no SoundFont, so music is silent"}`);
