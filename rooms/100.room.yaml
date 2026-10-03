@@ -4,8 +4,8 @@
 # a figure's size depends only on how far down the screen its feet are. The floor, hotspots
 # and positions follow its handoff (guides/handoff.json). The picture's layers put the
 # opening (138), the armchair (146) and the desk (199) in front of whoever is behind them.
-# The violin, the slipper and the correspondence aren't painted in this pass: their lines
-# wait in 100.yarn for the art.
+# The correspondence, the slipper and the violin are painted in by r43 (art/studies/
+# environment-r43): the letters and slipper on and by the mantel, the violin on the desk.
 room: 100
 picture: 100
 music: 120
@@ -16,6 +16,9 @@ perspective: { horizon: 0, fullSize: 176 }
 walkable: [[120, 160], [300, 160], [308, 195], [99, 195], [105, 176]]
 features:
   bench: { rect: [140, 59, 220, 119], sightAngle: 360 }
+  correspondence: { rect: [26, 75, 42, 95], sightAngle: 360 }
+  slipper: { rect: [53, 79, 66, 107], sightAngle: 360 }
+  violin: { rect: [14, 161, 55, 183], sightAngle: 360 }
   window: { rect: [201, 26, 237, 76], sightAngle: 360 }
 props:
   fire: { view: 222, at: [35, 133], cycle: forward, sightAngle: 360 }
@@ -38,8 +41,9 @@ properties:
   fire: { cycleSpeed: 7 }
   # Drawn on a canvas wide enough for its swing: hit only where it's drawn.
   door: { cycleSpeed: 7, checkPixels: 1 }
-  # In his armchair: drawn after the chair's layer (146).
-  watson: { cycleSpeed: 12, fixPriority: 1, priority: 147 }
+  # In his armchair: drawn after the chair's layer (146). Hit only where he's drawn, so the
+  # slipper beside him can be clicked.
+  watson: { cycleSpeed: 12, fixPriority: 1, priority: 147, checkPixels: 1 }
   # Behind the opening (138), and only there to look at: clicks go to the bench and window.
   fog: { cycleSpeed: 14, fixPriority: 1, priority: 110, clickable: 0 }
   benchLamp: { cycleSpeed: 14, fixPriority: 1, priority: 132, clickable: 0 }

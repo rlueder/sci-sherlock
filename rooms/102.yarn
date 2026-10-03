@@ -11,6 +11,7 @@ title: room.enter
 <<endif>>
 <<if $openedClock>>
 <<hide clock>>
+<<hide pendulum>>
 <<cel caseDoor 7>>
 <<else>>
 <<hide caseDoor>>
@@ -92,6 +93,7 @@ Hero: And this case is far too light for its size. #line:102-015
 <<animate hero once>>
 <<stop clock>>
 <<cel clock 0>>
+<<hide pendulum>>
 <<hide clock>>
 <<show caseDoor>>
 <<sound 130>>

@@ -94,6 +94,10 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   capture?.("casebook", latest!);
   inp.push({ type: EventType.KeyDown, message: 27, modifiers: 0 }); frames(2);
   assert.equal(global("dialog"), 0);
+  // The things r43 painted back in: the Persian slipper by the fire.
+  verb(1); click(59, 93);
+  const slipper = finish();
+  assert(slipper.some((t) => /Persian slipper/.test(t)), slipper.join("\n"));
   verb(4); click(303, 80);
   assert.match(line(), /visitor/, "the door waits for the client"); finish();
   // Toby's story: four topics, then the one that takes the case.
@@ -130,6 +134,17 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   const lamps = new Set<number>();
   for (let i = 0; i < 125; i++) { frames(1); lamps.add(prop(obj("light"), "cel")); }
   assert.equal(lamps.size, 6, "the lamp's light flickers on the bench");
+  const swings = new Set<number>();
+  for (let i = 0; i < 125; i++) { frames(1); swings.add(prop(obj("pendulum"), "cel")); }
+  assert(swings.size > 20, "the case clock's pendulum swings: the one clock still going");
+  // Now and then the mouse runs under the bench (scripts/10.sc).
+  let waited = 0;
+  while (!obj("mouse") && waited < 900) (frames(1), waited++);
+  assert(obj("mouse"), "the mouse comes out within a few seconds of entering");
+  frames(90); // halfway across, between the bay's uprights
+  shot("mouse");
+  const mx = prop(obj("mouse"), "x");
+  assert(mx > 110 && mx < 225, `the mouse is under the bench (x ${mx})`);
   assert(!obj("caseDoor"), "the opening case is hidden until the reveal");
 
   // Behind the desk in the foreground.
@@ -187,6 +202,7 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   const revealLines = finish();
   assert(revealLines.some((s) => /left us a way in/.test(s)), revealLines.join("\n"));
   assert(!obj("clock"), "the swinging clock gives way to the opening one");
+  assert(!obj("pendulum"), "the pendulum goes with the closed case");
   assert.equal(prop(obj("caseDoor"), "cel"), 7);
   assert.equal(prop(global("ego"), "view"), 200, "Holmes is himself again after the reach");
   assert.equal(prop(global("user"), "canInput"), 1);
@@ -196,6 +212,9 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   verb(4); click(300, 60);
   enter(103); frames(30);
   shot("stair");
+  const peeks = new Set<number>();
+  for (let i = 0; i < 60; i++) { frames(1); peeks.add(prop(obj("peek"), "cel")); }
+  assert(peeks.size > 8, "the pendulum swings behind the slot in the clock's back");
   const ending = finish();
   assert(ending.some((s) => /still keeping time/.test(s)), ending.join("\n"));
   enter(105); frames(5);
