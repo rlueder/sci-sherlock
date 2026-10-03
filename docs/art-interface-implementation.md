@@ -213,7 +213,7 @@ The Sound skin is 112×36 with on/off × normal/hover/pressed/disabled states. C
 it to the existing web audio toggle, with visible state text and `aria-pressed`.
 
 The menu is 244×178 at [38,11], with six 224×22 rows beginning at [10,29]. Use live
-labels from r29 bitmap metrics, not baked proof PNGs. Hover and keyboard focus share
-the bold/highlight state; disabled Restore is skipped during arrow-key navigation.
+labels from r29 bitmap metrics, not baked proof PNGs. Menu item text stays regular in every state. Hover and keyboard focus share
+lighter purple and cream shades without changing font weight or spacing; disabled Restore is skipped during arrow-key navigation.
 Retain existing save/restore, restart confirmation and audio behaviour. This is an
 art/interaction study, not runtime integration, and uses the r28 68-colour palette.

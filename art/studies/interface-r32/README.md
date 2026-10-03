@@ -9,8 +9,9 @@ working interaction proof. It does not edit the game runtime or web audio wiring
 
 The panel reuses r28's painted walnut rim, brass corners/hinges and purple lining.
 The centre stays quiet for legibility. Each menu row has a small brass lozenge.
-Hover and keyboard focus brighten the purple row and use the original **bold**
-New Century Schoolbook 12px face. Pressed rows have inset shading; disabled rows
+Menu items stay in **regular** New Century Schoolbook 12px in every state.
+Hover and keyboard focus use lighter shades of purple and cream; letter weight,
+spacing and width do not change. Sound labels follow the same rule. Pressed rows have inset shading; disabled rows
 use subdued ink. Text always preserves r29's bearings, advances and baseline.
 The existing wording is retained: Save, Restore, Start again, Text speed, Speech,
 and Carry on. The optional title is “The casebook”.

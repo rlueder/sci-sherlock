@@ -80,7 +80,13 @@
       25,
       4
     ],
-    "font": "r29 New Century Schoolbook 12px; original metrics",
+    "font": "r29 New Century Schoolbook 12px regular in every item state; original metrics",
+    "textColours": {
+      "normal": "#d3b895",
+      "hover": "#f5d8b1",
+      "pressed": "#cab08f",
+      "disabled": "#b68d62"
+    },
     "labels": [
       "Save the game",
       "Restore a game",
@@ -96,7 +102,7 @@
       "disabled"
     ],
     "interaction": [
-      "Hover and keyboard focus share the highlighted row.",
+      "Keep item text regular in every state; hover/focus use lighter purple and cream shades, never a weight change.",
       "Pressed row uses inset shadow; moving focus never activates an item.",
       "Escape/Carry on closes; Arrow keys move focus; Enter/Space activate.",
       "Restore is disabled when no save exists.",
