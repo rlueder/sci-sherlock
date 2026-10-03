@@ -237,21 +237,32 @@ Mrs Hudson speak their own lines. Each line in the rooms' Yarn has a `#line:` id
 recording is `voices/<id>.wav`. `voices/lines.json` is the script: who says each line,
 the line before it, and whether it's recorded.
 
-For now the recordings are stand-ins made with [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M)
-(`tts/cast.json` says which voice reads whom). `voices/stand-ins.json` lists them; a real
-recording saved over one takes its place and is never overwritten.
+For now the recordings are stand-ins made with [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS).
+Each character's voice was designed from a written description (age, class, accent,
+temperament) and picked by ear from a casting round; its clip in `tts/references/` is the
+voice, and every line is cloned from it, so a character sounds the same throughout.
+`tts/cast.json` holds the clips, the descriptions and seeds they came from, and how a few
+words are said. `voices/stand-ins.json` lists the stand-ins; a real recording saved over one
+takes its place and is never overwritten.
+
+The voice tool is the one part of the project in Python, because Qwen3-TTS only runs there.
+It's kept apart in `tts/`, pinned with [uv](https://docs.astral.sh/uv/), and only needed to
+make voices: the WAVs are committed, so building and playing the game doesn't need it.
 
 ```sh
-pnpm --dir tts install    # once: Kokoro and its runtime (about 430 MB, not part of the game)
-pnpm voices               # stand-ins for new or changed lines (fetches the model, 92 MB, once)
+pnpm voices                                    # stand-ins for new or changed lines
+uv run --project tts python tts/design.py Toby  # redesign a character's reference voice
 ```
+
+The first run installs Qwen3-TTS and PyTorch and fetches the model (about 4.5 GB). It uses an
+Apple or NVIDIA GPU when there is one; on a CPU it is slow.
 
 The game menu (Escape) sets speech to voice and text, voice only, or text only.
 
 ## License
 
 [MIT](LICENSE) covers this project’s code, art and writing. sci-ts has its own license.
-The stand-in voices are made with Kokoro-82M (Apache 2.0). The text is set in New Century
+The stand-in voices are made with Qwen3-TTS (Apache 2.0). The text is set in New Century
 Schoolbook 12 (Adobe Systems and Digital Equipment Corporation's bitmap fonts), under the
 licence in [its source folder](art/studies/typography-r29/source/upstream/COPYING), which the
 published site carries too.

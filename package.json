@@ -18,7 +18,7 @@
     "typecheck": "tsc",
     "test": "vitest run",
     "check": "pnpm typecheck && pnpm art check art/art.json && pnpm test",
-    "voices": "tsx tts/standins.ts"
+    "voices": "uv run --project tts python tts/voices.py"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.3",

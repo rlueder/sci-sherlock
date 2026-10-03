@@ -1,11 +1,40 @@
 {
-  "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "models": {
+    "design": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "clone": "Qwen/Qwen3-TTS-12Hz-1.7B-Base"
+  },
   "voices": {
-    "Narrator": { "voice": "bm_fable", "speed": 0.95 },
-    "Watson": { "voice": "bm_fable", "speed": 0.95 },
-    "Hero": { "voice": "bm_george", "speed": 0.95 },
-    "Toby": { "voice": "bm_lewis", "speed": 1.05 },
-    "Mrs Hudson": { "voice": "bf_emma", "speed": 1 }
+    "Hero": {
+      "reference": "references/holmes.wav",
+      "text": "You see, but you do not observe, Watson. Every clock in this shop was stopped by hand, and whoever stopped them meant us to notice it.",
+      "description": "一位三十多岁的英国绅士，标准英式英语口音（RP），维多利亚时代伦敦上流社会的说话方式。声音清亮、精准的男中音，语速偏快，咬字干脆利落，略带冷幽默。",
+      "seed": 1,
+      "casting": "C1"
+    },
+    "Watson": {
+      "reference": "references/watson.wav",
+      "text": "I had seen little of Holmes lately. That evening the fog lay thick upon Baker Street, and I sat by the fire with yesterday's paper, quite content.",
+      "description": "Accent: British English, educated southern English, a Victorian army doctor. A man of about forty with a warm, mellow baritone, steady and kind, at an unhurried storyteller's pace.",
+      "seed": 2,
+      "casting": "A2"
+    },
+    "Mrs Hudson": {
+      "reference": "references/mrs-hudson.wav",
+      "text": "There's a young gentleman waiting downstairs, Mr Holmes, and he won't take no for an answer. Soaked through, poor lamb, and white as a sheet.",
+      "description": "一位六十多岁快七十岁的英国老妇人，维多利亚时代伦敦的房东太太，带伦敦本地口音。声音苍老、略细，但开朗活泼、精神十足，说话轻快利索，热心又慈祥。",
+      "seed": 4,
+      "casting": "D4"
+    },
+    "Toby": {
+      "reference": "references/toby.wav",
+      "text": "I've run all the way from Clerkenwell, sir, honest I have. The guv'nor's gone, and the shop's bolted up tight, and I don't know who else to ask.",
+      "description": "一个十二岁左右的英国小男孩，维多利亚时代伦敦东区工人阶级，浓重的伦敦考克尼口音。声音很高、还没变声的童声，气喘吁吁，害怕又着急。",
+      "seed": 2,
+      "casting": "C2"
+    }
+  },
+  "same": {
+    "Narrator": "Watson"
   },
   "say": {
     "221B": "two twenty-one B",
