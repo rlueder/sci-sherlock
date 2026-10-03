@@ -46,11 +46,49 @@ of the game for now:
 - **The rain and the clouding sky** (views 270 and 274) were full-screen overlays fitted to
   the old window. r34's window is at [12, 20, 67, 98]; new overlays would cover only that.
 
+## The stair: a secret passage, not a hallway
+
+The stair is the passage hidden behind Thorne's tall-case clock. r40's layout is right: the
+way in on the left, the stairwell straight ahead going down out of sight, the lamp on the
+back wall, the walls closing in. Keep all of that, and the walking strip and scale with it.
+What's wrong is the furnishing: a hall table, an umbrella stand, coat pegs with a scarf and
+a runner make it a front hall people pass through every day. Nobody furnishes a hidden
+passage. Suggested changes, all within the same layout:
+
+1. **The left: the back of the clock, not a door.** The rough, unpainted planks of the case's
+   back, with iron strap hinges and a pull ring or an iron latch to open it from this side.
+   A slot or knot-hole with the pendulum bob swinging past would tie in with the ticking the
+   scene talks about (a small loop, like the lamp's).
+2. **The right: the mechanism and signs of Thorne, instead of the hall furniture.**
+   - The works that open the clock from inside: a counterweight on a chain over a pulley,
+     and a lever.
+   - A low shelf or a crate with a candle stub, a tinderbox, a few clockmaker's tools,
+     perhaps a coil of brass wire.
+   - A single iron hook with a leather work apron, in place of the pegs and scarf: Thorne
+     came this way.
+3. **The walls: older than the shop.** The stair's text already says so ("Older than the shop
+   around them"). Bare brick or crumbling lime plaster, damp streaks, perhaps a bricked-up
+   arch: an older building the shop was built over.
+4. **The floor: bare, worn boards, no runner.** Scrape marks in an arc where the clock swings
+   open, and the brass filings carrying on from the workshop to the top step, so the trail
+   the player followed leads all the way here.
+5. **The lamp: one for a passage, not a hall.** A tin lantern on a hook or a candle in a plain
+   wall sconce, recently lit, like the warm lantern in the workshop: someone was here not
+   long ago. Keep r40's flicker and its pool of light.
+6. **The stairwell: rough, not turned.** A plain square post or a rope handrail in place of the
+   turned newel, or nothing at all.
+7. **Cobwebs everywhere but the way through**, from the clock to the top step: a route that's
+   used, through a space that isn't.
+
+On the game side, the stair's hotspots stay as they are; `entranceDoor` becomes the back of
+the clock, and its line will change to describe it once it's painted that way. If the
+hook, shelf or mechanism should be clickable, give their rectangles in the handoff.
+
 ## The end card
 
 The "To Be Continued" card (picture 105) is drawn over r19's stair, with the case clock on
-the left. The stair is now r40's dark hall, with a plain door and no clock, so the card shows
-a different place from the room before it. A darkened version of r40's stair would match.
+the left. It should show the same passage as the stair room before it: a darkened version of
+the revised stair (above) would match.
 
 ## Not needed
 
