@@ -1,0 +1,236 @@
+{
+  "status": "r33 review candidate; production registration unchanged",
+  "canvas": [
+    320,
+    200
+  ],
+  "pixelAspect": 1.2,
+  "perspective": {
+    "horizon": 0,
+    "fullSize": 176
+  },
+  "walkable": [
+    [
+      120,
+      160
+    ],
+    [
+      300,
+      160
+    ],
+    [
+      308,
+      195
+    ],
+    [
+      99,
+      195
+    ],
+    [
+      105,
+      176
+    ]
+  ],
+  "doorArrival": [
+    292,
+    163
+  ],
+  "hero": [
+    205,
+    176
+  ],
+  "layers": [
+    {
+      "file": "export/opening.png",
+      "priority": 138
+    },
+    {
+      "file": "export/chair.png",
+      "priority": 146
+    },
+    {
+      "file": "export/foreground-desk.png",
+      "priority": 199
+    }
+  ],
+  "props": {
+    "watson": {
+      "view": 205,
+      "at": [
+        93,
+        146
+      ],
+      "priority": 146,
+      "scale": false,
+      "masterSha256": "6c5fce560d32c37f739e60dc5e4e9dec0de81f05e6c180c4e6c4d8b438640650",
+      "source": "../221b-r30",
+      "timing": "guides/page-turn.json"
+    },
+    "door": {
+      "view": 225,
+      "at": [
+        315,
+        137
+      ],
+      "scale": false,
+      "closedCel": 0,
+      "openCel": 9,
+      "angles": [
+        0,
+        20,
+        40,
+        60,
+        80,
+        100,
+        120,
+        140,
+        160,
+        175
+      ],
+      "celDurationMs": 120
+    },
+    "fire": {
+      "view": 222,
+      "at": [
+        35,
+        133
+      ],
+      "scale": false,
+      "canvas": [
+        40,
+        40
+      ],
+      "anchor": [
+        20,
+        39
+      ],
+      "celDurationMs": 120
+    },
+    "lens": {
+      "view": 223,
+      "at": [
+        48,
+        74
+      ],
+      "scale": false
+    }
+  },
+  "atmosphere": [
+    {
+      "name": "fog",
+      "view": 280,
+      "origin": [
+        201,
+        26
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "canvas": [
+        36,
+        50
+      ],
+      "cels": 12,
+      "celDurationMs": 240,
+      "priority": 110
+    },
+    {
+      "name": "lamp",
+      "view": 281,
+      "origin": [
+        207,
+        65
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "canvas": [
+        8,
+        15
+      ],
+      "cels": 6,
+      "celDurationMs": 240,
+      "priority": 132
+    },
+    {
+      "name": "steam",
+      "view": 282,
+      "origin": [
+        156,
+        55
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "canvas": [
+        16,
+        20
+      ],
+      "cels": 12,
+      "celDurationMs": 240,
+      "priority": 132
+    }
+  ],
+  "hotspots": {
+    "door": [
+      273,
+      34,
+      315,
+      137
+    ],
+    "watson": [
+      70,
+      79,
+      115,
+      147
+    ],
+    "fireplace": [
+      4,
+      75,
+      79,
+      139
+    ],
+    "lens": [
+      43,
+      69,
+      57,
+      79
+    ],
+    "chemistryBench": [
+      140,
+      59,
+      220,
+      119
+    ],
+    "window": [
+      201,
+      26,
+      237,
+      76
+    ],
+    "bookcase": [
+      118,
+      38,
+      144,
+      116
+    ]
+  },
+  "checks": {
+    "foregroundOutsideLightingMaskIdentical": true,
+    "closedDoorReconstructsRoom": true,
+    "doorClearsOpening": true,
+    "seatedMasterMatchesR30": true,
+    "sixProjectedScalesPass": true
+  },
+  "notes": [
+    "Atmosphere IDs 280–282 are study proposals; confirm availability during production registration.",
+    "Opening and furniture layers are exact opaque-base duplicates for occlusion.",
+    "Back room has no walkable polygon. Back actor is only a scale proof.",
+    "Priority-sorted props must be composed behind opening at 138.",
+    "Preview constant-scale GIF translates a standing pose; it is not a walk animation.",
+    "Measured painting differs from the initial Blender furniture layout; see painted-fit.json."
+  ]
+}

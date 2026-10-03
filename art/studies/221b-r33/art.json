@@ -1,0 +1,468 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [
+    {
+      "number": 100,
+      "layers": [
+        {
+          "png": "export/background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/opening.png",
+          "priority": 138
+        },
+        {
+          "png": "export/chair.png",
+          "priority": 146
+        },
+        {
+          "png": "export/foreground-desk.png",
+          "priority": 199
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "number": 205,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/watson-page-0.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/watson-page-0.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-page-1.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-page-2.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-page-3.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-page-4.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 222,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/fire-0.png",
+              "anchor": [
+                20,
+                39
+              ]
+            },
+            {
+              "png": "export/fire-1.png",
+              "anchor": [
+                20,
+                39
+              ]
+            },
+            {
+              "png": "export/fire-2.png",
+              "anchor": [
+                20,
+                39
+              ]
+            },
+            {
+              "png": "export/fire-3.png",
+              "anchor": [
+                20,
+                39
+              ]
+            },
+            {
+              "png": "export/fire-4.png",
+              "anchor": [
+                20,
+                39
+              ]
+            },
+            {
+              "png": "export/fire-5.png",
+              "anchor": [
+                20,
+                39
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 223,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/mantel-lens.png",
+              "anchor": [
+                4,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 225,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/door-0.png",
+              "anchor": [
+                57,
+                113
+              ]
+            },
+            {
+              "png": "export/door-1.png",
+              "anchor": [
+                57,
+                113
+              ]
+            },
+            {
+              "png": "export/door-2.png",
+              "anchor": [
+                57,
+                113
+              ]
+            },
+            {
+              "png": "export/door-3.png",
+              "anchor": [
+                57,
+                113
+              ]
+            },
+            {
+              "png": "export/door-4.png",
+              "anchor": [
+                57,
+                113
+              ]
+            },
+            {
+              "png": "export/door-5.png",
+              "anchor": [
+                57,
+                113
+              ]
+            },
+            {
+              "png": "export/door-6.png",
+              "anchor": [
+                57,
+                113
+              ]
+            },
+            {
+              "png": "export/door-7.png",
+              "anchor": [
+                57,
+                113
+              ]
+            },
+            {
+              "png": "export/door-8.png",
+              "anchor": [
+                57,
+                113
+              ]
+            },
+            {
+              "png": "export/door-9.png",
+              "anchor": [
+                57,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 280,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/fog-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/fog-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/fog-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/fog-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/fog-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/fog-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/fog-6.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/fog-7.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/fog-8.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/fog-9.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/fog-10.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/fog-11.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 281,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/lamp-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/lamp-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/lamp-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/lamp-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/lamp-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 282,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/steam-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/steam-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/steam-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/steam-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/steam-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/steam-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/steam-6.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/steam-7.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/steam-8.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/steam-9.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/steam-10.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/steam-11.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

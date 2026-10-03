@@ -1,0 +1,113 @@
+[
+  {
+    "name": "opening",
+    "expected": [
+      "export/opening.png"
+    ]
+  },
+  {
+    "name": "foreground-desk",
+    "expected": [
+      "export/foreground-desk.png"
+    ]
+  },
+  {
+    "name": "chair",
+    "expected": [
+      "export/chair.png"
+    ]
+  },
+  {
+    "name": "door",
+    "expected": [
+      "export/door-0.png",
+      "export/door-1.png",
+      "export/door-2.png",
+      "export/door-3.png",
+      "export/door-4.png",
+      "export/door-5.png",
+      "export/door-6.png",
+      "export/door-7.png",
+      "export/door-8.png",
+      "export/door-9.png"
+    ]
+  },
+  {
+    "name": "room",
+    "expected": [
+      "export/room-closed.png"
+    ]
+  },
+  {
+    "name": "fire",
+    "expected": [
+      "export/fire-0.png",
+      "export/fire-1.png",
+      "export/fire-2.png",
+      "export/fire-3.png",
+      "export/fire-4.png",
+      "export/fire-5.png"
+    ]
+  },
+  {
+    "name": "lens",
+    "expected": [
+      "export/mantel-lens.png"
+    ]
+  },
+  {
+    "name": "watson-seated",
+    "expected": [
+      "export/watson-page-0.png",
+      "export/watson-page-1.png",
+      "export/watson-page-2.png",
+      "export/watson-page-3.png",
+      "export/watson-page-4.png"
+    ]
+  },
+  {
+    "name": "fog",
+    "expected": [
+      "export/fog-0.png",
+      "export/fog-1.png",
+      "export/fog-2.png",
+      "export/fog-3.png",
+      "export/fog-4.png",
+      "export/fog-5.png",
+      "export/fog-6.png",
+      "export/fog-7.png",
+      "export/fog-8.png",
+      "export/fog-9.png",
+      "export/fog-10.png",
+      "export/fog-11.png"
+    ]
+  },
+  {
+    "name": "lamp",
+    "expected": [
+      "export/lamp-0.png",
+      "export/lamp-1.png",
+      "export/lamp-2.png",
+      "export/lamp-3.png",
+      "export/lamp-4.png",
+      "export/lamp-5.png"
+    ]
+  },
+  {
+    "name": "steam",
+    "expected": [
+      "export/steam-0.png",
+      "export/steam-1.png",
+      "export/steam-2.png",
+      "export/steam-3.png",
+      "export/steam-4.png",
+      "export/steam-5.png",
+      "export/steam-6.png",
+      "export/steam-7.png",
+      "export/steam-8.png",
+      "export/steam-9.png",
+      "export/steam-10.png",
+      "export/steam-11.png"
+    ]
+  }
+]

@@ -1,0 +1,88 @@
+{
+  "cameraUnchanged": true,
+  "door": {
+    "rect": [
+      273,
+      34,
+      315,
+      137
+    ],
+    "widthMetres": 0.78474039388514,
+    "heightMetres": 2.3093788734334115,
+    "worldHinge": [
+      2.8960657393380167,
+      7.473718037001333,
+      0
+    ]
+  },
+  "opening": {
+    "outer": [
+      97,
+      2,
+      257,
+      138
+    ],
+    "inner": [
+      116,
+      24,
+      240,
+      136
+    ],
+    "priority": 138
+  },
+  "backRoom": {
+    "floorBand": [
+      112,
+      125
+    ],
+    "window": [
+      201,
+      26,
+      237,
+      75
+    ],
+    "bench": [
+      139,
+      80,
+      218,
+      119
+    ]
+  },
+  "watson": {
+    "feet": [
+      93,
+      146
+    ],
+    "height": 64,
+    "source": "../221b-r30/export/watson-page-*.png",
+    "note": "Same front-facing chair fit and fixed master as r30; no rescaling."
+  },
+  "fire": {
+    "origin": [
+      15,
+      94
+    ],
+    "canvas": [
+      40,
+      40
+    ],
+    "anchor": [
+      20,
+      39
+    ],
+    "at": [
+      35,
+      133
+    ]
+  },
+  "lens": {
+    "at": [
+      48,
+      74
+    ]
+  },
+  "foreground": {
+    "priority": 199
+  },
+  "note": "Measured painted landmarks supersede blockout furniture positions; camera stays fixed."
+}
