@@ -218,3 +218,41 @@ review and engine registration remain distinct from completed export validation.
 
 After these reviews, return to remaining Holmes directional walks and the cast walks.
 The street-specific raised-collar Watson and reach/case timing remain outstanding.
+
+## Supplied room-planes camera reference
+
+The user supplied `IMG_6537.HEIC` on 2 October as the original television reference
+for [the room-planes brief](room-planes-brief.md). The photograph remains outside
+the repository; these are composition observations for an original 221B layout.
+
+The near table and chair backs overlap the central opening. Dark vertical posts
+and a broad fretwork transom form a distinct middle plane, with a second opening
+on the left offering another view into the rooms beyond. Repeated openings,
+partially hidden furniture and separate pools of window light create depth. The
+actor occupies the near room beside this view through the house, rather than
+standing at the end of a long floor. The apparent tilt of the photographed TV is
+not part of the game camera specification.
+
+For the next blockout, keep the level, frontal camera and horizon 0/fullSize 176.
+Stage Watson, fireplace, landing entrance and the y160–195 walking band in front;
+frame the chemistry room with a separate opening layer. Use a quieter, cooler
+back-room treatment and warmer foreground light within the approved pixel style.
+Check all five front-room actor placements plus one back-room figure before
+painting. R30 remains the source for texture, character masters and prop motion;
+the new composition may require refitting props and their anchors.
+
+## Three-plane 221B review — r33
+
+[R33](../art/studies/221b-r33/index.html) supplies an original composition with the
+front sitting room, separate walnut opening, and chemistry room beyond. The user's
+lighting correction dims both the rear room and landing while preserving the front
+room. The 64-colour palette, fixed camera, Holmes master and Watson page-turn cels
+are retained. The study includes a Blender blockout, refitted 175° solid door,
+fire and lens, proposed rear fog/lamp/steam views 280–282, four picture layers,
+six scale proofs, occlusion comparison and eleven editable Pixelorama projects.
+
+Review r33 before integrating r30's room composition. R30 remains the source of
+approved seated animation and fire keys. Final painted furniture differs from the
+initial blockout, so use r33's measured fit and handoff for placements. Front-room
+walking stays in y160–195; the back room is not walkable. Production registration,
+room scripts and engine code are unchanged.
