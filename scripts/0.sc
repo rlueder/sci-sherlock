@@ -13,6 +13,11 @@
     ;; Portraits (r23) in their gilt frame (view 214), at the bottom on either side: at the
     ;; top they'd cover people's faces, which are near the top of the screen here.
     (textStyle portraitFrame: 214 portraitX: 12 portraitY: -10)
+    ;; The game menu is r32's casebook (view 269): its panel, rows and bullets, the choices in
+    ;; cream that lightens under the pointer.
+    (textStyle menuSkin: 269 menuX: 38 menuY: 11 menuRowX: 10 menuRowY: 29 menuRowStep: 22
+      menuBulletX: 5 menuBulletY: 5 menuTextX: 25 menuTextY: 4
+      menuFore: 60 menuHover: 62 menuPressed: 58 menuDisabled: 51)
     (user walkCursor: 261 lookCursor: 262 doCursor: 263 talkCursor: 264 waitCursor: 265)
     (iconBar view: 266 skin: 267 size: 32 left: 16 spacing: 42 top: 8)
     (inventory skin: 268 x: 32 y: 30 cols: 4 slotLeft: 13 slotTop: 28 slotWidth: 60 slotHeight: 47 inset: 7 iconSize: 32)

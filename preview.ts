@@ -86,6 +86,14 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   assert(arrival.some((s) => /Toby Vance, sir/.test(s)), arrival.join("\n"));
   assert(!obj("mrsHudson"), "Mrs Hudson has gone back down");
   shot("221b");
+  // Escape: the casebook, painted, its first row lit under the pointer; Escape again carries on.
+  inp.push({ type: EventType.KeyDown, message: 27, modifiers: 0 }); frames(2);
+  assert.equal(prop(global("dialog"), "skin"), 269, "the game menu is the casebook");
+  assert.deepEqual(menu().map((m) => m.text), ["Save the game", "Restore a game", "Start again", "Text speed: normal", "Speech: voice and text", "Carry on"]);
+  [inp.x, inp.y] = [100, 51]; frames(2);
+  capture?.("casebook", latest!);
+  inp.push({ type: EventType.KeyDown, message: 27, modifiers: 0 }); frames(2);
+  assert.equal(global("dialog"), 0);
   verb(4); click(303, 80);
   assert.match(line(), /visitor/, "the door waits for the client"); finish();
   // Toby's story: four topics, then the one that takes the case.
