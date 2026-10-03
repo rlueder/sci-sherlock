@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "maxColours": 68,
+  "palette": "palette.json",
+  "pictures": [],
+  "views": [
+    {
+      "number": 265,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/wait-cursor.png",
+              "anchor": [
+                8,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

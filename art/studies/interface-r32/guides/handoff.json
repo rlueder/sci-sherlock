@@ -1,0 +1,116 @@
+{
+  "status": "Art and interaction review; no game/web integration",
+  "palette": "r28 additive 68-colour palette, no production palette mutation",
+  "sourceBounds": [
+    [
+      226,
+      78,
+      424,
+      713
+    ],
+    [
+      965,
+      78,
+      754,
+      721
+    ]
+  ],
+  "wait": {
+    "view": 265,
+    "canvas": [
+      16,
+      16
+    ],
+    "anchor": [
+      8,
+      8
+    ],
+    "png": "export/wait-cursor.png",
+    "largeSizes": [
+      24,
+      32
+    ],
+    "animation": "Static in this pass; do not rotate a square canvas around a different hotspot."
+  },
+  "sound": {
+    "size": [
+      112,
+      36
+    ],
+    "states": [
+      "normal",
+      "hover",
+      "pressed",
+      "disabled"
+    ],
+    "values": [
+      "on",
+      "off"
+    ],
+    "webOnly": true,
+    "aria": "Use a real button labelled Sound, aria-pressed=true when audio is enabled; icon and label both communicate state. Wire to the existing audio toggle."
+  },
+  "menu": {
+    "size": [
+      244,
+      178
+    ],
+    "at": [
+      38,
+      11
+    ],
+    "rowSize": [
+      224,
+      22
+    ],
+    "rowOrigin": [
+      10,
+      29
+    ],
+    "rowStep": 22,
+    "bulletSize": [
+      12,
+      12
+    ],
+    "bulletOffset": [
+      5,
+      5
+    ],
+    "textOrigin": [
+      25,
+      4
+    ],
+    "font": "r29 New Century Schoolbook 12px regular in every item state; original metrics",
+    "textColours": {
+      "normal": "#d3b895",
+      "hover": "#f5d8b1",
+      "pressed": "#cab08f",
+      "disabled": "#b68d62"
+    },
+    "labels": [
+      "Save the game",
+      "Restore a game",
+      "Start again",
+      "Text speed: normal",
+      "Speech: voice and text",
+      "Carry on"
+    ],
+    "states": [
+      "normal",
+      "hover",
+      "pressed",
+      "disabled"
+    ],
+    "interaction": [
+      "Keep item text regular in every state; hover/focus use lighter purple and cream shades, never a weight change.",
+      "Pressed row uses inset shadow; moving focus never activates an item.",
+      "Escape/Carry on closes; Arrow keys move focus; Enter/Space activate.",
+      "Restore is disabled when no save exists.",
+      "Start again should retain the existing confirmation flow.",
+      "Use live text/state values, not baked screenshot labels.",
+      "Do not reuse the dialogue frame to size this menu."
+    ]
+  },
+  "fontLicense": "../typography-r29/source/upstream/COPYING",
+  "nativeProjects": 9
+}

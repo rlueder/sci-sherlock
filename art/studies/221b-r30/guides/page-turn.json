@@ -1,0 +1,175 @@
+{
+  "view": 205,
+  "loop": 1,
+  "direction": "forward through paper; screen-left to screen-right using Watson’s anatomical right hand",
+  "canvas": [
+    72,
+    120
+  ],
+  "anchor": [
+    36,
+    113
+  ],
+  "at": [
+    94,
+    146
+  ],
+  "registration": [
+    {
+      "key": 1,
+      "cell": [
+        0,
+        0,
+        543,
+        740
+      ],
+      "crown": 38,
+      "sole": 730,
+      "headCentre": 300.5,
+      "nativeHeight": 64
+    },
+    {
+      "key": 2,
+      "cell": [
+        543,
+        0,
+        543,
+        740
+      ],
+      "crown": 37,
+      "sole": 731,
+      "headCentre": 237,
+      "nativeHeight": 64
+    },
+    {
+      "key": 3,
+      "cell": [
+        0,
+        740,
+        543,
+        708
+      ],
+      "crown": 10,
+      "sole": 694,
+      "headCentre": 300.5,
+      "nativeHeight": 64
+    },
+    {
+      "key": 4,
+      "cell": [
+        543,
+        740,
+        543,
+        708
+      ],
+      "crown": 10,
+      "sole": 694,
+      "headCentre": 239.5,
+      "nativeHeight": 64
+    }
+  ],
+  "maskPolygon": [
+    [
+      52,
+      73
+    ],
+    [
+      48,
+      73
+    ],
+    [
+      48,
+      71
+    ],
+    [
+      24,
+      71
+    ],
+    [
+      24,
+      68
+    ],
+    [
+      18,
+      71
+    ],
+    [
+      14,
+      77
+    ],
+    [
+      15,
+      85
+    ],
+    [
+      22,
+      87
+    ],
+    [
+      49,
+      87
+    ],
+    [
+      55,
+      84
+    ],
+    [
+      55,
+      77
+    ]
+  ],
+  "keyDurationsMs": [
+    2800,
+    200,
+    200,
+    200,
+    200,
+    400
+  ],
+  "timeline": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    4,
+    4,
+    0,
+    0,
+    0,
+    0
+  ],
+  "stepMs": 100,
+  "totalMs": 4000,
+  "bodyOutsideMaskIdentical": true,
+  "playback": "Loop 0 is neutral. Trigger loop 1 occasionally; play cels 1–4 at 200ms each, then return to loop 0. Review repeats after a reading hold; production may wait 6–10 seconds."
+}

@@ -169,3 +169,52 @@ per-character metrics; 380 glyphs are checked against decoded PNG pixels. Faithf
 integration must preserve source metrics rather than squeezing letters into 8px cells.
 The current SCI font representation has only glyph width and cannot represent the
 original independent advance/negative bearing. No runtime registration has occurred.
+
+## 221B camera repaint and texture — r30
+
+[R30](../art/studies/221b-r30/index.html) follows the new room camera brief: level
+frontal camera, horizon 0/fullSize 176, unchanged Holmes master and five scale checks.
+It supplies separate background/desk, ten door cels, six fire cels, removable lens
+and a coherent seated Watson redraw, with Blender camera/prop-fit sources and
+Pixelorama masters. The user preferred r13's richer pixel texture; the latest
+painting restores broken material colours while retaining frontal geometry.
+
+This is a visual-review candidate. R13 remains in production; r30 now includes the seated page turn.
+Baker Street camera repaint is the next room task. Use r30's handoff for proposed
+walkable polygon, door arrival and new placements, not r13's per-column scale map.
+
+R30 review corrections: Watson's turned/low pose was rejected. The replacement is
+front-facing at [94,146], with a 64px seated silhouette and pelvis set back on the
+cushion. The software-projected door has been replaced by native Blender renders
+of a solid 45mm leaf with jamb/lintel holdouts; `source/door-solid.blend` retains the
+animation and packed texture. Ten cels through 175°, a fixed hinge, exact closed reconstruction and a fully
+clear opening at cel 9 are checked. The room painting and character scale rule are unchanged.
+
+
+R30 page-turn delivery: view 205 loop 0 retains the neutral, loop 1 supplies neutral
+plus pinch/lift/cross/settle keys. Hands, forearms and paper use registered whole-pose
+renders; pixels outside the motion mask are identical to the seated master. Play
+cels 1–4 at 200 ms each and return to neutral; prefer a 6–10 second reading pause
+between triggers. The study includes scene/isolated GIFs, key sheet and JSON timing.
+The corrected turn advances from screen-left to screen-right. Door timing is ten
+cels at 120 ms, held open; fire is six painted cels at 120 ms on a 40×40 canvas,
+anchor [20,39], with curling tips and embers behind an unchanged grate. Visual
+review and engine registration remain distinct from completed export validation.
+
+## Current review queue — r30–r32
+
+1. R30 now includes the front-facing seated Watson page turn and its timing; the
+   initial 221B handoff is committed as `cf1c18a`. The subsequent full door swing,
+   organic fire and forward page-turn corrections are in review. Production
+   integration stays with the engineer.
+2. [R31 Baker Street](../art/studies/baker-street-r31/index.html) applies the level
+   camera while restoring the earlier pixel style after the realistic repaint was
+   rejected. The cab is staged diagonally away; actual Holmes scale proofs, route,
+   layers and lamp cels are supplied. Visual review is pending.
+3. [R32 menu and controls](../art/studies/interface-r32/index.html) supplies the
+   detailed hourglass, Sound on/off states and Victorian menu with brass bullets,
+   hover/focus, pressed and disabled rows. Interactive preview and engine handoff
+   are included; game/web integration is pending.
+
+After these reviews, return to remaining Holmes directional walks and the cast walks.
+The street-specific raised-collar Watson and reach/case timing remain outstanding.

@@ -1,0 +1,177 @@
+{
+  "status": "r30 visual review; no production registration",
+  "canvas": [
+    320,
+    200
+  ],
+  "pixelAspect": 1.2,
+  "perspective": {
+    "horizon": 0,
+    "fullSize": 176
+  },
+  "walkable": [
+    [
+      112,
+      145
+    ],
+    [
+      299,
+      145
+    ],
+    [
+      308,
+      195
+    ],
+    [
+      104,
+      195
+    ],
+    [
+      104,
+      160
+    ],
+    [
+      112,
+      155
+    ]
+  ],
+  "doorArrival": [
+    285,
+    148
+  ],
+  "hero": [
+    200,
+    176
+  ],
+  "props": {
+    "fire": {
+      "view": 222,
+      "at": [
+        158,
+        141
+      ],
+      "scale": false,
+      "celDurationMs": 120,
+      "loop": true
+    },
+    "lens": {
+      "view": 223,
+      "at": [
+        160,
+        77
+      ],
+      "scale": false
+    },
+    "door": {
+      "view": 225,
+      "at": [
+        313,
+        137
+      ],
+      "scale": false,
+      "angles": [
+        0,
+        20,
+        40,
+        60,
+        80,
+        100,
+        120,
+        140,
+        160,
+        175
+      ],
+      "celDurationMs": 120,
+      "openMs": 1080,
+      "closedCel": 0,
+      "openCel": 9
+    },
+    "watson": {
+      "view": 205,
+      "at": [
+        94,
+        146
+      ],
+      "scale": false,
+      "notes": "Seated art is already fitted to this chair. Do not apply automatic actor scaling a second time."
+    }
+  },
+  "hotspots": {
+    "window": [
+      9,
+      16,
+      64,
+      108
+    ],
+    "violin": [
+      15,
+      99,
+      58,
+      110
+    ],
+    "correspondence": [
+      103,
+      47,
+      118,
+      73
+    ],
+    "slipper": [
+      124,
+      93,
+      134,
+      128
+    ],
+    "bench": [
+      199,
+      83,
+      257,
+      143
+    ],
+    "door": [
+      263,
+      36,
+      313,
+      137
+    ],
+    "watson": [
+      72,
+      81,
+      114,
+      147
+    ]
+  },
+  "foreground": {
+    "priority": 199,
+    "notes": "Cropped desk feet lie below frame; keep walkable x>=104 beside desk."
+  },
+  "seated": {
+    "height": 64,
+    "canvas": [
+      72,
+      120
+    ],
+    "anchor": [
+      36,
+      113
+    ],
+    "masterSha256": "6c5fce560d32c37f739e60dc5e4e9dec0de81f05e6c180c4e6c4d8b438640650",
+    "pageTurn": {
+      "loop": 1,
+      "cels": 5,
+      "timing": "guides/page-turn.json",
+      "lockedBody": true
+    }
+  },
+  "checks": {
+    "closedDoorReconstructsPaintExactly": true,
+    "fiveProjectedHeightsMatchScaleRule": true,
+    "doorHingeFixed": true,
+    "doorDistinctCels": 7,
+    "doorClearsOpening": true,
+    "doorThicknessMetres": 0.045,
+    "doorRenderedInBlender": true
+  },
+  "preview": {
+    "constantScale": "Standing sprite translated at constant y to isolate scaling; not a walking-cycle demonstration."
+  }
+}

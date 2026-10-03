@@ -1,0 +1,180 @@
+{
+  "status": "r31 visual review; no production registration",
+  "picture": 101,
+  "canvas": [
+    320,
+    200
+  ],
+  "pixelAspect": 1.2,
+  "perspective": {
+    "horizon": 0,
+    "fullSize": 176
+  },
+  "scriptSha256": "b6c9ce01007ef86dfcdf97b4c1908e175dc993542e49af284b3a2ee67df6b9ea",
+  "walkable": [
+    [
+      30,
+      145
+    ],
+    [
+      111,
+      145
+    ],
+    [
+      111,
+      171
+    ],
+    [
+      160,
+      185
+    ],
+    [
+      227,
+      189
+    ],
+    [
+      251,
+      145
+    ],
+    [
+      312,
+      145
+    ],
+    [
+      312,
+      195
+    ],
+    [
+      30,
+      195
+    ]
+  ],
+  "route": [
+    [
+      44,
+      149
+    ],
+    [
+      79,
+      165
+    ],
+    [
+      117,
+      180
+    ],
+    [
+      166,
+      193
+    ],
+    [
+      237,
+      193
+    ],
+    [
+      248,
+      170
+    ]
+  ],
+  "doorArrival": [
+    44,
+    149
+  ],
+  "cabApproach": [
+    248,
+    170
+  ],
+  "hero": [
+    112,
+    176
+  ],
+  "scaleChecks": [
+    {
+      "feet": [
+        44,
+        149
+      ],
+      "scale": 0.8465909090909091,
+      "height": 89.73863636363636
+    },
+    {
+      "feet": [
+        290,
+        149
+      ],
+      "scale": 0.8465909090909091,
+      "height": 89.73863636363636
+    },
+    {
+      "feet": [
+        44,
+        193
+      ],
+      "scale": 1.0965909090909092,
+      "height": 116.23863636363636
+    },
+    {
+      "feet": [
+        290,
+        193
+      ],
+      "scale": 1.0965909090909092,
+      "height": 116.23863636363636
+    },
+    {
+      "feet": [
+        122,
+        171
+      ],
+      "scale": 0.9715909090909091,
+      "height": 102.98863636363636
+    }
+  ],
+  "features": {
+    "door221": [
+      15,
+      29,
+      65,
+      133
+    ],
+    "cab": [
+      120,
+      19,
+      250,
+      184
+    ]
+  },
+  "gasLamp": {
+    "view": 226,
+    "at": [
+      99,
+      132
+    ],
+    "canvas": [
+      24,
+      113
+    ],
+    "anchor": [
+      11,
+      112
+    ],
+    "drawOrigin": [
+      88,
+      20
+    ],
+    "celDurationMs": 450,
+    "scale": false
+  },
+  "foreground": {
+    "lamp": 132,
+    "rail": 133
+  },
+  "notes": [
+    "Cab points diagonally away; camera itself has zero yaw, pitch and roll.",
+    "Blender contains physical stand-ins; generated painting is not a calibrated render. Final landmarks measured here supersede blockout object boxes.",
+    "Walk polygon skirts both wheels; proposed cab.do destination replaces old [190,156]. Check approach and interaction distance in the engine.",
+    "Near lamp and railing lie behind the walking band; depth priorities reflect their actual painted bases, not arbitrary foreground-over-everything values.",
+    "Horse breath, two cab lamps, rear driver and hall lamp are painted static.",
+    "Watson raised-collar street variant remains a separate cast task.",
+    "No walking animation is demonstrated by the standing scale proofs."
+  ]
+}
