@@ -2329,6 +2329,86 @@
       ]
     },
     {
+      "number": 269,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/interface-r32/export/menu-empty.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/interface-r32/export/row-normal.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/interface-r32/export/row-hover.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/interface-r32/export/row-pressed.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/interface-r32/export/row-disabled.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "studies/interface-r32/export/bullet-normal.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/interface-r32/export/bullet-hover.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/interface-r32/export/bullet-pressed.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/interface-r32/export/bullet-disabled.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "number": 270,
       "loops": [
         {
