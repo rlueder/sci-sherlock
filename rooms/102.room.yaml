@@ -5,6 +5,8 @@
 # layers follow its handoff (guides/handoff.json): the bench (136) and the bay's frame (138)
 # stand in front of anyone behind them, the desk (199) in front of everyone. The picture
 # has the passage behind the clock painted in; the clock's cel 0 covers it.
+# r43 (art/studies/environment-r43) adds the pendulum swinging behind the closed case's
+# glass, rain and a changing sky on the window, and the mouse's runs under the bench.
 room: 102
 picture: 102
 music: 121
@@ -22,6 +24,13 @@ features:
   # The way down, once the case is open (the closed clock covers it).
   stair: { rect: [244, 24, 286, 154], sightAngle: 360 }
 props:
+  # The window: a sky that slowly clouds over and clears, and rain on the glass.
+  sky: { view: 274, at: [12, 20], cycle: forward }
+  rain: { view: 270, at: [12, 20], cycle: forward }
+  # The one clock still going, over the closed case; hidden before the case opens.
+  pendulum: { view: 272, at: [257, 65], cycle: forward }
+  # Now and then it runs under the bench, between the bay's uprights (scripts/10.sc).
+  mouse: { view: 273, at: [93, 135], moves: true, script: Scurry, scale: false }
   # The lamp's light on the bench, flickering: the whole room, transparent but for the glow.
   light: { view: 220, at: [0, 0], cycle: forward }
   # The tall-case clock, closed; then the same clock as it swings open (from the reveal on).
@@ -34,6 +43,12 @@ props:
 characters:
   watson: { name: Watson, portrait: 210 }
 properties:
+  # Only there to look at: clicks go to the window and the clock behind them.
+  sky: { cycleSpeed: 240, fixPriority: 1, priority: 89, clickable: 0 }
+  rain: { cycleSpeed: 8, fixPriority: 1, priority: 90, clickable: 0 }
+  pendulum: { cycleSpeed: 5, fixPriority: 1, priority: 151, clickable: 0 }
+  # Behind its hiding places (the picture's layer at 140), in front of the bench.
+  mouse: { cycleSpeed: 4, fixPriority: 1, priority: 139, clickable: 0 }
   light: { cycleSpeed: 12, fixPriority: 1, priority: 130, clickable: 0 }
   caseDoor: { cycleSpeed: 9 }
   filings: { fixPriority: 1, priority: 155 }

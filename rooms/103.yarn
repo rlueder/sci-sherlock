@@ -34,7 +34,7 @@ Hero: Not yet, Watson. Let us learn who is down there before they learn we are h
 
 title: entranceDoor.look
 ---
-The door we came through. On the other side, Thorne's clock stands open. #line:103-009
+The back of Thorne's clock: bare planks, an iron latch, and the pendulum swinging past a slot. #line:103-009
 ===
 
 title: watson.talk
