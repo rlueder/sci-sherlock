@@ -1,8 +1,70 @@
-# Art delivery status — 2 October 2026
+# Art delivery status — 3 October 2026
 
 The workshop is in the game as of `975b29c`. The approved workshop v6 remains the
 style and scale reference. Technical validation, visual approval and integration
 are separate statuses.
+
+## Current Baker Street revision — r41
+
+The user selected **r35 option A, cab on the right**. [Baker Street r41](../art/studies/baker-street-r41/index.html)
+narrows its pavement, adds glow to all three door fanlights, and provides a small
+driver nod, visible pipe puffs and an independent cab-lantern flicker. Five editable Pixelorama sources,
+a Blender placement guide, native palette exports and an animated review accompany
+the study. Candidate views 284–286 and their precise timing/placement are documented
+in its handoff. The narrowed walking strip and old view-226 lamp position need runtime
+updates on integration. Production registration is unchanged.
+
+## Current stair revision — r40
+
+[Dark hallway r40](../art/studies/stair-r40/index.html) replaces the map with a single
+flickering back-wall lamp and gives the descent a darker atmosphere. A worn runner
+crosses left to right across the hall, with its left end visible beneath the door
+and its right end off-screen. The right-hand scarf now visibly loops over
+its middle hook. The steep stair, plain enclosing walls and single central rail remain.
+
+The lamp has six native cels and a 3.84-second irregular timeline, documented with its
+80×76 replacement patch, placement and candidate view 283 in
+[lamp-animation.json](../art/studies/stair-r40/guides/lamp-animation.json). No root
+registration changes. Blender guides, the static master, exact prompts, five editable
+Pixelorama projects, native palette exports and an animated scene preview accompany
+the review. The room-103 clock-description mismatch remains in the handoff notes.
+R35 option A is selected; r41 above is the current Baker Street revision.
+
+## Latest layout correction — 3 October
+
+[Room layouts r35](../art/studies/room-layouts-r35/index.html) supersedes r34's street
+and stair as the current review direction. The stair descends straight away through
+paired rails. Three researched Baker Street alternatives place a cropped cab/horse
+in the foreground and 221B within an attached terrace. The earlier recommendation was option B; the user subsequently selected option A,
+now revised in r41. All four have native 320×200/64-colour
+exports, Blender guides, editable Pixelorama projects and actor scale proofs.
+
+The [research and workflow notes](../art/studies/room-layouts-r35/README.md) distinguish
+period evidence from the plausible but unverified paving choice. Painted actor bands
+differ from the initial blockout and are recorded separately. Final foreground cleanup
+and selected street animations follow composition selection. No production registration
+has changed. R34's workshop and r33's 221B interior remain the current room studies.
+
+## Latest room pass — 3 October
+
+221B r33's approved depth/lighting/pixel pass is committed, pushed and merged as
+`44cfcb0` ([PR 33](https://github.com/rlueder/sci-sherlock/pull/33)). This is an art
+study merge; r33 is not yet registered as the game room. The current registration
+already includes r30/r31 room work and r32 interface assets. Older dated sections
+below retain the delivery history rather than describing the latest registry.
+
+[Room planes r34](../art/studies/room-planes-r34/index.html) extends the same camera
+and treatment to Baker Street 101, workshop 102 and the hidden stair 103. It contains
+three Blender room guides, 17 actor scale checks, native 64-colour backgrounds,
+separate occlusion layers, local lamp animation and a reprojected eight-cel clock
+reveal. The approved clock master and clue sprites are reused. Fifteen editable
+Pixelorama projects and a measured [handoff](../art/studies/room-planes-r34/guides/handoff.json)
+accompany the review. R34 remains unregistered pending visual review.
+
+Remaining integration work for these room candidates: update script approaches and
+hotspots, review reach/case timing, and refit the old workshop weather/mouse/pendulum
+masks before reusing those animations. The stair scale proof uses the approved side
+master; it does not claim a new back-facing character performance.
 
 ## In the game
 

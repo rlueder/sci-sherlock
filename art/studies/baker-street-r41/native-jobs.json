@@ -1,0 +1,45 @@
+[
+  {
+    "name": "room",
+    "expected": [
+      "export/background.png"
+    ]
+  },
+  {
+    "name": "foreground",
+    "expected": [
+      "export/foreground.png"
+    ]
+  },
+  {
+    "name": "driver",
+    "expected": [
+      "export/driver-0.png",
+      "export/driver-1.png"
+    ]
+  },
+  {
+    "name": "cab-lamp",
+    "expected": [
+      "export/cab-lamp-0.png",
+      "export/cab-lamp-1.png",
+      "export/cab-lamp-2.png",
+      "export/cab-lamp-3.png",
+      "export/cab-lamp-4.png"
+    ]
+  },
+  {
+    "name": "pipe-smoke",
+    "expected": [
+      "export/pipe-smoke-0.png",
+      "export/pipe-smoke-1.png",
+      "export/pipe-smoke-2.png",
+      "export/pipe-smoke-3.png",
+      "export/pipe-smoke-4.png",
+      "export/pipe-smoke-5.png",
+      "export/pipe-smoke-6.png",
+      "export/pipe-smoke-7.png",
+      "export/pipe-smoke-8.png"
+    ]
+  }
+]

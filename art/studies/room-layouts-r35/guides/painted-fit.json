@@ -1,0 +1,251 @@
+{
+  "status": "Composition options, not production resources",
+  "camera": {
+    "horizon": 0,
+    "fullSize": 176,
+    "pixelAspect": 1.2
+  },
+  "notes": [
+    "Street placements follow the final painted pavement, which differs from the Blender blockout.",
+    "Street feet are farther back than 221B; the same perspective formula sizes the unchanged masters.",
+    "Cab/horse masks are proof extractions; select a composition before final occlusion cleanup and animation.",
+    "Stair axis runs along world +Y with decreasing Z, no lateral run.",
+    "The stair run is an artistic long shallow flight for visibility under the level camera, not a surveyed period stair."
+  ],
+  "variants": {
+    "street-a": {
+      "holmes": [
+        139,
+        149
+      ],
+      "watson": [
+        187,
+        149
+      ],
+      "walkable": [
+        [
+          48,
+          140
+        ],
+        [
+          207,
+          140
+        ],
+        [
+          213,
+          157
+        ],
+        [
+          46,
+          157
+        ]
+      ],
+      "door": [
+        71,
+        43,
+        102,
+        116
+      ],
+      "scaleChecks": [
+        [
+          48,
+          140
+        ],
+        [
+          207,
+          140
+        ],
+        [
+          213,
+          157
+        ],
+        [
+          46,
+          157
+        ],
+        [
+          139,
+          149
+        ]
+      ],
+      "foregroundPriority": 199,
+      "plaque": [
+        77,
+        39
+      ]
+    },
+    "street-b": {
+      "holmes": [
+        178,
+        150
+      ],
+      "watson": [
+        261,
+        151
+      ],
+      "walkable": [
+        [
+          117,
+          140
+        ],
+        [
+          292,
+          140
+        ],
+        [
+          296,
+          161
+        ],
+        [
+          111,
+          161
+        ]
+      ],
+      "door": [
+        192,
+        39,
+        223,
+        115
+      ],
+      "scaleChecks": [
+        [
+          117,
+          140
+        ],
+        [
+          292,
+          140
+        ],
+        [
+          296,
+          161
+        ],
+        [
+          111,
+          161
+        ],
+        [
+          178,
+          150
+        ]
+      ],
+      "foregroundPriority": 199,
+      "plaque": [
+        199,
+        32
+      ]
+    },
+    "street-c": {
+      "holmes": [
+        128,
+        163
+      ],
+      "watson": [
+        178,
+        164
+      ],
+      "walkable": [
+        [
+          45,
+          152
+        ],
+        [
+          202,
+          152
+        ],
+        [
+          204,
+          173
+        ],
+        [
+          42,
+          173
+        ]
+      ],
+      "door": [
+        90,
+        48,
+        119,
+        126
+      ],
+      "scaleChecks": [
+        [
+          45,
+          152
+        ],
+        [
+          202,
+          152
+        ],
+        [
+          204,
+          173
+        ],
+        [
+          42,
+          173
+        ],
+        [
+          128,
+          163
+        ]
+      ],
+      "foregroundPriority": 199,
+      "plaque": [
+        93,
+        42
+      ]
+    },
+    "stair": {
+      "holmes": [
+        126,
+        178
+      ],
+      "watson": [
+        211,
+        181
+      ],
+      "walkable": [
+        [
+          64,
+          161
+        ],
+        [
+          246,
+          161
+        ],
+        [
+          256,
+          195
+        ],
+        [
+          59,
+          195
+        ]
+      ],
+      "scaleChecks": [
+        [
+          64,
+          161
+        ],
+        [
+          246,
+          161
+        ],
+        [
+          256,
+          195
+        ],
+        [
+          59,
+          195
+        ],
+        [
+          126,
+          178
+        ]
+      ],
+      "foregroundPriority": 153
+    }
+  }
+}

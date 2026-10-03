@@ -1,0 +1,50 @@
+[
+  {
+    "name": "street-a",
+    "expected": [
+      "export/street-a-background.png"
+    ]
+  },
+  {
+    "name": "street-a-foreground",
+    "expected": [
+      "export/street-a-foreground.png"
+    ]
+  },
+  {
+    "name": "street-b",
+    "expected": [
+      "export/street-b-background.png"
+    ]
+  },
+  {
+    "name": "street-b-foreground",
+    "expected": [
+      "export/street-b-foreground.png"
+    ]
+  },
+  {
+    "name": "street-c",
+    "expected": [
+      "export/street-c-background.png"
+    ]
+  },
+  {
+    "name": "street-c-foreground",
+    "expected": [
+      "export/street-c-foreground.png"
+    ]
+  },
+  {
+    "name": "stair",
+    "expected": [
+      "export/stair-background.png"
+    ]
+  },
+  {
+    "name": "stair-foreground",
+    "expected": [
+      "export/stair-foreground.png"
+    ]
+  }
+]

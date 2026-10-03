@@ -1,0 +1,88 @@
+# Dark hallway with lamp and runner — r40
+
+[Open the animated room and construction views](index.html).
+
+R40 replaces r39's map with one flickering gas wall lamp, darkens the hallway and
+adds a worn burgundy runner. The runner's long axis runs **left to right**, parallel
+to the doorway wall, with bare floor before the stair threshold. Its visible left end starts roughly beneath
+the middle of the left door; its right end continues off-screen. The right-hand scarf
+now visibly loops over the middle coat hook. The table, umbrella, letters and brass
+tray remain, while the steep lower stair disappears into shadow.
+
+## Geometry and static painting
+
+`build-guides.py` retains the connected r38 stair and box enclosure. The single
+central guard, 0.95 m flight widths, 0.21 m rises, 0.38 m runs and landing at -1.68 m
+are unchanged. The lower return ends at -3.36 m. The camera remains horizon 0,
+fullSize 176, with five standing-scale checks. The runner reference is 4.55 × 1.1 m
+across the foreground floor; a cloth fold and two ends demonstrate scarf attachment.
+The lamp replaces the map plane on the back wall. Blender materials are placement
+guides, not the painting's final lighting.
+
+The built-in OpenAI ImageGen tool edited the r39 painting. Executed prompts:
+
+- `generated/stair-prompt.txt`: lamp, dark atmosphere and initial runner.
+- `generated/runner-and-scarf-prompt.txt`: turn the runner left/right and attach the
+  scarf visibly to the middle hook. The earlier painting is retained as
+  `generated/stair-before-runner-and-scarf-fix.png`; the selected result is
+  `generated/stair.png`.
+- `generated/runner-left-end-prompt.txt`: reveal the left end of the runner beneath
+  the left door, preserving the off-screen right end. The prior master is retained
+  as `generated/stair-before-left-end-fix.png`.
+
+`convert.ts` applies the established nearest-neighbour sampling and fixed 64-colour
+mapping at 320×200, without smoothing or dithering. Review images display the 1.2
+vertical pixel aspect. Native conversion was inspected for shadow readability.
+The painting interprets the Blender guide rather than exactly reproducing its pixels.
+
+## Lamp animation
+
+`animate.ts` preserves the static master and creates six native-pixel lamp cels.
+Small flame-tip changes are confined to the glass. A bounded amber illumination mask
+changes nearby warm plaster colours; the iron housing, furniture, rug and rest of the
+room stay fixed. This produces a localized flicker rather than a whole-room pulse.
+The lamp uses the same fixed palette and binary alpha policy as the room.
+
+- Candidate view: **283**, loop 0, cels 0–5; not registered in production.
+- Patch: **80×76**, placed at **[121, 22]**, anchor **[0, 0]**, candidate priority 80.
+- Playback: 32 entries × 120 ms = **3.84 seconds**, irregular ordering with holds.
+- Exact order and light levels: `guides/lamp-animation.json`.
+- Replace the same opaque patch each cel; do not use additive blending. This clears
+  the old flame and prevents trails. Cel 0 matches the base pixels exactly.
+- `source/lamp.pxo` contains the six distinct cels. Its simple sequential preview is
+  not the final rhythm; use the documented timeline or the exported review GIF.
+
+Assertions check six distinct states, unchanged pixels outside the patch, and cel-0
+identity with the base. GIF compression verifies identical decoded frames.
+`native-export-check.json` compares all exported PNGs with actual Pixelorama exports.
+
+## Sources and handoff
+
+Five Pixelorama projects cover the room, door, wall return, right furniture patch and
+lamp. Furniture and wall patches duplicate the base for fixed-position editing and
+occlusion; they are not movable cutouts. The runner is painted into the background
+and has no collision. The upper landing remains the only walkable surface. The room
+and lamp are review candidates; production registration and story logic are unchanged.
+
+The room-103 script still describes a visible pendulum whereas the picture has a
+plain entrance door. `guides/handoff.json` retains this integration issue for the
+engineer. No new object interactions are implied by the furnishing details.
+
+Blender, Pixelorama and the TypeScript workflow are open source. ImageGen is the
+proprietary static painting step; exact prompts and generated masters are retained.
+
+## Reproduce
+
+```sh
+"$BLENDER_BIN" -b --python art/studies/stair-r40/build-guides.py
+node --import tsx art/studies/stair-r40/convert.ts
+node --import tsx art/studies/stair-r40/build.ts
+node --import tsx art/studies/stair-r40/animate.ts
+node --import tsx art/source/compress-study-gifs.ts art/studies/stair-r40/review
+PIXELORAMA_BIN="$PIXELORAMA_BIN" node --import tsx art/source/verify-study-native.ts art/studies/stair-r40
+pnpm art check art/studies/stair-r40/art.json
+pnpm typecheck
+```
+
+Run `animate.ts` after `build.ts`: it adds the candidate lamp view and native-export
+job to the study manifest. The saved paintings are inputs, not regenerated by these commands.

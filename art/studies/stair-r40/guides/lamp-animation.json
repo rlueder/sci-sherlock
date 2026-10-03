@@ -1,0 +1,68 @@
+{
+  "status": "candidate view 283; not registered",
+  "origin": [
+    121,
+    22
+  ],
+  "size": [
+    80,
+    76
+  ],
+  "anchor": [
+    0,
+    0
+  ],
+  "priority": 80,
+  "tickMs": 120,
+  "timeline": [
+    0,
+    0,
+    1,
+    0,
+    2,
+    0,
+    0,
+    4,
+    1,
+    3,
+    4,
+    0,
+    2,
+    2,
+    0,
+    0,
+    1,
+    4,
+    0,
+    5,
+    2,
+    0,
+    0,
+    4,
+    1,
+    0,
+    2,
+    0,
+    4,
+    0,
+    0,
+    0
+  ],
+  "loopMs": 3840,
+  "cels": 6,
+  "levels": [
+    0,
+    -0.14,
+    0.08,
+    -0.26,
+    -0.06,
+    0.14
+  ],
+  "compositing": "Opaque local replacement patch: always replace at the same position to clear the preceding flame. Do not use additive blending.",
+  "scope": "Only the flame and a bounded pool of amber light change. Housing, furniture, rug and room remain fixed.",
+  "validation": {
+    "uniqueCels": 6,
+    "cel0MatchesBase": true,
+    "outsidePatchUnchanged": true
+  }
+}

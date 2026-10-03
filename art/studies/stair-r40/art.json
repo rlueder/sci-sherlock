@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [
+    {
+      "number": 103,
+      "layers": [
+        {
+          "png": "export/background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/entrance-door.png",
+          "priority": 154
+        },
+        {
+          "png": "export/wall-return.png",
+          "priority": 152
+        },
+        {
+          "png": "export/hall-furnishings.png",
+          "priority": 158
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "number": 283,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/lamp-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/lamp-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/lamp-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/lamp-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/lamp-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "room",
+    "expected": [
+      "export/background.png"
+    ]
+  },
+  {
+    "name": "entrance-door",
+    "expected": [
+      "export/entrance-door.png"
+    ]
+  },
+  {
+    "name": "opening-frame",
+    "expected": [
+      "export/opening-frame.png"
+    ]
+  }
+]

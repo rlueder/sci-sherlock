@@ -1,0 +1,348 @@
+{
+  "status": "Review candidate; no production registration changed",
+  "canvas": [
+    320,
+    200
+  ],
+  "pixelAspect": 1.2,
+  "perspective": {
+    "horizon": 0,
+    "fullSize": 176
+  },
+  "rooms": {
+    "101": {
+      "name": "street",
+      "walkable": [
+        [
+          55,
+          160
+        ],
+        [
+          308,
+          160
+        ],
+        [
+          308,
+          195
+        ],
+        [
+          55,
+          195
+        ]
+      ],
+      "arrival": [
+        64,
+        174
+      ],
+      "hero": [
+        167,
+        176
+      ],
+      "hotspots": {
+        "door": [
+          16,
+          43,
+          57,
+          120
+        ],
+        "cab": [
+          116,
+          43,
+          197,
+          139
+        ],
+        "horse": [
+          200,
+          65,
+          302,
+          138
+        ],
+        "lamp": [
+          89,
+          24,
+          111,
+          147
+        ]
+      },
+      "layers": [
+        {
+          "file": "export/street-lamp.png",
+          "priority": 147
+        },
+        {
+          "file": "export/street-rail.png",
+          "priority": 148
+        }
+      ],
+      "scaleChecks": 6,
+      "props": {
+        "light": {
+          "view": 226,
+          "at": [
+            0,
+            0
+          ],
+          "anchor": [
+            0,
+            0
+          ],
+          "priority": 148,
+          "scale": false,
+          "celDurationMs": 200
+        }
+      },
+      "approach": {
+        "cab": [
+          193,
+          176
+        ],
+        "return": [
+          64,
+          174
+        ]
+      }
+    },
+    "102": {
+      "name": "workshop",
+      "walkable": [
+        [
+          111,
+          160
+        ],
+        [
+          306,
+          160
+        ],
+        [
+          306,
+          195
+        ],
+        [
+          105,
+          195
+        ]
+      ],
+      "arrival": [
+        290,
+        176
+      ],
+      "hero": [
+        168,
+        176
+      ],
+      "hotspots": {
+        "window": [
+          12,
+          20,
+          67,
+          98
+        ],
+        "bench": [
+          99,
+          66,
+          226,
+          135
+        ],
+        "ledger": [
+          30,
+          149,
+          80,
+          175
+        ],
+        "clock": [
+          238,
+          14,
+          302,
+          154
+        ],
+        "lantern": [
+          209,
+          80,
+          221,
+          98
+        ],
+        "scratches": [
+          264,
+          153,
+          280,
+          165
+        ],
+        "filings": [
+          267,
+          160,
+          299,
+          176
+        ]
+      },
+      "layers": [
+        {
+          "file": "export/workshop-recess-frame.png",
+          "priority": 138
+        },
+        {
+          "file": "export/workshop-bench.png",
+          "priority": 136
+        },
+        {
+          "file": "export/workshop-desk.png",
+          "priority": 199
+        }
+      ],
+      "scaleChecks": 6,
+      "props": {
+        "filings": {
+          "view": 227,
+          "at": [
+            283,
+            175
+          ],
+          "anchor": [
+            16,
+            15
+          ],
+          "scale": false,
+          "priority": 155
+        },
+        "scratches": {
+          "view": 228,
+          "at": [
+            272,
+            164
+          ],
+          "anchor": [
+            8,
+            11
+          ],
+          "scale": false,
+          "priority": 155
+        },
+        "clock": {
+          "view": 221,
+          "at": [
+            292,
+            150
+          ],
+          "anchor": [
+            60,
+            150
+          ],
+          "scale": false,
+          "closedCel": 0,
+          "openCel": 7,
+          "celDurationMs": 150
+        },
+        "light": {
+          "view": 220,
+          "at": [
+            0,
+            0
+          ],
+          "anchor": [
+            0,
+            0
+          ],
+          "priority": 130,
+          "scale": false,
+          "celDurationMs": 200
+        }
+      },
+      "approach": {
+        "clock": [
+          252,
+          176
+        ],
+        "bench": [
+          170,
+          163
+        ],
+        "window": [
+          113,
+          162
+        ],
+        "ledger": [
+          112,
+          182
+        ]
+      }
+    },
+    "103": {
+      "name": "stair",
+      "walkable": [
+        [
+          58,
+          160
+        ],
+        [
+          130,
+          160
+        ],
+        [
+          135,
+          195
+        ],
+        [
+          58,
+          195
+        ]
+      ],
+      "arrival": [
+        85,
+        176
+      ],
+      "hero": [
+        100,
+        176
+      ],
+      "hotspots": {
+        "return": [
+          0,
+          17,
+          73,
+          169
+        ],
+        "stairs": [
+          157,
+          86,
+          299,
+          177
+        ],
+        "darkness": [
+          173,
+          21,
+          298,
+          149
+        ]
+      },
+      "layers": [
+        {
+          "file": "export/stair-entry-jamb.png",
+          "priority": 151
+        },
+        {
+          "file": "export/stair-newel-rail.png",
+          "priority": 155
+        }
+      ],
+      "scaleChecks": 5,
+      "props": {},
+      "approach": {
+        "stairs": [
+          120,
+          176
+        ],
+        "return": [
+          83,
+          176
+        ]
+      }
+    }
+  },
+  "notes": [
+    "Painted prop bounds are measured separately from Blender blockouts.",
+    "Depth comes from overlap, reduced contrast and shallow actor bands.",
+    "Scale proofs use the approved side master; the stair does not introduce an unapproved back pose.",
+    "The constant-scale previews translate a standing master and are not walk cycles.",
+    "Old workshop weather/mouse masks must be refitted before reuse.",
+    "Revisit reach timing at the newly measured clock approach before production integration."
+  ]
+}

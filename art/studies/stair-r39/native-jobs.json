@@ -1,0 +1,32 @@
+[
+  {
+    "name": "room",
+    "expected": [
+      "export/background.png"
+    ]
+  },
+  {
+    "name": "entrance-door",
+    "expected": [
+      "export/entrance-door.png"
+    ]
+  },
+  {
+    "name": "wall-return",
+    "expected": [
+      "export/wall-return.png"
+    ]
+  },
+  {
+    "name": "wall-map",
+    "expected": [
+      "export/wall-map.png"
+    ]
+  },
+  {
+    "name": "hall-furnishings",
+    "expected": [
+      "export/hall-furnishings.png"
+    ]
+  }
+]

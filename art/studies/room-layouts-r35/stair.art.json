@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "views": [],
+  "pictures": [
+    {
+      "number": 103,
+      "layers": [
+        {
+          "png": "export/stair-background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/stair-foreground.png",
+          "priority": 153
+        }
+      ]
+    }
+  ]
+}

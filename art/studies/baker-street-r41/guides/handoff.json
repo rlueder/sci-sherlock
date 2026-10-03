@@ -1,0 +1,278 @@
+{
+  "status": "User selected r35 option A; r41 narrowed-pavement and animation review, not registered",
+  "perspective": {
+    "horizon": 0,
+    "fullSize": 176
+  },
+  "walkable": [
+    [
+      47,
+      136
+    ],
+    [
+      211,
+      136
+    ],
+    [
+      211,
+      142
+    ],
+    [
+      46,
+      142
+    ]
+  ],
+  "arrival": [
+    85,
+    139
+  ],
+  "holmes": [
+    139,
+    139
+  ],
+  "watson": [
+    188,
+    139
+  ],
+  "door": [
+    71,
+    43,
+    103,
+    117
+  ],
+  "fanlights": [
+    [
+      15,
+      27,
+      42,
+      42
+    ],
+    [
+      71,
+      25,
+      104,
+      42
+    ],
+    [
+      184,
+      27,
+      212,
+      42
+    ]
+  ],
+  "foregroundPriority": 199,
+  "driver": {
+    "view": 284,
+    "origin": [
+      265,
+      28
+    ],
+    "size": [
+      39,
+      29
+    ],
+    "anchor": [
+      0,
+      0
+    ],
+    "priority": 199,
+    "tickMs": 160,
+    "timeline": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "loopMs": 10240
+  },
+  "lamp": {
+    "view": 285,
+    "origin": [
+      269,
+      72
+    ],
+    "size": [
+      36,
+      40
+    ],
+    "anchor": [
+      0,
+      0
+    ],
+    "priority": 199,
+    "tickMs": 160,
+    "timeline": [
+      0,
+      0,
+      1,
+      0,
+      2,
+      4,
+      0,
+      0,
+      3,
+      1,
+      4,
+      0,
+      2,
+      0,
+      4,
+      0
+    ],
+    "loopMs": 2560
+  },
+  "smoke": {
+    "view": 286,
+    "origin": [
+      288,
+      22
+    ],
+    "size": [
+      32,
+      30
+    ],
+    "anchor": [
+      0,
+      0
+    ],
+    "priority": 199,
+    "tickMs": 160,
+    "timeline": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      5,
+      5,
+      6,
+      6,
+      7,
+      7,
+      8,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      5,
+      5,
+      6,
+      6,
+      7,
+      7,
+      8,
+      8
+    ],
+    "cels": 9,
+    "compositing": "Transparent overlay after driver and cab foreground; redraw underlying scene each frame to avoid smoke trails."
+  },
+  "notes": [
+    "Static fanlight glows; driver, pipe smoke and cab lantern animate.",
+    "Driver is a small two-key-pose nod from a rerendered connected head/neck. The torso, hands and cab do not move.",
+    "Both animation patches are opaque replacements over the foreground, preventing trails. Draw patches after the foreground layer.",
+    "Pixel assertions freeze all pixels outside the driver, lamp and smoke regions.",
+    "Narrow footway is measured from the painting; this supersedes room 101 runtime walk coordinates. Confirm traversal and door approach when integrating.",
+    "No runtime art registration or scripts changed.",
+    "Retained camera formula scales original characters; no character masters are resized."
+  ]
+}

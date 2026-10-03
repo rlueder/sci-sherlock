@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [
+    {
+      "number": 103,
+      "layers": [
+        {
+          "png": "export/background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/entrance-door.png",
+          "priority": 154
+        },
+        {
+          "png": "export/opening-frame.png",
+          "priority": 152
+        }
+      ]
+    }
+  ],
+  "views": []
+}
