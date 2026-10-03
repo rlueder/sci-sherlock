@@ -32,9 +32,9 @@ title: stairs.do
 Hero: Not yet, Watson. Let us learn who is down there before they learn we are here. #line:103-007
 ===
 
-title: caseClock.look
+title: entranceDoor.look
 ---
-The case clock, swung aside from the wall. Its pendulum has not missed a beat. #line:103-009
+The door we came through. On the other side, Thorne's clock stands open. #line:103-009
 ===
 
 title: watson.talk

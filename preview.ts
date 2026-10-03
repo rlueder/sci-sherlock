@@ -105,7 +105,7 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   choose("Goodbye.");
   verb(4); click(303, 80);
   assert.match(line(), /My lens/, "the lens first"); finish();
-  click(161, 77);
+  click(49, 75);
   assert.match(line(), /Where I go/); finish();
   assert(!obj("mantelLens"));
   assert.equal(vm.getProp(global("inventory"), "size"), 1);
@@ -114,10 +114,12 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   // Baker Street, and the cab.
   enter(101); finish();
   shot("baker-street");
-  const flames = new Set<number>();
-  for (let i = 0; i < 150; i++) { frames(1); flames.add(prop(obj("lamp"), "cel")); }
-  assert.equal(flames.size, 4, "the gas lamp flickers");
-  verb(4); click(190, 100); finish();
+  // The cab's lantern flickers, and now and then the driver nods and puffs at his pipe.
+  const flames = new Set<number>(), nods = new Set<number>();
+  for (let i = 0; i < 700; i++) { frames(1); flames.add(prop(obj("lamp"), "cel")); nods.add(prop(obj("driver"), "cel")); }
+  assert.equal(flames.size, 16, "the cab's lantern flickers");
+  assert.equal(nods.size, 64, "the driver's timeline plays through");
+  verb(4); click(250, 160); finish();
 
   // The workshop.
   enter(102); frames(10);
@@ -126,30 +128,22 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   assert.equal(prop(obj("filings"), "cel"), 0);
   shot("workshop");
   const lamps = new Set<number>();
-  const swings = new Set<number>();
-  for (let i = 0; i < 125; i++) { frames(1); lamps.add(prop(obj("lantern"), "cel")); swings.add(prop(obj("clock"), "cel")); }
-  assert.equal(lamps.size, 8, "the lantern flickers");
-  assert(swings.size > 12, "the case clock's pendulum swings: the one clock still going");
+  for (let i = 0; i < 125; i++) { frames(1); lamps.add(prop(obj("light"), "cel")); }
+  assert.equal(lamps.size, 6, "the lamp's light flickers on the bench");
   assert(!obj("caseDoor"), "the opening case is hidden until the reveal");
-  // Now and then a mouse runs between the furniture (scripts/10.sc).
-  let waited = 0;
-  while (!obj("mouse") && waited < 900) (frames(1), waited++);
-  assert(obj("mouse"), "the mouse comes out within a few seconds of entering");
-  frames(48); // out from under the clock, on the open floor
-  shot("mouse");
 
-  verb(3); click(74, 175); frames(360);
-  assert.equal(prop(global("ego"), "cel"), 0);
-  assert.equal(prop(global("ego"), "x"), 74);
+  // Behind the desk in the foreground.
+  verb(3); click(108, 192); frames(360);
+  assert.equal(prop(global("ego"), "x"), 108);
   shot("foreground");
-  click(147, 171); frames(360);
-  verb(4); click(270, 120);
+  click(168, 176); frames(360);
+  verb(4); click(300, 60);
   assert.match(line(), /Before moving anything/);
   finish();
   assert(obj("clock"), "the clock is still shut");
 
   // The wall clocks: a close-up of a dial over the dimmed room, then what Holmes makes of it.
-  verb(1); click(219, 46);
+  verb(1); click(160, 30);
   assert.equal(vm.object(global("dialog")).name, "CloseUp");
   shot("dial");
   click(319, 100);
@@ -157,10 +151,10 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   assert.match(line(), /seventeen minutes past three/);
   const clockLines = finish();
   assert(clockLines.some((s) => /stopped by hand/.test(s)));
-  verb(4); click(270, 120);
+  verb(4); click(300, 60);
   assert.match(line(), /Before moving anything/, "one clue must not unlock the reveal"); finish();
   // The filings: too fine to read by eye; Holmes takes out his lens (I, the inventory).
-  verb(1); click(225, 150);
+  verb(1); click(283, 172);
   assert.match(line(), /too fine/); finish();
   inp.push({ type: EventType.KeyDown, message: 105, modifiers: 0 }); frames(2);
   assert.equal(global("dialog"), global("inventory"));
@@ -170,10 +164,10 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   click(prop(icon, "x") + 8, prop(icon, "y") + 8);
   assert.equal(prop(global("user"), "verb"), 5);
   // Held over the filings, the lens shows them twice as large through its glass.
-  [inp.x, inp.y] = [225, 152]; frames(2);
+  [inp.x, inp.y] = [283, 174]; frames(2);
   assert(g.magnify, "the lens magnifies");
   capture?.("lens", latest!);
-  click(225, 150);
+  click(283, 172);
   const filingLines = finish();
   assert(filingLines.some((s) => /Brass filings, in the sawdust/.test(s)), filingLines.join("\n"));
   assert.equal(prop(global("ego"), "view"), 200, "Holmes stands again after kneeling");
@@ -182,14 +176,14 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   assert(obj("scratches"), "the lens shows the scratch marks");
   shot("trail");
   // Both clues, but the case stays shut until Holmes has reasoned it out with Watson.
-  verb(4); click(270, 120);
+  verb(4); click(300, 60);
   assert.match(line(), /put this in order/); finish();
   talkTo("watson");
   shot("deductions");
   const door = choose("The case clock is a door.");
   assert(door.some((s) => /walked through it/.test(s)), door.join("\n"));
   choose("Goodbye.");
-  verb(4); click(270, 120);
+  verb(4); click(300, 60);
   const revealLines = finish();
   assert(revealLines.some((s) => /left us a way in/.test(s)), revealLines.join("\n"));
   assert(!obj("clock"), "the swinging clock gives way to the opening one");
@@ -199,11 +193,11 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   shot("reveal");
 
   // Through the clock, to the stair and the last line.
-  verb(4); click(270, 120);
-  enter(103);
+  verb(4); click(300, 60);
+  enter(103); frames(30);
+  shot("stair");
   const ending = finish();
   assert(ending.some((s) => /still keeping time/.test(s)), ending.join("\n"));
-  shot("stair");
   enter(105); frames(5);
   shot("end");
 

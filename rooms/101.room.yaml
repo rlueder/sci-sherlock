@@ -1,26 +1,29 @@
 # yaml-language-server: $schema=../node_modules/sci2-ts/packages/content/room.schema.json
-# Baker Street, on the r31 painting (art/studies/baker-street-r31): 221's door and steps at
-# the left, the gas lamp on the pavement, the hansom turned across the road. The camera is
-# the same level, front-on one as 221B's, and the floor, hotspots and route follow its
-# handoff (guides/handoff.json).
+# Baker Street, on the r41 painting (art/studies/baker-street-r41): the terrace with 221's
+# door and its lit fanlight, and the hansom close on the right, its driver nodding over his
+# pipe. The camera is the same level, front-on one as 221B's; the pavement is a narrow
+# strip in front of the railings, measured from the painting (guides/handoff.json).
 room: 101
 picture: 101
 music: 120
 hero:
-  at: [44, 149]
-  enterTo: [112, 176]
+  at: [85, 139]
+  enterTo: [139, 139]
 perspective: { horizon: 0, fullSize: 176 }
-# The pavement and the road, around the cab's wheels.
-walkable: [[30, 145], [111, 145], [111, 171], [160, 185], [227, 189], [251, 145], [312, 145], [312, 195], [30, 195]]
+walkable: [[47, 136], [211, 136], [211, 142], [46, 142]]
 features:
-  door221: { rect: [15, 29, 65, 133], sightAngle: 360 }
-  cab: { rect: [120, 19, 250, 184], sightAngle: 360 }
+  door221: { rect: [71, 43, 103, 117], sightAngle: 360 }
+  cab: { rect: [222, 30, 319, 199], sightAngle: 360 }
 props:
-  # The lamp's flicker over the painted lamp; its post is in the picture's foreground.
-  lamp: { view: 226, at: [99, 132], cycle: forward, sightAngle: 360 }
-  watson: { view: 201, at: [282, 178], sightAngle: 360, scale: true }
+  # Over the painted cab, each on its own irregular timeline (a cel a tick, 160 ms).
+  lamp: { view: 285, at: [269, 72], cycle: forward, sightAngle: 360 }
+  driver: { view: 284, at: [265, 28], cycle: forward }
+  smoke: { view: 286, at: [288, 22], cycle: forward }
+  watson: { view: 201, at: [188, 139], sightAngle: 360, scale: true }
 characters:
   watson: { name: Watson, portrait: 210 }
 properties:
-  # Hit only where it's drawn.
-  lamp: { checkPixels: 1, cycleSpeed: 27 }
+  # Above the cab in the picture's foreground (199).
+  lamp: { cycleSpeed: 10, fixPriority: 1, priority: 200 }
+  driver: { cycleSpeed: 10, fixPriority: 1, priority: 200, clickable: 0 }
+  smoke: { cycleSpeed: 10, fixPriority: 1, priority: 201, clickable: 0 }

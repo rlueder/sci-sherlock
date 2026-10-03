@@ -7,11 +7,19 @@
       "number": 100,
       "layers": [
         {
-          "png": "studies/221b-r30/export/background.png",
+          "png": "studies/221b-r33/export/background.png",
           "priority": -1000
         },
         {
-          "png": "studies/221b-r30/export/foreground-desk.png",
+          "png": "studies/221b-r33/export/opening.png",
+          "priority": 138
+        },
+        {
+          "png": "studies/221b-r33/export/chair.png",
+          "priority": 146
+        },
+        {
+          "png": "studies/221b-r33/export/foreground-desk.png",
           "priority": 199
         }
       ]
@@ -20,16 +28,12 @@
       "number": 101,
       "layers": [
         {
-          "png": "studies/baker-street-r31/export/background.png",
+          "png": "studies/baker-street-r41/export/background.png",
           "priority": -1000
         },
         {
-          "png": "studies/baker-street-r31/export/lamp-foreground.png",
-          "priority": 132
-        },
-        {
-          "png": "studies/baker-street-r31/export/rail-foreground.png",
-          "priority": 133
+          "png": "studies/baker-street-r41/export/foreground.png",
+          "priority": 199
         }
       ]
     },
@@ -37,16 +41,20 @@
       "number": 102,
       "layers": [
         {
-          "png": "studies/clock-r12/export/background-clean.png",
+          "png": "studies/room-planes-r34/export/workshop-background.png",
           "priority": -1000
         },
         {
-          "png": "studies/workshop-r9/export/mouse-occlusion.png",
-          "priority": 150
+          "png": "studies/room-planes-r34/export/workshop-recess-frame.png",
+          "priority": 138
         },
         {
-          "png": "studies/workshop-r9/export/workshop-front.png",
-          "priority": 181
+          "png": "studies/room-planes-r34/export/workshop-bench.png",
+          "priority": 136
+        },
+        {
+          "png": "studies/room-planes-r34/export/workshop-desk.png",
+          "priority": 199
         }
       ]
     },
@@ -54,12 +62,20 @@
       "number": 103,
       "layers": [
         {
-          "png": "studies/remaining-art-r19/export/stair-background.png",
+          "png": "studies/stair-r40/export/background.png",
           "priority": -1000
         },
         {
-          "png": "studies/remaining-art-r19/export/stair-newel-foreground.png",
-          "priority": 181
+          "png": "studies/stair-r40/export/entrance-door.png",
+          "priority": 154
+        },
+        {
+          "png": "studies/stair-r40/export/wall-return.png",
+          "priority": 152
+        },
+        {
+          "png": "studies/stair-r40/export/hall-furnishings.png",
+          "priority": 158
         }
       ]
     },
@@ -334,7 +350,7 @@
         {
           "cels": [
             {
-              "png": "studies/221b-r30/export/watson-seated.png",
+              "png": "studies/221b-r33/export/watson-page-0.png",
               "anchor": [
                 36,
                 113
@@ -345,35 +361,35 @@
         {
           "cels": [
             {
-              "png": "studies/221b-r30/export/watson-page-0.png",
+              "png": "studies/221b-r33/export/watson-page-0.png",
               "anchor": [
                 36,
                 113
               ]
             },
             {
-              "png": "studies/221b-r30/export/watson-page-1.png",
+              "png": "studies/221b-r33/export/watson-page-1.png",
               "anchor": [
                 36,
                 113
               ]
             },
             {
-              "png": "studies/221b-r30/export/watson-page-2.png",
+              "png": "studies/221b-r33/export/watson-page-2.png",
               "anchor": [
                 36,
                 113
               ]
             },
             {
-              "png": "studies/221b-r30/export/watson-page-3.png",
+              "png": "studies/221b-r33/export/watson-page-3.png",
               "anchor": [
                 36,
                 113
               ]
             },
             {
-              "png": "studies/221b-r30/export/watson-page-4.png",
+              "png": "studies/221b-r33/export/watson-page-4.png",
               "anchor": [
                 36,
                 113
@@ -1666,31 +1682,45 @@
         {
           "cels": [
             {
-              "png": "export/lantern-00.png",
+              "png": "studies/room-planes-r34/export/workshop-light-0.png",
               "anchor": [
-                9,
-                29
+                0,
+                0
               ]
             },
             {
-              "png": "export/lantern-01.png",
+              "png": "studies/room-planes-r34/export/workshop-light-1.png",
               "anchor": [
-                9,
-                29
+                0,
+                0
               ]
             },
             {
-              "png": "export/lantern-02.png",
+              "png": "studies/room-planes-r34/export/workshop-light-2.png",
               "anchor": [
-                9,
-                29
+                0,
+                0
               ]
             },
             {
-              "png": "export/lantern-03.png",
+              "png": "studies/room-planes-r34/export/workshop-light-3.png",
               "anchor": [
-                9,
-                29
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/room-planes-r34/export/workshop-light-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/room-planes-r34/export/workshop-light-5.png",
+              "anchor": [
+                0,
+                0
               ]
             }
           ]
@@ -1703,56 +1733,56 @@
         {
           "cels": [
             {
-              "png": "studies/clock-r12/export/clock-00.png",
+              "png": "studies/room-planes-r34/export/clock-0.png",
               "anchor": [
                 60,
                 150
               ]
             },
             {
-              "png": "studies/clock-r12/export/clock-01.png",
+              "png": "studies/room-planes-r34/export/clock-1.png",
               "anchor": [
                 60,
                 150
               ]
             },
             {
-              "png": "studies/clock-r12/export/clock-02.png",
+              "png": "studies/room-planes-r34/export/clock-2.png",
               "anchor": [
                 60,
                 150
               ]
             },
             {
-              "png": "studies/clock-r12/export/clock-03.png",
+              "png": "studies/room-planes-r34/export/clock-3.png",
               "anchor": [
                 60,
                 150
               ]
             },
             {
-              "png": "studies/clock-r12/export/clock-04.png",
+              "png": "studies/room-planes-r34/export/clock-4.png",
               "anchor": [
                 60,
                 150
               ]
             },
             {
-              "png": "studies/clock-r12/export/clock-05.png",
+              "png": "studies/room-planes-r34/export/clock-5.png",
               "anchor": [
                 60,
                 150
               ]
             },
             {
-              "png": "studies/clock-r12/export/clock-06.png",
+              "png": "studies/room-planes-r34/export/clock-6.png",
               "anchor": [
                 60,
                 150
               ]
             },
             {
-              "png": "studies/clock-r12/export/clock-07.png",
+              "png": "studies/room-planes-r34/export/clock-7.png",
               "anchor": [
                 60,
                 150
@@ -1768,42 +1798,42 @@
         {
           "cels": [
             {
-              "png": "studies/221b-r30/export/fire-0.png",
+              "png": "studies/221b-r33/export/fire-0.png",
               "anchor": [
                 20,
                 39
               ]
             },
             {
-              "png": "studies/221b-r30/export/fire-1.png",
+              "png": "studies/221b-r33/export/fire-1.png",
               "anchor": [
                 20,
                 39
               ]
             },
             {
-              "png": "studies/221b-r30/export/fire-2.png",
+              "png": "studies/221b-r33/export/fire-2.png",
               "anchor": [
                 20,
                 39
               ]
             },
             {
-              "png": "studies/221b-r30/export/fire-3.png",
+              "png": "studies/221b-r33/export/fire-3.png",
               "anchor": [
                 20,
                 39
               ]
             },
             {
-              "png": "studies/221b-r30/export/fire-4.png",
+              "png": "studies/221b-r33/export/fire-4.png",
               "anchor": [
                 20,
                 39
               ]
             },
             {
-              "png": "studies/221b-r30/export/fire-5.png",
+              "png": "studies/221b-r33/export/fire-5.png",
               "anchor": [
                 20,
                 39
@@ -1819,7 +1849,7 @@
         {
           "cels": [
             {
-              "png": "studies/221b-r30/export/mantel-lens.png",
+              "png": "studies/221b-r33/export/mantel-lens.png",
               "anchor": [
                 4,
                 3
@@ -1851,110 +1881,73 @@
         {
           "cels": [
             {
-              "png": "studies/221b-r30/export/door-0.png",
+              "png": "studies/221b-r33/export/door-0.png",
               "anchor": [
                 57,
                 113
               ]
             },
             {
-              "png": "studies/221b-r30/export/door-1.png",
+              "png": "studies/221b-r33/export/door-1.png",
               "anchor": [
                 57,
                 113
               ]
             },
             {
-              "png": "studies/221b-r30/export/door-2.png",
+              "png": "studies/221b-r33/export/door-2.png",
               "anchor": [
                 57,
                 113
               ]
             },
             {
-              "png": "studies/221b-r30/export/door-3.png",
+              "png": "studies/221b-r33/export/door-3.png",
               "anchor": [
                 57,
                 113
               ]
             },
             {
-              "png": "studies/221b-r30/export/door-4.png",
+              "png": "studies/221b-r33/export/door-4.png",
               "anchor": [
                 57,
                 113
               ]
             },
             {
-              "png": "studies/221b-r30/export/door-5.png",
+              "png": "studies/221b-r33/export/door-5.png",
               "anchor": [
                 57,
                 113
               ]
             },
             {
-              "png": "studies/221b-r30/export/door-6.png",
+              "png": "studies/221b-r33/export/door-6.png",
               "anchor": [
                 57,
                 113
               ]
             },
             {
-              "png": "studies/221b-r30/export/door-7.png",
+              "png": "studies/221b-r33/export/door-7.png",
               "anchor": [
                 57,
                 113
               ]
             },
             {
-              "png": "studies/221b-r30/export/door-8.png",
+              "png": "studies/221b-r33/export/door-8.png",
               "anchor": [
                 57,
                 113
               ]
             },
             {
-              "png": "studies/221b-r30/export/door-9.png",
+              "png": "studies/221b-r33/export/door-9.png",
               "anchor": [
                 57,
                 113
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": 226,
-      "loops": [
-        {
-          "cels": [
-            {
-              "png": "studies/baker-street-r31/export/gas-lamp-0.png",
-              "anchor": [
-                11,
-                112
-              ]
-            },
-            {
-              "png": "studies/baker-street-r31/export/gas-lamp-1.png",
-              "anchor": [
-                11,
-                112
-              ]
-            },
-            {
-              "png": "studies/baker-street-r31/export/gas-lamp-2.png",
-              "anchor": [
-                11,
-                112
-              ]
-            },
-            {
-              "png": "studies/baker-street-r31/export/gas-lamp-3.png",
-              "anchor": [
-                11,
-                112
               ]
             }
           ]
@@ -2409,593 +2402,6 @@
       ]
     },
     {
-      "number": 270,
-      "loops": [
-        {
-          "cels": [
-            {
-              "png": "studies/workshop-r9/export/rain-00.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-01.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-02.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-03.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-04.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-05.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-06.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-07.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-08.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-09.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-10.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-11.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-12.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-13.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-14.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-15.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-16.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-17.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-18.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-19.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-20.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-21.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-22.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-23.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-24.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-25.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-26.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-27.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-28.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-29.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-30.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-31.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-32.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-33.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-34.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-35.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-36.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-37.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-38.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-39.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-40.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-41.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-42.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-43.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-44.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-45.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-46.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/rain-47.png",
-              "anchor": [
-                0,
-                0
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": 271,
-      "loops": [
-        {
-          "cels": [
-            {
-              "png": "studies/workshop-r9/export/lamp-00.png",
-              "anchor": [
-                10,
-                25
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/lamp-00.png",
-              "anchor": [
-                10,
-                25
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/lamp-01.png",
-              "anchor": [
-                10,
-                25
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/lamp-00.png",
-              "anchor": [
-                10,
-                25
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/lamp-02.png",
-              "anchor": [
-                10,
-                25
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/lamp-00.png",
-              "anchor": [
-                10,
-                25
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/lamp-00.png",
-              "anchor": [
-                10,
-                25
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/lamp-03.png",
-              "anchor": [
-                10,
-                25
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": 272,
-      "loops": [
-        {
-          "cels": [
-            {
-              "png": "studies/workshop-r9/export/pendulum-00.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-01.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-02.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-03.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-04.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-05.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-06.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-07.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-08.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-09.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-10.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-11.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-12.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-13.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-14.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-15.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-16.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-17.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-18.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-19.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-20.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-21.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-22.png",
-              "anchor": [
-                30,
-                136
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/pendulum-23.png",
-              "anchor": [
-                30,
-                136
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "number": 273,
       "loops": [
         {
@@ -3026,127 +2432,6 @@
               "anchor": [
                 10,
                 8
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": 274,
-      "loops": [
-        {
-          "cels": [
-            {
-              "png": "studies/workshop-r9/export/sky-00.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-01.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-02.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-03.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-04.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-05.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-06.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-07.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-08.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-09.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-10.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-11.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-12.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-13.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-14.png",
-              "anchor": [
-                0,
-                0
-              ]
-            },
-            {
-              "png": "studies/workshop-r9/export/sky-15.png",
-              "anchor": [
-                0,
-                0
               ]
             }
           ]
@@ -3258,6 +2543,1511 @@
               "anchor": [
                 10,
                 8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 280,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/221b-r33/export/fog-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/fog-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/fog-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/fog-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/fog-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/fog-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/fog-6.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/fog-7.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/fog-8.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/fog-9.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/fog-10.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/fog-11.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 281,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/221b-r33/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/lamp-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/lamp-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/lamp-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/lamp-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/lamp-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 282,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/221b-r33/export/steam-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/steam-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/steam-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/steam-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/steam-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/steam-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/steam-6.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/steam-7.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/steam-8.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/steam-9.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/steam-10.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/221b-r33/export/steam-11.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 283,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/stair-r40/export/lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 284,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 285,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/cab-lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 286,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-6.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-6.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-7.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-7.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-8.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-8.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-6.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-6.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-7.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-7.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-8.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "studies/baker-street-r41/export/pipe-smoke-8.png",
+              "anchor": [
+                0,
+                0
               ]
             }
           ]

@@ -1,31 +1,35 @@
 # yaml-language-server: $schema=../node_modules/sci2-ts/packages/content/room.schema.json
-# 221B, the sitting room, on the r30 art (art/studies/221b-r30): painted to a level,
-# front-on camera, so a figure's size depends only on how far down the screen its feet are.
-# The floor, hotspots and positions follow its handoff (guides/handoff.json). The foreground
-# layer (199) is the desk.
+# 221B, the sitting room, on the r33 art (art/studies/221b-r33): the front room, a walnut
+# opening and Holmes's chemistry room beyond it, all on the same level, front-on camera, so
+# a figure's size depends only on how far down the screen its feet are. The floor, hotspots
+# and positions follow its handoff (guides/handoff.json). The picture's layers put the
+# opening (138), the armchair (146) and the desk (199) in front of whoever is behind them.
+# The violin, the slipper and the correspondence aren't painted in this pass: their lines
+# wait in 100.yarn for the art.
 room: 100
 picture: 100
 music: 120
 hero:
-  at: [200, 176]
+  at: [205, 176]
 perspective: { horizon: 0, fullSize: 176 }
-# The floor stops short of the desk in the foreground, so feet never land on its top.
-walkable: [[112, 145], [299, 145], [308, 195], [104, 195], [104, 160], [112, 155]]
+# The front room's floor, short of the desk; no one walks into the back room.
+walkable: [[120, 160], [300, 160], [308, 195], [99, 195], [105, 176]]
 features:
-  correspondence: { rect: [103, 47, 118, 73], sightAngle: 360 }
-  violin: { rect: [15, 99, 58, 110], sightAngle: 360 }
-  bench: { rect: [199, 83, 257, 143], sightAngle: 360 }
-  slipper: { rect: [124, 93, 134, 128], sightAngle: 360 }
-  window: { rect: [9, 16, 64, 108], sightAngle: 360 }
+  bench: { rect: [140, 59, 220, 119], sightAngle: 360 }
+  window: { rect: [201, 26, 237, 76], sightAngle: 360 }
 props:
-  fire: { view: 222, at: [158, 141], cycle: forward, sightAngle: 360 }
-  mantelLens: { view: 223, at: [160, 77], sightAngle: 360 }
+  fire: { view: 222, at: [35, 133], cycle: forward, sightAngle: 360 }
+  mantelLens: { view: 223, at: [48, 74], sightAngle: 360 }
   # Shut at cel 0; swings open over its ten cels, and the last is the open doorway.
-  door: { view: 225, at: [313, 137], sightAngle: 360 }
+  door: { view: 225, at: [315, 137], sightAngle: 360 }
   # Loop 0 sits still; loop 1 turns a page.
-  watson: { view: 205, at: [94, 146], sightAngle: 360 }
-  mrsHudson: { view: 202, at: [285, 148], moves: true, sightAngle: 360 }
-  toby: { view: 203, at: [285, 148], moves: true, sightAngle: 360 }
+  watson: { view: 205, at: [93, 146], sightAngle: 360 }
+  mrsHudson: { view: 202, at: [292, 163], moves: true, sightAngle: 360 }
+  toby: { view: 203, at: [292, 163], moves: true, sightAngle: 360 }
+  # The back room: fog at its window, its lamp and the steam off the bench.
+  fog: { view: 280, at: [201, 26], cycle: forward }
+  benchLamp: { view: 281, at: [207, 65], cycle: forward }
+  steam: { view: 282, at: [156, 55], cycle: forward }
 characters:
   watson: { name: Watson, portrait: 210 }
   mrsHudson: { name: Mrs Hudson, portrait: 211 }
@@ -34,4 +38,9 @@ properties:
   fire: { cycleSpeed: 7 }
   # Drawn on a canvas wide enough for its swing: hit only where it's drawn.
   door: { cycleSpeed: 7, checkPixels: 1 }
-  watson: { cycleSpeed: 12 }
+  # In his armchair: drawn after the chair's layer (146).
+  watson: { cycleSpeed: 12, fixPriority: 1, priority: 147 }
+  # Behind the opening (138), and only there to look at: clicks go to the bench and window.
+  fog: { cycleSpeed: 14, fixPriority: 1, priority: 110, clickable: 0 }
+  benchLamp: { cycleSpeed: 14, fixPriority: 1, priority: 132, clickable: 0 }
+  steam: { cycleSpeed: 14, fixPriority: 1, priority: 132, clickable: 0 }
