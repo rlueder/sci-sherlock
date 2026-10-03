@@ -2134,9 +2134,9 @@
         {
           "cels": [
             {
-              "png": "studies/interface-r20/export/look-0-0.png",
+              "png": "studies/interface-r45/export/look-cursor.png",
               "anchor": [
-                6,
+                7,
                 5
               ]
             }
@@ -2205,7 +2205,7 @@
               ]
             },
             {
-              "png": "studies/interface-r28/export/icons-32-0-1.png",
+              "png": "studies/interface-r45/export/look-32-normal.png",
               "anchor": [
                 0,
                 0
@@ -2251,7 +2251,7 @@
               ]
             },
             {
-              "png": "studies/interface-r28/export/icons-32-1-1.png",
+              "png": "studies/interface-r45/export/look-32-picked.png",
               "anchor": [
                 0,
                 0
