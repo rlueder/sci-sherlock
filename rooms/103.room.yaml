@@ -1,19 +1,24 @@
 # yaml-language-server: $schema=../node_modules/sci2-ts/packages/content/room.schema.json
-# The top of the hidden stair (r19): the case clock swung aside on the left, the steps going
-# down into the dark, the newel post in the foreground on the right.
+# The top of the hidden stair, on the r40 art (art/studies/stair-r40): a dark hall behind
+# the workshop, the door we came through on the left, the stairwell ahead going down out of
+# sight, one lamp on the back wall. The same level, front-on camera as the other rooms; the
+# floor, hotspots and layers follow its handoff (guides/handoff.json): the walls' returns
+# (152), the door (154) and the hall table (158) stand in front of anyone behind them.
 room: 103
 picture: 103
 hero:
-  at: [100, 150]
-# A high camera looking down. Fitted by eye: the floorboards and treads put the horizon near
-# the top of the screen, and the newel post (about 1.1 m) sets the size by the stairwell.
-perspective: { horizon: 10, fullSize: 128 }
+  at: [117, 177]
+perspective: { horizon: 0, fullSize: 176 }
 # The landing, short of the stairwell's edge.
-walkable: [[53, 154], [103, 132], [239, 169], [286, 192], [70, 195]]
+walkable: [[78, 160], [258, 160], [263, 195], [71, 195]]
 features:
-  stairs: { rect: [120, 78, 243, 161], sightAngle: 360 }
-  caseClock: { rect: [0, 0, 52, 172], sightAngle: 360 }
+  stairs: { rect: [78, 138, 215, 151], sightAngle: 360 }
+  entranceDoor: { rect: [0, 28, 58, 152], sightAngle: 360 }
 props:
-  watson: { view: 201, at: [70, 160], sightAngle: 360, scale: true }
+  # The lamp's flame and its pool of light, on an irregular timeline (a cel a tick, 120 ms).
+  lamp: { view: 283, at: [121, 22], cycle: forward }
+  watson: { view: 201, at: [230, 181], sightAngle: 360, scale: true }
 characters:
   watson: { name: Watson, portrait: 210 }
+properties:
+  lamp: { cycleSpeed: 7, fixPriority: 1, priority: 80, clickable: 0 }

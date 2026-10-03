@@ -18,7 +18,7 @@ A hansom, the horse steaming in the cold. #line:101-003
 
 title: cab.do
 ---
-<<walk hero 248 170>>
+<<walk hero 208 140>>
 Hero: Clerkenwell, cabby, and quickly. #line:101-004
 Watson: There's a sovereign in it if you can find the way in this. #line:101-005
 <<sound 131 wait>>
@@ -27,7 +27,7 @@ Watson: There's a sovereign in it if you can find the way in this. #line:101-005
 
 title: lamp.look
 ---
-The gas lamp makes a small room of light in the fog. #line:101-006
+The cab's lantern makes a small room of light in the fog. #line:101-006
 ===
 
 title: door221.look

@@ -347,68 +347,16 @@
       }
     },
     {
-      "id": "100-023",
-      "room": 100,
-      "speaker": "Narrator",
-      "text": "Unanswered letters, pinned to the mantel with a jack-knife.",
-      "node": "correspondence.look",
-      "where": "rooms/100.yarn:101",
-      "recording": "recorded",
-      "recorded": {
-        "text": "f65760c5cbf0",
-        "wav": "d86180be1ed4"
-      }
-    },
-    {
-      "id": "100-024",
-      "room": 100,
-      "speaker": "Hero",
-      "text": "They have waited a month. They can wait another night.",
-      "node": "correspondence.do",
-      "where": "rooms/100.yarn:106",
-      "recording": "recorded",
-      "recorded": {
-        "text": "333a2e2e1c3e",
-        "wav": "277ce208f802"
-      }
-    },
-    {
-      "id": "100-025",
-      "room": 100,
-      "speaker": "Narrator",
-      "text": "Holmes's violin, laid across a chair. It has seen him through worse evenings.",
-      "node": "violin.look",
-      "where": "rooms/100.yarn:111",
-      "recording": "recorded",
-      "recorded": {
-        "text": "e2c2d28f1b1c",
-        "wav": "abd75e322e0f"
-      }
-    },
-    {
       "id": "100-026",
       "room": 100,
       "speaker": "Narrator",
       "text": "A rack of test tubes on the chemistry bench, and a stain Mrs Hudson has given up on.",
       "node": "bench.look",
-      "where": "rooms/100.yarn:116",
+      "where": "rooms/100.yarn:101",
       "recording": "recorded",
       "recorded": {
         "text": "d078da142ecd",
         "wav": "03750a2d645c"
-      }
-    },
-    {
-      "id": "100-027",
-      "room": 100,
-      "speaker": "Narrator",
-      "text": "The Persian slipper, where Holmes keeps his tobacco.",
-      "node": "slipper.look",
-      "where": "rooms/100.yarn:121",
-      "recording": "recorded",
-      "recorded": {
-        "text": "ceea82cee28f",
-        "wav": "d82ab8944bc9"
       }
     },
     {
@@ -417,7 +365,7 @@
       "speaker": "Narrator",
       "text": "A good fire. The only warm thing in London tonight.",
       "node": "fire.look",
-      "where": "rooms/100.yarn:126",
+      "where": "rooms/100.yarn:106",
       "recording": "recorded",
       "recorded": {
         "text": "95691e2eb47c",
@@ -430,7 +378,7 @@
       "speaker": "Narrator",
       "text": "Fog, thick as wool. The lamps across the street are smudges of yellow.",
       "node": "window.look",
-      "where": "rooms/100.yarn:131",
+      "where": "rooms/100.yarn:111",
       "recording": "recorded",
       "recorded": {
         "text": "92b8fe5d06c5",
@@ -443,7 +391,7 @@
       "speaker": "Narrator",
       "text": "The door to the landing, and the seventeen steps down to the street.",
       "node": "door.look",
-      "where": "rooms/100.yarn:136",
+      "where": "rooms/100.yarn:116",
       "recording": "recorded",
       "recorded": {
         "text": "19477aff0440",
@@ -456,7 +404,7 @@
       "speaker": "Watson",
       "text": "A cab, Holmes?",
       "node": "door.do",
-      "where": "rooms/100.yarn:144",
+      "where": "rooms/100.yarn:124",
       "recording": "recorded",
       "recorded": {
         "text": "40106fddd4c3",
@@ -473,7 +421,7 @@
         "speaker": "Watson",
         "text": "A cab, Holmes?"
       },
-      "where": "rooms/100.yarn:145",
+      "where": "rooms/100.yarn:125",
       "recording": "recorded",
       "recorded": {
         "text": "3e60bf330baa",
@@ -490,7 +438,7 @@
         "speaker": "Hero",
         "text": "A cab, Watson. Clerkenwell."
       },
-      "where": "rooms/100.yarn:148",
+      "where": "rooms/100.yarn:128",
       "recording": "recorded",
       "recorded": {
         "text": "981bcdff0b9c",
@@ -507,7 +455,7 @@
         "speaker": "Hero",
         "text": "My lens, Watson. I shall want it tonight."
       },
-      "where": "rooms/100.yarn:150",
+      "where": "rooms/100.yarn:130",
       "recording": "recorded",
       "recorded": {
         "text": "4f5bbfa002e0",
@@ -587,13 +535,13 @@
       "id": "101-006",
       "room": 101,
       "speaker": "Narrator",
-      "text": "The gas lamp makes a small room of light in the fog.",
+      "text": "The cab's lantern makes a small room of light in the fog.",
       "node": "lamp.look",
       "where": "rooms/101.yarn:30",
       "recording": "recorded",
       "recorded": {
-        "text": "b662789fb4b3",
-        "wav": "12c2408c950e"
+        "text": "5f00bbe994ca",
+        "wav": "fbaf256a1f6a"
       }
     },
     {
@@ -1372,13 +1320,13 @@
       "id": "103-009",
       "room": 103,
       "speaker": "Narrator",
-      "text": "The case clock, swung aside from the wall. Its pendulum has not missed a beat.",
-      "node": "caseClock.look",
+      "text": "The door we came through. On the other side, Thorne's clock stands open.",
+      "node": "entranceDoor.look",
       "where": "rooms/103.yarn:37",
       "recording": "recorded",
       "recorded": {
-        "text": "6d09a4ae8f8a",
-        "wav": "8eceec36cff0"
+        "text": "63d88beb38b1",
+        "wav": "34ed3fb9fec1"
       }
     },
     {

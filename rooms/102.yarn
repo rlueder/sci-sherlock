@@ -51,7 +51,7 @@ Hero: Best not disturb them. My lens will tell us more. #line:102-007
 
 title: filings.lens
 ---
-<<walk hero 196 158>>
+<<walk hero 258 176>>
 <<face hero right>>
 <<view hero 204>>
 <<loop hero 1>>
@@ -83,7 +83,7 @@ Fresh scratches mark the boards beneath it. #line:102-013
 title: clock.do
 ---
 <<if $deduced>>
-<<walk hero 214 160>>
+<<walk hero 252 176>>
 <<face hero right>>
 Hero: The clocks did not stop together. Someone arranged them so. #line:102-014
 Hero: And this case is far too light for its size. #line:102-015
@@ -115,7 +115,7 @@ Behind the case, a narrow stair descends into darkness. #line:102-020
 
 title: caseDoor.do
 ---
-<<walk hero 262 166>>
+<<walk hero 268 166>>
 <<room 103>>
 ===
 
@@ -131,7 +131,7 @@ The tall-case clock stands close against the wall. #line:102-022
 title: stair.do
 ---
 <<if $openedClock>>
-<<walk hero 262 166>>
+<<walk hero 268 166>>
 <<room 103>>
 <<else>>
 Hero: Before moving anything, I should examine the wall clocks and the filings on the floor. #line:102-023

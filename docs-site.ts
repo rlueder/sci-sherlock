@@ -160,6 +160,7 @@ const nav: [string, (NavItem | undefined)[]][] = [
   ["Briefs and handoffs", [
     page("docs/room-camera-brief.md", "Room camera brief"),
     page("docs/room-planes-brief.md", "Room planes brief"),
+    page("docs/room-followups-brief.md", "Room follow-ups brief"),
     page("docs/art-interface-implementation.md", "Interface handoff"),
     page("docs/art-delivery-status.md", "Art delivery status"),
     page("docs/templates/art-study.md", "Art study template"),

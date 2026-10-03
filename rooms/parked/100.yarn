@@ -1,0 +1,23 @@
+// 221B's looks at things the r33 painting doesn't have yet: the correspondence, the violin
+// and the Persian slipper. Back into rooms/100.yarn, with their features in 100.room.yaml,
+// when they are painted (docs/room-followups-brief.md). Not compiled while they're here.
+
+title: correspondence.look
+---
+Unanswered letters, pinned to the mantel with a jack-knife. #line:100-023
+===
+
+title: correspondence.do
+---
+Hero: They have waited a month. They can wait another night. #line:100-024
+===
+
+title: violin.look
+---
+Holmes's violin, laid across a chair. It has seen him through worse evenings. #line:100-025
+===
+
+title: slipper.look
+---
+The Persian slipper, where Holmes keeps his tobacco. #line:100-027
+===

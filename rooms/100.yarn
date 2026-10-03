@@ -16,7 +16,7 @@ Hero: London is never quiet, Watson. It is only waiting. #line:100-003
 Mrs Hudson: A young man to see you, Mr Holmes. He's in a dreadful state. #line:100-004
 <<show toby>>
 <<walk toby 241 180>>
-<<walk mrsHudson 285 148>>
+<<walk mrsHudson 292 163>>
 <<hide mrsHudson>>
 <<cel door 0>>
 Toby: Mr Holmes? Toby Vance, sir. It's the guv'nor. He's gone. #line:100-005
@@ -55,7 +55,7 @@ title: toby.talk
 -> We shall go at once. <<if $askedMaster and $askedDoor and $askedClocks and $askedLantern and not $tookCase>>
     Hero: Watson, your hat. Mr Vance, we shall go at once. #line:100-015
     Toby: Thank you, sir. I'll run on ahead and open up the shop. #line:100-016
-    <<walk toby 285 148>>
+    <<walk toby 292 163>>
     <<hide toby>>
     <<set $tookCase to true>>
 ===
@@ -96,29 +96,9 @@ title: mantelLens.do
 Hero: Where I go, it goes. #line:100-022
 ===
 
-title: correspondence.look
----
-Unanswered letters, pinned to the mantel with a jack-knife. #line:100-023
-===
-
-title: correspondence.do
----
-Hero: They have waited a month. They can wait another night. #line:100-024
-===
-
-title: violin.look
----
-Holmes's violin, laid across a chair. It has seen him through worse evenings. #line:100-025
-===
-
 title: bench.look
 ---
 A rack of test tubes on the chemistry bench, and a stain Mrs Hudson has given up on. #line:100-026
-===
-
-title: slipper.look
----
-The Persian slipper, where Holmes keeps his tobacco. #line:100-027
 ===
 
 title: fire.look
@@ -139,7 +119,7 @@ The door to the landing, and the seventeen steps down to the street. #line:100-0
 title: door.do
 ---
 <<if $tookCase and $hasLens>>
-<<walk hero 285 148>>
+<<walk hero 292 163>>
 <<animate door once>>
 Watson: A cab, Holmes? #line:100-031
 Hero: A cab, Watson. Clerkenwell. #line:100-032
