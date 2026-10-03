@@ -1,0 +1,15 @@
+{
+  "nativeSize": [
+    320,
+    200
+  ],
+  "paletteColours": 64,
+  "pixelAspect": 1.2,
+  "unchanged221bOutsidePropMasks": true,
+  "workshopWeatherRestrictedToGlass": true,
+  "workshopPendulumOutsideGlassUnchanged": true,
+  "mouseEndpointsFullyHidden": true,
+  "passageCameraAndFloorUnchanged": true,
+  "projects": 23,
+  "exports": 134
+}

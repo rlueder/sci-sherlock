@@ -1,0 +1,128 @@
+{
+  "picture": 102,
+  "unchangedBackground": "../room-planes-r34/export/workshop-background.png",
+  "pendulum": {
+    "view": 272,
+    "origin": [
+      257,
+      65
+    ],
+    "size": [
+      30,
+      62
+    ],
+    "anchor": [
+      0,
+      0
+    ],
+    "priority": 151,
+    "scale": false,
+    "frames": 24,
+    "fps": 12,
+    "loopMs": 2000,
+    "pivot": [
+      16,
+      7
+    ],
+    "amplitudeRadians": 0.07,
+    "stopWhen": "caseOpen; hide overlay before changing view 221 away from cel 0"
+  },
+  "weather": {
+    "origin": [
+      12,
+      20
+    ],
+    "size": [
+      55,
+      78
+    ],
+    "anchor": [
+      0,
+      0
+    ],
+    "priority": 90,
+    "scale": false,
+    "rain": {
+      "view": 270,
+      "frames": 40,
+      "fps": 8,
+      "pixelsPerSecond": 16,
+      "priority": 90
+    },
+    "sky": {
+      "view": 274,
+      "frames": 16,
+      "celMs": 4000,
+      "loopMs": 64000,
+      "priority": 89
+    },
+    "mask": "guides/window-glass-mask.png"
+  },
+  "mouse": {
+    "view": 273,
+    "canvas": [
+      20,
+      10
+    ],
+    "anchor": [
+      10,
+      8
+    ],
+    "fps": 16,
+    "scale": false,
+    "priority": 139,
+    "occlusion": {
+      "png": "export/mouse-occlusion-0.png",
+      "priority": 140
+    },
+    "routes": [
+      {
+        "name": "Left recess to right recess",
+        "points": [
+          [
+            93,
+            135
+          ],
+          [
+            239,
+            135
+          ]
+        ],
+        "loop": 0,
+        "seconds": 3.2
+      },
+      {
+        "name": "Right recess to left recess",
+        "points": [
+          [
+            239,
+            135
+          ],
+          [
+            93,
+            135
+          ]
+        ],
+        "loop": 1,
+        "seconds": 3.2
+      }
+    ],
+    "cooldownSeconds": [
+      18,
+      35
+    ],
+    "endpointVisiblePixels": 0,
+    "notes": [
+      "Two opposite routes along the same visible strip, using side-view sprites matched to travel direction.",
+      "Choose a route after an 18-35s pause; play one traversal; hide the mouse between routes.",
+      "Occlusion must draw above mouse and below foreground actors.",
+      "Original view 273 has one loop. The replacement supplies east loop 0 and west loop 1; update routing accordingly."
+    ]
+  },
+  "notes": [
+    "Redraw underlying picture for every frame, then sky, then rain. Never accumulate transparent cels.",
+    "Pendulum cels are opaque full replacements inside their 30x62 patch, preventing trails.",
+    "All pixels outside the glazed interior remain fixed; clock hands and dial never move.",
+    "Overlay is on top of closed view 221 only; removal is essential before the case-opening animation."
+  ]
+}

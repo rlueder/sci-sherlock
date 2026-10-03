@@ -1,0 +1,42 @@
+{
+  "picture": 100,
+  "background": "export/221b-background-0.png",
+  "replaceForegroundDesk": "export/221b-desk-0.png",
+  "addLayer": {
+    "png": "export/221b-mantel-details-0.png",
+    "priority": 137
+  },
+  "unchangedLayers": [
+    "opening at 138",
+    "chair at 146",
+    "foreground desk at 199"
+  ],
+  "hotspots": {
+    "letters": [
+      26,
+      75,
+      42,
+      95
+    ],
+    "slipper": [
+      53,
+      79,
+      66,
+      107
+    ],
+    "violin": [
+      14,
+      161,
+      55,
+      183
+    ]
+  },
+  "notes": [
+    "Keep all room-100 coordinates, existing prop views and camera settings.",
+    "Letters and slipper need the priority-137 static overlay above fire priority 133.",
+    "Violin is on the foreground writing table. Change the parked line from chair to table when restoring it.",
+    "Three props are painted into the background, not new views.",
+    "Original room pixels outside the three saved masks are identical.",
+    "Use seated Watson from r33; no new pose or seated scaling."
+  ]
+}

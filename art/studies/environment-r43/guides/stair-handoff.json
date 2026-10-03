@@ -1,0 +1,203 @@
+{
+  "picture": 103,
+  "perspective": {
+    "horizon": 0,
+    "fullSize": 176,
+    "heightMetres": 3.0716981132075474,
+    "lensMM": 45,
+    "shiftY": -0.375,
+    "pixelAspect": 1.2
+  },
+  "walkable": [
+    [
+      78,
+      160
+    ],
+    [
+      258,
+      160
+    ],
+    [
+      263,
+      195
+    ],
+    [
+      71,
+      195
+    ]
+  ],
+  "arrival": [
+    90,
+    174
+  ],
+  "hero": [
+    117,
+    177
+  ],
+  "watson": [
+    230,
+    181
+  ],
+  "hotspots": {
+    "stairs": [
+      78,
+      138,
+      215,
+      151
+    ],
+    "entranceDoor": [
+      0,
+      28,
+      58,
+      152
+    ],
+    "mechanism": [
+      254,
+      10,
+      279,
+      123
+    ],
+    "workApron": [
+      286,
+      34,
+      313,
+      121
+    ],
+    "tools": [
+      270,
+      120,
+      319,
+      156
+    ]
+  },
+  "layers": [
+    {
+      "name": "stair-clock-back",
+      "priority": 154,
+      "rects": [
+        [
+          0,
+          27,
+          59,
+          127
+        ]
+      ]
+    },
+    {
+      "name": "stair-wall-return",
+      "priority": 152,
+      "rects": [
+        [
+          59,
+          0,
+          18,
+          154
+        ],
+        [
+          246,
+          0,
+          18,
+          151
+        ],
+        [
+          59,
+          0,
+          205,
+          6
+        ]
+      ]
+    },
+    {
+      "name": "stair-tools",
+      "priority": 158,
+      "rects": [
+        [
+          264,
+          122,
+          56,
+          36
+        ]
+      ]
+    }
+  ],
+  "lamp": {
+    "view": 283,
+    "origin": [
+      121,
+      22
+    ],
+    "size": [
+      80,
+      76
+    ],
+    "anchor": [
+      0,
+      0
+    ],
+    "priority": 80,
+    "tickMs": 120,
+    "timeline": [
+      0,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0,
+      4,
+      1,
+      3,
+      4,
+      0,
+      2,
+      2,
+      0,
+      0,
+      1,
+      4,
+      0,
+      5,
+      2,
+      0,
+      0,
+      4,
+      1,
+      0,
+      2,
+      0,
+      4,
+      0,
+      0,
+      0
+    ],
+    "loopMs": 3840
+  },
+  "peek": {
+    "view": 287,
+    "origin": [
+      19,
+      53
+    ],
+    "size": [
+      13,
+      30
+    ],
+    "anchor": [
+      0,
+      0
+    ],
+    "priority": 155,
+    "fps": 12,
+    "frames": 24,
+    "loopMs": 2000
+  },
+  "notes": [
+    "Keep r40 camera, walking strip, entrance and stair hotspots.",
+    "entranceDoor is now the back of the clock; update the description.",
+    "Mechanism/apron/tools rectangles are optional new interactions for the writer.",
+    "The 24-cel peek is a candidate new view 287; confirm ID availability. Draw after the clock-back layer.",
+    "Use the timeline for lamp view 283, not six equally spaced cels.",
+    "Background, occlusion and lamp must update together to prevent old furnishings reappearing.",
+    "No rug, table, umbrella stand or scarf remain. Cobwebs are kept off the route."
+  ]
+}

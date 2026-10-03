@@ -1,0 +1,64 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Portrait acting — r44</title>
+<style>
+:root{color-scheme:dark}body{max-width:1000px;margin:28px auto;padding:0 20px;background:#171c19;color:#eedbb5;font:17px/1.5 Georgia,serif}h1,h2{font-weight:normal}button,select{font:inherit;color:inherit;background:#302733;border:1px solid #786047;padding:7px 10px}button{cursor:pointer}button:hover{background:#56434c}button:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid #ead4a8;outline-offset:3px}a{color:#d9b679}.controls{display:flex;gap:12px;align-items:end;flex-wrap:wrap;margin:12px 0}label{display:grid;gap:4px;font-size:15px}label.check{display:block}canvas,img{image-rendering:pixelated}#scene{display:block;width:min(960px,100%);aspect-ratio:4/3;background:#0d1110;border:1px solid #8c7353}#close{width:432px;max-width:100%;aspect-ratio:144/105.6}.sheet{display:block;max-width:100%;height:auto}figure{margin:20px 0}figcaption,small,.note{color:#bfb69e;font-size:15px}details{margin:20px 0}summary{cursor:pointer;margin-bottom:12px}#status{min-height:1.5em}button[aria-pressed=true]{background:#655045}
+</style>
+<h1>Portrait acting — fixed faces, new expressions</h1>
+<p>22 expressions at 56×64, with the original gilt surround. The speaker and listener share the same art; the listener is dimmed. All four neutral masters remain byte-for-byte unchanged.</p>
+<div class="controls">
+<label>Speaker<select id="speaker"><option value="toby">Toby</option><option value="holmes">Holmes</option><option value="watson">Watson</option><option value="hudson">Mrs Hudson</option></select></label>
+<label>Expression<select id="expression"></select></label>
+<label>Listener<select id="listener"><option value="holmes">Holmes</option><option value="toby">Toby</option><option value="watson">Watson</option><option value="hudson">Mrs Hudson</option></select></label>
+<label>Reaction<select id="reaction"></select></label>
+<button id="swap" aria-pressed="false">Speaker on left</button>
+</div>
+<div class="controls">
+<label class="check"><input type="checkbox" id="talk" checked> Talking test</label>
+<label class="check"><input type="checkbox" id="blink" checked> Blink naturally</label>
+<label>Eye cel<select id="eye"><option value="auto">Automatic glances</option><option value="0">Open</option><option value="1">Half blink</option><option value="2">Closed</option><option value="3">Toward speaker</option><option value="4">Away</option><option value="5">Down</option></select></label>
+<label>Mouth cel<select id="mouth"><option value="auto">Test amplitude</option><option value="0">Closed</option><option value="1">Slightly open</option><option value="2">Open</option><option value="3">Wide</option></select></label>
+<button id="pause" aria-pressed="false">Pause</button>
+</div>
+<figure><canvas id="scene" width="320" height="200" aria-label="Speaker and listener portraits at the bottom of 221B"></canvas><figcaption id="status" aria-live="polite">Loading saved cels…</figcaption></figure>
+<p class="note">Talking uses a silent test amplitude with closed-mouth pauses; this page does not claim voice synchronisation. The approved head size and bust proportions stay fixed.</p>
+<details open><summary>Both facings at a closer scale</summary><canvas id="close" width="144" height="88" aria-label="Selected portrait facing right and left"></canvas><p class="note">Only the bust and its overlays mirror. The ornamental frame stays in its original orientation.</p></details>
+<details open><summary>Saved expression masters</summary><img class="sheet" id="masters" alt="Character expression references"><p class="note">Fixed files and SHA-256 hashes are in <a href="models.json">models.json</a>. Rebuilding animation verifies them; it never repaints them. These are a review pass, not yet approved or registered in the game.</p></details>
+<details><summary>Inspect eye and mouth keys</summary><img class="sheet" id="eyes" alt="Six eye cels"><img class="sheet" id="mouths" alt="Four mouth cels"></details>
+<p><a href="README.md">Workflow and handoff</a> · <a href="expressions.json">Loop mapping and timing</a> · <a href="landmarks.json">Facial landmarks</a> · <a href="native-export-check.json">Pixelorama export checks</a> · <a href="checks.json">Pixel invariants</a></p>
+<script type="module">
+const $=id=>document.getElementById(id),cache=new Map();
+async function image(url){if(!cache.has(url))cache.set(url,new Promise((resolve,reject)=>{const i=new Image;i.onload=()=>resolve(i);i.onerror=()=>reject(new Error('Failed to load '+url));i.src=url}));return cache.get(url)}
+const [spec,art,font]=await Promise.all(['expressions.json','art.json','../typography-r29/export/regular.json'].map(p=>fetch(p).then(r=>{if(!r.ok)throw Error(p);return r.json()})));
+const urls=['export/frame.png','export/surround.png','../environment-r43/export/221b-background-0.png','../typography-r29/export/regular.png',...art.views.flatMap(v=>v.loops.flatMap(l=>l.cels.map(c=>c.png)))];
+await Promise.all(urls.map(image));const images=Object.fromEntries(await Promise.all(urls.map(async u=>[u,await image(u)])));
+const glyphs=new Map(font.glyphs.map(g=>[g.code,g])),atlas=images['../typography-r29/export/regular.png'];
+function text(ctx,s,x,y,colour='#261d32'){const width=[...s].reduce((w,c)=>w+(glyphs.get(c.charCodeAt(0))?.advance??3),0),buffer=document.createElement('canvas');buffer.width=Math.max(1,width+4);buffer.height=16;const bc=buffer.getContext('2d');let pen=1;for(const c of s){const g=glyphs.get(c.charCodeAt(0));if(g){const [sx,sy,w,h]=g.rect;bc.drawImage(atlas,sx,sy,w,h,pen+g.bearingX,g.top,w,h);pen+=g.advance}}bc.globalCompositeOperation='source-in';bc.fillStyle=colour;bc.fillRect(0,0,buffer.width,buffer.height);ctx.drawImage(buffer,x-1,y)}
+const ctx=$('scene').getContext('2d'),close=$('close').getContext('2d');ctx.imageSmoothingEnabled=close.imageSmoothingEnabled=false;
+let swapped=false,paused=false,stamp=performance.now(),time=0;
+function setOptions(id,name,value='neutral'){const select=$(id);select.replaceChildren(...spec.characters[name].expressions.map(e=>new Option(e.name,e.name)));select.value=value;}
+function selected(){return spec.characters[$('speaker').value].expressions.find(e=>e.name===$('expression').value)}
+function refresh(){const n=$('speaker').value,e=$('expression').value;$('masters').src=`review/${n}-masters.png`;$('eyes').src=`review/${n}-${e}-eyes.png`;$('mouths').src=`review/${n}-${e}-mouths.png`;}
+setOptions('expression','toby','frightened');setOptions('reaction','holmes','keen');refresh();
+$('speaker').onchange=()=>{setOptions('expression',$('speaker').value);refresh()};$('expression').onchange=refresh;
+$('listener').onchange=()=>setOptions('reaction',$('listener').value);
+$('swap').onclick=()=>{swapped=!swapped;$('swap').textContent=swapped?'Speaker on right':'Speaker on left';$('swap').setAttribute('aria-pressed',String(swapped))};
+$('pause').onclick=()=>{paused=!paused;$('pause').textContent=paused?'Resume':'Pause';$('pause').setAttribute('aria-pressed',String(paused))};
+function cel(name,loop,c){return images[`export/${name}-${loop}-${c}.png`]}
+function portrait(c,name,expression,left,x,y,m,e,alpha=1){const entry=spec.characters[name].expressions.find(e=>e.name===expression),b=entry.baseLoop+(left?3:0);c.save();c.globalAlpha=alpha;c.drawImage(images['export/surround.png'],x,y);c.drawImage(cel(name,b,0),x+8,y+18);c.drawImage(cel(name,b+1,m),x+8,y+18);c.drawImage(cel(name,b+2,e),x+8,y+18);c.drawImage(images['export/frame.png'],x,y);c.restore()}
+let lastStatus='';
+function draw(now){if(!paused)time+=Math.max(0,now-stamp);stamp=now;
+ const name=$('speaker').value,expression=$('expression').value,listener=$('listener').value,reaction=$('reaction').value,period=time%5100;
+ const amplitude=[0,0,1,2,3,1,0,0,2,1,0,0,0,0,1,2,1,0,0,0],m=$('mouth').value==='auto'?($('talk').checked?amplitude[Math.floor(time/125)%amplitude.length]:0):+$('mouth').value;
+ let e=$('eye').value==='auto'?(period>2800&&period<3550?3:period>4050&&period<4450?5:0):+$('eye').value;
+ if($('blink').checked&&period>1950&&period<2210)e=period>2010&&period<2120?2:1;
+ ctx.clearRect(0,0,320,200);ctx.drawImage(images['../environment-r43/export/221b-background-0.png'],0,0);ctx.fillStyle='rgba(9,12,15,.22)';ctx.fillRect(0,0,320,200);
+ ctx.fillStyle='#754833';ctx.fillRect(73,139,174,59);ctx.fillStyle='#f5d8b1';ctx.fillRect(75,141,170,55);
+ text(ctx,name==='hudson'?'Mrs Hudson':name[0].toUpperCase()+name.slice(1),82,143);
+ const lines=name==='toby'?['Every clock stopped.','Seventeen past three.']:name==='holmes'?['Seventeen past three.','Come, Watson.']:name==='watson'?['Holmes. Listen.','He walked through it.']:['A young man to see you.','In a dreadful state.'];lines.forEach((s,i)=>text(ctx,s,82,160+i*14));
+ portrait(ctx,listener,reaction,!swapped,swapped?0:248,110,0,(time%6100>4700&&time%6100<4900)?1:3,.7);
+ portrait(ctx,name,expression,swapped,swapped?248:0,110,m,e);
+ close.clearRect(0,0,144,88);portrait(close,name,expression,false,0,0,m,e);portrait(close,name,expression,true,72,0,m,e);
+ const status=`${name} · ${expression} · mouth ${m} · eyes ${spec.eyeCels[e]} | listener: ${listener} · ${reaction}`;if(status!==lastStatus){$('status').textContent=status;lastStatus=status}
+ requestAnimationFrame(draw);
+}
+requestAnimationFrame(draw);
+</script></html>

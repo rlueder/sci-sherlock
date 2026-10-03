@@ -1,0 +1,177 @@
+[
+  {
+    "name": "watson",
+    "reference": "../watson-r42/source/watson-master.png",
+    "referenceSha256": "4a05ad5ae90c121d5bf6850fffd80904739b7ef427f60123a75b74b2a833dc1e",
+    "scale": [
+      0.14692331965919847,
+      0.12243609971599874
+    ],
+    "sourceBounds": [
+      [
+        136,
+        51,
+        391,
+        842
+      ],
+      [
+        83,
+        50,
+        360,
+        842
+      ],
+      [
+        63,
+        51,
+        339,
+        842
+      ],
+      [
+        30,
+        51,
+        313,
+        842
+      ]
+    ],
+    "keys": [
+      {
+        "file": "source/watson-key-0.png",
+        "sha256": "4a05ad5ae90c121d5bf6850fffd80904739b7ef427f60123a75b74b2a833dc1e"
+      },
+      {
+        "file": "source/watson-key-1.png",
+        "sha256": "93098b03330a1215efcfc037a51c2c47925a25a9dbbc510c638dcb234197ef23"
+      },
+      {
+        "file": "source/watson-key-2.png",
+        "sha256": "3482b19289507f824843dafe994765f5dd0f4ca7f4296fb34333998009dc3b11"
+      },
+      {
+        "file": "source/watson-key-3.png",
+        "sha256": "6799ed5858358fab5f452e7d5827244523a9336aac5a4d44fc8315debe1b7433"
+      },
+      {
+        "file": "source/watson-key-4.png",
+        "sha256": "df5e94edfa5c5c915513654d04b208dd66ff31b9e6c1fbda3f2b080a82fc43e6"
+      },
+      {
+        "file": "source/watson-key-5.png",
+        "sha256": "0d92733522a0f9d5eb998076b8ee9a38f81787848f579f2f0916fb2057e4b0ba"
+      }
+    ]
+  },
+  {
+    "name": "hudson",
+    "reference": "../baker-street-r13/source/hudson-master.png",
+    "referenceSha256": "e61b26ecfb29baaed61e82523b4a28c5faa864d53c7e454866e6f53439b8fdb4",
+    "scale": [
+      0.16755994358251058,
+      0.13963328631875882
+    ],
+    "sourceBounds": [
+      [
+        240,
+        33,
+        500,
+        741
+      ],
+      [
+        148,
+        33,
+        409,
+        741
+      ],
+      [
+        83,
+        33,
+        343,
+        741
+      ],
+      [
+        4,
+        33,
+        265,
+        741
+      ]
+    ],
+    "keys": [
+      {
+        "file": "source/hudson-key-0.png",
+        "sha256": "e61b26ecfb29baaed61e82523b4a28c5faa864d53c7e454866e6f53439b8fdb4"
+      },
+      {
+        "file": "source/hudson-key-1.png",
+        "sha256": "3266d2c08148b9bf9c5e41f70c3076a33a8dda288fcfe83d774e9cb87b563a91"
+      },
+      {
+        "file": "source/hudson-key-2.png",
+        "sha256": "365742f26aa3735f55eeeb2039f0496f4b2f1a1c72201e9e2faa8bee4b51e191"
+      },
+      {
+        "file": "source/hudson-key-3.png",
+        "sha256": "7814a6d2b456fa0f1e6b6c27d8858c67f9f230e5429998e15724510e533343cc"
+      },
+      {
+        "file": "source/hudson-key-4.png",
+        "sha256": "83be9c4d3e238038579409c24a185fc7c7fff470c703be2939832d3728e9c5e4"
+      }
+    ]
+  },
+  {
+    "name": "toby",
+    "reference": "../baker-street-r13/source/toby-master.png",
+    "referenceSha256": "2a8b3c11ccf828d897985539964c116f002eed402e67d79a784bcf3f80262351",
+    "scale": [
+      0.14677067082683307,
+      0.12230889235569423
+    ],
+    "sourceBounds": [
+      [
+        127,
+        42,
+        361,
+        841
+      ],
+      [
+        92,
+        42,
+        326,
+        842
+      ],
+      [
+        67,
+        41,
+        301,
+        842
+      ],
+      [
+        42,
+        41,
+        274,
+        842
+      ]
+    ],
+    "keys": [
+      {
+        "file": "source/toby-key-0.png",
+        "sha256": "2a8b3c11ccf828d897985539964c116f002eed402e67d79a784bcf3f80262351"
+      },
+      {
+        "file": "source/toby-key-1.png",
+        "sha256": "a8e3d881a216fc3bbca068317e989fb5a7279ef67611d021d45a0dd2b748c704"
+      },
+      {
+        "file": "source/toby-key-2.png",
+        "sha256": "4974b5968bd9297be58c207937a605ff4f88433e10d9d3ac4060f99326293162"
+      },
+      {
+        "file": "source/toby-key-3.png",
+        "sha256": "818847a77791bb7531f1acdb9d298f78876fbd9111cf0b75649c40e5048b7fb7"
+      },
+      {
+        "file": "source/toby-key-4.png",
+        "sha256": "d55dfaf76ec8456ea18ad337a58b36cc072b391c26df446d4f89cb2b02f3750b"
+      }
+    ]
+  }
+]

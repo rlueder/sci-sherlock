@@ -1,0 +1,1704 @@
+{
+  "toby": {
+    "neutral": {
+      "mouthRegion": [
+        32,
+        40,
+        9,
+        6
+      ],
+      "lipCorners": [
+        [
+          33,
+          41
+        ],
+        [
+          39,
+          41
+        ]
+      ],
+      "lipLine": [
+        [
+          33,
+          41
+        ],
+        [
+          36,
+          41
+        ],
+        [
+          39,
+          41
+        ]
+      ],
+      "chin": [
+        35,
+        46
+      ],
+      "eyeRegions": [
+        [
+          29,
+          30,
+          8,
+          5
+        ],
+        [
+          39,
+          29,
+          5,
+          4
+        ]
+      ],
+      "pupils": [
+        [
+          33,
+          31
+        ],
+        [
+          42,
+          30
+        ]
+      ],
+      "browRegions": [
+        [
+          30,
+          27,
+          8,
+          2
+        ],
+        [
+          40,
+          27,
+          4,
+          2
+        ]
+      ],
+      "mouthShape": "neutral",
+      "eyeShape": "neutral",
+      "note": "Thin young lips above a narrow chin. A tapered wedge opening, with a smaller far side; movement stays on the actual lip line."
+    },
+    "frightened": {
+      "mouthRegion": [
+        32,
+        40,
+        9,
+        6
+      ],
+      "lipCorners": [
+        [
+          33,
+          42
+        ],
+        [
+          39,
+          42
+        ]
+      ],
+      "lipLine": [
+        [
+          33,
+          42
+        ],
+        [
+          36,
+          41
+        ],
+        [
+          39,
+          42
+        ]
+      ],
+      "chin": [
+        35,
+        46
+      ],
+      "eyeRegions": [
+        [
+          29,
+          29,
+          8,
+          4
+        ],
+        [
+          39,
+          28,
+          5,
+          4
+        ]
+      ],
+      "pupils": [
+        [
+          33,
+          31
+        ],
+        [
+          42,
+          30
+        ]
+      ],
+      "browRegions": [
+        [
+          30,
+          27,
+          8,
+          2
+        ],
+        [
+          40,
+          27,
+          4,
+          2
+        ]
+      ],
+      "mouthShape": "frown",
+      "eyeShape": "wide",
+      "note": "Thin young lips above a narrow chin. A tapered wedge opening, with a smaller far side; movement stays on the actual lip line."
+    },
+    "tearful": {
+      "mouthRegion": [
+        32,
+        40,
+        9,
+        6
+      ],
+      "lipCorners": [
+        [
+          33,
+          42
+        ],
+        [
+          39,
+          42
+        ]
+      ],
+      "lipLine": [
+        [
+          33,
+          42
+        ],
+        [
+          36,
+          41
+        ],
+        [
+          39,
+          42
+        ]
+      ],
+      "chin": [
+        35,
+        46
+      ],
+      "eyeRegions": [
+        [
+          29,
+          30,
+          8,
+          3
+        ],
+        [
+          39,
+          29,
+          5,
+          3
+        ]
+      ],
+      "pupils": [
+        [
+          33,
+          31
+        ],
+        [
+          42,
+          30
+        ]
+      ],
+      "browRegions": [
+        [
+          30,
+          27,
+          8,
+          2
+        ],
+        [
+          40,
+          27,
+          4,
+          2
+        ]
+      ],
+      "mouthShape": "tremble",
+      "eyeShape": "wet",
+      "note": "Thin young lips above a narrow chin. A tapered wedge opening, with a smaller far side; movement stays on the actual lip line."
+    },
+    "spooked": {
+      "mouthRegion": [
+        32,
+        40,
+        9,
+        6
+      ],
+      "lipCorners": [
+        [
+          33,
+          41
+        ],
+        [
+          39,
+          41
+        ]
+      ],
+      "lipLine": [
+        [
+          33,
+          41
+        ],
+        [
+          36,
+          41
+        ],
+        [
+          39,
+          41
+        ]
+      ],
+      "chin": [
+        35,
+        46
+      ],
+      "eyeRegions": [
+        [
+          29,
+          30,
+          8,
+          3
+        ],
+        [
+          39,
+          29,
+          5,
+          3
+        ]
+      ],
+      "pupils": [
+        [
+          33,
+          31
+        ],
+        [
+          42,
+          30
+        ]
+      ],
+      "browRegions": [
+        [
+          30,
+          27,
+          8,
+          2
+        ],
+        [
+          40,
+          27,
+          4,
+          2
+        ]
+      ],
+      "mouthShape": "tight",
+      "eyeShape": "away",
+      "note": "Thin young lips above a narrow chin. A tapered wedge opening, with a smaller far side; movement stays on the actual lip line."
+    },
+    "earnest": {
+      "mouthRegion": [
+        32,
+        40,
+        9,
+        6
+      ],
+      "lipCorners": [
+        [
+          33,
+          41
+        ],
+        [
+          39,
+          41
+        ]
+      ],
+      "lipLine": [
+        [
+          33,
+          41
+        ],
+        [
+          36,
+          41
+        ],
+        [
+          39,
+          41
+        ]
+      ],
+      "chin": [
+        35,
+        46
+      ],
+      "eyeRegions": [
+        [
+          29,
+          30,
+          8,
+          3
+        ],
+        [
+          39,
+          29,
+          5,
+          3
+        ]
+      ],
+      "pupils": [
+        [
+          33,
+          31
+        ],
+        [
+          42,
+          30
+        ]
+      ],
+      "browRegions": [
+        [
+          30,
+          27,
+          8,
+          2
+        ],
+        [
+          40,
+          27,
+          4,
+          2
+        ]
+      ],
+      "mouthShape": "soft",
+      "eyeShape": "bright",
+      "note": "Thin young lips above a narrow chin. A tapered wedge opening, with a smaller far side; movement stays on the actual lip line."
+    },
+    "relieved": {
+      "mouthRegion": [
+        32,
+        40,
+        9,
+        6
+      ],
+      "lipCorners": [
+        [
+          33,
+          40
+        ],
+        [
+          39,
+          40
+        ]
+      ],
+      "lipLine": [
+        [
+          33,
+          40
+        ],
+        [
+          36,
+          41
+        ],
+        [
+          39,
+          40
+        ]
+      ],
+      "chin": [
+        35,
+        46
+      ],
+      "eyeRegions": [
+        [
+          29,
+          30,
+          8,
+          3
+        ],
+        [
+          39,
+          29,
+          5,
+          3
+        ]
+      ],
+      "pupils": [
+        [
+          33,
+          31
+        ],
+        [
+          42,
+          30
+        ]
+      ],
+      "browRegions": [
+        [
+          30,
+          27,
+          8,
+          2
+        ],
+        [
+          40,
+          27,
+          4,
+          2
+        ]
+      ],
+      "mouthShape": "smile",
+      "eyeShape": "soft",
+      "note": "Thin young lips above a narrow chin. A tapered wedge opening, with a smaller far side; movement stays on the actual lip line."
+    }
+  },
+  "holmes": {
+    "neutral": {
+      "mouthRegion": [
+        33,
+        38,
+        12,
+        6
+      ],
+      "lipCorners": [
+        [
+          35,
+          40
+        ],
+        [
+          43,
+          40
+        ]
+      ],
+      "lipLine": [
+        [
+          35,
+          40
+        ],
+        [
+          39,
+          39
+        ],
+        [
+          43,
+          40
+        ]
+      ],
+      "chin": [
+        40,
+        46
+      ],
+      "eyeRegions": [
+        [
+          31,
+          28,
+          7,
+          2
+        ],
+        [
+          42,
+          28,
+          4,
+          2
+        ]
+      ],
+      "pupils": [
+        [
+          35,
+          29
+        ],
+        [
+          44,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          31,
+          26,
+          8,
+          2
+        ],
+        [
+          42,
+          26,
+          4,
+          2
+        ]
+      ],
+      "mouthShape": "neutral",
+      "eyeShape": "neutral",
+      "note": "Thin downturned lips beneath an aquiline nose. Follow the oblique line and keep the long upper lip, cheek crease and chin. Pipe remains held below the jaw."
+    },
+    "intent": {
+      "mouthRegion": [
+        33,
+        38,
+        12,
+        6
+      ],
+      "lipCorners": [
+        [
+          35,
+          40
+        ],
+        [
+          43,
+          40
+        ]
+      ],
+      "lipLine": [
+        [
+          35,
+          40
+        ],
+        [
+          39,
+          39
+        ],
+        [
+          43,
+          40
+        ]
+      ],
+      "chin": [
+        40,
+        46
+      ],
+      "eyeRegions": [
+        [
+          31,
+          28,
+          7,
+          2
+        ],
+        [
+          42,
+          28,
+          4,
+          2
+        ]
+      ],
+      "pupils": [
+        [
+          35,
+          29
+        ],
+        [
+          44,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          31,
+          26,
+          8,
+          2
+        ],
+        [
+          42,
+          26,
+          4,
+          2
+        ]
+      ],
+      "mouthShape": "tight",
+      "eyeShape": "narrow",
+      "note": "Thin downturned lips beneath an aquiline nose. Follow the oblique line and keep the long upper lip, cheek crease and chin. Pipe remains held below the jaw."
+    },
+    "keen": {
+      "mouthRegion": [
+        33,
+        38,
+        12,
+        6
+      ],
+      "lipCorners": [
+        [
+          35,
+          40
+        ],
+        [
+          43,
+          40
+        ]
+      ],
+      "lipLine": [
+        [
+          35,
+          40
+        ],
+        [
+          39,
+          39
+        ],
+        [
+          43,
+          40
+        ]
+      ],
+      "chin": [
+        40,
+        46
+      ],
+      "eyeRegions": [
+        [
+          31,
+          28,
+          7,
+          2
+        ],
+        [
+          42,
+          28,
+          4,
+          2
+        ]
+      ],
+      "pupils": [
+        [
+          35,
+          29
+        ],
+        [
+          44,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          31,
+          26,
+          8,
+          2
+        ],
+        [
+          42,
+          26,
+          4,
+          2
+        ]
+      ],
+      "mouthShape": "soft",
+      "eyeShape": "bright",
+      "note": "Thin downturned lips beneath an aquiline nose. Follow the oblique line and keep the long upper lip, cheek crease and chin. Pipe remains held below the jaw."
+    },
+    "dry": {
+      "mouthRegion": [
+        33,
+        38,
+        12,
+        6
+      ],
+      "lipCorners": [
+        [
+          35,
+          39
+        ],
+        [
+          43,
+          40
+        ]
+      ],
+      "lipLine": [
+        [
+          35,
+          39
+        ],
+        [
+          39,
+          39
+        ],
+        [
+          43,
+          40
+        ]
+      ],
+      "chin": [
+        40,
+        46
+      ],
+      "eyeRegions": [
+        [
+          31,
+          28,
+          7,
+          2
+        ],
+        [
+          42,
+          28,
+          4,
+          2
+        ]
+      ],
+      "pupils": [
+        [
+          35,
+          29
+        ],
+        [
+          44,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          31,
+          26,
+          8,
+          2
+        ],
+        [
+          42,
+          26,
+          4,
+          2
+        ]
+      ],
+      "mouthShape": "smirk",
+      "eyeShape": "narrow",
+      "note": "Thin downturned lips beneath an aquiline nose. Follow the oblique line and keep the long upper lip, cheek crease and chin. Pipe remains held below the jaw."
+    },
+    "grave": {
+      "mouthRegion": [
+        33,
+        38,
+        12,
+        6
+      ],
+      "lipCorners": [
+        [
+          35,
+          41
+        ],
+        [
+          43,
+          41
+        ]
+      ],
+      "lipLine": [
+        [
+          35,
+          41
+        ],
+        [
+          39,
+          39
+        ],
+        [
+          43,
+          41
+        ]
+      ],
+      "chin": [
+        40,
+        46
+      ],
+      "eyeRegions": [
+        [
+          31,
+          28,
+          7,
+          2
+        ],
+        [
+          42,
+          28,
+          4,
+          2
+        ]
+      ],
+      "pupils": [
+        [
+          35,
+          29
+        ],
+        [
+          44,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          31,
+          26,
+          8,
+          2
+        ],
+        [
+          42,
+          26,
+          4,
+          2
+        ]
+      ],
+      "mouthShape": "frown",
+      "eyeShape": "soft",
+      "note": "Thin downturned lips beneath an aquiline nose. Follow the oblique line and keep the long upper lip, cheek crease and chin. Pipe remains held below the jaw."
+    },
+    "impatient": {
+      "mouthRegion": [
+        33,
+        38,
+        12,
+        6
+      ],
+      "lipCorners": [
+        [
+          35,
+          40
+        ],
+        [
+          43,
+          40
+        ]
+      ],
+      "lipLine": [
+        [
+          35,
+          40
+        ],
+        [
+          39,
+          39
+        ],
+        [
+          43,
+          40
+        ]
+      ],
+      "chin": [
+        40,
+        46
+      ],
+      "eyeRegions": [
+        [
+          31,
+          28,
+          7,
+          2
+        ],
+        [
+          42,
+          28,
+          4,
+          2
+        ]
+      ],
+      "pupils": [
+        [
+          35,
+          29
+        ],
+        [
+          44,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          31,
+          26,
+          8,
+          2
+        ],
+        [
+          42,
+          26,
+          4,
+          2
+        ]
+      ],
+      "mouthShape": "pressed",
+      "eyeShape": "narrow",
+      "note": "Thin downturned lips beneath an aquiline nose. Follow the oblique line and keep the long upper lip, cheek crease and chin. Pipe remains held below the jaw."
+    }
+  },
+  "watson": {
+    "neutral": {
+      "mouthRegion": [
+        34,
+        39,
+        10,
+        4
+      ],
+      "lipCorners": [
+        [
+          34,
+          40
+        ],
+        [
+          41,
+          40
+        ]
+      ],
+      "lipLine": [
+        [
+          34,
+          40
+        ],
+        [
+          37,
+          40
+        ],
+        [
+          41,
+          40
+        ]
+      ],
+      "chin": [
+        39,
+        47
+      ],
+      "eyeRegions": [
+        [
+          28,
+          28,
+          7,
+          2
+        ],
+        [
+          39,
+          28,
+          5,
+          2
+        ]
+      ],
+      "pupils": [
+        [
+          31,
+          29
+        ],
+        [
+          42,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          28,
+          25,
+          9,
+          2
+        ],
+        [
+          39,
+          25,
+          5,
+          2
+        ]
+      ],
+      "mouthShape": "neutral",
+      "eyeShape": "neutral",
+      "note": "Opening starts at y40 directly against the central underside of the moustache. The lower-lip shadow at y42 is not the mouth seam. Preserve the moustache above y40 and its hanging outer tips. Speaking shapes extend one native pixel farther at each corner, with softer corner shading; seam height and the neutral mouth remain unchanged. Follow-up alignment: both speaking shapes shift one native pixel left toward the centre of the face, retaining width and seam height."
+    },
+    "warm": {
+      "mouthRegion": [
+        34,
+        39,
+        10,
+        4
+      ],
+      "lipCorners": [
+        [
+          34,
+          39
+        ],
+        [
+          41,
+          39
+        ]
+      ],
+      "lipLine": [
+        [
+          34,
+          39
+        ],
+        [
+          37,
+          40
+        ],
+        [
+          41,
+          39
+        ]
+      ],
+      "chin": [
+        39,
+        47
+      ],
+      "eyeRegions": [
+        [
+          28,
+          28,
+          7,
+          2
+        ],
+        [
+          39,
+          28,
+          5,
+          2
+        ]
+      ],
+      "pupils": [
+        [
+          31,
+          29
+        ],
+        [
+          42,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          28,
+          25,
+          9,
+          2
+        ],
+        [
+          39,
+          25,
+          5,
+          2
+        ]
+      ],
+      "mouthShape": "smile",
+      "eyeShape": "soft",
+      "note": "Opening starts at y40 directly against the central underside of the moustache. The lower-lip shadow at y42 is not the mouth seam. Preserve the moustache above y40 and its hanging outer tips. Speaking shapes extend one native pixel farther at each corner, with softer corner shading; seam height and the neutral mouth remain unchanged. Follow-up alignment: both speaking shapes shift one native pixel left toward the centre of the face, retaining width and seam height."
+    },
+    "puzzled": {
+      "mouthRegion": [
+        34,
+        39,
+        10,
+        4
+      ],
+      "lipCorners": [
+        [
+          34,
+          41
+        ],
+        [
+          41,
+          41
+        ]
+      ],
+      "lipLine": [
+        [
+          34,
+          41
+        ],
+        [
+          37,
+          40
+        ],
+        [
+          41,
+          41
+        ]
+      ],
+      "chin": [
+        39,
+        47
+      ],
+      "eyeRegions": [
+        [
+          28,
+          28,
+          7,
+          2
+        ],
+        [
+          39,
+          28,
+          5,
+          2
+        ]
+      ],
+      "pupils": [
+        [
+          31,
+          29
+        ],
+        [
+          42,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          28,
+          25,
+          9,
+          2
+        ],
+        [
+          39,
+          25,
+          5,
+          2
+        ]
+      ],
+      "mouthShape": "frown",
+      "eyeShape": "bright",
+      "note": "Opening starts at y40 directly against the central underside of the moustache. The lower-lip shadow at y42 is not the mouth seam. Preserve the moustache above y40 and its hanging outer tips. Speaking shapes extend one native pixel farther at each corner, with softer corner shading; seam height and the neutral mouth remain unchanged. Follow-up alignment: both speaking shapes shift one native pixel left toward the centre of the face, retaining width and seam height."
+    },
+    "concerned": {
+      "mouthRegion": [
+        34,
+        39,
+        10,
+        4
+      ],
+      "lipCorners": [
+        [
+          34,
+          41
+        ],
+        [
+          41,
+          41
+        ]
+      ],
+      "lipLine": [
+        [
+          34,
+          41
+        ],
+        [
+          37,
+          40
+        ],
+        [
+          41,
+          41
+        ]
+      ],
+      "chin": [
+        39,
+        47
+      ],
+      "eyeRegions": [
+        [
+          28,
+          28,
+          7,
+          2
+        ],
+        [
+          39,
+          28,
+          5,
+          2
+        ]
+      ],
+      "pupils": [
+        [
+          31,
+          29
+        ],
+        [
+          42,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          28,
+          25,
+          9,
+          2
+        ],
+        [
+          39,
+          25,
+          5,
+          2
+        ]
+      ],
+      "mouthShape": "frown",
+      "eyeShape": "soft",
+      "note": "Opening starts at y40 directly against the central underside of the moustache. The lower-lip shadow at y42 is not the mouth seam. Preserve the moustache above y40 and its hanging outer tips. Speaking shapes extend one native pixel farther at each corner, with softer corner shading; seam height and the neutral mouth remain unchanged. Follow-up alignment: both speaking shapes shift one native pixel left toward the centre of the face, retaining width and seam height."
+    },
+    "surprised": {
+      "mouthRegion": [
+        34,
+        39,
+        10,
+        4
+      ],
+      "lipCorners": [
+        [
+          34,
+          40
+        ],
+        [
+          41,
+          40
+        ]
+      ],
+      "lipLine": [
+        [
+          34,
+          40
+        ],
+        [
+          37,
+          40
+        ],
+        [
+          41,
+          40
+        ]
+      ],
+      "chin": [
+        39,
+        47
+      ],
+      "eyeRegions": [
+        [
+          28,
+          27,
+          7,
+          3
+        ],
+        [
+          39,
+          27,
+          5,
+          3
+        ]
+      ],
+      "pupils": [
+        [
+          31,
+          29
+        ],
+        [
+          42,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          28,
+          25,
+          9,
+          2
+        ],
+        [
+          39,
+          25,
+          5,
+          2
+        ]
+      ],
+      "mouthShape": "soft",
+      "eyeShape": "wide",
+      "note": "Opening starts at y40 directly against the central underside of the moustache. The lower-lip shadow at y42 is not the mouth seam. Preserve the moustache above y40 and its hanging outer tips. Speaking shapes extend one native pixel farther at each corner, with softer corner shading; seam height and the neutral mouth remain unchanged. Follow-up alignment: both speaking shapes shift one native pixel left toward the centre of the face, retaining width and seam height."
+    },
+    "resolute": {
+      "mouthRegion": [
+        34,
+        39,
+        10,
+        4
+      ],
+      "lipCorners": [
+        [
+          34,
+          40
+        ],
+        [
+          41,
+          40
+        ]
+      ],
+      "lipLine": [
+        [
+          34,
+          40
+        ],
+        [
+          37,
+          40
+        ],
+        [
+          41,
+          40
+        ]
+      ],
+      "chin": [
+        39,
+        47
+      ],
+      "eyeRegions": [
+        [
+          28,
+          28,
+          7,
+          2
+        ],
+        [
+          39,
+          28,
+          5,
+          2
+        ]
+      ],
+      "pupils": [
+        [
+          31,
+          29
+        ],
+        [
+          42,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          28,
+          25,
+          9,
+          2
+        ],
+        [
+          39,
+          25,
+          5,
+          2
+        ]
+      ],
+      "mouthShape": "pressed",
+      "eyeShape": "narrow",
+      "note": "Opening starts at y40 directly against the central underside of the moustache. The lower-lip shadow at y42 is not the mouth seam. Preserve the moustache above y40 and its hanging outer tips. Speaking shapes extend one native pixel farther at each corner, with softer corner shading; seam height and the neutral mouth remain unchanged. Follow-up alignment: both speaking shapes shift one native pixel left toward the centre of the face, retaining width and seam height."
+    }
+  },
+  "hudson": {
+    "neutral": {
+      "mouthRegion": [
+        33,
+        38,
+        10,
+        6
+      ],
+      "lipCorners": [
+        [
+          34,
+          39
+        ],
+        [
+          41,
+          40
+        ]
+      ],
+      "lipLine": [
+        [
+          34,
+          39
+        ],
+        [
+          37,
+          39
+        ],
+        [
+          41,
+          40
+        ]
+      ],
+      "chin": [
+        38,
+        45
+      ],
+      "eyeRegions": [
+        [
+          31,
+          28,
+          6,
+          3
+        ],
+        [
+          40,
+          28,
+          5,
+          2
+        ]
+      ],
+      "pupils": [
+        [
+          34,
+          29
+        ],
+        [
+          42,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          31,
+          25,
+          7,
+          3
+        ],
+        [
+          40,
+          25,
+          5,
+          3
+        ]
+      ],
+      "mouthShape": "neutral",
+      "eyeShape": "neutral",
+      "note": "Small pursed mouth on a sloping three-quarter lip line. Keep the far corner and lower-lip volume; muted reddish brown rather than black."
+    },
+    "flustered": {
+      "mouthRegion": [
+        33,
+        38,
+        10,
+        6
+      ],
+      "lipCorners": [
+        [
+          34,
+          39
+        ],
+        [
+          41,
+          40
+        ]
+      ],
+      "lipLine": [
+        [
+          34,
+          39
+        ],
+        [
+          37,
+          39
+        ],
+        [
+          41,
+          40
+        ]
+      ],
+      "chin": [
+        38,
+        45
+      ],
+      "eyeRegions": [
+        [
+          31,
+          27,
+          6,
+          4
+        ],
+        [
+          40,
+          27,
+          5,
+          3
+        ]
+      ],
+      "pupils": [
+        [
+          34,
+          29
+        ],
+        [
+          42,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          31,
+          25,
+          7,
+          3
+        ],
+        [
+          40,
+          25,
+          5,
+          3
+        ]
+      ],
+      "mouthShape": "pressed",
+      "eyeShape": "wide",
+      "note": "Small pursed mouth on a sloping three-quarter lip line. Keep the far corner and lower-lip volume; muted reddish brown rather than black."
+    },
+    "kind": {
+      "mouthRegion": [
+        33,
+        38,
+        10,
+        6
+      ],
+      "lipCorners": [
+        [
+          34,
+          38
+        ],
+        [
+          41,
+          39
+        ]
+      ],
+      "lipLine": [
+        [
+          34,
+          38
+        ],
+        [
+          37,
+          39
+        ],
+        [
+          41,
+          39
+        ]
+      ],
+      "chin": [
+        38,
+        45
+      ],
+      "eyeRegions": [
+        [
+          31,
+          28,
+          6,
+          3
+        ],
+        [
+          40,
+          28,
+          5,
+          2
+        ]
+      ],
+      "pupils": [
+        [
+          34,
+          29
+        ],
+        [
+          42,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          31,
+          25,
+          7,
+          3
+        ],
+        [
+          40,
+          25,
+          5,
+          3
+        ]
+      ],
+      "mouthShape": "smile",
+      "eyeShape": "soft",
+      "note": "Small pursed mouth on a sloping three-quarter lip line. Keep the far corner and lower-lip volume; muted reddish brown rather than black."
+    },
+    "startled": {
+      "mouthRegion": [
+        33,
+        38,
+        10,
+        6
+      ],
+      "lipCorners": [
+        [
+          34,
+          39
+        ],
+        [
+          41,
+          40
+        ]
+      ],
+      "lipLine": [
+        [
+          34,
+          39
+        ],
+        [
+          37,
+          39
+        ],
+        [
+          41,
+          40
+        ]
+      ],
+      "chin": [
+        38,
+        45
+      ],
+      "eyeRegions": [
+        [
+          31,
+          27,
+          6,
+          4
+        ],
+        [
+          40,
+          27,
+          5,
+          3
+        ]
+      ],
+      "pupils": [
+        [
+          34,
+          29
+        ],
+        [
+          42,
+          29
+        ]
+      ],
+      "browRegions": [
+        [
+          31,
+          25,
+          7,
+          3
+        ],
+        [
+          40,
+          25,
+          5,
+          3
+        ]
+      ],
+      "mouthShape": "round",
+      "eyeShape": "wide",
+      "note": "Small pursed mouth on a sloping three-quarter lip line. Keep the far corner and lower-lip volume; muted reddish brown rather than black."
+    }
+  }
+}
