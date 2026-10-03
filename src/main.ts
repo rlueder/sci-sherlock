@@ -3,7 +3,7 @@ import { GameSession } from "sci2-ts/viewer";
 
 /**
  * The page around the game: buttons for the actions (for touch screens, and anyone who'd
- * rather not right-click), the inventory and the game menu, sound on or off, and a line
+ * rather not right-click), the inventory and the game menu, sound or just the music on or off, and a line
  * saying what a click will do.
  */
 const canvas = document.querySelector<HTMLCanvasElement>("#screen")!;
@@ -13,15 +13,20 @@ const verbButtons = [...document.querySelectorAll<HTMLButtonElement>("[data-verb
 const inventoryButton = document.querySelector<HTMLButtonElement>("#inventory")!;
 const menuButton = document.querySelector<HTMLButtonElement>("#menu")!;
 const soundButton = document.querySelector<HTMLButtonElement>("#sound")!;
+const musicButton = document.querySelector<HTMLButtonElement>("#music")!;
 const VERB_NAMES: Record<number, string> = { 1: "Look", 2: "Talk", 3: "Walk", 4: "Use", 5: "Use the item" };
 const SOUND_KEY = "sherlock.sound";
+const MUSIC_KEY = "sherlock.music";
 
 try {
   const soundOn = (() => {
     try { return localStorage.getItem(SOUND_KEY) !== "off"; } catch { return true; }
   })();
   // Saves stay this page's own; audio starts with the first click or key, as browsers require.
-  const session = await GameSession.create({ canvas, muted: !soundOn, saveNamespace: "sherlock-workshop" });
+  const musicOn = (() => {
+    try { return localStorage.getItem(MUSIC_KEY) !== "off"; } catch { return true; }
+  })();
+  const session = await GameSession.create({ canvas, muted: !soundOn, musicMuted: !musicOn, saveNamespace: "sherlock-workshop" });
   const vm = session.vm;
   const globals = parseSelectorNames(session.rm.loadSync({ type: ResourceType.Vocab, number: GLOBAL_NAMES_VOCAB }).data);
   const global = (name: string) => gameGlobal(vm, globals.indexOf(name));
@@ -52,6 +57,17 @@ try {
     showSound();
   });
   showSound();
+  // Music alone: off leaves the voices and effects playing.
+  const showMusic = () => {
+    musicButton.setAttribute("aria-pressed", String(!session.musicMuted));
+    musicButton.querySelector("span:last-child")!.textContent = session.musicMuted ? "Music off" : "Music on";
+  };
+  musicButton.addEventListener("click", () => {
+    session.setMusicMuted(!session.musicMuted);
+    try { localStorage.setItem(MUSIC_KEY, session.musicMuted ? "off" : "on"); } catch { /* private mode */ }
+    showMusic();
+  });
+  showMusic();
   // Number keys pick actions (I and Escape are the game's own).
   addEventListener("keydown", (e) => {
     if (e.ctrlKey || e.metaKey || e.altKey || e.repeat) return;
