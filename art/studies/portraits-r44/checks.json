@@ -1,0 +1,3532 @@
+{
+  "mastersVerified": 22,
+  "neutralFilesByteIdentical": 4,
+  "neutralOverlaysReconstructMaster": true,
+  "frameNeverMirrored": true,
+  "regions": [
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 24
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 47
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 4
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 24
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 47
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 4
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 35
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 35
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 8
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 35
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 35
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 8
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 25
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 26
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 25
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 26
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 24
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 26
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 3
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 2
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 24
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 26
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 3
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 2
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 25
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 26
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 25
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 26
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 24
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 26
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 4
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 24
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 26
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 4
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 20
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 20
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 7
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 10
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 9
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 15
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 7
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 10
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 9
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 15
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 20
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 20
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 9
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 16
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 9
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 16
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 7
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 19
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 7
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 19
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 6
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 10
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 9
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 15
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 6
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 10
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 9
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 15
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 6
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 11
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 13
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 15
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 19
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 23
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 11
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 13
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 15
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 19
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 23
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 10
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 13
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 19
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 22
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 10
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 13
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 19
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 22
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 10
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 13
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 19
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 23
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 10
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 13
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 19
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 23
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 10
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 13
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 19
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 22
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 10
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 13
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 19
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 22
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 10
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 13
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 27
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 31
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 6
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 9
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 3
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 10
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 11
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 13
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 27
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 31
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 6
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 9
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 3
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 9
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 19
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 18
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 9
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 19
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 18
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 5
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 5
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 12
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 17
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 24
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 6
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 12
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 17
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 24
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 6
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 7
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 9
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 25
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 31
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 8
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 9
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 6
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 7
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 9
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 11
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 25
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 31
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 8
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 9
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 6
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 12
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 17
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 23
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 6
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 12
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 17
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 23
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 6
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 7
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 7
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": false,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": false,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": false,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": false,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 12
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": false,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": false,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 25
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": false,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 31
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": false,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 8
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": false,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 9
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": false,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 6
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": true,
+      "type": "mouth",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": true,
+      "type": "mouth",
+      "cel": 1,
+      "changed": 8
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": true,
+      "type": "mouth",
+      "cel": 2,
+      "changed": 10
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": true,
+      "type": "mouth",
+      "cel": 3,
+      "changed": 12
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": true,
+      "type": "eyes",
+      "cel": 0,
+      "changed": 0
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": true,
+      "type": "eyes",
+      "cel": 1,
+      "changed": 25
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": true,
+      "type": "eyes",
+      "cel": 2,
+      "changed": 31
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": true,
+      "type": "eyes",
+      "cel": 3,
+      "changed": 8
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": true,
+      "type": "eyes",
+      "cel": 4,
+      "changed": 9
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "left": true,
+      "type": "eyes",
+      "cel": 5,
+      "changed": 6
+    }
+  ],
+  "resources": 4,
+  "cels": 484,
+  "nativeProjects": 4,
+  "nativeFrames": 396
+}

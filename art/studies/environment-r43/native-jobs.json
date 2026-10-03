@@ -1,0 +1,251 @@
+[
+  {
+    "name": "221b-letters",
+    "expected": [
+      "export/221b-letters-0.png"
+    ]
+  },
+  {
+    "name": "221b-slipper",
+    "expected": [
+      "export/221b-slipper-0.png"
+    ]
+  },
+  {
+    "name": "221b-violin",
+    "expected": [
+      "export/221b-violin-0.png"
+    ]
+  },
+  {
+    "name": "221b-background",
+    "expected": [
+      "export/221b-background-0.png"
+    ]
+  },
+  {
+    "name": "221b-desk",
+    "expected": [
+      "export/221b-desk-0.png"
+    ]
+  },
+  {
+    "name": "221b-mantel-details",
+    "expected": [
+      "export/221b-mantel-details-0.png"
+    ]
+  },
+  {
+    "name": "221b-edit-master",
+    "expected": [
+      "export/221b-edit-master.png"
+    ]
+  },
+  {
+    "name": "stair-clock-back",
+    "expected": [
+      "export/stair-clock-back-0.png"
+    ]
+  },
+  {
+    "name": "stair-wall-return",
+    "expected": [
+      "export/stair-wall-return-0.png"
+    ]
+  },
+  {
+    "name": "stair-tools",
+    "expected": [
+      "export/stair-tools-0.png"
+    ]
+  },
+  {
+    "name": "stair-background",
+    "expected": [
+      "export/stair-background-0.png"
+    ]
+  },
+  {
+    "name": "stair-edit-master",
+    "expected": [
+      "export/stair-edit-master.png"
+    ]
+  },
+  {
+    "name": "passage-lamp",
+    "expected": [
+      "export/passage-lamp-0.png",
+      "export/passage-lamp-1.png",
+      "export/passage-lamp-2.png",
+      "export/passage-lamp-3.png",
+      "export/passage-lamp-4.png",
+      "export/passage-lamp-5.png"
+    ]
+  },
+  {
+    "name": "passage-peek",
+    "expected": [
+      "export/passage-peek-0.png",
+      "export/passage-peek-1.png",
+      "export/passage-peek-2.png",
+      "export/passage-peek-3.png",
+      "export/passage-peek-4.png",
+      "export/passage-peek-5.png",
+      "export/passage-peek-6.png",
+      "export/passage-peek-7.png",
+      "export/passage-peek-8.png",
+      "export/passage-peek-9.png",
+      "export/passage-peek-10.png",
+      "export/passage-peek-11.png",
+      "export/passage-peek-12.png",
+      "export/passage-peek-13.png",
+      "export/passage-peek-14.png",
+      "export/passage-peek-15.png",
+      "export/passage-peek-16.png",
+      "export/passage-peek-17.png",
+      "export/passage-peek-18.png",
+      "export/passage-peek-19.png",
+      "export/passage-peek-20.png",
+      "export/passage-peek-21.png",
+      "export/passage-peek-22.png",
+      "export/passage-peek-23.png"
+    ]
+  },
+  {
+    "name": "end-background",
+    "expected": [
+      "export/end-background-0.png"
+    ]
+  },
+  {
+    "name": "end-lettering",
+    "expected": [
+      "export/end-lettering-0.png"
+    ]
+  },
+  {
+    "name": "end-card",
+    "expected": [
+      "export/end-card.png"
+    ]
+  },
+  {
+    "name": "workshop-pendulum",
+    "expected": [
+      "export/workshop-pendulum-0.png",
+      "export/workshop-pendulum-1.png",
+      "export/workshop-pendulum-2.png",
+      "export/workshop-pendulum-3.png",
+      "export/workshop-pendulum-4.png",
+      "export/workshop-pendulum-5.png",
+      "export/workshop-pendulum-6.png",
+      "export/workshop-pendulum-7.png",
+      "export/workshop-pendulum-8.png",
+      "export/workshop-pendulum-9.png",
+      "export/workshop-pendulum-10.png",
+      "export/workshop-pendulum-11.png",
+      "export/workshop-pendulum-12.png",
+      "export/workshop-pendulum-13.png",
+      "export/workshop-pendulum-14.png",
+      "export/workshop-pendulum-15.png",
+      "export/workshop-pendulum-16.png",
+      "export/workshop-pendulum-17.png",
+      "export/workshop-pendulum-18.png",
+      "export/workshop-pendulum-19.png",
+      "export/workshop-pendulum-20.png",
+      "export/workshop-pendulum-21.png",
+      "export/workshop-pendulum-22.png",
+      "export/workshop-pendulum-23.png"
+    ]
+  },
+  {
+    "name": "workshop-sky",
+    "expected": [
+      "export/workshop-sky-0.png",
+      "export/workshop-sky-1.png",
+      "export/workshop-sky-2.png",
+      "export/workshop-sky-3.png",
+      "export/workshop-sky-4.png",
+      "export/workshop-sky-5.png",
+      "export/workshop-sky-6.png",
+      "export/workshop-sky-7.png",
+      "export/workshop-sky-8.png",
+      "export/workshop-sky-9.png",
+      "export/workshop-sky-10.png",
+      "export/workshop-sky-11.png",
+      "export/workshop-sky-12.png",
+      "export/workshop-sky-13.png",
+      "export/workshop-sky-14.png",
+      "export/workshop-sky-15.png"
+    ]
+  },
+  {
+    "name": "workshop-rain",
+    "expected": [
+      "export/workshop-rain-0.png",
+      "export/workshop-rain-1.png",
+      "export/workshop-rain-2.png",
+      "export/workshop-rain-3.png",
+      "export/workshop-rain-4.png",
+      "export/workshop-rain-5.png",
+      "export/workshop-rain-6.png",
+      "export/workshop-rain-7.png",
+      "export/workshop-rain-8.png",
+      "export/workshop-rain-9.png",
+      "export/workshop-rain-10.png",
+      "export/workshop-rain-11.png",
+      "export/workshop-rain-12.png",
+      "export/workshop-rain-13.png",
+      "export/workshop-rain-14.png",
+      "export/workshop-rain-15.png",
+      "export/workshop-rain-16.png",
+      "export/workshop-rain-17.png",
+      "export/workshop-rain-18.png",
+      "export/workshop-rain-19.png",
+      "export/workshop-rain-20.png",
+      "export/workshop-rain-21.png",
+      "export/workshop-rain-22.png",
+      "export/workshop-rain-23.png",
+      "export/workshop-rain-24.png",
+      "export/workshop-rain-25.png",
+      "export/workshop-rain-26.png",
+      "export/workshop-rain-27.png",
+      "export/workshop-rain-28.png",
+      "export/workshop-rain-29.png",
+      "export/workshop-rain-30.png",
+      "export/workshop-rain-31.png",
+      "export/workshop-rain-32.png",
+      "export/workshop-rain-33.png",
+      "export/workshop-rain-34.png",
+      "export/workshop-rain-35.png",
+      "export/workshop-rain-36.png",
+      "export/workshop-rain-37.png",
+      "export/workshop-rain-38.png",
+      "export/workshop-rain-39.png"
+    ]
+  },
+  {
+    "name": "mouse-east",
+    "expected": [
+      "export/mouse-east-0.png",
+      "export/mouse-east-1.png",
+      "export/mouse-east-2.png",
+      "export/mouse-east-3.png"
+    ]
+  },
+  {
+    "name": "mouse-west",
+    "expected": [
+      "export/mouse-west-0.png",
+      "export/mouse-west-1.png",
+      "export/mouse-west-2.png",
+      "export/mouse-west-3.png"
+    ]
+  },
+  {
+    "name": "mouse-occlusion",
+    "expected": [
+      "export/mouse-occlusion-0.png"
+    ]
+  }
+]

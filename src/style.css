@@ -27,6 +27,10 @@ button[aria-pressed="true"] .face.picked { display: block; }
 #music[aria-pressed="true"] { border-color: #64503a; }
 #music .face.glyph { display: flex; align-items: center; justify-content: center; font: 44px/1 Georgia, serif; color: #d6a875; }
 #music[aria-pressed="false"] .face.glyph { color: #8d7a63; text-decoration: line-through; text-decoration-thickness: 3px; }
+/* LOOK's monocle has a brighter velvet hover; selection keeps its gold underline. */
+.face.hover { display: none; }
+button[data-verb="1"][aria-pressed="false"]:is(:hover, :focus-visible) .face:not(.hover) { display: none; }
+button[data-verb="1"][aria-pressed="false"]:is(:hover, :focus-visible) .face.hover { display: block; }
 /* Sound shows the horn with its arcs when on, struck through when off; pressed here means on, not chosen. */
 #sound[aria-pressed="true"] { border-color: #64503a; }
 #sound[aria-pressed="true"] .face.off, #sound[aria-pressed="false"] .face.on { display: none; }

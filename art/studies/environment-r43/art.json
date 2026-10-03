@@ -1,0 +1,952 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [
+    {
+      "number": 100,
+      "layers": [
+        {
+          "png": "export/221b-background-0.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/221b-mantel-details-0.png",
+          "priority": 137
+        },
+        {
+          "png": "../221b-r33/export/opening.png",
+          "priority": 138
+        },
+        {
+          "png": "../221b-r33/export/chair.png",
+          "priority": 146
+        },
+        {
+          "png": "export/221b-desk-0.png",
+          "priority": 199
+        }
+      ]
+    },
+    {
+      "number": 103,
+      "layers": [
+        {
+          "png": "export/stair-background-0.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/stair-clock-back-0.png",
+          "priority": 154
+        },
+        {
+          "png": "export/stair-wall-return-0.png",
+          "priority": 152
+        },
+        {
+          "png": "export/stair-tools-0.png",
+          "priority": 158
+        }
+      ]
+    },
+    {
+      "number": 105,
+      "layers": [
+        {
+          "png": "export/end-background-0.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/end-lettering-0.png",
+          "priority": 0
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "number": 283,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/passage-lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-lamp-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-lamp-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-lamp-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-lamp-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-lamp-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 287,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/passage-peek-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-6.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-7.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-8.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-9.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-10.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-11.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-12.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-13.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-14.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-15.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-16.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-17.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-18.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-19.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-20.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-21.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-22.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/passage-peek-23.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 272,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/workshop-pendulum-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-6.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-7.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-8.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-9.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-10.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-11.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-12.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-13.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-14.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-15.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-16.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-17.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-18.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-19.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-20.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-21.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-22.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-pendulum-23.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 270,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/workshop-rain-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-6.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-7.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-8.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-9.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-10.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-11.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-12.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-13.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-14.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-15.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-16.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-17.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-18.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-19.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-20.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-21.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-22.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-23.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-24.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-25.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-26.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-27.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-28.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-29.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-30.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-31.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-32.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-33.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-34.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-35.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-36.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-37.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-38.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-rain-39.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 274,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/workshop-sky-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-6.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-7.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-8.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-9.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-10.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-11.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-12.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-13.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-14.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-sky-15.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 273,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/mouse-east-0.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-east-1.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-east-2.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-east-3.png",
+              "anchor": [
+                10,
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/mouse-west-0.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-west-1.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-west-2.png",
+              "anchor": [
+                10,
+                8
+              ]
+            },
+            {
+              "png": "export/mouse-west-3.png",
+              "anchor": [
+                10,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

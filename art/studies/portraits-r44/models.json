@@ -1,0 +1,811 @@
+{
+  "status": "Fixed references; user review pending",
+  "models": [
+    {
+      "name": "toby",
+      "expression": "neutral",
+      "master": "source/masters/toby-neutral-right.png",
+      "sha256": "80a8845cdd2ed9c143d937d7cf00b7b19dba0f0679d693428a0b6dbfc98828d3",
+      "neutralSource": "source/masters/toby-right.png",
+      "neutralSourceSha256": "80a8845cdd2ed9c143d937d7cf00b7b19dba0f0679d693428a0b6dbfc98828d3",
+      "changedPixels": 0,
+      "editRegions": [],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "toby",
+      "expression": "frightened",
+      "master": "source/masters/toby-frightened-right.png",
+      "sha256": "bf4cbb66c861602ea6d72fc68f312564b5d35652a0c3c07787202c86ccf3a7f1",
+      "neutralSource": "source/masters/toby-right.png",
+      "neutralSourceSha256": "80a8845cdd2ed9c143d937d7cf00b7b19dba0f0679d693428a0b6dbfc98828d3",
+      "changedPixels": 54,
+      "editRegions": [
+        [
+          30,
+          26,
+          8,
+          4
+        ],
+        [
+          40,
+          26,
+          4,
+          4
+        ],
+        [
+          29,
+          29,
+          8,
+          4
+        ],
+        [
+          39,
+          28,
+          5,
+          4
+        ],
+        [
+          32,
+          40,
+          9,
+          6
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "toby",
+      "expression": "tearful",
+      "master": "source/masters/toby-tearful-right.png",
+      "sha256": "1e6fae70d5235b6a0f4f853882cce09b475fb6f99fb5e7c230036dc4d25779e4",
+      "neutralSource": "source/masters/toby-right.png",
+      "neutralSourceSha256": "80a8845cdd2ed9c143d937d7cf00b7b19dba0f0679d693428a0b6dbfc98828d3",
+      "changedPixels": 48,
+      "editRegions": [
+        [
+          30,
+          26,
+          8,
+          4
+        ],
+        [
+          40,
+          26,
+          4,
+          4
+        ],
+        [
+          29,
+          30,
+          8,
+          3
+        ],
+        [
+          39,
+          29,
+          5,
+          3
+        ],
+        [
+          29,
+          33,
+          3,
+          4
+        ],
+        [
+          32,
+          40,
+          9,
+          6
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "toby",
+      "expression": "spooked",
+      "master": "source/masters/toby-spooked-right.png",
+      "sha256": "16647dd7986faa42bf09f4a8c88476766d0968bca34ceae6d7791d7e09d98ba0",
+      "neutralSource": "source/masters/toby-right.png",
+      "neutralSourceSha256": "80a8845cdd2ed9c143d937d7cf00b7b19dba0f0679d693428a0b6dbfc98828d3",
+      "changedPixels": 46,
+      "editRegions": [
+        [
+          30,
+          26,
+          8,
+          4
+        ],
+        [
+          40,
+          26,
+          4,
+          4
+        ],
+        [
+          29,
+          30,
+          8,
+          3
+        ],
+        [
+          39,
+          29,
+          5,
+          3
+        ],
+        [
+          32,
+          40,
+          9,
+          6
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "toby",
+      "expression": "earnest",
+      "master": "source/masters/toby-earnest-right.png",
+      "sha256": "8d0b2cb3ee7008f6512e34a2e427151f1947665dfc13993a09a71a5bbcdf3153",
+      "neutralSource": "source/masters/toby-right.png",
+      "neutralSourceSha256": "80a8845cdd2ed9c143d937d7cf00b7b19dba0f0679d693428a0b6dbfc98828d3",
+      "changedPixels": 36,
+      "editRegions": [
+        [
+          30,
+          26,
+          8,
+          4
+        ],
+        [
+          40,
+          26,
+          4,
+          4
+        ],
+        [
+          29,
+          30,
+          8,
+          3
+        ],
+        [
+          39,
+          29,
+          5,
+          3
+        ],
+        [
+          32,
+          40,
+          9,
+          6
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "toby",
+      "expression": "relieved",
+      "master": "source/masters/toby-relieved-right.png",
+      "sha256": "63a4df7c495c315ff4a5b1debfcea5422bf28fbab063154e0344b6bb2c6e8cb2",
+      "neutralSource": "source/masters/toby-right.png",
+      "neutralSourceSha256": "80a8845cdd2ed9c143d937d7cf00b7b19dba0f0679d693428a0b6dbfc98828d3",
+      "changedPixels": 43,
+      "editRegions": [
+        [
+          30,
+          26,
+          8,
+          4
+        ],
+        [
+          40,
+          26,
+          4,
+          4
+        ],
+        [
+          29,
+          30,
+          8,
+          3
+        ],
+        [
+          39,
+          29,
+          5,
+          3
+        ],
+        [
+          32,
+          40,
+          9,
+          6
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "holmes",
+      "expression": "neutral",
+      "master": "source/masters/holmes-neutral-right.png",
+      "sha256": "c01fb8b65408f0c132676258ea2b7f88099f675615a125e720886d48ba74ab49",
+      "neutralSource": "source/masters/holmes-right.png",
+      "neutralSourceSha256": "c01fb8b65408f0c132676258ea2b7f88099f675615a125e720886d48ba74ab49",
+      "changedPixels": 0,
+      "editRegions": [],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "holmes",
+      "expression": "intent",
+      "master": "source/masters/holmes-intent-right.png",
+      "sha256": "1798f957a4f7eeda3a27a02d9812d4d93e9e3876031577940857d1b1ddcafa3c",
+      "neutralSource": "source/masters/holmes-right.png",
+      "neutralSourceSha256": "c01fb8b65408f0c132676258ea2b7f88099f675615a125e720886d48ba74ab49",
+      "changedPixels": 53,
+      "editRegions": [
+        [
+          31,
+          25,
+          8,
+          4
+        ],
+        [
+          42,
+          25,
+          4,
+          4
+        ],
+        [
+          31,
+          28,
+          7,
+          2
+        ],
+        [
+          42,
+          28,
+          4,
+          2
+        ],
+        [
+          33,
+          38,
+          12,
+          6
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "holmes",
+      "expression": "keen",
+      "master": "source/masters/holmes-keen-right.png",
+      "sha256": "b07badd856479626bafbadc2103766ba6ea019c337c4fed351307e05b1e8b0a0",
+      "neutralSource": "source/masters/holmes-right.png",
+      "neutralSourceSha256": "c01fb8b65408f0c132676258ea2b7f88099f675615a125e720886d48ba74ab49",
+      "changedPixels": 34,
+      "editRegions": [
+        [
+          31,
+          25,
+          8,
+          4
+        ],
+        [
+          42,
+          25,
+          4,
+          4
+        ],
+        [
+          31,
+          28,
+          7,
+          2
+        ],
+        [
+          42,
+          28,
+          4,
+          2
+        ],
+        [
+          33,
+          38,
+          12,
+          6
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "holmes",
+      "expression": "dry",
+      "master": "source/masters/holmes-dry-right.png",
+      "sha256": "c0ad5ba07ddb65207ba71e0bc2c1fcc742650bbe3eefc388c38502168c36d1f1",
+      "neutralSource": "source/masters/holmes-right.png",
+      "neutralSourceSha256": "c01fb8b65408f0c132676258ea2b7f88099f675615a125e720886d48ba74ab49",
+      "changedPixels": 45,
+      "editRegions": [
+        [
+          31,
+          25,
+          8,
+          4
+        ],
+        [
+          42,
+          25,
+          4,
+          4
+        ],
+        [
+          31,
+          28,
+          7,
+          2
+        ],
+        [
+          42,
+          28,
+          4,
+          2
+        ],
+        [
+          33,
+          38,
+          12,
+          6
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "holmes",
+      "expression": "grave",
+      "master": "source/masters/holmes-grave-right.png",
+      "sha256": "8556c3faaff95ed64237c48f8e42aa6b61758482495e43a945e6d2fe9a6cd431",
+      "neutralSource": "source/masters/holmes-right.png",
+      "neutralSourceSha256": "c01fb8b65408f0c132676258ea2b7f88099f675615a125e720886d48ba74ab49",
+      "changedPixels": 42,
+      "editRegions": [
+        [
+          31,
+          25,
+          8,
+          4
+        ],
+        [
+          42,
+          25,
+          4,
+          4
+        ],
+        [
+          31,
+          28,
+          7,
+          2
+        ],
+        [
+          42,
+          28,
+          4,
+          2
+        ],
+        [
+          33,
+          38,
+          12,
+          6
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "holmes",
+      "expression": "impatient",
+      "master": "source/masters/holmes-impatient-right.png",
+      "sha256": "2cb713144251e8337d8719499d1f5f4194f23cb6200bf3fc917a79ace16cb843",
+      "neutralSource": "source/masters/holmes-right.png",
+      "neutralSourceSha256": "c01fb8b65408f0c132676258ea2b7f88099f675615a125e720886d48ba74ab49",
+      "changedPixels": 53,
+      "editRegions": [
+        [
+          31,
+          25,
+          8,
+          4
+        ],
+        [
+          42,
+          25,
+          4,
+          4
+        ],
+        [
+          31,
+          28,
+          7,
+          2
+        ],
+        [
+          42,
+          28,
+          4,
+          2
+        ],
+        [
+          33,
+          38,
+          12,
+          6
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "watson",
+      "expression": "neutral",
+      "master": "source/masters/watson-neutral-right.png",
+      "sha256": "9b81acd2b4060ff5c9b64b1b534b0c238c10c7a57b1b35c283036e12d5efa74d",
+      "neutralSource": "source/masters/watson-right.png",
+      "neutralSourceSha256": "9b81acd2b4060ff5c9b64b1b534b0c238c10c7a57b1b35c283036e12d5efa74d",
+      "changedPixels": 0,
+      "editRegions": [],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "watson",
+      "expression": "warm",
+      "master": "source/masters/watson-warm-right.png",
+      "sha256": "01ee48d33175bb77633ccd1943dea2c0bf9027f960a664afed197ad2241fff67",
+      "neutralSource": "source/masters/watson-right.png",
+      "neutralSourceSha256": "9b81acd2b4060ff5c9b64b1b534b0c238c10c7a57b1b35c283036e12d5efa74d",
+      "changedPixels": 47,
+      "editRegions": [
+        [
+          28,
+          24,
+          9,
+          4
+        ],
+        [
+          39,
+          24,
+          5,
+          4
+        ],
+        [
+          28,
+          28,
+          7,
+          2
+        ],
+        [
+          39,
+          28,
+          5,
+          2
+        ],
+        [
+          34,
+          39,
+          10,
+          4
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "watson",
+      "expression": "puzzled",
+      "master": "source/masters/watson-puzzled-right.png",
+      "sha256": "9811d136c272c632b240f92a02d41912e78151ab39ebb70475589a4845daae4a",
+      "neutralSource": "source/masters/watson-right.png",
+      "neutralSourceSha256": "9b81acd2b4060ff5c9b64b1b534b0c238c10c7a57b1b35c283036e12d5efa74d",
+      "changedPixels": 44,
+      "editRegions": [
+        [
+          28,
+          24,
+          9,
+          4
+        ],
+        [
+          39,
+          24,
+          5,
+          4
+        ],
+        [
+          28,
+          28,
+          7,
+          2
+        ],
+        [
+          39,
+          28,
+          5,
+          2
+        ],
+        [
+          34,
+          39,
+          10,
+          4
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "watson",
+      "expression": "concerned",
+      "master": "source/masters/watson-concerned-right.png",
+      "sha256": "f0b8fc4537c486a03c0d04d5bd79444659283d1a08b6180bc951148e5691c1be",
+      "neutralSource": "source/masters/watson-right.png",
+      "neutralSourceSha256": "9b81acd2b4060ff5c9b64b1b534b0c238c10c7a57b1b35c283036e12d5efa74d",
+      "changedPixels": 43,
+      "editRegions": [
+        [
+          28,
+          24,
+          9,
+          4
+        ],
+        [
+          39,
+          24,
+          5,
+          4
+        ],
+        [
+          28,
+          28,
+          7,
+          2
+        ],
+        [
+          39,
+          28,
+          5,
+          2
+        ],
+        [
+          34,
+          39,
+          10,
+          4
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "watson",
+      "expression": "surprised",
+      "master": "source/masters/watson-surprised-right.png",
+      "sha256": "46430f767c383dd173ae3b6bb5cea98a25dbd07de15db5a3fab9e2b3d9f4780e",
+      "neutralSource": "source/masters/watson-right.png",
+      "neutralSourceSha256": "9b81acd2b4060ff5c9b64b1b534b0c238c10c7a57b1b35c283036e12d5efa74d",
+      "changedPixels": 58,
+      "editRegions": [
+        [
+          28,
+          24,
+          9,
+          4
+        ],
+        [
+          39,
+          24,
+          5,
+          4
+        ],
+        [
+          28,
+          27,
+          7,
+          3
+        ],
+        [
+          39,
+          27,
+          5,
+          3
+        ],
+        [
+          34,
+          39,
+          10,
+          4
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "watson",
+      "expression": "resolute",
+      "master": "source/masters/watson-resolute-right.png",
+      "sha256": "898556163223701a59ad45ea61cf4ad6986f0e4b6f132120880af16036d63e2f",
+      "neutralSource": "source/masters/watson-right.png",
+      "neutralSourceSha256": "9b81acd2b4060ff5c9b64b1b534b0c238c10c7a57b1b35c283036e12d5efa74d",
+      "changedPixels": 56,
+      "editRegions": [
+        [
+          28,
+          24,
+          9,
+          4
+        ],
+        [
+          39,
+          24,
+          5,
+          4
+        ],
+        [
+          28,
+          28,
+          7,
+          2
+        ],
+        [
+          39,
+          28,
+          5,
+          2
+        ],
+        [
+          34,
+          39,
+          10,
+          4
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "hudson",
+      "expression": "neutral",
+      "master": "source/masters/hudson-neutral-right.png",
+      "sha256": "4c5ab881b99c9920f3f276a34ea1f945065b3ba78d2f4dd9d0f76a0f68372383",
+      "neutralSource": "source/masters/hudson-right-v2.png",
+      "neutralSourceSha256": "4c5ab881b99c9920f3f276a34ea1f945065b3ba78d2f4dd9d0f76a0f68372383",
+      "changedPixels": 0,
+      "editRegions": [],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "hudson",
+      "expression": "flustered",
+      "master": "source/masters/hudson-flustered-right.png",
+      "sha256": "3b673d12ad7c10db404a51bab531cfe4ad228f9171cd5bdea5ddb29e960a893a",
+      "neutralSource": "source/masters/hudson-right-v2.png",
+      "neutralSourceSha256": "4c5ab881b99c9920f3f276a34ea1f945065b3ba78d2f4dd9d0f76a0f68372383",
+      "changedPixels": 59,
+      "editRegions": [
+        [
+          31,
+          24,
+          7,
+          5
+        ],
+        [
+          40,
+          24,
+          5,
+          5
+        ],
+        [
+          31,
+          27,
+          6,
+          4
+        ],
+        [
+          40,
+          27,
+          5,
+          3
+        ],
+        [
+          33,
+          38,
+          10,
+          6
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "hudson",
+      "expression": "kind",
+      "master": "source/masters/hudson-kind-right.png",
+      "sha256": "4003b4f6b6f9177120fc6bbf62f82bb82e98e515053f5ce35346ccc7705bfe9c",
+      "neutralSource": "source/masters/hudson-right-v2.png",
+      "neutralSourceSha256": "4c5ab881b99c9920f3f276a34ea1f945065b3ba78d2f4dd9d0f76a0f68372383",
+      "changedPixels": 44,
+      "editRegions": [
+        [
+          31,
+          24,
+          7,
+          5
+        ],
+        [
+          40,
+          24,
+          5,
+          5
+        ],
+        [
+          31,
+          28,
+          6,
+          3
+        ],
+        [
+          40,
+          28,
+          5,
+          2
+        ],
+        [
+          33,
+          38,
+          10,
+          6
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    },
+    {
+      "name": "hudson",
+      "expression": "startled",
+      "master": "source/masters/hudson-startled-right.png",
+      "sha256": "9ec46ca49e251ce1a5fb35cd55d6e0e8a3cb569d9f0e675b3db28affd038746c",
+      "neutralSource": "source/masters/hudson-right-v2.png",
+      "neutralSourceSha256": "4c5ab881b99c9920f3f276a34ea1f945065b3ba78d2f4dd9d0f76a0f68372383",
+      "changedPixels": 53,
+      "editRegions": [
+        [
+          31,
+          24,
+          7,
+          5
+        ],
+        [
+          40,
+          24,
+          5,
+          5
+        ],
+        [
+          31,
+          27,
+          6,
+          4
+        ],
+        [
+          40,
+          27,
+          5,
+          3
+        ],
+        [
+          33,
+          38,
+          10,
+          6
+        ]
+      ],
+      "status": "Fixed authoring master; user visual review pending"
+    }
+  ]
+}

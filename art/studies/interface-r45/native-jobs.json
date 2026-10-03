@@ -1,0 +1,26 @@
+[
+  {
+    "name": "monocle-32",
+    "expected": [
+      "export/monocle-32.png",
+      "export/look-32-normal.png",
+      "export/look-32-hover.png",
+      "export/look-32-picked.png"
+    ]
+  },
+  {
+    "name": "monocle-24",
+    "expected": [
+      "export/monocle-24.png",
+      "export/look-24-normal.png",
+      "export/look-24-hover.png",
+      "export/look-24-picked.png"
+    ]
+  },
+  {
+    "name": "monocle-16",
+    "expected": [
+      "export/monocle-16.png"
+    ]
+  }
+]

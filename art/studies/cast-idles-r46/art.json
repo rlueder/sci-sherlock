@@ -1,0 +1,1391 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [],
+  "views": [
+    {
+      "number": 207,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/watson-0-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-21.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-22.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-23.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-24.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-25.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-26.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-27.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-28.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-29.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-30.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-31.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-32.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-0-33.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/watson-1-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-21.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-22.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-23.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-24.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-25.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-26.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-27.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-28.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-29.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-30.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-31.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-32.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/watson-1-33.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 208,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/hudson-0-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-21.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-22.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-23.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-24.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-25.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-26.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-27.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-28.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-29.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-0-30.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/hudson-1-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-21.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-22.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-23.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-24.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-25.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-26.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-27.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-28.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-29.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/hudson-1-30.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 209,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/toby-0-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-21.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-22.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-23.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-24.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-25.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-26.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-27.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-28.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-29.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-0-30.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/toby-1-00.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-01.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-02.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-03.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-04.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-05.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-06.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-07.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-08.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-09.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-10.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-11.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-12.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-13.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-14.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-15.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-16.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-17.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-18.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-19.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-20.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-21.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-22.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-23.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-24.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-25.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-26.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-27.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-28.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-29.png",
+              "anchor": [
+                36,
+                113
+              ]
+            },
+            {
+              "png": "export/toby-1-30.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

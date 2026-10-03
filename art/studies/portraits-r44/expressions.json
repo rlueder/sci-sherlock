@@ -1,0 +1,1294 @@
+{
+  "version": 1,
+  "status": "Review study; not registered in the game",
+  "canvas": [
+    56,
+    64
+  ],
+  "anchor": [
+    0,
+    0
+  ],
+  "palette": "palette.json",
+  "surround": {
+    "png": "export/surround.png",
+    "frame": "export/frame.png",
+    "size": [
+      72,
+      88
+    ],
+    "offset": [
+      -8,
+      -18
+    ],
+    "mirror": false
+  },
+  "eyeCels": [
+    "open",
+    "half",
+    "closed",
+    "toward",
+    "away",
+    "down"
+  ],
+  "mouthCels": [
+    "closed",
+    "slightly-open",
+    "open",
+    "wide"
+  ],
+  "characters": {
+    "toby": {
+      "view": 212,
+      "expressions": [
+        {
+          "name": "neutral",
+          "baseLoop": 0,
+          "right": {
+            "bust": 0,
+            "mouth": 1,
+            "eyes": 2
+          },
+          "left": {
+            "bust": 3,
+            "mouth": 4,
+            "eyes": 5
+          },
+          "mouthRegion": [
+            32,
+            40,
+            9,
+            6
+          ],
+          "eyeRegions": [
+            [
+              29,
+              30,
+              8,
+              5
+            ],
+            [
+              39,
+              29,
+              5,
+              4
+            ]
+          ],
+          "leftMouthRegion": [
+            15,
+            40,
+            9,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              19,
+              30,
+              8,
+              5
+            ],
+            [
+              12,
+              29,
+              5,
+              4
+            ]
+          ],
+          "master": "source/masters/toby-neutral-right.png",
+          "sha256": "80a8845cdd2ed9c143d937d7cf00b7b19dba0f0679d693428a0b6dbfc98828d3"
+        },
+        {
+          "name": "frightened",
+          "baseLoop": 6,
+          "right": {
+            "bust": 6,
+            "mouth": 7,
+            "eyes": 8
+          },
+          "left": {
+            "bust": 9,
+            "mouth": 10,
+            "eyes": 11
+          },
+          "mouthRegion": [
+            32,
+            40,
+            9,
+            6
+          ],
+          "eyeRegions": [
+            [
+              29,
+              29,
+              8,
+              4
+            ],
+            [
+              39,
+              28,
+              5,
+              4
+            ]
+          ],
+          "leftMouthRegion": [
+            15,
+            40,
+            9,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              19,
+              29,
+              8,
+              4
+            ],
+            [
+              12,
+              28,
+              5,
+              4
+            ]
+          ],
+          "master": "source/masters/toby-frightened-right.png",
+          "sha256": "bf4cbb66c861602ea6d72fc68f312564b5d35652a0c3c07787202c86ccf3a7f1"
+        },
+        {
+          "name": "tearful",
+          "baseLoop": 12,
+          "right": {
+            "bust": 12,
+            "mouth": 13,
+            "eyes": 14
+          },
+          "left": {
+            "bust": 15,
+            "mouth": 16,
+            "eyes": 17
+          },
+          "mouthRegion": [
+            32,
+            40,
+            9,
+            6
+          ],
+          "eyeRegions": [
+            [
+              29,
+              30,
+              8,
+              3
+            ],
+            [
+              39,
+              29,
+              5,
+              3
+            ]
+          ],
+          "leftMouthRegion": [
+            15,
+            40,
+            9,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              19,
+              30,
+              8,
+              3
+            ],
+            [
+              12,
+              29,
+              5,
+              3
+            ]
+          ],
+          "master": "source/masters/toby-tearful-right.png",
+          "sha256": "1e6fae70d5235b6a0f4f853882cce09b475fb6f99fb5e7c230036dc4d25779e4"
+        },
+        {
+          "name": "spooked",
+          "baseLoop": 18,
+          "right": {
+            "bust": 18,
+            "mouth": 19,
+            "eyes": 20
+          },
+          "left": {
+            "bust": 21,
+            "mouth": 22,
+            "eyes": 23
+          },
+          "mouthRegion": [
+            32,
+            40,
+            9,
+            6
+          ],
+          "eyeRegions": [
+            [
+              29,
+              30,
+              8,
+              3
+            ],
+            [
+              39,
+              29,
+              5,
+              3
+            ]
+          ],
+          "leftMouthRegion": [
+            15,
+            40,
+            9,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              19,
+              30,
+              8,
+              3
+            ],
+            [
+              12,
+              29,
+              5,
+              3
+            ]
+          ],
+          "master": "source/masters/toby-spooked-right.png",
+          "sha256": "16647dd7986faa42bf09f4a8c88476766d0968bca34ceae6d7791d7e09d98ba0"
+        },
+        {
+          "name": "earnest",
+          "baseLoop": 24,
+          "right": {
+            "bust": 24,
+            "mouth": 25,
+            "eyes": 26
+          },
+          "left": {
+            "bust": 27,
+            "mouth": 28,
+            "eyes": 29
+          },
+          "mouthRegion": [
+            32,
+            40,
+            9,
+            6
+          ],
+          "eyeRegions": [
+            [
+              29,
+              30,
+              8,
+              3
+            ],
+            [
+              39,
+              29,
+              5,
+              3
+            ]
+          ],
+          "leftMouthRegion": [
+            15,
+            40,
+            9,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              19,
+              30,
+              8,
+              3
+            ],
+            [
+              12,
+              29,
+              5,
+              3
+            ]
+          ],
+          "master": "source/masters/toby-earnest-right.png",
+          "sha256": "8d0b2cb3ee7008f6512e34a2e427151f1947665dfc13993a09a71a5bbcdf3153"
+        },
+        {
+          "name": "relieved",
+          "baseLoop": 30,
+          "right": {
+            "bust": 30,
+            "mouth": 31,
+            "eyes": 32
+          },
+          "left": {
+            "bust": 33,
+            "mouth": 34,
+            "eyes": 35
+          },
+          "mouthRegion": [
+            32,
+            40,
+            9,
+            6
+          ],
+          "eyeRegions": [
+            [
+              29,
+              30,
+              8,
+              3
+            ],
+            [
+              39,
+              29,
+              5,
+              3
+            ]
+          ],
+          "leftMouthRegion": [
+            15,
+            40,
+            9,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              19,
+              30,
+              8,
+              3
+            ],
+            [
+              12,
+              29,
+              5,
+              3
+            ]
+          ],
+          "master": "source/masters/toby-relieved-right.png",
+          "sha256": "63a4df7c495c315ff4a5b1debfcea5422bf28fbab063154e0344b6bb2c6e8cb2"
+        }
+      ]
+    },
+    "holmes": {
+      "view": 213,
+      "expressions": [
+        {
+          "name": "neutral",
+          "baseLoop": 0,
+          "right": {
+            "bust": 0,
+            "mouth": 1,
+            "eyes": 2
+          },
+          "left": {
+            "bust": 3,
+            "mouth": 4,
+            "eyes": 5
+          },
+          "mouthRegion": [
+            33,
+            38,
+            12,
+            6
+          ],
+          "eyeRegions": [
+            [
+              31,
+              28,
+              7,
+              2
+            ],
+            [
+              42,
+              28,
+              4,
+              2
+            ]
+          ],
+          "leftMouthRegion": [
+            11,
+            38,
+            12,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              18,
+              28,
+              7,
+              2
+            ],
+            [
+              10,
+              28,
+              4,
+              2
+            ]
+          ],
+          "master": "source/masters/holmes-neutral-right.png",
+          "sha256": "c01fb8b65408f0c132676258ea2b7f88099f675615a125e720886d48ba74ab49"
+        },
+        {
+          "name": "intent",
+          "baseLoop": 6,
+          "right": {
+            "bust": 6,
+            "mouth": 7,
+            "eyes": 8
+          },
+          "left": {
+            "bust": 9,
+            "mouth": 10,
+            "eyes": 11
+          },
+          "mouthRegion": [
+            33,
+            38,
+            12,
+            6
+          ],
+          "eyeRegions": [
+            [
+              31,
+              28,
+              7,
+              2
+            ],
+            [
+              42,
+              28,
+              4,
+              2
+            ]
+          ],
+          "leftMouthRegion": [
+            11,
+            38,
+            12,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              18,
+              28,
+              7,
+              2
+            ],
+            [
+              10,
+              28,
+              4,
+              2
+            ]
+          ],
+          "master": "source/masters/holmes-intent-right.png",
+          "sha256": "1798f957a4f7eeda3a27a02d9812d4d93e9e3876031577940857d1b1ddcafa3c"
+        },
+        {
+          "name": "keen",
+          "baseLoop": 12,
+          "right": {
+            "bust": 12,
+            "mouth": 13,
+            "eyes": 14
+          },
+          "left": {
+            "bust": 15,
+            "mouth": 16,
+            "eyes": 17
+          },
+          "mouthRegion": [
+            33,
+            38,
+            12,
+            6
+          ],
+          "eyeRegions": [
+            [
+              31,
+              28,
+              7,
+              2
+            ],
+            [
+              42,
+              28,
+              4,
+              2
+            ]
+          ],
+          "leftMouthRegion": [
+            11,
+            38,
+            12,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              18,
+              28,
+              7,
+              2
+            ],
+            [
+              10,
+              28,
+              4,
+              2
+            ]
+          ],
+          "master": "source/masters/holmes-keen-right.png",
+          "sha256": "b07badd856479626bafbadc2103766ba6ea019c337c4fed351307e05b1e8b0a0"
+        },
+        {
+          "name": "dry",
+          "baseLoop": 18,
+          "right": {
+            "bust": 18,
+            "mouth": 19,
+            "eyes": 20
+          },
+          "left": {
+            "bust": 21,
+            "mouth": 22,
+            "eyes": 23
+          },
+          "mouthRegion": [
+            33,
+            38,
+            12,
+            6
+          ],
+          "eyeRegions": [
+            [
+              31,
+              28,
+              7,
+              2
+            ],
+            [
+              42,
+              28,
+              4,
+              2
+            ]
+          ],
+          "leftMouthRegion": [
+            11,
+            38,
+            12,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              18,
+              28,
+              7,
+              2
+            ],
+            [
+              10,
+              28,
+              4,
+              2
+            ]
+          ],
+          "master": "source/masters/holmes-dry-right.png",
+          "sha256": "c0ad5ba07ddb65207ba71e0bc2c1fcc742650bbe3eefc388c38502168c36d1f1"
+        },
+        {
+          "name": "grave",
+          "baseLoop": 24,
+          "right": {
+            "bust": 24,
+            "mouth": 25,
+            "eyes": 26
+          },
+          "left": {
+            "bust": 27,
+            "mouth": 28,
+            "eyes": 29
+          },
+          "mouthRegion": [
+            33,
+            38,
+            12,
+            6
+          ],
+          "eyeRegions": [
+            [
+              31,
+              28,
+              7,
+              2
+            ],
+            [
+              42,
+              28,
+              4,
+              2
+            ]
+          ],
+          "leftMouthRegion": [
+            11,
+            38,
+            12,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              18,
+              28,
+              7,
+              2
+            ],
+            [
+              10,
+              28,
+              4,
+              2
+            ]
+          ],
+          "master": "source/masters/holmes-grave-right.png",
+          "sha256": "8556c3faaff95ed64237c48f8e42aa6b61758482495e43a945e6d2fe9a6cd431"
+        },
+        {
+          "name": "impatient",
+          "baseLoop": 30,
+          "right": {
+            "bust": 30,
+            "mouth": 31,
+            "eyes": 32
+          },
+          "left": {
+            "bust": 33,
+            "mouth": 34,
+            "eyes": 35
+          },
+          "mouthRegion": [
+            33,
+            38,
+            12,
+            6
+          ],
+          "eyeRegions": [
+            [
+              31,
+              28,
+              7,
+              2
+            ],
+            [
+              42,
+              28,
+              4,
+              2
+            ]
+          ],
+          "leftMouthRegion": [
+            11,
+            38,
+            12,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              18,
+              28,
+              7,
+              2
+            ],
+            [
+              10,
+              28,
+              4,
+              2
+            ]
+          ],
+          "master": "source/masters/holmes-impatient-right.png",
+          "sha256": "2cb713144251e8337d8719499d1f5f4194f23cb6200bf3fc917a79ace16cb843"
+        }
+      ]
+    },
+    "watson": {
+      "view": 210,
+      "expressions": [
+        {
+          "name": "neutral",
+          "baseLoop": 0,
+          "right": {
+            "bust": 0,
+            "mouth": 1,
+            "eyes": 2
+          },
+          "left": {
+            "bust": 3,
+            "mouth": 4,
+            "eyes": 5
+          },
+          "mouthRegion": [
+            34,
+            39,
+            10,
+            4
+          ],
+          "eyeRegions": [
+            [
+              28,
+              28,
+              7,
+              2
+            ],
+            [
+              39,
+              28,
+              5,
+              2
+            ]
+          ],
+          "leftMouthRegion": [
+            12,
+            39,
+            10,
+            4
+          ],
+          "leftEyeRegions": [
+            [
+              21,
+              28,
+              7,
+              2
+            ],
+            [
+              12,
+              28,
+              5,
+              2
+            ]
+          ],
+          "master": "source/masters/watson-neutral-right.png",
+          "sha256": "9b81acd2b4060ff5c9b64b1b534b0c238c10c7a57b1b35c283036e12d5efa74d"
+        },
+        {
+          "name": "warm",
+          "baseLoop": 6,
+          "right": {
+            "bust": 6,
+            "mouth": 7,
+            "eyes": 8
+          },
+          "left": {
+            "bust": 9,
+            "mouth": 10,
+            "eyes": 11
+          },
+          "mouthRegion": [
+            34,
+            39,
+            10,
+            4
+          ],
+          "eyeRegions": [
+            [
+              28,
+              28,
+              7,
+              2
+            ],
+            [
+              39,
+              28,
+              5,
+              2
+            ]
+          ],
+          "leftMouthRegion": [
+            12,
+            39,
+            10,
+            4
+          ],
+          "leftEyeRegions": [
+            [
+              21,
+              28,
+              7,
+              2
+            ],
+            [
+              12,
+              28,
+              5,
+              2
+            ]
+          ],
+          "master": "source/masters/watson-warm-right.png",
+          "sha256": "01ee48d33175bb77633ccd1943dea2c0bf9027f960a664afed197ad2241fff67"
+        },
+        {
+          "name": "puzzled",
+          "baseLoop": 12,
+          "right": {
+            "bust": 12,
+            "mouth": 13,
+            "eyes": 14
+          },
+          "left": {
+            "bust": 15,
+            "mouth": 16,
+            "eyes": 17
+          },
+          "mouthRegion": [
+            34,
+            39,
+            10,
+            4
+          ],
+          "eyeRegions": [
+            [
+              28,
+              28,
+              7,
+              2
+            ],
+            [
+              39,
+              28,
+              5,
+              2
+            ]
+          ],
+          "leftMouthRegion": [
+            12,
+            39,
+            10,
+            4
+          ],
+          "leftEyeRegions": [
+            [
+              21,
+              28,
+              7,
+              2
+            ],
+            [
+              12,
+              28,
+              5,
+              2
+            ]
+          ],
+          "master": "source/masters/watson-puzzled-right.png",
+          "sha256": "9811d136c272c632b240f92a02d41912e78151ab39ebb70475589a4845daae4a"
+        },
+        {
+          "name": "concerned",
+          "baseLoop": 18,
+          "right": {
+            "bust": 18,
+            "mouth": 19,
+            "eyes": 20
+          },
+          "left": {
+            "bust": 21,
+            "mouth": 22,
+            "eyes": 23
+          },
+          "mouthRegion": [
+            34,
+            39,
+            10,
+            4
+          ],
+          "eyeRegions": [
+            [
+              28,
+              28,
+              7,
+              2
+            ],
+            [
+              39,
+              28,
+              5,
+              2
+            ]
+          ],
+          "leftMouthRegion": [
+            12,
+            39,
+            10,
+            4
+          ],
+          "leftEyeRegions": [
+            [
+              21,
+              28,
+              7,
+              2
+            ],
+            [
+              12,
+              28,
+              5,
+              2
+            ]
+          ],
+          "master": "source/masters/watson-concerned-right.png",
+          "sha256": "f0b8fc4537c486a03c0d04d5bd79444659283d1a08b6180bc951148e5691c1be"
+        },
+        {
+          "name": "surprised",
+          "baseLoop": 24,
+          "right": {
+            "bust": 24,
+            "mouth": 25,
+            "eyes": 26
+          },
+          "left": {
+            "bust": 27,
+            "mouth": 28,
+            "eyes": 29
+          },
+          "mouthRegion": [
+            34,
+            39,
+            10,
+            4
+          ],
+          "eyeRegions": [
+            [
+              28,
+              27,
+              7,
+              3
+            ],
+            [
+              39,
+              27,
+              5,
+              3
+            ]
+          ],
+          "leftMouthRegion": [
+            12,
+            39,
+            10,
+            4
+          ],
+          "leftEyeRegions": [
+            [
+              21,
+              27,
+              7,
+              3
+            ],
+            [
+              12,
+              27,
+              5,
+              3
+            ]
+          ],
+          "master": "source/masters/watson-surprised-right.png",
+          "sha256": "46430f767c383dd173ae3b6bb5cea98a25dbd07de15db5a3fab9e2b3d9f4780e"
+        },
+        {
+          "name": "resolute",
+          "baseLoop": 30,
+          "right": {
+            "bust": 30,
+            "mouth": 31,
+            "eyes": 32
+          },
+          "left": {
+            "bust": 33,
+            "mouth": 34,
+            "eyes": 35
+          },
+          "mouthRegion": [
+            34,
+            39,
+            10,
+            4
+          ],
+          "eyeRegions": [
+            [
+              28,
+              28,
+              7,
+              2
+            ],
+            [
+              39,
+              28,
+              5,
+              2
+            ]
+          ],
+          "leftMouthRegion": [
+            12,
+            39,
+            10,
+            4
+          ],
+          "leftEyeRegions": [
+            [
+              21,
+              28,
+              7,
+              2
+            ],
+            [
+              12,
+              28,
+              5,
+              2
+            ]
+          ],
+          "master": "source/masters/watson-resolute-right.png",
+          "sha256": "898556163223701a59ad45ea61cf4ad6986f0e4b6f132120880af16036d63e2f"
+        }
+      ]
+    },
+    "hudson": {
+      "view": 211,
+      "expressions": [
+        {
+          "name": "neutral",
+          "baseLoop": 0,
+          "right": {
+            "bust": 0,
+            "mouth": 1,
+            "eyes": 2
+          },
+          "left": {
+            "bust": 3,
+            "mouth": 4,
+            "eyes": 5
+          },
+          "mouthRegion": [
+            33,
+            38,
+            10,
+            6
+          ],
+          "eyeRegions": [
+            [
+              31,
+              28,
+              6,
+              3
+            ],
+            [
+              40,
+              28,
+              5,
+              2
+            ]
+          ],
+          "leftMouthRegion": [
+            13,
+            38,
+            10,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              19,
+              28,
+              6,
+              3
+            ],
+            [
+              11,
+              28,
+              5,
+              2
+            ]
+          ],
+          "master": "source/masters/hudson-neutral-right.png",
+          "sha256": "4c5ab881b99c9920f3f276a34ea1f945065b3ba78d2f4dd9d0f76a0f68372383"
+        },
+        {
+          "name": "flustered",
+          "baseLoop": 6,
+          "right": {
+            "bust": 6,
+            "mouth": 7,
+            "eyes": 8
+          },
+          "left": {
+            "bust": 9,
+            "mouth": 10,
+            "eyes": 11
+          },
+          "mouthRegion": [
+            33,
+            38,
+            10,
+            6
+          ],
+          "eyeRegions": [
+            [
+              31,
+              27,
+              6,
+              4
+            ],
+            [
+              40,
+              27,
+              5,
+              3
+            ]
+          ],
+          "leftMouthRegion": [
+            13,
+            38,
+            10,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              19,
+              27,
+              6,
+              4
+            ],
+            [
+              11,
+              27,
+              5,
+              3
+            ]
+          ],
+          "master": "source/masters/hudson-flustered-right.png",
+          "sha256": "3b673d12ad7c10db404a51bab531cfe4ad228f9171cd5bdea5ddb29e960a893a"
+        },
+        {
+          "name": "kind",
+          "baseLoop": 12,
+          "right": {
+            "bust": 12,
+            "mouth": 13,
+            "eyes": 14
+          },
+          "left": {
+            "bust": 15,
+            "mouth": 16,
+            "eyes": 17
+          },
+          "mouthRegion": [
+            33,
+            38,
+            10,
+            6
+          ],
+          "eyeRegions": [
+            [
+              31,
+              28,
+              6,
+              3
+            ],
+            [
+              40,
+              28,
+              5,
+              2
+            ]
+          ],
+          "leftMouthRegion": [
+            13,
+            38,
+            10,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              19,
+              28,
+              6,
+              3
+            ],
+            [
+              11,
+              28,
+              5,
+              2
+            ]
+          ],
+          "master": "source/masters/hudson-kind-right.png",
+          "sha256": "4003b4f6b6f9177120fc6bbf62f82bb82e98e515053f5ce35346ccc7705bfe9c"
+        },
+        {
+          "name": "startled",
+          "baseLoop": 18,
+          "right": {
+            "bust": 18,
+            "mouth": 19,
+            "eyes": 20
+          },
+          "left": {
+            "bust": 21,
+            "mouth": 22,
+            "eyes": 23
+          },
+          "mouthRegion": [
+            33,
+            38,
+            10,
+            6
+          ],
+          "eyeRegions": [
+            [
+              31,
+              27,
+              6,
+              4
+            ],
+            [
+              40,
+              27,
+              5,
+              3
+            ]
+          ],
+          "leftMouthRegion": [
+            13,
+            38,
+            10,
+            6
+          ],
+          "leftEyeRegions": [
+            [
+              19,
+              27,
+              6,
+              4
+            ],
+            [
+              11,
+              27,
+              5,
+              3
+            ]
+          ],
+          "master": "source/masters/hudson-startled-right.png",
+          "sha256": "9ec46ca49e251ce1a5fb35cd55d6e0e8a3cb569d9f0e675b3db28affd038746c"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "look": {
+    "toolbarView": 266,
+    "cel": 1,
+    "normalLoop": 0,
+    "pickedLoop": 1,
+    "cursorView": 262,
+    "cursorSize": [
+      16,
+      16
+    ],
+    "hotspot": [
+      7,
+      5
+    ],
+    "object": "brass monocle with silk cord"
+  },
+  "states": [
+    "normal",
+    "hover",
+    "picked"
+  ],
+  "inventory": {
+    "view": 250,
+    "unchanged": true,
+    "retainedDefinition": {
+      "number": 250,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "studies/interface-r28/export/object-look-32.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "lens/cursor.png",
+              "anchor": [
+                9,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "lens/glass.png",
+              "anchor": [
+                9,
+                10
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sourceBounds": [
+    286,
+    129,
+    634,
+    1013
+  ],
+  "sourceSHA256": "e1705272198d17df3fdcbb8eac75e0ceb0263eb0527476303ac9f79ce0782325",
+  "note": "Do not repoint view 250 or art/lens/build.ts to the monocle. Both web and in-game LOOK use r45; carried lens retains r28 artwork and existing cursor/glass loops."
+}

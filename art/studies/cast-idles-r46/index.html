@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cast idles — r46</title>
+<style>body{background:#171e19;color:#e6d1a7;font:17px/1.5 Georgia,serif;max-width:1100px;margin:30px auto;padding:0 20px}h1,h2{font-weight:normal}button,select{background:#342e29;color:#eed9b2;border:1px solid #8f7050;padding:9px 13px;font:inherit;cursor:pointer}button:hover,button:focus-visible{background:#57412f}img,canvas{image-rendering:pixelated;max-width:100%;height:auto}a{color:#e8b96e}.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:14px 0}.cast{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.cast img{width:100%}figure{margin:0}figcaption{margin:8px 0}canvas{background:#303d34;width:864px}details{margin:24px 0}small{color:#bdb49e}</style>
+<h1>Watson, Mrs Hudson & Toby — full-body idles</h1>
+<p>The discarded portrait habits become body gestures. Watson smooths his moustache, Mrs Hudson smooths her apron, and Toby twists his cap. Holmes keeps his existing idles.</p>
+<img src="review/room.gif" alt="Three characters perform idle gestures in turn in the 221B sitting room" width="960" height="720">
+<p><small>Room staging is a scale proof. This study is not yet registered in the game; playback here repeats frequently for review.</small></p>
+<h2>Inspect the movement</h2>
+<div class="controls"><button id="play">Pause</button><button id="step">Next frame</button><button id="neutral">Standing reference</button><label>Facing <select id="facing"><option value="0">Right</option><option value="1">Left</option></select></label><label><input type="checkbox" id="joints"> Joint guide</label><label><input type="checkbox" id="onion"> Reference silhouette</label><span id="counter"></span></div>
+<canvas id="stage" width="864" height="576" aria-label="Interactive full-body idle animation comparison"></canvas>
+<div class="cast"><p>Watson · moustache</p><p>Mrs Hudson · apron</p><p>Toby · cap</p></div>
+<details><summary>Saved pose keys and construction guides</summary><p>Neutral comes first. Yellow lines mark estimated shoulder–elbow–wrist positions; the body axis and planted feet stay fixed. The guide is a review overlay, not a deformation rig.</p>
+<h3>Watson</h3><img src="review/watson-keys.png" alt="Six saved Watson pose keys"><img src="review/watson-joints.png" alt="Watson joint construction">
+<h3>Mrs Hudson</h3><img src="review/hudson-keys.png" alt="Five saved Hudson pose keys"><img src="review/hudson-joints.png" alt="Hudson joint construction">
+<h3>Toby</h3><img src="review/toby-keys.png" alt="Five saved Toby pose keys"><img src="review/toby-joints.png" alt="Toby joint construction"></details>
+<p><a href="README.md">Workflow and implementation notes</a> · <a href="animation.json">Timing and anchors</a> · <a href="native-export-check.json">Pixelorama verification</a> · <a href="prompts.json">Generation prompts</a></p>
+<p>Editable sources: <a href="source/watson.pxo">Watson</a> · <a href="source/hudson.pxo">Hudson</a> · <a href="source/toby.pxo">Toby</a></p>
+<script type="module">
+const data=await(await fetch('animation.json')).json(),canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d'),cache=new Map;
+const paths=new Set(data.animations.flatMap(a=>[...a.files.flat(),...a.sequence.map(k=>`guides/${a.name}-${k}.png`),`source/${a.name}-key-0.png`]));
+await Promise.all([...paths].map(src=>new Promise((resolve,reject)=>{const im=new Image;im.onload=()=>{cache.set(src,im);resolve()};im.onerror=reject;im.src=src})));
+let running=true,frame=0,neutral=false;const total=Math.max(...data.animations.map(a=>a.sequence.length));
+const play=document.querySelector('#play'),facing=document.querySelector('#facing'),joints=document.querySelector('#joints'),onion=document.querySelector('#onion');
+function draw(){ctx.imageSmoothingEnabled=false;ctx.clearRect(0,0,864,576);data.animations.forEach((a,n)=>{const cel=neutral?0:Math.min(frame,a.sequence.length-1),key=a.sequence[cel],left=facing.value==='1';ctx.save();ctx.translate(n*288,0);if(left&&joints.checked){ctx.translate(288,0);ctx.scale(-1,1)}const src=joints.checked?`guides/${a.name}-${key}.png`:a.files[Number(facing.value)][cel];ctx.drawImage(cache.get(src),0,0,288,576);ctx.restore();if(onion.checked){ctx.save();ctx.globalAlpha=.3;ctx.translate(n*288,0);if(left){ctx.translate(288,0);ctx.scale(-1,1)}ctx.drawImage(cache.get(`source/${a.name}-key-0.png`),0,0,288,576);ctx.restore()}});document.querySelector('#counter').textContent=neutral?'Exact neutral':`Frame ${frame+1} / ${total}`}
+play.onclick=()=>{running=!running;neutral=false;play.textContent=running?'Pause':'Play';draw()};document.querySelector('#step').onclick=()=>{running=false;neutral=false;play.textContent='Play';frame=(frame+1)%total;draw()};document.querySelector('#neutral').onclick=()=>{running=false;neutral=true;play.textContent='Play';draw()};[facing,joints,onion].forEach(x=>x.onchange=draw);setInterval(()=>{if(running){frame=(frame+1)%total;draw()}},100);draw();
+</script></html>

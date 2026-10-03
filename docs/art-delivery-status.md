@@ -4,14 +4,57 @@ The workshop is in the game as of `975b29c`. The approved workshop v6 remains th
 style and scale reference. Technical validation, visual approval and integration
 are separate statuses.
 
+## Full-body cast idles — r46
+
+[Cast idles r46](../art/studies/cast-idles-r46/index.html) uses the discarded portrait
+habit ideas for Watson's moustache grooming, Hudson's apron smoothing and Toby's cap
+twisting. Holmes is unchanged. Fixed r42/r13 masters, complete pose redraws, joint
+guides and explicit variation masks preserve character scale and the neutral return.
+The review contains both facings, 192 PNG cels, three editable Pixelorama projects
+and a room proof. Candidate views 207–209 are not registered in the game. See the
+[r46 workflow and handoff](../art/studies/cast-idles-r46/README.md) for timing,
+interruptions, reference hashes and sparse scheduling. Visual review is pending.
+
+## LOOK monocle — r45
+
+[Interface r45](../art/studies/interface-r45/index.html) replaces LOOK with a brass monocle
+and silk cord. Local view 266 normal/picked cel 1, cursor view 262 and the web button now
+use it. Hover/focus brightens the velvet; the cursor hotspot is [7,5]. Inventory view 250
+and its handled lens remain unchanged. The source, palette conversions and three Pixelorama
+projects are included. The pale silk cord stays readable against purple velvet in
+normal, hover and picked states. Public deployment follows the branch merge.
+
+## Portrait expressions — r44
+
+[Portrait r44](../art/studies/portraits-r44/index.html) supplies 22 fixed expression masters,
+484 facial-animation cels in both facings, and four Pixelorama projects. Neutrals remain
+byte-identical to r23. Each expression has four mouth cels and six eye cels; hashes and
+changed-pixel regions are checked. The user removed portrait habits because these busts
+have no space for hand/prop gestures. No habit loops are delivered. The speaker/listener
+proof uses the existing head and bust proportions. New expression art awaits visual review;
+registration and dialogue/audio integration remain with the engineer. See the
+[r44 handoff](art-portrait-expressions-r44.md) for loop mapping and the changed scope.
+
+## Environment follow-ups — r43
+
+[Environment r43](../art/studies/environment-r43/index.html) covers the new room-followups
+brief: 221B's letters, slipper and violin; the workshop's pendulum, glass-only weather
+and two opposite mouse runs; the stair redressed as the hidden passage; and a matching
+end card. Existing room cameras and floors remain. Blender guides, fixed palette PNGs,
+23 Pixelorama projects, 134 verified native exports and animated comparisons accompany
+the handoff. Placement, timing, occlusion and optional hotspots are recorded in three
+room-specific JSON files. Root registration and scripts are unchanged. Engineer work:
+restore parked prop lines, hide the pendulum when opening the case, refit atmosphere
+and mouse logic, describe the clock back, and register proposed peek view 287.
+
 ## Watson standing proportions — r42
 
 [Watson r42](../art/studies/watson-r42/index.html) revises the neutral to 97px high,
 with a smaller head and narrower shoulders, against unchanged 106px Holmes.
 It retains the 72×120 canvas, [36,113] anchor, palette, costume and facial identity.
 A pinned master, head crop, Pixelorama source and equal-depth before/after room
-comparisons accompany candidate view 201. Production registration is unchanged;
-the existing view still uses r13. This correction does not supply new walk or
+comparisons accompany view 201. The game integrated the revised standing pose in
+`641136a` (PR 41). This correction does not supply new walk or
 front/back poses, and does not resize the seated animation or portraits.
 
 ## Current Baker Street revision — r41
