@@ -1,0 +1,77 @@
+[
+  {
+    "name": "objects-32",
+    "expected": [
+      "export/hourglass-32.png",
+      "export/sound-on-32.png",
+      "export/sound-off-32.png"
+    ]
+  },
+  {
+    "name": "objects-24",
+    "expected": [
+      "export/hourglass-24.png",
+      "export/sound-on-24.png",
+      "export/sound-off-24.png"
+    ]
+  },
+  {
+    "name": "objects-16",
+    "expected": [
+      "export/hourglass-16.png",
+      "export/sound-on-16.png",
+      "export/sound-off-16.png"
+    ]
+  },
+  {
+    "name": "menu-empty",
+    "expected": [
+      "export/menu-empty.png"
+    ]
+  },
+  {
+    "name": "menu-rows",
+    "expected": [
+      "export/row-normal.png",
+      "export/row-hover.png",
+      "export/row-pressed.png",
+      "export/row-disabled.png"
+    ]
+  },
+  {
+    "name": "menu-bullets",
+    "expected": [
+      "export/bullet-normal.png",
+      "export/bullet-hover.png",
+      "export/bullet-pressed.png",
+      "export/bullet-disabled.png"
+    ]
+  },
+  {
+    "name": "menu-proof",
+    "expected": [
+      "export/menu-normal.png",
+      "export/menu-hover.png",
+      "export/menu-pressed.png"
+    ]
+  },
+  {
+    "name": "sound-buttons",
+    "expected": [
+      "export/sound-on-normal.png",
+      "export/sound-on-hover.png",
+      "export/sound-on-pressed.png",
+      "export/sound-on-disabled.png",
+      "export/sound-off-normal.png",
+      "export/sound-off-hover.png",
+      "export/sound-off-pressed.png",
+      "export/sound-off-disabled.png"
+    ]
+  },
+  {
+    "name": "wait-cursor",
+    "expected": [
+      "export/wait-cursor.png"
+    ]
+  }
+]

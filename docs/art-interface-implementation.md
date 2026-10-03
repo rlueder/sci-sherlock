@@ -202,3 +202,18 @@ glyphs. The source metrics/checksums and `guides/selected-validation.json` are
 retained in r29. Those are asset checks, not a claim that the engine accepts this
 font format. Mark delivery complete only after game screenshots match the approved
 font and the legacy/mixed-style checks pass.
+
+## Follow-up controls and menu — r32
+
+[The r32 review](../art/studies/interface-r32/index.html) adds a detailed hourglass,
+Sound on/off buttons and a walnut/purple menu with brass bullets and four states.
+Use its [JSON handoff](../art/studies/interface-r32/guides/handoff.json) for exact
+sizes. The wait cursor remains 16×16 at [8,8]; 24/32px variants are separate symbols.
+The Sound skin is 112×36 with on/off × normal/hover/pressed/disabled states. Connect
+it to the existing web audio toggle, with visible state text and `aria-pressed`.
+
+The menu is 244×178 at [38,11], with six 224×22 rows beginning at [10,29]. Use live
+labels from r29 bitmap metrics, not baked proof PNGs. Hover and keyboard focus share
+the bold/highlight state; disabled Restore is skipped during arrow-key navigation.
+Retain existing save/restore, restart confirmation and audio behaviour. This is an
+art/interaction study, not runtime integration, and uses the r28 68-colour palette.

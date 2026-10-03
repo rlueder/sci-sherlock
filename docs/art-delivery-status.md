@@ -198,3 +198,19 @@ cels 1–4 at 200 ms each and return to neutral; prefer a 6–10 second reading 
 between triggers. The study includes scene/isolated GIFs, key sheet and JSON timing.
 Door timing is six cels at 120 ms, held open; fire is four cels at 180 ms. Visual
 review and engine registration remain distinct from completed export validation.
+
+## Current review queue — r30–r32
+
+1. R30 now includes the front-facing seated Watson page turn and its timing; the
+   221B handoff is committed as `cf1c18a`. Production integration stays with the engineer.
+2. [R31 Baker Street](../art/studies/baker-street-r31/index.html) applies the level
+   camera while restoring the earlier pixel style after the realistic repaint was
+   rejected. The cab is staged diagonally away; actual Holmes scale proofs, route,
+   layers and lamp cels are supplied. Visual review is pending.
+3. [R32 menu and controls](../art/studies/interface-r32/index.html) supplies the
+   detailed hourglass, Sound on/off states and Victorian menu with brass bullets,
+   hover/focus, pressed and disabled rows. Interactive preview and engine handoff
+   are included; game/web integration is pending.
+
+After these reviews, return to remaining Holmes directional walks and the cast walks.
+The street-specific raised-collar Watson and reach/case timing remain outstanding.
