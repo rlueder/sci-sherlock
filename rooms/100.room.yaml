@@ -1,43 +1,37 @@
 # yaml-language-server: $schema=../node_modules/sci2-ts/packages/content/room.schema.json
-# 221B, the sitting room, on the r13 art (art/studies/baker-street-r13): the floor, hotspots
-# and positions follow its scene and layout guides. The foreground layer (192) is the near
-# furniture.
+# 221B, the sitting room, on the r30 art (art/studies/221b-r30): painted to a level,
+# front-on camera, so a figure's size depends only on how far down the screen its feet are.
+# The floor, hotspots and positions follow its handoff (guides/handoff.json). The foreground
+# layer (199) is the desk.
 room: 100
 picture: 100
 music: 120
 hero:
-  at: [186, 176]
-# The painting is seen at an angle, and the same height on the screen isn't the same depth
-# across the room: the left (the window wall and Watson's chair) is farther away than the
-# right (the door). So sizes are measured, Holmes stood at the back and front of the floor
-# at the left, middle and right and sized to what's painted around him: Watson in his chair,
-# the desk, the mantelpiece, the door.
-perspective:
-  columns:              # x, then [y, percent] at the back and front of the floor
-    - { x: 110, back: [153, 70], front: [190, 92] }
-    - { x: 190, back: [149, 88], front: [190, 108] }
-    - { x: 285, back: [151, 95], front: [190, 112] }
+  at: [200, 176]
+perspective: { horizon: 0, fullSize: 176 }
 # The floor stops short of the desk in the foreground, so feet never land on its top.
-walkable: [[79, 151], [267, 148], [311, 150], [311, 193], [118, 193], [118, 164], [100, 154]]
+walkable: [[112, 145], [299, 145], [308, 195], [104, 195], [104, 160], [112, 155]]
 features:
-  correspondence: { rect: [117, 46, 134, 66], sightAngle: 360 }
-  violin: { rect: [8, 102, 50, 136], sightAngle: 360 }
-  bench: { rect: [208, 54, 270, 131], sightAngle: 360 }
-  slipper: { rect: [184, 78, 198, 104], sightAngle: 360 }
-  window: { rect: [8, 17, 71, 94], sightAngle: 360 }
+  correspondence: { rect: [103, 47, 118, 73], sightAngle: 360 }
+  violin: { rect: [15, 99, 58, 110], sightAngle: 360 }
+  bench: { rect: [199, 83, 257, 143], sightAngle: 360 }
+  slipper: { rect: [124, 93, 134, 128], sightAngle: 360 }
+  window: { rect: [9, 16, 64, 108], sightAngle: 360 }
 props:
-  fire: { view: 222, at: [158, 126], cycle: forward, sightAngle: 360 }
-  mantelLens: { view: 223, at: [169, 68], sightAngle: 360 }
-  # Shut at cel 0; opens over its six cels.
-  door: { view: 225, at: [290, 145], sightAngle: 360 }
-  watson: { view: 205, at: [95, 137], sightAngle: 360 }
-  mrsHudson: { view: 202, at: [292, 152], moves: true, sightAngle: 360 }
-  toby: { view: 203, at: [294, 154], moves: true, sightAngle: 360 }
+  fire: { view: 222, at: [158, 141], cycle: forward, sightAngle: 360 }
+  mantelLens: { view: 223, at: [160, 77], sightAngle: 360 }
+  # Shut at cel 0; swings open over its ten cels, and the last is the open doorway.
+  door: { view: 225, at: [313, 137], sightAngle: 360 }
+  # Loop 0 sits still; loop 1 turns a page.
+  watson: { view: 205, at: [94, 146], sightAngle: 360 }
+  mrsHudson: { view: 202, at: [285, 148], moves: true, sightAngle: 360 }
+  toby: { view: 203, at: [285, 148], moves: true, sightAngle: 360 }
 characters:
   watson: { name: Watson, portrait: 210 }
   mrsHudson: { name: Mrs Hudson, portrait: 211 }
   toby: { name: Toby, portrait: 212 }
 properties:
-  fire: { cycleSpeed: 8 }
+  fire: { cycleSpeed: 7 }
   # Drawn on a canvas wide enough for its swing: hit only where it's drawn.
-  door: { cycleSpeed: 6, checkPixels: 1 }
+  door: { cycleSpeed: 7, checkPixels: 1 }
+  watson: { cycleSpeed: 12 }

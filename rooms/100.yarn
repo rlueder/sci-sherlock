@@ -16,7 +16,7 @@ Hero: London is never quiet, Watson. It is only waiting. #line:100-003
 Mrs Hudson: A young man to see you, Mr Holmes. He's in a dreadful state. #line:100-004
 <<show toby>>
 <<walk toby 241 180>>
-<<walk mrsHudson 292 152>>
+<<walk mrsHudson 285 148>>
 <<hide mrsHudson>>
 <<cel door 0>>
 Toby: Mr Holmes? Toby Vance, sir. It's the guv'nor. He's gone. #line:100-005
@@ -55,7 +55,7 @@ title: toby.talk
 -> We shall go at once. <<if $askedMaster and $askedDoor and $askedClocks and $askedLantern and not $tookCase>>
     Hero: Watson, your hat. Mr Vance, we shall go at once. #line:100-015
     Toby: Thank you, sir. I'll run on ahead and open up the shop. #line:100-016
-    <<walk toby 292 152>>
+    <<walk toby 285 148>>
     <<hide toby>>
     <<set $tookCase to true>>
 ===
@@ -67,6 +67,10 @@ A thin young man in a work coat two sizes too large, turning his cap round and r
 
 title: watson.look
 ---
+<<loop watson 1>>
+<<animate watson once>>
+<<loop watson 0>>
+<<cel watson 0>>
 I am in my armchair, with yesterday's [i]Standard[/i], read twice over. #line:100-018
 ===
 
@@ -135,7 +139,7 @@ The door to the landing, and the seventeen steps down to the street. #line:100-0
 title: door.do
 ---
 <<if $tookCase and $hasLens>>
-<<walk hero 280 158>>
+<<walk hero 285 148>>
 <<animate door once>>
 Watson: A cab, Holmes? #line:100-031
 Hero: A cab, Watson. Clerkenwell. #line:100-032

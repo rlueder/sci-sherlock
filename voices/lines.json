@@ -283,7 +283,7 @@
       "speaker": "Narrator",
       "text": "I am in my armchair, with yesterday's Standard, read twice over.",
       "node": "watson.look",
-      "where": "rooms/100.yarn:70",
+      "where": "rooms/100.yarn:74",
       "recording": "recorded",
       "recorded": {
         "text": "d22d27158b77",
@@ -296,7 +296,7 @@
       "speaker": "Watson",
       "text": "I have my revolver, Holmes, if it comes to that.",
       "node": "watson.talk",
-      "where": "rooms/100.yarn:76",
+      "where": "rooms/100.yarn:80",
       "recording": "recorded",
       "recorded": {
         "text": "f804ea7db69d",
@@ -313,7 +313,7 @@
         "speaker": "Watson",
         "text": "I have my revolver, Holmes, if it comes to that."
       },
-      "where": "rooms/100.yarn:78",
+      "where": "rooms/100.yarn:82",
       "recording": "recorded",
       "recorded": {
         "text": "4169bb34e7e2",
@@ -326,7 +326,7 @@
       "speaker": "Narrator",
       "text": "Holmes's lens, on the mantel where he left it.",
       "node": "mantelLens.look",
-      "where": "rooms/100.yarn:84",
+      "where": "rooms/100.yarn:88",
       "recording": "recorded",
       "recorded": {
         "text": "43c1093f67ac",
@@ -339,7 +339,7 @@
       "speaker": "Hero",
       "text": "Where I go, it goes.",
       "node": "mantelLens.do",
-      "where": "rooms/100.yarn:92",
+      "where": "rooms/100.yarn:96",
       "recording": "recorded",
       "recorded": {
         "text": "624d034ff509",
@@ -352,7 +352,7 @@
       "speaker": "Narrator",
       "text": "Unanswered letters, pinned to the mantel with a jack-knife.",
       "node": "correspondence.look",
-      "where": "rooms/100.yarn:97",
+      "where": "rooms/100.yarn:101",
       "recording": "recorded",
       "recorded": {
         "text": "f65760c5cbf0",
@@ -365,7 +365,7 @@
       "speaker": "Hero",
       "text": "They have waited a month. They can wait another night.",
       "node": "correspondence.do",
-      "where": "rooms/100.yarn:102",
+      "where": "rooms/100.yarn:106",
       "recording": "recorded",
       "recorded": {
         "text": "333a2e2e1c3e",
@@ -378,7 +378,7 @@
       "speaker": "Narrator",
       "text": "Holmes's violin, laid across a chair. It has seen him through worse evenings.",
       "node": "violin.look",
-      "where": "rooms/100.yarn:107",
+      "where": "rooms/100.yarn:111",
       "recording": "recorded",
       "recorded": {
         "text": "e2c2d28f1b1c",
@@ -391,7 +391,7 @@
       "speaker": "Narrator",
       "text": "A rack of test tubes on the chemistry bench, and a stain Mrs Hudson has given up on.",
       "node": "bench.look",
-      "where": "rooms/100.yarn:112",
+      "where": "rooms/100.yarn:116",
       "recording": "recorded",
       "recorded": {
         "text": "d078da142ecd",
@@ -404,7 +404,7 @@
       "speaker": "Narrator",
       "text": "The Persian slipper, where Holmes keeps his tobacco.",
       "node": "slipper.look",
-      "where": "rooms/100.yarn:117",
+      "where": "rooms/100.yarn:121",
       "recording": "recorded",
       "recorded": {
         "text": "ceea82cee28f",
@@ -417,7 +417,7 @@
       "speaker": "Narrator",
       "text": "A good fire. The only warm thing in London tonight.",
       "node": "fire.look",
-      "where": "rooms/100.yarn:122",
+      "where": "rooms/100.yarn:126",
       "recording": "recorded",
       "recorded": {
         "text": "95691e2eb47c",
@@ -430,7 +430,7 @@
       "speaker": "Narrator",
       "text": "Fog, thick as wool. The lamps across the street are smudges of yellow.",
       "node": "window.look",
-      "where": "rooms/100.yarn:127",
+      "where": "rooms/100.yarn:131",
       "recording": "recorded",
       "recorded": {
         "text": "92b8fe5d06c5",
@@ -443,7 +443,7 @@
       "speaker": "Narrator",
       "text": "The door to the landing, and the seventeen steps down to the street.",
       "node": "door.look",
-      "where": "rooms/100.yarn:132",
+      "where": "rooms/100.yarn:136",
       "recording": "recorded",
       "recorded": {
         "text": "19477aff0440",
@@ -456,7 +456,7 @@
       "speaker": "Watson",
       "text": "A cab, Holmes?",
       "node": "door.do",
-      "where": "rooms/100.yarn:140",
+      "where": "rooms/100.yarn:144",
       "recording": "recorded",
       "recorded": {
         "text": "40106fddd4c3",
@@ -473,7 +473,7 @@
         "speaker": "Watson",
         "text": "A cab, Holmes?"
       },
-      "where": "rooms/100.yarn:141",
+      "where": "rooms/100.yarn:145",
       "recording": "recorded",
       "recorded": {
         "text": "3e60bf330baa",
@@ -490,7 +490,7 @@
         "speaker": "Hero",
         "text": "A cab, Watson. Clerkenwell."
       },
-      "where": "rooms/100.yarn:144",
+      "where": "rooms/100.yarn:148",
       "recording": "recorded",
       "recorded": {
         "text": "981bcdff0b9c",
@@ -507,7 +507,7 @@
         "speaker": "Hero",
         "text": "My lens, Watson. I shall want it tonight."
       },
-      "where": "rooms/100.yarn:146",
+      "where": "rooms/100.yarn:150",
       "recording": "recorded",
       "recorded": {
         "text": "4f5bbfa002e0",
