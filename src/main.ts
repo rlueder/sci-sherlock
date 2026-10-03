@@ -44,7 +44,7 @@ try {
   menuButton.addEventListener("click", openMenu);
   const showSound = () => {
     soundButton.setAttribute("aria-pressed", String(!session.muted));
-    soundButton.textContent = session.muted ? "Muted" : "Sound";
+    soundButton.querySelector("span")!.textContent = session.muted ? "Sound off" : "Sound on";
   };
   soundButton.addEventListener("click", () => {
     session.setMuted(!session.muted);

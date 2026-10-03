@@ -21,6 +21,10 @@ button:has(.face)[aria-pressed="true"] { background: #1b1820; color: #edd2a1; bo
 .face { display: block; width: 64px; height: 64px; image-rendering: pixelated; }
 .face.picked, button[aria-pressed="true"] .face:not(.picked) { display: none; }
 button[aria-pressed="true"] .face.picked { display: block; }
+/* Sound shows the horn with its arcs when on, struck through when off; pressed here means on, not chosen. */
+#sound[aria-pressed="true"] { border-color: #64503a; }
+#sound[aria-pressed="true"] .face.off, #sound[aria-pressed="false"] .face.on { display: none; }
+#sound[aria-pressed="true"] .face.on, #sound[aria-pressed="false"] .face.off { display: block; }
 #sound { align-self: center; }
 /* A switch, not an action: it doesn't light up like the chosen one. */
 #sound[aria-pressed] { background: #232a35; color: #edd2a1; }

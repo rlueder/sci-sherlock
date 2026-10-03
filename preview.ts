@@ -97,7 +97,7 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   choose("Goodbye.");
   verb(4); click(303, 80);
   assert.match(line(), /My lens/, "the lens first"); finish();
-  click(170, 68);
+  click(161, 77);
   assert.match(line(), /Where I go/); finish();
   assert(!obj("mantelLens"));
   assert.equal(vm.getProp(global("inventory"), "size"), 1);
@@ -107,9 +107,9 @@ export async function playTeaser(capture?: (name: string, frame: Frame) => void)
   enter(101); finish();
   shot("baker-street");
   const flames = new Set<number>();
-  for (let i = 0; i < 60; i++) { frames(1); flames.add(prop(obj("lamp"), "cel")); }
+  for (let i = 0; i < 150; i++) { frames(1); flames.add(prop(obj("lamp"), "cel")); }
   assert.equal(flames.size, 4, "the gas lamp flickers");
-  verb(4); click(250, 115); finish();
+  verb(4); click(190, 100); finish();
 
   // The workshop.
   enter(102); frames(10);
