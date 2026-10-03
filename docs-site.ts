@@ -162,6 +162,7 @@ const nav: [string, (NavItem | undefined)[]][] = [
     page("docs/room-planes-brief.md", "Room planes brief"),
     page("docs/room-followups-brief.md", "Room follow-ups brief"),
     page("docs/portrait-expressions-brief.md", "Portrait expressions brief"),
+    page("docs/interface-icons-brief.md", "Interface icons brief"),
     page("docs/art-interface-implementation.md", "Interface handoff"),
     page("docs/art-delivery-status.md", "Art delivery status"),
     page("docs/templates/art-study.md", "Art study template"),

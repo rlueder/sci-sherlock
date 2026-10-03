@@ -23,6 +23,10 @@ button:has(.face)[aria-pressed="true"] { background: #1b1820; color: #edd2a1; bo
 .face { display: block; width: 64px; height: 64px; image-rendering: pixelated; }
 .face.picked, button[aria-pressed="true"] .face:not(.picked) { display: none; }
 button[aria-pressed="true"] .face.picked { display: block; }
+/* Music: the same tile as Sound, its note struck through when off. */
+#music[aria-pressed="true"] { border-color: #64503a; }
+#music .face.glyph { display: flex; align-items: center; justify-content: center; font: 44px/1 Georgia, serif; color: #d6a875; }
+#music[aria-pressed="false"] .face.glyph { color: #8d7a63; text-decoration: line-through; text-decoration-thickness: 3px; }
 /* Sound shows the horn with its arcs when on, struck through when off; pressed here means on, not chosen. */
 #sound[aria-pressed="true"] { border-color: #64503a; }
 #sound[aria-pressed="true"] .face.off, #sound[aria-pressed="false"] .face.on { display: none; }
