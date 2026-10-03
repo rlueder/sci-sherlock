@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "views": [],
+  "pictures": [
+    {
+      "number": 101,
+      "layers": [
+        {
+          "png": "export/street-c-background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/street-c-foreground.png",
+          "priority": 199
+        }
+      ]
+    }
+  ]
+}

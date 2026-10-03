@@ -1,0 +1,263 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [
+    {
+      "number": 101,
+      "layers": [
+        {
+          "png": "export/street-background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/street-lamp.png",
+          "priority": 147
+        },
+        {
+          "png": "export/street-rail.png",
+          "priority": 148
+        }
+      ]
+    },
+    {
+      "number": 102,
+      "layers": [
+        {
+          "png": "export/workshop-background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/workshop-recess-frame.png",
+          "priority": 138
+        },
+        {
+          "png": "export/workshop-bench.png",
+          "priority": 136
+        },
+        {
+          "png": "export/workshop-desk.png",
+          "priority": 199
+        }
+      ]
+    },
+    {
+      "number": 103,
+      "layers": [
+        {
+          "png": "export/stair-background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/stair-entry-jamb.png",
+          "priority": 151
+        },
+        {
+          "png": "export/stair-newel-rail.png",
+          "priority": 155
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "number": 221,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/clock-0.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-1.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-2.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-3.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-4.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-5.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-6.png",
+              "anchor": [
+                60,
+                150
+              ]
+            },
+            {
+              "png": "export/clock-7.png",
+              "anchor": [
+                60,
+                150
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 227,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/filings.png",
+              "anchor": [
+                16,
+                15
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 228,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/scratches.png",
+              "anchor": [
+                8,
+                11
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 226,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/street-light-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/street-light-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/street-light-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/street-light-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/street-light-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/street-light-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 220,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/workshop-light-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-light-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-light-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-light-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-light-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/workshop-light-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

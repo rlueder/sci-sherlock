@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [
+    {
+      "number": 101,
+      "layers": [
+        {
+          "png": "export/background.png",
+          "priority": -1000
+        },
+        {
+          "png": "export/foreground.png",
+          "priority": 199
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "number": 284,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/driver-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/driver-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 285,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/cab-lamp-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/cab-lamp-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/cab-lamp-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/cab-lamp-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/cab-lamp-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 286,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/pipe-smoke-0.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/pipe-smoke-1.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/pipe-smoke-2.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/pipe-smoke-3.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/pipe-smoke-4.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/pipe-smoke-5.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/pipe-smoke-6.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/pipe-smoke-7.png",
+              "anchor": [
+                0,
+                0
+              ]
+            },
+            {
+              "png": "export/pipe-smoke-8.png",
+              "anchor": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

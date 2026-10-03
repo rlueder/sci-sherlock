@@ -1,0 +1,44 @@
+{
+  "method": "Same conversion as approved workshop v6: nearest-neighbour sampling, fixed-palette weighted RGB mapping",
+  "paletteEntries": 64,
+  "nativeSize": [
+    320,
+    200
+  ],
+  "displaySize": [
+    960,
+    720
+  ],
+  "pixelAspect": 1.2,
+  "dithering": false,
+  "antialiasing": false,
+  "paletteUnchanged": true,
+  "images": [
+    {
+      "source": "stair",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "nativeSize": [
+        320,
+        200
+      ],
+      "usedColours": 31,
+      "opaque": true
+    },
+    {
+      "source": "stair-before-steepening",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "nativeSize": [
+        320,
+        200
+      ],
+      "usedColours": 31,
+      "opaque": true
+    }
+  ]
+}

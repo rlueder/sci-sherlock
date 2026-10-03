@@ -1,0 +1,161 @@
+{
+  "status": "r40 ominous hallway and flickering lamp review; not registered",
+  "canvas": [
+    320,
+    200
+  ],
+  "pixelAspect": 1.2,
+  "perspective": {
+    "horizon": 0,
+    "fullSize": 176
+  },
+  "walkable": [
+    [
+      78,
+      160
+    ],
+    [
+      258,
+      160
+    ],
+    [
+      263,
+      195
+    ],
+    [
+      71,
+      195
+    ]
+  ],
+  "arrival": [
+    90,
+    174
+  ],
+  "hero": [
+    117,
+    177
+  ],
+  "watson": [
+    230,
+    181
+  ],
+  "decorativeBounds": {
+    "lamp": [
+      155,
+      44,
+      166,
+      69
+    ],
+    "runner": [
+      33,
+      157,
+      319,
+      193
+    ],
+    "table": [
+      267,
+      102,
+      319,
+      156
+    ],
+    "umbrella": [
+      252,
+      93,
+      267,
+      153
+    ],
+    "coatPegs": [
+      274,
+      49,
+      314,
+      94
+    ]
+  },
+  "hotspots": {
+    "entranceDoor": [
+      0,
+      28,
+      58,
+      152
+    ],
+    "leftStair": [
+      78,
+      139,
+      148,
+      151
+    ],
+    "turningLanding": [
+      111,
+      138,
+      205,
+      150
+    ],
+    "lowerRightStair": [
+      152,
+      141,
+      215,
+      151
+    ]
+  },
+  "layers": [
+    {
+      "name": "entrance-door",
+      "priority": 154,
+      "rects": [
+        [
+          0,
+          27,
+          59,
+          127
+        ]
+      ]
+    },
+    {
+      "name": "wall-return",
+      "priority": 152,
+      "rects": [
+        [
+          59,
+          0,
+          18,
+          154
+        ],
+        [
+          246,
+          0,
+          18,
+          151
+        ],
+        [
+          59,
+          0,
+          205,
+          6
+        ]
+      ]
+    },
+    {
+      "name": "hall-furnishings",
+      "priority": 158,
+      "rects": [
+        [
+          250,
+          90,
+          70,
+          68
+        ]
+      ]
+    }
+  ],
+  "notes": [
+    "Safe walking remains on the upper landing only.",
+    "Runner and right-wall furnishings are scenery. The single wall lamp has a separate local flicker overlay.",
+    "Furniture exports are fixed-position edit/occlusion patches over the base, not movable cutouts. See lamp-animation.json for the local replacement patch and irregular timeline.",
+    "Both flights have 0.21 m rise and 0.38 m run; landing at -1.68 m and lower return at -3.36 m.",
+    "Most stair treads are hidden by the upper floor at this pitch. Only the central rail remains; outer and back guards are replaced by enclosing walls.",
+    "The visible entrance is now a door; the clock remains on the workshop side. Engineer should revise caseClock.look and hotspot naming accordingly.",
+    "Current story says the pendulum is visible here; this line no longer matches the art.",
+    "Side-facing masters are scale references, not final scene performances.",
+    "Paint follows a checked model but is not a pixel-exact render of its geometry."
+  ]
+}

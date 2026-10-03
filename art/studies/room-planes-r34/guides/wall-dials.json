@@ -1,0 +1,50 @@
+[
+  {
+    "center": [
+      114,
+      33
+    ],
+    "hour": 3,
+    "minute": 17,
+    "minuteTip": [
+      119,
+      34
+    ],
+    "hourTip": [
+      117,
+      33
+    ]
+  },
+  {
+    "center": [
+      161,
+      21
+    ],
+    "hour": 3,
+    "minute": 17,
+    "minuteTip": [
+      165,
+      22
+    ],
+    "hourTip": [
+      164,
+      21
+    ]
+  },
+  {
+    "center": [
+      209,
+      28
+    ],
+    "hour": 3,
+    "minute": 17,
+    "minuteTip": [
+      215,
+      29
+    ],
+    "hourTip": [
+      212,
+      28
+    ]
+  }
+]

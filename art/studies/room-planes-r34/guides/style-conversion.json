@@ -1,0 +1,57 @@
+{
+  "method": "Same conversion as approved workshop v6: nearest-neighbour sampling, fixed-palette weighted RGB mapping",
+  "paletteEntries": 64,
+  "nativeSize": [
+    320,
+    200
+  ],
+  "displaySize": [
+    960,
+    720
+  ],
+  "pixelAspect": 1.2,
+  "dithering": false,
+  "antialiasing": false,
+  "paletteUnchanged": true,
+  "images": [
+    {
+      "source": "street",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "nativeSize": [
+        320,
+        200
+      ],
+      "usedColours": 49,
+      "opaque": true
+    },
+    {
+      "source": "stair",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "nativeSize": [
+        320,
+        200
+      ],
+      "usedColours": 43,
+      "opaque": true
+    },
+    {
+      "source": "workshop",
+      "sourceSize": [
+        1448,
+        1086
+      ],
+      "nativeSize": [
+        320,
+        200
+      ],
+      "usedColours": 61,
+      "opaque": true
+    }
+  ]
+}

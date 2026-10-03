@@ -1,0 +1,101 @@
+{
+  "camera": {
+    "horizon": 0,
+    "fullSize": 176,
+    "heightMetres": 3.0716981132075474,
+    "lensMM": 45,
+    "shiftY": -0.375,
+    "pixelAspect": 1.2
+  },
+  "scaleChecks": [
+    {
+      "feet": [
+        93,
+        165
+      ],
+      "heightPixels": 99.37500655651093,
+      "scale": 0.9375
+    },
+    {
+      "feet": [
+        233,
+        165
+      ],
+      "heightPixels": 99.37500655651093,
+      "scale": 0.9375
+    },
+    {
+      "feet": [
+        86,
+        194
+      ],
+      "heightPixels": 116.84089340269566,
+      "scale": 1.1022727272727273
+    },
+    {
+      "feet": [
+        243,
+        194
+      ],
+      "heightPixels": 116.84089340269566,
+      "scale": 1.1022727272727273
+    },
+    {
+      "feet": [
+        164,
+        176
+      ],
+      "heightPixels": 105.99999129772186,
+      "scale": 1.0
+    }
+  ],
+  "walkable": [
+    [
+      78,
+      160
+    ],
+    [
+      258,
+      160
+    ],
+    [
+      263,
+      195
+    ],
+    [
+      71,
+      195
+    ]
+  ],
+  "arrival": [
+    90,
+    174
+  ],
+  "furnishings": {
+    "map": {
+      "plane": "back wall",
+      "centreWorld": [
+        0,
+        10.71,
+        0.72
+      ],
+      "sizeMetres": [
+        1.5,
+        1.1
+      ]
+    },
+    "table": {
+      "centreWorld": [
+        2.17,
+        6.4,
+        0.4
+      ],
+      "sizeMetres": [
+        0.8,
+        0.34,
+        0.8
+      ],
+      "walkCorridorClear": true
+    }
+  }
+}

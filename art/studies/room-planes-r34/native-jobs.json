@@ -1,0 +1,109 @@
+[
+  {
+    "name": "filings",
+    "expected": [
+      "export/filings.png"
+    ]
+  },
+  {
+    "name": "scratches",
+    "expected": [
+      "export/scratches.png"
+    ]
+  },
+  {
+    "name": "clock",
+    "expected": [
+      "export/clock-0.png",
+      "export/clock-1.png",
+      "export/clock-2.png",
+      "export/clock-3.png",
+      "export/clock-4.png",
+      "export/clock-5.png",
+      "export/clock-6.png",
+      "export/clock-7.png"
+    ]
+  },
+  {
+    "name": "street-lamp",
+    "expected": [
+      "export/street-lamp.png"
+    ]
+  },
+  {
+    "name": "street-rail",
+    "expected": [
+      "export/street-rail.png"
+    ]
+  },
+  {
+    "name": "street",
+    "expected": [
+      "export/street-closed.png"
+    ]
+  },
+  {
+    "name": "street-lights",
+    "expected": [
+      "export/street-light-0.png",
+      "export/street-light-1.png",
+      "export/street-light-2.png",
+      "export/street-light-3.png",
+      "export/street-light-4.png",
+      "export/street-light-5.png"
+    ]
+  },
+  {
+    "name": "workshop-recess-frame",
+    "expected": [
+      "export/workshop-recess-frame.png"
+    ]
+  },
+  {
+    "name": "workshop-bench",
+    "expected": [
+      "export/workshop-bench.png"
+    ]
+  },
+  {
+    "name": "workshop-desk",
+    "expected": [
+      "export/workshop-desk.png"
+    ]
+  },
+  {
+    "name": "workshop",
+    "expected": [
+      "export/workshop-closed.png"
+    ]
+  },
+  {
+    "name": "workshop-lights",
+    "expected": [
+      "export/workshop-light-0.png",
+      "export/workshop-light-1.png",
+      "export/workshop-light-2.png",
+      "export/workshop-light-3.png",
+      "export/workshop-light-4.png",
+      "export/workshop-light-5.png"
+    ]
+  },
+  {
+    "name": "stair-entry-jamb",
+    "expected": [
+      "export/stair-entry-jamb.png"
+    ]
+  },
+  {
+    "name": "stair-newel-rail",
+    "expected": [
+      "export/stair-newel-rail.png"
+    ]
+  },
+  {
+    "name": "stair",
+    "expected": [
+      "export/stair-closed.png"
+    ]
+  }
+]

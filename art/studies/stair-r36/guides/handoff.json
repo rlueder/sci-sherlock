@@ -1,0 +1,114 @@
+{
+  "status": "r36 model-led review; not registered",
+  "canvas": [
+    320,
+    200
+  ],
+  "pixelAspect": 1.2,
+  "perspective": {
+    "horizon": 0,
+    "fullSize": 176
+  },
+  "walkable": [
+    [
+      78,
+      160
+    ],
+    [
+      258,
+      160
+    ],
+    [
+      263,
+      195
+    ],
+    [
+      71,
+      195
+    ]
+  ],
+  "arrival": [
+    90,
+    174
+  ],
+  "hero": [
+    117,
+    177
+  ],
+  "watson": [
+    230,
+    181
+  ],
+  "hotspots": {
+    "entranceDoor": [
+      0,
+      28,
+      58,
+      152
+    ],
+    "leftStair": [
+      86,
+      99,
+      148,
+      149
+    ],
+    "turningLanding": [
+      112,
+      121,
+      206,
+      138
+    ],
+    "lowerRightStair": [
+      148,
+      124,
+      219,
+      149
+    ]
+  },
+  "layers": [
+    {
+      "name": "entrance-door",
+      "priority": 154,
+      "rects": [
+        [
+          0,
+          27,
+          59,
+          127
+        ]
+      ]
+    },
+    {
+      "name": "opening-frame",
+      "priority": 152,
+      "rects": [
+        [
+          59,
+          0,
+          18,
+          154
+        ],
+        [
+          246,
+          0,
+          18,
+          151
+        ],
+        [
+          59,
+          0,
+          205,
+          6
+        ]
+      ]
+    }
+  ],
+  "notes": [
+    "Safe walking remains on the upper landing only.",
+    "Both flights descend in the physical model. The lower flight is partly occluded by the upper slab.",
+    "The visible entrance is now a door; the clock remains on the workshop side. Engineer should revise caseClock.look and hotspot naming accordingly.",
+    "Current story says the pendulum is visible here; this line no longer matches the art.",
+    "Side-facing masters are scale references, not final scene performances.",
+    "Paint follows a checked model but is not a pixel-exact render of its geometry."
+  ]
+}
