@@ -25,7 +25,7 @@
     "@commitlint/config-conventional": "^21.2.3",
     "@types/node": "^26.6.3",
     "marked": "^18.0.14",
-    "sci2-ts": "^0.18.0",
+    "sci2-ts": "^0.18.1",
     "simple-git-hooks": "^2.14.0",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
