@@ -140,7 +140,7 @@ anchor, between the feet.
 | View | Who | Loops | Notes |
 |---|---|---|---|
 | 200 | Holmes (character redraw under review) | 4: standing + 6 walking each | Age 58–62; grey temples and nape; deerstalker and black clay pipe. Approximately 106 px tall in the approved workshop composition |
-| 201 | Watson | 4: standing + 4–6 walking each | Broader, warmer waistcoat; at least east/west walking, the rest may start as standing cels |
+| 201 | Watson | 4: standing + 4–6 walking each | Sturdy but visibly shorter than Holmes, warmer waistcoat. R42 neutral under review: 97 px against Holmes's 106; 72×120 canvas, [36,113] anchor. At least east/west walking, the rest may start as standing cels |
 | 202 | Mrs Hudson | 4: standing + 4–6 walking each (east/west first) | Walks in through the door of 221B |
 | 203 | Toby Vance | 4: standing + 4–6 walking each (east/west first) | Hunched, oversized work coat |
 | 204 | Holmes, gestures | loop 0: reaching to open the clock (4–6 cels); loop 1: kneeling with the lens (2–4 cels) | Same anchor and scale as view 200, so the engine can swap views without a jump |

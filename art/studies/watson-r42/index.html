@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Watson — stature and proportions r42</title>
+<style>body{margin:28px auto;max-width:1000px;padding:0 20px;background:#171e19;color:#eddbb7;font:17px/1.5 Georgia,serif}h1{font-weight:normal}img{display:block;max-width:100%;height:auto;image-rendering:pixelated;background:#303d36}figure{margin:18px 0}figcaption{margin-top:8px;color:#d2c3a4}button,a{color:#f0d9af}button{font:inherit;background:#352c29;border:1px solid #78634d;padding:8px 16px;cursor:pointer}button[aria-pressed=true]{background:#67503b;border-color:#dbb97c}button:focus-visible,a:focus-visible{outline:2px solid #eddbb7;outline-offset:3px}.controls{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.lineup{max-width:864px}small{color:#c4b69e}</style>
+<h1>Watson — a sturdier companion, a shorter silhouette</h1>
+<p>Holmes stays at 106 native pixels. Watson is now 97, with a smaller head and narrower shoulders. Same 72×120 canvas, [36,113] anchor and 64-colour palette.</p>
+<figure><img class="lineup" src="review/lineup.png" alt="Unchanged Holmes, previous 104-pixel Watson, and corrected 97-pixel Watson, aligned at the same feet anchor"><figcaption>Equal depth and display scale. The old Watson is retained here for comparison.</figcaption></figure>
+<div class="controls" aria-label="Room"><button data-room="street" aria-pressed="true">Baker Street</button><button data-room="221b" aria-pressed="false">221B</button><button data-room="workshop" aria-pressed="false">Workshop</button></div>
+<div class="controls" aria-label="Revision"><button data-version="after" aria-pressed="true">Revised Watson</button><button data-version="before" aria-pressed="false">Previous Watson</button></div>
+<figure><img id="scene" src="review/street-after.png" alt="Holmes and revised Watson at equal depth on Baker Street"><figcaption id="caption">Baker Street · revised Watson · both at y139, using the same y/176 camera scale.</figcaption></figure>
+<p><small>Review study. Production view 201 still uses r13 until this correction is integrated. Front/back poses and walking are not supplied by this neutral correction. Portraits and seated Watson retain their separate approved references.</small></p>
+<p><a href="README.md">Method and canon</a> · <a href="model.json">Pinned model and measurements</a> · <a href="source/watson-master.pxo">Editable Pixelorama master</a> · <a href="art.json">View 201 candidate</a></p>
+<script type="module">
+let room='street',version='after';const names={street:'Baker Street','221b':'221B',workshop:'Workshop'},depths={street:139,'221b':176,workshop:174};
+function update(){const label=version==='after'?'revised Watson':'previous Watson';document.querySelector('#scene').src=`review/${room}-${version}.png`;document.querySelector('#scene').alt=`Holmes and ${label} at equal depth in ${names[room]}`;document.querySelector('#caption').textContent=`${names[room]} · ${label} · both at y${depths[room]}, using the same y/176 camera scale.`;document.querySelectorAll('[data-room]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.room===room)));document.querySelectorAll('[data-version]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.version===version)));}
+document.querySelectorAll('[data-room]').forEach(b=>b.addEventListener('click',()=>{room=b.dataset.room;update()}));document.querySelectorAll('[data-version]').forEach(b=>b.addEventListener('click',()=>{version=b.dataset.version;update()}));
+</script></html>

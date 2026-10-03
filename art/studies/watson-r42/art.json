@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "maxColours": 64,
+  "palette": "palette.json",
+  "pictures": [],
+  "views": [
+    {
+      "number": 201,
+      "loops": [
+        {
+          "cels": [
+            {
+              "png": "export/watson-standing.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "link": 0,
+          "mirror": true
+        },
+        {
+          "cels": [
+            {
+              "png": "export/watson-standing.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        },
+        {
+          "cels": [
+            {
+              "png": "export/watson-standing.png",
+              "anchor": [
+                36,
+                113
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

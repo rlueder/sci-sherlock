@@ -4,6 +4,16 @@ The workshop is in the game as of `975b29c`. The approved workshop v6 remains th
 style and scale reference. Technical validation, visual approval and integration
 are separate statuses.
 
+## Watson standing proportions — r42
+
+[Watson r42](../art/studies/watson-r42/index.html) revises the neutral to 97px high,
+with a smaller head and narrower shoulders, against unchanged 106px Holmes.
+It retains the 72×120 canvas, [36,113] anchor, palette, costume and facial identity.
+A pinned master, head crop, Pixelorama source and equal-depth before/after room
+comparisons accompany candidate view 201. Production registration is unchanged;
+the existing view still uses r13. This correction does not supply new walk or
+front/back poses, and does not resize the seated animation or portraits.
+
 ## Current Baker Street revision — r41
 
 The user selected **r35 option A, cab on the right**. [Baker Street r41](../art/studies/baker-street-r41/index.html)

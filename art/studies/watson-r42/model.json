@@ -1,0 +1,162 @@
+{
+  "name": "Watson",
+  "view": 201,
+  "status": "Proportion correction for visual review; production manifest unchanged",
+  "canvas": [
+    72,
+    120
+  ],
+  "anchor": [
+    36,
+    113
+  ],
+  "pixelAspect": 1.2,
+  "palette": "palette.json",
+  "height": 97,
+  "sha256": "4a05ad5ae90c121d5bf6850fffd80904739b7ef427f60123a75b74b2a833dc1e",
+  "bounds": {
+    "box": [
+      19,
+      16,
+      52,
+      112
+    ],
+    "height": 97,
+    "width": 34
+  },
+  "previous": {
+    "box": [
+      16,
+      9,
+      55,
+      112
+    ],
+    "height": 104,
+    "width": 40
+  },
+  "holmes": {
+    "box": [
+      16,
+      8,
+      50,
+      113
+    ],
+    "height": 106,
+    "width": 35,
+    "sha256": "5a753ffdfd37dd9534ff27a05fb23e5a179248945c5ce1f2488ebcd6b7720c60",
+    "changed": false
+  },
+  "sourceBox": [
+    231,
+    150,
+    670,
+    1652
+  ],
+  "sourceScale": [
+    0.07744510978043911,
+    0.06453759148369927
+  ],
+  "head": {
+    "crop": [
+      24,
+      13,
+      26,
+      27
+    ],
+    "png": "source/watson-head.png",
+    "variant": "neutral-three-quarter-right"
+  },
+  "dominantPaletteIndices": [
+    21,
+    15,
+    3,
+    5,
+    9,
+    1,
+    29,
+    23,
+    20,
+    8,
+    55,
+    2,
+    61,
+    32,
+    28,
+    16,
+    63,
+    13,
+    50,
+    12,
+    51,
+    4,
+    62,
+    44,
+    6,
+    11,
+    7,
+    39,
+    45,
+    48,
+    58,
+    31,
+    60,
+    41,
+    52,
+    47,
+    24,
+    36
+  ],
+  "rules": [
+    "Use this fixed model for future standing and walk poses.",
+    "Preserve the shared canvas and anchor. Apply the same room perspective scale to both men.",
+    "Do not independently fit individual cels to 97px; bend, stride and bob around this neutral stature.",
+    "Portraits and the chair-fitted seated reading animation are separate references and are not resized by this change."
+  ],
+  "roomSamples": [
+    {
+      "name": "street",
+      "background": "baker-street-r41/export/background.png",
+      "foreground": "baker-street-r41/export/foreground.png",
+      "feet": [
+        [
+          139,
+          139
+        ],
+        [
+          188,
+          139
+        ]
+      ]
+    },
+    {
+      "name": "221b",
+      "background": "221b-r33/export/room-closed.png",
+      "foreground": "221b-r33/export/foreground-desk.png",
+      "feet": [
+        [
+          195,
+          176
+        ],
+        [
+          248,
+          176
+        ]
+      ]
+    },
+    {
+      "name": "workshop",
+      "background": "room-planes-r34/export/workshop-closed.png",
+      "foreground": "room-planes-r34/export/workshop-desk.png",
+      "feet": [
+        [
+          151,
+          174
+        ],
+        [
+          213,
+          174
+        ]
+      ]
+    }
+  ]
+}
