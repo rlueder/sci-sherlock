@@ -6,13 +6,19 @@ import {Pixels} from '../../source/pixels.ts';
 import {clone,enlarged} from '../../source/study-tools.ts';
 const h='art/studies/221b-r30/';
 export function pageTurn(master:Pixels,pal:string[]){
- const raw=decodePng(readFileSync(h+'generated/watson-page-keys.png'));
+ const raw=decodePng(readFileSync(h+'generated/watson-page-forward.png'));
  const rgb=pal.map(c=>[1,3,5].map(i=>parseInt(c.slice(i,i+2),16)));
  const mask=new Pixels(72,120);
- mask.poly([[20,73],[24,73],[24,71],[48,71],[48,68],[54,71],[58,77],[57,85],[50,87],[23,87],[17,84],[17,77]],0);
+ mask.poly([[52,73],[48,73],[48,71],[24,71],[24,68],[18,71],[14,77],[15,85],[22,87],[49,87],[55,84],[55,77]],0);
+ // Locate the transparent inter-row gap instead of assuming equal generated cells.
+ let rowBreak=Math.floor(raw.height/2),runStart=0,bestRun=0,run=0;
+ for(let y=Math.floor(raw.height*.4);y<raw.height*.6;y++){let occupied=false;for(let x=0;x<raw.width;x++)if(raw.data[(y*raw.width+x)*4+3]!>=240){occupied=true;break}
+  if(!occupied){if(!run)runStart=y;run++;if(run>bestRun){bestRun=run;rowBreak=Math.floor((runStart+y)/2)}}else run=0;
+ }
+ assert.ok(bestRun>0,'page sheet needs a transparent row gutter');
  const frames=[clone(master)];const registration=[];
  for(let k=0;k<4;k++){
-  const ox=(k%2)*raw.width/2,oy=k<2?0:744,cw=raw.width/2,ch=k<2?744:raw.height-744;
+  const ox=(k%2)*raw.width/2,oy=k<2?0:rowBreak,cw=raw.width/2,ch=k<2?rowBreak:raw.height-rowBreak;
   let t=ch,b=0;
   for(let y=0;y<ch;y++)for(let x=0;x<cw;x++)if(raw.data[((oy+y)*raw.width+ox+x)*4+3]!>=240){t=Math.min(t,y);b=Math.max(b,y)}
   let l=cw,r=0;for(let y=t;y<t+(b-t)*.17;y++)for(let x=0;x<cw;x++)if(raw.data[((oy+y)*raw.width+ox+x)*4+3]!>=240){l=Math.min(l,x);r=Math.max(r,x)}
@@ -31,6 +37,6 @@ export function pageTurn(master:Pixels,pal:string[]){
  const guide=clone(master);guide.paste(mask,0,0);enlarged(h+'guides/page-motion-mask.png',guide,pal,4);
  // 100ms samples: quiet reading, pinch, lift, cross, settle, original neutral.
  const timeline=[...Array(28).fill(0),1,1,2,2,3,3,4,4,0,0,0,0];
- writeFileSync(h+'guides/page-turn.json',JSON.stringify({view:205,loop:1,canvas:[72,120],anchor:[36,113],at:[94,146],registration,maskPolygon:[[20,73],[24,73],[24,71],[48,71],[48,68],[54,71],[58,77],[57,85],[50,87],[23,87],[17,84],[17,77]],keyDurationsMs:[2800,200,200,200,200,400],timeline,stepMs:100,totalMs:4000,bodyOutsideMaskIdentical:true,playback:'Loop 0 is neutral. Trigger loop 1 occasionally; play cels 1–4 at 200ms each, then return to loop 0. Review repeats after a reading hold; production may wait 6–10 seconds.'},null,2)+'\n');
+ writeFileSync(h+'guides/page-turn.json',JSON.stringify({view:205,loop:1,direction:'forward through paper; screen-left to screen-right using Watson’s anatomical right hand',canvas:[72,120],anchor:[36,113],at:[94,146],registration,maskPolygon:[[52,73],[48,73],[48,71],[24,71],[24,68],[18,71],[14,77],[15,85],[22,87],[49,87],[55,84],[55,77]],keyDurationsMs:[2800,200,200,200,200,400],timeline,stepMs:100,totalMs:4000,bodyOutsideMaskIdentical:true,playback:'Loop 0 is neutral. Trigger loop 1 occasionally; play cels 1–4 at 200ms each, then return to loop 0. Review repeats after a reading hold; production may wait 6–10 seconds.'},null,2)+'\n');
  return {frames,timeline};
 }

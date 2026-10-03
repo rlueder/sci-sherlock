@@ -24,7 +24,7 @@
       "file": "generated/door-renders/0.png"
     },
     {
-      "angle": 16,
+      "angle": 20,
       "hinge": [
         [
           313.0000114440918,
@@ -38,7 +38,7 @@
       "file": "generated/door-renders/1.png"
     },
     {
-      "angle": 32,
+      "angle": 40,
       "hinge": [
         [
           313.0000114440918,
@@ -52,7 +52,7 @@
       "file": "generated/door-renders/2.png"
     },
     {
-      "angle": 48,
+      "angle": 60,
       "hinge": [
         [
           313.0000114440918,
@@ -66,7 +66,7 @@
       "file": "generated/door-renders/3.png"
     },
     {
-      "angle": 64,
+      "angle": 80,
       "hinge": [
         [
           313.0000114440918,
@@ -80,7 +80,7 @@
       "file": "generated/door-renders/4.png"
     },
     {
-      "angle": 80,
+      "angle": 100,
       "hinge": [
         [
           313.0000114440918,
@@ -92,6 +92,62 @@
         ]
       ],
       "file": "generated/door-renders/5.png"
+    },
+    {
+      "angle": 120,
+      "hinge": [
+        [
+          313.0000114440918,
+          137.0000123977661
+        ],
+        [
+          313.0000114440918,
+          36.000025272369385
+        ]
+      ],
+      "file": "generated/door-renders/6.png"
+    },
+    {
+      "angle": 140,
+      "hinge": [
+        [
+          313.0000114440918,
+          137.0000123977661
+        ],
+        [
+          313.0000114440918,
+          36.000025272369385
+        ]
+      ],
+      "file": "generated/door-renders/7.png"
+    },
+    {
+      "angle": 160,
+      "hinge": [
+        [
+          313.0000114440918,
+          137.0000123977661
+        ],
+        [
+          313.0000114440918,
+          36.000025272369385
+        ]
+      ],
+      "file": "generated/door-renders/8.png"
+    },
+    {
+      "angle": 175,
+      "hinge": [
+        [
+          313.0000114440918,
+          137.0000123977661
+        ],
+        [
+          313.0000114440918,
+          36.000025272369385
+        ]
+      ],
+      "file": "generated/door-renders/9.png"
     }
   ]
 }

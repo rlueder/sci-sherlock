@@ -1,0 +1,76 @@
+{
+  "source": "generated/fire-keys.png",
+  "sourceCells": [
+    {
+      "ox": 0,
+      "oy": 0,
+      "l": 129,
+      "r": 443,
+      "t": 204,
+      "b": 438
+    },
+    {
+      "ox": 512,
+      "oy": 0,
+      "l": 100,
+      "r": 412,
+      "t": 144,
+      "b": 438
+    },
+    {
+      "ox": 1024,
+      "oy": 0,
+      "l": 71,
+      "r": 382,
+      "t": 105,
+      "b": 438
+    },
+    {
+      "ox": 0,
+      "oy": 512,
+      "l": 128,
+      "r": 443,
+      "t": 112,
+      "b": 402
+    },
+    {
+      "ox": 512,
+      "oy": 512,
+      "l": 100,
+      "r": 412,
+      "t": 72,
+      "b": 402
+    },
+    {
+      "ox": 1024,
+      "oy": 512,
+      "l": 70,
+      "r": 382,
+      "t": 158,
+      "b": 402
+    }
+  ],
+  "canvas": [
+    40,
+    40
+  ],
+  "anchor": [
+    20,
+    39
+  ],
+  "at": [
+    158,
+    141
+  ],
+  "drawOrigin": [
+    138,
+    102
+  ],
+  "emberBaseline": 34,
+  "scale": 0.0949367088607595,
+  "cels": 6,
+  "celDurationMs": 120,
+  "alphaThreshold": 240,
+  "gratePixelsUnchanged": true,
+  "notes": "Flames rise, curl and split; every cel composites onto the clean hearth. High alpha threshold removes the generated halo; no rectangular glow layer."
+}

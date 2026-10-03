@@ -10,7 +10,7 @@ for o in list(bpy.data.objects):
  if o!=c:bpy.data.objects.remove(o,do_unlink=True)
 fit=json.loads((HERE/'guides/painted-fit.json').read_text());door=fit['door']
 W=door['widthMetres'];H=door['heightMetres'];depth=.045
-hinge=Vector(door['worldHinge']);angles=[0,16,32,48,64,80]
+hinge=Vector(door['worldHinge']);angles=[0,20,40,60,80,100,120,140,160,175]
 # Front/back are separate faces of one 45mm thick wooden leaf.
 verts=[(-W,0,0),(0,0,0),(0,0,H),(-W,0,H),(-W,depth,0),(0,depth,0),(0,depth,H),(-W,depth,H)]
 faces=[(0,1,2,3),(5,4,7,6),(4,0,3,7),(1,5,6,2),(3,2,6,7),(4,5,1,0)]
@@ -55,7 +55,7 @@ for i,a in enumerate(angles):
   p=world_to_camera_view(s,c,hinge+Vector((0,0,z)));axis.append([p.x*320,(1-p.y)*200])
  frames.append({'angle':a,'hinge':axis,'file':f'generated/door-renders/{i}.png'})
  s.render.filepath=str(HERE/f'generated/door-renders/{i}.png');bpy.ops.render.render(write_still=True)
-s.frame_start=1;s.frame_end=6;s.frame_set(1)
+s.frame_start=1;s.frame_end=len(angles);s.frame_set(1)
 for image in bpy.data.images:
  if image.source=='FILE':image.pack()
 bpy.context.preferences.filepaths.save_version=0

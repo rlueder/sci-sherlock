@@ -1,6 +1,7 @@
 {
   "view": 205,
   "loop": 1,
+  "direction": "forward through paper; screen-left to screen-right using Watson’s anatomical right hand",
   "canvas": [
     72,
     120
@@ -20,11 +21,11 @@
         0,
         0,
         543,
-        744
+        740
       ],
-      "crown": 41,
-      "sole": 732,
-      "headCentre": 301.5,
+      "crown": 38,
+      "sole": 730,
+      "headCentre": 300.5,
       "nativeHeight": 64
     },
     {
@@ -33,87 +34,87 @@
         543,
         0,
         543,
-        744
+        740
       ],
-      "crown": 40,
-      "sole": 732,
-      "headCentre": 241.5,
+      "crown": 37,
+      "sole": 731,
+      "headCentre": 237,
       "nativeHeight": 64
     },
     {
       "key": 3,
       "cell": [
         0,
-        744,
+        740,
         543,
-        704
+        708
       ],
-      "crown": 12,
-      "sole": 691,
-      "headCentre": 301.5,
+      "crown": 10,
+      "sole": 694,
+      "headCentre": 300.5,
       "nativeHeight": 64
     },
     {
       "key": 4,
       "cell": [
         543,
-        744,
+        740,
         543,
-        704
+        708
       ],
-      "crown": 12,
-      "sole": 691,
-      "headCentre": 241.5,
+      "crown": 10,
+      "sole": 694,
+      "headCentre": 239.5,
       "nativeHeight": 64
     }
   ],
   "maskPolygon": [
     [
-      20,
+      52,
       73
     ],
     [
-      24,
+      48,
       73
-    ],
-    [
-      24,
-      71
     ],
     [
       48,
       71
     ],
     [
-      48,
+      24,
+      71
+    ],
+    [
+      24,
       68
     ],
     [
-      54,
+      18,
       71
     ],
     [
-      58,
+      14,
       77
     ],
     [
-      57,
+      15,
       85
     ],
     [
-      50,
+      22,
       87
     ],
     [
-      23,
+      49,
       87
     ],
     [
-      17,
+      55,
       84
     ],
     [
-      17,
+      55,
       77
     ]
   ],

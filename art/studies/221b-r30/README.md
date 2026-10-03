@@ -31,7 +31,7 @@ The painting is not a pixel-exact Blender render. Keep that distinction visible:
 `perspective.json` records the initial geometry and camera; `painted-fit.json`
 records the final door rectangle and seated anatomical guide under that same
 camera. `fit-props.py` recovers the door's physical plane from its painted bounds
-and records the hinge. `render-door.py` now renders the actual six cels from a 45mm-thick leaf in Blender Cycles, using the native door painting as its front-face texture. Four camera-ray holdout meshes represent the jamb/lintel/threshold and keep a receding door behind the frame. Cel 0 retains the exact painted extraction; subsequent cels use the Blender renders, converted to the shared palette. The earlier flat-triangle software projection is retired. The camera and actor size rule never move to fit
+and records the hinge. `render-door.py` now renders the actual ten cels from a 45mm-thick leaf in Blender Cycles, using the native door painting as its front-face texture. Four camera-ray holdout meshes represent the jamb/lintel/threshold and keep a receding door behind the frame. Cel 0 retains the exact painted extraction; subsequent cels use the Blender renders, converted to the shared palette. The earlier flat-triangle software projection is retired. The camera and actor size rule never move to fit
 an individual prop. The door's fitted width/height are about .93 m / 2.26 m.
 Other hotspot rectangles are measured from the painting, not copied blindly from
 the blockout. Final artistic scale/texture fit still needs visual review.
@@ -42,14 +42,14 @@ the blockout. Final artistic scale/texture fit still needs visual review.
 |---|---|---|
 | Picture 100 | `export/background.png` | 320×200, priority -1000; contains the landing, no moving leaf, fire, lens or people |
 | Foreground | `export/foreground-desk.png` | Exact occlusion duplicate, priority 199; desk feet fall below the crop; priority is clamped to the engine maximum |
-| Fire 222 | `export/fire-0..3.png` | 40×33, anchor [20,32], at [158,141]; fixed grate stays in front of flames |
+| Fire 222 | `export/fire-0..5.png` | 40×40, anchor [20,39], at [158,141]; fixed grate stays in front of flames |
 | Mantel lens 223 | `export/mantel-lens.png` | 12×8, anchor [4,3], at [160,77]; hide it when taken |
-| Door 225 | `export/door-0..5.png` | 64×120, anchor [57,113], at [313,137]; angles 0/16/32/48/64/80°, opens away into landing |
+| Door 225 | `export/door-0..9.png` | 64×120, anchor [57,113], at [313,137]; angles 0/20/40/60/80/100/120/140/160/175°, opens away into landing |
 | Seated Watson 205 | `export/watson-seated.png`, `watson-page-0..4.png` | 72×120, anchor [36,113], at [94,146]; body height 64px, pre-fitted to chair |
 
 The empty-room review includes the closed leaf. It is not the runtime background.
 The background plus cel 0 reconstructs the source painting pixel-for-pixel. All
-six door cels fit their shared canvas and use the same 3D hinge. The landing was
+ten door cels fit their shared canvas and use the same 3D hinge. The landing was
 painted separately; only its measured [263,36,313,137] patch is imported, preserving
 all room pixels outside the opening. The fire composites from the clean hearth
 on every cel so no previous flame is left behind.
@@ -110,7 +110,7 @@ fire, lens and Watson. Rebuilds regenerate these; save intentional paint edits a
 new source masters before rebuilding. Native export parity validates delivery,
 not artistic approval. No third-party game artwork is included.
 
-The revised door source is `source/door-solid.blend`, with packed native texture, keyed hinge rotation, 45mm depth and frame holdouts. `guides/door-solid.json` records every angle and projected hinge endpoint. All six exported cels must be distinct. The contact sheet is available in the review. The previous seated pose and its source are retained solely for comparison.
+The revised door source is `source/door-solid.blend`, with packed native texture, keyed hinge rotation, 45mm depth and frame holdouts. `guides/door-solid.json` records every angle and projected hinge endpoint. Visible opening poses must differ; late cels can match once the leaf is fully hidden behind the right jamb. Cel 9 must be entirely transparent. The contact sheet is available in the review. The previous seated pose and its source are retained solely for comparison.
 
 ## Animation timing and handoff
 
@@ -123,11 +123,11 @@ at walking speed. `guides/page-turn.json` specifies the timeline, source-cell
 registration and motion mask. Head and gaze remain fixed on the paper in this
 pass; the newspaper, fingers and flexing forearms supply the action.
 
-View 225 opens through cels 0–5 at 120 ms between changes (600 ms to fully open),
-then holds cel 5. Closing reverses that order. Begin the arrival actor only when
+View 225 opens through cels 0–9 at 120 ms between changes (1080 ms to fully open),
+then holds cel 9. Closing reverses that order. Begin the arrival actor only when
 the leaf has cleared its route, and keep the door at its fixed floor priority.
-View 222 cycles four flame cels at 180 ms each. These are proposed timings for
-integration, independent of the review GIF's deliberately shortened door hold.
+View 222 cycles six flame cels at 120 ms each. These are proposed timings for
+integration, independent of the combined review GIF’s 100 ms sampling and shortened door hold.
 
 Review `page-in-room.gif` at room scale and `watson-page.gif` enlarged. The five
 keys are also exposed as a contact sheet. Native Pixelorama project
@@ -139,3 +139,23 @@ place seated Watson without a second perspective scale, preserve the fixed ancho
 through page turns, set the new floor/arrival/hotspots, test lens removal and foreground
 occlusion, and retain all existing dialogue. Registration remains a separate engineer
 commit after visual review; this study does not change the running game.
+
+## Full swing, organic fire and forward reading correction
+
+The door now continues to 175°, nearly folded back into the landing, clearing the
+opening completely. `door-solid.json` is the authoritative animation sequence;
+`painted-fit.json` retains the earlier construction measurements.
+
+The fire uses six new painted keys in `generated/fire-keys.png`, with curling and
+splitting tongues, embers and occasional sparks. `fire.ts` registers all coal beds
+at one baseline and uses one shared scale. Each cel starts from the clean hearth;
+the grate pixels remain identical. The larger 40×40 canvas raises the available
+flame area seven pixels while keeping its world anchor at [158,141].
+`guides/fire.json` records bounds, conversion and timing. Inspect `fire-detail.gif`
+and `fire-keys.png` in the review.
+
+Watson now advances the newspaper: his anatomical right hand lifts the page on
+screen-left and carries it across to screen-right. New complete poses are stored
+in `generated/watson-page-forward.png` with the exact prompt beside them. The
+neutral master, head, torso and legs remain fixed; this is a new hand/paper action,
+not reversed playback of the old turn.

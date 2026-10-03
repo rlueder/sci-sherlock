@@ -13,7 +13,11 @@
       "export/door-2.png",
       "export/door-3.png",
       "export/door-4.png",
-      "export/door-5.png"
+      "export/door-5.png",
+      "export/door-6.png",
+      "export/door-7.png",
+      "export/door-8.png",
+      "export/door-9.png"
     ]
   },
   {
@@ -28,7 +32,9 @@
       "export/fire-0.png",
       "export/fire-1.png",
       "export/fire-2.png",
-      "export/fire-3.png"
+      "export/fire-3.png",
+      "export/fire-4.png",
+      "export/fire-5.png"
     ]
   },
   {

@@ -1,0 +1,6 @@
+Precise animation correction to this 2x2 sprite sheet. Keep same four full figures, same scale, exact same face/hair/moustache, fixed front-facing body, coat, waistcoat/watchchain, legs and shoes, transparent background. Change ONLY forearms, hands and newspaper in each cel: REVERSE THE PAGE TURN DIRECTION. Watson is facing the viewer, so to read FORWARD his anatomical RIGHT hand (on SCREEN LEFT) lifts the page at SCREEN LEFT and carries it across to SCREEN RIGHT. Do not mirror his face, body, suit, head or legs. Do not simply play the existing action backwards.
+Upper left: screen-LEFT hand pinches the page's upper LEFT outer corner; screen-right hand anchors the right lower paper edge.
+Upper right: LEFT hand has pulled that page up toward centre, a curled leaf upright above left half of paper.
+Lower left: LEFT hand crosses towards SCREEN RIGHT following the leaf across the spine, leaf curls and settles on RIGHT half.
+Lower right: paper spread rests flat, right hand still steadies it, left hand returns to lower left edge.
+Small quiet anatomical wrist and elbow movements, same body width, shoulders connected, no extra hands. Retain the same pixel-art texture and palette. Generous transparent gap between rows and columns, all four figures fully inside their cells. No text or labels.
